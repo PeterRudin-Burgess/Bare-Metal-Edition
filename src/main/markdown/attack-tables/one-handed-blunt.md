@@ -1,4 +1,4 @@
-### One Handed Blunt
+##### One Handed Blunt
 
 |      | Armor ||||
 | d100 | No | Lt | Md | Hvy |

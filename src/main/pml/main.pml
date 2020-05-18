@@ -43,4 +43,5 @@
             markdown-blockquote-paragraph-hyphenate="off"
             ?>
     <?include src="./attack-tables.pml" ?>
+    <?include src="./critical-tables.pml" ?>
 </document>

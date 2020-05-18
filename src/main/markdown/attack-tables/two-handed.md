@@ -1,4 +1,4 @@
-### Two Handed
+##### Two Handed
 
 |      | Armor ||||
 | d100 | No | Lt | Md | Hvy |
