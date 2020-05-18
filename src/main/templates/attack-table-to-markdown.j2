@@ -15,7 +15,7 @@
 {% for n in range(22) -%}
 | {{ diceroll[n][0] }} - {{ diceroll[n][1] }} |{% for AT in [0,1,2,3] -%}
     {% if (diceroll[n][1] >= data[AT].start) -%}
-        {{ (diceroll[n][1]-data[AT].start)/((150-data[AT].start)/data[AT].max) |round(0,'ceil') }}
+        {{ (diceroll[n][1]-data[AT].start)/((150-data[AT].start)/data[AT].max) |round(3,'ceil') }}
         {%- if (diceroll[n][1] >= data[AT].E) %}E{{ critical[data[AT].type][n] }}
         {%- elif (diceroll[n][1] >= data[AT].D) %}D{{ critical[data[AT].type][n] }}
         {%- elif (diceroll[n][1] >= data[AT].C) %}C{{ critical[data[AT].type][n] }}
