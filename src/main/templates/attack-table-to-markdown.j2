@@ -4,7 +4,7 @@
 | d100 | No | Lt | Md | Hvy |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 {% for n in range(22) -%}
-| {{ attack.diceroll[n][0] }} - {{ attack.diceroll[n][1] }} |{% for AT in [0,1,2,3] -%}
+| {{ attack.diceroll[n][0] |int() }} - {{ attack.diceroll[n][1] |int() }} |{% for AT in [0,1,2,3] -%}
     {% if (attack.diceroll[n][1] >= data[AT].start) -%}
         {{ (attack.diceroll[n][1]-data[AT].start)/((150-data[AT].start)/data[AT].max) |round(3,'ceil') }}
         {%- if (attack.diceroll[n][1] >= data[AT].E) %}E{{ attack.criticals[data[AT].type][n] }}
