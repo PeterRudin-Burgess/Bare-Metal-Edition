@@ -21,6 +21,6 @@
         {%- elif (diceroll[n][1] >= data[AT].C) %}C{{ critical[data[AT].type][n] }}
         {%- elif (diceroll[n][1] >= data[AT].B) %}B{{ critical[data[AT].type][n] }}
         {%- elif (diceroll[n][1] >= data[AT].A) %}A{{ critical[data[AT].type][n] }}{%- endif -%}
-    {%- else %} - {% endif %} |
+    {%- else %} &endash; {% endif %} |
 {%- endfor %}
 {% endfor %}
