@@ -1,0 +1,43 @@
+{
+    title: Bullets/Projectiles
+    data: [
+        {   type: puncture
+            start: 80
+            max: 24
+            A:	88
+            B:	100
+            C:	111
+            D:	126
+            E:	136
+        }
+        {   type: puncture
+            start: 65
+            max: 17
+            A:	73
+            B:	85
+            C:	100
+            D:	115
+            E:	125
+        }
+        {   type: puncture
+            start: 55
+            max: 12
+            A:	80
+            B:	95
+            C:	103
+            D:	122
+            E:	137
+        }
+        {   type: puncture
+            start: 45
+            max: 7
+            A:	97
+            B:	111
+            C:	122
+            D:	137
+            E:	148
+        }
+    ]
+}
+
+

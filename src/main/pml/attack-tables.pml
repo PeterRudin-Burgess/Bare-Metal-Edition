@@ -24,4 +24,17 @@
                   src="../markdown/attack-tables/arrow-bolt-missile.md" />
 
     </page>
+    <page>
+        <markdown pos="50,800" width="240"
+                  table-background="#ddd,#fff"
+                  table-border="1"
+                  src="../markdown/attack-tables/thrown.md" />
+
+        <markdown pos="305,800" width="240"
+                  table-background="#ddd,#fff"
+                  table-border="1"
+                  src="../markdown/attack-tables/bullets-projectiles.md" />
+
+
+    </page>
 </document>
