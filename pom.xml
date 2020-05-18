@@ -51,7 +51,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>./xbin/pml2pdf.sh</executable>
+                            <executable>${project.basedir}/xbin/pml2pdf.sh</executable>
                             <workingDirectory>${project.basedir}</workingDirectory>
                             <arguments>
                                 <argument>--cli</argument>
