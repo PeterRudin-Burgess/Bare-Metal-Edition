@@ -1,0 +1,43 @@
+{
+    title: One Handed Blunt
+    data: [
+        {   type: blunt
+            start: 80
+            max: 25
+            A:	90
+            B:	95
+            C:	100
+            D:	110
+            E:	125
+        }
+        {   type: blunt
+            start: 65
+            max: 20
+            A:	80
+            B:	95
+            C:	110
+            D:	125
+            E:	135
+        }
+        {   type: blunt
+            start: 60
+            max: 22
+            A:	90
+            B:	100
+            C:	115
+            D:	130
+            E:	140
+        }
+        {   type: blunt
+            start: 45
+            max: 17
+            A:	105
+            B:	115
+            C:	125
+            D:	135
+            E:	145
+        }
+    ]
+}
+
+

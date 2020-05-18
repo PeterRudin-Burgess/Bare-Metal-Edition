@@ -1,0 +1,43 @@
+{
+    title: Thrown
+    data: [
+        {   type: blunt
+            start: 75
+            max: 20
+            A:	85
+            B:	95
+            C:	105
+            D:	110
+            E:	130
+        }
+        {   type: blunt
+            start: 60
+            max: 15
+            A:	80
+            B:	95
+            C:	105
+            D:	125
+            E:	135
+        }
+        {   type: blunt
+            start: 55
+            max: 15
+            A:	100
+            B:	120
+            C:	130
+            D:	140
+            E:	145
+        }
+        {   type: blunt
+            start: 50
+            max: 10
+            A:	120
+            B:	130
+            C:	140
+            D:	150
+            E:	160
+        }
+    ]
+}
+
+

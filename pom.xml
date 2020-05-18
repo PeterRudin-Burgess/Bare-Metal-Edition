@@ -8,4 +8,60 @@
 
     <packaging>pom</packaging>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>jinjava-maven-plugin</artifactId>
+                <groupId>com.github.terefang</groupId>
+                <version>2020.5.4</version>
+                <executions>
+                    <execution>
+                        <id>attack-tables</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>template</goal>
+                        </goals>
+                        <configuration>
+                            <jinjaTemplate>${project.basedir}/src/main/templates/attack-table-to-markdown.j2</jinjaTemplate>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables</resourcesOutput>
+                            <destinationExtension>.md</destinationExtension>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${project.basedir}/xbin/pml2pdf.sh</executable>
+                            <workingDirectory>${project.basedir}</workingDirectory>
+                            <arguments>
+                                <argument>--cli</argument>
+                                <argument>${project.basedir}/src/main/pml/main.pml</argument>
+                                <argument>${project.basedir}/dist/main.pdf</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,0 +1,43 @@
+{
+    title: One Handed Blades
+    data: [
+        {   type: slash
+            start: 75
+            max: 30
+            A:	80
+            B:	90
+            C:	95
+            D:	105
+            E:	120
+        }
+        {   type: slash
+            start: 65
+            max: 25
+            A:	75
+            B:	85
+            C:	100
+            D:	115
+            E:	135
+        }
+        {   type: slash
+            start: 50
+            max: 20
+            A:	100
+            B:	110
+            C:	120
+            D:	135
+            E:	145
+        }
+        {   type: slash
+            start: 45
+            max: 13
+            A:	110
+            B:	125
+            C:	135
+            D:	140
+            E:	145
+        }
+    ]
+}
+
+
