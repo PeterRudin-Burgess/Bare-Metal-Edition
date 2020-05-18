@@ -1,0 +1,26 @@
+{% set diceroll = [    (146, 150),    (142, 145),    (138, 141),    (135, 137),    (131, 134),    (127, 130),
+    (123, 126),    (119, 122),    (116, 118),    (112, 115),    (108, 111),    (104, 107),    (100, 103),
+    (97	, 99 ),    (93	, 96 ),    (89	, 92 ),    (85	, 88 ),    (81	, 84 ),    (78	, 80 ),    (74	, 77 ),
+    (4	, 73 ),    (1	, 3  )
+] %}
+{% set critical = {
+    'slash': [ 'S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S','S' ]
+} %}
+
+### {{ title }}
+
+|      | Armor ||||
+| d100 | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+{% for n in range(22) -%}
+| {{ diceroll[n][0] }} - {{ diceroll[n][1] }} |{% for AT in [0,1,2,3] -%}
+    {% if (diceroll[n][1] >= data[AT].start) -%}
+        {{ (diceroll[n][1]-data[AT].start)/((150-data[AT].start)/data[AT].max) |round(0,'ceil') }}
+        {%- if (diceroll[n][1] >= data[AT].E) %}E{{ critical[data[AT].type][n] }}
+        {%- elif (diceroll[n][1] >= data[AT].D) %}D{{ critical[data[AT].type][n] }}
+        {%- elif (diceroll[n][1] >= data[AT].C) %}C{{ critical[data[AT].type][n] }}
+        {%- elif (diceroll[n][1] >= data[AT].B) %}B{{ critical[data[AT].type][n] }}
+        {%- elif (diceroll[n][1] >= data[AT].A) %}A{{ critical[data[AT].type][n] }}{%- endif -%}
+    {%- else %} - {% endif %} |
+{%- endfor %}
+{% endfor %}

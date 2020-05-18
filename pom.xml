@@ -8,4 +8,36 @@
 
     <packaging>pom</packaging>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>jinjava-maven-plugin</artifactId>
+                <groupId>com.github.terefang</groupId>
+                <version>2020.5.4</version>
+                <executions>
+                    <execution>
+                        <id>attack-tables</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>template</goal>
+                        </goals>
+                        <configuration>
+                            <jinjaTemplate>${project.basedir}/src/main/templates/attack-table-to-markdown.j2</jinjaTemplate>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables</resourcesOutput>
+                            <destinationExtension>.md</destinationExtension>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
