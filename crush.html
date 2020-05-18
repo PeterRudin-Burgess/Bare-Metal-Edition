@@ -1,0 +1,246 @@
+<html>
+<head>
+<script>
+function build_table(){
+	var loVal = 1;
+	var outPut = "<table><tr><td>Roll</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr><tr>";
+	var leader = "";
+	for(i=1;i<20; i++){
+	//Number table
+		hiVal = loVal + 4;
+		if(hiVal <= 10){leader = "0";}else{leader="";};
+	//Describe blow
+		hit = ["blow to ", "strike to ", "bash to ", "impact on "];
+		does = ["Glancing ", "Bruising ", "Shattering ", "Strong ", "Major ", "Hard ", "Weak ", "Mild "];
+		who = ["foe's ", "target's ", "poor fool's ", "victim's ", "enemy's "];
+		what = ["arm", "arm", "arm", "arm", "arm", "armpit", "elbow", "elbow", "forearm", "forearm", "forearm", "forearm", "forearm", "forearm", "shoulder", "shoulder", "shoulder", "abdomen", "back", "back", "back", "back",  "back", "back", "back", "back", "calf", "calf", "calf", "calf", "calf", "chest", "chest", "chest", "chest", "chest", "chest", "chest", "chest", "chest", "chest", "hip", "hip", "knee", "knee", "leg", "lower back", "lower leg", "ribs", "rib", "ribcage", "ribs", "side", "side", " side", "side", "side", "side", "side", "side", "side", "thigh", "thigh", "thigh", "thigh", "thigh", "thigh", "upper leg", "forehead", "head", "head", "head", "nose", "neck", "neck", "neck", "neck", "jaw", "skull"];
+		partindex = Math.floor(Math.random() * what.length)
+		//A
+		Afoe = does[Math.floor(Math.random() * does.length)] + hit[Math.floor(Math.random() * hit.length)] + who[Math.floor(Math.random() * who.length)] + what[partindex];
+		//B
+		Bfoe = does[Math.floor(Math.random() * does.length)] + hit[Math.floor(Math.random() * hit.length)] + who[Math.floor(Math.random() * who.length)] + what[partindex];
+		//C
+		Cfoe = does[Math.floor(Math.random() * does.length)] + hit[Math.floor(Math.random() * hit.length)] + who[Math.floor(Math.random() * who.length)] + what[partindex];
+		//D
+		Dfoe = does[Math.floor(Math.random() * does.length)] + hit[Math.floor(Math.random() * hit.length)] + who[Math.floor(Math.random() * who.length)] + what[partindex];
+		//E
+		Efoe = does[Math.floor(Math.random() * does.length)] + hit[Math.floor(Math.random() * hit.length)] + who[Math.floor(Math.random() * who.length)] + what[partindex];
+	//find additional #hits
+		//A
+		Ahit = Math.floor(loVal/8)+1;
+		//B
+		Bhit = Math.floor(loVal/7) + Math.round(Math.random() * 3);
+		//C
+		Chit = Math.floor(loVal/6) + Math.round(Math.random() * 4) + 1;
+		//D
+		Dhit = Math.floor(loVal/5) + 1;
+		//E
+		Ehit = Math.floor(loVal/4) + 1;
+	//find rounds of stun
+		stunChance = Math.floor(Math.random() * 100);
+		Aprop = 30;
+		Bprop = 25;
+		Cprop = 20;
+		Dprop = 20;
+		Eprop = 15;
+		//A
+		Astun = "";
+		Bstun = "";
+		Cstun = "";
+		Dstun = "";
+		Estun = "";
+		if(stunChance <= 75 && Math.floor(loVal/Aprop) > 0){Astun = ", " + "stunned for " + Math.floor(loVal/Aprop) + " rnd";}
+		if (Math.floor(loVal/Aprop) != 1 && Astun != "") Astun +="s";
+		//B
+		Bstun = "";
+		if(stunChance <= 75 && Math.floor(loVal/Bprop) > 0){Bstun = ", " + "stunned for " + Math.floor(loVal/Bprop) + " rnd";}
+		if (Math.floor(loVal/Bprop) != 1 && Bstun != "") Bstun +="s";
+		//C
+		Cstun = "";
+		if(stunChance <= 75 && Math.floor(loVal/Cprop) > 0){Cstun = ", " + "stunned for " + Math.floor(loVal/Cprop) + " rnd";}
+		if (Math.floor(loVal/Cprop) != 1 && Cstun != "") Cstun +="s";
+		//D
+		Dstun = "";
+		if(stunChance <= 75 && Math.floor(loVal/Dprop) > 0){Dstun = ", " + "stunned for " + Math.floor(loVal/Dprop) + " rnd";}
+		if (Math.floor(loVal/Dprop) != 1 && Dstun != "") Dstun +="s";
+		//E
+		Estun = "";
+		if(stunChance <= 75 && Math.floor(loVal/Eprop) > 0){Estun = ", " + "stunned for " + Math.floor(loVal/Eprop) + " rnd";}
+		if (Math.floor(loVal/Eprop) != 1 && Estun != "") Estun +="s";
+	//find bleeding damage
+		//A
+		Aburn = Math.floor(loVal/30);
+		burnChance = Math.floor(Math.random() * 0);
+		if(burnChance == 1 && Math.floor(loVal/30) > 0){Aburn = ", bleeding " + Math.floor(loVal/30)* Math.floor(loVal/30) + " hit";}
+		if ((Math.floor(loVal/30)*Math.floor(loVal/30)) > 1 && burnChance == 1){Aburn +="s/rnd";}
+		if ((Math.floor(loVal/30)*Math.floor(loVal/30)) == 1 && burnChance == 1){Aburn +="/rnd";}
+		if (burnChance != 1) Aburn = 0;
+		//B
+		Bburn = Math.floor(loVal/25);
+		burnChance = Math.floor(Math.random() * 0);
+		if(burnChance == 1 && Math.floor(loVal/30) > 0){Bburn = ", bleeding " + Math.floor(loVal/30)* Math.floor(loVal/30) + " hit";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) > 1 && burnChance == 1){Bburn +="s/rnd";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) == 1 && burnChance == 1){Bburn +="/rnd";}
+		if (burnChance != 1) Bburn = 0;
+		//C
+		Cburn = Math.floor(loVal/20);
+		burnChance = Math.floor(Math.random() * 0);
+		if(burnChance == 1 && Math.floor(loVal/30) > 0){Cburn = ", bleeding " + Math.floor(loVal/30)* Math.floor(loVal/30) + " hit";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) > 1 && burnChance == 1){Cburn +="s/rnd";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) == 1 && burnChance == 1){Cburn +="/rnd";}
+		if (burnChance != 1) Cburn = 0;
+		//D
+		Dburn = Math.floor(loVal/20);
+		burnChance = Math.floor(Math.random() * 0);
+		if(burnChance == 1 && Math.floor(loVal/30) > 0){Dburn = ", bleeding " + Math.floor(loVal/30)* Math.floor(loVal/30) + " hit";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) > 1 && burnChance == 1){Dburn +="s/rnd";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) == 1 && burnChance == 1){Dburn +="/rnd";}
+		if (burnChance != 1) Dburn = 0;
+		//E
+		Eburn = Math.floor(loVal/15);
+		burnChance = Math.round(Math.random() * 0);
+		if(burnChance == 1 && Math.floor(loVal/30) > 0){Eburn = ", bleeding " + Math.floor(loVal/30)* Math.floor(loVal/30) + " hit";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) > 1 && burnChance == 1){Eburn +="s/rnd";}
+		if ((Math.floor(loVal/20)*Math.floor(loVal/20)) == 1 && burnChance == 1){Eburn +="/rnd";}
+		if (burnChance != 1) Eburn = 0;
+		
+	//penalties
+		var Aspecial,Bspecial,Cspecial,Dspecial,Especial,special = "";
+		//A
+		Apenalty = Math.floor(loVal/40)*5;
+		penaltyChance = Math.floor(Math.random() * 2);
+		if(penaltyChance == 0 && Math.floor(loVal/40) > 0){Apenalty = ", -" + Apenalty + " to actions";
+		if(partindex>=16 && partindex<=65){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Apenalty += ". Bones fractured";
+				}
+			}
+		}else{Apenalty = "";}
+		//B
+		Bpenalty = Math.floor(loVal/30)*5;
+		penaltyChance = Math.floor(Math.random() * 2);
+		if(penaltyChance == 0 && Math.floor(loVal/30) > 0){Bpenalty = ", -" + Bpenalty + " to actions";
+		if(partindex>=16 && partindex<=65){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Bpenalty += ". Bones fractured";
+				}
+			}
+		}else{Bpenalty = "";}
+		//C
+		Cpenalty = Math.floor(loVal/10)*5;
+		penaltyChance = Math.floor(Math.random() * 2);
+		if(penaltyChance == 0 && Math.floor(loVal/10) > 0){Cpenalty = ", -" + Cpenalty + " to actions";
+		if(partindex>=16 && partindex<=65){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Cpenalty += ". Bones fractured";
+				}
+			}
+		}else{Cpenalty = "";}
+		//D
+		Dpenalty = Math.floor(loVal/10)*5;
+		penaltyChance = Math.floor(Math.random() * 2);
+		if(penaltyChance == 0 && Math.floor(loVal/10) > 0){Dpenalty = ", -" + Dpenalty + " to actions";
+			if(partindex>=16 && partindex<=65){
+				disarm_chance = Math.floor(Math.random() * 2);
+				if (disarm_chance==0){
+					Dpenalty += ". Bones fractured";
+					}
+				}
+			}else{Dpenalty = "";}
+		//E
+		Epenalty = Math.floor(loVal/10)*5;
+		penaltyChance = Math.floor(Math.random() * 2);
+		if(penaltyChance == 0 && Math.floor(loVal/10) > 0){Epenalty = ", -" + Epenalty + " to actions";
+		if(partindex>=16 && partindex<=65){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Epenalty += ". Bones fractured";
+				}
+			}
+		}else{Epenalty = "";}
+		
+	//special
+		if(partindex<=19){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Aspecial=Bspecial=Cspecial=Dspecial=Especial=special = " Drops items carried in that hand.";
+				}
+			}
+		if(partindex >= 69){
+			Aspecial=Math.random()*100;
+			if(Aspecial<=2){
+				Aspecial = " .Foe dies in " + Math.ceil(Math.random()*10) + " rounds."
+				}
+			Bspecial=Math.random()*100;
+			if(Bspecial<=5){
+				Bspecial = ". Foe dies in " + Math.ceil(Math.random()*10) + " rounds."
+				}
+			Cspecial=Math.random()*100;
+			if(Cspecial<=10){
+				Cspecial = ". Foe dies in " + Math.ceil(Math.random()*10) + " rounds."
+				}
+			Dspecial=Math.random()*100;
+			if(Dspecial<=20){
+				Dspecial = ". Foe dies in " + Math.ceil(Math.random()*10) + " rounds."
+				}
+			Especial=Math.random()*100;
+			if(Especial<=25){
+				Especial = ". Foe dies in " + Math.ceil(Math.random()*10) + " rounds."
+				}
+			}
+
+		if(partindex<=16){
+			disarm_chance = Math.floor(Math.random() * 2);
+			if (disarm_chance==1){
+				Aspecial=Bspecial=Cspecial=Dspecial=Especial=special = ". Drops items carried in that hand.";
+				}
+			}
+		if(parseFloat(Aspecial,10)==Aspecial){Aspecial=""};
+		if(Aspecial!="" && i<19){Aspecial=""};
+		if(parseFloat(Bspecial,10)==Bspecial){Bspecial=""};
+		if(Bspecial!="" && i<18){Bspecial=""};
+		if(parseFloat(Cspecial,10)==Cspecial){Cspecial=""};
+		if(Cspecial!="" && i<17){Cspecial=""};
+		if(parseFloat(Dspecial,10)==Dspecial){Dspecial=""};
+		if(Dspecial!="" && i<17){Dspecial=""};
+		if(parseFloat(Especial,10)==Especial){Especial=""};
+		if(Especial!="" && i<17){Especial=""};
+	//clean up output
+		//A
+		if(Ahit ==0){Ahit = "";}else{Ahit = " +" + Ahit + " hits";}
+		if(Aburn ==0){Aburn = "";}
+		//B
+		if(Bhit ==0){Bhit = "";}else{Bhit = " +" + Bhit + " hits";}
+		if(Bburn ==0){Bburn = "";}
+		//C
+		if(Chit ==0){Chit = "";}else{Chit = " +" + Chit + " hits";}
+		if(Cburn ==0){Cburn = "";}
+		//D
+		if(Dhit ==0){Dhit = "";}else{Dhit = " +" + Dhit + " hits";}
+		if(Dburn ==0){Dburn = "";}
+		//E
+		if(Ehit ==0){Ehit = "";}else{Ehit = " +" + Ehit + " hits";}
+		if(Eburn ==0){Eburn = "";}
+	//format output	
+		outPut += "<td width='40px'>" + leader + loVal + "-" + leader + hiVal +"</td>"
+		outPut += "<td>" + Afoe + Ahit + Astun + Aburn + Apenalty + Aspecial +"</td>";
+		outPut += "<td>" + Bfoe + Bhit + Bstun + Bburn + Bpenalty + Bspecial +"</td>";
+		outPut += "<td>" + Cfoe + Chit + Cstun + Cburn + Cpenalty + Cspecial +"</td>";
+		outPut += "<td>" + Dfoe + Dhit + Dstun + Dburn + Dpenalty + Dspecial +"</td>";
+		outPut += "<td>" + Efoe + Ehit + Estun + Eburn + Epenalty + Especial +"</td>";
+		outPut += "</tr>";
+		loVal = loVal + 5;
+	}
+	outPut +="</table>";
+	document.getElementById("crits").innerHTML = outPut;
+	}
+</script>
+</head>
+<body>
+<span id="crits"><p>Please Wait!</p></span>
+<input type="button" onclick="build_table()" value="Go!"/>
+</body>
+</html>
