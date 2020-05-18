@@ -18,5 +18,10 @@
                   table-border="1"
                   src="../markdown/attack-tables/two-handed.md" />
 
+        <markdown pos="305,400" width="240"
+                  table-background="#ddd,#fff"
+                  table-border="1"
+                  src="../markdown/attack-tables/arrow-bolt-missile.md" />
+
     </page>
 </document>

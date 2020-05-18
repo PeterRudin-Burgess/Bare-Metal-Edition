@@ -1,0 +1,43 @@
+{
+    title: Arrow/Bolt/Missile
+    data: [
+        {   type: puncture
+            start: 90
+            max: 28
+            A:	91
+            B:	95
+            C:	100
+            D:	115
+            E:	130
+        }
+        {   type: puncture
+            start: 75
+            max: 25
+            A:	85
+            B:	197
+            C:	113
+            D:	127
+            E:	143
+        }
+        {   type: puncture
+            start: 75
+            max: 25
+            A:	95
+            B:	105
+            C:	120
+            D:	130
+            E:	140
+        }
+        {   type: puncture
+            start: 70
+            max: 15
+            A:	105
+            B:	120
+            C:	130
+            D:	140
+            E:	145
+        }
+    ]
+}
+
+
