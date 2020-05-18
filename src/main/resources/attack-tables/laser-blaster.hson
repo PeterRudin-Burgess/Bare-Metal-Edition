@@ -1,0 +1,43 @@
+{
+    title: Laser/Blaster
+    data: [
+        {   type: puncture
+            start: 83
+            max: 45
+            A:	89
+            B:	100
+            C:	111
+            D:	126
+            E:	136
+        }
+        {   type: puncture
+            start: 60
+            max: 33
+            A:	73
+            B:	82
+            C:	102
+            D:	112
+            E:	133
+        }
+        {   type: puncture
+            start: 60
+            max: 33
+            A:	77
+            B:	82
+            C:	107
+            D:	122
+            E:	137
+        }
+        {   type: puncture
+            start: 48
+            max: 11
+            A:	87
+            B:	104
+            C:	127
+            D:	138
+            E:	147
+        }
+    ]
+}
+
+

@@ -35,6 +35,16 @@
                   table-border="1"
                   src="../markdown/attack-tables/bullets-projectiles.md" />
 
+        <markdown pos="50,400" width="240"
+                  table-background="#ddd,#fff"
+                  table-border="1"
+                  src="../markdown/attack-tables/laser-blaster.md" />
+
+        <markdown pos="305,400" width="240"
+                  table-background="#ddd,#fff"
+                  table-border="1"
+                  src="../markdown/attack-tables/ball-explosion.md" />
+
 
     </page>
 </document>

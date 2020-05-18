@@ -1,0 +1,43 @@
+{
+    title: Ball/Explosion
+    data: [
+        {   type: none
+            start: 50
+            max: 34
+            A:	75
+            B:	95
+            C:	115
+            D:	140
+            E:	149
+        }
+        {   type: none
+            start: 75
+            max: 21
+            A:	95
+            B:	115
+            C:	135
+            D:	142
+            E:	148
+        }
+        {   type: none
+            start: 70
+            max: 22
+            A:	85
+            B:	106
+            C:	126
+            D:	146
+            E:	166
+        }
+        {   type: none
+            start: 65
+            max: 23
+            A:	83
+            B:	102
+            C:	125
+            D:	147
+            E:	170
+        }
+    ]
+}
+
+
