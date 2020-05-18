@@ -30,6 +30,8 @@
                         </goals>
                         <configuration>
                             <jinjaTemplate>${project.basedir}/src/main/templates/attack-table-to-markdown.j2</jinjaTemplate>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
                             <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
                             <includes>**/*.hson</includes>
                             <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables</resourcesOutput>
