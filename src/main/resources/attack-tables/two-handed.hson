@@ -1,0 +1,43 @@
+{
+    title: Two Handed
+    data: [
+        {   type: none
+            start: 80
+            max: 50
+            A:	80
+            B:	85
+            C:	90
+            D:	95
+            E:	110
+        }
+        {   type: none
+            start: 70
+            max: 45
+            A:	75
+            B:	85
+            C:	98
+            D:	110
+            E:	125
+        }
+        {   type: none
+            start: 65
+            max: 35
+            A:	90
+            B:	100
+            C:	110
+            D:	125
+            E:	135
+        }
+        {   type: none
+            start: 50
+            max: 25
+            A:	100
+            B:	110
+            C:	120
+            D:	130
+            E:	140
+        }
+    ]
+}
+
+
