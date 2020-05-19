@@ -44,5 +44,6 @@
             ?>
     <?include src="./front-page.pml" ?>
     <?include src="./attack-tables.pml" ?>
+    <?include src="./action-points.pml" ?>
     <?include src="./critical-tables.pml" ?>
 </document>
