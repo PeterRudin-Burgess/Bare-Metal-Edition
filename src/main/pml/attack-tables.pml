@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <document>
     <?option print-attribute-access="off" ?>
-    <part text="Attack Tables"/>
+    <?svg id="crossed-axes-icon" src="../icons/crossed-axes.svg" render="1" transparency="on"?>
+
+    <page>
+        <part text="Attack Tables"/>
+
+        <label pos="100,650" width="395" align="center" font="hvb" font-size="25">Attack Tables</label>
+
+        <svg ref="crossed-axes-icon" pos="147,147" width="300" height="300" />
+    </page>
     <page>
         <markdown pos="50,800" width="240"
                   table-background="#eee,#fff"
