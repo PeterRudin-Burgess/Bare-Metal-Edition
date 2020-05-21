@@ -3,6 +3,8 @@
     data: [
         {   type: blunt
             start: 80
+            end: 150
+            min: 1
             max: 25
             A:	90
             B:	95
@@ -12,6 +14,8 @@
         }
         {   type: blunt
             start: 65
+            end: 150
+            min: 1
             max: 20
             A:	80
             B:	95
@@ -21,6 +25,8 @@
         }
         {   type: blunt
             start: 60
+            end: 150
+            min: 1
             max: 22
             A:	90
             B:	100
@@ -30,6 +36,8 @@
         }
         {   type: blunt
             start: 45
+            end: 150
+            min: 1
             max: 17
             A:	105
             B:	115

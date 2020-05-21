@@ -3,6 +3,8 @@
     data: [
         {   type: slash
             start: 75
+            end: 150
+            min: 1
             max: 30
             A:	80
             B:	90
@@ -12,6 +14,8 @@
         }
         {   type: slash
             start: 65
+            end: 150
+            min: 1
             max: 25
             A:	75
             B:	85
@@ -21,6 +25,8 @@
         }
         {   type: slash
             start: 50
+            end: 150
+            min: 1
             max: 20
             A:	100
             B:	110
@@ -30,6 +36,8 @@
         }
         {   type: slash
             start: 45
+            end: 150
+            min: 1
             max: 13
             A:	110
             B:	125
