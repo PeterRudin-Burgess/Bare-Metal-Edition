@@ -26,6 +26,5 @@
 | 66 - 73 | &endash;  |6AP |6 |4 |
 | 50 - 65 | &endash;  |3 |3 |3 |
 | 40 - 49 | &endash;  | &endash;  | &endash;  |2 |
-| 4 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 1 - 3 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
 

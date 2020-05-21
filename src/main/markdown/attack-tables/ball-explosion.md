@@ -26,6 +26,5 @@
 | 66 - 73 |9 | &endash;  |2 |4 |
 | 50 - 65 |6 | &endash;  | &endash;  |1 |
 | 40 - 49 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 4 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 1 - 3 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
 
