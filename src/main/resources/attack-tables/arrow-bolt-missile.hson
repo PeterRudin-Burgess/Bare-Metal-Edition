@@ -3,6 +3,8 @@
     data: [
         {   type: puncture
             start: 90
+            end: 150
+            min: 1
             max: 28
             A:	91
             B:	95
@@ -12,6 +14,8 @@
         }
         {   type: puncture
             start: 75
+            end: 150
+            min: 1
             max: 25
             A:	85
             B:	97
@@ -21,6 +25,8 @@
         }
         {   type: puncture
             start: 75
+            end: 150
+            min: 1
             max: 25
             A:	95
             B:	105
@@ -30,6 +36,8 @@
         }
         {   type: puncture
             start: 70
+            end: 150
+            min: 1
             max: 15
             A:	105
             B:	120

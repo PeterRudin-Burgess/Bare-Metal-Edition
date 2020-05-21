@@ -1,8 +1,10 @@
 {
     title: Two Handed
     data: [
-        {   type: none
+        {   type: hafted
             start: 80
+            end: 150
+            min: 1
             max: 50
             A:	80
             B:	85
@@ -10,8 +12,10 @@
             D:	95
             E:	110
         }
-        {   type: none
+        {   type: hafted
             start: 70
+            end: 150
+            min: 1
             max: 45
             A:	75
             B:	85
@@ -19,8 +23,10 @@
             D:	110
             E:	125
         }
-        {   type: none
+        {   type: hafted
             start: 65
+            end: 150
+            min: 1
             max: 35
             A:	90
             B:	100
@@ -28,8 +34,10 @@
             D:	125
             E:	135
         }
-        {   type: none
+        {   type: hafted
             start: 50
+            end: 150
+            min: 1
             max: 25
             A:	100
             B:	110

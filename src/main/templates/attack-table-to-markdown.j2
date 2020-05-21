@@ -3,15 +3,20 @@
 |      | Armor ||||
 | d100 | No | Lt | Md | Hvy |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
-{% for n in range(24) -%}
+{% for n in range(attack.diceroll.size()) -%}
 | {{ attack.diceroll[n][0] |int() }} - {{ attack.diceroll[n][1] |int() }} |{% for AT in [0,1,2,3] -%}
     {% if (attack.diceroll[n][1] >= data[AT].start) -%}
-        {{ (attack.diceroll[n][1]-data[AT].start)/((150-data[AT].start)/data[AT].max) |round(3,'ceil') }}
-        {%- if (attack.diceroll[n][1] >= data[AT].E) %}E{{ attack.criticals[data[AT].type][n] }}
-        {%- elif (attack.diceroll[n][1] >= data[AT].D) %}D{{ attack.criticals[data[AT].type][n] }}
-        {%- elif (attack.diceroll[n][1] >= data[AT].C) %}C{{ attack.criticals[data[AT].type][n] }}
-        {%- elif (attack.diceroll[n][1] >= data[AT].B) %}B{{ attack.criticals[data[AT].type][n] }}
-        {%- elif (attack.diceroll[n][1] >= data[AT].A) %}A{{ attack.criticals[data[AT].type][n] }}{%- endif -%}
+        {{ (data[AT].min+((attack.diceroll[n][1]-data[AT].start)/((data[AT].end-data[AT].start)/(data[AT].max-data[AT].min)))) |round(0,'ceil') }}
+        {%- if (attack.diceroll[n][1] >= data[AT].E) %}E
+        {%- elif (attack.diceroll[n][1] >= data[AT].D) %}D
+        {%- elif (attack.diceroll[n][1] >= data[AT].C) %}C
+        {%- elif (attack.diceroll[n][1] >= data[AT].B) %}B
+        {%- elif (attack.diceroll[n][1] >= data[AT].A) %}A{%- endif -%}
+        {%- if (attack.diceroll[n][1] >= data[AT].A) -%}
+        {%- set clen = attack.criticals[data[AT].type].length() -%}
+        {%- set cval = (attack.diceroll[n][1] + AT) |int() -%}{{
+            attack.criticals[data[AT].type].charAt(cval % clen)
+        }}{%- endif -%}
     {%- else %} &endash; {% endif %} |
 {%- endfor %}
 {% endfor %}

@@ -3,6 +3,8 @@
     data: [
         {   type: none
             start: 50
+            end: 150
+            min: 1
             max: 34
             A:	75
             B:	95
@@ -12,6 +14,8 @@
         }
         {   type: none
             start: 75
+            end: 150
+            min: 1
             max: 21
             A:	95
             B:	115
@@ -21,6 +25,8 @@
         }
         {   type: none
             start: 70
+            end: 150
+            min: 1
             max: 22
             A:	85
             B:	106
@@ -30,6 +36,8 @@
         }
         {   type: none
             start: 65
+            end: 150
+            min: 1
             max: 23
             A:	83
             B:	102
