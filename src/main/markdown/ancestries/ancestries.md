@@ -34,4 +34,4 @@ Total bonuses are +10 Co, +5 St.
 Humans receive one tier in Self Awareness, one tier in Toughness and 
 one tier in Physique. 
 
-Total bonuses are +5 Co, +5 Sd and +5 St.
+Total bonuses are +5 Co, +5 Em and +5 St.
