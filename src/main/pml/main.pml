@@ -16,6 +16,14 @@
 
     <?option flat-outline="true" ?>
 
+    <?info
+            author="d100 Open-Ended Roleplaying Bare Metal Edition Group"
+            creator="PML Markdown"
+            producer="PDFgen+PML2PDF"
+            subject="open core role-playing"
+            keywords="rpg d100 open-ended"
+            title="d100 Open-Ended Roleplaying Bare Metal Edition" ?>
+
     <?define
             page-mediabox="595,842"
 
