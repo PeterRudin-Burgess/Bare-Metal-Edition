@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <document>
-    <?svg id="toolbox-icon" src="../icons/toolbox.svg" render="1" transparency="on"?>
-    <?svg id="tinker-icon" src="../icons/tinker.svg" render="1" transparency="on"?>
-    <?svg id="quill-ink-icon" src="../icons/quill-ink.svg" render="1" transparency="on"?>
-    <?svg id="tied-scroll-icon" src="../icons/tied-scroll.svg" render="1" transparency="on"?>
-
     <page>
         <part text="Front Matter"/>
 
@@ -23,17 +18,13 @@
 
         <markdown pos="50,600" width="495"
                   paragraph-font-size="15"
-                  paragraph-font-lead="20"><![CDATA[
-**Credits**
-
-**Design & Development:** Peter Rudin-Burgess, Alfred Reibenschuh
-
-**Thanks To:** tbd.
-
-**Game Icons:** Creative Commons 3.0 BY license https://game-icons.net, https://commons.wikimedia.org
-
-*Navigator RPG, Nav RPG, and Open Ended Role-Playing is copyright 2019-2020 Parts Per Million Limited.*
-
-        ]]></markdown>
+                  paragraph-font-lead="20"
+                  src="../markdown/credits.md" />
+    </page>
+    <page>
+        <markdown pos="50,800" width="240"
+                  src="../markdown/glossary.md" />
+        <markdown pos="305,800" width="240"
+                  src="../markdown/universe-reference.md" />
     </page>
 </document>

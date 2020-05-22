@@ -9,6 +9,11 @@
     <?font id="tmi" name="pdf:times-italic" charset="pdfdoc" ?>
     <?font id="tmbi" name="pdf:times-bolditalic" charset="pdfdoc" ?>
 
+    <?svg id="toolbox-icon" src="../icons/toolbox.svg" render="1" transparency="on"?>
+    <?svg id="tinker-icon" src="../icons/tinker.svg" render="1" transparency="on"?>
+    <?svg id="quill-ink-icon" src="../icons/quill-ink.svg" render="1" transparency="on"?>
+    <?svg id="tied-scroll-icon" src="../icons/tied-scroll.svg" render="1" transparency="on"?>
+
     <?option flat-outline="true" ?>
 
     <?define
@@ -43,7 +48,9 @@
             markdown-blockquote-paragraph-hyphenate="off"
             ?>
     <?include src="./front-page.pml" ?>
+    <?include src="./main-part.pml" ?>
     <?include src="./action-points.pml" ?>
     <?include src="./attack-tables.pml" ?>
     <?include src="./critical-tables.pml" ?>
+    <?include src="./minions.pml" ?>
 </document>
