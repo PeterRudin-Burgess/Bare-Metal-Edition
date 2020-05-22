@@ -61,4 +61,5 @@
     <?include src="./attack-tables.pml" ?>
     <?include src="./critical-tables.pml" ?>
     <?include src="./minions.pml" ?>
+    <?include src="./license-part.pml" ?>
 </document>
