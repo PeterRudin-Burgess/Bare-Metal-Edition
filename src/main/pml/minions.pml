@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <document>
     <page>
-        <markdown pos="305,800" width="240"
+        <markdown pos="50,800" width="495"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"

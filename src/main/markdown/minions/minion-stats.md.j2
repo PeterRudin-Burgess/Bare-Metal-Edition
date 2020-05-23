@@ -1,4 +1,4 @@
-{% macro render_rank_bonus(r,l) -%}
+{%- macro render_rank_bonus(r,l) -%}
 {%- if (r <= 10) %}{{ ((r * 5) + l)|int() }}
 {%- elif (r <= 20) %}{{ (50 + ((r - 10) * 2) + l)|int() }}
 {%- else %}{{ (70 + (r - 20) + l)|int() }}
@@ -9,8 +9,10 @@
 | {{ n }} | +{{ render_rank_bonus(3 + (n * 2),n) }} | +{{ render_rank_bonus(2 + (n * 1.5),n) }} | +{{ render_rank_bonus(1 + (n),n) }} | +{{ render_rank_bonus((n * 0.5),n) }} | +{{ render_rank_bonus((n * 0.25),n) }} | +{{ render_rank_bonus((n * 0.125),n) }} | +{{ render_rank_bonus(0,n) }} |
 {%- endmacro -%}
 
-| Level | #1 | #2 | #3 | #4 | #5 | #6 | #7 |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n in range(51) -%}
 {{ render_row(n) }}
 {% endfor -%}
+
+
