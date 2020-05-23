@@ -78,14 +78,6 @@ Each profession also has a unique set of skill costs.
 Although this skill has a cost, it cannot be bought without the GM’s 
 express permission.
 
-> *TODO*
->
-> Languages 1/1, 2/2, 3/3
->
-> Others 3/5
->
-> Steps: 1/1, 1/3, 2/4, 3/5, 5/7, 7/10, 12/15, 20/25
-
 ### 6.3 Example Professions 
 
 #### Aristocrat
