@@ -250,57 +250,58 @@ Vocation: Mystic 	2*
 
 Latent Psionic 	1/Tier
 
-Skill Cost Table
-Combat
-Weapon 1	2/4	
-Move in Armor CE	5/7
-Weapon 2	3/5	
-Combat Expertise	5/7
-Weapon 3	7/10		
-General
-Acrobatics/Tumbling	5/7	
-Climbing	5/7
-Swimming	5/7	
-Riding	5/7
-Pick Locks	7/10	
-Stalk/Hide	5/7
-Perception	2/4	
-Driving	3/5
-Ambush/Sniper	7/10	
-Languages	2/2
-Physique	3/5	
-Music	2/4
-Trickery	5/7		
-Mental			
-Mental Focus	2/4	
-Mental Focus Defense	12/15
-Forgery	5/7	
-Survival	7/10
-First Aid	3/5	
-Scanners	3/5
-Pilot			
-Combat Pilot	7/10	
-Space Pilot	7/10
-Hyperspace Pilot	7/10	
-Space Navigation	7/10
-Ship Sensors	7/10		
-Technical			
-Tech: Mechanical	5/7	
-Tech: Arms	5/7
-Tech: Computer	7/10	
-Tech: CSI	3/5
-Tech: Medical	3/5		
-Science			
-Sci: General	3/5	
-Sci: Xeno	3/5
-Engineering			
-Engineer: Mech	5/7	
-Engineer: Weapon	7/10
-Engineer: Software	7/10	
-Engineer: Hardware	5/7
-Psionics			
+|Skill Cost Table |||||
+|:----------------------|---:|:---:|:----------------------|---:|
+| *Combat* |||||
+| Weapon 1	2/4	
+| Move in Armor CE	5/7
+| Weapon 2	3/5	
+| Combat Expertise	5/7
+| Weapon 3	7/10		
+|*General* |||||
+| Acrobatics/Tumbling	5/7	
+| Climbing	5/7
+| Swimming	5/7	
+| Riding	5/7
+| Pick Locks	7/10	
+| Stalk/Hide	5/7
+| Perception	2/4	
+| Driving	3/5
+| Ambush/Sniper	7/10	
+| Languages	2/2
+| Physique	3/5	
+| Music	2/4
+| Trickery	5/7		
+|*Mental* |||||	
+| Mental Focus	2/4	
+| Mental Focus Defense	12/15
+| Forgery	5/7	
+| Survival	7/10
+| First Aid	3/5	
+| Scanners	3/5
+|*Pilot* |||||	
+| Combat Pilot	7/10	
+| Space Pilot	7/10
+| Hyperspace Pilot	7/10	
+| Space Navigation	7/10
+| Ship Sensors	7/10		
+|*Technical* |||||
+| Tech: Mechanical	5/7	
+| Tech: Arms	5/7
+| Tech: Computer	7/10	
+| Tech: CSI	3/5
+| Tech: Medical	3/5		
+|*Science* |||||
+| Sci: General	3/5	
+| Sci: Xeno	3/5
+|*Engineering* |||||
+| Engineer: Mech	5/7	
+| Engineer: Weapon	7/10
+| Engineer: Software	7/10	
+| Engineer: Hardware	5/7
+|*Psionics* |||||
 Psionic Power	1/3	
-Meditation/Gifts	1/3
+| Meditation/Gifts	1/3
 
 Character Creation Example
 Stephen chooses to make his character an Aristocrat. He sees his character as a low ranking diplomat or envoy.

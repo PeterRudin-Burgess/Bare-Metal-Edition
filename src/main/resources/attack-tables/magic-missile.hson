@@ -1,0 +1,51 @@
+{
+    title: Magical Missile
+    data: [
+        {   type: none
+            start: 60
+            end: 150
+            min: 8
+            max: 37
+            A:	60
+            B:	70
+            C:	90
+            D:	110
+            E:	120
+        }
+        {   type: none
+            start: 45
+            end: 150
+            min: 1
+            max: 25
+            A:	70
+            B:	80
+            C:	97
+            D:	118
+            E:	129
+        }
+        {   type: none
+            start: 42
+            end: 150
+            min: 1
+            max: 22
+            A:	70
+            B:	90
+            C:	105
+            D:	125
+            E:	140
+        }
+        {   type: none
+            start: 40
+            end: 150
+            min: 1
+            max: 18
+            A:	65
+            B:	100
+            C:	115
+            D:	135
+            E:	145
+        }
+    ]
+}
+
+
