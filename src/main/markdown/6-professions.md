@@ -86,7 +86,9 @@ express permission.
 >
 > Steps: 1/1, 1/3, 2/4, 3/5, 5/7, 7/10, 12/15, 20/25
 
-### 6.3 Example Profession - Aristocrat
+### 6.3 Example Professions 
+
+#### Aristocrat
 
 Aristocrats are the galactic senators, planetary nobles, military officers, 
 and any other of thousands of beings that make their way in the galaxy 
@@ -105,16 +107,16 @@ with deadly efficiency.
 
 **Professional Skills:**
 
-Weapon 1 	2 ranks 
-Swimming 	1 rank 
-Riding 	1 rank 
-Perception 	1 rank 
-Driving 	2 ranks 
-Scanners	1 rank 
-Space Pilot 	2 ranks 
-Physique 	2 Ranks 
-Vocation(*) 	2 ranks 
-First Aid 	1Rank
+*Weapon#1 	2, 
+Swimming 	1, 
+Riding 	1, 
+Perception 	1, 
+Driving 	2, 
+Scanners	1, 
+Space Pilot 	2, 
+Physique 	2, 
+Vocation(*) 	2, 
+First Aid 	1*
 
 *(&asterisk;) You should choose a vocation specialism to fit your character concept such
 as Vocation:  Politician or Vocation:  Academic.*
@@ -152,3 +154,175 @@ as Vocation:  Politician or Vocation:  Academic.*
 | Engineer: Software | 5/7 | | Engineer: Hardware | 5/7  |
 | *Psionics* |||||
 | Psionic Power | 12/15 | | Meditation/Gifts | 12/15  |
+
+#### Armsman
+
+Call them bounty hunters, bodyguards, or soldiers of fortune — they all fall 
+into the Armsman category. These are the men and women specializing in all 
+types of combat. Clad in Heavy Armor and armed with the latest technology 
+and weapons, they live (and die) by the laser and whatever else they can use 
+to fight with.
+
+More than any other class, the Armsman relies on her equipment as she 
+explores the stars. With the latest technology, she’s able to defend her 
+companions from the deadliest threats from across the universe. Armsmen are 
+capable of using any piece of military technology and they don’t hesitate 
+to do so. They’re an asset to any party and are often the vanguard of 
+battle, and that’s just how they like it!
+
+**Professional Skills:**
+
+*Move in Armor  	2,	
+Weapon#1 	2,
+Weapon#2 	2,
+Weapon#3 	1,
+Combat Expertise	2,
+Ambush 	2,
+Physique	2,
+Survival 	2,
+First Aid 	2,
+Tech: Arms 	1,
+Engineer: Wpn 	1,
+Science: General 	1,
+Vocation: Armsman 	2*
+
+An Armsman will need to choose a Combat Expertise specialization which 
+should fit with their character background.
+
+|Skill Cost Table |||||
+|:----------------------|---:|:---:|:----------------------|---:|
+| *Combat* |||||
+|Weapon 1 | 1/3 | | Move in Armor CE | 1/3 |
+| Weapon 2 | 2/4 | | Combat Expertise | 1/3 |
+| Weapon 3 | 3/5 | | | | 
+| *General* |||||
+| Acrobatics/Tumbling | 2/4 | | Climbing | 2/4 |
+| Swimming | 2/4 | | Riding | 3/5 |
+| Pick Locks | 7/10 | | Stalk/Hide | 3/5 |
+| Perception | 3/5 | | Driving | 3/5 |
+| Ambush/Sniper | 1/3 | | Languages | 3/3 |
+| Physique | 1/3 | | Music | 3/5 |
+| Trickery | 5/7 | | | | 
+| *Mental* ||||| 
+| Mental Focus | 5/7 | | Mental Focus Defense | 12/15 |
+| Forgery | 5/7 | | Survival | 1/3 |
+| First Aid | 1/3 | | Scanners | 2/4 |
+| *Pilot* |||||
+| Combat Pilot | 5/7 | | Space Pilot | 7/10 |
+| Hyperspace Pilot | 7/10 | | Space Navigation | 7/10 |
+| Ship Sensors | 7/10 | | | | 
+| *Technical* |||||
+| Tech: Mechanical | 5/7 | | Tech: Arms | 2/4 |
+| Tech: Computer | 7/10 | | Tech: CSI | 5/7 |
+| Tech: Medical | 5/7 |  |  | |
+| *Science* |||||
+| Sci: General | 5/7 | | Sci: Xeno | 5/7 |
+| Engineering ||||| 
+| Engineer: Mech | 2/4 | | Engineer: Weapon | 1/3 |
+| Engineer: Software | 5/7 | | Engineer: Hardware | 5/7 |
+| *Psionics* ||||| 
+| Psionic Power | 12/15 | | Meditation/Gifts | 12/15 |
+
+#### Mystic
+The Mystic is an exotic being who has tapped into mysterious power unfathomable by most others. Whether they’re little green gnomes with powerful magic or human psychics, the Mystic reflects a more peaceful, introspective, and thoughtful being than is usually found in the galaxy at large. That is not to say that Mystics are pacifists. Many are trained in the ways of war, though it is not their first course of action. They would much prefer to rely on their exotic abilities than a laser pistol, but pragmatism demands adaptation.
+Professional Skills:
+Physique 	1 rank	
+Survival 	1 rank	
+First Aid 	1 rank	
+Psionic Power 	2 ranks	
+Meditation #1	1 rank	
+Meditation #2	2 rank	
+Meditation #3	3 rank	
+Meditation #4	4 rank	
+Vocation: Mystic 	2 ranks	
+Professional Talent:
+Latent Psionic 	1/Tier
+Skill Cost Table
+Combat
+Weapon 1	2/4	
+Move in Armor CE	5/7
+Weapon 2	3/5	
+Combat Expertise	5/7
+Weapon 3	7/10		
+General
+Acrobatics/Tumbling	5/7	
+Climbing	5/7
+Swimming	5/7	
+Riding	5/7
+Pick Locks	7/10	
+Stalk/Hide	5/7
+Perception	2/4	
+Driving	3/5
+Ambush/Sniper	7/10	
+Languages	2/2
+Physique	3/5	
+Music	2/4
+Trickery	5/7		
+Mental			
+Mental Focus	2/4	
+Mental Focus Defense	12/15
+Forgery	5/7	
+Survival	7/10
+First Aid	3/5	
+Scanners	3/5
+Pilot			
+Combat Pilot	7/10	
+Space Pilot	7/10
+Hyperspace Pilot	7/10	
+Space Navigation	7/10
+Ship Sensors	7/10		
+Technical			
+Tech: Mechanical	5/7	
+Tech: Arms	5/7
+Tech: Computer	7/10	
+Tech: CSI	3/5
+Tech: Medical	3/5		
+Science			
+Sci: General	3/5	
+Sci: Xeno	3/5
+Engineering			
+Engineer: Mech	5/7	
+Engineer: Weapon	7/10
+Engineer: Software	7/10	
+Engineer: Hardware	5/7
+Psionics			
+Psionic Power	1/3	
+Meditation/Gifts	1/3
+
+Character Creation Example
+Stephen chooses to make his character an Aristocrat. He sees his character as a low ranking diplomat or envoy.
+He adds these skills to his character sheet. His skills now look like this.
+Weapon 1 	2 ranks 
+Swimming 	1 rank 
+Riding 	1 rank 
+Perception 	1 rank 
+Driving 	2 ranks 
+Scanners	3 rank 
+Space Pilot 	4 ranks 
+Physique 	3 Ranks 
+Vocation:  Diplomat 	2 ranks 
+First Aid 	3 Ranks
+Languages 	5 ranks
+Music: Instrument 	1 rank	
+Science: General 	2 ranks	
+Space Navigation 	1 rank	
+Trickery 	1 rank	
+
+Adding these to the character sheet Stephen can then add in the stat bonuses and special bonuses (in this case from his acute hearing talent.)
+Skill	Rank	Bonus	Stat	Special	Total
+Driving	2	10	+19		
+First Aid	3	15	+27		
+Languages	5	25	+32		
+Music: Singing	1	5	+24		
+Perception	1	5	+27	+5	
+Physique	3	15	+22		
+Riding	1	5	+3		
+Scanners	3	15	+31		
+Sci: General	2	10	+31		
+Space Nav	1	5	+32		
+Space Pilot	4	20	+14		
+Swimming	1	5	+26		
+Trickery	1	5	+14		
+Vocation: Diplomat	2	10			
+Pistol	2	10	+8		
+
