@@ -224,19 +224,32 @@ should fit with their character background.
 | Psionic Power | 12/15 | | Meditation/Gifts | 12/15 |
 
 #### Mystic
-The Mystic is an exotic being who has tapped into mysterious power unfathomable by most others. Whether they’re little green gnomes with powerful magic or human psychics, the Mystic reflects a more peaceful, introspective, and thoughtful being than is usually found in the galaxy at large. That is not to say that Mystics are pacifists. Many are trained in the ways of war, though it is not their first course of action. They would much prefer to rely on their exotic abilities than a laser pistol, but pragmatism demands adaptation.
-Professional Skills:
-Physique 	1 rank	
-Survival 	1 rank	
-First Aid 	1 rank	
-Psionic Power 	2 ranks	
-Meditation #1	1 rank	
-Meditation #2	2 rank	
-Meditation #3	3 rank	
-Meditation #4	4 rank	
-Vocation: Mystic 	2 ranks	
-Professional Talent:
+
+The Mystic is an exotic being who has tapped into mysterious power 
+unfathomable by most others. Whether they’re little green gnomes with 
+powerful magic or human psychics, the Mystic reflects a more peaceful, 
+introspective, and thoughtful being than is usually found in the galaxy 
+at large. That is not to say that Mystics are pacifists. Many are trained 
+in the ways of war, though it is not their first course of action. They 
+would much prefer to rely on their exotic abilities than a laser pistol, 
+but pragmatism demands adaptation.
+
+**Professional Skills:**
+
+*Physique 	1,	
+Survival 	1,	
+First Aid 	1,	
+Psionic Power 	2,	
+Meditation #1	1,	
+Meditation #2	2,	
+Meditation #3	3,	
+Meditation #4	4,	
+Vocation: Mystic 	2*	
+
+**Professional Talent:**
+
 Latent Psionic 	1/Tier
+
 Skill Cost Table
 Combat
 Weapon 1	2/4	
