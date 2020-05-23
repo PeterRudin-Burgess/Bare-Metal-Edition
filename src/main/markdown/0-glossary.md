@@ -33,3 +33,8 @@
 **Stat:** One of ten numbers that describe a character’s strengths and weaknesses. Also called Attributes.
 
 **Temporary Stat:** The current value of a character’s Stat. These may go down through injury or may go up through training.
+
+## The Bare Metal Universe
+
+These base rules do not contain any setting or genre information. 
+You may develop and adapt these rules to any setting that you like.

@@ -1,4 +1,4 @@
-### Action Points
+### 9.0 Action Points
 
 Each round *(5 seconds)* a character receives 4 action points *(AP)*. 
 Every action a character performs has a cost in action points. 
@@ -50,3 +50,14 @@ A character may start an action in one combat round and complete it in another.
 For example they could spend 1AP moving into range and then declare a 4AP attack. 
 As that requires 5AP the movement would take place at the start of the first 
 combat round and the attack would not be resolved until the 1st AP of next round.
+
+#### Unused AP
+
+Any unused AP left at the end of a combat round and not applied to a wrap 
+around action are lost.
+
+> **Example:** A character moves into position behind a door hoping to attack 
+> anyone who comes through. They declare 1AP of movement and a 3AP attack 
+> held until they can use it. In this round no one comes through the door 
+> and the player does not want to remain here so the three AP for the attack 
+> are lost.

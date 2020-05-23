@@ -19,12 +19,10 @@
         <markdown pos="50,600" width="495"
                   paragraph-font-size="15"
                   paragraph-font-lead="20"
-                  src="../markdown/credits.md" />
+                  src="../markdown/1-credits.md" />
     </page>
     <page>
-        <markdown pos="50,800" width="240"
-                  src="../markdown/glossary.md" />
-        <markdown pos="305,800" width="240"
-                  src="../markdown/universe-reference.md" />
+        <markdown pos="50,800" width="495"
+                  src="../markdown/0-glossary.md" />
     </page>
 </document>
