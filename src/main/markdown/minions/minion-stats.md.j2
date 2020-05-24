@@ -1,18 +1,30 @@
-{%- macro render_rank_bonus(r,l) -%}
-{%- if (r <= 10) %}{{ ((r * 5) + l)|int() }}
-{%- elif (r <= 20) %}{{ (50 + ((r - 10) * 2) + l)|int() }}
-{%- else %}{{ (70 + (r - 20) + l)|int() }}
-{%- endif -%}
-{%- endmacro -%}
-
-{%- macro render_row(n) -%}
-| {{ n }} | +{{ render_rank_bonus(3 + (n * 2),n) }} | +{{ render_rank_bonus(2 + (n * 1.5),n) }} | +{{ render_rank_bonus(1 + (n),n) }} | +{{ render_rank_bonus((n * 0.5),n) }} | +{{ render_rank_bonus((n * 0.25),n) }} | +{{ render_rank_bonus((n * 0.125),n) }} | +{{ render_rank_bonus(0,n) }} |
-{%- endmacro -%}
-
-| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 |
-|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n in range(51) -%}
-{{ render_row(n) }}
+| {{ local.lequ[n][0]|int() }}
+{%- for x in range(1,9) -%}
+| +{{ local.lequ[n][x]|int() }}
+{%- endfor -%}|
+{% endfor %}
+
+| Size | OB | DB | Hits |
+|:------------------|:------:|:------:|:------:|
+{% for n in local.sizes -%}
+| {{ n }} | {{ local.size[n].OB|int() }} | {{ local.size[n].DB|int() }} | {{ local.size[n].HT }} |
+{% endfor %}
+
+| Type | OBi | OBm | AT | DBi | DBm | HTi | HTm |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+{%- for n in local.types %}{% set ati = local.type[n].ATI|int() -%}
+| {{ n }} | {{ local.type[n].OBI|int() }} | {{ local.type[n].OBM }} | {{ local.armors[ati] }} | {{ local.type[n].DBI|int() }} | {{ local.type[n].DBM }} | {{ local.type[n].HTI|int() }} | {{ local.type[n].HTM }} |
+{%- endfor %}
+
+{% for LE in range(1,50,5) -%}
+{%- for n in local.types -%}{%- set obi = local.type[n].OBI|int() -%}{%- set hti = local.type[n].HTI|int() -%}{%- set ati = local.type[n].ATI|int() -%}{%- set dbi = local.type[n].DBI|int() -%}
+| {{ n }} Size | LE | OB | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|
+{% for n2 in local.sizes -%}
+|{{ n2 }} | {{ LE }} | {{ ((local.lequ[LE][obi]*local.type[n].OBM) + local.size[n2].OB)|int() }} | {{ local.armors[ati] }}| {{ (local.lequ[LE][dbi]+local.size[n2].DB)|int() }} | {{ (local.lequ[LE][hti]*local.type[n].HTM*local.size[n2].HT)|int() }} |
 {% endfor -%}
-
-
+{%- endfor %}
+{%- endfor %}

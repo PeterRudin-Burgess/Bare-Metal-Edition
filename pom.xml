@@ -23,6 +23,18 @@
                 <version>2020.5.4</version>
                 <executions>
                     <execution>
+                        <id>resources-auto-templation</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>jinjava</goal>
+                        </goals>
+                        <configuration>
+                            <resourcesDirectory>${project.basedir}/src/main</resourcesDirectory>
+                            <includes>**/*.hson.j2</includes>
+                            <resourcesOutput>${project.basedir}/src/main</resourcesOutput>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>markdown-auto-templation</id>
                         <phase>generate-resources</phase>
                         <goals>
@@ -32,6 +44,7 @@
                             <resourcesDirectory>${project.basedir}/src/main/markdown</resourcesDirectory>
                             <includes>**/*.md.j2</includes>
                             <resourcesOutput>${project.basedir}/src/main/markdown</resourcesOutput>
+                            <processLocalContext>true</processLocalContext>
                         </configuration>
                     </execution>
                     <execution>

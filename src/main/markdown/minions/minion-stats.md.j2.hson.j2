@@ -1,0 +1,225 @@
+{%- macro render_rank_bonus(r,l) -%}
+{%- if (r <= 10) %}{{ ((r * 5))|int() }}
+{%- elif (r <= 20) %}{{ (50 + ((r - 10) * 2))|int() }}
+{%- elif (r <= 30) %}{{ (70 + (r - 20))|int() }}
+{%- else %}{{ (80 + ((r - 30) / 2))|int() }}
+{%- endif -%}
+{%- endmacro -%}
+{%- macro render_row(n) -%}
+[ {{ n }}, {{ render_rank_bonus(4 + (n * 3),n) }}, {{ render_rank_bonus(3 + (n * 2),n) }}, {{ render_rank_bonus(2 + (n * 1.5),n) }}, {{ render_rank_bonus(1 + (n),n) }}, {{ render_rank_bonus((n * 0.5),n) }}, {{ render_rank_bonus((n * 0.25),n) }}, {{ render_rank_bonus((n * 0.125),n) }}, {{ render_rank_bonus(0,n) }} ]
+{%- endmacro -%}
+{
+    lequ: [
+{% for n in range(501) -%}
+{{ render_row(n) }}
+{% endfor -%}
+    ]
+
+    sizes: [
+        Fine
+        Diminutive
+        Tiny
+        Small
+        Medium
+        Large
+        Huge
+        Gargantuan
+        Colossal
+        Titanic
+    ]
+    size: {
+        Fine: {
+            DB: 40
+            OB: -40
+            HT: 0.25
+        }
+        Diminutive: {
+            DB: 20
+            OB: -20
+            HT: 0.33
+        }
+        Tiny: {
+            DB: 10
+            OB: -10
+            HT: 0.5
+        }
+        Small: {
+            DB: 5
+            OB: -5
+            HT: 0.7
+        }
+        Medium: {
+            DB: 0
+            OB: 0
+            HT: 1
+        }
+        Large: {
+            DB: -5
+            OB: 5
+            HT: 1.5
+        }
+        Huge: {
+            DB: -10
+            OB: 10
+            HT: 2
+        }
+        Gargantuan: {
+            DB: -20
+            OB: 20
+            HT: 3
+        }
+        Colossal: {
+            DB: -40
+            OB: 40
+            HT: 4
+        }
+        Titanic: {
+            DB: -80
+            OB: 80
+            HT: 6
+        }
+    }
+
+    armors: [
+        No Armor
+        Light
+        Medium
+        Heavy
+    ]
+
+    types: [
+        Aberration
+        Animal
+        Construct
+        Dragon
+        Fey
+        Humanoid
+        Magical-Beast
+        Monstrous-Humanoid
+        Ooze
+        Outsider
+        Plant
+        Undead
+        Vermin
+    ]
+    type: {
+        Aberration: {
+        	HTM: 0.8
+            HTI: 4
+        	OBM: 0.75
+        	OBI: 2
+        	ATI: 1
+        	DBI: 6
+        	DBM: 1
+        }
+        Animal: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 1
+        	DBI: 6
+        	DBM: 1
+        }
+        Construct: {
+            HTM: 1.0
+            HTI: 4
+            OBM: 1
+            OBI: 1
+        	ATI: 2
+        	DBI: 6
+        	DBM: 1
+        }
+        Dragon: {
+            HTM: 2
+            HTI: 3
+            OBM: 1
+            OBI: 1
+        	ATI: 3
+        	DBI: 6
+        	DBM: 1
+        }
+        Fey: {
+            HTM: 0.6
+            HTI: 4
+            OBM: 0.5
+            OBI: 3
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Humanoid: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 0
+        	DBI: 7
+        	DBM: 1
+        }
+        Magical-Beast: {
+            HTM: 1.0
+            HTI: 4
+            OBM: 1
+            OBI: 1
+        	ATI: 2
+        	DBI: 6
+        	DBM: 1
+        }
+        Monstrous-Humanoid: {
+            HTM: 1.0
+            HTI: 4
+            OBM: 1
+            OBI: 1
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Ooze: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Outsider: {
+            HTM: 1.0
+            HTI: 4
+            OBM: 1
+            OBI: 1
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Plant: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Undead: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 0
+        	DBI: 6
+        	DBM: 1
+        }
+        Vermin: {
+            HTM: 0.8
+            HTI: 4
+            OBM: 0.75
+            OBI: 2
+        	ATI: 1
+        	DBI: 6
+        	DBM: 1
+        }
+    }
+
+}
