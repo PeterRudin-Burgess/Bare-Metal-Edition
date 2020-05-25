@@ -1,18 +1,45 @@
-{%- macro render_rank_bonus(r) -%}
-{%- if (r <= 10) %}{{ ((r * 5))|int() }}
-{%- elif (r <= 20) %}{{ (50 + ((r - 10) * 2))|int() }}
-{%- elif (r <= 30) %}{{ (70 + (r - 20))|int() }}
-{%- else %}{{ (80 + ((r - 30) / 2))|int() }}
-{%- endif -%}
-{%- endmacro -%}
-{%- macro render_row(n) -%}
-[ {{ n }}, {{ render_rank_bonus(4 + (n * 3)) }}, {{ render_rank_bonus(3 + (n * 2)) }}, {{ render_rank_bonus(2 + (n * 1.5)) }}, {{ render_rank_bonus(1 + (n)) }}, {{ render_rank_bonus((n * 0.5)) }}, {{ render_rank_bonus((n * 0.25)) }}, {{ render_rank_bonus((n * 0.125)) }}, {{ render_rank_bonus(n * 0.0625) }}, {{ render_rank_bonus(n * 0.03125) }} ]
-{%- endmacro -%}
+<%
+
+def rank_bonus(r)
 {
+    if(r <= 10) return (r * 5);
+    if(r <= 20) return (50 + ((r - 10) * 2));
+    if(r <= 30) return (70 + (r - 20));
+    return (80 + ((r - 30) / 2));
+}
+
+def render_row(n)
+{
+    print "[ ${n}, ";
+    print rank_bonus(4 + (n * 3));
+    print ', ';
+    print rank_bonus(3 + (n * 2));
+    print ', ';
+    print rank_bonus(2 + (n * 1.5));
+    print ', ';
+    print rank_bonus(1 + n);
+    print ', ';
+    print rank_bonus(n * 0.5);
+    print ', ';
+    print rank_bonus(n * 0.25);
+    print ', ';
+    print rank_bonus(n * 0.125);
+    print ', ';
+    print rank_bonus(n * 0.0625);
+    print ', ';
+    print rank_bonus(n * 0.03125);
+    print ']';
+}
+
+%>{
     lequ: [
-{% for n in range(501) -%}
-{{ render_row(n) }}
-{% endfor -%}
+<%
+def range = 0 .. 500;
+range.each{ n ->
+    render_row(n);
+    print '\n';
+}
+%>
     ]
 
     sizes: [
@@ -309,5 +336,4 @@
         	DBM: 1
         }
     }
-
 }

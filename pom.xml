@@ -20,17 +20,17 @@
             <plugin>
                 <artifactId>template-maven-plugin</artifactId>
                 <groupId>com.github.terefang</groupId>
-                <version>2020.5.4</version>
+                <version>2020.5.5</version>
                 <executions>
                     <execution>
-                        <id>resources-auto-templation</id>
+                        <id>resources-gsimple-templation</id>
                         <phase>generate-resources</phase>
                         <goals>
-                            <goal>jinjava-standard</goal>
+                            <goal>gsimple-standard</goal>
                         </goals>
                         <configuration>
                             <resourcesDirectory>${project.basedir}/src/main</resourcesDirectory>
-                            <includes>**/*.hson.j2</includes>
+                            <includes>**/*.hson.gst</includes>
                             <resourcesOutput>${project.basedir}/src/main</resourcesOutput>
                         </configuration>
                     </execution>
