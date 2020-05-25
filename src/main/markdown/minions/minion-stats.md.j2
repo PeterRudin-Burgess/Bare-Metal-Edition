@@ -1,30 +1,30 @@
-| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 |
-|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 | S#9 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n in range(51) -%}
 | {{ local.lequ[n][0]|int() }}
-{%- for x in range(1,9) -%}
+{%- for x in range(1,10) -%}
 | +{{ local.lequ[n][x]|int() }}
 {%- endfor -%}|
 {% endfor %}
 
-| Size | OB | DB | Hits |
-|:------------------|:------:|:------:|:------:|
+| Size | OB | DB | Hits | Crit |
+|:------------------|:------:|:------:|:------:|:------:|
 {% for n in local.sizes -%}
-| {{ n }} | {{ local.size[n].OB|int() }} | {{ local.size[n].DB|int() }} | {{ local.size[n].HT }} |
+| {{ n }} | {{ local.size[n].OB|int() }} | {{ local.size[n].DB|int() }} | {{ local.size[n].HT }} | {{ local.size[n].CT|int() }} |
 {% endfor %}
 
-| Type | OBi | OBm | AT | DBi | DBm | HTi | HTm |
-|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| Type | OBi | OBm | OB2i | OB2m | OB3i | OB3m | OB4i | OB4m | AT | DBi | DBm | HTi | HTm |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {%- for n in local.types %}{% set ati = local.type[n].ATI|int() -%}
-| {{ n }} | {{ local.type[n].OBI|int() }} | {{ local.type[n].OBM }} | {{ local.armors[ati] }} | {{ local.type[n].DBI|int() }} | {{ local.type[n].DBM }} | {{ local.type[n].HTI|int() }} | {{ local.type[n].HTM }} |
+| {{ n }} | {{ local.type[n].OBI|int() }} | {{ local.type[n].OBM }} | {{ local.type[n].OB2I|int() }} | {{ local.type[n].OB2M }} | {{ local.type[n].OB3I|int() }} | {{ local.type[n].OB3M }} | {{ local.type[n].OB4I|int() }} | {{ local.type[n].OB4M }} | {{ local.armors[ati] }} | {{ local.type[n].DBI|int() }} | {{ local.type[n].DBM }} | {{ local.type[n].HTI|int() }} | {{ local.type[n].HTM }} |
 {%- endfor %}
 
-{% for LE in range(1,50,5) -%}
-{%- for n in local.types -%}{%- set obi = local.type[n].OBI|int() -%}{%- set hti = local.type[n].HTI|int() -%}{%- set ati = local.type[n].ATI|int() -%}{%- set dbi = local.type[n].DBI|int() -%}
-| {{ n }} Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
+{% for LE in range(51) -%}
+{%- for n in local.types -%}{%- set obi = local.type[n].OBI|int() -%}{%- set ob2i = local.type[n].OB2I|int() -%}{%- set ob3i = local.type[n].OB3I|int() -%}{%- set ob4i = local.type[n].OB4I|int() -%}{%- set hti = local.type[n].HTI|int() -%}{%- set ati = local.type[n].ATI|int() -%}{%- set dbi = local.type[n].DBI|int() -%}
+| {{ n }} Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n2 in local.sizes -%}
-|{{ n2 }} | {{ LE }} | {{ ((local.lequ[LE][obi]*local.type[n].OBM) + local.size[n2].OB)|int() }} | {{ local.armors[ati] }}| {{ (local.lequ[LE][dbi]+local.size[n2].DB)|int() }} | {{ (local.lequ[LE][hti]*local.type[n].HTM*local.size[n2].HT)|int() }} |
+|{{ n2 }} | {{ LE }} | {{ ((local.lequ[LE][obi]*local.type[n].OBM) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob2i]*local.type[n].OB2M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob3i]*local.type[n].OB3M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob4i]*local.type[n].OB4M) + local.size[n2].OB)|int() }} | {{ local.armors[ati] }}| {{ ((local.lequ[LE][dbi]*local.type[n].DBM)+local.size[n2].DB)|int() }} | {{ (local.lequ[LE][hti]*local.type[n].HTM*local.size[n2].HT)|int() }} |
 {% endfor -%}
 {%- endfor %}
 {%- endfor %}

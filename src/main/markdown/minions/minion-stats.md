@@ -1,1776 +1,8705 @@
-| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 |
-|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-| 0| +20| +15| +10| +5| +0| +0| +0| +0|
-| 1| +35| +25| +17| +10| +2| +1| +0| +0|
-| 2| +50| +35| +25| +15| +5| +2| +1| +0|
-| 3| +56| +45| +32| +20| +7| +3| +1| +0|
-| 4| +62| +52| +40| +25| +10| +5| +2| +0|
-| 5| +68| +56| +47| +30| +12| +6| +3| +0|
-| 6| +72| +60| +52| +35| +15| +7| +3| +0|
-| 7| +75| +64| +55| +40| +17| +8| +4| +0|
-| 8| +78| +68| +58| +45| +20| +10| +5| +0|
-| 9| +80| +71| +61| +50| +22| +11| +5| +0|
-| 10| +82| +73| +64| +52| +25| +12| +6| +0|
-| 11| +83| +75| +67| +54| +27| +13| +6| +0|
-| 12| +85| +77| +70| +56| +30| +15| +7| +0|
-| 13| +86| +79| +71| +58| +32| +16| +8| +0|
-| 14| +88| +80| +73| +60| +35| +17| +8| +0|
-| 15| +89| +81| +74| +62| +37| +18| +9| +0|
-| 16| +91| +82| +76| +64| +40| +20| +10| +0|
-| 17| +92| +83| +77| +66| +42| +21| +10| +0|
-| 18| +94| +84| +79| +68| +45| +22| +11| +0|
-| 19| +95| +85| +80| +70| +47| +23| +11| +0|
-| 20| +97| +86| +81| +71| +50| +25| +12| +0|
-| 21| +98| +87| +81| +72| +51| +26| +13| +0|
-| 22| +100| +88| +82| +73| +52| +27| +13| +0|
-| 23| +101| +89| +83| +74| +53| +28| +14| +0|
-| 24| +103| +90| +84| +75| +54| +30| +15| +0|
-| 25| +104| +91| +84| +76| +55| +31| +15| +0|
-| 26| +106| +92| +85| +77| +56| +32| +16| +0|
-| 27| +107| +93| +86| +78| +57| +33| +16| +0|
-| 28| +109| +94| +87| +79| +58| +35| +17| +0|
-| 29| +110| +95| +87| +80| +59| +36| +18| +0|
-| 30| +112| +96| +88| +80| +60| +37| +18| +0|
-| 31| +113| +97| +89| +81| +61| +38| +19| +0|
-| 32| +115| +98| +90| +81| +62| +40| +20| +0|
-| 33| +116| +99| +90| +82| +63| +41| +20| +0|
-| 34| +118| +100| +91| +82| +64| +42| +21| +0|
-| 35| +119| +101| +92| +83| +65| +43| +21| +0|
-| 36| +121| +102| +93| +83| +66| +45| +22| +0|
-| 37| +122| +103| +93| +84| +67| +46| +23| +0|
-| 38| +124| +104| +94| +84| +68| +47| +23| +0|
-| 39| +125| +105| +95| +85| +69| +48| +24| +0|
-| 40| +127| +106| +96| +85| +70| +50| +25| +0|
-| 41| +128| +107| +96| +86| +70| +50| +25| +0|
-| 42| +130| +108| +97| +86| +71| +51| +26| +0|
-| 43| +131| +109| +98| +87| +71| +51| +26| +0|
-| 44| +133| +110| +99| +87| +72| +52| +27| +0|
-| 45| +134| +111| +99| +88| +72| +52| +28| +0|
-| 46| +136| +112| +100| +88| +73| +53| +28| +0|
-| 47| +137| +113| +101| +89| +73| +53| +29| +0|
-| 48| +139| +114| +102| +89| +74| +54| +30| +0|
-| 49| +140| +115| +102| +90| +74| +54| +30| +0|
-| 50| +142| +116| +103| +90| +75| +55| +31| +0|
-
-
-| Size | OB | DB | Hits |
-|:------------------|:------:|:------:|:------:|
-| Fine | -40 | 40 | 0.25 |
-| Diminutive | -20 | 20 | 0.33 |
-| Tiny | -10 | 10 | 0.5 |
-| Small | -5 | 5 | 0.7 |
-| Medium | 0 | 0 | 1.0 |
-| Large | 5 | -5 | 1.5 |
-| Huge | 10 | -10 | 2.0 |
-| Gargantuan | 20 | -20 | 3.0 |
-| Colossal | 40 | -40 | 4.0 |
-| Titanic | 80 | -80 | 6.0 |
-
-
-| Type | OBi | OBm | AT | DBi | DBm | HTi | HTm |
-|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-| Aberration | 2 | 0.75 | Light | 6 | 1.0 | 4 | 0.8 |
-| Animal | 2 | 0.75 | Light | 6 | 1.0 | 4 | 0.8 |
-| Construct | 1 | 1.0 | Medium | 6 | 1.0 | 4 | 1.0 |
-| Dragon | 1 | 1.0 | Heavy | 6 | 1.0 | 3 | 2.0 |
-| Fey | 3 | 0.5 | No Armor | 6 | 1.0 | 4 | 0.6 |
-| Humanoid | 2 | 0.75 | No Armor | 7 | 1.0 | 4 | 0.8 |
-| Magical-Beast | 1 | 1.0 | Medium | 6 | 1.0 | 4 | 1.0 |
-| Monstrous-Humanoid | 1 | 1.0 | No Armor | 6 | 1.0 | 4 | 1.0 |
-| Ooze | 2 | 0.75 | No Armor | 6 | 1.0 | 4 | 0.8 |
-| Outsider | 1 | 1.0 | No Armor | 6 | 1.0 | 4 | 1.0 |
-| Plant | 2 | 0.75 | No Armor | 6 | 1.0 | 4 | 0.8 |
-| Undead | 2 | 0.75 | No Armor | 6 | 1.0 | 4 | 0.8 |
-| Vermin | 2 | 0.75 | Light | 6 | 1.0 | 4 | 0.8 |
-
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | Light| 41 | 2 |
-|Diminutive | 1 | -1 | Light| 21 | 2 |
-|Tiny | 1 | 8 | Light| 11 | 4 |
-|Small | 1 | 13 | Light| 6 | 5 |
-|Medium | 1 | 18 | Light| 1 | 8 |
-|Large | 1 | 23 | Light| -4 | 12 |
-|Huge | 1 | 28 | Light| -9 | 16 |
-|Gargantuan | 1 | 38 | Light| -19 | 24 |
-|Colossal | 1 | 58 | Light| -39 | 32 |
-|Titanic | 1 | 98 | Light| -79 | 48 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | Light| 41 | 2 |
-|Diminutive | 1 | -1 | Light| 21 | 2 |
-|Tiny | 1 | 8 | Light| 11 | 4 |
-|Small | 1 | 13 | Light| 6 | 5 |
-|Medium | 1 | 18 | Light| 1 | 8 |
-|Large | 1 | 23 | Light| -4 | 12 |
-|Huge | 1 | 28 | Light| -9 | 16 |
-|Gargantuan | 1 | 38 | Light| -19 | 24 |
-|Colossal | 1 | 58 | Light| -39 | 32 |
-|Titanic | 1 | 98 | Light| -79 | 48 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -5 | Medium| 41 | 2 |
-|Diminutive | 1 | 15 | Medium| 21 | 3 |
-|Tiny | 1 | 25 | Medium| 11 | 5 |
-|Small | 1 | 30 | Medium| 6 | 7 |
-|Medium | 1 | 35 | Medium| 1 | 10 |
-|Large | 1 | 40 | Medium| -4 | 15 |
-|Huge | 1 | 45 | Medium| -9 | 20 |
-|Gargantuan | 1 | 55 | Medium| -19 | 30 |
-|Colossal | 1 | 75 | Medium| -39 | 40 |
-|Titanic | 1 | 115 | Medium| -79 | 60 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -5 | Heavy| 41 | 8 |
-|Diminutive | 1 | 15 | Heavy| 21 | 11 |
-|Tiny | 1 | 25 | Heavy| 11 | 17 |
-|Small | 1 | 30 | Heavy| 6 | 23 |
-|Medium | 1 | 35 | Heavy| 1 | 34 |
-|Large | 1 | 40 | Heavy| -4 | 51 |
-|Huge | 1 | 45 | Heavy| -9 | 68 |
-|Gargantuan | 1 | 55 | Heavy| -19 | 102 |
-|Colossal | 1 | 75 | Heavy| -39 | 136 |
-|Titanic | 1 | 115 | Heavy| -79 | 204 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -31 | No Armor| 41 | 1 |
-|Diminutive | 1 | -11 | No Armor| 21 | 1 |
-|Tiny | 1 | -1 | No Armor| 11 | 3 |
-|Small | 1 | 3 | No Armor| 6 | 4 |
-|Medium | 1 | 8 | No Armor| 1 | 6 |
-|Large | 1 | 13 | No Armor| -4 | 9 |
-|Huge | 1 | 18 | No Armor| -9 | 12 |
-|Gargantuan | 1 | 28 | No Armor| -19 | 18 |
-|Colossal | 1 | 48 | No Armor| -39 | 24 |
-|Titanic | 1 | 88 | No Armor| -79 | 36 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | No Armor| 40 | 2 |
-|Diminutive | 1 | -1 | No Armor| 20 | 2 |
-|Tiny | 1 | 8 | No Armor| 10 | 4 |
-|Small | 1 | 13 | No Armor| 5 | 5 |
-|Medium | 1 | 18 | No Armor| 0 | 8 |
-|Large | 1 | 23 | No Armor| -5 | 12 |
-|Huge | 1 | 28 | No Armor| -10 | 16 |
-|Gargantuan | 1 | 38 | No Armor| -20 | 24 |
-|Colossal | 1 | 58 | No Armor| -40 | 32 |
-|Titanic | 1 | 98 | No Armor| -80 | 48 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -5 | Medium| 41 | 2 |
-|Diminutive | 1 | 15 | Medium| 21 | 3 |
-|Tiny | 1 | 25 | Medium| 11 | 5 |
-|Small | 1 | 30 | Medium| 6 | 7 |
-|Medium | 1 | 35 | Medium| 1 | 10 |
-|Large | 1 | 40 | Medium| -4 | 15 |
-|Huge | 1 | 45 | Medium| -9 | 20 |
-|Gargantuan | 1 | 55 | Medium| -19 | 30 |
-|Colossal | 1 | 75 | Medium| -39 | 40 |
-|Titanic | 1 | 115 | Medium| -79 | 60 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -5 | No Armor| 41 | 2 |
-|Diminutive | 1 | 15 | No Armor| 21 | 3 |
-|Tiny | 1 | 25 | No Armor| 11 | 5 |
-|Small | 1 | 30 | No Armor| 6 | 7 |
-|Medium | 1 | 35 | No Armor| 1 | 10 |
-|Large | 1 | 40 | No Armor| -4 | 15 |
-|Huge | 1 | 45 | No Armor| -9 | 20 |
-|Gargantuan | 1 | 55 | No Armor| -19 | 30 |
-|Colossal | 1 | 75 | No Armor| -39 | 40 |
-|Titanic | 1 | 115 | No Armor| -79 | 60 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | No Armor| 41 | 2 |
-|Diminutive | 1 | -1 | No Armor| 21 | 2 |
-|Tiny | 1 | 8 | No Armor| 11 | 4 |
-|Small | 1 | 13 | No Armor| 6 | 5 |
-|Medium | 1 | 18 | No Armor| 1 | 8 |
-|Large | 1 | 23 | No Armor| -4 | 12 |
-|Huge | 1 | 28 | No Armor| -9 | 16 |
-|Gargantuan | 1 | 38 | No Armor| -19 | 24 |
-|Colossal | 1 | 58 | No Armor| -39 | 32 |
-|Titanic | 1 | 98 | No Armor| -79 | 48 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -5 | No Armor| 41 | 2 |
-|Diminutive | 1 | 15 | No Armor| 21 | 3 |
-|Tiny | 1 | 25 | No Armor| 11 | 5 |
-|Small | 1 | 30 | No Armor| 6 | 7 |
-|Medium | 1 | 35 | No Armor| 1 | 10 |
-|Large | 1 | 40 | No Armor| -4 | 15 |
-|Huge | 1 | 45 | No Armor| -9 | 20 |
-|Gargantuan | 1 | 55 | No Armor| -19 | 30 |
-|Colossal | 1 | 75 | No Armor| -39 | 40 |
-|Titanic | 1 | 115 | No Armor| -79 | 60 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | No Armor| 41 | 2 |
-|Diminutive | 1 | -1 | No Armor| 21 | 2 |
-|Tiny | 1 | 8 | No Armor| 11 | 4 |
-|Small | 1 | 13 | No Armor| 6 | 5 |
-|Medium | 1 | 18 | No Armor| 1 | 8 |
-|Large | 1 | 23 | No Armor| -4 | 12 |
-|Huge | 1 | 28 | No Armor| -9 | 16 |
-|Gargantuan | 1 | 38 | No Armor| -19 | 24 |
-|Colossal | 1 | 58 | No Armor| -39 | 32 |
-|Titanic | 1 | 98 | No Armor| -79 | 48 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | No Armor| 41 | 2 |
-|Diminutive | 1 | -1 | No Armor| 21 | 2 |
-|Tiny | 1 | 8 | No Armor| 11 | 4 |
-|Small | 1 | 13 | No Armor| 6 | 5 |
-|Medium | 1 | 18 | No Armor| 1 | 8 |
-|Large | 1 | 23 | No Armor| -4 | 12 |
-|Huge | 1 | 28 | No Armor| -9 | 16 |
-|Gargantuan | 1 | 38 | No Armor| -19 | 24 |
-|Colossal | 1 | 58 | No Armor| -39 | 32 |
-|Titanic | 1 | 98 | No Armor| -79 | 48 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 1 | -21 | Light| 41 | 2 |
-|Diminutive | 1 | -1 | Light| 21 | 2 |
-|Tiny | 1 | 8 | Light| 11 | 4 |
-|Small | 1 | 13 | Light| 6 | 5 |
-|Medium | 1 | 18 | Light| 1 | 8 |
-|Large | 1 | 23 | Light| -4 | 12 |
-|Huge | 1 | 28 | Light| -9 | 16 |
-|Gargantuan | 1 | 38 | Light| -19 | 24 |
-|Colossal | 1 | 58 | Light| -39 | 32 |
-|Titanic | 1 | 98 | Light| -79 | 48 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | Light| 47 | 7 |
-|Diminutive | 6 | 25 | Light| 27 | 9 |
-|Tiny | 6 | 35 | Light| 17 | 14 |
-|Small | 6 | 40 | Light| 12 | 19 |
-|Medium | 6 | 45 | Light| 7 | 28 |
-|Large | 6 | 50 | Light| 2 | 42 |
-|Huge | 6 | 55 | Light| -3 | 56 |
-|Gargantuan | 6 | 65 | Light| -13 | 84 |
-|Colossal | 6 | 85 | Light| -33 | 112 |
-|Titanic | 6 | 125 | Light| -73 | 168 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | Light| 47 | 7 |
-|Diminutive | 6 | 25 | Light| 27 | 9 |
-|Tiny | 6 | 35 | Light| 17 | 14 |
-|Small | 6 | 40 | Light| 12 | 19 |
-|Medium | 6 | 45 | Light| 7 | 28 |
-|Large | 6 | 50 | Light| 2 | 42 |
-|Huge | 6 | 55 | Light| -3 | 56 |
-|Gargantuan | 6 | 65 | Light| -13 | 84 |
-|Colossal | 6 | 85 | Light| -33 | 112 |
-|Titanic | 6 | 125 | Light| -73 | 168 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 32 | Medium| 47 | 8 |
-|Diminutive | 6 | 52 | Medium| 27 | 11 |
-|Tiny | 6 | 62 | Medium| 17 | 17 |
-|Small | 6 | 67 | Medium| 12 | 24 |
-|Medium | 6 | 72 | Medium| 7 | 35 |
-|Large | 6 | 77 | Medium| 2 | 52 |
-|Huge | 6 | 82 | Medium| -3 | 70 |
-|Gargantuan | 6 | 92 | Medium| -13 | 105 |
-|Colossal | 6 | 112 | Medium| -33 | 140 |
-|Titanic | 6 | 152 | Medium| -73 | 210 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 32 | Heavy| 47 | 26 |
-|Diminutive | 6 | 52 | Heavy| 27 | 34 |
-|Tiny | 6 | 62 | Heavy| 17 | 52 |
-|Small | 6 | 67 | Heavy| 12 | 72 |
-|Medium | 6 | 72 | Heavy| 7 | 104 |
-|Large | 6 | 77 | Heavy| 2 | 156 |
-|Huge | 6 | 82 | Heavy| -3 | 208 |
-|Gargantuan | 6 | 92 | Heavy| -13 | 312 |
-|Colossal | 6 | 112 | Heavy| -33 | 416 |
-|Titanic | 6 | 152 | Heavy| -73 | 624 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | -14 | No Armor| 47 | 5 |
-|Diminutive | 6 | 6 | No Armor| 27 | 6 |
-|Tiny | 6 | 16 | No Armor| 17 | 10 |
-|Small | 6 | 21 | No Armor| 12 | 14 |
-|Medium | 6 | 26 | No Armor| 7 | 21 |
-|Large | 6 | 31 | No Armor| 2 | 31 |
-|Huge | 6 | 36 | No Armor| -3 | 42 |
-|Gargantuan | 6 | 46 | No Armor| -13 | 63 |
-|Colossal | 6 | 66 | No Armor| -33 | 84 |
-|Titanic | 6 | 106 | No Armor| -73 | 126 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | No Armor| 43 | 7 |
-|Diminutive | 6 | 25 | No Armor| 23 | 9 |
-|Tiny | 6 | 35 | No Armor| 13 | 14 |
-|Small | 6 | 40 | No Armor| 8 | 19 |
-|Medium | 6 | 45 | No Armor| 3 | 28 |
-|Large | 6 | 50 | No Armor| -2 | 42 |
-|Huge | 6 | 55 | No Armor| -7 | 56 |
-|Gargantuan | 6 | 65 | No Armor| -17 | 84 |
-|Colossal | 6 | 85 | No Armor| -37 | 112 |
-|Titanic | 6 | 125 | No Armor| -77 | 168 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 32 | Medium| 47 | 8 |
-|Diminutive | 6 | 52 | Medium| 27 | 11 |
-|Tiny | 6 | 62 | Medium| 17 | 17 |
-|Small | 6 | 67 | Medium| 12 | 24 |
-|Medium | 6 | 72 | Medium| 7 | 35 |
-|Large | 6 | 77 | Medium| 2 | 52 |
-|Huge | 6 | 82 | Medium| -3 | 70 |
-|Gargantuan | 6 | 92 | Medium| -13 | 105 |
-|Colossal | 6 | 112 | Medium| -33 | 140 |
-|Titanic | 6 | 152 | Medium| -73 | 210 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 32 | No Armor| 47 | 8 |
-|Diminutive | 6 | 52 | No Armor| 27 | 11 |
-|Tiny | 6 | 62 | No Armor| 17 | 17 |
-|Small | 6 | 67 | No Armor| 12 | 24 |
-|Medium | 6 | 72 | No Armor| 7 | 35 |
-|Large | 6 | 77 | No Armor| 2 | 52 |
-|Huge | 6 | 82 | No Armor| -3 | 70 |
-|Gargantuan | 6 | 92 | No Armor| -13 | 105 |
-|Colossal | 6 | 112 | No Armor| -33 | 140 |
-|Titanic | 6 | 152 | No Armor| -73 | 210 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | No Armor| 47 | 7 |
-|Diminutive | 6 | 25 | No Armor| 27 | 9 |
-|Tiny | 6 | 35 | No Armor| 17 | 14 |
-|Small | 6 | 40 | No Armor| 12 | 19 |
-|Medium | 6 | 45 | No Armor| 7 | 28 |
-|Large | 6 | 50 | No Armor| 2 | 42 |
-|Huge | 6 | 55 | No Armor| -3 | 56 |
-|Gargantuan | 6 | 65 | No Armor| -13 | 84 |
-|Colossal | 6 | 85 | No Armor| -33 | 112 |
-|Titanic | 6 | 125 | No Armor| -73 | 168 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 32 | No Armor| 47 | 8 |
-|Diminutive | 6 | 52 | No Armor| 27 | 11 |
-|Tiny | 6 | 62 | No Armor| 17 | 17 |
-|Small | 6 | 67 | No Armor| 12 | 24 |
-|Medium | 6 | 72 | No Armor| 7 | 35 |
-|Large | 6 | 77 | No Armor| 2 | 52 |
-|Huge | 6 | 82 | No Armor| -3 | 70 |
-|Gargantuan | 6 | 92 | No Armor| -13 | 105 |
-|Colossal | 6 | 112 | No Armor| -33 | 140 |
-|Titanic | 6 | 152 | No Armor| -73 | 210 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | No Armor| 47 | 7 |
-|Diminutive | 6 | 25 | No Armor| 27 | 9 |
-|Tiny | 6 | 35 | No Armor| 17 | 14 |
-|Small | 6 | 40 | No Armor| 12 | 19 |
-|Medium | 6 | 45 | No Armor| 7 | 28 |
-|Large | 6 | 50 | No Armor| 2 | 42 |
-|Huge | 6 | 55 | No Armor| -3 | 56 |
-|Gargantuan | 6 | 65 | No Armor| -13 | 84 |
-|Colossal | 6 | 85 | No Armor| -33 | 112 |
-|Titanic | 6 | 125 | No Armor| -73 | 168 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | No Armor| 47 | 7 |
-|Diminutive | 6 | 25 | No Armor| 27 | 9 |
-|Tiny | 6 | 35 | No Armor| 17 | 14 |
-|Small | 6 | 40 | No Armor| 12 | 19 |
-|Medium | 6 | 45 | No Armor| 7 | 28 |
-|Large | 6 | 50 | No Armor| 2 | 42 |
-|Huge | 6 | 55 | No Armor| -3 | 56 |
-|Gargantuan | 6 | 65 | No Armor| -13 | 84 |
-|Colossal | 6 | 85 | No Armor| -33 | 112 |
-|Titanic | 6 | 125 | No Armor| -73 | 168 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 6 | 5 | Light| 47 | 7 |
-|Diminutive | 6 | 25 | Light| 27 | 9 |
-|Tiny | 6 | 35 | Light| 17 | 14 |
-|Small | 6 | 40 | Light| 12 | 19 |
-|Medium | 6 | 45 | Light| 7 | 28 |
-|Large | 6 | 50 | Light| 2 | 42 |
-|Huge | 6 | 55 | Light| -3 | 56 |
-|Gargantuan | 6 | 65 | Light| -13 | 84 |
-|Colossal | 6 | 85 | Light| -33 | 112 |
-|Titanic | 6 | 125 | Light| -73 | 168 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | Light| 53 | 10 |
-|Diminutive | 11 | 36 | Light| 33 | 14 |
-|Tiny | 11 | 46 | Light| 23 | 21 |
-|Small | 11 | 51 | Light| 18 | 30 |
-|Medium | 11 | 56 | Light| 13 | 43 |
-|Large | 11 | 61 | Light| 8 | 64 |
-|Huge | 11 | 66 | Light| 3 | 86 |
-|Gargantuan | 11 | 76 | Light| -7 | 129 |
-|Colossal | 11 | 96 | Light| -27 | 172 |
-|Titanic | 11 | 136 | Light| -67 | 259 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | Light| 53 | 10 |
-|Diminutive | 11 | 36 | Light| 33 | 14 |
-|Tiny | 11 | 46 | Light| 23 | 21 |
-|Small | 11 | 51 | Light| 18 | 30 |
-|Medium | 11 | 56 | Light| 13 | 43 |
-|Large | 11 | 61 | Light| 8 | 64 |
-|Huge | 11 | 66 | Light| 3 | 86 |
-|Gargantuan | 11 | 76 | Light| -7 | 129 |
-|Colossal | 11 | 96 | Light| -27 | 172 |
-|Titanic | 11 | 136 | Light| -67 | 259 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 43 | Medium| 53 | 13 |
-|Diminutive | 11 | 63 | Medium| 33 | 17 |
-|Tiny | 11 | 73 | Medium| 23 | 27 |
-|Small | 11 | 78 | Medium| 18 | 37 |
-|Medium | 11 | 83 | Medium| 13 | 54 |
-|Large | 11 | 88 | Medium| 8 | 81 |
-|Huge | 11 | 93 | Medium| 3 | 108 |
-|Gargantuan | 11 | 103 | Medium| -7 | 162 |
-|Colossal | 11 | 123 | Medium| -27 | 216 |
-|Titanic | 11 | 163 | Medium| -67 | 324 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 43 | Heavy| 53 | 33 |
-|Diminutive | 11 | 63 | Heavy| 33 | 44 |
-|Tiny | 11 | 73 | Heavy| 23 | 67 |
-|Small | 11 | 78 | Heavy| 18 | 93 |
-|Medium | 11 | 83 | Heavy| 13 | 134 |
-|Large | 11 | 88 | Heavy| 8 | 201 |
-|Huge | 11 | 93 | Heavy| 3 | 268 |
-|Gargantuan | 11 | 103 | Heavy| -7 | 402 |
-|Colossal | 11 | 123 | Heavy| -27 | 536 |
-|Titanic | 11 | 163 | Heavy| -67 | 804 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | -6 | No Armor| 53 | 8 |
-|Diminutive | 11 | 13 | No Armor| 33 | 10 |
-|Tiny | 11 | 23 | No Armor| 23 | 16 |
-|Small | 11 | 28 | No Armor| 18 | 22 |
-|Medium | 11 | 33 | No Armor| 13 | 32 |
-|Large | 11 | 38 | No Armor| 8 | 48 |
-|Huge | 11 | 43 | No Armor| 3 | 64 |
-|Gargantuan | 11 | 53 | No Armor| -7 | 97 |
-|Colossal | 11 | 73 | No Armor| -27 | 129 |
-|Titanic | 11 | 113 | No Armor| -67 | 194 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | No Armor| 46 | 10 |
-|Diminutive | 11 | 36 | No Armor| 26 | 14 |
-|Tiny | 11 | 46 | No Armor| 16 | 21 |
-|Small | 11 | 51 | No Armor| 11 | 30 |
-|Medium | 11 | 56 | No Armor| 6 | 43 |
-|Large | 11 | 61 | No Armor| 1 | 64 |
-|Huge | 11 | 66 | No Armor| -4 | 86 |
-|Gargantuan | 11 | 76 | No Armor| -14 | 129 |
-|Colossal | 11 | 96 | No Armor| -34 | 172 |
-|Titanic | 11 | 136 | No Armor| -74 | 259 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 43 | Medium| 53 | 13 |
-|Diminutive | 11 | 63 | Medium| 33 | 17 |
-|Tiny | 11 | 73 | Medium| 23 | 27 |
-|Small | 11 | 78 | Medium| 18 | 37 |
-|Medium | 11 | 83 | Medium| 13 | 54 |
-|Large | 11 | 88 | Medium| 8 | 81 |
-|Huge | 11 | 93 | Medium| 3 | 108 |
-|Gargantuan | 11 | 103 | Medium| -7 | 162 |
-|Colossal | 11 | 123 | Medium| -27 | 216 |
-|Titanic | 11 | 163 | Medium| -67 | 324 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 43 | No Armor| 53 | 13 |
-|Diminutive | 11 | 63 | No Armor| 33 | 17 |
-|Tiny | 11 | 73 | No Armor| 23 | 27 |
-|Small | 11 | 78 | No Armor| 18 | 37 |
-|Medium | 11 | 83 | No Armor| 13 | 54 |
-|Large | 11 | 88 | No Armor| 8 | 81 |
-|Huge | 11 | 93 | No Armor| 3 | 108 |
-|Gargantuan | 11 | 103 | No Armor| -7 | 162 |
-|Colossal | 11 | 123 | No Armor| -27 | 216 |
-|Titanic | 11 | 163 | No Armor| -67 | 324 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | No Armor| 53 | 10 |
-|Diminutive | 11 | 36 | No Armor| 33 | 14 |
-|Tiny | 11 | 46 | No Armor| 23 | 21 |
-|Small | 11 | 51 | No Armor| 18 | 30 |
-|Medium | 11 | 56 | No Armor| 13 | 43 |
-|Large | 11 | 61 | No Armor| 8 | 64 |
-|Huge | 11 | 66 | No Armor| 3 | 86 |
-|Gargantuan | 11 | 76 | No Armor| -7 | 129 |
-|Colossal | 11 | 96 | No Armor| -27 | 172 |
-|Titanic | 11 | 136 | No Armor| -67 | 259 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 43 | No Armor| 53 | 13 |
-|Diminutive | 11 | 63 | No Armor| 33 | 17 |
-|Tiny | 11 | 73 | No Armor| 23 | 27 |
-|Small | 11 | 78 | No Armor| 18 | 37 |
-|Medium | 11 | 83 | No Armor| 13 | 54 |
-|Large | 11 | 88 | No Armor| 8 | 81 |
-|Huge | 11 | 93 | No Armor| 3 | 108 |
-|Gargantuan | 11 | 103 | No Armor| -7 | 162 |
-|Colossal | 11 | 123 | No Armor| -27 | 216 |
-|Titanic | 11 | 163 | No Armor| -67 | 324 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | No Armor| 53 | 10 |
-|Diminutive | 11 | 36 | No Armor| 33 | 14 |
-|Tiny | 11 | 46 | No Armor| 23 | 21 |
-|Small | 11 | 51 | No Armor| 18 | 30 |
-|Medium | 11 | 56 | No Armor| 13 | 43 |
-|Large | 11 | 61 | No Armor| 8 | 64 |
-|Huge | 11 | 66 | No Armor| 3 | 86 |
-|Gargantuan | 11 | 76 | No Armor| -7 | 129 |
-|Colossal | 11 | 96 | No Armor| -27 | 172 |
-|Titanic | 11 | 136 | No Armor| -67 | 259 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | No Armor| 53 | 10 |
-|Diminutive | 11 | 36 | No Armor| 33 | 14 |
-|Tiny | 11 | 46 | No Armor| 23 | 21 |
-|Small | 11 | 51 | No Armor| 18 | 30 |
-|Medium | 11 | 56 | No Armor| 13 | 43 |
-|Large | 11 | 61 | No Armor| 8 | 64 |
-|Huge | 11 | 66 | No Armor| 3 | 86 |
-|Gargantuan | 11 | 76 | No Armor| -7 | 129 |
-|Colossal | 11 | 96 | No Armor| -27 | 172 |
-|Titanic | 11 | 136 | No Armor| -67 | 259 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 11 | 16 | Light| 53 | 10 |
-|Diminutive | 11 | 36 | Light| 33 | 14 |
-|Tiny | 11 | 46 | Light| 23 | 21 |
-|Small | 11 | 51 | Light| 18 | 30 |
-|Medium | 11 | 56 | Light| 13 | 43 |
-|Large | 11 | 61 | Light| 8 | 64 |
-|Huge | 11 | 66 | Light| 3 | 86 |
-|Gargantuan | 11 | 76 | Light| -7 | 129 |
-|Colossal | 11 | 96 | Light| -27 | 172 |
-|Titanic | 11 | 136 | Light| -67 | 259 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | Light| 60 | 12 |
-|Diminutive | 16 | 41 | Light| 40 | 16 |
-|Tiny | 16 | 51 | Light| 30 | 25 |
-|Small | 16 | 56 | Light| 25 | 35 |
-|Medium | 16 | 61 | Light| 20 | 51 |
-|Large | 16 | 66 | Light| 15 | 76 |
-|Huge | 16 | 71 | Light| 10 | 102 |
-|Gargantuan | 16 | 81 | Light| 0 | 153 |
-|Colossal | 16 | 101 | Light| -20 | 204 |
-|Titanic | 16 | 141 | Light| -60 | 307 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | Light| 60 | 12 |
-|Diminutive | 16 | 41 | Light| 40 | 16 |
-|Tiny | 16 | 51 | Light| 30 | 25 |
-|Small | 16 | 56 | Light| 25 | 35 |
-|Medium | 16 | 61 | Light| 20 | 51 |
-|Large | 16 | 66 | Light| 15 | 76 |
-|Huge | 16 | 71 | Light| 10 | 102 |
-|Gargantuan | 16 | 81 | Light| 0 | 153 |
-|Colossal | 16 | 101 | Light| -20 | 204 |
-|Titanic | 16 | 141 | Light| -60 | 307 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 51 | Medium| 60 | 16 |
-|Diminutive | 16 | 71 | Medium| 40 | 21 |
-|Tiny | 16 | 81 | Medium| 30 | 32 |
-|Small | 16 | 86 | Medium| 25 | 44 |
-|Medium | 16 | 91 | Medium| 20 | 64 |
-|Large | 16 | 96 | Medium| 15 | 96 |
-|Huge | 16 | 101 | Medium| 10 | 128 |
-|Gargantuan | 16 | 111 | Medium| 0 | 192 |
-|Colossal | 16 | 131 | Medium| -20 | 256 |
-|Titanic | 16 | 171 | Medium| -60 | 384 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 51 | Heavy| 60 | 38 |
-|Diminutive | 16 | 71 | Heavy| 40 | 50 |
-|Tiny | 16 | 81 | Heavy| 30 | 76 |
-|Small | 16 | 86 | Heavy| 25 | 106 |
-|Medium | 16 | 91 | Heavy| 20 | 152 |
-|Large | 16 | 96 | Heavy| 15 | 228 |
-|Huge | 16 | 101 | Heavy| 10 | 304 |
-|Gargantuan | 16 | 111 | Heavy| 0 | 456 |
-|Colossal | 16 | 131 | Heavy| -20 | 608 |
-|Titanic | 16 | 171 | Heavy| -60 | 912 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | -2 | No Armor| 60 | 9 |
-|Diminutive | 16 | 18 | No Armor| 40 | 12 |
-|Tiny | 16 | 28 | No Armor| 30 | 19 |
-|Small | 16 | 33 | No Armor| 25 | 26 |
-|Medium | 16 | 38 | No Armor| 20 | 38 |
-|Large | 16 | 43 | No Armor| 15 | 57 |
-|Huge | 16 | 48 | No Armor| 10 | 76 |
-|Gargantuan | 16 | 58 | No Armor| 0 | 115 |
-|Colossal | 16 | 78 | No Armor| -20 | 153 |
-|Titanic | 16 | 118 | No Armor| -60 | 230 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | No Armor| 50 | 12 |
-|Diminutive | 16 | 41 | No Armor| 30 | 16 |
-|Tiny | 16 | 51 | No Armor| 20 | 25 |
-|Small | 16 | 56 | No Armor| 15 | 35 |
-|Medium | 16 | 61 | No Armor| 10 | 51 |
-|Large | 16 | 66 | No Armor| 5 | 76 |
-|Huge | 16 | 71 | No Armor| 0 | 102 |
-|Gargantuan | 16 | 81 | No Armor| -10 | 153 |
-|Colossal | 16 | 101 | No Armor| -30 | 204 |
-|Titanic | 16 | 141 | No Armor| -70 | 307 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 51 | Medium| 60 | 16 |
-|Diminutive | 16 | 71 | Medium| 40 | 21 |
-|Tiny | 16 | 81 | Medium| 30 | 32 |
-|Small | 16 | 86 | Medium| 25 | 44 |
-|Medium | 16 | 91 | Medium| 20 | 64 |
-|Large | 16 | 96 | Medium| 15 | 96 |
-|Huge | 16 | 101 | Medium| 10 | 128 |
-|Gargantuan | 16 | 111 | Medium| 0 | 192 |
-|Colossal | 16 | 131 | Medium| -20 | 256 |
-|Titanic | 16 | 171 | Medium| -60 | 384 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 51 | No Armor| 60 | 16 |
-|Diminutive | 16 | 71 | No Armor| 40 | 21 |
-|Tiny | 16 | 81 | No Armor| 30 | 32 |
-|Small | 16 | 86 | No Armor| 25 | 44 |
-|Medium | 16 | 91 | No Armor| 20 | 64 |
-|Large | 16 | 96 | No Armor| 15 | 96 |
-|Huge | 16 | 101 | No Armor| 10 | 128 |
-|Gargantuan | 16 | 111 | No Armor| 0 | 192 |
-|Colossal | 16 | 131 | No Armor| -20 | 256 |
-|Titanic | 16 | 171 | No Armor| -60 | 384 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | No Armor| 60 | 12 |
-|Diminutive | 16 | 41 | No Armor| 40 | 16 |
-|Tiny | 16 | 51 | No Armor| 30 | 25 |
-|Small | 16 | 56 | No Armor| 25 | 35 |
-|Medium | 16 | 61 | No Armor| 20 | 51 |
-|Large | 16 | 66 | No Armor| 15 | 76 |
-|Huge | 16 | 71 | No Armor| 10 | 102 |
-|Gargantuan | 16 | 81 | No Armor| 0 | 153 |
-|Colossal | 16 | 101 | No Armor| -20 | 204 |
-|Titanic | 16 | 141 | No Armor| -60 | 307 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 51 | No Armor| 60 | 16 |
-|Diminutive | 16 | 71 | No Armor| 40 | 21 |
-|Tiny | 16 | 81 | No Armor| 30 | 32 |
-|Small | 16 | 86 | No Armor| 25 | 44 |
-|Medium | 16 | 91 | No Armor| 20 | 64 |
-|Large | 16 | 96 | No Armor| 15 | 96 |
-|Huge | 16 | 101 | No Armor| 10 | 128 |
-|Gargantuan | 16 | 111 | No Armor| 0 | 192 |
-|Colossal | 16 | 131 | No Armor| -20 | 256 |
-|Titanic | 16 | 171 | No Armor| -60 | 384 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | No Armor| 60 | 12 |
-|Diminutive | 16 | 41 | No Armor| 40 | 16 |
-|Tiny | 16 | 51 | No Armor| 30 | 25 |
-|Small | 16 | 56 | No Armor| 25 | 35 |
-|Medium | 16 | 61 | No Armor| 20 | 51 |
-|Large | 16 | 66 | No Armor| 15 | 76 |
-|Huge | 16 | 71 | No Armor| 10 | 102 |
-|Gargantuan | 16 | 81 | No Armor| 0 | 153 |
-|Colossal | 16 | 101 | No Armor| -20 | 204 |
-|Titanic | 16 | 141 | No Armor| -60 | 307 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | No Armor| 60 | 12 |
-|Diminutive | 16 | 41 | No Armor| 40 | 16 |
-|Tiny | 16 | 51 | No Armor| 30 | 25 |
-|Small | 16 | 56 | No Armor| 25 | 35 |
-|Medium | 16 | 61 | No Armor| 20 | 51 |
-|Large | 16 | 66 | No Armor| 15 | 76 |
-|Huge | 16 | 71 | No Armor| 10 | 102 |
-|Gargantuan | 16 | 81 | No Armor| 0 | 153 |
-|Colossal | 16 | 101 | No Armor| -20 | 204 |
-|Titanic | 16 | 141 | No Armor| -60 | 307 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 16 | 21 | Light| 60 | 12 |
-|Diminutive | 16 | 41 | Light| 40 | 16 |
-|Tiny | 16 | 51 | Light| 30 | 25 |
-|Small | 16 | 56 | Light| 25 | 35 |
-|Medium | 16 | 61 | Light| 20 | 51 |
-|Large | 16 | 66 | Light| 15 | 76 |
-|Huge | 16 | 71 | Light| 10 | 102 |
-|Gargantuan | 16 | 81 | Light| 0 | 153 |
-|Colossal | 16 | 101 | Light| -20 | 204 |
-|Titanic | 16 | 141 | Light| -60 | 307 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | Light| 66 | 14 |
-|Diminutive | 21 | 45 | Light| 46 | 19 |
-|Tiny | 21 | 55 | Light| 36 | 28 |
-|Small | 21 | 60 | Light| 31 | 40 |
-|Medium | 21 | 65 | Light| 26 | 57 |
-|Large | 21 | 70 | Light| 21 | 86 |
-|Huge | 21 | 75 | Light| 16 | 115 |
-|Gargantuan | 21 | 85 | Light| 6 | 172 |
-|Colossal | 21 | 105 | Light| -14 | 230 |
-|Titanic | 21 | 145 | Light| -54 | 345 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | Light| 66 | 14 |
-|Diminutive | 21 | 45 | Light| 46 | 19 |
-|Tiny | 21 | 55 | Light| 36 | 28 |
-|Small | 21 | 60 | Light| 31 | 40 |
-|Medium | 21 | 65 | Light| 26 | 57 |
-|Large | 21 | 70 | Light| 21 | 86 |
-|Huge | 21 | 75 | Light| 16 | 115 |
-|Gargantuan | 21 | 85 | Light| 6 | 172 |
-|Colossal | 21 | 105 | Light| -14 | 230 |
-|Titanic | 21 | 145 | Light| -54 | 345 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 58 | Medium| 66 | 18 |
-|Diminutive | 21 | 78 | Medium| 46 | 23 |
-|Tiny | 21 | 88 | Medium| 36 | 36 |
-|Small | 21 | 93 | Medium| 31 | 50 |
-|Medium | 21 | 98 | Medium| 26 | 72 |
-|Large | 21 | 103 | Medium| 21 | 108 |
-|Huge | 21 | 108 | Medium| 16 | 144 |
-|Gargantuan | 21 | 118 | Medium| 6 | 216 |
-|Colossal | 21 | 138 | Medium| -14 | 288 |
-|Titanic | 21 | 178 | Medium| -54 | 432 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 58 | Heavy| 66 | 40 |
-|Diminutive | 21 | 78 | Heavy| 46 | 53 |
-|Tiny | 21 | 88 | Heavy| 36 | 81 |
-|Small | 21 | 93 | Heavy| 31 | 113 |
-|Medium | 21 | 98 | Heavy| 26 | 162 |
-|Large | 21 | 103 | Heavy| 21 | 243 |
-|Huge | 21 | 108 | Heavy| 16 | 324 |
-|Gargantuan | 21 | 118 | Heavy| 6 | 486 |
-|Colossal | 21 | 138 | Heavy| -14 | 648 |
-|Titanic | 21 | 178 | Heavy| -54 | 972 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 0 | No Armor| 66 | 10 |
-|Diminutive | 21 | 20 | No Armor| 46 | 14 |
-|Tiny | 21 | 30 | No Armor| 36 | 21 |
-|Small | 21 | 35 | No Armor| 31 | 30 |
-|Medium | 21 | 40 | No Armor| 26 | 43 |
-|Large | 21 | 45 | No Armor| 21 | 64 |
-|Huge | 21 | 50 | No Armor| 16 | 86 |
-|Gargantuan | 21 | 60 | No Armor| 6 | 129 |
-|Colossal | 21 | 80 | No Armor| -14 | 172 |
-|Titanic | 21 | 120 | No Armor| -54 | 259 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | No Armor| 53 | 14 |
-|Diminutive | 21 | 45 | No Armor| 33 | 19 |
-|Tiny | 21 | 55 | No Armor| 23 | 28 |
-|Small | 21 | 60 | No Armor| 18 | 40 |
-|Medium | 21 | 65 | No Armor| 13 | 57 |
-|Large | 21 | 70 | No Armor| 8 | 86 |
-|Huge | 21 | 75 | No Armor| 3 | 115 |
-|Gargantuan | 21 | 85 | No Armor| -7 | 172 |
-|Colossal | 21 | 105 | No Armor| -27 | 230 |
-|Titanic | 21 | 145 | No Armor| -67 | 345 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 58 | Medium| 66 | 18 |
-|Diminutive | 21 | 78 | Medium| 46 | 23 |
-|Tiny | 21 | 88 | Medium| 36 | 36 |
-|Small | 21 | 93 | Medium| 31 | 50 |
-|Medium | 21 | 98 | Medium| 26 | 72 |
-|Large | 21 | 103 | Medium| 21 | 108 |
-|Huge | 21 | 108 | Medium| 16 | 144 |
-|Gargantuan | 21 | 118 | Medium| 6 | 216 |
-|Colossal | 21 | 138 | Medium| -14 | 288 |
-|Titanic | 21 | 178 | Medium| -54 | 432 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 58 | No Armor| 66 | 18 |
-|Diminutive | 21 | 78 | No Armor| 46 | 23 |
-|Tiny | 21 | 88 | No Armor| 36 | 36 |
-|Small | 21 | 93 | No Armor| 31 | 50 |
-|Medium | 21 | 98 | No Armor| 26 | 72 |
-|Large | 21 | 103 | No Armor| 21 | 108 |
-|Huge | 21 | 108 | No Armor| 16 | 144 |
-|Gargantuan | 21 | 118 | No Armor| 6 | 216 |
-|Colossal | 21 | 138 | No Armor| -14 | 288 |
-|Titanic | 21 | 178 | No Armor| -54 | 432 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | No Armor| 66 | 14 |
-|Diminutive | 21 | 45 | No Armor| 46 | 19 |
-|Tiny | 21 | 55 | No Armor| 36 | 28 |
-|Small | 21 | 60 | No Armor| 31 | 40 |
-|Medium | 21 | 65 | No Armor| 26 | 57 |
-|Large | 21 | 70 | No Armor| 21 | 86 |
-|Huge | 21 | 75 | No Armor| 16 | 115 |
-|Gargantuan | 21 | 85 | No Armor| 6 | 172 |
-|Colossal | 21 | 105 | No Armor| -14 | 230 |
-|Titanic | 21 | 145 | No Armor| -54 | 345 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 58 | No Armor| 66 | 18 |
-|Diminutive | 21 | 78 | No Armor| 46 | 23 |
-|Tiny | 21 | 88 | No Armor| 36 | 36 |
-|Small | 21 | 93 | No Armor| 31 | 50 |
-|Medium | 21 | 98 | No Armor| 26 | 72 |
-|Large | 21 | 103 | No Armor| 21 | 108 |
-|Huge | 21 | 108 | No Armor| 16 | 144 |
-|Gargantuan | 21 | 118 | No Armor| 6 | 216 |
-|Colossal | 21 | 138 | No Armor| -14 | 288 |
-|Titanic | 21 | 178 | No Armor| -54 | 432 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | No Armor| 66 | 14 |
-|Diminutive | 21 | 45 | No Armor| 46 | 19 |
-|Tiny | 21 | 55 | No Armor| 36 | 28 |
-|Small | 21 | 60 | No Armor| 31 | 40 |
-|Medium | 21 | 65 | No Armor| 26 | 57 |
-|Large | 21 | 70 | No Armor| 21 | 86 |
-|Huge | 21 | 75 | No Armor| 16 | 115 |
-|Gargantuan | 21 | 85 | No Armor| 6 | 172 |
-|Colossal | 21 | 105 | No Armor| -14 | 230 |
-|Titanic | 21 | 145 | No Armor| -54 | 345 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | No Armor| 66 | 14 |
-|Diminutive | 21 | 45 | No Armor| 46 | 19 |
-|Tiny | 21 | 55 | No Armor| 36 | 28 |
-|Small | 21 | 60 | No Armor| 31 | 40 |
-|Medium | 21 | 65 | No Armor| 26 | 57 |
-|Large | 21 | 70 | No Armor| 21 | 86 |
-|Huge | 21 | 75 | No Armor| 16 | 115 |
-|Gargantuan | 21 | 85 | No Armor| 6 | 172 |
-|Colossal | 21 | 105 | No Armor| -14 | 230 |
-|Titanic | 21 | 145 | No Armor| -54 | 345 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 21 | 25 | Light| 66 | 14 |
-|Diminutive | 21 | 45 | Light| 46 | 19 |
-|Tiny | 21 | 55 | Light| 36 | 28 |
-|Small | 21 | 60 | Light| 31 | 40 |
-|Medium | 21 | 65 | Light| 26 | 57 |
-|Large | 21 | 70 | Light| 21 | 86 |
-|Huge | 21 | 75 | Light| 16 | 115 |
-|Gargantuan | 21 | 85 | Light| 6 | 172 |
-|Colossal | 21 | 105 | Light| -14 | 230 |
-|Titanic | 21 | 145 | Light| -54 | 345 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | Light| 72 | 15 |
-|Diminutive | 26 | 49 | Light| 52 | 20 |
-|Tiny | 26 | 59 | Light| 42 | 30 |
-|Small | 26 | 64 | Light| 37 | 43 |
-|Medium | 26 | 69 | Light| 32 | 61 |
-|Large | 26 | 74 | Light| 27 | 92 |
-|Huge | 26 | 79 | Light| 22 | 123 |
-|Gargantuan | 26 | 89 | Light| 12 | 184 |
-|Colossal | 26 | 109 | Light| -8 | 246 |
-|Titanic | 26 | 149 | Light| -48 | 369 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | Light| 72 | 15 |
-|Diminutive | 26 | 49 | Light| 52 | 20 |
-|Tiny | 26 | 59 | Light| 42 | 30 |
-|Small | 26 | 64 | Light| 37 | 43 |
-|Medium | 26 | 69 | Light| 32 | 61 |
-|Large | 26 | 74 | Light| 27 | 92 |
-|Huge | 26 | 79 | Light| 22 | 123 |
-|Gargantuan | 26 | 89 | Light| 12 | 184 |
-|Colossal | 26 | 109 | Light| -8 | 246 |
-|Titanic | 26 | 149 | Light| -48 | 369 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 66 | Medium| 72 | 19 |
-|Diminutive | 26 | 86 | Medium| 52 | 25 |
-|Tiny | 26 | 96 | Medium| 42 | 38 |
-|Small | 26 | 101 | Medium| 37 | 53 |
-|Medium | 26 | 106 | Medium| 32 | 77 |
-|Large | 26 | 111 | Medium| 27 | 115 |
-|Huge | 26 | 116 | Medium| 22 | 154 |
-|Gargantuan | 26 | 126 | Medium| 12 | 231 |
-|Colossal | 26 | 146 | Medium| -8 | 308 |
-|Titanic | 26 | 186 | Medium| -48 | 462 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 66 | Heavy| 72 | 42 |
-|Diminutive | 26 | 86 | Heavy| 52 | 56 |
-|Tiny | 26 | 96 | Heavy| 42 | 85 |
-|Small | 26 | 101 | Heavy| 37 | 118 |
-|Medium | 26 | 106 | Heavy| 32 | 170 |
-|Large | 26 | 111 | Heavy| 27 | 255 |
-|Huge | 26 | 116 | Heavy| 22 | 340 |
-|Gargantuan | 26 | 126 | Heavy| 12 | 510 |
-|Colossal | 26 | 146 | Heavy| -8 | 680 |
-|Titanic | 26 | 186 | Heavy| -48 | 1020 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 2 | No Armor| 72 | 11 |
-|Diminutive | 26 | 22 | No Armor| 52 | 15 |
-|Tiny | 26 | 32 | No Armor| 42 | 23 |
-|Small | 26 | 37 | No Armor| 37 | 32 |
-|Medium | 26 | 42 | No Armor| 32 | 46 |
-|Large | 26 | 47 | No Armor| 27 | 69 |
-|Huge | 26 | 52 | No Armor| 22 | 92 |
-|Gargantuan | 26 | 62 | No Armor| 12 | 138 |
-|Colossal | 26 | 82 | No Armor| -8 | 184 |
-|Titanic | 26 | 122 | No Armor| -48 | 277 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | No Armor| 56 | 15 |
-|Diminutive | 26 | 49 | No Armor| 36 | 20 |
-|Tiny | 26 | 59 | No Armor| 26 | 30 |
-|Small | 26 | 64 | No Armor| 21 | 43 |
-|Medium | 26 | 69 | No Armor| 16 | 61 |
-|Large | 26 | 74 | No Armor| 11 | 92 |
-|Huge | 26 | 79 | No Armor| 6 | 123 |
-|Gargantuan | 26 | 89 | No Armor| -4 | 184 |
-|Colossal | 26 | 109 | No Armor| -24 | 246 |
-|Titanic | 26 | 149 | No Armor| -64 | 369 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 66 | Medium| 72 | 19 |
-|Diminutive | 26 | 86 | Medium| 52 | 25 |
-|Tiny | 26 | 96 | Medium| 42 | 38 |
-|Small | 26 | 101 | Medium| 37 | 53 |
-|Medium | 26 | 106 | Medium| 32 | 77 |
-|Large | 26 | 111 | Medium| 27 | 115 |
-|Huge | 26 | 116 | Medium| 22 | 154 |
-|Gargantuan | 26 | 126 | Medium| 12 | 231 |
-|Colossal | 26 | 146 | Medium| -8 | 308 |
-|Titanic | 26 | 186 | Medium| -48 | 462 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 66 | No Armor| 72 | 19 |
-|Diminutive | 26 | 86 | No Armor| 52 | 25 |
-|Tiny | 26 | 96 | No Armor| 42 | 38 |
-|Small | 26 | 101 | No Armor| 37 | 53 |
-|Medium | 26 | 106 | No Armor| 32 | 77 |
-|Large | 26 | 111 | No Armor| 27 | 115 |
-|Huge | 26 | 116 | No Armor| 22 | 154 |
-|Gargantuan | 26 | 126 | No Armor| 12 | 231 |
-|Colossal | 26 | 146 | No Armor| -8 | 308 |
-|Titanic | 26 | 186 | No Armor| -48 | 462 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | No Armor| 72 | 15 |
-|Diminutive | 26 | 49 | No Armor| 52 | 20 |
-|Tiny | 26 | 59 | No Armor| 42 | 30 |
-|Small | 26 | 64 | No Armor| 37 | 43 |
-|Medium | 26 | 69 | No Armor| 32 | 61 |
-|Large | 26 | 74 | No Armor| 27 | 92 |
-|Huge | 26 | 79 | No Armor| 22 | 123 |
-|Gargantuan | 26 | 89 | No Armor| 12 | 184 |
-|Colossal | 26 | 109 | No Armor| -8 | 246 |
-|Titanic | 26 | 149 | No Armor| -48 | 369 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 66 | No Armor| 72 | 19 |
-|Diminutive | 26 | 86 | No Armor| 52 | 25 |
-|Tiny | 26 | 96 | No Armor| 42 | 38 |
-|Small | 26 | 101 | No Armor| 37 | 53 |
-|Medium | 26 | 106 | No Armor| 32 | 77 |
-|Large | 26 | 111 | No Armor| 27 | 115 |
-|Huge | 26 | 116 | No Armor| 22 | 154 |
-|Gargantuan | 26 | 126 | No Armor| 12 | 231 |
-|Colossal | 26 | 146 | No Armor| -8 | 308 |
-|Titanic | 26 | 186 | No Armor| -48 | 462 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | No Armor| 72 | 15 |
-|Diminutive | 26 | 49 | No Armor| 52 | 20 |
-|Tiny | 26 | 59 | No Armor| 42 | 30 |
-|Small | 26 | 64 | No Armor| 37 | 43 |
-|Medium | 26 | 69 | No Armor| 32 | 61 |
-|Large | 26 | 74 | No Armor| 27 | 92 |
-|Huge | 26 | 79 | No Armor| 22 | 123 |
-|Gargantuan | 26 | 89 | No Armor| 12 | 184 |
-|Colossal | 26 | 109 | No Armor| -8 | 246 |
-|Titanic | 26 | 149 | No Armor| -48 | 369 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | No Armor| 72 | 15 |
-|Diminutive | 26 | 49 | No Armor| 52 | 20 |
-|Tiny | 26 | 59 | No Armor| 42 | 30 |
-|Small | 26 | 64 | No Armor| 37 | 43 |
-|Medium | 26 | 69 | No Armor| 32 | 61 |
-|Large | 26 | 74 | No Armor| 27 | 92 |
-|Huge | 26 | 79 | No Armor| 22 | 123 |
-|Gargantuan | 26 | 89 | No Armor| 12 | 184 |
-|Colossal | 26 | 109 | No Armor| -8 | 246 |
-|Titanic | 26 | 149 | No Armor| -48 | 369 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 26 | 29 | Light| 72 | 15 |
-|Diminutive | 26 | 49 | Light| 52 | 20 |
-|Tiny | 26 | 59 | Light| 42 | 30 |
-|Small | 26 | 64 | Light| 37 | 43 |
-|Medium | 26 | 69 | Light| 32 | 61 |
-|Large | 26 | 74 | Light| 27 | 92 |
-|Huge | 26 | 79 | Light| 22 | 123 |
-|Gargantuan | 26 | 89 | Light| 12 | 184 |
-|Colossal | 26 | 109 | Light| -8 | 246 |
-|Titanic | 26 | 149 | Light| -48 | 369 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | Light| 78 | 16 |
-|Diminutive | 31 | 52 | Light| 58 | 21 |
-|Tiny | 31 | 62 | Light| 48 | 32 |
-|Small | 31 | 67 | Light| 43 | 45 |
-|Medium | 31 | 72 | Light| 38 | 64 |
-|Large | 31 | 77 | Light| 33 | 97 |
-|Huge | 31 | 82 | Light| 28 | 129 |
-|Gargantuan | 31 | 92 | Light| 18 | 194 |
-|Colossal | 31 | 112 | Light| -2 | 259 |
-|Titanic | 31 | 152 | Light| -42 | 388 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | Light| 78 | 16 |
-|Diminutive | 31 | 52 | Light| 58 | 21 |
-|Tiny | 31 | 62 | Light| 48 | 32 |
-|Small | 31 | 67 | Light| 43 | 45 |
-|Medium | 31 | 72 | Light| 38 | 64 |
-|Large | 31 | 77 | Light| 33 | 97 |
-|Huge | 31 | 82 | Light| 28 | 129 |
-|Gargantuan | 31 | 92 | Light| 18 | 194 |
-|Colossal | 31 | 112 | Light| -2 | 259 |
-|Titanic | 31 | 152 | Light| -42 | 388 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 73 | Medium| 78 | 20 |
-|Diminutive | 31 | 93 | Medium| 58 | 26 |
-|Tiny | 31 | 103 | Medium| 48 | 40 |
-|Small | 31 | 108 | Medium| 43 | 56 |
-|Medium | 31 | 113 | Medium| 38 | 81 |
-|Large | 31 | 118 | Medium| 33 | 121 |
-|Huge | 31 | 123 | Medium| 28 | 162 |
-|Gargantuan | 31 | 133 | Medium| 18 | 243 |
-|Colossal | 31 | 153 | Medium| -2 | 324 |
-|Titanic | 31 | 193 | Medium| -42 | 486 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 73 | Heavy| 78 | 44 |
-|Diminutive | 31 | 93 | Heavy| 58 | 58 |
-|Tiny | 31 | 103 | Heavy| 48 | 89 |
-|Small | 31 | 108 | Heavy| 43 | 124 |
-|Medium | 31 | 113 | Heavy| 38 | 178 |
-|Large | 31 | 118 | Heavy| 33 | 267 |
-|Huge | 31 | 123 | Heavy| 28 | 356 |
-|Gargantuan | 31 | 133 | Heavy| 18 | 534 |
-|Colossal | 31 | 153 | Heavy| -2 | 712 |
-|Titanic | 31 | 193 | Heavy| -42 | 1068 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 4 | No Armor| 78 | 12 |
-|Diminutive | 31 | 24 | No Armor| 58 | 16 |
-|Tiny | 31 | 34 | No Armor| 48 | 24 |
-|Small | 31 | 39 | No Armor| 43 | 34 |
-|Medium | 31 | 44 | No Armor| 38 | 48 |
-|Large | 31 | 49 | No Armor| 33 | 72 |
-|Huge | 31 | 54 | No Armor| 28 | 97 |
-|Gargantuan | 31 | 64 | No Armor| 18 | 145 |
-|Colossal | 31 | 84 | No Armor| -2 | 194 |
-|Titanic | 31 | 124 | No Armor| -42 | 291 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | No Armor| 59 | 16 |
-|Diminutive | 31 | 52 | No Armor| 39 | 21 |
-|Tiny | 31 | 62 | No Armor| 29 | 32 |
-|Small | 31 | 67 | No Armor| 24 | 45 |
-|Medium | 31 | 72 | No Armor| 19 | 64 |
-|Large | 31 | 77 | No Armor| 14 | 97 |
-|Huge | 31 | 82 | No Armor| 9 | 129 |
-|Gargantuan | 31 | 92 | No Armor| -1 | 194 |
-|Colossal | 31 | 112 | No Armor| -21 | 259 |
-|Titanic | 31 | 152 | No Armor| -61 | 388 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 73 | Medium| 78 | 20 |
-|Diminutive | 31 | 93 | Medium| 58 | 26 |
-|Tiny | 31 | 103 | Medium| 48 | 40 |
-|Small | 31 | 108 | Medium| 43 | 56 |
-|Medium | 31 | 113 | Medium| 38 | 81 |
-|Large | 31 | 118 | Medium| 33 | 121 |
-|Huge | 31 | 123 | Medium| 28 | 162 |
-|Gargantuan | 31 | 133 | Medium| 18 | 243 |
-|Colossal | 31 | 153 | Medium| -2 | 324 |
-|Titanic | 31 | 193 | Medium| -42 | 486 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 73 | No Armor| 78 | 20 |
-|Diminutive | 31 | 93 | No Armor| 58 | 26 |
-|Tiny | 31 | 103 | No Armor| 48 | 40 |
-|Small | 31 | 108 | No Armor| 43 | 56 |
-|Medium | 31 | 113 | No Armor| 38 | 81 |
-|Large | 31 | 118 | No Armor| 33 | 121 |
-|Huge | 31 | 123 | No Armor| 28 | 162 |
-|Gargantuan | 31 | 133 | No Armor| 18 | 243 |
-|Colossal | 31 | 153 | No Armor| -2 | 324 |
-|Titanic | 31 | 193 | No Armor| -42 | 486 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | No Armor| 78 | 16 |
-|Diminutive | 31 | 52 | No Armor| 58 | 21 |
-|Tiny | 31 | 62 | No Armor| 48 | 32 |
-|Small | 31 | 67 | No Armor| 43 | 45 |
-|Medium | 31 | 72 | No Armor| 38 | 64 |
-|Large | 31 | 77 | No Armor| 33 | 97 |
-|Huge | 31 | 82 | No Armor| 28 | 129 |
-|Gargantuan | 31 | 92 | No Armor| 18 | 194 |
-|Colossal | 31 | 112 | No Armor| -2 | 259 |
-|Titanic | 31 | 152 | No Armor| -42 | 388 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 73 | No Armor| 78 | 20 |
-|Diminutive | 31 | 93 | No Armor| 58 | 26 |
-|Tiny | 31 | 103 | No Armor| 48 | 40 |
-|Small | 31 | 108 | No Armor| 43 | 56 |
-|Medium | 31 | 113 | No Armor| 38 | 81 |
-|Large | 31 | 118 | No Armor| 33 | 121 |
-|Huge | 31 | 123 | No Armor| 28 | 162 |
-|Gargantuan | 31 | 133 | No Armor| 18 | 243 |
-|Colossal | 31 | 153 | No Armor| -2 | 324 |
-|Titanic | 31 | 193 | No Armor| -42 | 486 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | No Armor| 78 | 16 |
-|Diminutive | 31 | 52 | No Armor| 58 | 21 |
-|Tiny | 31 | 62 | No Armor| 48 | 32 |
-|Small | 31 | 67 | No Armor| 43 | 45 |
-|Medium | 31 | 72 | No Armor| 38 | 64 |
-|Large | 31 | 77 | No Armor| 33 | 97 |
-|Huge | 31 | 82 | No Armor| 28 | 129 |
-|Gargantuan | 31 | 92 | No Armor| 18 | 194 |
-|Colossal | 31 | 112 | No Armor| -2 | 259 |
-|Titanic | 31 | 152 | No Armor| -42 | 388 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | No Armor| 78 | 16 |
-|Diminutive | 31 | 52 | No Armor| 58 | 21 |
-|Tiny | 31 | 62 | No Armor| 48 | 32 |
-|Small | 31 | 67 | No Armor| 43 | 45 |
-|Medium | 31 | 72 | No Armor| 38 | 64 |
-|Large | 31 | 77 | No Armor| 33 | 97 |
-|Huge | 31 | 82 | No Armor| 28 | 129 |
-|Gargantuan | 31 | 92 | No Armor| 18 | 194 |
-|Colossal | 31 | 112 | No Armor| -2 | 259 |
-|Titanic | 31 | 152 | No Armor| -42 | 388 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 31 | 32 | Light| 78 | 16 |
-|Diminutive | 31 | 52 | Light| 58 | 21 |
-|Tiny | 31 | 62 | Light| 48 | 32 |
-|Small | 31 | 67 | Light| 43 | 45 |
-|Medium | 31 | 72 | Light| 38 | 64 |
-|Large | 31 | 77 | Light| 33 | 97 |
-|Huge | 31 | 82 | Light| 28 | 129 |
-|Gargantuan | 31 | 92 | Light| 18 | 194 |
-|Colossal | 31 | 112 | Light| -2 | 259 |
-|Titanic | 31 | 152 | Light| -42 | 388 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | Light| 85 | 16 |
-|Diminutive | 36 | 56 | Light| 65 | 21 |
-|Tiny | 36 | 66 | Light| 55 | 33 |
-|Small | 36 | 71 | Light| 50 | 46 |
-|Medium | 36 | 76 | Light| 45 | 66 |
-|Large | 36 | 81 | Light| 40 | 99 |
-|Huge | 36 | 86 | Light| 35 | 132 |
-|Gargantuan | 36 | 96 | Light| 25 | 199 |
-|Colossal | 36 | 116 | Light| 5 | 265 |
-|Titanic | 36 | 156 | Light| -35 | 398 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | Light| 85 | 16 |
-|Diminutive | 36 | 56 | Light| 65 | 21 |
-|Tiny | 36 | 66 | Light| 55 | 33 |
-|Small | 36 | 71 | Light| 50 | 46 |
-|Medium | 36 | 76 | Light| 45 | 66 |
-|Large | 36 | 81 | Light| 40 | 99 |
-|Huge | 36 | 86 | Light| 35 | 132 |
-|Gargantuan | 36 | 96 | Light| 25 | 199 |
-|Colossal | 36 | 116 | Light| 5 | 265 |
-|Titanic | 36 | 156 | Light| -35 | 398 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 81 | Medium| 85 | 20 |
-|Diminutive | 36 | 101 | Medium| 65 | 27 |
-|Tiny | 36 | 111 | Medium| 55 | 41 |
-|Small | 36 | 116 | Medium| 50 | 58 |
-|Medium | 36 | 121 | Medium| 45 | 83 |
-|Large | 36 | 126 | Medium| 40 | 124 |
-|Huge | 36 | 131 | Medium| 35 | 166 |
-|Gargantuan | 36 | 141 | Medium| 25 | 249 |
-|Colossal | 36 | 161 | Medium| 5 | 332 |
-|Titanic | 36 | 201 | Medium| -35 | 498 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 81 | Heavy| 85 | 46 |
-|Diminutive | 36 | 101 | Heavy| 65 | 61 |
-|Tiny | 36 | 111 | Heavy| 55 | 93 |
-|Small | 36 | 116 | Heavy| 50 | 130 |
-|Medium | 36 | 121 | Heavy| 45 | 186 |
-|Large | 36 | 126 | Heavy| 40 | 279 |
-|Huge | 36 | 131 | Heavy| 35 | 372 |
-|Gargantuan | 36 | 141 | Heavy| 25 | 558 |
-|Colossal | 36 | 161 | Heavy| 5 | 744 |
-|Titanic | 36 | 201 | Heavy| -35 | 1116 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 6 | No Armor| 85 | 12 |
-|Diminutive | 36 | 26 | No Armor| 65 | 16 |
-|Tiny | 36 | 36 | No Armor| 55 | 24 |
-|Small | 36 | 41 | No Armor| 50 | 34 |
-|Medium | 36 | 46 | No Armor| 45 | 49 |
-|Large | 36 | 51 | No Armor| 40 | 74 |
-|Huge | 36 | 56 | No Armor| 35 | 99 |
-|Gargantuan | 36 | 66 | No Armor| 25 | 149 |
-|Colossal | 36 | 86 | No Armor| 5 | 199 |
-|Titanic | 36 | 126 | No Armor| -35 | 298 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | No Armor| 62 | 16 |
-|Diminutive | 36 | 56 | No Armor| 42 | 21 |
-|Tiny | 36 | 66 | No Armor| 32 | 33 |
-|Small | 36 | 71 | No Armor| 27 | 46 |
-|Medium | 36 | 76 | No Armor| 22 | 66 |
-|Large | 36 | 81 | No Armor| 17 | 99 |
-|Huge | 36 | 86 | No Armor| 12 | 132 |
-|Gargantuan | 36 | 96 | No Armor| 2 | 199 |
-|Colossal | 36 | 116 | No Armor| -18 | 265 |
-|Titanic | 36 | 156 | No Armor| -58 | 398 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 81 | Medium| 85 | 20 |
-|Diminutive | 36 | 101 | Medium| 65 | 27 |
-|Tiny | 36 | 111 | Medium| 55 | 41 |
-|Small | 36 | 116 | Medium| 50 | 58 |
-|Medium | 36 | 121 | Medium| 45 | 83 |
-|Large | 36 | 126 | Medium| 40 | 124 |
-|Huge | 36 | 131 | Medium| 35 | 166 |
-|Gargantuan | 36 | 141 | Medium| 25 | 249 |
-|Colossal | 36 | 161 | Medium| 5 | 332 |
-|Titanic | 36 | 201 | Medium| -35 | 498 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 81 | No Armor| 85 | 20 |
-|Diminutive | 36 | 101 | No Armor| 65 | 27 |
-|Tiny | 36 | 111 | No Armor| 55 | 41 |
-|Small | 36 | 116 | No Armor| 50 | 58 |
-|Medium | 36 | 121 | No Armor| 45 | 83 |
-|Large | 36 | 126 | No Armor| 40 | 124 |
-|Huge | 36 | 131 | No Armor| 35 | 166 |
-|Gargantuan | 36 | 141 | No Armor| 25 | 249 |
-|Colossal | 36 | 161 | No Armor| 5 | 332 |
-|Titanic | 36 | 201 | No Armor| -35 | 498 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | No Armor| 85 | 16 |
-|Diminutive | 36 | 56 | No Armor| 65 | 21 |
-|Tiny | 36 | 66 | No Armor| 55 | 33 |
-|Small | 36 | 71 | No Armor| 50 | 46 |
-|Medium | 36 | 76 | No Armor| 45 | 66 |
-|Large | 36 | 81 | No Armor| 40 | 99 |
-|Huge | 36 | 86 | No Armor| 35 | 132 |
-|Gargantuan | 36 | 96 | No Armor| 25 | 199 |
-|Colossal | 36 | 116 | No Armor| 5 | 265 |
-|Titanic | 36 | 156 | No Armor| -35 | 398 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 81 | No Armor| 85 | 20 |
-|Diminutive | 36 | 101 | No Armor| 65 | 27 |
-|Tiny | 36 | 111 | No Armor| 55 | 41 |
-|Small | 36 | 116 | No Armor| 50 | 58 |
-|Medium | 36 | 121 | No Armor| 45 | 83 |
-|Large | 36 | 126 | No Armor| 40 | 124 |
-|Huge | 36 | 131 | No Armor| 35 | 166 |
-|Gargantuan | 36 | 141 | No Armor| 25 | 249 |
-|Colossal | 36 | 161 | No Armor| 5 | 332 |
-|Titanic | 36 | 201 | No Armor| -35 | 498 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | No Armor| 85 | 16 |
-|Diminutive | 36 | 56 | No Armor| 65 | 21 |
-|Tiny | 36 | 66 | No Armor| 55 | 33 |
-|Small | 36 | 71 | No Armor| 50 | 46 |
-|Medium | 36 | 76 | No Armor| 45 | 66 |
-|Large | 36 | 81 | No Armor| 40 | 99 |
-|Huge | 36 | 86 | No Armor| 35 | 132 |
-|Gargantuan | 36 | 96 | No Armor| 25 | 199 |
-|Colossal | 36 | 116 | No Armor| 5 | 265 |
-|Titanic | 36 | 156 | No Armor| -35 | 398 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | No Armor| 85 | 16 |
-|Diminutive | 36 | 56 | No Armor| 65 | 21 |
-|Tiny | 36 | 66 | No Armor| 55 | 33 |
-|Small | 36 | 71 | No Armor| 50 | 46 |
-|Medium | 36 | 76 | No Armor| 45 | 66 |
-|Large | 36 | 81 | No Armor| 40 | 99 |
-|Huge | 36 | 86 | No Armor| 35 | 132 |
-|Gargantuan | 36 | 96 | No Armor| 25 | 199 |
-|Colossal | 36 | 116 | No Armor| 5 | 265 |
-|Titanic | 36 | 156 | No Armor| -35 | 398 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 36 | 36 | Light| 85 | 16 |
-|Diminutive | 36 | 56 | Light| 65 | 21 |
-|Tiny | 36 | 66 | Light| 55 | 33 |
-|Small | 36 | 71 | Light| 50 | 46 |
-|Medium | 36 | 76 | Light| 45 | 66 |
-|Large | 36 | 81 | Light| 40 | 99 |
-|Huge | 36 | 86 | Light| 35 | 132 |
-|Gargantuan | 36 | 96 | Light| 25 | 199 |
-|Colossal | 36 | 116 | Light| 5 | 265 |
-|Titanic | 36 | 156 | Light| -35 | 398 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | Light| 90 | 17 |
-|Diminutive | 41 | 60 | Light| 70 | 22 |
-|Tiny | 41 | 70 | Light| 60 | 34 |
-|Small | 41 | 75 | Light| 55 | 48 |
-|Medium | 41 | 80 | Light| 50 | 68 |
-|Large | 41 | 85 | Light| 45 | 103 |
-|Huge | 41 | 90 | Light| 40 | 137 |
-|Gargantuan | 41 | 100 | Light| 30 | 206 |
-|Colossal | 41 | 120 | Light| 10 | 275 |
-|Titanic | 41 | 160 | Light| -30 | 412 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | Light| 90 | 17 |
-|Diminutive | 41 | 60 | Light| 70 | 22 |
-|Tiny | 41 | 70 | Light| 60 | 34 |
-|Small | 41 | 75 | Light| 55 | 48 |
-|Medium | 41 | 80 | Light| 50 | 68 |
-|Large | 41 | 85 | Light| 45 | 103 |
-|Huge | 41 | 90 | Light| 40 | 137 |
-|Gargantuan | 41 | 100 | Light| 30 | 206 |
-|Colossal | 41 | 120 | Light| 10 | 275 |
-|Titanic | 41 | 160 | Light| -30 | 412 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 88 | Medium| 90 | 21 |
-|Diminutive | 41 | 108 | Medium| 70 | 28 |
-|Tiny | 41 | 118 | Medium| 60 | 43 |
-|Small | 41 | 123 | Medium| 55 | 60 |
-|Medium | 41 | 128 | Medium| 50 | 86 |
-|Large | 41 | 133 | Medium| 45 | 129 |
-|Huge | 41 | 138 | Medium| 40 | 172 |
-|Gargantuan | 41 | 148 | Medium| 30 | 258 |
-|Colossal | 41 | 168 | Medium| 10 | 344 |
-|Titanic | 41 | 208 | Medium| -30 | 516 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 88 | Heavy| 90 | 48 |
-|Diminutive | 41 | 108 | Heavy| 70 | 63 |
-|Tiny | 41 | 118 | Heavy| 60 | 96 |
-|Small | 41 | 123 | Heavy| 55 | 134 |
-|Medium | 41 | 128 | Heavy| 50 | 192 |
-|Large | 41 | 133 | Heavy| 45 | 288 |
-|Huge | 41 | 138 | Heavy| 40 | 384 |
-|Gargantuan | 41 | 148 | Heavy| 30 | 576 |
-|Colossal | 41 | 168 | Heavy| 10 | 768 |
-|Titanic | 41 | 208 | Heavy| -30 | 1152 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 8 | No Armor| 90 | 12 |
-|Diminutive | 41 | 28 | No Armor| 70 | 17 |
-|Tiny | 41 | 38 | No Armor| 60 | 25 |
-|Small | 41 | 43 | No Armor| 55 | 36 |
-|Medium | 41 | 48 | No Armor| 50 | 51 |
-|Large | 41 | 53 | No Armor| 45 | 77 |
-|Huge | 41 | 58 | No Armor| 40 | 103 |
-|Gargantuan | 41 | 68 | No Armor| 30 | 154 |
-|Colossal | 41 | 88 | No Armor| 10 | 206 |
-|Titanic | 41 | 128 | No Armor| -30 | 309 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | No Armor| 65 | 17 |
-|Diminutive | 41 | 60 | No Armor| 45 | 22 |
-|Tiny | 41 | 70 | No Armor| 35 | 34 |
-|Small | 41 | 75 | No Armor| 30 | 48 |
-|Medium | 41 | 80 | No Armor| 25 | 68 |
-|Large | 41 | 85 | No Armor| 20 | 103 |
-|Huge | 41 | 90 | No Armor| 15 | 137 |
-|Gargantuan | 41 | 100 | No Armor| 5 | 206 |
-|Colossal | 41 | 120 | No Armor| -15 | 275 |
-|Titanic | 41 | 160 | No Armor| -55 | 412 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 88 | Medium| 90 | 21 |
-|Diminutive | 41 | 108 | Medium| 70 | 28 |
-|Tiny | 41 | 118 | Medium| 60 | 43 |
-|Small | 41 | 123 | Medium| 55 | 60 |
-|Medium | 41 | 128 | Medium| 50 | 86 |
-|Large | 41 | 133 | Medium| 45 | 129 |
-|Huge | 41 | 138 | Medium| 40 | 172 |
-|Gargantuan | 41 | 148 | Medium| 30 | 258 |
-|Colossal | 41 | 168 | Medium| 10 | 344 |
-|Titanic | 41 | 208 | Medium| -30 | 516 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 88 | No Armor| 90 | 21 |
-|Diminutive | 41 | 108 | No Armor| 70 | 28 |
-|Tiny | 41 | 118 | No Armor| 60 | 43 |
-|Small | 41 | 123 | No Armor| 55 | 60 |
-|Medium | 41 | 128 | No Armor| 50 | 86 |
-|Large | 41 | 133 | No Armor| 45 | 129 |
-|Huge | 41 | 138 | No Armor| 40 | 172 |
-|Gargantuan | 41 | 148 | No Armor| 30 | 258 |
-|Colossal | 41 | 168 | No Armor| 10 | 344 |
-|Titanic | 41 | 208 | No Armor| -30 | 516 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | No Armor| 90 | 17 |
-|Diminutive | 41 | 60 | No Armor| 70 | 22 |
-|Tiny | 41 | 70 | No Armor| 60 | 34 |
-|Small | 41 | 75 | No Armor| 55 | 48 |
-|Medium | 41 | 80 | No Armor| 50 | 68 |
-|Large | 41 | 85 | No Armor| 45 | 103 |
-|Huge | 41 | 90 | No Armor| 40 | 137 |
-|Gargantuan | 41 | 100 | No Armor| 30 | 206 |
-|Colossal | 41 | 120 | No Armor| 10 | 275 |
-|Titanic | 41 | 160 | No Armor| -30 | 412 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 88 | No Armor| 90 | 21 |
-|Diminutive | 41 | 108 | No Armor| 70 | 28 |
-|Tiny | 41 | 118 | No Armor| 60 | 43 |
-|Small | 41 | 123 | No Armor| 55 | 60 |
-|Medium | 41 | 128 | No Armor| 50 | 86 |
-|Large | 41 | 133 | No Armor| 45 | 129 |
-|Huge | 41 | 138 | No Armor| 40 | 172 |
-|Gargantuan | 41 | 148 | No Armor| 30 | 258 |
-|Colossal | 41 | 168 | No Armor| 10 | 344 |
-|Titanic | 41 | 208 | No Armor| -30 | 516 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | No Armor| 90 | 17 |
-|Diminutive | 41 | 60 | No Armor| 70 | 22 |
-|Tiny | 41 | 70 | No Armor| 60 | 34 |
-|Small | 41 | 75 | No Armor| 55 | 48 |
-|Medium | 41 | 80 | No Armor| 50 | 68 |
-|Large | 41 | 85 | No Armor| 45 | 103 |
-|Huge | 41 | 90 | No Armor| 40 | 137 |
-|Gargantuan | 41 | 100 | No Armor| 30 | 206 |
-|Colossal | 41 | 120 | No Armor| 10 | 275 |
-|Titanic | 41 | 160 | No Armor| -30 | 412 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | No Armor| 90 | 17 |
-|Diminutive | 41 | 60 | No Armor| 70 | 22 |
-|Tiny | 41 | 70 | No Armor| 60 | 34 |
-|Small | 41 | 75 | No Armor| 55 | 48 |
-|Medium | 41 | 80 | No Armor| 50 | 68 |
-|Large | 41 | 85 | No Armor| 45 | 103 |
-|Huge | 41 | 90 | No Armor| 40 | 137 |
-|Gargantuan | 41 | 100 | No Armor| 30 | 206 |
-|Colossal | 41 | 120 | No Armor| 10 | 275 |
-|Titanic | 41 | 160 | No Armor| -30 | 412 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 41 | 40 | Light| 90 | 17 |
-|Diminutive | 41 | 60 | Light| 70 | 22 |
-|Tiny | 41 | 70 | Light| 60 | 34 |
-|Small | 41 | 75 | Light| 55 | 48 |
-|Medium | 41 | 80 | Light| 50 | 68 |
-|Large | 41 | 85 | Light| 45 | 103 |
-|Huge | 41 | 90 | Light| 40 | 137 |
-|Gargantuan | 41 | 100 | Light| 30 | 206 |
-|Colossal | 41 | 120 | Light| 10 | 275 |
-|Titanic | 41 | 160 | Light| -30 | 412 |
-
-| Aberration Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | Light| 93 | 17 |
-|Diminutive | 46 | 64 | Light| 73 | 23 |
-|Tiny | 46 | 74 | Light| 63 | 35 |
-|Small | 46 | 79 | Light| 58 | 49 |
-|Medium | 46 | 84 | Light| 53 | 70 |
-|Large | 46 | 89 | Light| 48 | 105 |
-|Huge | 46 | 94 | Light| 43 | 140 |
-|Gargantuan | 46 | 104 | Light| 33 | 211 |
-|Colossal | 46 | 124 | Light| 13 | 281 |
-|Titanic | 46 | 164 | Light| -27 | 422 |
-
-| Animal Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | Light| 93 | 17 |
-|Diminutive | 46 | 64 | Light| 73 | 23 |
-|Tiny | 46 | 74 | Light| 63 | 35 |
-|Small | 46 | 79 | Light| 58 | 49 |
-|Medium | 46 | 84 | Light| 53 | 70 |
-|Large | 46 | 89 | Light| 48 | 105 |
-|Huge | 46 | 94 | Light| 43 | 140 |
-|Gargantuan | 46 | 104 | Light| 33 | 211 |
-|Colossal | 46 | 124 | Light| 13 | 281 |
-|Titanic | 46 | 164 | Light| -27 | 422 |
-
-| Construct Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 96 | Medium| 93 | 22 |
-|Diminutive | 46 | 116 | Medium| 73 | 29 |
-|Tiny | 46 | 126 | Medium| 63 | 44 |
-|Small | 46 | 131 | Medium| 58 | 61 |
-|Medium | 46 | 136 | Medium| 53 | 88 |
-|Large | 46 | 141 | Medium| 48 | 132 |
-|Huge | 46 | 146 | Medium| 43 | 176 |
-|Gargantuan | 46 | 156 | Medium| 33 | 264 |
-|Colossal | 46 | 176 | Medium| 13 | 352 |
-|Titanic | 46 | 216 | Medium| -27 | 528 |
-
-| Dragon Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 96 | Heavy| 93 | 50 |
-|Diminutive | 46 | 116 | Heavy| 73 | 66 |
-|Tiny | 46 | 126 | Heavy| 63 | 100 |
-|Small | 46 | 131 | Heavy| 58 | 140 |
-|Medium | 46 | 136 | Heavy| 53 | 200 |
-|Large | 46 | 141 | Heavy| 48 | 300 |
-|Huge | 46 | 146 | Heavy| 43 | 400 |
-|Gargantuan | 46 | 156 | Heavy| 33 | 600 |
-|Colossal | 46 | 176 | Heavy| 13 | 800 |
-|Titanic | 46 | 216 | Heavy| -27 | 1200 |
-
-| Fey Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 10 | No Armor| 93 | 13 |
-|Diminutive | 46 | 30 | No Armor| 73 | 17 |
-|Tiny | 46 | 40 | No Armor| 63 | 26 |
-|Small | 46 | 45 | No Armor| 58 | 36 |
-|Medium | 46 | 50 | No Armor| 53 | 52 |
-|Large | 46 | 55 | No Armor| 48 | 79 |
-|Huge | 46 | 60 | No Armor| 43 | 105 |
-|Gargantuan | 46 | 70 | No Armor| 33 | 158 |
-|Colossal | 46 | 90 | No Armor| 13 | 211 |
-|Titanic | 46 | 130 | No Armor| -27 | 316 |
-
-| Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | No Armor| 68 | 17 |
-|Diminutive | 46 | 64 | No Armor| 48 | 23 |
-|Tiny | 46 | 74 | No Armor| 38 | 35 |
-|Small | 46 | 79 | No Armor| 33 | 49 |
-|Medium | 46 | 84 | No Armor| 28 | 70 |
-|Large | 46 | 89 | No Armor| 23 | 105 |
-|Huge | 46 | 94 | No Armor| 18 | 140 |
-|Gargantuan | 46 | 104 | No Armor| 8 | 211 |
-|Colossal | 46 | 124 | No Armor| -12 | 281 |
-|Titanic | 46 | 164 | No Armor| -52 | 422 |
-
-| Magical-Beast Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 96 | Medium| 93 | 22 |
-|Diminutive | 46 | 116 | Medium| 73 | 29 |
-|Tiny | 46 | 126 | Medium| 63 | 44 |
-|Small | 46 | 131 | Medium| 58 | 61 |
-|Medium | 46 | 136 | Medium| 53 | 88 |
-|Large | 46 | 141 | Medium| 48 | 132 |
-|Huge | 46 | 146 | Medium| 43 | 176 |
-|Gargantuan | 46 | 156 | Medium| 33 | 264 |
-|Colossal | 46 | 176 | Medium| 13 | 352 |
-|Titanic | 46 | 216 | Medium| -27 | 528 |
-
-| Monstrous-Humanoid Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 96 | No Armor| 93 | 22 |
-|Diminutive | 46 | 116 | No Armor| 73 | 29 |
-|Tiny | 46 | 126 | No Armor| 63 | 44 |
-|Small | 46 | 131 | No Armor| 58 | 61 |
-|Medium | 46 | 136 | No Armor| 53 | 88 |
-|Large | 46 | 141 | No Armor| 48 | 132 |
-|Huge | 46 | 146 | No Armor| 43 | 176 |
-|Gargantuan | 46 | 156 | No Armor| 33 | 264 |
-|Colossal | 46 | 176 | No Armor| 13 | 352 |
-|Titanic | 46 | 216 | No Armor| -27 | 528 |
-
-| Ooze Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | No Armor| 93 | 17 |
-|Diminutive | 46 | 64 | No Armor| 73 | 23 |
-|Tiny | 46 | 74 | No Armor| 63 | 35 |
-|Small | 46 | 79 | No Armor| 58 | 49 |
-|Medium | 46 | 84 | No Armor| 53 | 70 |
-|Large | 46 | 89 | No Armor| 48 | 105 |
-|Huge | 46 | 94 | No Armor| 43 | 140 |
-|Gargantuan | 46 | 104 | No Armor| 33 | 211 |
-|Colossal | 46 | 124 | No Armor| 13 | 281 |
-|Titanic | 46 | 164 | No Armor| -27 | 422 |
-
-| Outsider Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 96 | No Armor| 93 | 22 |
-|Diminutive | 46 | 116 | No Armor| 73 | 29 |
-|Tiny | 46 | 126 | No Armor| 63 | 44 |
-|Small | 46 | 131 | No Armor| 58 | 61 |
-|Medium | 46 | 136 | No Armor| 53 | 88 |
-|Large | 46 | 141 | No Armor| 48 | 132 |
-|Huge | 46 | 146 | No Armor| 43 | 176 |
-|Gargantuan | 46 | 156 | No Armor| 33 | 264 |
-|Colossal | 46 | 176 | No Armor| 13 | 352 |
-|Titanic | 46 | 216 | No Armor| -27 | 528 |
-
-| Plant Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | No Armor| 93 | 17 |
-|Diminutive | 46 | 64 | No Armor| 73 | 23 |
-|Tiny | 46 | 74 | No Armor| 63 | 35 |
-|Small | 46 | 79 | No Armor| 58 | 49 |
-|Medium | 46 | 84 | No Armor| 53 | 70 |
-|Large | 46 | 89 | No Armor| 48 | 105 |
-|Huge | 46 | 94 | No Armor| 43 | 140 |
-|Gargantuan | 46 | 104 | No Armor| 33 | 211 |
-|Colossal | 46 | 124 | No Armor| 13 | 281 |
-|Titanic | 46 | 164 | No Armor| -27 | 422 |
-
-| Undead Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | No Armor| 93 | 17 |
-|Diminutive | 46 | 64 | No Armor| 73 | 23 |
-|Tiny | 46 | 74 | No Armor| 63 | 35 |
-|Small | 46 | 79 | No Armor| 58 | 49 |
-|Medium | 46 | 84 | No Armor| 53 | 70 |
-|Large | 46 | 89 | No Armor| 48 | 105 |
-|Huge | 46 | 94 | No Armor| 43 | 140 |
-|Gargantuan | 46 | 104 | No Armor| 33 | 211 |
-|Colossal | 46 | 124 | No Armor| 13 | 281 |
-|Titanic | 46 | 164 | No Armor| -27 | 422 |
-
-| Vermin Size | LE | OB | AT | DB | Hits |
-|:------------------|:------:|:------:|:------:|:------:|:------:|
-|Fine | 46 | 44 | Light| 93 | 17 |
-|Diminutive | 46 | 64 | Light| 73 | 23 |
-|Tiny | 46 | 74 | Light| 63 | 35 |
-|Small | 46 | 79 | Light| 58 | 49 |
-|Medium | 46 | 84 | Light| 53 | 70 |
-|Large | 46 | 89 | Light| 48 | 105 |
-|Huge | 46 | 94 | Light| 43 | 140 |
-|Gargantuan | 46 | 104 | Light| 33 | 211 |
-|Colossal | 46 | 124 | Light| 13 | 281 |
-|Titanic | 46 | 164 | Light| -27 | 422 |
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 | S#9 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| 0| +20| +15| +10| +5| +0| +0| +0| +0| +0|
+| 1| +35| +25| +17| +10| +2| +1| +0| +0| +0|
+| 2| +50| +35| +25| +15| +5| +2| +1| +0| +0|
+| 3| +56| +45| +32| +20| +7| +3| +1| +0| +0|
+| 4| +62| +52| +40| +25| +10| +5| +2| +1| +0|
+| 5| +68| +56| +47| +30| +12| +6| +3| +1| +0|
+| 6| +72| +60| +52| +35| +15| +7| +3| +1| +0|
+| 7| +75| +64| +55| +40| +17| +8| +4| +2| +1|
+| 8| +78| +68| +58| +45| +20| +10| +5| +2| +1|
+| 9| +80| +71| +61| +50| +22| +11| +5| +2| +1|
+| 10| +82| +73| +64| +52| +25| +12| +6| +3| +1|
+| 11| +83| +75| +67| +54| +27| +13| +6| +3| +1|
+| 12| +85| +77| +70| +56| +30| +15| +7| +3| +1|
+| 13| +86| +79| +71| +58| +32| +16| +8| +4| +2|
+| 14| +88| +80| +73| +60| +35| +17| +8| +4| +2|
+| 15| +89| +81| +74| +62| +37| +18| +9| +4| +2|
+| 16| +91| +82| +76| +64| +40| +20| +10| +5| +2|
+| 17| +92| +83| +77| +66| +42| +21| +10| +5| +2|
+| 18| +94| +84| +79| +68| +45| +22| +11| +5| +2|
+| 19| +95| +85| +80| +70| +47| +23| +11| +5| +2|
+| 20| +97| +86| +81| +71| +50| +25| +12| +6| +3|
+| 21| +98| +87| +81| +72| +51| +26| +13| +6| +3|
+| 22| +100| +88| +82| +73| +52| +27| +13| +6| +3|
+| 23| +101| +89| +83| +74| +53| +28| +14| +7| +3|
+| 24| +103| +90| +84| +75| +54| +30| +15| +7| +3|
+| 25| +104| +91| +84| +76| +55| +31| +15| +7| +3|
+| 26| +106| +92| +85| +77| +56| +32| +16| +8| +4|
+| 27| +107| +93| +86| +78| +57| +33| +16| +8| +4|
+| 28| +109| +94| +87| +79| +58| +35| +17| +8| +4|
+| 29| +110| +95| +87| +80| +59| +36| +18| +9| +4|
+| 30| +112| +96| +88| +80| +60| +37| +18| +9| +4|
+| 31| +113| +97| +89| +81| +61| +38| +19| +9| +4|
+| 32| +115| +98| +90| +81| +62| +40| +20| +10| +5|
+| 33| +116| +99| +90| +82| +63| +41| +20| +10| +5|
+| 34| +118| +100| +91| +82| +64| +42| +21| +10| +5|
+| 35| +119| +101| +92| +83| +65| +43| +21| +10| +5|
+| 36| +121| +102| +93| +83| +66| +45| +22| +11| +5|
+| 37| +122| +103| +93| +84| +67| +46| +23| +11| +5|
+| 38| +124| +104| +94| +84| +68| +47| +23| +11| +5|
+| 39| +125| +105| +95| +85| +69| +48| +24| +12| +6|
+| 40| +127| +106| +96| +85| +70| +50| +25| +12| +6|
+| 41| +128| +107| +96| +86| +70| +50| +25| +12| +6|
+| 42| +130| +108| +97| +86| +71| +51| +26| +13| +6|
+| 43| +131| +109| +98| +87| +71| +51| +26| +13| +6|
+| 44| +133| +110| +99| +87| +72| +52| +27| +13| +6|
+| 45| +134| +111| +99| +88| +72| +52| +28| +14| +7|
+| 46| +136| +112| +100| +88| +73| +53| +28| +14| +7|
+| 47| +137| +113| +101| +89| +73| +53| +29| +14| +7|
+| 48| +139| +114| +102| +89| +74| +54| +30| +15| +7|
+| 49| +140| +115| +102| +90| +74| +54| +30| +15| +7|
+| 50| +142| +116| +103| +90| +75| +55| +31| +15| +7|
+
+
+| Size | OB | DB | Hits | Crit |
+|:------------------|:------:|:------:|:------:|:------:|
+| Fine | -40 | 40 | 0.25 | 20 |
+| Diminutive | -20 | 20 | 0.33 | 15 |
+| Tiny | -10 | 10 | 0.5 | 10 |
+| Small | -5 | 5 | 0.7 | 5 |
+| Medium | 0 | 0 | 1.0 | 0 |
+| Large | 5 | -5 | 1.5 | -10 |
+| Huge | 10 | -10 | 2.0 | -20 |
+| Gargantuan | 20 | -20 | 3.0 | -30 |
+| Colossal | 40 | -40 | 4.0 | -40 |
+| Titanic | 80 | -80 | 6.0 | -50 |
+
+
+| Type | OBi | OBm | OB2i | OB2m | OB3i | OB3m | OB4i | OB4m | AT | DBi | DBm | HTi | HTm |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| Aberration | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | 5 | 1.0 | Light | 6 | 1.0 | 4 | 0.8 |
+| Animal | 2 | 0.75 | 3 | 0.77 | 4 | 0.79 | 5 | 0.81 | Light | 6 | 1.0 | 4 | 0.8 |
+| Construct | 1 | 1.0 | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | Medium | 8 | 0.0 | 4 | 1.0 |
+| Dragon | 1 | 1.0 | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | Heavy | 6 | 1.0 | 3 | 2.0 |
+| Fey | 3 | 0.5 | 4 | 0.55 | 5 | 0.6 | 6 | 0.65 | No Armor | 6 | 1.0 | 4 | 0.6 |
+| Humanoid | 2 | 0.75 | 3 | 0.8 | 4 | 0.9 | 5 | 1.0 | No Armor | 7 | 1.0 | 4 | 0.8 |
+| Magical-Beast | 1 | 1.0 | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | Medium | 6 | 1.0 | 4 | 1.0 |
+| Monstrous-Humanoid | 1 | 1.0 | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | No Armor | 6 | 1.0 | 4 | 1.0 |
+| Ooze | 2 | 0.75 | 3 | 0.8 | 4 | 0.9 | 5 | 1.0 | No Armor | 6 | 1.0 | 4 | 0.8 |
+| Outsider | 1 | 1.0 | 2 | 1.0 | 3 | 1.0 | 4 | 1.0 | No Armor | 6 | 1.0 | 4 | 1.0 |
+| Plant | 2 | 0.75 | 3 | 0.8 | 4 | 0.9 | 5 | 1.0 | No Armor | 6 | 1.0 | 4 | 0.8 |
+| Undead | 2 | 0.75 | 3 | 0.8 | 4 | 0.9 | 5 | 1.0 | No Armor | 6 | 1.0 | 4 | 0.8 |
+| Vermin | 2 | 0.75 | 3 | 0.8 | 4 | 0.9 | 5 | 1.0 | Light | 6 | 1.0 | 4 | 0.8 |
+
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -25 | -30 | -35 | -40 | Light| 40 | 1 |
+|Diminutive | 0 | -5 | -10 | -15 | -20 | Light| 20 | 1 |
+|Tiny | 0 | 5 | 0 | -5 | -10 | Light| 10 | 2 |
+|Small | 0 | 10 | 5 | 0 | -5 | Light| 5 | 2 |
+|Medium | 0 | 15 | 10 | 5 | 0 | Light| 0 | 4 |
+|Large | 0 | 20 | 15 | 10 | 5 | Light| -5 | 6 |
+|Huge | 0 | 25 | 20 | 15 | 10 | Light| -10 | 8 |
+|Gargantuan | 0 | 35 | 30 | 25 | 20 | Light| -20 | 12 |
+|Colossal | 0 | 55 | 50 | 45 | 40 | Light| -40 | 16 |
+|Titanic | 0 | 95 | 90 | 85 | 80 | Light| -80 | 24 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -36 | -40 | Light| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -16 | -20 | Light| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -6 | -10 | Light| 10 | 2 |
+|Small | 0 | 6 | 2 | -1 | -5 | Light| 5 | 2 |
+|Medium | 0 | 11 | 7 | 3 | 0 | Light| 0 | 4 |
+|Large | 0 | 16 | 12 | 8 | 5 | Light| -5 | 6 |
+|Huge | 0 | 21 | 17 | 13 | 10 | Light| -10 | 8 |
+|Gargantuan | 0 | 31 | 27 | 23 | 20 | Light| -20 | 12 |
+|Colossal | 0 | 51 | 47 | 43 | 40 | Light| -40 | 16 |
+|Titanic | 0 | 91 | 87 | 83 | 80 | Light| -80 | 24 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -20 | -25 | -30 | -35 | Medium| 40 | 1 |
+|Diminutive | 0 | 0 | -5 | -10 | -15 | Medium| 20 | 1 |
+|Tiny | 0 | 10 | 5 | 0 | -5 | Medium| 10 | 2 |
+|Small | 0 | 15 | 10 | 5 | 0 | Medium| 5 | 3 |
+|Medium | 0 | 20 | 15 | 10 | 5 | Medium| 0 | 5 |
+|Large | 0 | 25 | 20 | 15 | 10 | Medium| -5 | 7 |
+|Huge | 0 | 30 | 25 | 20 | 15 | Medium| -10 | 10 |
+|Gargantuan | 0 | 40 | 35 | 30 | 25 | Medium| -20 | 15 |
+|Colossal | 0 | 60 | 55 | 50 | 45 | Medium| -40 | 20 |
+|Titanic | 0 | 100 | 95 | 90 | 85 | Medium| -80 | 30 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -20 | -25 | -30 | -35 | Heavy| 40 | 5 |
+|Diminutive | 0 | 0 | -5 | -10 | -15 | Heavy| 20 | 6 |
+|Tiny | 0 | 10 | 5 | 0 | -5 | Heavy| 10 | 10 |
+|Small | 0 | 15 | 10 | 5 | 0 | Heavy| 5 | 14 |
+|Medium | 0 | 20 | 15 | 10 | 5 | Heavy| 0 | 20 |
+|Large | 0 | 25 | 20 | 15 | 10 | Heavy| -5 | 30 |
+|Huge | 0 | 30 | 25 | 20 | 15 | Heavy| -10 | 40 |
+|Gargantuan | 0 | 40 | 35 | 30 | 25 | Heavy| -20 | 60 |
+|Colossal | 0 | 60 | 55 | 50 | 45 | Heavy| -40 | 80 |
+|Titanic | 0 | 100 | 95 | 90 | 85 | Heavy| -80 | 120 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -35 | -37 | -40 | -40 | No Armor| 40 | 0 |
+|Diminutive | 0 | -15 | -17 | -20 | -20 | No Armor| 20 | 0 |
+|Tiny | 0 | -5 | -7 | -10 | -10 | No Armor| 10 | 1 |
+|Small | 0 | 0 | -2 | -5 | -5 | No Armor| 5 | 2 |
+|Medium | 0 | 5 | 2 | 0 | 0 | No Armor| 0 | 3 |
+|Large | 0 | 10 | 7 | 5 | 5 | No Armor| -5 | 4 |
+|Huge | 0 | 15 | 12 | 10 | 10 | No Armor| -10 | 6 |
+|Gargantuan | 0 | 25 | 22 | 20 | 20 | No Armor| -20 | 9 |
+|Colossal | 0 | 45 | 42 | 40 | 40 | No Armor| -40 | 12 |
+|Titanic | 0 | 85 | 82 | 80 | 80 | No Armor| -80 | 18 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -35 | -40 | No Armor| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -15 | -20 | No Armor| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -5 | -10 | No Armor| 10 | 2 |
+|Small | 0 | 6 | 3 | 0 | -5 | No Armor| 5 | 2 |
+|Medium | 0 | 11 | 8 | 4 | 0 | No Armor| 0 | 4 |
+|Large | 0 | 16 | 13 | 9 | 5 | No Armor| -5 | 6 |
+|Huge | 0 | 21 | 18 | 14 | 10 | No Armor| -10 | 8 |
+|Gargantuan | 0 | 31 | 28 | 24 | 20 | No Armor| -20 | 12 |
+|Colossal | 0 | 51 | 48 | 44 | 40 | No Armor| -40 | 16 |
+|Titanic | 0 | 91 | 88 | 84 | 80 | No Armor| -80 | 24 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -20 | -25 | -30 | -35 | Medium| 40 | 1 |
+|Diminutive | 0 | 0 | -5 | -10 | -15 | Medium| 20 | 1 |
+|Tiny | 0 | 10 | 5 | 0 | -5 | Medium| 10 | 2 |
+|Small | 0 | 15 | 10 | 5 | 0 | Medium| 5 | 3 |
+|Medium | 0 | 20 | 15 | 10 | 5 | Medium| 0 | 5 |
+|Large | 0 | 25 | 20 | 15 | 10 | Medium| -5 | 7 |
+|Huge | 0 | 30 | 25 | 20 | 15 | Medium| -10 | 10 |
+|Gargantuan | 0 | 40 | 35 | 30 | 25 | Medium| -20 | 15 |
+|Colossal | 0 | 60 | 55 | 50 | 45 | Medium| -40 | 20 |
+|Titanic | 0 | 100 | 95 | 90 | 85 | Medium| -80 | 30 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -20 | -25 | -30 | -35 | No Armor| 40 | 1 |
+|Diminutive | 0 | 0 | -5 | -10 | -15 | No Armor| 20 | 1 |
+|Tiny | 0 | 10 | 5 | 0 | -5 | No Armor| 10 | 2 |
+|Small | 0 | 15 | 10 | 5 | 0 | No Armor| 5 | 3 |
+|Medium | 0 | 20 | 15 | 10 | 5 | No Armor| 0 | 5 |
+|Large | 0 | 25 | 20 | 15 | 10 | No Armor| -5 | 7 |
+|Huge | 0 | 30 | 25 | 20 | 15 | No Armor| -10 | 10 |
+|Gargantuan | 0 | 40 | 35 | 30 | 25 | No Armor| -20 | 15 |
+|Colossal | 0 | 60 | 55 | 50 | 45 | No Armor| -40 | 20 |
+|Titanic | 0 | 100 | 95 | 90 | 85 | No Armor| -80 | 30 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -35 | -40 | No Armor| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -15 | -20 | No Armor| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -5 | -10 | No Armor| 10 | 2 |
+|Small | 0 | 6 | 3 | 0 | -5 | No Armor| 5 | 2 |
+|Medium | 0 | 11 | 8 | 4 | 0 | No Armor| 0 | 4 |
+|Large | 0 | 16 | 13 | 9 | 5 | No Armor| -5 | 6 |
+|Huge | 0 | 21 | 18 | 14 | 10 | No Armor| -10 | 8 |
+|Gargantuan | 0 | 31 | 28 | 24 | 20 | No Armor| -20 | 12 |
+|Colossal | 0 | 51 | 48 | 44 | 40 | No Armor| -40 | 16 |
+|Titanic | 0 | 91 | 88 | 84 | 80 | No Armor| -80 | 24 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -20 | -25 | -30 | -35 | No Armor| 40 | 1 |
+|Diminutive | 0 | 0 | -5 | -10 | -15 | No Armor| 20 | 1 |
+|Tiny | 0 | 10 | 5 | 0 | -5 | No Armor| 10 | 2 |
+|Small | 0 | 15 | 10 | 5 | 0 | No Armor| 5 | 3 |
+|Medium | 0 | 20 | 15 | 10 | 5 | No Armor| 0 | 5 |
+|Large | 0 | 25 | 20 | 15 | 10 | No Armor| -5 | 7 |
+|Huge | 0 | 30 | 25 | 20 | 15 | No Armor| -10 | 10 |
+|Gargantuan | 0 | 40 | 35 | 30 | 25 | No Armor| -20 | 15 |
+|Colossal | 0 | 60 | 55 | 50 | 45 | No Armor| -40 | 20 |
+|Titanic | 0 | 100 | 95 | 90 | 85 | No Armor| -80 | 30 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -35 | -40 | No Armor| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -15 | -20 | No Armor| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -5 | -10 | No Armor| 10 | 2 |
+|Small | 0 | 6 | 3 | 0 | -5 | No Armor| 5 | 2 |
+|Medium | 0 | 11 | 8 | 4 | 0 | No Armor| 0 | 4 |
+|Large | 0 | 16 | 13 | 9 | 5 | No Armor| -5 | 6 |
+|Huge | 0 | 21 | 18 | 14 | 10 | No Armor| -10 | 8 |
+|Gargantuan | 0 | 31 | 28 | 24 | 20 | No Armor| -20 | 12 |
+|Colossal | 0 | 51 | 48 | 44 | 40 | No Armor| -40 | 16 |
+|Titanic | 0 | 91 | 88 | 84 | 80 | No Armor| -80 | 24 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -35 | -40 | No Armor| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -15 | -20 | No Armor| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -5 | -10 | No Armor| 10 | 2 |
+|Small | 0 | 6 | 3 | 0 | -5 | No Armor| 5 | 2 |
+|Medium | 0 | 11 | 8 | 4 | 0 | No Armor| 0 | 4 |
+|Large | 0 | 16 | 13 | 9 | 5 | No Armor| -5 | 6 |
+|Huge | 0 | 21 | 18 | 14 | 10 | No Armor| -10 | 8 |
+|Gargantuan | 0 | 31 | 28 | 24 | 20 | No Armor| -20 | 12 |
+|Colossal | 0 | 51 | 48 | 44 | 40 | No Armor| -40 | 16 |
+|Titanic | 0 | 91 | 88 | 84 | 80 | No Armor| -80 | 24 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 0 | -28 | -32 | -35 | -40 | Light| 40 | 1 |
+|Diminutive | 0 | -8 | -12 | -15 | -20 | Light| 20 | 1 |
+|Tiny | 0 | 1 | -2 | -5 | -10 | Light| 10 | 2 |
+|Small | 0 | 6 | 3 | 0 | -5 | Light| 5 | 2 |
+|Medium | 0 | 11 | 8 | 4 | 0 | Light| 0 | 4 |
+|Large | 0 | 16 | 13 | 9 | 5 | Light| -5 | 6 |
+|Huge | 0 | 21 | 18 | 14 | 10 | Light| -10 | 8 |
+|Gargantuan | 0 | 31 | 28 | 24 | 20 | Light| -20 | 12 |
+|Colossal | 0 | 51 | 48 | 44 | 40 | Light| -40 | 16 |
+|Titanic | 0 | 91 | 88 | 84 | 80 | Light| -80 | 24 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -15 | -23 | -30 | -38 | Light| 41 | 2 |
+|Diminutive | 1 | 5 | -3 | -10 | -18 | Light| 21 | 2 |
+|Tiny | 1 | 15 | 7 | 0 | -8 | Light| 11 | 4 |
+|Small | 1 | 20 | 12 | 5 | -3 | Light| 6 | 5 |
+|Medium | 1 | 25 | 17 | 10 | 2 | Light| 1 | 8 |
+|Large | 1 | 30 | 22 | 15 | 7 | Light| -4 | 12 |
+|Huge | 1 | 35 | 27 | 20 | 12 | Light| -9 | 16 |
+|Gargantuan | 1 | 45 | 37 | 30 | 22 | Light| -19 | 24 |
+|Colossal | 1 | 65 | 57 | 50 | 42 | Light| -39 | 32 |
+|Titanic | 1 | 105 | 97 | 90 | 82 | Light| -79 | 48 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -32 | -38 | Light| 41 | 2 |
+|Diminutive | 1 | -1 | -6 | -12 | -18 | Light| 21 | 2 |
+|Tiny | 1 | 8 | 3 | -2 | -8 | Light| 11 | 4 |
+|Small | 1 | 13 | 8 | 2 | -3 | Light| 6 | 5 |
+|Medium | 1 | 18 | 13 | 7 | 1 | Light| 1 | 8 |
+|Large | 1 | 23 | 18 | 12 | 6 | Light| -4 | 12 |
+|Huge | 1 | 28 | 23 | 17 | 11 | Light| -9 | 16 |
+|Gargantuan | 1 | 38 | 33 | 27 | 21 | Light| -19 | 24 |
+|Colossal | 1 | 58 | 53 | 47 | 41 | Light| -39 | 32 |
+|Titanic | 1 | 98 | 93 | 87 | 81 | Light| -79 | 48 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -5 | -15 | -23 | -30 | Medium| 40 | 2 |
+|Diminutive | 1 | 15 | 5 | -3 | -10 | Medium| 20 | 3 |
+|Tiny | 1 | 25 | 15 | 7 | 0 | Medium| 10 | 5 |
+|Small | 1 | 30 | 20 | 12 | 5 | Medium| 5 | 7 |
+|Medium | 1 | 35 | 25 | 17 | 10 | Medium| 0 | 10 |
+|Large | 1 | 40 | 30 | 22 | 15 | Medium| -5 | 15 |
+|Huge | 1 | 45 | 35 | 27 | 20 | Medium| -10 | 20 |
+|Gargantuan | 1 | 55 | 45 | 37 | 30 | Medium| -20 | 30 |
+|Colossal | 1 | 75 | 65 | 57 | 50 | Medium| -40 | 40 |
+|Titanic | 1 | 115 | 105 | 97 | 90 | Medium| -80 | 60 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -5 | -15 | -23 | -30 | Heavy| 41 | 8 |
+|Diminutive | 1 | 15 | 5 | -3 | -10 | Heavy| 21 | 11 |
+|Tiny | 1 | 25 | 15 | 7 | 0 | Heavy| 11 | 17 |
+|Small | 1 | 30 | 20 | 12 | 5 | Heavy| 6 | 23 |
+|Medium | 1 | 35 | 25 | 17 | 10 | Heavy| 1 | 34 |
+|Large | 1 | 40 | 30 | 22 | 15 | Heavy| -4 | 51 |
+|Huge | 1 | 45 | 35 | 27 | 20 | Heavy| -9 | 68 |
+|Gargantuan | 1 | 55 | 45 | 37 | 30 | Heavy| -19 | 102 |
+|Colossal | 1 | 75 | 65 | 57 | 50 | Heavy| -39 | 136 |
+|Titanic | 1 | 115 | 105 | 97 | 90 | Heavy| -79 | 204 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -31 | -34 | -38 | -39 | No Armor| 41 | 1 |
+|Diminutive | 1 | -11 | -14 | -18 | -19 | No Armor| 21 | 1 |
+|Tiny | 1 | -1 | -4 | -8 | -9 | No Armor| 11 | 3 |
+|Small | 1 | 3 | 0 | -3 | -4 | No Armor| 6 | 4 |
+|Medium | 1 | 8 | 5 | 1 | 0 | No Armor| 1 | 6 |
+|Large | 1 | 13 | 10 | 6 | 5 | No Armor| -4 | 9 |
+|Huge | 1 | 18 | 15 | 11 | 10 | No Armor| -9 | 12 |
+|Gargantuan | 1 | 28 | 25 | 21 | 20 | No Armor| -19 | 18 |
+|Colossal | 1 | 48 | 45 | 41 | 40 | No Armor| -39 | 24 |
+|Titanic | 1 | 88 | 85 | 81 | 80 | No Armor| -79 | 36 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -31 | -38 | No Armor| 40 | 2 |
+|Diminutive | 1 | -1 | -6 | -11 | -18 | No Armor| 20 | 2 |
+|Tiny | 1 | 8 | 3 | -1 | -8 | No Armor| 10 | 4 |
+|Small | 1 | 13 | 8 | 4 | -3 | No Armor| 5 | 5 |
+|Medium | 1 | 18 | 13 | 9 | 2 | No Armor| 0 | 8 |
+|Large | 1 | 23 | 18 | 14 | 7 | No Armor| -5 | 12 |
+|Huge | 1 | 28 | 23 | 19 | 12 | No Armor| -10 | 16 |
+|Gargantuan | 1 | 38 | 33 | 29 | 22 | No Armor| -20 | 24 |
+|Colossal | 1 | 58 | 53 | 49 | 42 | No Armor| -40 | 32 |
+|Titanic | 1 | 98 | 93 | 89 | 82 | No Armor| -80 | 48 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -5 | -15 | -23 | -30 | Medium| 41 | 2 |
+|Diminutive | 1 | 15 | 5 | -3 | -10 | Medium| 21 | 3 |
+|Tiny | 1 | 25 | 15 | 7 | 0 | Medium| 11 | 5 |
+|Small | 1 | 30 | 20 | 12 | 5 | Medium| 6 | 7 |
+|Medium | 1 | 35 | 25 | 17 | 10 | Medium| 1 | 10 |
+|Large | 1 | 40 | 30 | 22 | 15 | Medium| -4 | 15 |
+|Huge | 1 | 45 | 35 | 27 | 20 | Medium| -9 | 20 |
+|Gargantuan | 1 | 55 | 45 | 37 | 30 | Medium| -19 | 30 |
+|Colossal | 1 | 75 | 65 | 57 | 50 | Medium| -39 | 40 |
+|Titanic | 1 | 115 | 105 | 97 | 90 | Medium| -79 | 60 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -5 | -15 | -23 | -30 | No Armor| 41 | 2 |
+|Diminutive | 1 | 15 | 5 | -3 | -10 | No Armor| 21 | 3 |
+|Tiny | 1 | 25 | 15 | 7 | 0 | No Armor| 11 | 5 |
+|Small | 1 | 30 | 20 | 12 | 5 | No Armor| 6 | 7 |
+|Medium | 1 | 35 | 25 | 17 | 10 | No Armor| 1 | 10 |
+|Large | 1 | 40 | 30 | 22 | 15 | No Armor| -4 | 15 |
+|Huge | 1 | 45 | 35 | 27 | 20 | No Armor| -9 | 20 |
+|Gargantuan | 1 | 55 | 45 | 37 | 30 | No Armor| -19 | 30 |
+|Colossal | 1 | 75 | 65 | 57 | 50 | No Armor| -39 | 40 |
+|Titanic | 1 | 115 | 105 | 97 | 90 | No Armor| -79 | 60 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -31 | -38 | No Armor| 41 | 2 |
+|Diminutive | 1 | -1 | -6 | -11 | -18 | No Armor| 21 | 2 |
+|Tiny | 1 | 8 | 3 | -1 | -8 | No Armor| 11 | 4 |
+|Small | 1 | 13 | 8 | 4 | -3 | No Armor| 6 | 5 |
+|Medium | 1 | 18 | 13 | 9 | 2 | No Armor| 1 | 8 |
+|Large | 1 | 23 | 18 | 14 | 7 | No Armor| -4 | 12 |
+|Huge | 1 | 28 | 23 | 19 | 12 | No Armor| -9 | 16 |
+|Gargantuan | 1 | 38 | 33 | 29 | 22 | No Armor| -19 | 24 |
+|Colossal | 1 | 58 | 53 | 49 | 42 | No Armor| -39 | 32 |
+|Titanic | 1 | 98 | 93 | 89 | 82 | No Armor| -79 | 48 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -5 | -15 | -23 | -30 | No Armor| 41 | 2 |
+|Diminutive | 1 | 15 | 5 | -3 | -10 | No Armor| 21 | 3 |
+|Tiny | 1 | 25 | 15 | 7 | 0 | No Armor| 11 | 5 |
+|Small | 1 | 30 | 20 | 12 | 5 | No Armor| 6 | 7 |
+|Medium | 1 | 35 | 25 | 17 | 10 | No Armor| 1 | 10 |
+|Large | 1 | 40 | 30 | 22 | 15 | No Armor| -4 | 15 |
+|Huge | 1 | 45 | 35 | 27 | 20 | No Armor| -9 | 20 |
+|Gargantuan | 1 | 55 | 45 | 37 | 30 | No Armor| -19 | 30 |
+|Colossal | 1 | 75 | 65 | 57 | 50 | No Armor| -39 | 40 |
+|Titanic | 1 | 115 | 105 | 97 | 90 | No Armor| -79 | 60 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -31 | -38 | No Armor| 41 | 2 |
+|Diminutive | 1 | -1 | -6 | -11 | -18 | No Armor| 21 | 2 |
+|Tiny | 1 | 8 | 3 | -1 | -8 | No Armor| 11 | 4 |
+|Small | 1 | 13 | 8 | 4 | -3 | No Armor| 6 | 5 |
+|Medium | 1 | 18 | 13 | 9 | 2 | No Armor| 1 | 8 |
+|Large | 1 | 23 | 18 | 14 | 7 | No Armor| -4 | 12 |
+|Huge | 1 | 28 | 23 | 19 | 12 | No Armor| -9 | 16 |
+|Gargantuan | 1 | 38 | 33 | 29 | 22 | No Armor| -19 | 24 |
+|Colossal | 1 | 58 | 53 | 49 | 42 | No Armor| -39 | 32 |
+|Titanic | 1 | 98 | 93 | 89 | 82 | No Armor| -79 | 48 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -31 | -38 | No Armor| 41 | 2 |
+|Diminutive | 1 | -1 | -6 | -11 | -18 | No Armor| 21 | 2 |
+|Tiny | 1 | 8 | 3 | -1 | -8 | No Armor| 11 | 4 |
+|Small | 1 | 13 | 8 | 4 | -3 | No Armor| 6 | 5 |
+|Medium | 1 | 18 | 13 | 9 | 2 | No Armor| 1 | 8 |
+|Large | 1 | 23 | 18 | 14 | 7 | No Armor| -4 | 12 |
+|Huge | 1 | 28 | 23 | 19 | 12 | No Armor| -9 | 16 |
+|Gargantuan | 1 | 38 | 33 | 29 | 22 | No Armor| -19 | 24 |
+|Colossal | 1 | 58 | 53 | 49 | 42 | No Armor| -39 | 32 |
+|Titanic | 1 | 98 | 93 | 89 | 82 | No Armor| -79 | 48 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 1 | -21 | -26 | -31 | -38 | Light| 41 | 2 |
+|Diminutive | 1 | -1 | -6 | -11 | -18 | Light| 21 | 2 |
+|Tiny | 1 | 8 | 3 | -1 | -8 | Light| 11 | 4 |
+|Small | 1 | 13 | 8 | 4 | -3 | Light| 6 | 5 |
+|Medium | 1 | 18 | 13 | 9 | 2 | Light| 1 | 8 |
+|Large | 1 | 23 | 18 | 14 | 7 | Light| -4 | 12 |
+|Huge | 1 | 28 | 23 | 19 | 12 | Light| -9 | 16 |
+|Gargantuan | 1 | 38 | 33 | 29 | 22 | Light| -19 | 24 |
+|Colossal | 1 | 58 | 53 | 49 | 42 | Light| -39 | 32 |
+|Titanic | 1 | 98 | 93 | 89 | 82 | Light| -79 | 48 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -5 | -15 | -25 | -35 | Light| 42 | 3 |
+|Diminutive | 2 | 15 | 5 | -5 | -15 | Light| 22 | 3 |
+|Tiny | 2 | 25 | 15 | 5 | -5 | Light| 12 | 6 |
+|Small | 2 | 30 | 20 | 10 | 0 | Light| 7 | 8 |
+|Medium | 2 | 35 | 25 | 15 | 5 | Light| 2 | 12 |
+|Large | 2 | 40 | 30 | 20 | 10 | Light| -3 | 18 |
+|Huge | 2 | 45 | 35 | 25 | 15 | Light| -8 | 24 |
+|Gargantuan | 2 | 55 | 45 | 35 | 25 | Light| -18 | 36 |
+|Colossal | 2 | 75 | 65 | 55 | 45 | Light| -38 | 48 |
+|Titanic | 2 | 115 | 105 | 95 | 85 | Light| -78 | 72 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -28 | -35 | Light| 42 | 3 |
+|Diminutive | 2 | 6 | 0 | -8 | -15 | Light| 22 | 3 |
+|Tiny | 2 | 16 | 9 | 1 | -5 | Light| 12 | 6 |
+|Small | 2 | 21 | 14 | 6 | 0 | Light| 7 | 8 |
+|Medium | 2 | 26 | 19 | 11 | 4 | Light| 2 | 12 |
+|Large | 2 | 31 | 24 | 16 | 9 | Light| -3 | 18 |
+|Huge | 2 | 36 | 29 | 21 | 14 | Light| -8 | 24 |
+|Gargantuan | 2 | 46 | 39 | 31 | 24 | Light| -18 | 36 |
+|Colossal | 2 | 66 | 59 | 51 | 44 | Light| -38 | 48 |
+|Titanic | 2 | 106 | 99 | 91 | 84 | Light| -78 | 72 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | 10 | -5 | -15 | -25 | Medium| 40 | 3 |
+|Diminutive | 2 | 30 | 15 | 5 | -5 | Medium| 20 | 4 |
+|Tiny | 2 | 40 | 25 | 15 | 5 | Medium| 10 | 7 |
+|Small | 2 | 45 | 30 | 20 | 10 | Medium| 5 | 10 |
+|Medium | 2 | 50 | 35 | 25 | 15 | Medium| 0 | 15 |
+|Large | 2 | 55 | 40 | 30 | 20 | Medium| -5 | 22 |
+|Huge | 2 | 60 | 45 | 35 | 25 | Medium| -10 | 30 |
+|Gargantuan | 2 | 70 | 55 | 45 | 35 | Medium| -20 | 45 |
+|Colossal | 2 | 90 | 75 | 65 | 55 | Medium| -40 | 60 |
+|Titanic | 2 | 130 | 115 | 105 | 95 | Medium| -80 | 90 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | 10 | -5 | -15 | -25 | Heavy| 42 | 12 |
+|Diminutive | 2 | 30 | 15 | 5 | -5 | Heavy| 22 | 16 |
+|Tiny | 2 | 40 | 25 | 15 | 5 | Heavy| 12 | 25 |
+|Small | 2 | 45 | 30 | 20 | 10 | Heavy| 7 | 35 |
+|Medium | 2 | 50 | 35 | 25 | 15 | Heavy| 2 | 50 |
+|Large | 2 | 55 | 40 | 30 | 20 | Heavy| -3 | 75 |
+|Huge | 2 | 60 | 45 | 35 | 25 | Heavy| -8 | 100 |
+|Gargantuan | 2 | 70 | 55 | 45 | 35 | Heavy| -18 | 150 |
+|Colossal | 2 | 90 | 75 | 65 | 55 | Heavy| -38 | 200 |
+|Titanic | 2 | 130 | 115 | 105 | 95 | Heavy| -78 | 300 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -27 | -31 | -37 | -38 | No Armor| 42 | 2 |
+|Diminutive | 2 | -7 | -11 | -17 | -18 | No Armor| 22 | 2 |
+|Tiny | 2 | 2 | -1 | -7 | -8 | No Armor| 12 | 4 |
+|Small | 2 | 7 | 3 | -2 | -3 | No Armor| 7 | 6 |
+|Medium | 2 | 12 | 8 | 3 | 1 | No Armor| 2 | 9 |
+|Large | 2 | 17 | 13 | 8 | 6 | No Armor| -3 | 13 |
+|Huge | 2 | 22 | 18 | 13 | 11 | No Armor| -8 | 18 |
+|Gargantuan | 2 | 32 | 28 | 23 | 21 | No Armor| -18 | 27 |
+|Colossal | 2 | 52 | 48 | 43 | 41 | No Armor| -38 | 36 |
+|Titanic | 2 | 92 | 88 | 83 | 81 | No Armor| -78 | 54 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -26 | -35 | No Armor| 41 | 3 |
+|Diminutive | 2 | 6 | 0 | -6 | -15 | No Armor| 21 | 3 |
+|Tiny | 2 | 16 | 10 | 3 | -5 | No Armor| 11 | 6 |
+|Small | 2 | 21 | 15 | 8 | 0 | No Armor| 6 | 8 |
+|Medium | 2 | 26 | 20 | 13 | 5 | No Armor| 1 | 12 |
+|Large | 2 | 31 | 25 | 18 | 10 | No Armor| -4 | 18 |
+|Huge | 2 | 36 | 30 | 23 | 15 | No Armor| -9 | 24 |
+|Gargantuan | 2 | 46 | 40 | 33 | 25 | No Armor| -19 | 36 |
+|Colossal | 2 | 66 | 60 | 53 | 45 | No Armor| -39 | 48 |
+|Titanic | 2 | 106 | 100 | 93 | 85 | No Armor| -79 | 72 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | 10 | -5 | -15 | -25 | Medium| 42 | 3 |
+|Diminutive | 2 | 30 | 15 | 5 | -5 | Medium| 22 | 4 |
+|Tiny | 2 | 40 | 25 | 15 | 5 | Medium| 12 | 7 |
+|Small | 2 | 45 | 30 | 20 | 10 | Medium| 7 | 10 |
+|Medium | 2 | 50 | 35 | 25 | 15 | Medium| 2 | 15 |
+|Large | 2 | 55 | 40 | 30 | 20 | Medium| -3 | 22 |
+|Huge | 2 | 60 | 45 | 35 | 25 | Medium| -8 | 30 |
+|Gargantuan | 2 | 70 | 55 | 45 | 35 | Medium| -18 | 45 |
+|Colossal | 2 | 90 | 75 | 65 | 55 | Medium| -38 | 60 |
+|Titanic | 2 | 130 | 115 | 105 | 95 | Medium| -78 | 90 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | 10 | -5 | -15 | -25 | No Armor| 42 | 3 |
+|Diminutive | 2 | 30 | 15 | 5 | -5 | No Armor| 22 | 4 |
+|Tiny | 2 | 40 | 25 | 15 | 5 | No Armor| 12 | 7 |
+|Small | 2 | 45 | 30 | 20 | 10 | No Armor| 7 | 10 |
+|Medium | 2 | 50 | 35 | 25 | 15 | No Armor| 2 | 15 |
+|Large | 2 | 55 | 40 | 30 | 20 | No Armor| -3 | 22 |
+|Huge | 2 | 60 | 45 | 35 | 25 | No Armor| -8 | 30 |
+|Gargantuan | 2 | 70 | 55 | 45 | 35 | No Armor| -18 | 45 |
+|Colossal | 2 | 90 | 75 | 65 | 55 | No Armor| -38 | 60 |
+|Titanic | 2 | 130 | 115 | 105 | 95 | No Armor| -78 | 90 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -26 | -35 | No Armor| 42 | 3 |
+|Diminutive | 2 | 6 | 0 | -6 | -15 | No Armor| 22 | 3 |
+|Tiny | 2 | 16 | 10 | 3 | -5 | No Armor| 12 | 6 |
+|Small | 2 | 21 | 15 | 8 | 0 | No Armor| 7 | 8 |
+|Medium | 2 | 26 | 20 | 13 | 5 | No Armor| 2 | 12 |
+|Large | 2 | 31 | 25 | 18 | 10 | No Armor| -3 | 18 |
+|Huge | 2 | 36 | 30 | 23 | 15 | No Armor| -8 | 24 |
+|Gargantuan | 2 | 46 | 40 | 33 | 25 | No Armor| -18 | 36 |
+|Colossal | 2 | 66 | 60 | 53 | 45 | No Armor| -38 | 48 |
+|Titanic | 2 | 106 | 100 | 93 | 85 | No Armor| -78 | 72 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | 10 | -5 | -15 | -25 | No Armor| 42 | 3 |
+|Diminutive | 2 | 30 | 15 | 5 | -5 | No Armor| 22 | 4 |
+|Tiny | 2 | 40 | 25 | 15 | 5 | No Armor| 12 | 7 |
+|Small | 2 | 45 | 30 | 20 | 10 | No Armor| 7 | 10 |
+|Medium | 2 | 50 | 35 | 25 | 15 | No Armor| 2 | 15 |
+|Large | 2 | 55 | 40 | 30 | 20 | No Armor| -3 | 22 |
+|Huge | 2 | 60 | 45 | 35 | 25 | No Armor| -8 | 30 |
+|Gargantuan | 2 | 70 | 55 | 45 | 35 | No Armor| -18 | 45 |
+|Colossal | 2 | 90 | 75 | 65 | 55 | No Armor| -38 | 60 |
+|Titanic | 2 | 130 | 115 | 105 | 95 | No Armor| -78 | 90 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -26 | -35 | No Armor| 42 | 3 |
+|Diminutive | 2 | 6 | 0 | -6 | -15 | No Armor| 22 | 3 |
+|Tiny | 2 | 16 | 10 | 3 | -5 | No Armor| 12 | 6 |
+|Small | 2 | 21 | 15 | 8 | 0 | No Armor| 7 | 8 |
+|Medium | 2 | 26 | 20 | 13 | 5 | No Armor| 2 | 12 |
+|Large | 2 | 31 | 25 | 18 | 10 | No Armor| -3 | 18 |
+|Huge | 2 | 36 | 30 | 23 | 15 | No Armor| -8 | 24 |
+|Gargantuan | 2 | 46 | 40 | 33 | 25 | No Armor| -18 | 36 |
+|Colossal | 2 | 66 | 60 | 53 | 45 | No Armor| -38 | 48 |
+|Titanic | 2 | 106 | 100 | 93 | 85 | No Armor| -78 | 72 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -26 | -35 | No Armor| 42 | 3 |
+|Diminutive | 2 | 6 | 0 | -6 | -15 | No Armor| 22 | 3 |
+|Tiny | 2 | 16 | 10 | 3 | -5 | No Armor| 12 | 6 |
+|Small | 2 | 21 | 15 | 8 | 0 | No Armor| 7 | 8 |
+|Medium | 2 | 26 | 20 | 13 | 5 | No Armor| 2 | 12 |
+|Large | 2 | 31 | 25 | 18 | 10 | No Armor| -3 | 18 |
+|Huge | 2 | 36 | 30 | 23 | 15 | No Armor| -8 | 24 |
+|Gargantuan | 2 | 46 | 40 | 33 | 25 | No Armor| -18 | 36 |
+|Colossal | 2 | 66 | 60 | 53 | 45 | No Armor| -38 | 48 |
+|Titanic | 2 | 106 | 100 | 93 | 85 | No Armor| -78 | 72 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 2 | -13 | -20 | -26 | -35 | Light| 42 | 3 |
+|Diminutive | 2 | 6 | 0 | -6 | -15 | Light| 22 | 3 |
+|Tiny | 2 | 16 | 10 | 3 | -5 | Light| 12 | 6 |
+|Small | 2 | 21 | 15 | 8 | 0 | Light| 7 | 8 |
+|Medium | 2 | 26 | 20 | 13 | 5 | Light| 2 | 12 |
+|Large | 2 | 31 | 25 | 18 | 10 | Light| -3 | 18 |
+|Huge | 2 | 36 | 30 | 23 | 15 | Light| -8 | 24 |
+|Gargantuan | 2 | 46 | 40 | 33 | 25 | Light| -18 | 36 |
+|Colossal | 2 | 66 | 60 | 53 | 45 | Light| -38 | 48 |
+|Titanic | 2 | 106 | 100 | 93 | 85 | Light| -78 | 72 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 5 | -8 | -20 | -33 | Light| 43 | 4 |
+|Diminutive | 3 | 25 | 12 | 0 | -13 | Light| 23 | 5 |
+|Tiny | 3 | 35 | 22 | 10 | -3 | Light| 13 | 8 |
+|Small | 3 | 40 | 27 | 15 | 2 | Light| 8 | 11 |
+|Medium | 3 | 45 | 32 | 20 | 7 | Light| 3 | 16 |
+|Large | 3 | 50 | 37 | 25 | 12 | Light| -2 | 24 |
+|Huge | 3 | 55 | 42 | 30 | 17 | Light| -7 | 32 |
+|Gargantuan | 3 | 65 | 52 | 40 | 27 | Light| -17 | 48 |
+|Colossal | 3 | 85 | 72 | 60 | 47 | Light| -37 | 64 |
+|Titanic | 3 | 125 | 112 | 100 | 87 | Light| -77 | 96 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -15 | -24 | -34 | Light| 43 | 4 |
+|Diminutive | 3 | 13 | 4 | -4 | -14 | Light| 23 | 5 |
+|Tiny | 3 | 23 | 14 | 5 | -4 | Light| 13 | 8 |
+|Small | 3 | 28 | 19 | 10 | 0 | Light| 8 | 11 |
+|Medium | 3 | 33 | 24 | 15 | 5 | Light| 3 | 16 |
+|Large | 3 | 38 | 29 | 20 | 10 | Light| -2 | 24 |
+|Huge | 3 | 43 | 34 | 25 | 15 | Light| -7 | 32 |
+|Gargantuan | 3 | 53 | 44 | 35 | 25 | Light| -17 | 48 |
+|Colossal | 3 | 73 | 64 | 55 | 45 | Light| -37 | 64 |
+|Titanic | 3 | 113 | 104 | 95 | 85 | Light| -77 | 96 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 16 | 5 | -8 | -20 | Medium| 40 | 5 |
+|Diminutive | 3 | 36 | 25 | 12 | 0 | Medium| 20 | 6 |
+|Tiny | 3 | 46 | 35 | 22 | 10 | Medium| 10 | 10 |
+|Small | 3 | 51 | 40 | 27 | 15 | Medium| 5 | 14 |
+|Medium | 3 | 56 | 45 | 32 | 20 | Medium| 0 | 20 |
+|Large | 3 | 61 | 50 | 37 | 25 | Medium| -5 | 30 |
+|Huge | 3 | 66 | 55 | 42 | 30 | Medium| -10 | 40 |
+|Gargantuan | 3 | 76 | 65 | 52 | 40 | Medium| -20 | 60 |
+|Colossal | 3 | 96 | 85 | 72 | 60 | Medium| -40 | 80 |
+|Titanic | 3 | 136 | 125 | 112 | 100 | Medium| -80 | 120 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 16 | 5 | -8 | -20 | Heavy| 43 | 16 |
+|Diminutive | 3 | 36 | 25 | 12 | 0 | Heavy| 23 | 21 |
+|Tiny | 3 | 46 | 35 | 22 | 10 | Heavy| 13 | 32 |
+|Small | 3 | 51 | 40 | 27 | 15 | Heavy| 8 | 44 |
+|Medium | 3 | 56 | 45 | 32 | 20 | Heavy| 3 | 64 |
+|Large | 3 | 61 | 50 | 37 | 25 | Heavy| -2 | 96 |
+|Huge | 3 | 66 | 55 | 42 | 30 | Heavy| -7 | 128 |
+|Gargantuan | 3 | 76 | 65 | 52 | 40 | Heavy| -17 | 192 |
+|Colossal | 3 | 96 | 85 | 72 | 60 | Heavy| -37 | 256 |
+|Titanic | 3 | 136 | 125 | 112 | 100 | Heavy| -77 | 384 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -24 | -29 | -35 | -38 | No Armor| 43 | 3 |
+|Diminutive | 3 | -4 | -9 | -15 | -18 | No Armor| 23 | 3 |
+|Tiny | 3 | 6 | 1 | -5 | -8 | No Armor| 13 | 6 |
+|Small | 3 | 11 | 6 | 0 | -3 | No Armor| 8 | 8 |
+|Medium | 3 | 16 | 11 | 4 | 1 | No Armor| 3 | 12 |
+|Large | 3 | 21 | 16 | 9 | 6 | No Armor| -2 | 18 |
+|Huge | 3 | 26 | 21 | 14 | 11 | No Armor| -7 | 24 |
+|Gargantuan | 3 | 36 | 31 | 24 | 21 | No Armor| -17 | 36 |
+|Colossal | 3 | 56 | 51 | 44 | 41 | No Armor| -37 | 48 |
+|Titanic | 3 | 96 | 91 | 84 | 81 | No Armor| -77 | 72 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -14 | -22 | -33 | No Armor| 41 | 4 |
+|Diminutive | 3 | 13 | 5 | -2 | -13 | No Armor| 21 | 5 |
+|Tiny | 3 | 23 | 15 | 8 | -3 | No Armor| 11 | 8 |
+|Small | 3 | 28 | 20 | 13 | 2 | No Armor| 6 | 11 |
+|Medium | 3 | 33 | 25 | 18 | 7 | No Armor| 1 | 16 |
+|Large | 3 | 38 | 30 | 23 | 12 | No Armor| -4 | 24 |
+|Huge | 3 | 43 | 35 | 28 | 17 | No Armor| -9 | 32 |
+|Gargantuan | 3 | 53 | 45 | 38 | 27 | No Armor| -19 | 48 |
+|Colossal | 3 | 73 | 65 | 58 | 47 | No Armor| -39 | 64 |
+|Titanic | 3 | 113 | 105 | 98 | 87 | No Armor| -79 | 96 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 16 | 5 | -8 | -20 | Medium| 43 | 5 |
+|Diminutive | 3 | 36 | 25 | 12 | 0 | Medium| 23 | 6 |
+|Tiny | 3 | 46 | 35 | 22 | 10 | Medium| 13 | 10 |
+|Small | 3 | 51 | 40 | 27 | 15 | Medium| 8 | 14 |
+|Medium | 3 | 56 | 45 | 32 | 20 | Medium| 3 | 20 |
+|Large | 3 | 61 | 50 | 37 | 25 | Medium| -2 | 30 |
+|Huge | 3 | 66 | 55 | 42 | 30 | Medium| -7 | 40 |
+|Gargantuan | 3 | 76 | 65 | 52 | 40 | Medium| -17 | 60 |
+|Colossal | 3 | 96 | 85 | 72 | 60 | Medium| -37 | 80 |
+|Titanic | 3 | 136 | 125 | 112 | 100 | Medium| -77 | 120 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 16 | 5 | -8 | -20 | No Armor| 43 | 5 |
+|Diminutive | 3 | 36 | 25 | 12 | 0 | No Armor| 23 | 6 |
+|Tiny | 3 | 46 | 35 | 22 | 10 | No Armor| 13 | 10 |
+|Small | 3 | 51 | 40 | 27 | 15 | No Armor| 8 | 14 |
+|Medium | 3 | 56 | 45 | 32 | 20 | No Armor| 3 | 20 |
+|Large | 3 | 61 | 50 | 37 | 25 | No Armor| -2 | 30 |
+|Huge | 3 | 66 | 55 | 42 | 30 | No Armor| -7 | 40 |
+|Gargantuan | 3 | 76 | 65 | 52 | 40 | No Armor| -17 | 60 |
+|Colossal | 3 | 96 | 85 | 72 | 60 | No Armor| -37 | 80 |
+|Titanic | 3 | 136 | 125 | 112 | 100 | No Armor| -77 | 120 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -14 | -22 | -33 | No Armor| 43 | 4 |
+|Diminutive | 3 | 13 | 5 | -2 | -13 | No Armor| 23 | 5 |
+|Tiny | 3 | 23 | 15 | 8 | -3 | No Armor| 13 | 8 |
+|Small | 3 | 28 | 20 | 13 | 2 | No Armor| 8 | 11 |
+|Medium | 3 | 33 | 25 | 18 | 7 | No Armor| 3 | 16 |
+|Large | 3 | 38 | 30 | 23 | 12 | No Armor| -2 | 24 |
+|Huge | 3 | 43 | 35 | 28 | 17 | No Armor| -7 | 32 |
+|Gargantuan | 3 | 53 | 45 | 38 | 27 | No Armor| -17 | 48 |
+|Colossal | 3 | 73 | 65 | 58 | 47 | No Armor| -37 | 64 |
+|Titanic | 3 | 113 | 105 | 98 | 87 | No Armor| -77 | 96 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | 16 | 5 | -8 | -20 | No Armor| 43 | 5 |
+|Diminutive | 3 | 36 | 25 | 12 | 0 | No Armor| 23 | 6 |
+|Tiny | 3 | 46 | 35 | 22 | 10 | No Armor| 13 | 10 |
+|Small | 3 | 51 | 40 | 27 | 15 | No Armor| 8 | 14 |
+|Medium | 3 | 56 | 45 | 32 | 20 | No Armor| 3 | 20 |
+|Large | 3 | 61 | 50 | 37 | 25 | No Armor| -2 | 30 |
+|Huge | 3 | 66 | 55 | 42 | 30 | No Armor| -7 | 40 |
+|Gargantuan | 3 | 76 | 65 | 52 | 40 | No Armor| -17 | 60 |
+|Colossal | 3 | 96 | 85 | 72 | 60 | No Armor| -37 | 80 |
+|Titanic | 3 | 136 | 125 | 112 | 100 | No Armor| -77 | 120 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -14 | -22 | -33 | No Armor| 43 | 4 |
+|Diminutive | 3 | 13 | 5 | -2 | -13 | No Armor| 23 | 5 |
+|Tiny | 3 | 23 | 15 | 8 | -3 | No Armor| 13 | 8 |
+|Small | 3 | 28 | 20 | 13 | 2 | No Armor| 8 | 11 |
+|Medium | 3 | 33 | 25 | 18 | 7 | No Armor| 3 | 16 |
+|Large | 3 | 38 | 30 | 23 | 12 | No Armor| -2 | 24 |
+|Huge | 3 | 43 | 35 | 28 | 17 | No Armor| -7 | 32 |
+|Gargantuan | 3 | 53 | 45 | 38 | 27 | No Armor| -17 | 48 |
+|Colossal | 3 | 73 | 65 | 58 | 47 | No Armor| -37 | 64 |
+|Titanic | 3 | 113 | 105 | 98 | 87 | No Armor| -77 | 96 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -14 | -22 | -33 | No Armor| 43 | 4 |
+|Diminutive | 3 | 13 | 5 | -2 | -13 | No Armor| 23 | 5 |
+|Tiny | 3 | 23 | 15 | 8 | -3 | No Armor| 13 | 8 |
+|Small | 3 | 28 | 20 | 13 | 2 | No Armor| 8 | 11 |
+|Medium | 3 | 33 | 25 | 18 | 7 | No Armor| 3 | 16 |
+|Large | 3 | 38 | 30 | 23 | 12 | No Armor| -2 | 24 |
+|Huge | 3 | 43 | 35 | 28 | 17 | No Armor| -7 | 32 |
+|Gargantuan | 3 | 53 | 45 | 38 | 27 | No Armor| -17 | 48 |
+|Colossal | 3 | 73 | 65 | 58 | 47 | No Armor| -37 | 64 |
+|Titanic | 3 | 113 | 105 | 98 | 87 | No Armor| -77 | 96 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 3 | -6 | -14 | -22 | -33 | Light| 43 | 4 |
+|Diminutive | 3 | 13 | 5 | -2 | -13 | Light| 23 | 5 |
+|Tiny | 3 | 23 | 15 | 8 | -3 | Light| 13 | 8 |
+|Small | 3 | 28 | 20 | 13 | 2 | Light| 8 | 11 |
+|Medium | 3 | 33 | 25 | 18 | 7 | Light| 3 | 16 |
+|Large | 3 | 38 | 30 | 23 | 12 | Light| -2 | 24 |
+|Huge | 3 | 43 | 35 | 28 | 17 | Light| -7 | 32 |
+|Gargantuan | 3 | 53 | 45 | 38 | 27 | Light| -17 | 48 |
+|Colossal | 3 | 73 | 65 | 58 | 47 | Light| -37 | 64 |
+|Titanic | 3 | 113 | 105 | 98 | 87 | Light| -77 | 96 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 12 | 0 | -15 | -30 | Light| 45 | 5 |
+|Diminutive | 4 | 32 | 20 | 5 | -10 | Light| 25 | 6 |
+|Tiny | 4 | 42 | 30 | 15 | 0 | Light| 15 | 10 |
+|Small | 4 | 47 | 35 | 20 | 5 | Light| 10 | 14 |
+|Medium | 4 | 52 | 40 | 25 | 10 | Light| 5 | 20 |
+|Large | 4 | 57 | 45 | 30 | 15 | Light| 0 | 30 |
+|Huge | 4 | 62 | 50 | 35 | 20 | Light| -5 | 40 |
+|Gargantuan | 4 | 72 | 60 | 45 | 30 | Light| -15 | 60 |
+|Colossal | 4 | 92 | 80 | 65 | 50 | Light| -35 | 80 |
+|Titanic | 4 | 132 | 120 | 105 | 90 | Light| -75 | 120 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -9 | -20 | -31 | Light| 45 | 5 |
+|Diminutive | 4 | 19 | 10 | 0 | -11 | Light| 25 | 6 |
+|Tiny | 4 | 29 | 20 | 9 | -1 | Light| 15 | 10 |
+|Small | 4 | 34 | 25 | 14 | 3 | Light| 10 | 14 |
+|Medium | 4 | 39 | 30 | 19 | 8 | Light| 5 | 20 |
+|Large | 4 | 44 | 35 | 24 | 13 | Light| 0 | 30 |
+|Huge | 4 | 49 | 40 | 29 | 18 | Light| -5 | 40 |
+|Gargantuan | 4 | 59 | 50 | 39 | 28 | Light| -15 | 60 |
+|Colossal | 4 | 79 | 70 | 59 | 48 | Light| -35 | 80 |
+|Titanic | 4 | 119 | 110 | 99 | 88 | Light| -75 | 120 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 22 | 12 | 0 | -15 | Medium| 40 | 6 |
+|Diminutive | 4 | 42 | 32 | 20 | 5 | Medium| 20 | 8 |
+|Tiny | 4 | 52 | 42 | 30 | 15 | Medium| 10 | 12 |
+|Small | 4 | 57 | 47 | 35 | 20 | Medium| 5 | 17 |
+|Medium | 4 | 62 | 52 | 40 | 25 | Medium| 0 | 25 |
+|Large | 4 | 67 | 57 | 45 | 30 | Medium| -5 | 37 |
+|Huge | 4 | 72 | 62 | 50 | 35 | Medium| -10 | 50 |
+|Gargantuan | 4 | 82 | 72 | 60 | 45 | Medium| -20 | 75 |
+|Colossal | 4 | 102 | 92 | 80 | 65 | Medium| -40 | 100 |
+|Titanic | 4 | 142 | 132 | 120 | 105 | Medium| -80 | 150 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 22 | 12 | 0 | -15 | Heavy| 45 | 20 |
+|Diminutive | 4 | 42 | 32 | 20 | 5 | Heavy| 25 | 26 |
+|Tiny | 4 | 52 | 42 | 30 | 15 | Heavy| 15 | 40 |
+|Small | 4 | 57 | 47 | 35 | 20 | Heavy| 10 | 56 |
+|Medium | 4 | 62 | 52 | 40 | 25 | Heavy| 5 | 80 |
+|Large | 4 | 67 | 57 | 45 | 30 | Heavy| 0 | 120 |
+|Huge | 4 | 72 | 62 | 50 | 35 | Heavy| -5 | 160 |
+|Gargantuan | 4 | 82 | 72 | 60 | 45 | Heavy| -15 | 240 |
+|Colossal | 4 | 102 | 92 | 80 | 65 | Heavy| -35 | 320 |
+|Titanic | 4 | 142 | 132 | 120 | 105 | Heavy| -75 | 480 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -20 | -26 | -34 | -36 | No Armor| 45 | 3 |
+|Diminutive | 4 | 0 | -6 | -14 | -16 | No Armor| 25 | 4 |
+|Tiny | 4 | 10 | 3 | -4 | -6 | No Armor| 15 | 7 |
+|Small | 4 | 15 | 8 | 1 | -1 | No Armor| 10 | 10 |
+|Medium | 4 | 20 | 13 | 6 | 3 | No Armor| 5 | 15 |
+|Large | 4 | 25 | 18 | 11 | 8 | No Armor| 0 | 22 |
+|Huge | 4 | 30 | 23 | 16 | 13 | No Armor| -5 | 30 |
+|Gargantuan | 4 | 40 | 33 | 26 | 23 | No Armor| -15 | 45 |
+|Colossal | 4 | 60 | 53 | 46 | 43 | No Armor| -35 | 60 |
+|Titanic | 4 | 100 | 93 | 86 | 83 | No Armor| -75 | 90 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -8 | -17 | -30 | No Armor| 42 | 5 |
+|Diminutive | 4 | 19 | 12 | 2 | -10 | No Armor| 22 | 6 |
+|Tiny | 4 | 29 | 22 | 12 | 0 | No Armor| 12 | 10 |
+|Small | 4 | 34 | 27 | 17 | 5 | No Armor| 7 | 14 |
+|Medium | 4 | 39 | 32 | 22 | 10 | No Armor| 2 | 20 |
+|Large | 4 | 44 | 37 | 27 | 15 | No Armor| -3 | 30 |
+|Huge | 4 | 49 | 42 | 32 | 20 | No Armor| -8 | 40 |
+|Gargantuan | 4 | 59 | 52 | 42 | 30 | No Armor| -18 | 60 |
+|Colossal | 4 | 79 | 72 | 62 | 50 | No Armor| -38 | 80 |
+|Titanic | 4 | 119 | 112 | 102 | 90 | No Armor| -78 | 120 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 22 | 12 | 0 | -15 | Medium| 45 | 6 |
+|Diminutive | 4 | 42 | 32 | 20 | 5 | Medium| 25 | 8 |
+|Tiny | 4 | 52 | 42 | 30 | 15 | Medium| 15 | 12 |
+|Small | 4 | 57 | 47 | 35 | 20 | Medium| 10 | 17 |
+|Medium | 4 | 62 | 52 | 40 | 25 | Medium| 5 | 25 |
+|Large | 4 | 67 | 57 | 45 | 30 | Medium| 0 | 37 |
+|Huge | 4 | 72 | 62 | 50 | 35 | Medium| -5 | 50 |
+|Gargantuan | 4 | 82 | 72 | 60 | 45 | Medium| -15 | 75 |
+|Colossal | 4 | 102 | 92 | 80 | 65 | Medium| -35 | 100 |
+|Titanic | 4 | 142 | 132 | 120 | 105 | Medium| -75 | 150 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 22 | 12 | 0 | -15 | No Armor| 45 | 6 |
+|Diminutive | 4 | 42 | 32 | 20 | 5 | No Armor| 25 | 8 |
+|Tiny | 4 | 52 | 42 | 30 | 15 | No Armor| 15 | 12 |
+|Small | 4 | 57 | 47 | 35 | 20 | No Armor| 10 | 17 |
+|Medium | 4 | 62 | 52 | 40 | 25 | No Armor| 5 | 25 |
+|Large | 4 | 67 | 57 | 45 | 30 | No Armor| 0 | 37 |
+|Huge | 4 | 72 | 62 | 50 | 35 | No Armor| -5 | 50 |
+|Gargantuan | 4 | 82 | 72 | 60 | 45 | No Armor| -15 | 75 |
+|Colossal | 4 | 102 | 92 | 80 | 65 | No Armor| -35 | 100 |
+|Titanic | 4 | 142 | 132 | 120 | 105 | No Armor| -75 | 150 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -8 | -17 | -30 | No Armor| 45 | 5 |
+|Diminutive | 4 | 19 | 12 | 2 | -10 | No Armor| 25 | 6 |
+|Tiny | 4 | 29 | 22 | 12 | 0 | No Armor| 15 | 10 |
+|Small | 4 | 34 | 27 | 17 | 5 | No Armor| 10 | 14 |
+|Medium | 4 | 39 | 32 | 22 | 10 | No Armor| 5 | 20 |
+|Large | 4 | 44 | 37 | 27 | 15 | No Armor| 0 | 30 |
+|Huge | 4 | 49 | 42 | 32 | 20 | No Armor| -5 | 40 |
+|Gargantuan | 4 | 59 | 52 | 42 | 30 | No Armor| -15 | 60 |
+|Colossal | 4 | 79 | 72 | 62 | 50 | No Armor| -35 | 80 |
+|Titanic | 4 | 119 | 112 | 102 | 90 | No Armor| -75 | 120 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | 22 | 12 | 0 | -15 | No Armor| 45 | 6 |
+|Diminutive | 4 | 42 | 32 | 20 | 5 | No Armor| 25 | 8 |
+|Tiny | 4 | 52 | 42 | 30 | 15 | No Armor| 15 | 12 |
+|Small | 4 | 57 | 47 | 35 | 20 | No Armor| 10 | 17 |
+|Medium | 4 | 62 | 52 | 40 | 25 | No Armor| 5 | 25 |
+|Large | 4 | 67 | 57 | 45 | 30 | No Armor| 0 | 37 |
+|Huge | 4 | 72 | 62 | 50 | 35 | No Armor| -5 | 50 |
+|Gargantuan | 4 | 82 | 72 | 60 | 45 | No Armor| -15 | 75 |
+|Colossal | 4 | 102 | 92 | 80 | 65 | No Armor| -35 | 100 |
+|Titanic | 4 | 142 | 132 | 120 | 105 | No Armor| -75 | 150 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -8 | -17 | -30 | No Armor| 45 | 5 |
+|Diminutive | 4 | 19 | 12 | 2 | -10 | No Armor| 25 | 6 |
+|Tiny | 4 | 29 | 22 | 12 | 0 | No Armor| 15 | 10 |
+|Small | 4 | 34 | 27 | 17 | 5 | No Armor| 10 | 14 |
+|Medium | 4 | 39 | 32 | 22 | 10 | No Armor| 5 | 20 |
+|Large | 4 | 44 | 37 | 27 | 15 | No Armor| 0 | 30 |
+|Huge | 4 | 49 | 42 | 32 | 20 | No Armor| -5 | 40 |
+|Gargantuan | 4 | 59 | 52 | 42 | 30 | No Armor| -15 | 60 |
+|Colossal | 4 | 79 | 72 | 62 | 50 | No Armor| -35 | 80 |
+|Titanic | 4 | 119 | 112 | 102 | 90 | No Armor| -75 | 120 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -8 | -17 | -30 | No Armor| 45 | 5 |
+|Diminutive | 4 | 19 | 12 | 2 | -10 | No Armor| 25 | 6 |
+|Tiny | 4 | 29 | 22 | 12 | 0 | No Armor| 15 | 10 |
+|Small | 4 | 34 | 27 | 17 | 5 | No Armor| 10 | 14 |
+|Medium | 4 | 39 | 32 | 22 | 10 | No Armor| 5 | 20 |
+|Large | 4 | 44 | 37 | 27 | 15 | No Armor| 0 | 30 |
+|Huge | 4 | 49 | 42 | 32 | 20 | No Armor| -5 | 40 |
+|Gargantuan | 4 | 59 | 52 | 42 | 30 | No Armor| -15 | 60 |
+|Colossal | 4 | 79 | 72 | 62 | 50 | No Armor| -35 | 80 |
+|Titanic | 4 | 119 | 112 | 102 | 90 | No Armor| -75 | 120 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 4 | -1 | -8 | -17 | -30 | Light| 45 | 5 |
+|Diminutive | 4 | 19 | 12 | 2 | -10 | Light| 25 | 6 |
+|Tiny | 4 | 29 | 22 | 12 | 0 | Light| 15 | 10 |
+|Small | 4 | 34 | 27 | 17 | 5 | Light| 10 | 14 |
+|Medium | 4 | 39 | 32 | 22 | 10 | Light| 5 | 20 |
+|Large | 4 | 44 | 37 | 27 | 15 | Light| 0 | 30 |
+|Huge | 4 | 49 | 42 | 32 | 20 | Light| -5 | 40 |
+|Gargantuan | 4 | 59 | 52 | 42 | 30 | Light| -15 | 60 |
+|Colossal | 4 | 79 | 72 | 62 | 50 | Light| -35 | 80 |
+|Titanic | 4 | 119 | 112 | 102 | 90 | Light| -75 | 120 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 16 | 7 | -10 | -28 | Light| 46 | 6 |
+|Diminutive | 5 | 36 | 27 | 10 | -8 | Light| 26 | 7 |
+|Tiny | 5 | 46 | 37 | 20 | 2 | Light| 16 | 12 |
+|Small | 5 | 51 | 42 | 25 | 7 | Light| 11 | 16 |
+|Medium | 5 | 56 | 47 | 30 | 12 | Light| 6 | 24 |
+|Large | 5 | 61 | 52 | 35 | 17 | Light| 1 | 36 |
+|Huge | 5 | 66 | 57 | 40 | 22 | Light| -4 | 48 |
+|Gargantuan | 5 | 76 | 67 | 50 | 32 | Light| -14 | 72 |
+|Colossal | 5 | 96 | 87 | 70 | 52 | Light| -34 | 96 |
+|Titanic | 5 | 136 | 127 | 110 | 92 | Light| -74 | 144 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -3 | -16 | -30 | Light| 46 | 6 |
+|Diminutive | 5 | 22 | 16 | 3 | -10 | Light| 26 | 7 |
+|Tiny | 5 | 32 | 26 | 13 | 0 | Light| 16 | 12 |
+|Small | 5 | 37 | 31 | 18 | 4 | Light| 11 | 16 |
+|Medium | 5 | 42 | 36 | 23 | 9 | Light| 6 | 24 |
+|Large | 5 | 47 | 41 | 28 | 14 | Light| 1 | 36 |
+|Huge | 5 | 52 | 46 | 33 | 19 | Light| -4 | 48 |
+|Gargantuan | 5 | 62 | 56 | 43 | 29 | Light| -14 | 72 |
+|Colossal | 5 | 82 | 76 | 63 | 49 | Light| -34 | 96 |
+|Titanic | 5 | 122 | 116 | 103 | 89 | Light| -74 | 144 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 28 | 16 | 7 | -10 | Medium| 40 | 7 |
+|Diminutive | 5 | 48 | 36 | 27 | 10 | Medium| 20 | 9 |
+|Tiny | 5 | 58 | 46 | 37 | 20 | Medium| 10 | 15 |
+|Small | 5 | 63 | 51 | 42 | 25 | Medium| 5 | 21 |
+|Medium | 5 | 68 | 56 | 47 | 30 | Medium| 0 | 30 |
+|Large | 5 | 73 | 61 | 52 | 35 | Medium| -5 | 45 |
+|Huge | 5 | 78 | 66 | 57 | 40 | Medium| -10 | 60 |
+|Gargantuan | 5 | 88 | 76 | 67 | 50 | Medium| -20 | 90 |
+|Colossal | 5 | 108 | 96 | 87 | 70 | Medium| -40 | 120 |
+|Titanic | 5 | 148 | 136 | 127 | 110 | Medium| -80 | 180 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 28 | 16 | 7 | -10 | Heavy| 46 | 23 |
+|Diminutive | 5 | 48 | 36 | 27 | 10 | Heavy| 26 | 31 |
+|Tiny | 5 | 58 | 46 | 37 | 20 | Heavy| 16 | 47 |
+|Small | 5 | 63 | 51 | 42 | 25 | Heavy| 11 | 65 |
+|Medium | 5 | 68 | 56 | 47 | 30 | Heavy| 6 | 94 |
+|Large | 5 | 73 | 61 | 52 | 35 | Heavy| 1 | 141 |
+|Huge | 5 | 78 | 66 | 57 | 40 | Heavy| -4 | 188 |
+|Gargantuan | 5 | 88 | 76 | 67 | 50 | Heavy| -14 | 282 |
+|Colossal | 5 | 108 | 96 | 87 | 70 | Heavy| -34 | 376 |
+|Titanic | 5 | 148 | 136 | 127 | 110 | Heavy| -74 | 564 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | -16 | -23 | -32 | -36 | No Armor| 46 | 4 |
+|Diminutive | 5 | 3 | -3 | -12 | -16 | No Armor| 26 | 5 |
+|Tiny | 5 | 13 | 6 | -2 | -6 | No Armor| 16 | 9 |
+|Small | 5 | 18 | 11 | 2 | -1 | No Armor| 11 | 12 |
+|Medium | 5 | 23 | 16 | 7 | 3 | No Armor| 6 | 18 |
+|Large | 5 | 28 | 21 | 12 | 8 | No Armor| 1 | 27 |
+|Huge | 5 | 33 | 26 | 17 | 13 | No Armor| -4 | 36 |
+|Gargantuan | 5 | 43 | 36 | 27 | 23 | No Armor| -14 | 54 |
+|Colossal | 5 | 63 | 56 | 47 | 43 | No Armor| -34 | 72 |
+|Titanic | 5 | 103 | 96 | 87 | 83 | No Armor| -74 | 108 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -2 | -13 | -28 | No Armor| 43 | 6 |
+|Diminutive | 5 | 22 | 17 | 7 | -8 | No Armor| 23 | 7 |
+|Tiny | 5 | 32 | 27 | 17 | 2 | No Armor| 13 | 12 |
+|Small | 5 | 37 | 32 | 22 | 7 | No Armor| 8 | 16 |
+|Medium | 5 | 42 | 37 | 27 | 12 | No Armor| 3 | 24 |
+|Large | 5 | 47 | 42 | 32 | 17 | No Armor| -2 | 36 |
+|Huge | 5 | 52 | 47 | 37 | 22 | No Armor| -7 | 48 |
+|Gargantuan | 5 | 62 | 57 | 47 | 32 | No Armor| -17 | 72 |
+|Colossal | 5 | 82 | 77 | 67 | 52 | No Armor| -37 | 96 |
+|Titanic | 5 | 122 | 117 | 107 | 92 | No Armor| -77 | 144 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 28 | 16 | 7 | -10 | Medium| 46 | 7 |
+|Diminutive | 5 | 48 | 36 | 27 | 10 | Medium| 26 | 9 |
+|Tiny | 5 | 58 | 46 | 37 | 20 | Medium| 16 | 15 |
+|Small | 5 | 63 | 51 | 42 | 25 | Medium| 11 | 21 |
+|Medium | 5 | 68 | 56 | 47 | 30 | Medium| 6 | 30 |
+|Large | 5 | 73 | 61 | 52 | 35 | Medium| 1 | 45 |
+|Huge | 5 | 78 | 66 | 57 | 40 | Medium| -4 | 60 |
+|Gargantuan | 5 | 88 | 76 | 67 | 50 | Medium| -14 | 90 |
+|Colossal | 5 | 108 | 96 | 87 | 70 | Medium| -34 | 120 |
+|Titanic | 5 | 148 | 136 | 127 | 110 | Medium| -74 | 180 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 28 | 16 | 7 | -10 | No Armor| 46 | 7 |
+|Diminutive | 5 | 48 | 36 | 27 | 10 | No Armor| 26 | 9 |
+|Tiny | 5 | 58 | 46 | 37 | 20 | No Armor| 16 | 15 |
+|Small | 5 | 63 | 51 | 42 | 25 | No Armor| 11 | 21 |
+|Medium | 5 | 68 | 56 | 47 | 30 | No Armor| 6 | 30 |
+|Large | 5 | 73 | 61 | 52 | 35 | No Armor| 1 | 45 |
+|Huge | 5 | 78 | 66 | 57 | 40 | No Armor| -4 | 60 |
+|Gargantuan | 5 | 88 | 76 | 67 | 50 | No Armor| -14 | 90 |
+|Colossal | 5 | 108 | 96 | 87 | 70 | No Armor| -34 | 120 |
+|Titanic | 5 | 148 | 136 | 127 | 110 | No Armor| -74 | 180 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -2 | -13 | -28 | No Armor| 46 | 6 |
+|Diminutive | 5 | 22 | 17 | 7 | -8 | No Armor| 26 | 7 |
+|Tiny | 5 | 32 | 27 | 17 | 2 | No Armor| 16 | 12 |
+|Small | 5 | 37 | 32 | 22 | 7 | No Armor| 11 | 16 |
+|Medium | 5 | 42 | 37 | 27 | 12 | No Armor| 6 | 24 |
+|Large | 5 | 47 | 42 | 32 | 17 | No Armor| 1 | 36 |
+|Huge | 5 | 52 | 47 | 37 | 22 | No Armor| -4 | 48 |
+|Gargantuan | 5 | 62 | 57 | 47 | 32 | No Armor| -14 | 72 |
+|Colossal | 5 | 82 | 77 | 67 | 52 | No Armor| -34 | 96 |
+|Titanic | 5 | 122 | 117 | 107 | 92 | No Armor| -74 | 144 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 28 | 16 | 7 | -10 | No Armor| 46 | 7 |
+|Diminutive | 5 | 48 | 36 | 27 | 10 | No Armor| 26 | 9 |
+|Tiny | 5 | 58 | 46 | 37 | 20 | No Armor| 16 | 15 |
+|Small | 5 | 63 | 51 | 42 | 25 | No Armor| 11 | 21 |
+|Medium | 5 | 68 | 56 | 47 | 30 | No Armor| 6 | 30 |
+|Large | 5 | 73 | 61 | 52 | 35 | No Armor| 1 | 45 |
+|Huge | 5 | 78 | 66 | 57 | 40 | No Armor| -4 | 60 |
+|Gargantuan | 5 | 88 | 76 | 67 | 50 | No Armor| -14 | 90 |
+|Colossal | 5 | 108 | 96 | 87 | 70 | No Armor| -34 | 120 |
+|Titanic | 5 | 148 | 136 | 127 | 110 | No Armor| -74 | 180 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -2 | -13 | -28 | No Armor| 46 | 6 |
+|Diminutive | 5 | 22 | 17 | 7 | -8 | No Armor| 26 | 7 |
+|Tiny | 5 | 32 | 27 | 17 | 2 | No Armor| 16 | 12 |
+|Small | 5 | 37 | 32 | 22 | 7 | No Armor| 11 | 16 |
+|Medium | 5 | 42 | 37 | 27 | 12 | No Armor| 6 | 24 |
+|Large | 5 | 47 | 42 | 32 | 17 | No Armor| 1 | 36 |
+|Huge | 5 | 52 | 47 | 37 | 22 | No Armor| -4 | 48 |
+|Gargantuan | 5 | 62 | 57 | 47 | 32 | No Armor| -14 | 72 |
+|Colossal | 5 | 82 | 77 | 67 | 52 | No Armor| -34 | 96 |
+|Titanic | 5 | 122 | 117 | 107 | 92 | No Armor| -74 | 144 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -2 | -13 | -28 | No Armor| 46 | 6 |
+|Diminutive | 5 | 22 | 17 | 7 | -8 | No Armor| 26 | 7 |
+|Tiny | 5 | 32 | 27 | 17 | 2 | No Armor| 16 | 12 |
+|Small | 5 | 37 | 32 | 22 | 7 | No Armor| 11 | 16 |
+|Medium | 5 | 42 | 37 | 27 | 12 | No Armor| 6 | 24 |
+|Large | 5 | 47 | 42 | 32 | 17 | No Armor| 1 | 36 |
+|Huge | 5 | 52 | 47 | 37 | 22 | No Armor| -4 | 48 |
+|Gargantuan | 5 | 62 | 57 | 47 | 32 | No Armor| -14 | 72 |
+|Colossal | 5 | 82 | 77 | 67 | 52 | No Armor| -34 | 96 |
+|Titanic | 5 | 122 | 117 | 107 | 92 | No Armor| -74 | 144 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 5 | 2 | -2 | -13 | -28 | Light| 46 | 6 |
+|Diminutive | 5 | 22 | 17 | 7 | -8 | Light| 26 | 7 |
+|Tiny | 5 | 32 | 27 | 17 | 2 | Light| 16 | 12 |
+|Small | 5 | 37 | 32 | 22 | 7 | Light| 11 | 16 |
+|Medium | 5 | 42 | 37 | 27 | 12 | Light| 6 | 24 |
+|Large | 5 | 47 | 42 | 32 | 17 | Light| 1 | 36 |
+|Huge | 5 | 52 | 47 | 37 | 22 | Light| -4 | 48 |
+|Gargantuan | 5 | 62 | 57 | 47 | 32 | Light| -14 | 72 |
+|Colossal | 5 | 82 | 77 | 67 | 52 | Light| -34 | 96 |
+|Titanic | 5 | 122 | 117 | 107 | 92 | Light| -74 | 144 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 20 | 12 | -5 | -25 | Light| 47 | 7 |
+|Diminutive | 6 | 40 | 32 | 15 | -5 | Light| 27 | 9 |
+|Tiny | 6 | 50 | 42 | 25 | 5 | Light| 17 | 14 |
+|Small | 6 | 55 | 47 | 30 | 10 | Light| 12 | 19 |
+|Medium | 6 | 60 | 52 | 35 | 15 | Light| 7 | 28 |
+|Large | 6 | 65 | 57 | 40 | 20 | Light| 2 | 42 |
+|Huge | 6 | 70 | 62 | 45 | 25 | Light| -3 | 56 |
+|Gargantuan | 6 | 80 | 72 | 55 | 35 | Light| -13 | 84 |
+|Colossal | 6 | 100 | 92 | 75 | 55 | Light| -33 | 112 |
+|Titanic | 6 | 140 | 132 | 115 | 95 | Light| -73 | 168 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 0 | -12 | -27 | Light| 47 | 7 |
+|Diminutive | 6 | 25 | 20 | 7 | -7 | Light| 27 | 9 |
+|Tiny | 6 | 35 | 30 | 17 | 2 | Light| 17 | 14 |
+|Small | 6 | 40 | 35 | 22 | 7 | Light| 12 | 19 |
+|Medium | 6 | 45 | 40 | 27 | 12 | Light| 7 | 28 |
+|Large | 6 | 50 | 45 | 32 | 17 | Light| 2 | 42 |
+|Huge | 6 | 55 | 50 | 37 | 22 | Light| -3 | 56 |
+|Gargantuan | 6 | 65 | 60 | 47 | 32 | Light| -13 | 84 |
+|Colossal | 6 | 85 | 80 | 67 | 52 | Light| -33 | 112 |
+|Titanic | 6 | 125 | 120 | 107 | 92 | Light| -73 | 168 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 32 | 20 | 12 | -5 | Medium| 40 | 8 |
+|Diminutive | 6 | 52 | 40 | 32 | 15 | Medium| 20 | 11 |
+|Tiny | 6 | 62 | 50 | 42 | 25 | Medium| 10 | 17 |
+|Small | 6 | 67 | 55 | 47 | 30 | Medium| 5 | 24 |
+|Medium | 6 | 72 | 60 | 52 | 35 | Medium| 0 | 35 |
+|Large | 6 | 77 | 65 | 57 | 40 | Medium| -5 | 52 |
+|Huge | 6 | 82 | 70 | 62 | 45 | Medium| -10 | 70 |
+|Gargantuan | 6 | 92 | 80 | 72 | 55 | Medium| -20 | 105 |
+|Colossal | 6 | 112 | 100 | 92 | 75 | Medium| -40 | 140 |
+|Titanic | 6 | 152 | 140 | 132 | 115 | Medium| -80 | 210 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 32 | 20 | 12 | -5 | Heavy| 47 | 26 |
+|Diminutive | 6 | 52 | 40 | 32 | 15 | Heavy| 27 | 34 |
+|Tiny | 6 | 62 | 50 | 42 | 25 | Heavy| 17 | 52 |
+|Small | 6 | 67 | 55 | 47 | 30 | Heavy| 12 | 72 |
+|Medium | 6 | 72 | 60 | 52 | 35 | Heavy| 7 | 104 |
+|Large | 6 | 77 | 65 | 57 | 40 | Heavy| 2 | 156 |
+|Huge | 6 | 82 | 70 | 62 | 45 | Heavy| -3 | 208 |
+|Gargantuan | 6 | 92 | 80 | 72 | 55 | Heavy| -13 | 312 |
+|Colossal | 6 | 112 | 100 | 92 | 75 | Heavy| -33 | 416 |
+|Titanic | 6 | 152 | 140 | 132 | 115 | Heavy| -73 | 624 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | -14 | -20 | -31 | -35 | No Armor| 47 | 5 |
+|Diminutive | 6 | 6 | 0 | -11 | -15 | No Armor| 27 | 6 |
+|Tiny | 6 | 16 | 9 | -1 | -5 | No Armor| 17 | 10 |
+|Small | 6 | 21 | 14 | 4 | 0 | No Armor| 12 | 14 |
+|Medium | 6 | 26 | 19 | 9 | 4 | No Armor| 7 | 21 |
+|Large | 6 | 31 | 24 | 14 | 9 | No Armor| 2 | 31 |
+|Huge | 6 | 36 | 29 | 19 | 14 | No Armor| -3 | 42 |
+|Gargantuan | 6 | 46 | 39 | 29 | 24 | No Armor| -13 | 63 |
+|Colossal | 6 | 66 | 59 | 49 | 44 | No Armor| -33 | 84 |
+|Titanic | 6 | 106 | 99 | 89 | 84 | No Armor| -73 | 126 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 1 | -8 | -25 | No Armor| 43 | 7 |
+|Diminutive | 6 | 25 | 21 | 11 | -5 | No Armor| 23 | 9 |
+|Tiny | 6 | 35 | 31 | 21 | 5 | No Armor| 13 | 14 |
+|Small | 6 | 40 | 36 | 26 | 10 | No Armor| 8 | 19 |
+|Medium | 6 | 45 | 41 | 31 | 15 | No Armor| 3 | 28 |
+|Large | 6 | 50 | 46 | 36 | 20 | No Armor| -2 | 42 |
+|Huge | 6 | 55 | 51 | 41 | 25 | No Armor| -7 | 56 |
+|Gargantuan | 6 | 65 | 61 | 51 | 35 | No Armor| -17 | 84 |
+|Colossal | 6 | 85 | 81 | 71 | 55 | No Armor| -37 | 112 |
+|Titanic | 6 | 125 | 121 | 111 | 95 | No Armor| -77 | 168 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 32 | 20 | 12 | -5 | Medium| 47 | 8 |
+|Diminutive | 6 | 52 | 40 | 32 | 15 | Medium| 27 | 11 |
+|Tiny | 6 | 62 | 50 | 42 | 25 | Medium| 17 | 17 |
+|Small | 6 | 67 | 55 | 47 | 30 | Medium| 12 | 24 |
+|Medium | 6 | 72 | 60 | 52 | 35 | Medium| 7 | 35 |
+|Large | 6 | 77 | 65 | 57 | 40 | Medium| 2 | 52 |
+|Huge | 6 | 82 | 70 | 62 | 45 | Medium| -3 | 70 |
+|Gargantuan | 6 | 92 | 80 | 72 | 55 | Medium| -13 | 105 |
+|Colossal | 6 | 112 | 100 | 92 | 75 | Medium| -33 | 140 |
+|Titanic | 6 | 152 | 140 | 132 | 115 | Medium| -73 | 210 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 32 | 20 | 12 | -5 | No Armor| 47 | 8 |
+|Diminutive | 6 | 52 | 40 | 32 | 15 | No Armor| 27 | 11 |
+|Tiny | 6 | 62 | 50 | 42 | 25 | No Armor| 17 | 17 |
+|Small | 6 | 67 | 55 | 47 | 30 | No Armor| 12 | 24 |
+|Medium | 6 | 72 | 60 | 52 | 35 | No Armor| 7 | 35 |
+|Large | 6 | 77 | 65 | 57 | 40 | No Armor| 2 | 52 |
+|Huge | 6 | 82 | 70 | 62 | 45 | No Armor| -3 | 70 |
+|Gargantuan | 6 | 92 | 80 | 72 | 55 | No Armor| -13 | 105 |
+|Colossal | 6 | 112 | 100 | 92 | 75 | No Armor| -33 | 140 |
+|Titanic | 6 | 152 | 140 | 132 | 115 | No Armor| -73 | 210 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 1 | -8 | -25 | No Armor| 47 | 7 |
+|Diminutive | 6 | 25 | 21 | 11 | -5 | No Armor| 27 | 9 |
+|Tiny | 6 | 35 | 31 | 21 | 5 | No Armor| 17 | 14 |
+|Small | 6 | 40 | 36 | 26 | 10 | No Armor| 12 | 19 |
+|Medium | 6 | 45 | 41 | 31 | 15 | No Armor| 7 | 28 |
+|Large | 6 | 50 | 46 | 36 | 20 | No Armor| 2 | 42 |
+|Huge | 6 | 55 | 51 | 41 | 25 | No Armor| -3 | 56 |
+|Gargantuan | 6 | 65 | 61 | 51 | 35 | No Armor| -13 | 84 |
+|Colossal | 6 | 85 | 81 | 71 | 55 | No Armor| -33 | 112 |
+|Titanic | 6 | 125 | 121 | 111 | 95 | No Armor| -73 | 168 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 32 | 20 | 12 | -5 | No Armor| 47 | 8 |
+|Diminutive | 6 | 52 | 40 | 32 | 15 | No Armor| 27 | 11 |
+|Tiny | 6 | 62 | 50 | 42 | 25 | No Armor| 17 | 17 |
+|Small | 6 | 67 | 55 | 47 | 30 | No Armor| 12 | 24 |
+|Medium | 6 | 72 | 60 | 52 | 35 | No Armor| 7 | 35 |
+|Large | 6 | 77 | 65 | 57 | 40 | No Armor| 2 | 52 |
+|Huge | 6 | 82 | 70 | 62 | 45 | No Armor| -3 | 70 |
+|Gargantuan | 6 | 92 | 80 | 72 | 55 | No Armor| -13 | 105 |
+|Colossal | 6 | 112 | 100 | 92 | 75 | No Armor| -33 | 140 |
+|Titanic | 6 | 152 | 140 | 132 | 115 | No Armor| -73 | 210 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 1 | -8 | -25 | No Armor| 47 | 7 |
+|Diminutive | 6 | 25 | 21 | 11 | -5 | No Armor| 27 | 9 |
+|Tiny | 6 | 35 | 31 | 21 | 5 | No Armor| 17 | 14 |
+|Small | 6 | 40 | 36 | 26 | 10 | No Armor| 12 | 19 |
+|Medium | 6 | 45 | 41 | 31 | 15 | No Armor| 7 | 28 |
+|Large | 6 | 50 | 46 | 36 | 20 | No Armor| 2 | 42 |
+|Huge | 6 | 55 | 51 | 41 | 25 | No Armor| -3 | 56 |
+|Gargantuan | 6 | 65 | 61 | 51 | 35 | No Armor| -13 | 84 |
+|Colossal | 6 | 85 | 81 | 71 | 55 | No Armor| -33 | 112 |
+|Titanic | 6 | 125 | 121 | 111 | 95 | No Armor| -73 | 168 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 1 | -8 | -25 | No Armor| 47 | 7 |
+|Diminutive | 6 | 25 | 21 | 11 | -5 | No Armor| 27 | 9 |
+|Tiny | 6 | 35 | 31 | 21 | 5 | No Armor| 17 | 14 |
+|Small | 6 | 40 | 36 | 26 | 10 | No Armor| 12 | 19 |
+|Medium | 6 | 45 | 41 | 31 | 15 | No Armor| 7 | 28 |
+|Large | 6 | 50 | 46 | 36 | 20 | No Armor| 2 | 42 |
+|Huge | 6 | 55 | 51 | 41 | 25 | No Armor| -3 | 56 |
+|Gargantuan | 6 | 65 | 61 | 51 | 35 | No Armor| -13 | 84 |
+|Colossal | 6 | 85 | 81 | 71 | 55 | No Armor| -33 | 112 |
+|Titanic | 6 | 125 | 121 | 111 | 95 | No Armor| -73 | 168 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 6 | 5 | 1 | -8 | -25 | Light| 47 | 7 |
+|Diminutive | 6 | 25 | 21 | 11 | -5 | Light| 27 | 9 |
+|Tiny | 6 | 35 | 31 | 21 | 5 | Light| 17 | 14 |
+|Small | 6 | 40 | 36 | 26 | 10 | Light| 12 | 19 |
+|Medium | 6 | 45 | 41 | 31 | 15 | Light| 7 | 28 |
+|Large | 6 | 50 | 46 | 36 | 20 | Light| 2 | 42 |
+|Huge | 6 | 55 | 51 | 41 | 25 | Light| -3 | 56 |
+|Gargantuan | 6 | 65 | 61 | 51 | 35 | Light| -13 | 84 |
+|Colossal | 6 | 85 | 81 | 71 | 55 | Light| -33 | 112 |
+|Titanic | 6 | 125 | 121 | 111 | 95 | Light| -73 | 168 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 24 | 15 | 0 | -23 | Light| 48 | 8 |
+|Diminutive | 7 | 44 | 35 | 20 | -3 | Light| 28 | 10 |
+|Tiny | 7 | 54 | 45 | 30 | 7 | Light| 18 | 16 |
+|Small | 7 | 59 | 50 | 35 | 12 | Light| 13 | 22 |
+|Medium | 7 | 64 | 55 | 40 | 17 | Light| 8 | 32 |
+|Large | 7 | 69 | 60 | 45 | 22 | Light| 3 | 48 |
+|Huge | 7 | 74 | 65 | 50 | 27 | Light| -2 | 64 |
+|Gargantuan | 7 | 84 | 75 | 60 | 37 | Light| -12 | 96 |
+|Colossal | 7 | 104 | 95 | 80 | 57 | Light| -32 | 128 |
+|Titanic | 7 | 144 | 135 | 120 | 97 | Light| -72 | 192 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 2 | -8 | -26 | Light| 48 | 8 |
+|Diminutive | 7 | 28 | 22 | 11 | -6 | Light| 28 | 10 |
+|Tiny | 7 | 38 | 32 | 21 | 3 | Light| 18 | 16 |
+|Small | 7 | 43 | 37 | 26 | 8 | Light| 13 | 22 |
+|Medium | 7 | 48 | 42 | 31 | 13 | Light| 8 | 32 |
+|Large | 7 | 53 | 47 | 36 | 18 | Light| 3 | 48 |
+|Huge | 7 | 58 | 52 | 41 | 23 | Light| -2 | 64 |
+|Gargantuan | 7 | 68 | 62 | 51 | 33 | Light| -12 | 96 |
+|Colossal | 7 | 88 | 82 | 71 | 53 | Light| -32 | 128 |
+|Titanic | 7 | 128 | 122 | 111 | 93 | Light| -72 | 192 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 35 | 24 | 15 | 0 | Medium| 40 | 10 |
+|Diminutive | 7 | 55 | 44 | 35 | 20 | Medium| 20 | 13 |
+|Tiny | 7 | 65 | 54 | 45 | 30 | Medium| 10 | 20 |
+|Small | 7 | 70 | 59 | 50 | 35 | Medium| 5 | 28 |
+|Medium | 7 | 75 | 64 | 55 | 40 | Medium| 0 | 40 |
+|Large | 7 | 80 | 69 | 60 | 45 | Medium| -5 | 60 |
+|Huge | 7 | 85 | 74 | 65 | 50 | Medium| -10 | 80 |
+|Gargantuan | 7 | 95 | 84 | 75 | 60 | Medium| -20 | 120 |
+|Colossal | 7 | 115 | 104 | 95 | 80 | Medium| -40 | 160 |
+|Titanic | 7 | 155 | 144 | 135 | 120 | Medium| -80 | 240 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 35 | 24 | 15 | 0 | Heavy| 48 | 27 |
+|Diminutive | 7 | 55 | 44 | 35 | 20 | Heavy| 28 | 36 |
+|Tiny | 7 | 65 | 54 | 45 | 30 | Heavy| 18 | 55 |
+|Small | 7 | 70 | 59 | 50 | 35 | Heavy| 13 | 77 |
+|Medium | 7 | 75 | 64 | 55 | 40 | Heavy| 8 | 110 |
+|Large | 7 | 80 | 69 | 60 | 45 | Heavy| 3 | 165 |
+|Huge | 7 | 85 | 74 | 65 | 50 | Heavy| -2 | 220 |
+|Gargantuan | 7 | 95 | 84 | 75 | 60 | Heavy| -12 | 330 |
+|Colossal | 7 | 115 | 104 | 95 | 80 | Heavy| -32 | 440 |
+|Titanic | 7 | 155 | 144 | 135 | 120 | Heavy| -72 | 660 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | -12 | -18 | -29 | -34 | No Armor| 48 | 6 |
+|Diminutive | 7 | 7 | 2 | -9 | -14 | No Armor| 28 | 7 |
+|Tiny | 7 | 17 | 12 | 0 | -4 | No Armor| 18 | 12 |
+|Small | 7 | 22 | 17 | 5 | 0 | No Armor| 13 | 16 |
+|Medium | 7 | 27 | 22 | 10 | 5 | No Armor| 8 | 24 |
+|Large | 7 | 32 | 27 | 15 | 10 | No Armor| 3 | 36 |
+|Huge | 7 | 37 | 32 | 20 | 15 | No Armor| -2 | 48 |
+|Gargantuan | 7 | 47 | 42 | 30 | 25 | No Armor| -12 | 72 |
+|Colossal | 7 | 67 | 62 | 50 | 45 | No Armor| -32 | 96 |
+|Titanic | 7 | 107 | 102 | 90 | 85 | No Armor| -72 | 144 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 4 | -4 | -23 | No Armor| 44 | 8 |
+|Diminutive | 7 | 28 | 24 | 16 | -3 | No Armor| 24 | 10 |
+|Tiny | 7 | 38 | 34 | 26 | 7 | No Armor| 14 | 16 |
+|Small | 7 | 43 | 39 | 31 | 12 | No Armor| 9 | 22 |
+|Medium | 7 | 48 | 44 | 36 | 17 | No Armor| 4 | 32 |
+|Large | 7 | 53 | 49 | 41 | 22 | No Armor| -1 | 48 |
+|Huge | 7 | 58 | 54 | 46 | 27 | No Armor| -6 | 64 |
+|Gargantuan | 7 | 68 | 64 | 56 | 37 | No Armor| -16 | 96 |
+|Colossal | 7 | 88 | 84 | 76 | 57 | No Armor| -36 | 128 |
+|Titanic | 7 | 128 | 124 | 116 | 97 | No Armor| -76 | 192 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 35 | 24 | 15 | 0 | Medium| 48 | 10 |
+|Diminutive | 7 | 55 | 44 | 35 | 20 | Medium| 28 | 13 |
+|Tiny | 7 | 65 | 54 | 45 | 30 | Medium| 18 | 20 |
+|Small | 7 | 70 | 59 | 50 | 35 | Medium| 13 | 28 |
+|Medium | 7 | 75 | 64 | 55 | 40 | Medium| 8 | 40 |
+|Large | 7 | 80 | 69 | 60 | 45 | Medium| 3 | 60 |
+|Huge | 7 | 85 | 74 | 65 | 50 | Medium| -2 | 80 |
+|Gargantuan | 7 | 95 | 84 | 75 | 60 | Medium| -12 | 120 |
+|Colossal | 7 | 115 | 104 | 95 | 80 | Medium| -32 | 160 |
+|Titanic | 7 | 155 | 144 | 135 | 120 | Medium| -72 | 240 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 35 | 24 | 15 | 0 | No Armor| 48 | 10 |
+|Diminutive | 7 | 55 | 44 | 35 | 20 | No Armor| 28 | 13 |
+|Tiny | 7 | 65 | 54 | 45 | 30 | No Armor| 18 | 20 |
+|Small | 7 | 70 | 59 | 50 | 35 | No Armor| 13 | 28 |
+|Medium | 7 | 75 | 64 | 55 | 40 | No Armor| 8 | 40 |
+|Large | 7 | 80 | 69 | 60 | 45 | No Armor| 3 | 60 |
+|Huge | 7 | 85 | 74 | 65 | 50 | No Armor| -2 | 80 |
+|Gargantuan | 7 | 95 | 84 | 75 | 60 | No Armor| -12 | 120 |
+|Colossal | 7 | 115 | 104 | 95 | 80 | No Armor| -32 | 160 |
+|Titanic | 7 | 155 | 144 | 135 | 120 | No Armor| -72 | 240 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 4 | -4 | -23 | No Armor| 48 | 8 |
+|Diminutive | 7 | 28 | 24 | 16 | -3 | No Armor| 28 | 10 |
+|Tiny | 7 | 38 | 34 | 26 | 7 | No Armor| 18 | 16 |
+|Small | 7 | 43 | 39 | 31 | 12 | No Armor| 13 | 22 |
+|Medium | 7 | 48 | 44 | 36 | 17 | No Armor| 8 | 32 |
+|Large | 7 | 53 | 49 | 41 | 22 | No Armor| 3 | 48 |
+|Huge | 7 | 58 | 54 | 46 | 27 | No Armor| -2 | 64 |
+|Gargantuan | 7 | 68 | 64 | 56 | 37 | No Armor| -12 | 96 |
+|Colossal | 7 | 88 | 84 | 76 | 57 | No Armor| -32 | 128 |
+|Titanic | 7 | 128 | 124 | 116 | 97 | No Armor| -72 | 192 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 35 | 24 | 15 | 0 | No Armor| 48 | 10 |
+|Diminutive | 7 | 55 | 44 | 35 | 20 | No Armor| 28 | 13 |
+|Tiny | 7 | 65 | 54 | 45 | 30 | No Armor| 18 | 20 |
+|Small | 7 | 70 | 59 | 50 | 35 | No Armor| 13 | 28 |
+|Medium | 7 | 75 | 64 | 55 | 40 | No Armor| 8 | 40 |
+|Large | 7 | 80 | 69 | 60 | 45 | No Armor| 3 | 60 |
+|Huge | 7 | 85 | 74 | 65 | 50 | No Armor| -2 | 80 |
+|Gargantuan | 7 | 95 | 84 | 75 | 60 | No Armor| -12 | 120 |
+|Colossal | 7 | 115 | 104 | 95 | 80 | No Armor| -32 | 160 |
+|Titanic | 7 | 155 | 144 | 135 | 120 | No Armor| -72 | 240 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 4 | -4 | -23 | No Armor| 48 | 8 |
+|Diminutive | 7 | 28 | 24 | 16 | -3 | No Armor| 28 | 10 |
+|Tiny | 7 | 38 | 34 | 26 | 7 | No Armor| 18 | 16 |
+|Small | 7 | 43 | 39 | 31 | 12 | No Armor| 13 | 22 |
+|Medium | 7 | 48 | 44 | 36 | 17 | No Armor| 8 | 32 |
+|Large | 7 | 53 | 49 | 41 | 22 | No Armor| 3 | 48 |
+|Huge | 7 | 58 | 54 | 46 | 27 | No Armor| -2 | 64 |
+|Gargantuan | 7 | 68 | 64 | 56 | 37 | No Armor| -12 | 96 |
+|Colossal | 7 | 88 | 84 | 76 | 57 | No Armor| -32 | 128 |
+|Titanic | 7 | 128 | 124 | 116 | 97 | No Armor| -72 | 192 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 4 | -4 | -23 | No Armor| 48 | 8 |
+|Diminutive | 7 | 28 | 24 | 16 | -3 | No Armor| 28 | 10 |
+|Tiny | 7 | 38 | 34 | 26 | 7 | No Armor| 18 | 16 |
+|Small | 7 | 43 | 39 | 31 | 12 | No Armor| 13 | 22 |
+|Medium | 7 | 48 | 44 | 36 | 17 | No Armor| 8 | 32 |
+|Large | 7 | 53 | 49 | 41 | 22 | No Armor| 3 | 48 |
+|Huge | 7 | 58 | 54 | 46 | 27 | No Armor| -2 | 64 |
+|Gargantuan | 7 | 68 | 64 | 56 | 37 | No Armor| -12 | 96 |
+|Colossal | 7 | 88 | 84 | 76 | 57 | No Armor| -32 | 128 |
+|Titanic | 7 | 128 | 124 | 116 | 97 | No Armor| -72 | 192 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 7 | 8 | 4 | -4 | -23 | Light| 48 | 8 |
+|Diminutive | 7 | 28 | 24 | 16 | -3 | Light| 28 | 10 |
+|Tiny | 7 | 38 | 34 | 26 | 7 | Light| 18 | 16 |
+|Small | 7 | 43 | 39 | 31 | 12 | Light| 13 | 22 |
+|Medium | 7 | 48 | 44 | 36 | 17 | Light| 8 | 32 |
+|Large | 7 | 53 | 49 | 41 | 22 | Light| 3 | 48 |
+|Huge | 7 | 58 | 54 | 46 | 27 | Light| -2 | 64 |
+|Gargantuan | 7 | 68 | 64 | 56 | 37 | Light| -12 | 96 |
+|Colossal | 7 | 88 | 84 | 76 | 57 | Light| -32 | 128 |
+|Titanic | 7 | 128 | 124 | 116 | 97 | Light| -72 | 192 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 28 | 18 | 5 | -20 | Light| 50 | 9 |
+|Diminutive | 8 | 48 | 38 | 25 | 0 | Light| 30 | 11 |
+|Tiny | 8 | 58 | 48 | 35 | 10 | Light| 20 | 18 |
+|Small | 8 | 63 | 53 | 40 | 15 | Light| 15 | 25 |
+|Medium | 8 | 68 | 58 | 45 | 20 | Light| 10 | 36 |
+|Large | 8 | 73 | 63 | 50 | 25 | Light| 5 | 54 |
+|Huge | 8 | 78 | 68 | 55 | 30 | Light| 0 | 72 |
+|Gargantuan | 8 | 88 | 78 | 65 | 40 | Light| -10 | 108 |
+|Colossal | 8 | 108 | 98 | 85 | 60 | Light| -30 | 144 |
+|Titanic | 8 | 148 | 138 | 125 | 100 | Light| -70 | 216 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 4 | -4 | -23 | Light| 50 | 9 |
+|Diminutive | 8 | 31 | 24 | 15 | -3 | Light| 30 | 11 |
+|Tiny | 8 | 41 | 34 | 25 | 6 | Light| 20 | 18 |
+|Small | 8 | 46 | 39 | 30 | 11 | Light| 15 | 25 |
+|Medium | 8 | 51 | 44 | 35 | 16 | Light| 10 | 36 |
+|Large | 8 | 56 | 49 | 40 | 21 | Light| 5 | 54 |
+|Huge | 8 | 61 | 54 | 45 | 26 | Light| 0 | 72 |
+|Gargantuan | 8 | 71 | 64 | 55 | 36 | Light| -10 | 108 |
+|Colossal | 8 | 91 | 84 | 75 | 56 | Light| -30 | 144 |
+|Titanic | 8 | 131 | 124 | 115 | 96 | Light| -70 | 216 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 38 | 28 | 18 | 5 | Medium| 40 | 11 |
+|Diminutive | 8 | 58 | 48 | 38 | 25 | Medium| 20 | 14 |
+|Tiny | 8 | 68 | 58 | 48 | 35 | Medium| 10 | 22 |
+|Small | 8 | 73 | 63 | 53 | 40 | Medium| 5 | 31 |
+|Medium | 8 | 78 | 68 | 58 | 45 | Medium| 0 | 45 |
+|Large | 8 | 83 | 73 | 63 | 50 | Medium| -5 | 67 |
+|Huge | 8 | 88 | 78 | 68 | 55 | Medium| -10 | 90 |
+|Gargantuan | 8 | 98 | 88 | 78 | 65 | Medium| -20 | 135 |
+|Colossal | 8 | 118 | 108 | 98 | 85 | Medium| -40 | 180 |
+|Titanic | 8 | 158 | 148 | 138 | 125 | Medium| -80 | 270 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 38 | 28 | 18 | 5 | Heavy| 50 | 29 |
+|Diminutive | 8 | 58 | 48 | 38 | 25 | Heavy| 30 | 38 |
+|Tiny | 8 | 68 | 58 | 48 | 35 | Heavy| 20 | 58 |
+|Small | 8 | 73 | 63 | 53 | 40 | Heavy| 15 | 81 |
+|Medium | 8 | 78 | 68 | 58 | 45 | Heavy| 10 | 116 |
+|Large | 8 | 83 | 73 | 63 | 50 | Heavy| 5 | 174 |
+|Huge | 8 | 88 | 78 | 68 | 55 | Heavy| 0 | 232 |
+|Gargantuan | 8 | 98 | 88 | 78 | 65 | Heavy| -10 | 348 |
+|Colossal | 8 | 118 | 108 | 98 | 85 | Heavy| -30 | 464 |
+|Titanic | 8 | 158 | 148 | 138 | 125 | Heavy| -70 | 696 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | -11 | -15 | -28 | -33 | No Armor| 50 | 6 |
+|Diminutive | 8 | 9 | 4 | -8 | -13 | No Armor| 30 | 8 |
+|Tiny | 8 | 19 | 14 | 2 | -3 | No Armor| 20 | 13 |
+|Small | 8 | 24 | 19 | 7 | 1 | No Armor| 15 | 18 |
+|Medium | 8 | 29 | 24 | 12 | 6 | No Armor| 10 | 27 |
+|Large | 8 | 34 | 29 | 17 | 11 | No Armor| 5 | 40 |
+|Huge | 8 | 39 | 34 | 22 | 16 | No Armor| 0 | 54 |
+|Gargantuan | 8 | 49 | 44 | 32 | 26 | No Armor| -10 | 81 |
+|Colossal | 8 | 69 | 64 | 52 | 46 | No Armor| -30 | 108 |
+|Titanic | 8 | 109 | 104 | 92 | 86 | No Armor| -70 | 162 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 6 | 0 | -20 | No Armor| 45 | 9 |
+|Diminutive | 8 | 31 | 26 | 20 | 0 | No Armor| 25 | 11 |
+|Tiny | 8 | 41 | 36 | 30 | 10 | No Armor| 15 | 18 |
+|Small | 8 | 46 | 41 | 35 | 15 | No Armor| 10 | 25 |
+|Medium | 8 | 51 | 46 | 40 | 20 | No Armor| 5 | 36 |
+|Large | 8 | 56 | 51 | 45 | 25 | No Armor| 0 | 54 |
+|Huge | 8 | 61 | 56 | 50 | 30 | No Armor| -5 | 72 |
+|Gargantuan | 8 | 71 | 66 | 60 | 40 | No Armor| -15 | 108 |
+|Colossal | 8 | 91 | 86 | 80 | 60 | No Armor| -35 | 144 |
+|Titanic | 8 | 131 | 126 | 120 | 100 | No Armor| -75 | 216 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 38 | 28 | 18 | 5 | Medium| 50 | 11 |
+|Diminutive | 8 | 58 | 48 | 38 | 25 | Medium| 30 | 14 |
+|Tiny | 8 | 68 | 58 | 48 | 35 | Medium| 20 | 22 |
+|Small | 8 | 73 | 63 | 53 | 40 | Medium| 15 | 31 |
+|Medium | 8 | 78 | 68 | 58 | 45 | Medium| 10 | 45 |
+|Large | 8 | 83 | 73 | 63 | 50 | Medium| 5 | 67 |
+|Huge | 8 | 88 | 78 | 68 | 55 | Medium| 0 | 90 |
+|Gargantuan | 8 | 98 | 88 | 78 | 65 | Medium| -10 | 135 |
+|Colossal | 8 | 118 | 108 | 98 | 85 | Medium| -30 | 180 |
+|Titanic | 8 | 158 | 148 | 138 | 125 | Medium| -70 | 270 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 38 | 28 | 18 | 5 | No Armor| 50 | 11 |
+|Diminutive | 8 | 58 | 48 | 38 | 25 | No Armor| 30 | 14 |
+|Tiny | 8 | 68 | 58 | 48 | 35 | No Armor| 20 | 22 |
+|Small | 8 | 73 | 63 | 53 | 40 | No Armor| 15 | 31 |
+|Medium | 8 | 78 | 68 | 58 | 45 | No Armor| 10 | 45 |
+|Large | 8 | 83 | 73 | 63 | 50 | No Armor| 5 | 67 |
+|Huge | 8 | 88 | 78 | 68 | 55 | No Armor| 0 | 90 |
+|Gargantuan | 8 | 98 | 88 | 78 | 65 | No Armor| -10 | 135 |
+|Colossal | 8 | 118 | 108 | 98 | 85 | No Armor| -30 | 180 |
+|Titanic | 8 | 158 | 148 | 138 | 125 | No Armor| -70 | 270 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 6 | 0 | -20 | No Armor| 50 | 9 |
+|Diminutive | 8 | 31 | 26 | 20 | 0 | No Armor| 30 | 11 |
+|Tiny | 8 | 41 | 36 | 30 | 10 | No Armor| 20 | 18 |
+|Small | 8 | 46 | 41 | 35 | 15 | No Armor| 15 | 25 |
+|Medium | 8 | 51 | 46 | 40 | 20 | No Armor| 10 | 36 |
+|Large | 8 | 56 | 51 | 45 | 25 | No Armor| 5 | 54 |
+|Huge | 8 | 61 | 56 | 50 | 30 | No Armor| 0 | 72 |
+|Gargantuan | 8 | 71 | 66 | 60 | 40 | No Armor| -10 | 108 |
+|Colossal | 8 | 91 | 86 | 80 | 60 | No Armor| -30 | 144 |
+|Titanic | 8 | 131 | 126 | 120 | 100 | No Armor| -70 | 216 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 38 | 28 | 18 | 5 | No Armor| 50 | 11 |
+|Diminutive | 8 | 58 | 48 | 38 | 25 | No Armor| 30 | 14 |
+|Tiny | 8 | 68 | 58 | 48 | 35 | No Armor| 20 | 22 |
+|Small | 8 | 73 | 63 | 53 | 40 | No Armor| 15 | 31 |
+|Medium | 8 | 78 | 68 | 58 | 45 | No Armor| 10 | 45 |
+|Large | 8 | 83 | 73 | 63 | 50 | No Armor| 5 | 67 |
+|Huge | 8 | 88 | 78 | 68 | 55 | No Armor| 0 | 90 |
+|Gargantuan | 8 | 98 | 88 | 78 | 65 | No Armor| -10 | 135 |
+|Colossal | 8 | 118 | 108 | 98 | 85 | No Armor| -30 | 180 |
+|Titanic | 8 | 158 | 148 | 138 | 125 | No Armor| -70 | 270 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 6 | 0 | -20 | No Armor| 50 | 9 |
+|Diminutive | 8 | 31 | 26 | 20 | 0 | No Armor| 30 | 11 |
+|Tiny | 8 | 41 | 36 | 30 | 10 | No Armor| 20 | 18 |
+|Small | 8 | 46 | 41 | 35 | 15 | No Armor| 15 | 25 |
+|Medium | 8 | 51 | 46 | 40 | 20 | No Armor| 10 | 36 |
+|Large | 8 | 56 | 51 | 45 | 25 | No Armor| 5 | 54 |
+|Huge | 8 | 61 | 56 | 50 | 30 | No Armor| 0 | 72 |
+|Gargantuan | 8 | 71 | 66 | 60 | 40 | No Armor| -10 | 108 |
+|Colossal | 8 | 91 | 86 | 80 | 60 | No Armor| -30 | 144 |
+|Titanic | 8 | 131 | 126 | 120 | 100 | No Armor| -70 | 216 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 6 | 0 | -20 | No Armor| 50 | 9 |
+|Diminutive | 8 | 31 | 26 | 20 | 0 | No Armor| 30 | 11 |
+|Tiny | 8 | 41 | 36 | 30 | 10 | No Armor| 20 | 18 |
+|Small | 8 | 46 | 41 | 35 | 15 | No Armor| 15 | 25 |
+|Medium | 8 | 51 | 46 | 40 | 20 | No Armor| 10 | 36 |
+|Large | 8 | 56 | 51 | 45 | 25 | No Armor| 5 | 54 |
+|Huge | 8 | 61 | 56 | 50 | 30 | No Armor| 0 | 72 |
+|Gargantuan | 8 | 71 | 66 | 60 | 40 | No Armor| -10 | 108 |
+|Colossal | 8 | 91 | 86 | 80 | 60 | No Armor| -30 | 144 |
+|Titanic | 8 | 131 | 126 | 120 | 100 | No Armor| -70 | 216 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 8 | 11 | 6 | 0 | -20 | Light| 50 | 9 |
+|Diminutive | 8 | 31 | 26 | 20 | 0 | Light| 30 | 11 |
+|Tiny | 8 | 41 | 36 | 30 | 10 | Light| 20 | 18 |
+|Small | 8 | 46 | 41 | 35 | 15 | Light| 15 | 25 |
+|Medium | 8 | 51 | 46 | 40 | 20 | Light| 10 | 36 |
+|Large | 8 | 56 | 51 | 45 | 25 | Light| 5 | 54 |
+|Huge | 8 | 61 | 56 | 50 | 30 | Light| 0 | 72 |
+|Gargantuan | 8 | 71 | 66 | 60 | 40 | Light| -10 | 108 |
+|Colossal | 8 | 91 | 86 | 80 | 60 | Light| -30 | 144 |
+|Titanic | 8 | 131 | 126 | 120 | 100 | Light| -70 | 216 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 31 | 21 | 10 | -18 | Light| 51 | 10 |
+|Diminutive | 9 | 51 | 41 | 30 | 2 | Light| 31 | 13 |
+|Tiny | 9 | 61 | 51 | 40 | 12 | Light| 21 | 20 |
+|Small | 9 | 66 | 56 | 45 | 17 | Light| 16 | 28 |
+|Medium | 9 | 71 | 61 | 50 | 22 | Light| 11 | 40 |
+|Large | 9 | 76 | 66 | 55 | 27 | Light| 6 | 60 |
+|Huge | 9 | 81 | 71 | 60 | 32 | Light| 1 | 80 |
+|Gargantuan | 9 | 91 | 81 | 70 | 42 | Light| -9 | 120 |
+|Colossal | 9 | 111 | 101 | 90 | 62 | Light| -29 | 160 |
+|Titanic | 9 | 151 | 141 | 130 | 102 | Light| -69 | 240 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 6 | 0 | -22 | Light| 51 | 10 |
+|Diminutive | 9 | 33 | 26 | 19 | -2 | Light| 31 | 13 |
+|Tiny | 9 | 43 | 36 | 29 | 7 | Light| 21 | 20 |
+|Small | 9 | 48 | 41 | 34 | 12 | Light| 16 | 28 |
+|Medium | 9 | 53 | 46 | 39 | 17 | Light| 11 | 40 |
+|Large | 9 | 58 | 51 | 44 | 22 | Light| 6 | 60 |
+|Huge | 9 | 63 | 56 | 49 | 27 | Light| 1 | 80 |
+|Gargantuan | 9 | 73 | 66 | 59 | 37 | Light| -9 | 120 |
+|Colossal | 9 | 93 | 86 | 79 | 57 | Light| -29 | 160 |
+|Titanic | 9 | 133 | 126 | 119 | 97 | Light| -69 | 240 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 40 | 31 | 21 | 10 | Medium| 40 | 12 |
+|Diminutive | 9 | 60 | 51 | 41 | 30 | Medium| 20 | 16 |
+|Tiny | 9 | 70 | 61 | 51 | 40 | Medium| 10 | 25 |
+|Small | 9 | 75 | 66 | 56 | 45 | Medium| 5 | 35 |
+|Medium | 9 | 80 | 71 | 61 | 50 | Medium| 0 | 50 |
+|Large | 9 | 85 | 76 | 66 | 55 | Medium| -5 | 75 |
+|Huge | 9 | 90 | 81 | 71 | 60 | Medium| -10 | 100 |
+|Gargantuan | 9 | 100 | 91 | 81 | 70 | Medium| -20 | 150 |
+|Colossal | 9 | 120 | 111 | 101 | 90 | Medium| -40 | 200 |
+|Titanic | 9 | 160 | 151 | 141 | 130 | Medium| -80 | 300 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 40 | 31 | 21 | 10 | Heavy| 51 | 30 |
+|Diminutive | 9 | 60 | 51 | 41 | 30 | Heavy| 31 | 40 |
+|Tiny | 9 | 70 | 61 | 51 | 40 | Heavy| 21 | 61 |
+|Small | 9 | 75 | 66 | 56 | 45 | Heavy| 16 | 85 |
+|Medium | 9 | 80 | 71 | 61 | 50 | Heavy| 11 | 122 |
+|Large | 9 | 85 | 76 | 66 | 55 | Heavy| 6 | 183 |
+|Huge | 9 | 90 | 81 | 71 | 60 | Heavy| 1 | 244 |
+|Gargantuan | 9 | 100 | 91 | 81 | 70 | Heavy| -9 | 366 |
+|Colossal | 9 | 120 | 111 | 101 | 90 | Heavy| -29 | 488 |
+|Titanic | 9 | 160 | 151 | 141 | 130 | Heavy| -69 | 732 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | -9 | -12 | -26 | -32 | No Armor| 51 | 7 |
+|Diminutive | 9 | 10 | 7 | -6 | -12 | No Armor| 31 | 9 |
+|Tiny | 9 | 20 | 17 | 3 | -2 | No Armor| 21 | 15 |
+|Small | 9 | 25 | 22 | 8 | 2 | No Armor| 16 | 21 |
+|Medium | 9 | 30 | 27 | 13 | 7 | No Armor| 11 | 30 |
+|Large | 9 | 35 | 32 | 18 | 12 | No Armor| 6 | 45 |
+|Huge | 9 | 40 | 37 | 23 | 17 | No Armor| 1 | 60 |
+|Gargantuan | 9 | 50 | 47 | 33 | 27 | No Armor| -9 | 90 |
+|Colossal | 9 | 70 | 67 | 53 | 47 | No Armor| -29 | 120 |
+|Titanic | 9 | 110 | 107 | 93 | 87 | No Armor| -69 | 180 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 8 | 5 | -18 | No Armor| 45 | 10 |
+|Diminutive | 9 | 33 | 28 | 25 | 2 | No Armor| 25 | 13 |
+|Tiny | 9 | 43 | 38 | 35 | 12 | No Armor| 15 | 20 |
+|Small | 9 | 48 | 43 | 40 | 17 | No Armor| 10 | 28 |
+|Medium | 9 | 53 | 48 | 45 | 22 | No Armor| 5 | 40 |
+|Large | 9 | 58 | 53 | 50 | 27 | No Armor| 0 | 60 |
+|Huge | 9 | 63 | 58 | 55 | 32 | No Armor| -5 | 80 |
+|Gargantuan | 9 | 73 | 68 | 65 | 42 | No Armor| -15 | 120 |
+|Colossal | 9 | 93 | 88 | 85 | 62 | No Armor| -35 | 160 |
+|Titanic | 9 | 133 | 128 | 125 | 102 | No Armor| -75 | 240 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 40 | 31 | 21 | 10 | Medium| 51 | 12 |
+|Diminutive | 9 | 60 | 51 | 41 | 30 | Medium| 31 | 16 |
+|Tiny | 9 | 70 | 61 | 51 | 40 | Medium| 21 | 25 |
+|Small | 9 | 75 | 66 | 56 | 45 | Medium| 16 | 35 |
+|Medium | 9 | 80 | 71 | 61 | 50 | Medium| 11 | 50 |
+|Large | 9 | 85 | 76 | 66 | 55 | Medium| 6 | 75 |
+|Huge | 9 | 90 | 81 | 71 | 60 | Medium| 1 | 100 |
+|Gargantuan | 9 | 100 | 91 | 81 | 70 | Medium| -9 | 150 |
+|Colossal | 9 | 120 | 111 | 101 | 90 | Medium| -29 | 200 |
+|Titanic | 9 | 160 | 151 | 141 | 130 | Medium| -69 | 300 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 40 | 31 | 21 | 10 | No Armor| 51 | 12 |
+|Diminutive | 9 | 60 | 51 | 41 | 30 | No Armor| 31 | 16 |
+|Tiny | 9 | 70 | 61 | 51 | 40 | No Armor| 21 | 25 |
+|Small | 9 | 75 | 66 | 56 | 45 | No Armor| 16 | 35 |
+|Medium | 9 | 80 | 71 | 61 | 50 | No Armor| 11 | 50 |
+|Large | 9 | 85 | 76 | 66 | 55 | No Armor| 6 | 75 |
+|Huge | 9 | 90 | 81 | 71 | 60 | No Armor| 1 | 100 |
+|Gargantuan | 9 | 100 | 91 | 81 | 70 | No Armor| -9 | 150 |
+|Colossal | 9 | 120 | 111 | 101 | 90 | No Armor| -29 | 200 |
+|Titanic | 9 | 160 | 151 | 141 | 130 | No Armor| -69 | 300 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 8 | 5 | -18 | No Armor| 51 | 10 |
+|Diminutive | 9 | 33 | 28 | 25 | 2 | No Armor| 31 | 13 |
+|Tiny | 9 | 43 | 38 | 35 | 12 | No Armor| 21 | 20 |
+|Small | 9 | 48 | 43 | 40 | 17 | No Armor| 16 | 28 |
+|Medium | 9 | 53 | 48 | 45 | 22 | No Armor| 11 | 40 |
+|Large | 9 | 58 | 53 | 50 | 27 | No Armor| 6 | 60 |
+|Huge | 9 | 63 | 58 | 55 | 32 | No Armor| 1 | 80 |
+|Gargantuan | 9 | 73 | 68 | 65 | 42 | No Armor| -9 | 120 |
+|Colossal | 9 | 93 | 88 | 85 | 62 | No Armor| -29 | 160 |
+|Titanic | 9 | 133 | 128 | 125 | 102 | No Armor| -69 | 240 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 40 | 31 | 21 | 10 | No Armor| 51 | 12 |
+|Diminutive | 9 | 60 | 51 | 41 | 30 | No Armor| 31 | 16 |
+|Tiny | 9 | 70 | 61 | 51 | 40 | No Armor| 21 | 25 |
+|Small | 9 | 75 | 66 | 56 | 45 | No Armor| 16 | 35 |
+|Medium | 9 | 80 | 71 | 61 | 50 | No Armor| 11 | 50 |
+|Large | 9 | 85 | 76 | 66 | 55 | No Armor| 6 | 75 |
+|Huge | 9 | 90 | 81 | 71 | 60 | No Armor| 1 | 100 |
+|Gargantuan | 9 | 100 | 91 | 81 | 70 | No Armor| -9 | 150 |
+|Colossal | 9 | 120 | 111 | 101 | 90 | No Armor| -29 | 200 |
+|Titanic | 9 | 160 | 151 | 141 | 130 | No Armor| -69 | 300 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 8 | 5 | -18 | No Armor| 51 | 10 |
+|Diminutive | 9 | 33 | 28 | 25 | 2 | No Armor| 31 | 13 |
+|Tiny | 9 | 43 | 38 | 35 | 12 | No Armor| 21 | 20 |
+|Small | 9 | 48 | 43 | 40 | 17 | No Armor| 16 | 28 |
+|Medium | 9 | 53 | 48 | 45 | 22 | No Armor| 11 | 40 |
+|Large | 9 | 58 | 53 | 50 | 27 | No Armor| 6 | 60 |
+|Huge | 9 | 63 | 58 | 55 | 32 | No Armor| 1 | 80 |
+|Gargantuan | 9 | 73 | 68 | 65 | 42 | No Armor| -9 | 120 |
+|Colossal | 9 | 93 | 88 | 85 | 62 | No Armor| -29 | 160 |
+|Titanic | 9 | 133 | 128 | 125 | 102 | No Armor| -69 | 240 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 8 | 5 | -18 | No Armor| 51 | 10 |
+|Diminutive | 9 | 33 | 28 | 25 | 2 | No Armor| 31 | 13 |
+|Tiny | 9 | 43 | 38 | 35 | 12 | No Armor| 21 | 20 |
+|Small | 9 | 48 | 43 | 40 | 17 | No Armor| 16 | 28 |
+|Medium | 9 | 53 | 48 | 45 | 22 | No Armor| 11 | 40 |
+|Large | 9 | 58 | 53 | 50 | 27 | No Armor| 6 | 60 |
+|Huge | 9 | 63 | 58 | 55 | 32 | No Armor| 1 | 80 |
+|Gargantuan | 9 | 73 | 68 | 65 | 42 | No Armor| -9 | 120 |
+|Colossal | 9 | 93 | 88 | 85 | 62 | No Armor| -29 | 160 |
+|Titanic | 9 | 133 | 128 | 125 | 102 | No Armor| -69 | 240 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 9 | 13 | 8 | 5 | -18 | Light| 51 | 10 |
+|Diminutive | 9 | 33 | 28 | 25 | 2 | Light| 31 | 13 |
+|Tiny | 9 | 43 | 38 | 35 | 12 | Light| 21 | 20 |
+|Small | 9 | 48 | 43 | 40 | 17 | Light| 16 | 28 |
+|Medium | 9 | 53 | 48 | 45 | 22 | Light| 11 | 40 |
+|Large | 9 | 58 | 53 | 50 | 27 | Light| 6 | 60 |
+|Huge | 9 | 63 | 58 | 55 | 32 | Light| 1 | 80 |
+|Gargantuan | 9 | 73 | 68 | 65 | 42 | Light| -9 | 120 |
+|Colossal | 9 | 93 | 88 | 85 | 62 | Light| -29 | 160 |
+|Titanic | 9 | 133 | 128 | 125 | 102 | Light| -69 | 240 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 33 | 24 | 12 | -15 | Light| 52 | 10 |
+|Diminutive | 10 | 53 | 44 | 32 | 5 | Light| 32 | 13 |
+|Tiny | 10 | 63 | 54 | 42 | 15 | Light| 22 | 20 |
+|Small | 10 | 68 | 59 | 47 | 20 | Light| 17 | 29 |
+|Medium | 10 | 73 | 64 | 52 | 25 | Light| 12 | 41 |
+|Large | 10 | 78 | 69 | 57 | 30 | Light| 7 | 62 |
+|Huge | 10 | 83 | 74 | 62 | 35 | Light| 2 | 83 |
+|Gargantuan | 10 | 93 | 84 | 72 | 45 | Light| -8 | 124 |
+|Colossal | 10 | 113 | 104 | 92 | 65 | Light| -28 | 166 |
+|Titanic | 10 | 153 | 144 | 132 | 105 | Light| -68 | 249 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 9 | 1 | -19 | Light| 52 | 10 |
+|Diminutive | 10 | 34 | 29 | 21 | 0 | Light| 32 | 13 |
+|Tiny | 10 | 44 | 39 | 31 | 10 | Light| 22 | 20 |
+|Small | 10 | 49 | 44 | 36 | 15 | Light| 17 | 29 |
+|Medium | 10 | 54 | 49 | 41 | 20 | Light| 12 | 41 |
+|Large | 10 | 59 | 54 | 46 | 25 | Light| 7 | 62 |
+|Huge | 10 | 64 | 59 | 51 | 30 | Light| 2 | 83 |
+|Gargantuan | 10 | 74 | 69 | 61 | 40 | Light| -8 | 124 |
+|Colossal | 10 | 94 | 89 | 81 | 60 | Light| -28 | 166 |
+|Titanic | 10 | 134 | 129 | 121 | 100 | Light| -68 | 249 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 42 | 33 | 24 | 12 | Medium| 40 | 13 |
+|Diminutive | 10 | 62 | 53 | 44 | 32 | Medium| 20 | 17 |
+|Tiny | 10 | 72 | 63 | 54 | 42 | Medium| 10 | 26 |
+|Small | 10 | 77 | 68 | 59 | 47 | Medium| 5 | 36 |
+|Medium | 10 | 82 | 73 | 64 | 52 | Medium| 0 | 52 |
+|Large | 10 | 87 | 78 | 69 | 57 | Medium| -5 | 78 |
+|Huge | 10 | 92 | 83 | 74 | 62 | Medium| -10 | 104 |
+|Gargantuan | 10 | 102 | 93 | 84 | 72 | Medium| -20 | 156 |
+|Colossal | 10 | 122 | 113 | 104 | 92 | Medium| -40 | 208 |
+|Titanic | 10 | 162 | 153 | 144 | 132 | Medium| -80 | 312 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 42 | 33 | 24 | 12 | Heavy| 52 | 32 |
+|Diminutive | 10 | 62 | 53 | 44 | 32 | Heavy| 32 | 42 |
+|Tiny | 10 | 72 | 63 | 54 | 42 | Heavy| 22 | 64 |
+|Small | 10 | 77 | 68 | 59 | 47 | Heavy| 17 | 89 |
+|Medium | 10 | 82 | 73 | 64 | 52 | Heavy| 12 | 128 |
+|Large | 10 | 87 | 78 | 69 | 57 | Heavy| 7 | 192 |
+|Huge | 10 | 92 | 83 | 74 | 62 | Heavy| 2 | 256 |
+|Gargantuan | 10 | 102 | 93 | 84 | 72 | Heavy| -8 | 384 |
+|Colossal | 10 | 122 | 113 | 104 | 92 | Heavy| -28 | 512 |
+|Titanic | 10 | 162 | 153 | 144 | 132 | Heavy| -68 | 768 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | -8 | -11 | -25 | -32 | No Armor| 52 | 7 |
+|Diminutive | 10 | 12 | 8 | -5 | -12 | No Armor| 32 | 10 |
+|Tiny | 10 | 22 | 18 | 5 | -2 | No Armor| 22 | 15 |
+|Small | 10 | 27 | 23 | 10 | 2 | No Armor| 17 | 21 |
+|Medium | 10 | 32 | 28 | 15 | 7 | No Armor| 12 | 31 |
+|Large | 10 | 37 | 33 | 20 | 12 | No Armor| 7 | 46 |
+|Huge | 10 | 42 | 38 | 25 | 17 | No Armor| 2 | 62 |
+|Gargantuan | 10 | 52 | 48 | 35 | 27 | No Armor| -8 | 93 |
+|Colossal | 10 | 72 | 68 | 55 | 47 | No Armor| -28 | 124 |
+|Titanic | 10 | 112 | 108 | 95 | 87 | No Armor| -68 | 187 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 11 | 6 | -15 | No Armor| 46 | 10 |
+|Diminutive | 10 | 34 | 31 | 26 | 5 | No Armor| 26 | 13 |
+|Tiny | 10 | 44 | 41 | 36 | 15 | No Armor| 16 | 20 |
+|Small | 10 | 49 | 46 | 41 | 20 | No Armor| 11 | 29 |
+|Medium | 10 | 54 | 51 | 46 | 25 | No Armor| 6 | 41 |
+|Large | 10 | 59 | 56 | 51 | 30 | No Armor| 1 | 62 |
+|Huge | 10 | 64 | 61 | 56 | 35 | No Armor| -4 | 83 |
+|Gargantuan | 10 | 74 | 71 | 66 | 45 | No Armor| -14 | 124 |
+|Colossal | 10 | 94 | 91 | 86 | 65 | No Armor| -34 | 166 |
+|Titanic | 10 | 134 | 131 | 126 | 105 | No Armor| -74 | 249 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 42 | 33 | 24 | 12 | Medium| 52 | 13 |
+|Diminutive | 10 | 62 | 53 | 44 | 32 | Medium| 32 | 17 |
+|Tiny | 10 | 72 | 63 | 54 | 42 | Medium| 22 | 26 |
+|Small | 10 | 77 | 68 | 59 | 47 | Medium| 17 | 36 |
+|Medium | 10 | 82 | 73 | 64 | 52 | Medium| 12 | 52 |
+|Large | 10 | 87 | 78 | 69 | 57 | Medium| 7 | 78 |
+|Huge | 10 | 92 | 83 | 74 | 62 | Medium| 2 | 104 |
+|Gargantuan | 10 | 102 | 93 | 84 | 72 | Medium| -8 | 156 |
+|Colossal | 10 | 122 | 113 | 104 | 92 | Medium| -28 | 208 |
+|Titanic | 10 | 162 | 153 | 144 | 132 | Medium| -68 | 312 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 42 | 33 | 24 | 12 | No Armor| 52 | 13 |
+|Diminutive | 10 | 62 | 53 | 44 | 32 | No Armor| 32 | 17 |
+|Tiny | 10 | 72 | 63 | 54 | 42 | No Armor| 22 | 26 |
+|Small | 10 | 77 | 68 | 59 | 47 | No Armor| 17 | 36 |
+|Medium | 10 | 82 | 73 | 64 | 52 | No Armor| 12 | 52 |
+|Large | 10 | 87 | 78 | 69 | 57 | No Armor| 7 | 78 |
+|Huge | 10 | 92 | 83 | 74 | 62 | No Armor| 2 | 104 |
+|Gargantuan | 10 | 102 | 93 | 84 | 72 | No Armor| -8 | 156 |
+|Colossal | 10 | 122 | 113 | 104 | 92 | No Armor| -28 | 208 |
+|Titanic | 10 | 162 | 153 | 144 | 132 | No Armor| -68 | 312 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 11 | 6 | -15 | No Armor| 52 | 10 |
+|Diminutive | 10 | 34 | 31 | 26 | 5 | No Armor| 32 | 13 |
+|Tiny | 10 | 44 | 41 | 36 | 15 | No Armor| 22 | 20 |
+|Small | 10 | 49 | 46 | 41 | 20 | No Armor| 17 | 29 |
+|Medium | 10 | 54 | 51 | 46 | 25 | No Armor| 12 | 41 |
+|Large | 10 | 59 | 56 | 51 | 30 | No Armor| 7 | 62 |
+|Huge | 10 | 64 | 61 | 56 | 35 | No Armor| 2 | 83 |
+|Gargantuan | 10 | 74 | 71 | 66 | 45 | No Armor| -8 | 124 |
+|Colossal | 10 | 94 | 91 | 86 | 65 | No Armor| -28 | 166 |
+|Titanic | 10 | 134 | 131 | 126 | 105 | No Armor| -68 | 249 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 42 | 33 | 24 | 12 | No Armor| 52 | 13 |
+|Diminutive | 10 | 62 | 53 | 44 | 32 | No Armor| 32 | 17 |
+|Tiny | 10 | 72 | 63 | 54 | 42 | No Armor| 22 | 26 |
+|Small | 10 | 77 | 68 | 59 | 47 | No Armor| 17 | 36 |
+|Medium | 10 | 82 | 73 | 64 | 52 | No Armor| 12 | 52 |
+|Large | 10 | 87 | 78 | 69 | 57 | No Armor| 7 | 78 |
+|Huge | 10 | 92 | 83 | 74 | 62 | No Armor| 2 | 104 |
+|Gargantuan | 10 | 102 | 93 | 84 | 72 | No Armor| -8 | 156 |
+|Colossal | 10 | 122 | 113 | 104 | 92 | No Armor| -28 | 208 |
+|Titanic | 10 | 162 | 153 | 144 | 132 | No Armor| -68 | 312 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 11 | 6 | -15 | No Armor| 52 | 10 |
+|Diminutive | 10 | 34 | 31 | 26 | 5 | No Armor| 32 | 13 |
+|Tiny | 10 | 44 | 41 | 36 | 15 | No Armor| 22 | 20 |
+|Small | 10 | 49 | 46 | 41 | 20 | No Armor| 17 | 29 |
+|Medium | 10 | 54 | 51 | 46 | 25 | No Armor| 12 | 41 |
+|Large | 10 | 59 | 56 | 51 | 30 | No Armor| 7 | 62 |
+|Huge | 10 | 64 | 61 | 56 | 35 | No Armor| 2 | 83 |
+|Gargantuan | 10 | 74 | 71 | 66 | 45 | No Armor| -8 | 124 |
+|Colossal | 10 | 94 | 91 | 86 | 65 | No Armor| -28 | 166 |
+|Titanic | 10 | 134 | 131 | 126 | 105 | No Armor| -68 | 249 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 11 | 6 | -15 | No Armor| 52 | 10 |
+|Diminutive | 10 | 34 | 31 | 26 | 5 | No Armor| 32 | 13 |
+|Tiny | 10 | 44 | 41 | 36 | 15 | No Armor| 22 | 20 |
+|Small | 10 | 49 | 46 | 41 | 20 | No Armor| 17 | 29 |
+|Medium | 10 | 54 | 51 | 46 | 25 | No Armor| 12 | 41 |
+|Large | 10 | 59 | 56 | 51 | 30 | No Armor| 7 | 62 |
+|Huge | 10 | 64 | 61 | 56 | 35 | No Armor| 2 | 83 |
+|Gargantuan | 10 | 74 | 71 | 66 | 45 | No Armor| -8 | 124 |
+|Colossal | 10 | 94 | 91 | 86 | 65 | No Armor| -28 | 166 |
+|Titanic | 10 | 134 | 131 | 126 | 105 | No Armor| -68 | 249 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 10 | 14 | 11 | 6 | -15 | Light| 52 | 10 |
+|Diminutive | 10 | 34 | 31 | 26 | 5 | Light| 32 | 13 |
+|Tiny | 10 | 44 | 41 | 36 | 15 | Light| 22 | 20 |
+|Small | 10 | 49 | 46 | 41 | 20 | Light| 17 | 29 |
+|Medium | 10 | 54 | 51 | 46 | 25 | Light| 12 | 41 |
+|Large | 10 | 59 | 56 | 51 | 30 | Light| 7 | 62 |
+|Huge | 10 | 64 | 61 | 56 | 35 | Light| 2 | 83 |
+|Gargantuan | 10 | 74 | 71 | 66 | 45 | Light| -8 | 124 |
+|Colossal | 10 | 94 | 91 | 86 | 65 | Light| -28 | 166 |
+|Titanic | 10 | 134 | 131 | 126 | 105 | Light| -68 | 249 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 35 | 27 | 14 | -13 | Light| 53 | 10 |
+|Diminutive | 11 | 55 | 47 | 34 | 7 | Light| 33 | 14 |
+|Tiny | 11 | 65 | 57 | 44 | 17 | Light| 23 | 21 |
+|Small | 11 | 70 | 62 | 49 | 22 | Light| 18 | 30 |
+|Medium | 11 | 75 | 67 | 54 | 27 | Light| 13 | 43 |
+|Large | 11 | 80 | 72 | 59 | 32 | Light| 8 | 64 |
+|Huge | 11 | 85 | 77 | 64 | 37 | Light| 3 | 86 |
+|Gargantuan | 11 | 95 | 87 | 74 | 47 | Light| -7 | 129 |
+|Colossal | 11 | 115 | 107 | 94 | 67 | Light| -27 | 172 |
+|Titanic | 11 | 155 | 147 | 134 | 107 | Light| -67 | 259 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 11 | 2 | -18 | Light| 53 | 10 |
+|Diminutive | 11 | 36 | 31 | 22 | 1 | Light| 33 | 14 |
+|Tiny | 11 | 46 | 41 | 32 | 11 | Light| 23 | 21 |
+|Small | 11 | 51 | 46 | 37 | 16 | Light| 18 | 30 |
+|Medium | 11 | 56 | 51 | 42 | 21 | Light| 13 | 43 |
+|Large | 11 | 61 | 56 | 47 | 26 | Light| 8 | 64 |
+|Huge | 11 | 66 | 61 | 52 | 31 | Light| 3 | 86 |
+|Gargantuan | 11 | 76 | 71 | 62 | 41 | Light| -7 | 129 |
+|Colossal | 11 | 96 | 91 | 82 | 61 | Light| -27 | 172 |
+|Titanic | 11 | 136 | 131 | 122 | 101 | Light| -67 | 259 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 43 | 35 | 27 | 14 | Medium| 40 | 13 |
+|Diminutive | 11 | 63 | 55 | 47 | 34 | Medium| 20 | 17 |
+|Tiny | 11 | 73 | 65 | 57 | 44 | Medium| 10 | 27 |
+|Small | 11 | 78 | 70 | 62 | 49 | Medium| 5 | 37 |
+|Medium | 11 | 83 | 75 | 67 | 54 | Medium| 0 | 54 |
+|Large | 11 | 88 | 80 | 72 | 59 | Medium| -5 | 81 |
+|Huge | 11 | 93 | 85 | 77 | 64 | Medium| -10 | 108 |
+|Gargantuan | 11 | 103 | 95 | 87 | 74 | Medium| -20 | 162 |
+|Colossal | 11 | 123 | 115 | 107 | 94 | Medium| -40 | 216 |
+|Titanic | 11 | 163 | 155 | 147 | 134 | Medium| -80 | 324 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 43 | 35 | 27 | 14 | Heavy| 53 | 33 |
+|Diminutive | 11 | 63 | 55 | 47 | 34 | Heavy| 33 | 44 |
+|Tiny | 11 | 73 | 65 | 57 | 44 | Heavy| 23 | 67 |
+|Small | 11 | 78 | 70 | 62 | 49 | Heavy| 18 | 93 |
+|Medium | 11 | 83 | 75 | 67 | 54 | Heavy| 13 | 134 |
+|Large | 11 | 88 | 80 | 72 | 59 | Heavy| 8 | 201 |
+|Huge | 11 | 93 | 85 | 77 | 64 | Heavy| 3 | 268 |
+|Gargantuan | 11 | 103 | 95 | 87 | 74 | Heavy| -7 | 402 |
+|Colossal | 11 | 123 | 115 | 107 | 94 | Heavy| -27 | 536 |
+|Titanic | 11 | 163 | 155 | 147 | 134 | Heavy| -67 | 804 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | -6 | -10 | -23 | -31 | No Armor| 53 | 8 |
+|Diminutive | 11 | 13 | 9 | -3 | -11 | No Armor| 33 | 10 |
+|Tiny | 11 | 23 | 19 | 6 | -1 | No Armor| 23 | 16 |
+|Small | 11 | 28 | 24 | 11 | 3 | No Armor| 18 | 22 |
+|Medium | 11 | 33 | 29 | 16 | 8 | No Armor| 13 | 32 |
+|Large | 11 | 38 | 34 | 21 | 13 | No Armor| 8 | 48 |
+|Huge | 11 | 43 | 39 | 26 | 18 | No Armor| 3 | 64 |
+|Gargantuan | 11 | 53 | 49 | 36 | 28 | No Armor| -7 | 97 |
+|Colossal | 11 | 73 | 69 | 56 | 48 | No Armor| -27 | 129 |
+|Titanic | 11 | 113 | 109 | 96 | 88 | No Armor| -67 | 194 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 13 | 8 | -13 | No Armor| 46 | 10 |
+|Diminutive | 11 | 36 | 33 | 28 | 7 | No Armor| 26 | 14 |
+|Tiny | 11 | 46 | 43 | 38 | 17 | No Armor| 16 | 21 |
+|Small | 11 | 51 | 48 | 43 | 22 | No Armor| 11 | 30 |
+|Medium | 11 | 56 | 53 | 48 | 27 | No Armor| 6 | 43 |
+|Large | 11 | 61 | 58 | 53 | 32 | No Armor| 1 | 64 |
+|Huge | 11 | 66 | 63 | 58 | 37 | No Armor| -4 | 86 |
+|Gargantuan | 11 | 76 | 73 | 68 | 47 | No Armor| -14 | 129 |
+|Colossal | 11 | 96 | 93 | 88 | 67 | No Armor| -34 | 172 |
+|Titanic | 11 | 136 | 133 | 128 | 107 | No Armor| -74 | 259 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 43 | 35 | 27 | 14 | Medium| 53 | 13 |
+|Diminutive | 11 | 63 | 55 | 47 | 34 | Medium| 33 | 17 |
+|Tiny | 11 | 73 | 65 | 57 | 44 | Medium| 23 | 27 |
+|Small | 11 | 78 | 70 | 62 | 49 | Medium| 18 | 37 |
+|Medium | 11 | 83 | 75 | 67 | 54 | Medium| 13 | 54 |
+|Large | 11 | 88 | 80 | 72 | 59 | Medium| 8 | 81 |
+|Huge | 11 | 93 | 85 | 77 | 64 | Medium| 3 | 108 |
+|Gargantuan | 11 | 103 | 95 | 87 | 74 | Medium| -7 | 162 |
+|Colossal | 11 | 123 | 115 | 107 | 94 | Medium| -27 | 216 |
+|Titanic | 11 | 163 | 155 | 147 | 134 | Medium| -67 | 324 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 43 | 35 | 27 | 14 | No Armor| 53 | 13 |
+|Diminutive | 11 | 63 | 55 | 47 | 34 | No Armor| 33 | 17 |
+|Tiny | 11 | 73 | 65 | 57 | 44 | No Armor| 23 | 27 |
+|Small | 11 | 78 | 70 | 62 | 49 | No Armor| 18 | 37 |
+|Medium | 11 | 83 | 75 | 67 | 54 | No Armor| 13 | 54 |
+|Large | 11 | 88 | 80 | 72 | 59 | No Armor| 8 | 81 |
+|Huge | 11 | 93 | 85 | 77 | 64 | No Armor| 3 | 108 |
+|Gargantuan | 11 | 103 | 95 | 87 | 74 | No Armor| -7 | 162 |
+|Colossal | 11 | 123 | 115 | 107 | 94 | No Armor| -27 | 216 |
+|Titanic | 11 | 163 | 155 | 147 | 134 | No Armor| -67 | 324 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 13 | 8 | -13 | No Armor| 53 | 10 |
+|Diminutive | 11 | 36 | 33 | 28 | 7 | No Armor| 33 | 14 |
+|Tiny | 11 | 46 | 43 | 38 | 17 | No Armor| 23 | 21 |
+|Small | 11 | 51 | 48 | 43 | 22 | No Armor| 18 | 30 |
+|Medium | 11 | 56 | 53 | 48 | 27 | No Armor| 13 | 43 |
+|Large | 11 | 61 | 58 | 53 | 32 | No Armor| 8 | 64 |
+|Huge | 11 | 66 | 63 | 58 | 37 | No Armor| 3 | 86 |
+|Gargantuan | 11 | 76 | 73 | 68 | 47 | No Armor| -7 | 129 |
+|Colossal | 11 | 96 | 93 | 88 | 67 | No Armor| -27 | 172 |
+|Titanic | 11 | 136 | 133 | 128 | 107 | No Armor| -67 | 259 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 43 | 35 | 27 | 14 | No Armor| 53 | 13 |
+|Diminutive | 11 | 63 | 55 | 47 | 34 | No Armor| 33 | 17 |
+|Tiny | 11 | 73 | 65 | 57 | 44 | No Armor| 23 | 27 |
+|Small | 11 | 78 | 70 | 62 | 49 | No Armor| 18 | 37 |
+|Medium | 11 | 83 | 75 | 67 | 54 | No Armor| 13 | 54 |
+|Large | 11 | 88 | 80 | 72 | 59 | No Armor| 8 | 81 |
+|Huge | 11 | 93 | 85 | 77 | 64 | No Armor| 3 | 108 |
+|Gargantuan | 11 | 103 | 95 | 87 | 74 | No Armor| -7 | 162 |
+|Colossal | 11 | 123 | 115 | 107 | 94 | No Armor| -27 | 216 |
+|Titanic | 11 | 163 | 155 | 147 | 134 | No Armor| -67 | 324 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 13 | 8 | -13 | No Armor| 53 | 10 |
+|Diminutive | 11 | 36 | 33 | 28 | 7 | No Armor| 33 | 14 |
+|Tiny | 11 | 46 | 43 | 38 | 17 | No Armor| 23 | 21 |
+|Small | 11 | 51 | 48 | 43 | 22 | No Armor| 18 | 30 |
+|Medium | 11 | 56 | 53 | 48 | 27 | No Armor| 13 | 43 |
+|Large | 11 | 61 | 58 | 53 | 32 | No Armor| 8 | 64 |
+|Huge | 11 | 66 | 63 | 58 | 37 | No Armor| 3 | 86 |
+|Gargantuan | 11 | 76 | 73 | 68 | 47 | No Armor| -7 | 129 |
+|Colossal | 11 | 96 | 93 | 88 | 67 | No Armor| -27 | 172 |
+|Titanic | 11 | 136 | 133 | 128 | 107 | No Armor| -67 | 259 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 13 | 8 | -13 | No Armor| 53 | 10 |
+|Diminutive | 11 | 36 | 33 | 28 | 7 | No Armor| 33 | 14 |
+|Tiny | 11 | 46 | 43 | 38 | 17 | No Armor| 23 | 21 |
+|Small | 11 | 51 | 48 | 43 | 22 | No Armor| 18 | 30 |
+|Medium | 11 | 56 | 53 | 48 | 27 | No Armor| 13 | 43 |
+|Large | 11 | 61 | 58 | 53 | 32 | No Armor| 8 | 64 |
+|Huge | 11 | 66 | 63 | 58 | 37 | No Armor| 3 | 86 |
+|Gargantuan | 11 | 76 | 73 | 68 | 47 | No Armor| -7 | 129 |
+|Colossal | 11 | 96 | 93 | 88 | 67 | No Armor| -27 | 172 |
+|Titanic | 11 | 136 | 133 | 128 | 107 | No Armor| -67 | 259 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 11 | 16 | 13 | 8 | -13 | Light| 53 | 10 |
+|Diminutive | 11 | 36 | 33 | 28 | 7 | Light| 33 | 14 |
+|Tiny | 11 | 46 | 43 | 38 | 17 | Light| 23 | 21 |
+|Small | 11 | 51 | 48 | 43 | 22 | Light| 18 | 30 |
+|Medium | 11 | 56 | 53 | 48 | 27 | Light| 13 | 43 |
+|Large | 11 | 61 | 58 | 53 | 32 | Light| 8 | 64 |
+|Huge | 11 | 66 | 63 | 58 | 37 | Light| 3 | 86 |
+|Gargantuan | 11 | 76 | 73 | 68 | 47 | Light| -7 | 129 |
+|Colossal | 11 | 96 | 93 | 88 | 67 | Light| -27 | 172 |
+|Titanic | 11 | 136 | 133 | 128 | 107 | Light| -67 | 259 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 37 | 30 | 16 | -10 | Light| 55 | 11 |
+|Diminutive | 12 | 57 | 50 | 36 | 10 | Light| 35 | 14 |
+|Tiny | 12 | 67 | 60 | 46 | 20 | Light| 25 | 22 |
+|Small | 12 | 72 | 65 | 51 | 25 | Light| 20 | 31 |
+|Medium | 12 | 77 | 70 | 56 | 30 | Light| 15 | 44 |
+|Large | 12 | 82 | 75 | 61 | 35 | Light| 10 | 67 |
+|Huge | 12 | 87 | 80 | 66 | 40 | Light| 5 | 89 |
+|Gargantuan | 12 | 97 | 90 | 76 | 50 | Light| -5 | 134 |
+|Colossal | 12 | 117 | 110 | 96 | 70 | Light| -25 | 179 |
+|Titanic | 12 | 157 | 150 | 136 | 110 | Light| -65 | 268 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 13 | 4 | -15 | Light| 55 | 11 |
+|Diminutive | 12 | 37 | 33 | 24 | 4 | Light| 35 | 14 |
+|Tiny | 12 | 47 | 43 | 34 | 14 | Light| 25 | 22 |
+|Small | 12 | 52 | 48 | 39 | 19 | Light| 20 | 31 |
+|Medium | 12 | 57 | 53 | 44 | 24 | Light| 15 | 44 |
+|Large | 12 | 62 | 58 | 49 | 29 | Light| 10 | 67 |
+|Huge | 12 | 67 | 63 | 54 | 34 | Light| 5 | 89 |
+|Gargantuan | 12 | 77 | 73 | 64 | 44 | Light| -5 | 134 |
+|Colossal | 12 | 97 | 93 | 84 | 64 | Light| -25 | 179 |
+|Titanic | 12 | 137 | 133 | 124 | 104 | Light| -65 | 268 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 45 | 37 | 30 | 16 | Medium| 40 | 14 |
+|Diminutive | 12 | 65 | 57 | 50 | 36 | Medium| 20 | 18 |
+|Tiny | 12 | 75 | 67 | 60 | 46 | Medium| 10 | 28 |
+|Small | 12 | 80 | 72 | 65 | 51 | Medium| 5 | 39 |
+|Medium | 12 | 85 | 77 | 70 | 56 | Medium| 0 | 56 |
+|Large | 12 | 90 | 82 | 75 | 61 | Medium| -5 | 84 |
+|Huge | 12 | 95 | 87 | 80 | 66 | Medium| -10 | 112 |
+|Gargantuan | 12 | 105 | 97 | 90 | 76 | Medium| -20 | 168 |
+|Colossal | 12 | 125 | 117 | 110 | 96 | Medium| -40 | 224 |
+|Titanic | 12 | 165 | 157 | 150 | 136 | Medium| -80 | 336 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 45 | 37 | 30 | 16 | Heavy| 55 | 35 |
+|Diminutive | 12 | 65 | 57 | 50 | 36 | Heavy| 35 | 46 |
+|Tiny | 12 | 75 | 67 | 60 | 46 | Heavy| 25 | 70 |
+|Small | 12 | 80 | 72 | 65 | 51 | Heavy| 20 | 98 |
+|Medium | 12 | 85 | 77 | 70 | 56 | Heavy| 15 | 140 |
+|Large | 12 | 90 | 82 | 75 | 61 | Heavy| 10 | 210 |
+|Huge | 12 | 95 | 87 | 80 | 66 | Heavy| 5 | 280 |
+|Gargantuan | 12 | 105 | 97 | 90 | 76 | Heavy| -5 | 420 |
+|Colossal | 12 | 125 | 117 | 110 | 96 | Heavy| -25 | 560 |
+|Titanic | 12 | 165 | 157 | 150 | 136 | Heavy| -65 | 840 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | -5 | -9 | -22 | -30 | No Armor| 55 | 8 |
+|Diminutive | 12 | 15 | 10 | -2 | -10 | No Armor| 35 | 11 |
+|Tiny | 12 | 25 | 20 | 8 | 0 | No Armor| 25 | 16 |
+|Small | 12 | 30 | 25 | 13 | 4 | No Armor| 20 | 23 |
+|Medium | 12 | 35 | 30 | 18 | 9 | No Armor| 15 | 33 |
+|Large | 12 | 40 | 35 | 23 | 14 | No Armor| 10 | 50 |
+|Huge | 12 | 45 | 40 | 28 | 19 | No Armor| 5 | 67 |
+|Gargantuan | 12 | 55 | 50 | 38 | 29 | No Armor| -5 | 100 |
+|Colossal | 12 | 75 | 70 | 58 | 49 | No Armor| -25 | 134 |
+|Titanic | 12 | 115 | 110 | 98 | 89 | No Armor| -65 | 201 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 16 | 10 | -10 | No Armor| 47 | 11 |
+|Diminutive | 12 | 37 | 36 | 30 | 10 | No Armor| 27 | 14 |
+|Tiny | 12 | 47 | 46 | 40 | 20 | No Armor| 17 | 22 |
+|Small | 12 | 52 | 51 | 45 | 25 | No Armor| 12 | 31 |
+|Medium | 12 | 57 | 56 | 50 | 30 | No Armor| 7 | 44 |
+|Large | 12 | 62 | 61 | 55 | 35 | No Armor| 2 | 67 |
+|Huge | 12 | 67 | 66 | 60 | 40 | No Armor| -3 | 89 |
+|Gargantuan | 12 | 77 | 76 | 70 | 50 | No Armor| -13 | 134 |
+|Colossal | 12 | 97 | 96 | 90 | 70 | No Armor| -33 | 179 |
+|Titanic | 12 | 137 | 136 | 130 | 110 | No Armor| -73 | 268 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 45 | 37 | 30 | 16 | Medium| 55 | 14 |
+|Diminutive | 12 | 65 | 57 | 50 | 36 | Medium| 35 | 18 |
+|Tiny | 12 | 75 | 67 | 60 | 46 | Medium| 25 | 28 |
+|Small | 12 | 80 | 72 | 65 | 51 | Medium| 20 | 39 |
+|Medium | 12 | 85 | 77 | 70 | 56 | Medium| 15 | 56 |
+|Large | 12 | 90 | 82 | 75 | 61 | Medium| 10 | 84 |
+|Huge | 12 | 95 | 87 | 80 | 66 | Medium| 5 | 112 |
+|Gargantuan | 12 | 105 | 97 | 90 | 76 | Medium| -5 | 168 |
+|Colossal | 12 | 125 | 117 | 110 | 96 | Medium| -25 | 224 |
+|Titanic | 12 | 165 | 157 | 150 | 136 | Medium| -65 | 336 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 45 | 37 | 30 | 16 | No Armor| 55 | 14 |
+|Diminutive | 12 | 65 | 57 | 50 | 36 | No Armor| 35 | 18 |
+|Tiny | 12 | 75 | 67 | 60 | 46 | No Armor| 25 | 28 |
+|Small | 12 | 80 | 72 | 65 | 51 | No Armor| 20 | 39 |
+|Medium | 12 | 85 | 77 | 70 | 56 | No Armor| 15 | 56 |
+|Large | 12 | 90 | 82 | 75 | 61 | No Armor| 10 | 84 |
+|Huge | 12 | 95 | 87 | 80 | 66 | No Armor| 5 | 112 |
+|Gargantuan | 12 | 105 | 97 | 90 | 76 | No Armor| -5 | 168 |
+|Colossal | 12 | 125 | 117 | 110 | 96 | No Armor| -25 | 224 |
+|Titanic | 12 | 165 | 157 | 150 | 136 | No Armor| -65 | 336 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 16 | 10 | -10 | No Armor| 55 | 11 |
+|Diminutive | 12 | 37 | 36 | 30 | 10 | No Armor| 35 | 14 |
+|Tiny | 12 | 47 | 46 | 40 | 20 | No Armor| 25 | 22 |
+|Small | 12 | 52 | 51 | 45 | 25 | No Armor| 20 | 31 |
+|Medium | 12 | 57 | 56 | 50 | 30 | No Armor| 15 | 44 |
+|Large | 12 | 62 | 61 | 55 | 35 | No Armor| 10 | 67 |
+|Huge | 12 | 67 | 66 | 60 | 40 | No Armor| 5 | 89 |
+|Gargantuan | 12 | 77 | 76 | 70 | 50 | No Armor| -5 | 134 |
+|Colossal | 12 | 97 | 96 | 90 | 70 | No Armor| -25 | 179 |
+|Titanic | 12 | 137 | 136 | 130 | 110 | No Armor| -65 | 268 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 45 | 37 | 30 | 16 | No Armor| 55 | 14 |
+|Diminutive | 12 | 65 | 57 | 50 | 36 | No Armor| 35 | 18 |
+|Tiny | 12 | 75 | 67 | 60 | 46 | No Armor| 25 | 28 |
+|Small | 12 | 80 | 72 | 65 | 51 | No Armor| 20 | 39 |
+|Medium | 12 | 85 | 77 | 70 | 56 | No Armor| 15 | 56 |
+|Large | 12 | 90 | 82 | 75 | 61 | No Armor| 10 | 84 |
+|Huge | 12 | 95 | 87 | 80 | 66 | No Armor| 5 | 112 |
+|Gargantuan | 12 | 105 | 97 | 90 | 76 | No Armor| -5 | 168 |
+|Colossal | 12 | 125 | 117 | 110 | 96 | No Armor| -25 | 224 |
+|Titanic | 12 | 165 | 157 | 150 | 136 | No Armor| -65 | 336 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 16 | 10 | -10 | No Armor| 55 | 11 |
+|Diminutive | 12 | 37 | 36 | 30 | 10 | No Armor| 35 | 14 |
+|Tiny | 12 | 47 | 46 | 40 | 20 | No Armor| 25 | 22 |
+|Small | 12 | 52 | 51 | 45 | 25 | No Armor| 20 | 31 |
+|Medium | 12 | 57 | 56 | 50 | 30 | No Armor| 15 | 44 |
+|Large | 12 | 62 | 61 | 55 | 35 | No Armor| 10 | 67 |
+|Huge | 12 | 67 | 66 | 60 | 40 | No Armor| 5 | 89 |
+|Gargantuan | 12 | 77 | 76 | 70 | 50 | No Armor| -5 | 134 |
+|Colossal | 12 | 97 | 96 | 90 | 70 | No Armor| -25 | 179 |
+|Titanic | 12 | 137 | 136 | 130 | 110 | No Armor| -65 | 268 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 16 | 10 | -10 | No Armor| 55 | 11 |
+|Diminutive | 12 | 37 | 36 | 30 | 10 | No Armor| 35 | 14 |
+|Tiny | 12 | 47 | 46 | 40 | 20 | No Armor| 25 | 22 |
+|Small | 12 | 52 | 51 | 45 | 25 | No Armor| 20 | 31 |
+|Medium | 12 | 57 | 56 | 50 | 30 | No Armor| 15 | 44 |
+|Large | 12 | 62 | 61 | 55 | 35 | No Armor| 10 | 67 |
+|Huge | 12 | 67 | 66 | 60 | 40 | No Armor| 5 | 89 |
+|Gargantuan | 12 | 77 | 76 | 70 | 50 | No Armor| -5 | 134 |
+|Colossal | 12 | 97 | 96 | 90 | 70 | No Armor| -25 | 179 |
+|Titanic | 12 | 137 | 136 | 130 | 110 | No Armor| -65 | 268 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 12 | 17 | 16 | 10 | -10 | Light| 55 | 11 |
+|Diminutive | 12 | 37 | 36 | 30 | 10 | Light| 35 | 14 |
+|Tiny | 12 | 47 | 46 | 40 | 20 | Light| 25 | 22 |
+|Small | 12 | 52 | 51 | 45 | 25 | Light| 20 | 31 |
+|Medium | 12 | 57 | 56 | 50 | 30 | Light| 15 | 44 |
+|Large | 12 | 62 | 61 | 55 | 35 | Light| 10 | 67 |
+|Huge | 12 | 67 | 66 | 60 | 40 | Light| 5 | 89 |
+|Gargantuan | 12 | 77 | 76 | 70 | 50 | Light| -5 | 134 |
+|Colossal | 12 | 97 | 96 | 90 | 70 | Light| -25 | 179 |
+|Titanic | 12 | 137 | 136 | 130 | 110 | Light| -65 | 268 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 39 | 31 | 18 | -8 | Light| 56 | 11 |
+|Diminutive | 13 | 59 | 51 | 38 | 12 | Light| 36 | 15 |
+|Tiny | 13 | 69 | 61 | 48 | 22 | Light| 26 | 23 |
+|Small | 13 | 74 | 66 | 53 | 27 | Light| 21 | 32 |
+|Medium | 13 | 79 | 71 | 58 | 32 | Light| 16 | 46 |
+|Large | 13 | 84 | 76 | 63 | 37 | Light| 11 | 69 |
+|Huge | 13 | 89 | 81 | 68 | 42 | Light| 6 | 92 |
+|Gargantuan | 13 | 99 | 91 | 78 | 52 | Light| -4 | 139 |
+|Colossal | 13 | 119 | 111 | 98 | 72 | Light| -24 | 185 |
+|Titanic | 13 | 159 | 151 | 138 | 112 | Light| -64 | 278 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 14 | 5 | -14 | Light| 56 | 11 |
+|Diminutive | 13 | 39 | 34 | 25 | 5 | Light| 36 | 15 |
+|Tiny | 13 | 49 | 44 | 35 | 15 | Light| 26 | 23 |
+|Small | 13 | 54 | 49 | 40 | 20 | Light| 21 | 32 |
+|Medium | 13 | 59 | 54 | 45 | 25 | Light| 16 | 46 |
+|Large | 13 | 64 | 59 | 50 | 30 | Light| 11 | 69 |
+|Huge | 13 | 69 | 64 | 55 | 35 | Light| 6 | 92 |
+|Gargantuan | 13 | 79 | 74 | 65 | 45 | Light| -4 | 139 |
+|Colossal | 13 | 99 | 94 | 85 | 65 | Light| -24 | 185 |
+|Titanic | 13 | 139 | 134 | 125 | 105 | Light| -64 | 278 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 46 | 39 | 31 | 18 | Medium| 40 | 14 |
+|Diminutive | 13 | 66 | 59 | 51 | 38 | Medium| 20 | 19 |
+|Tiny | 13 | 76 | 69 | 61 | 48 | Medium| 10 | 29 |
+|Small | 13 | 81 | 74 | 66 | 53 | Medium| 5 | 40 |
+|Medium | 13 | 86 | 79 | 71 | 58 | Medium| 0 | 58 |
+|Large | 13 | 91 | 84 | 76 | 63 | Medium| -5 | 87 |
+|Huge | 13 | 96 | 89 | 81 | 68 | Medium| -10 | 116 |
+|Gargantuan | 13 | 106 | 99 | 91 | 78 | Medium| -20 | 174 |
+|Colossal | 13 | 126 | 119 | 111 | 98 | Medium| -40 | 232 |
+|Titanic | 13 | 166 | 159 | 151 | 138 | Medium| -80 | 348 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 46 | 39 | 31 | 18 | Heavy| 56 | 35 |
+|Diminutive | 13 | 66 | 59 | 51 | 38 | Heavy| 36 | 46 |
+|Tiny | 13 | 76 | 69 | 61 | 48 | Heavy| 26 | 71 |
+|Small | 13 | 81 | 74 | 66 | 53 | Heavy| 21 | 99 |
+|Medium | 13 | 86 | 79 | 71 | 58 | Heavy| 16 | 142 |
+|Large | 13 | 91 | 84 | 76 | 63 | Heavy| 11 | 213 |
+|Huge | 13 | 96 | 89 | 81 | 68 | Heavy| 6 | 284 |
+|Gargantuan | 13 | 106 | 99 | 91 | 78 | Heavy| -4 | 426 |
+|Colossal | 13 | 126 | 119 | 111 | 98 | Heavy| -24 | 568 |
+|Titanic | 13 | 166 | 159 | 151 | 138 | Heavy| -64 | 852 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | -4 | -8 | -20 | -29 | No Armor| 56 | 8 |
+|Diminutive | 13 | 15 | 11 | 0 | -9 | No Armor| 36 | 11 |
+|Tiny | 13 | 25 | 21 | 9 | 0 | No Armor| 26 | 17 |
+|Small | 13 | 30 | 26 | 14 | 5 | No Armor| 21 | 24 |
+|Medium | 13 | 35 | 31 | 19 | 10 | No Armor| 16 | 34 |
+|Large | 13 | 40 | 36 | 24 | 15 | No Armor| 11 | 52 |
+|Huge | 13 | 45 | 41 | 29 | 20 | No Armor| 6 | 69 |
+|Gargantuan | 13 | 55 | 51 | 39 | 30 | No Armor| -4 | 104 |
+|Colossal | 13 | 75 | 71 | 59 | 50 | No Armor| -24 | 139 |
+|Titanic | 13 | 115 | 111 | 99 | 90 | No Armor| -64 | 208 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 16 | 12 | -8 | No Armor| 48 | 11 |
+|Diminutive | 13 | 39 | 36 | 32 | 12 | No Armor| 28 | 15 |
+|Tiny | 13 | 49 | 46 | 42 | 22 | No Armor| 18 | 23 |
+|Small | 13 | 54 | 51 | 47 | 27 | No Armor| 13 | 32 |
+|Medium | 13 | 59 | 56 | 52 | 32 | No Armor| 8 | 46 |
+|Large | 13 | 64 | 61 | 57 | 37 | No Armor| 3 | 69 |
+|Huge | 13 | 69 | 66 | 62 | 42 | No Armor| -2 | 92 |
+|Gargantuan | 13 | 79 | 76 | 72 | 52 | No Armor| -12 | 139 |
+|Colossal | 13 | 99 | 96 | 92 | 72 | No Armor| -32 | 185 |
+|Titanic | 13 | 139 | 136 | 132 | 112 | No Armor| -72 | 278 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 46 | 39 | 31 | 18 | Medium| 56 | 14 |
+|Diminutive | 13 | 66 | 59 | 51 | 38 | Medium| 36 | 19 |
+|Tiny | 13 | 76 | 69 | 61 | 48 | Medium| 26 | 29 |
+|Small | 13 | 81 | 74 | 66 | 53 | Medium| 21 | 40 |
+|Medium | 13 | 86 | 79 | 71 | 58 | Medium| 16 | 58 |
+|Large | 13 | 91 | 84 | 76 | 63 | Medium| 11 | 87 |
+|Huge | 13 | 96 | 89 | 81 | 68 | Medium| 6 | 116 |
+|Gargantuan | 13 | 106 | 99 | 91 | 78 | Medium| -4 | 174 |
+|Colossal | 13 | 126 | 119 | 111 | 98 | Medium| -24 | 232 |
+|Titanic | 13 | 166 | 159 | 151 | 138 | Medium| -64 | 348 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 46 | 39 | 31 | 18 | No Armor| 56 | 14 |
+|Diminutive | 13 | 66 | 59 | 51 | 38 | No Armor| 36 | 19 |
+|Tiny | 13 | 76 | 69 | 61 | 48 | No Armor| 26 | 29 |
+|Small | 13 | 81 | 74 | 66 | 53 | No Armor| 21 | 40 |
+|Medium | 13 | 86 | 79 | 71 | 58 | No Armor| 16 | 58 |
+|Large | 13 | 91 | 84 | 76 | 63 | No Armor| 11 | 87 |
+|Huge | 13 | 96 | 89 | 81 | 68 | No Armor| 6 | 116 |
+|Gargantuan | 13 | 106 | 99 | 91 | 78 | No Armor| -4 | 174 |
+|Colossal | 13 | 126 | 119 | 111 | 98 | No Armor| -24 | 232 |
+|Titanic | 13 | 166 | 159 | 151 | 138 | No Armor| -64 | 348 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 16 | 12 | -8 | No Armor| 56 | 11 |
+|Diminutive | 13 | 39 | 36 | 32 | 12 | No Armor| 36 | 15 |
+|Tiny | 13 | 49 | 46 | 42 | 22 | No Armor| 26 | 23 |
+|Small | 13 | 54 | 51 | 47 | 27 | No Armor| 21 | 32 |
+|Medium | 13 | 59 | 56 | 52 | 32 | No Armor| 16 | 46 |
+|Large | 13 | 64 | 61 | 57 | 37 | No Armor| 11 | 69 |
+|Huge | 13 | 69 | 66 | 62 | 42 | No Armor| 6 | 92 |
+|Gargantuan | 13 | 79 | 76 | 72 | 52 | No Armor| -4 | 139 |
+|Colossal | 13 | 99 | 96 | 92 | 72 | No Armor| -24 | 185 |
+|Titanic | 13 | 139 | 136 | 132 | 112 | No Armor| -64 | 278 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 46 | 39 | 31 | 18 | No Armor| 56 | 14 |
+|Diminutive | 13 | 66 | 59 | 51 | 38 | No Armor| 36 | 19 |
+|Tiny | 13 | 76 | 69 | 61 | 48 | No Armor| 26 | 29 |
+|Small | 13 | 81 | 74 | 66 | 53 | No Armor| 21 | 40 |
+|Medium | 13 | 86 | 79 | 71 | 58 | No Armor| 16 | 58 |
+|Large | 13 | 91 | 84 | 76 | 63 | No Armor| 11 | 87 |
+|Huge | 13 | 96 | 89 | 81 | 68 | No Armor| 6 | 116 |
+|Gargantuan | 13 | 106 | 99 | 91 | 78 | No Armor| -4 | 174 |
+|Colossal | 13 | 126 | 119 | 111 | 98 | No Armor| -24 | 232 |
+|Titanic | 13 | 166 | 159 | 151 | 138 | No Armor| -64 | 348 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 16 | 12 | -8 | No Armor| 56 | 11 |
+|Diminutive | 13 | 39 | 36 | 32 | 12 | No Armor| 36 | 15 |
+|Tiny | 13 | 49 | 46 | 42 | 22 | No Armor| 26 | 23 |
+|Small | 13 | 54 | 51 | 47 | 27 | No Armor| 21 | 32 |
+|Medium | 13 | 59 | 56 | 52 | 32 | No Armor| 16 | 46 |
+|Large | 13 | 64 | 61 | 57 | 37 | No Armor| 11 | 69 |
+|Huge | 13 | 69 | 66 | 62 | 42 | No Armor| 6 | 92 |
+|Gargantuan | 13 | 79 | 76 | 72 | 52 | No Armor| -4 | 139 |
+|Colossal | 13 | 99 | 96 | 92 | 72 | No Armor| -24 | 185 |
+|Titanic | 13 | 139 | 136 | 132 | 112 | No Armor| -64 | 278 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 16 | 12 | -8 | No Armor| 56 | 11 |
+|Diminutive | 13 | 39 | 36 | 32 | 12 | No Armor| 36 | 15 |
+|Tiny | 13 | 49 | 46 | 42 | 22 | No Armor| 26 | 23 |
+|Small | 13 | 54 | 51 | 47 | 27 | No Armor| 21 | 32 |
+|Medium | 13 | 59 | 56 | 52 | 32 | No Armor| 16 | 46 |
+|Large | 13 | 64 | 61 | 57 | 37 | No Armor| 11 | 69 |
+|Huge | 13 | 69 | 66 | 62 | 42 | No Armor| 6 | 92 |
+|Gargantuan | 13 | 79 | 76 | 72 | 52 | No Armor| -4 | 139 |
+|Colossal | 13 | 99 | 96 | 92 | 72 | No Armor| -24 | 185 |
+|Titanic | 13 | 139 | 136 | 132 | 112 | No Armor| -64 | 278 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 13 | 19 | 16 | 12 | -8 | Light| 56 | 11 |
+|Diminutive | 13 | 39 | 36 | 32 | 12 | Light| 36 | 15 |
+|Tiny | 13 | 49 | 46 | 42 | 22 | Light| 26 | 23 |
+|Small | 13 | 54 | 51 | 47 | 27 | Light| 21 | 32 |
+|Medium | 13 | 59 | 56 | 52 | 32 | Light| 16 | 46 |
+|Large | 13 | 64 | 61 | 57 | 37 | Light| 11 | 69 |
+|Huge | 13 | 69 | 66 | 62 | 42 | Light| 6 | 92 |
+|Gargantuan | 13 | 79 | 76 | 72 | 52 | Light| -4 | 139 |
+|Colossal | 13 | 99 | 96 | 92 | 72 | Light| -24 | 185 |
+|Titanic | 13 | 139 | 136 | 132 | 112 | Light| -64 | 278 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 40 | 33 | 20 | -5 | Light| 57 | 12 |
+|Diminutive | 14 | 60 | 53 | 40 | 15 | Light| 37 | 15 |
+|Tiny | 14 | 70 | 63 | 50 | 25 | Light| 27 | 24 |
+|Small | 14 | 75 | 68 | 55 | 30 | Light| 22 | 33 |
+|Medium | 14 | 80 | 73 | 60 | 35 | Light| 17 | 48 |
+|Large | 14 | 85 | 78 | 65 | 40 | Light| 12 | 72 |
+|Huge | 14 | 90 | 83 | 70 | 45 | Light| 7 | 96 |
+|Gargantuan | 14 | 100 | 93 | 80 | 55 | Light| -3 | 144 |
+|Colossal | 14 | 120 | 113 | 100 | 75 | Light| -23 | 192 |
+|Titanic | 14 | 160 | 153 | 140 | 115 | Light| -63 | 288 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 16 | 7 | -11 | Light| 57 | 12 |
+|Diminutive | 14 | 40 | 36 | 27 | 8 | Light| 37 | 15 |
+|Tiny | 14 | 50 | 46 | 37 | 18 | Light| 27 | 24 |
+|Small | 14 | 55 | 51 | 42 | 23 | Light| 22 | 33 |
+|Medium | 14 | 60 | 56 | 47 | 28 | Light| 17 | 48 |
+|Large | 14 | 65 | 61 | 52 | 33 | Light| 12 | 72 |
+|Huge | 14 | 70 | 66 | 57 | 38 | Light| 7 | 96 |
+|Gargantuan | 14 | 80 | 76 | 67 | 48 | Light| -3 | 144 |
+|Colossal | 14 | 100 | 96 | 87 | 68 | Light| -23 | 192 |
+|Titanic | 14 | 140 | 136 | 127 | 108 | Light| -63 | 288 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 48 | 40 | 33 | 20 | Medium| 40 | 15 |
+|Diminutive | 14 | 68 | 60 | 53 | 40 | Medium| 20 | 19 |
+|Tiny | 14 | 78 | 70 | 63 | 50 | Medium| 10 | 30 |
+|Small | 14 | 83 | 75 | 68 | 55 | Medium| 5 | 42 |
+|Medium | 14 | 88 | 80 | 73 | 60 | Medium| 0 | 60 |
+|Large | 14 | 93 | 85 | 78 | 65 | Medium| -5 | 90 |
+|Huge | 14 | 98 | 90 | 83 | 70 | Medium| -10 | 120 |
+|Gargantuan | 14 | 108 | 100 | 93 | 80 | Medium| -20 | 180 |
+|Colossal | 14 | 128 | 120 | 113 | 100 | Medium| -40 | 240 |
+|Titanic | 14 | 168 | 160 | 153 | 140 | Medium| -80 | 360 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 48 | 40 | 33 | 20 | Heavy| 57 | 36 |
+|Diminutive | 14 | 68 | 60 | 53 | 40 | Heavy| 37 | 48 |
+|Tiny | 14 | 78 | 70 | 63 | 50 | Heavy| 27 | 73 |
+|Small | 14 | 83 | 75 | 68 | 55 | Heavy| 22 | 102 |
+|Medium | 14 | 88 | 80 | 73 | 60 | Heavy| 17 | 146 |
+|Large | 14 | 93 | 85 | 78 | 65 | Heavy| 12 | 219 |
+|Huge | 14 | 98 | 90 | 83 | 70 | Heavy| 7 | 292 |
+|Gargantuan | 14 | 108 | 100 | 93 | 80 | Heavy| -3 | 438 |
+|Colossal | 14 | 128 | 120 | 113 | 100 | Heavy| -23 | 584 |
+|Titanic | 14 | 168 | 160 | 153 | 140 | Heavy| -63 | 876 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | -3 | -7 | -19 | -28 | No Armor| 57 | 9 |
+|Diminutive | 14 | 16 | 13 | 1 | -8 | No Armor| 37 | 11 |
+|Tiny | 14 | 26 | 23 | 11 | 1 | No Armor| 27 | 18 |
+|Small | 14 | 31 | 28 | 16 | 6 | No Armor| 22 | 25 |
+|Medium | 14 | 36 | 33 | 21 | 11 | No Armor| 17 | 36 |
+|Large | 14 | 41 | 38 | 26 | 16 | No Armor| 12 | 54 |
+|Huge | 14 | 46 | 43 | 31 | 21 | No Armor| 7 | 72 |
+|Gargantuan | 14 | 56 | 53 | 41 | 31 | No Armor| -3 | 108 |
+|Colossal | 14 | 76 | 73 | 61 | 51 | No Armor| -23 | 144 |
+|Titanic | 14 | 116 | 113 | 101 | 91 | No Armor| -63 | 216 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 18 | 14 | -5 | No Armor| 48 | 12 |
+|Diminutive | 14 | 40 | 38 | 34 | 15 | No Armor| 28 | 15 |
+|Tiny | 14 | 50 | 48 | 44 | 25 | No Armor| 18 | 24 |
+|Small | 14 | 55 | 53 | 49 | 30 | No Armor| 13 | 33 |
+|Medium | 14 | 60 | 58 | 54 | 35 | No Armor| 8 | 48 |
+|Large | 14 | 65 | 63 | 59 | 40 | No Armor| 3 | 72 |
+|Huge | 14 | 70 | 68 | 64 | 45 | No Armor| -2 | 96 |
+|Gargantuan | 14 | 80 | 78 | 74 | 55 | No Armor| -12 | 144 |
+|Colossal | 14 | 100 | 98 | 94 | 75 | No Armor| -32 | 192 |
+|Titanic | 14 | 140 | 138 | 134 | 115 | No Armor| -72 | 288 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 48 | 40 | 33 | 20 | Medium| 57 | 15 |
+|Diminutive | 14 | 68 | 60 | 53 | 40 | Medium| 37 | 19 |
+|Tiny | 14 | 78 | 70 | 63 | 50 | Medium| 27 | 30 |
+|Small | 14 | 83 | 75 | 68 | 55 | Medium| 22 | 42 |
+|Medium | 14 | 88 | 80 | 73 | 60 | Medium| 17 | 60 |
+|Large | 14 | 93 | 85 | 78 | 65 | Medium| 12 | 90 |
+|Huge | 14 | 98 | 90 | 83 | 70 | Medium| 7 | 120 |
+|Gargantuan | 14 | 108 | 100 | 93 | 80 | Medium| -3 | 180 |
+|Colossal | 14 | 128 | 120 | 113 | 100 | Medium| -23 | 240 |
+|Titanic | 14 | 168 | 160 | 153 | 140 | Medium| -63 | 360 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 48 | 40 | 33 | 20 | No Armor| 57 | 15 |
+|Diminutive | 14 | 68 | 60 | 53 | 40 | No Armor| 37 | 19 |
+|Tiny | 14 | 78 | 70 | 63 | 50 | No Armor| 27 | 30 |
+|Small | 14 | 83 | 75 | 68 | 55 | No Armor| 22 | 42 |
+|Medium | 14 | 88 | 80 | 73 | 60 | No Armor| 17 | 60 |
+|Large | 14 | 93 | 85 | 78 | 65 | No Armor| 12 | 90 |
+|Huge | 14 | 98 | 90 | 83 | 70 | No Armor| 7 | 120 |
+|Gargantuan | 14 | 108 | 100 | 93 | 80 | No Armor| -3 | 180 |
+|Colossal | 14 | 128 | 120 | 113 | 100 | No Armor| -23 | 240 |
+|Titanic | 14 | 168 | 160 | 153 | 140 | No Armor| -63 | 360 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 18 | 14 | -5 | No Armor| 57 | 12 |
+|Diminutive | 14 | 40 | 38 | 34 | 15 | No Armor| 37 | 15 |
+|Tiny | 14 | 50 | 48 | 44 | 25 | No Armor| 27 | 24 |
+|Small | 14 | 55 | 53 | 49 | 30 | No Armor| 22 | 33 |
+|Medium | 14 | 60 | 58 | 54 | 35 | No Armor| 17 | 48 |
+|Large | 14 | 65 | 63 | 59 | 40 | No Armor| 12 | 72 |
+|Huge | 14 | 70 | 68 | 64 | 45 | No Armor| 7 | 96 |
+|Gargantuan | 14 | 80 | 78 | 74 | 55 | No Armor| -3 | 144 |
+|Colossal | 14 | 100 | 98 | 94 | 75 | No Armor| -23 | 192 |
+|Titanic | 14 | 140 | 138 | 134 | 115 | No Armor| -63 | 288 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 48 | 40 | 33 | 20 | No Armor| 57 | 15 |
+|Diminutive | 14 | 68 | 60 | 53 | 40 | No Armor| 37 | 19 |
+|Tiny | 14 | 78 | 70 | 63 | 50 | No Armor| 27 | 30 |
+|Small | 14 | 83 | 75 | 68 | 55 | No Armor| 22 | 42 |
+|Medium | 14 | 88 | 80 | 73 | 60 | No Armor| 17 | 60 |
+|Large | 14 | 93 | 85 | 78 | 65 | No Armor| 12 | 90 |
+|Huge | 14 | 98 | 90 | 83 | 70 | No Armor| 7 | 120 |
+|Gargantuan | 14 | 108 | 100 | 93 | 80 | No Armor| -3 | 180 |
+|Colossal | 14 | 128 | 120 | 113 | 100 | No Armor| -23 | 240 |
+|Titanic | 14 | 168 | 160 | 153 | 140 | No Armor| -63 | 360 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 18 | 14 | -5 | No Armor| 57 | 12 |
+|Diminutive | 14 | 40 | 38 | 34 | 15 | No Armor| 37 | 15 |
+|Tiny | 14 | 50 | 48 | 44 | 25 | No Armor| 27 | 24 |
+|Small | 14 | 55 | 53 | 49 | 30 | No Armor| 22 | 33 |
+|Medium | 14 | 60 | 58 | 54 | 35 | No Armor| 17 | 48 |
+|Large | 14 | 65 | 63 | 59 | 40 | No Armor| 12 | 72 |
+|Huge | 14 | 70 | 68 | 64 | 45 | No Armor| 7 | 96 |
+|Gargantuan | 14 | 80 | 78 | 74 | 55 | No Armor| -3 | 144 |
+|Colossal | 14 | 100 | 98 | 94 | 75 | No Armor| -23 | 192 |
+|Titanic | 14 | 140 | 138 | 134 | 115 | No Armor| -63 | 288 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 18 | 14 | -5 | No Armor| 57 | 12 |
+|Diminutive | 14 | 40 | 38 | 34 | 15 | No Armor| 37 | 15 |
+|Tiny | 14 | 50 | 48 | 44 | 25 | No Armor| 27 | 24 |
+|Small | 14 | 55 | 53 | 49 | 30 | No Armor| 22 | 33 |
+|Medium | 14 | 60 | 58 | 54 | 35 | No Armor| 17 | 48 |
+|Large | 14 | 65 | 63 | 59 | 40 | No Armor| 12 | 72 |
+|Huge | 14 | 70 | 68 | 64 | 45 | No Armor| 7 | 96 |
+|Gargantuan | 14 | 80 | 78 | 74 | 55 | No Armor| -3 | 144 |
+|Colossal | 14 | 100 | 98 | 94 | 75 | No Armor| -23 | 192 |
+|Titanic | 14 | 140 | 138 | 134 | 115 | No Armor| -63 | 288 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 14 | 20 | 18 | 14 | -5 | Light| 57 | 12 |
+|Diminutive | 14 | 40 | 38 | 34 | 15 | Light| 37 | 15 |
+|Tiny | 14 | 50 | 48 | 44 | 25 | Light| 27 | 24 |
+|Small | 14 | 55 | 53 | 49 | 30 | Light| 22 | 33 |
+|Medium | 14 | 60 | 58 | 54 | 35 | Light| 17 | 48 |
+|Large | 14 | 65 | 63 | 59 | 40 | Light| 12 | 72 |
+|Huge | 14 | 70 | 68 | 64 | 45 | Light| 7 | 96 |
+|Gargantuan | 14 | 80 | 78 | 74 | 55 | Light| -3 | 144 |
+|Colossal | 14 | 100 | 98 | 94 | 75 | Light| -23 | 192 |
+|Titanic | 14 | 140 | 138 | 134 | 115 | Light| -63 | 288 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 41 | 34 | 22 | -3 | Light| 58 | 12 |
+|Diminutive | 15 | 61 | 54 | 42 | 17 | Light| 38 | 16 |
+|Tiny | 15 | 71 | 64 | 52 | 27 | Light| 28 | 24 |
+|Small | 15 | 76 | 69 | 57 | 32 | Light| 23 | 34 |
+|Medium | 15 | 81 | 74 | 62 | 37 | Light| 18 | 49 |
+|Large | 15 | 86 | 79 | 67 | 42 | Light| 13 | 74 |
+|Huge | 15 | 91 | 84 | 72 | 47 | Light| 8 | 99 |
+|Gargantuan | 15 | 101 | 94 | 82 | 57 | Light| -2 | 148 |
+|Colossal | 15 | 121 | 114 | 102 | 77 | Light| -22 | 198 |
+|Titanic | 15 | 161 | 154 | 142 | 117 | Light| -62 | 297 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 16 | 8 | -10 | Light| 58 | 12 |
+|Diminutive | 15 | 40 | 36 | 28 | 9 | Light| 38 | 16 |
+|Tiny | 15 | 50 | 46 | 38 | 19 | Light| 28 | 24 |
+|Small | 15 | 55 | 51 | 43 | 24 | Light| 23 | 34 |
+|Medium | 15 | 60 | 56 | 48 | 29 | Light| 18 | 49 |
+|Large | 15 | 65 | 61 | 53 | 34 | Light| 13 | 74 |
+|Huge | 15 | 70 | 66 | 58 | 39 | Light| 8 | 99 |
+|Gargantuan | 15 | 80 | 76 | 68 | 49 | Light| -2 | 148 |
+|Colossal | 15 | 100 | 96 | 88 | 69 | Light| -22 | 198 |
+|Titanic | 15 | 140 | 136 | 128 | 109 | Light| -62 | 297 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 49 | 41 | 34 | 22 | Medium| 40 | 15 |
+|Diminutive | 15 | 69 | 61 | 54 | 42 | Medium| 20 | 20 |
+|Tiny | 15 | 79 | 71 | 64 | 52 | Medium| 10 | 31 |
+|Small | 15 | 84 | 76 | 69 | 57 | Medium| 5 | 43 |
+|Medium | 15 | 89 | 81 | 74 | 62 | Medium| 0 | 62 |
+|Large | 15 | 94 | 86 | 79 | 67 | Medium| -5 | 93 |
+|Huge | 15 | 99 | 91 | 84 | 72 | Medium| -10 | 124 |
+|Gargantuan | 15 | 109 | 101 | 94 | 82 | Medium| -20 | 186 |
+|Colossal | 15 | 129 | 121 | 114 | 102 | Medium| -40 | 248 |
+|Titanic | 15 | 169 | 161 | 154 | 142 | Medium| -80 | 372 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 49 | 41 | 34 | 22 | Heavy| 58 | 37 |
+|Diminutive | 15 | 69 | 61 | 54 | 42 | Heavy| 38 | 48 |
+|Tiny | 15 | 79 | 71 | 64 | 52 | Heavy| 28 | 74 |
+|Small | 15 | 84 | 76 | 69 | 57 | Heavy| 23 | 103 |
+|Medium | 15 | 89 | 81 | 74 | 62 | Heavy| 18 | 148 |
+|Large | 15 | 94 | 86 | 79 | 67 | Heavy| 13 | 222 |
+|Huge | 15 | 99 | 91 | 84 | 72 | Heavy| 8 | 296 |
+|Gargantuan | 15 | 109 | 101 | 94 | 82 | Heavy| -2 | 444 |
+|Colossal | 15 | 129 | 121 | 114 | 102 | Heavy| -22 | 592 |
+|Titanic | 15 | 169 | 161 | 154 | 142 | Heavy| -62 | 888 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | -3 | -5 | -17 | -28 | No Armor| 58 | 9 |
+|Diminutive | 15 | 17 | 14 | 2 | -8 | No Armor| 38 | 12 |
+|Tiny | 15 | 27 | 24 | 12 | 1 | No Armor| 28 | 18 |
+|Small | 15 | 32 | 29 | 17 | 6 | No Armor| 23 | 26 |
+|Medium | 15 | 37 | 34 | 22 | 11 | No Armor| 18 | 37 |
+|Large | 15 | 42 | 39 | 27 | 16 | No Armor| 13 | 55 |
+|Huge | 15 | 47 | 44 | 32 | 21 | No Armor| 8 | 74 |
+|Gargantuan | 15 | 57 | 54 | 42 | 31 | No Armor| -2 | 111 |
+|Colossal | 15 | 77 | 74 | 62 | 51 | No Armor| -22 | 148 |
+|Titanic | 15 | 117 | 114 | 102 | 91 | No Armor| -62 | 223 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 19 | 15 | -3 | No Armor| 49 | 12 |
+|Diminutive | 15 | 40 | 39 | 35 | 17 | No Armor| 29 | 16 |
+|Tiny | 15 | 50 | 49 | 45 | 27 | No Armor| 19 | 24 |
+|Small | 15 | 55 | 54 | 50 | 32 | No Armor| 14 | 34 |
+|Medium | 15 | 60 | 59 | 55 | 37 | No Armor| 9 | 49 |
+|Large | 15 | 65 | 64 | 60 | 42 | No Armor| 4 | 74 |
+|Huge | 15 | 70 | 69 | 65 | 47 | No Armor| -1 | 99 |
+|Gargantuan | 15 | 80 | 79 | 75 | 57 | No Armor| -11 | 148 |
+|Colossal | 15 | 100 | 99 | 95 | 77 | No Armor| -31 | 198 |
+|Titanic | 15 | 140 | 139 | 135 | 117 | No Armor| -71 | 297 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 49 | 41 | 34 | 22 | Medium| 58 | 15 |
+|Diminutive | 15 | 69 | 61 | 54 | 42 | Medium| 38 | 20 |
+|Tiny | 15 | 79 | 71 | 64 | 52 | Medium| 28 | 31 |
+|Small | 15 | 84 | 76 | 69 | 57 | Medium| 23 | 43 |
+|Medium | 15 | 89 | 81 | 74 | 62 | Medium| 18 | 62 |
+|Large | 15 | 94 | 86 | 79 | 67 | Medium| 13 | 93 |
+|Huge | 15 | 99 | 91 | 84 | 72 | Medium| 8 | 124 |
+|Gargantuan | 15 | 109 | 101 | 94 | 82 | Medium| -2 | 186 |
+|Colossal | 15 | 129 | 121 | 114 | 102 | Medium| -22 | 248 |
+|Titanic | 15 | 169 | 161 | 154 | 142 | Medium| -62 | 372 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 49 | 41 | 34 | 22 | No Armor| 58 | 15 |
+|Diminutive | 15 | 69 | 61 | 54 | 42 | No Armor| 38 | 20 |
+|Tiny | 15 | 79 | 71 | 64 | 52 | No Armor| 28 | 31 |
+|Small | 15 | 84 | 76 | 69 | 57 | No Armor| 23 | 43 |
+|Medium | 15 | 89 | 81 | 74 | 62 | No Armor| 18 | 62 |
+|Large | 15 | 94 | 86 | 79 | 67 | No Armor| 13 | 93 |
+|Huge | 15 | 99 | 91 | 84 | 72 | No Armor| 8 | 124 |
+|Gargantuan | 15 | 109 | 101 | 94 | 82 | No Armor| -2 | 186 |
+|Colossal | 15 | 129 | 121 | 114 | 102 | No Armor| -22 | 248 |
+|Titanic | 15 | 169 | 161 | 154 | 142 | No Armor| -62 | 372 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 19 | 15 | -3 | No Armor| 58 | 12 |
+|Diminutive | 15 | 40 | 39 | 35 | 17 | No Armor| 38 | 16 |
+|Tiny | 15 | 50 | 49 | 45 | 27 | No Armor| 28 | 24 |
+|Small | 15 | 55 | 54 | 50 | 32 | No Armor| 23 | 34 |
+|Medium | 15 | 60 | 59 | 55 | 37 | No Armor| 18 | 49 |
+|Large | 15 | 65 | 64 | 60 | 42 | No Armor| 13 | 74 |
+|Huge | 15 | 70 | 69 | 65 | 47 | No Armor| 8 | 99 |
+|Gargantuan | 15 | 80 | 79 | 75 | 57 | No Armor| -2 | 148 |
+|Colossal | 15 | 100 | 99 | 95 | 77 | No Armor| -22 | 198 |
+|Titanic | 15 | 140 | 139 | 135 | 117 | No Armor| -62 | 297 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 49 | 41 | 34 | 22 | No Armor| 58 | 15 |
+|Diminutive | 15 | 69 | 61 | 54 | 42 | No Armor| 38 | 20 |
+|Tiny | 15 | 79 | 71 | 64 | 52 | No Armor| 28 | 31 |
+|Small | 15 | 84 | 76 | 69 | 57 | No Armor| 23 | 43 |
+|Medium | 15 | 89 | 81 | 74 | 62 | No Armor| 18 | 62 |
+|Large | 15 | 94 | 86 | 79 | 67 | No Armor| 13 | 93 |
+|Huge | 15 | 99 | 91 | 84 | 72 | No Armor| 8 | 124 |
+|Gargantuan | 15 | 109 | 101 | 94 | 82 | No Armor| -2 | 186 |
+|Colossal | 15 | 129 | 121 | 114 | 102 | No Armor| -22 | 248 |
+|Titanic | 15 | 169 | 161 | 154 | 142 | No Armor| -62 | 372 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 19 | 15 | -3 | No Armor| 58 | 12 |
+|Diminutive | 15 | 40 | 39 | 35 | 17 | No Armor| 38 | 16 |
+|Tiny | 15 | 50 | 49 | 45 | 27 | No Armor| 28 | 24 |
+|Small | 15 | 55 | 54 | 50 | 32 | No Armor| 23 | 34 |
+|Medium | 15 | 60 | 59 | 55 | 37 | No Armor| 18 | 49 |
+|Large | 15 | 65 | 64 | 60 | 42 | No Armor| 13 | 74 |
+|Huge | 15 | 70 | 69 | 65 | 47 | No Armor| 8 | 99 |
+|Gargantuan | 15 | 80 | 79 | 75 | 57 | No Armor| -2 | 148 |
+|Colossal | 15 | 100 | 99 | 95 | 77 | No Armor| -22 | 198 |
+|Titanic | 15 | 140 | 139 | 135 | 117 | No Armor| -62 | 297 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 19 | 15 | -3 | No Armor| 58 | 12 |
+|Diminutive | 15 | 40 | 39 | 35 | 17 | No Armor| 38 | 16 |
+|Tiny | 15 | 50 | 49 | 45 | 27 | No Armor| 28 | 24 |
+|Small | 15 | 55 | 54 | 50 | 32 | No Armor| 23 | 34 |
+|Medium | 15 | 60 | 59 | 55 | 37 | No Armor| 18 | 49 |
+|Large | 15 | 65 | 64 | 60 | 42 | No Armor| 13 | 74 |
+|Huge | 15 | 70 | 69 | 65 | 47 | No Armor| 8 | 99 |
+|Gargantuan | 15 | 80 | 79 | 75 | 57 | No Armor| -2 | 148 |
+|Colossal | 15 | 100 | 99 | 95 | 77 | No Armor| -22 | 198 |
+|Titanic | 15 | 140 | 139 | 135 | 117 | No Armor| -62 | 297 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 15 | 20 | 19 | 15 | -3 | Light| 58 | 12 |
+|Diminutive | 15 | 40 | 39 | 35 | 17 | Light| 38 | 16 |
+|Tiny | 15 | 50 | 49 | 45 | 27 | Light| 28 | 24 |
+|Small | 15 | 55 | 54 | 50 | 32 | Light| 23 | 34 |
+|Medium | 15 | 60 | 59 | 55 | 37 | Light| 18 | 49 |
+|Large | 15 | 65 | 64 | 60 | 42 | Light| 13 | 74 |
+|Huge | 15 | 70 | 69 | 65 | 47 | Light| 8 | 99 |
+|Gargantuan | 15 | 80 | 79 | 75 | 57 | Light| -2 | 148 |
+|Colossal | 15 | 100 | 99 | 95 | 77 | Light| -22 | 198 |
+|Titanic | 15 | 140 | 139 | 135 | 117 | Light| -62 | 297 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 42 | 36 | 24 | 0 | Light| 60 | 12 |
+|Diminutive | 16 | 62 | 56 | 44 | 20 | Light| 40 | 16 |
+|Tiny | 16 | 72 | 66 | 54 | 30 | Light| 30 | 25 |
+|Small | 16 | 77 | 71 | 59 | 35 | Light| 25 | 35 |
+|Medium | 16 | 82 | 76 | 64 | 40 | Light| 20 | 51 |
+|Large | 16 | 87 | 81 | 69 | 45 | Light| 15 | 76 |
+|Huge | 16 | 92 | 86 | 74 | 50 | Light| 10 | 102 |
+|Gargantuan | 16 | 102 | 96 | 84 | 60 | Light| 0 | 153 |
+|Colossal | 16 | 122 | 116 | 104 | 80 | Light| -20 | 204 |
+|Titanic | 16 | 162 | 156 | 144 | 120 | Light| -60 | 307 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 18 | 10 | -7 | Light| 60 | 12 |
+|Diminutive | 16 | 41 | 38 | 30 | 12 | Light| 40 | 16 |
+|Tiny | 16 | 51 | 48 | 40 | 22 | Light| 30 | 25 |
+|Small | 16 | 56 | 53 | 45 | 27 | Light| 25 | 35 |
+|Medium | 16 | 61 | 58 | 50 | 32 | Light| 20 | 51 |
+|Large | 16 | 66 | 63 | 55 | 37 | Light| 15 | 76 |
+|Huge | 16 | 71 | 68 | 60 | 42 | Light| 10 | 102 |
+|Gargantuan | 16 | 81 | 78 | 70 | 52 | Light| 0 | 153 |
+|Colossal | 16 | 101 | 98 | 90 | 72 | Light| -20 | 204 |
+|Titanic | 16 | 141 | 138 | 130 | 112 | Light| -60 | 307 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 51 | 42 | 36 | 24 | Medium| 40 | 16 |
+|Diminutive | 16 | 71 | 62 | 56 | 44 | Medium| 20 | 21 |
+|Tiny | 16 | 81 | 72 | 66 | 54 | Medium| 10 | 32 |
+|Small | 16 | 86 | 77 | 71 | 59 | Medium| 5 | 44 |
+|Medium | 16 | 91 | 82 | 76 | 64 | Medium| 0 | 64 |
+|Large | 16 | 96 | 87 | 81 | 69 | Medium| -5 | 96 |
+|Huge | 16 | 101 | 92 | 86 | 74 | Medium| -10 | 128 |
+|Gargantuan | 16 | 111 | 102 | 96 | 84 | Medium| -20 | 192 |
+|Colossal | 16 | 131 | 122 | 116 | 104 | Medium| -40 | 256 |
+|Titanic | 16 | 171 | 162 | 156 | 144 | Medium| -80 | 384 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 51 | 42 | 36 | 24 | Heavy| 60 | 38 |
+|Diminutive | 16 | 71 | 62 | 56 | 44 | Heavy| 40 | 50 |
+|Tiny | 16 | 81 | 72 | 66 | 54 | Heavy| 30 | 76 |
+|Small | 16 | 86 | 77 | 71 | 59 | Heavy| 25 | 106 |
+|Medium | 16 | 91 | 82 | 76 | 64 | Heavy| 20 | 152 |
+|Large | 16 | 96 | 87 | 81 | 69 | Heavy| 15 | 228 |
+|Huge | 16 | 101 | 92 | 86 | 74 | Heavy| 10 | 304 |
+|Gargantuan | 16 | 111 | 102 | 96 | 84 | Heavy| 0 | 456 |
+|Colossal | 16 | 131 | 122 | 116 | 104 | Heavy| -20 | 608 |
+|Titanic | 16 | 171 | 162 | 156 | 144 | Heavy| -60 | 912 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | -2 | -4 | -16 | -27 | No Armor| 60 | 9 |
+|Diminutive | 16 | 18 | 15 | 4 | -7 | No Armor| 40 | 12 |
+|Tiny | 16 | 28 | 25 | 14 | 3 | No Armor| 30 | 19 |
+|Small | 16 | 33 | 30 | 19 | 8 | No Armor| 25 | 26 |
+|Medium | 16 | 38 | 35 | 24 | 13 | No Armor| 20 | 38 |
+|Large | 16 | 43 | 40 | 29 | 18 | No Armor| 15 | 57 |
+|Huge | 16 | 48 | 45 | 34 | 23 | No Armor| 10 | 76 |
+|Gargantuan | 16 | 58 | 55 | 44 | 33 | No Armor| 0 | 115 |
+|Colossal | 16 | 78 | 75 | 64 | 53 | No Armor| -20 | 153 |
+|Titanic | 16 | 118 | 115 | 104 | 93 | No Armor| -60 | 230 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 20 | 17 | 0 | No Armor| 50 | 12 |
+|Diminutive | 16 | 41 | 40 | 37 | 20 | No Armor| 30 | 16 |
+|Tiny | 16 | 51 | 50 | 47 | 30 | No Armor| 20 | 25 |
+|Small | 16 | 56 | 55 | 52 | 35 | No Armor| 15 | 35 |
+|Medium | 16 | 61 | 60 | 57 | 40 | No Armor| 10 | 51 |
+|Large | 16 | 66 | 65 | 62 | 45 | No Armor| 5 | 76 |
+|Huge | 16 | 71 | 70 | 67 | 50 | No Armor| 0 | 102 |
+|Gargantuan | 16 | 81 | 80 | 77 | 60 | No Armor| -10 | 153 |
+|Colossal | 16 | 101 | 100 | 97 | 80 | No Armor| -30 | 204 |
+|Titanic | 16 | 141 | 140 | 137 | 120 | No Armor| -70 | 307 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 51 | 42 | 36 | 24 | Medium| 60 | 16 |
+|Diminutive | 16 | 71 | 62 | 56 | 44 | Medium| 40 | 21 |
+|Tiny | 16 | 81 | 72 | 66 | 54 | Medium| 30 | 32 |
+|Small | 16 | 86 | 77 | 71 | 59 | Medium| 25 | 44 |
+|Medium | 16 | 91 | 82 | 76 | 64 | Medium| 20 | 64 |
+|Large | 16 | 96 | 87 | 81 | 69 | Medium| 15 | 96 |
+|Huge | 16 | 101 | 92 | 86 | 74 | Medium| 10 | 128 |
+|Gargantuan | 16 | 111 | 102 | 96 | 84 | Medium| 0 | 192 |
+|Colossal | 16 | 131 | 122 | 116 | 104 | Medium| -20 | 256 |
+|Titanic | 16 | 171 | 162 | 156 | 144 | Medium| -60 | 384 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 51 | 42 | 36 | 24 | No Armor| 60 | 16 |
+|Diminutive | 16 | 71 | 62 | 56 | 44 | No Armor| 40 | 21 |
+|Tiny | 16 | 81 | 72 | 66 | 54 | No Armor| 30 | 32 |
+|Small | 16 | 86 | 77 | 71 | 59 | No Armor| 25 | 44 |
+|Medium | 16 | 91 | 82 | 76 | 64 | No Armor| 20 | 64 |
+|Large | 16 | 96 | 87 | 81 | 69 | No Armor| 15 | 96 |
+|Huge | 16 | 101 | 92 | 86 | 74 | No Armor| 10 | 128 |
+|Gargantuan | 16 | 111 | 102 | 96 | 84 | No Armor| 0 | 192 |
+|Colossal | 16 | 131 | 122 | 116 | 104 | No Armor| -20 | 256 |
+|Titanic | 16 | 171 | 162 | 156 | 144 | No Armor| -60 | 384 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 20 | 17 | 0 | No Armor| 60 | 12 |
+|Diminutive | 16 | 41 | 40 | 37 | 20 | No Armor| 40 | 16 |
+|Tiny | 16 | 51 | 50 | 47 | 30 | No Armor| 30 | 25 |
+|Small | 16 | 56 | 55 | 52 | 35 | No Armor| 25 | 35 |
+|Medium | 16 | 61 | 60 | 57 | 40 | No Armor| 20 | 51 |
+|Large | 16 | 66 | 65 | 62 | 45 | No Armor| 15 | 76 |
+|Huge | 16 | 71 | 70 | 67 | 50 | No Armor| 10 | 102 |
+|Gargantuan | 16 | 81 | 80 | 77 | 60 | No Armor| 0 | 153 |
+|Colossal | 16 | 101 | 100 | 97 | 80 | No Armor| -20 | 204 |
+|Titanic | 16 | 141 | 140 | 137 | 120 | No Armor| -60 | 307 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 51 | 42 | 36 | 24 | No Armor| 60 | 16 |
+|Diminutive | 16 | 71 | 62 | 56 | 44 | No Armor| 40 | 21 |
+|Tiny | 16 | 81 | 72 | 66 | 54 | No Armor| 30 | 32 |
+|Small | 16 | 86 | 77 | 71 | 59 | No Armor| 25 | 44 |
+|Medium | 16 | 91 | 82 | 76 | 64 | No Armor| 20 | 64 |
+|Large | 16 | 96 | 87 | 81 | 69 | No Armor| 15 | 96 |
+|Huge | 16 | 101 | 92 | 86 | 74 | No Armor| 10 | 128 |
+|Gargantuan | 16 | 111 | 102 | 96 | 84 | No Armor| 0 | 192 |
+|Colossal | 16 | 131 | 122 | 116 | 104 | No Armor| -20 | 256 |
+|Titanic | 16 | 171 | 162 | 156 | 144 | No Armor| -60 | 384 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 20 | 17 | 0 | No Armor| 60 | 12 |
+|Diminutive | 16 | 41 | 40 | 37 | 20 | No Armor| 40 | 16 |
+|Tiny | 16 | 51 | 50 | 47 | 30 | No Armor| 30 | 25 |
+|Small | 16 | 56 | 55 | 52 | 35 | No Armor| 25 | 35 |
+|Medium | 16 | 61 | 60 | 57 | 40 | No Armor| 20 | 51 |
+|Large | 16 | 66 | 65 | 62 | 45 | No Armor| 15 | 76 |
+|Huge | 16 | 71 | 70 | 67 | 50 | No Armor| 10 | 102 |
+|Gargantuan | 16 | 81 | 80 | 77 | 60 | No Armor| 0 | 153 |
+|Colossal | 16 | 101 | 100 | 97 | 80 | No Armor| -20 | 204 |
+|Titanic | 16 | 141 | 140 | 137 | 120 | No Armor| -60 | 307 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 20 | 17 | 0 | No Armor| 60 | 12 |
+|Diminutive | 16 | 41 | 40 | 37 | 20 | No Armor| 40 | 16 |
+|Tiny | 16 | 51 | 50 | 47 | 30 | No Armor| 30 | 25 |
+|Small | 16 | 56 | 55 | 52 | 35 | No Armor| 25 | 35 |
+|Medium | 16 | 61 | 60 | 57 | 40 | No Armor| 20 | 51 |
+|Large | 16 | 66 | 65 | 62 | 45 | No Armor| 15 | 76 |
+|Huge | 16 | 71 | 70 | 67 | 50 | No Armor| 10 | 102 |
+|Gargantuan | 16 | 81 | 80 | 77 | 60 | No Armor| 0 | 153 |
+|Colossal | 16 | 101 | 100 | 97 | 80 | No Armor| -20 | 204 |
+|Titanic | 16 | 141 | 140 | 137 | 120 | No Armor| -60 | 307 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 16 | 21 | 20 | 17 | 0 | Light| 60 | 12 |
+|Diminutive | 16 | 41 | 40 | 37 | 20 | Light| 40 | 16 |
+|Tiny | 16 | 51 | 50 | 47 | 30 | Light| 30 | 25 |
+|Small | 16 | 56 | 55 | 52 | 35 | Light| 25 | 35 |
+|Medium | 16 | 61 | 60 | 57 | 40 | Light| 20 | 51 |
+|Large | 16 | 66 | 65 | 62 | 45 | Light| 15 | 76 |
+|Huge | 16 | 71 | 70 | 67 | 50 | Light| 10 | 102 |
+|Gargantuan | 16 | 81 | 80 | 77 | 60 | Light| 0 | 153 |
+|Colossal | 16 | 101 | 100 | 97 | 80 | Light| -20 | 204 |
+|Titanic | 16 | 141 | 140 | 137 | 120 | Light| -60 | 307 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 43 | 37 | 26 | 2 | Light| 61 | 13 |
+|Diminutive | 17 | 63 | 57 | 46 | 22 | Light| 41 | 17 |
+|Tiny | 17 | 73 | 67 | 56 | 32 | Light| 31 | 26 |
+|Small | 17 | 78 | 72 | 61 | 37 | Light| 26 | 36 |
+|Medium | 17 | 83 | 77 | 66 | 42 | Light| 21 | 52 |
+|Large | 17 | 88 | 82 | 71 | 47 | Light| 16 | 79 |
+|Huge | 17 | 93 | 87 | 76 | 52 | Light| 11 | 105 |
+|Gargantuan | 17 | 103 | 97 | 86 | 62 | Light| 1 | 158 |
+|Colossal | 17 | 123 | 117 | 106 | 82 | Light| -19 | 211 |
+|Titanic | 17 | 163 | 157 | 146 | 122 | Light| -59 | 316 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 19 | 12 | -5 | Light| 61 | 13 |
+|Diminutive | 17 | 42 | 39 | 32 | 14 | Light| 41 | 17 |
+|Tiny | 17 | 52 | 49 | 42 | 24 | Light| 31 | 26 |
+|Small | 17 | 57 | 54 | 47 | 29 | Light| 26 | 36 |
+|Medium | 17 | 62 | 59 | 52 | 34 | Light| 21 | 52 |
+|Large | 17 | 67 | 64 | 57 | 39 | Light| 16 | 79 |
+|Huge | 17 | 72 | 69 | 62 | 44 | Light| 11 | 105 |
+|Gargantuan | 17 | 82 | 79 | 72 | 54 | Light| 1 | 158 |
+|Colossal | 17 | 102 | 99 | 92 | 74 | Light| -19 | 211 |
+|Titanic | 17 | 142 | 139 | 132 | 114 | Light| -59 | 316 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 52 | 43 | 37 | 26 | Medium| 40 | 16 |
+|Diminutive | 17 | 72 | 63 | 57 | 46 | Medium| 20 | 21 |
+|Tiny | 17 | 82 | 73 | 67 | 56 | Medium| 10 | 33 |
+|Small | 17 | 87 | 78 | 72 | 61 | Medium| 5 | 46 |
+|Medium | 17 | 92 | 83 | 77 | 66 | Medium| 0 | 66 |
+|Large | 17 | 97 | 88 | 82 | 71 | Medium| -5 | 99 |
+|Huge | 17 | 102 | 93 | 87 | 76 | Medium| -10 | 132 |
+|Gargantuan | 17 | 112 | 103 | 97 | 86 | Medium| -20 | 198 |
+|Colossal | 17 | 132 | 123 | 117 | 106 | Medium| -40 | 264 |
+|Titanic | 17 | 172 | 163 | 157 | 146 | Medium| -80 | 396 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 52 | 43 | 37 | 26 | Heavy| 61 | 38 |
+|Diminutive | 17 | 72 | 63 | 57 | 46 | Heavy| 41 | 50 |
+|Tiny | 17 | 82 | 73 | 67 | 56 | Heavy| 31 | 77 |
+|Small | 17 | 87 | 78 | 72 | 61 | Heavy| 26 | 107 |
+|Medium | 17 | 92 | 83 | 77 | 66 | Heavy| 21 | 154 |
+|Large | 17 | 97 | 88 | 82 | 71 | Heavy| 16 | 231 |
+|Huge | 17 | 102 | 93 | 87 | 76 | Heavy| 11 | 308 |
+|Gargantuan | 17 | 112 | 103 | 97 | 86 | Heavy| 1 | 462 |
+|Colossal | 17 | 132 | 123 | 117 | 106 | Heavy| -19 | 616 |
+|Titanic | 17 | 172 | 163 | 157 | 146 | Heavy| -59 | 924 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | -1 | -3 | -14 | -26 | No Armor| 61 | 9 |
+|Diminutive | 17 | 18 | 16 | 5 | -6 | No Armor| 41 | 13 |
+|Tiny | 17 | 28 | 26 | 15 | 3 | No Armor| 31 | 19 |
+|Small | 17 | 33 | 31 | 20 | 8 | No Armor| 26 | 27 |
+|Medium | 17 | 38 | 36 | 25 | 13 | No Armor| 21 | 39 |
+|Large | 17 | 43 | 41 | 30 | 18 | No Armor| 16 | 59 |
+|Huge | 17 | 48 | 46 | 35 | 23 | No Armor| 11 | 79 |
+|Gargantuan | 17 | 58 | 56 | 45 | 33 | No Armor| 1 | 118 |
+|Colossal | 17 | 78 | 76 | 65 | 53 | No Armor| -19 | 158 |
+|Titanic | 17 | 118 | 116 | 105 | 93 | No Armor| -59 | 237 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 21 | 19 | 2 | No Armor| 50 | 13 |
+|Diminutive | 17 | 42 | 41 | 39 | 22 | No Armor| 30 | 17 |
+|Tiny | 17 | 52 | 51 | 49 | 32 | No Armor| 20 | 26 |
+|Small | 17 | 57 | 56 | 54 | 37 | No Armor| 15 | 36 |
+|Medium | 17 | 62 | 61 | 59 | 42 | No Armor| 10 | 52 |
+|Large | 17 | 67 | 66 | 64 | 47 | No Armor| 5 | 79 |
+|Huge | 17 | 72 | 71 | 69 | 52 | No Armor| 0 | 105 |
+|Gargantuan | 17 | 82 | 81 | 79 | 62 | No Armor| -10 | 158 |
+|Colossal | 17 | 102 | 101 | 99 | 82 | No Armor| -30 | 211 |
+|Titanic | 17 | 142 | 141 | 139 | 122 | No Armor| -70 | 316 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 52 | 43 | 37 | 26 | Medium| 61 | 16 |
+|Diminutive | 17 | 72 | 63 | 57 | 46 | Medium| 41 | 21 |
+|Tiny | 17 | 82 | 73 | 67 | 56 | Medium| 31 | 33 |
+|Small | 17 | 87 | 78 | 72 | 61 | Medium| 26 | 46 |
+|Medium | 17 | 92 | 83 | 77 | 66 | Medium| 21 | 66 |
+|Large | 17 | 97 | 88 | 82 | 71 | Medium| 16 | 99 |
+|Huge | 17 | 102 | 93 | 87 | 76 | Medium| 11 | 132 |
+|Gargantuan | 17 | 112 | 103 | 97 | 86 | Medium| 1 | 198 |
+|Colossal | 17 | 132 | 123 | 117 | 106 | Medium| -19 | 264 |
+|Titanic | 17 | 172 | 163 | 157 | 146 | Medium| -59 | 396 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 52 | 43 | 37 | 26 | No Armor| 61 | 16 |
+|Diminutive | 17 | 72 | 63 | 57 | 46 | No Armor| 41 | 21 |
+|Tiny | 17 | 82 | 73 | 67 | 56 | No Armor| 31 | 33 |
+|Small | 17 | 87 | 78 | 72 | 61 | No Armor| 26 | 46 |
+|Medium | 17 | 92 | 83 | 77 | 66 | No Armor| 21 | 66 |
+|Large | 17 | 97 | 88 | 82 | 71 | No Armor| 16 | 99 |
+|Huge | 17 | 102 | 93 | 87 | 76 | No Armor| 11 | 132 |
+|Gargantuan | 17 | 112 | 103 | 97 | 86 | No Armor| 1 | 198 |
+|Colossal | 17 | 132 | 123 | 117 | 106 | No Armor| -19 | 264 |
+|Titanic | 17 | 172 | 163 | 157 | 146 | No Armor| -59 | 396 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 21 | 19 | 2 | No Armor| 61 | 13 |
+|Diminutive | 17 | 42 | 41 | 39 | 22 | No Armor| 41 | 17 |
+|Tiny | 17 | 52 | 51 | 49 | 32 | No Armor| 31 | 26 |
+|Small | 17 | 57 | 56 | 54 | 37 | No Armor| 26 | 36 |
+|Medium | 17 | 62 | 61 | 59 | 42 | No Armor| 21 | 52 |
+|Large | 17 | 67 | 66 | 64 | 47 | No Armor| 16 | 79 |
+|Huge | 17 | 72 | 71 | 69 | 52 | No Armor| 11 | 105 |
+|Gargantuan | 17 | 82 | 81 | 79 | 62 | No Armor| 1 | 158 |
+|Colossal | 17 | 102 | 101 | 99 | 82 | No Armor| -19 | 211 |
+|Titanic | 17 | 142 | 141 | 139 | 122 | No Armor| -59 | 316 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 52 | 43 | 37 | 26 | No Armor| 61 | 16 |
+|Diminutive | 17 | 72 | 63 | 57 | 46 | No Armor| 41 | 21 |
+|Tiny | 17 | 82 | 73 | 67 | 56 | No Armor| 31 | 33 |
+|Small | 17 | 87 | 78 | 72 | 61 | No Armor| 26 | 46 |
+|Medium | 17 | 92 | 83 | 77 | 66 | No Armor| 21 | 66 |
+|Large | 17 | 97 | 88 | 82 | 71 | No Armor| 16 | 99 |
+|Huge | 17 | 102 | 93 | 87 | 76 | No Armor| 11 | 132 |
+|Gargantuan | 17 | 112 | 103 | 97 | 86 | No Armor| 1 | 198 |
+|Colossal | 17 | 132 | 123 | 117 | 106 | No Armor| -19 | 264 |
+|Titanic | 17 | 172 | 163 | 157 | 146 | No Armor| -59 | 396 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 21 | 19 | 2 | No Armor| 61 | 13 |
+|Diminutive | 17 | 42 | 41 | 39 | 22 | No Armor| 41 | 17 |
+|Tiny | 17 | 52 | 51 | 49 | 32 | No Armor| 31 | 26 |
+|Small | 17 | 57 | 56 | 54 | 37 | No Armor| 26 | 36 |
+|Medium | 17 | 62 | 61 | 59 | 42 | No Armor| 21 | 52 |
+|Large | 17 | 67 | 66 | 64 | 47 | No Armor| 16 | 79 |
+|Huge | 17 | 72 | 71 | 69 | 52 | No Armor| 11 | 105 |
+|Gargantuan | 17 | 82 | 81 | 79 | 62 | No Armor| 1 | 158 |
+|Colossal | 17 | 102 | 101 | 99 | 82 | No Armor| -19 | 211 |
+|Titanic | 17 | 142 | 141 | 139 | 122 | No Armor| -59 | 316 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 21 | 19 | 2 | No Armor| 61 | 13 |
+|Diminutive | 17 | 42 | 41 | 39 | 22 | No Armor| 41 | 17 |
+|Tiny | 17 | 52 | 51 | 49 | 32 | No Armor| 31 | 26 |
+|Small | 17 | 57 | 56 | 54 | 37 | No Armor| 26 | 36 |
+|Medium | 17 | 62 | 61 | 59 | 42 | No Armor| 21 | 52 |
+|Large | 17 | 67 | 66 | 64 | 47 | No Armor| 16 | 79 |
+|Huge | 17 | 72 | 71 | 69 | 52 | No Armor| 11 | 105 |
+|Gargantuan | 17 | 82 | 81 | 79 | 62 | No Armor| 1 | 158 |
+|Colossal | 17 | 102 | 101 | 99 | 82 | No Armor| -19 | 211 |
+|Titanic | 17 | 142 | 141 | 139 | 122 | No Armor| -59 | 316 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 17 | 22 | 21 | 19 | 2 | Light| 61 | 13 |
+|Diminutive | 17 | 42 | 41 | 39 | 22 | Light| 41 | 17 |
+|Tiny | 17 | 52 | 51 | 49 | 32 | Light| 31 | 26 |
+|Small | 17 | 57 | 56 | 54 | 37 | Light| 26 | 36 |
+|Medium | 17 | 62 | 61 | 59 | 42 | Light| 21 | 52 |
+|Large | 17 | 67 | 66 | 64 | 47 | Light| 16 | 79 |
+|Huge | 17 | 72 | 71 | 69 | 52 | Light| 11 | 105 |
+|Gargantuan | 17 | 82 | 81 | 79 | 62 | Light| 1 | 158 |
+|Colossal | 17 | 102 | 101 | 99 | 82 | Light| -19 | 211 |
+|Titanic | 17 | 142 | 141 | 139 | 122 | Light| -59 | 316 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 44 | 39 | 28 | 5 | Light| 62 | 13 |
+|Diminutive | 18 | 64 | 59 | 48 | 25 | Light| 42 | 17 |
+|Tiny | 18 | 74 | 69 | 58 | 35 | Light| 32 | 27 |
+|Small | 18 | 79 | 74 | 63 | 40 | Light| 27 | 38 |
+|Medium | 18 | 84 | 79 | 68 | 45 | Light| 22 | 54 |
+|Large | 18 | 89 | 84 | 73 | 50 | Light| 17 | 81 |
+|Huge | 18 | 94 | 89 | 78 | 55 | Light| 12 | 108 |
+|Gargantuan | 18 | 104 | 99 | 88 | 65 | Light| 2 | 163 |
+|Colossal | 18 | 124 | 119 | 108 | 85 | Light| -18 | 217 |
+|Titanic | 18 | 164 | 159 | 148 | 125 | Light| -58 | 326 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 20 | 13 | -3 | Light| 62 | 13 |
+|Diminutive | 18 | 43 | 40 | 33 | 16 | Light| 42 | 17 |
+|Tiny | 18 | 53 | 50 | 43 | 26 | Light| 32 | 27 |
+|Small | 18 | 58 | 55 | 48 | 31 | Light| 27 | 38 |
+|Medium | 18 | 63 | 60 | 53 | 36 | Light| 22 | 54 |
+|Large | 18 | 68 | 65 | 58 | 41 | Light| 17 | 81 |
+|Huge | 18 | 73 | 70 | 63 | 46 | Light| 12 | 108 |
+|Gargantuan | 18 | 83 | 80 | 73 | 56 | Light| 2 | 163 |
+|Colossal | 18 | 103 | 100 | 93 | 76 | Light| -18 | 217 |
+|Titanic | 18 | 143 | 140 | 133 | 116 | Light| -58 | 326 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 54 | 44 | 39 | 28 | Medium| 40 | 17 |
+|Diminutive | 18 | 74 | 64 | 59 | 48 | Medium| 20 | 22 |
+|Tiny | 18 | 84 | 74 | 69 | 58 | Medium| 10 | 34 |
+|Small | 18 | 89 | 79 | 74 | 63 | Medium| 5 | 47 |
+|Medium | 18 | 94 | 84 | 79 | 68 | Medium| 0 | 68 |
+|Large | 18 | 99 | 89 | 84 | 73 | Medium| -5 | 102 |
+|Huge | 18 | 104 | 94 | 89 | 78 | Medium| -10 | 136 |
+|Gargantuan | 18 | 114 | 104 | 99 | 88 | Medium| -20 | 204 |
+|Colossal | 18 | 134 | 124 | 119 | 108 | Medium| -40 | 272 |
+|Titanic | 18 | 174 | 164 | 159 | 148 | Medium| -80 | 408 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 54 | 44 | 39 | 28 | Heavy| 62 | 39 |
+|Diminutive | 18 | 74 | 64 | 59 | 48 | Heavy| 42 | 52 |
+|Tiny | 18 | 84 | 74 | 69 | 58 | Heavy| 32 | 79 |
+|Small | 18 | 89 | 79 | 74 | 63 | Heavy| 27 | 110 |
+|Medium | 18 | 94 | 84 | 79 | 68 | Heavy| 22 | 158 |
+|Large | 18 | 99 | 89 | 84 | 73 | Heavy| 17 | 237 |
+|Huge | 18 | 104 | 94 | 89 | 78 | Heavy| 12 | 316 |
+|Gargantuan | 18 | 114 | 104 | 99 | 88 | Heavy| 2 | 474 |
+|Colossal | 18 | 134 | 124 | 119 | 108 | Heavy| -18 | 632 |
+|Titanic | 18 | 174 | 164 | 159 | 148 | Heavy| -58 | 948 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 0 | -2 | -13 | -25 | No Armor| 62 | 10 |
+|Diminutive | 18 | 19 | 17 | 7 | -5 | No Armor| 42 | 13 |
+|Tiny | 18 | 29 | 27 | 17 | 4 | No Armor| 32 | 20 |
+|Small | 18 | 34 | 32 | 22 | 9 | No Armor| 27 | 28 |
+|Medium | 18 | 39 | 37 | 27 | 14 | No Armor| 22 | 40 |
+|Large | 18 | 44 | 42 | 32 | 19 | No Armor| 17 | 61 |
+|Huge | 18 | 49 | 47 | 37 | 24 | No Armor| 12 | 81 |
+|Gargantuan | 18 | 59 | 57 | 47 | 34 | No Armor| 2 | 122 |
+|Colossal | 18 | 79 | 77 | 67 | 54 | No Armor| -18 | 163 |
+|Titanic | 18 | 119 | 117 | 107 | 94 | No Armor| -58 | 244 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 23 | 21 | 5 | No Armor| 51 | 13 |
+|Diminutive | 18 | 43 | 43 | 41 | 25 | No Armor| 31 | 17 |
+|Tiny | 18 | 53 | 53 | 51 | 35 | No Armor| 21 | 27 |
+|Small | 18 | 58 | 58 | 56 | 40 | No Armor| 16 | 38 |
+|Medium | 18 | 63 | 63 | 61 | 45 | No Armor| 11 | 54 |
+|Large | 18 | 68 | 68 | 66 | 50 | No Armor| 6 | 81 |
+|Huge | 18 | 73 | 73 | 71 | 55 | No Armor| 1 | 108 |
+|Gargantuan | 18 | 83 | 83 | 81 | 65 | No Armor| -9 | 163 |
+|Colossal | 18 | 103 | 103 | 101 | 85 | No Armor| -29 | 217 |
+|Titanic | 18 | 143 | 143 | 141 | 125 | No Armor| -69 | 326 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 54 | 44 | 39 | 28 | Medium| 62 | 17 |
+|Diminutive | 18 | 74 | 64 | 59 | 48 | Medium| 42 | 22 |
+|Tiny | 18 | 84 | 74 | 69 | 58 | Medium| 32 | 34 |
+|Small | 18 | 89 | 79 | 74 | 63 | Medium| 27 | 47 |
+|Medium | 18 | 94 | 84 | 79 | 68 | Medium| 22 | 68 |
+|Large | 18 | 99 | 89 | 84 | 73 | Medium| 17 | 102 |
+|Huge | 18 | 104 | 94 | 89 | 78 | Medium| 12 | 136 |
+|Gargantuan | 18 | 114 | 104 | 99 | 88 | Medium| 2 | 204 |
+|Colossal | 18 | 134 | 124 | 119 | 108 | Medium| -18 | 272 |
+|Titanic | 18 | 174 | 164 | 159 | 148 | Medium| -58 | 408 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 54 | 44 | 39 | 28 | No Armor| 62 | 17 |
+|Diminutive | 18 | 74 | 64 | 59 | 48 | No Armor| 42 | 22 |
+|Tiny | 18 | 84 | 74 | 69 | 58 | No Armor| 32 | 34 |
+|Small | 18 | 89 | 79 | 74 | 63 | No Armor| 27 | 47 |
+|Medium | 18 | 94 | 84 | 79 | 68 | No Armor| 22 | 68 |
+|Large | 18 | 99 | 89 | 84 | 73 | No Armor| 17 | 102 |
+|Huge | 18 | 104 | 94 | 89 | 78 | No Armor| 12 | 136 |
+|Gargantuan | 18 | 114 | 104 | 99 | 88 | No Armor| 2 | 204 |
+|Colossal | 18 | 134 | 124 | 119 | 108 | No Armor| -18 | 272 |
+|Titanic | 18 | 174 | 164 | 159 | 148 | No Armor| -58 | 408 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 23 | 21 | 5 | No Armor| 62 | 13 |
+|Diminutive | 18 | 43 | 43 | 41 | 25 | No Armor| 42 | 17 |
+|Tiny | 18 | 53 | 53 | 51 | 35 | No Armor| 32 | 27 |
+|Small | 18 | 58 | 58 | 56 | 40 | No Armor| 27 | 38 |
+|Medium | 18 | 63 | 63 | 61 | 45 | No Armor| 22 | 54 |
+|Large | 18 | 68 | 68 | 66 | 50 | No Armor| 17 | 81 |
+|Huge | 18 | 73 | 73 | 71 | 55 | No Armor| 12 | 108 |
+|Gargantuan | 18 | 83 | 83 | 81 | 65 | No Armor| 2 | 163 |
+|Colossal | 18 | 103 | 103 | 101 | 85 | No Armor| -18 | 217 |
+|Titanic | 18 | 143 | 143 | 141 | 125 | No Armor| -58 | 326 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 54 | 44 | 39 | 28 | No Armor| 62 | 17 |
+|Diminutive | 18 | 74 | 64 | 59 | 48 | No Armor| 42 | 22 |
+|Tiny | 18 | 84 | 74 | 69 | 58 | No Armor| 32 | 34 |
+|Small | 18 | 89 | 79 | 74 | 63 | No Armor| 27 | 47 |
+|Medium | 18 | 94 | 84 | 79 | 68 | No Armor| 22 | 68 |
+|Large | 18 | 99 | 89 | 84 | 73 | No Armor| 17 | 102 |
+|Huge | 18 | 104 | 94 | 89 | 78 | No Armor| 12 | 136 |
+|Gargantuan | 18 | 114 | 104 | 99 | 88 | No Armor| 2 | 204 |
+|Colossal | 18 | 134 | 124 | 119 | 108 | No Armor| -18 | 272 |
+|Titanic | 18 | 174 | 164 | 159 | 148 | No Armor| -58 | 408 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 23 | 21 | 5 | No Armor| 62 | 13 |
+|Diminutive | 18 | 43 | 43 | 41 | 25 | No Armor| 42 | 17 |
+|Tiny | 18 | 53 | 53 | 51 | 35 | No Armor| 32 | 27 |
+|Small | 18 | 58 | 58 | 56 | 40 | No Armor| 27 | 38 |
+|Medium | 18 | 63 | 63 | 61 | 45 | No Armor| 22 | 54 |
+|Large | 18 | 68 | 68 | 66 | 50 | No Armor| 17 | 81 |
+|Huge | 18 | 73 | 73 | 71 | 55 | No Armor| 12 | 108 |
+|Gargantuan | 18 | 83 | 83 | 81 | 65 | No Armor| 2 | 163 |
+|Colossal | 18 | 103 | 103 | 101 | 85 | No Armor| -18 | 217 |
+|Titanic | 18 | 143 | 143 | 141 | 125 | No Armor| -58 | 326 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 23 | 21 | 5 | No Armor| 62 | 13 |
+|Diminutive | 18 | 43 | 43 | 41 | 25 | No Armor| 42 | 17 |
+|Tiny | 18 | 53 | 53 | 51 | 35 | No Armor| 32 | 27 |
+|Small | 18 | 58 | 58 | 56 | 40 | No Armor| 27 | 38 |
+|Medium | 18 | 63 | 63 | 61 | 45 | No Armor| 22 | 54 |
+|Large | 18 | 68 | 68 | 66 | 50 | No Armor| 17 | 81 |
+|Huge | 18 | 73 | 73 | 71 | 55 | No Armor| 12 | 108 |
+|Gargantuan | 18 | 83 | 83 | 81 | 65 | No Armor| 2 | 163 |
+|Colossal | 18 | 103 | 103 | 101 | 85 | No Armor| -18 | 217 |
+|Titanic | 18 | 143 | 143 | 141 | 125 | No Armor| -58 | 326 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 18 | 23 | 23 | 21 | 5 | Light| 62 | 13 |
+|Diminutive | 18 | 43 | 43 | 41 | 25 | Light| 42 | 17 |
+|Tiny | 18 | 53 | 53 | 51 | 35 | Light| 32 | 27 |
+|Small | 18 | 58 | 58 | 56 | 40 | Light| 27 | 38 |
+|Medium | 18 | 63 | 63 | 61 | 45 | Light| 22 | 54 |
+|Large | 18 | 68 | 68 | 66 | 50 | Light| 17 | 81 |
+|Huge | 18 | 73 | 73 | 71 | 55 | Light| 12 | 108 |
+|Gargantuan | 18 | 83 | 83 | 81 | 65 | Light| 2 | 163 |
+|Colossal | 18 | 103 | 103 | 101 | 85 | Light| -18 | 217 |
+|Titanic | 18 | 143 | 143 | 141 | 125 | Light| -58 | 326 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 45 | 40 | 30 | 7 | Light| 63 | 14 |
+|Diminutive | 19 | 65 | 60 | 50 | 27 | Light| 43 | 18 |
+|Tiny | 19 | 75 | 70 | 60 | 37 | Light| 33 | 28 |
+|Small | 19 | 80 | 75 | 65 | 42 | Light| 28 | 39 |
+|Medium | 19 | 85 | 80 | 70 | 47 | Light| 23 | 56 |
+|Large | 19 | 90 | 85 | 75 | 52 | Light| 18 | 84 |
+|Huge | 19 | 95 | 90 | 80 | 57 | Light| 13 | 112 |
+|Gargantuan | 19 | 105 | 100 | 90 | 67 | Light| 3 | 168 |
+|Colossal | 19 | 125 | 120 | 110 | 87 | Light| -17 | 224 |
+|Titanic | 19 | 165 | 160 | 150 | 127 | Light| -57 | 336 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 21 | 15 | -1 | Light| 63 | 14 |
+|Diminutive | 19 | 43 | 41 | 35 | 18 | Light| 43 | 18 |
+|Tiny | 19 | 53 | 51 | 45 | 28 | Light| 33 | 28 |
+|Small | 19 | 58 | 56 | 50 | 33 | Light| 28 | 39 |
+|Medium | 19 | 63 | 61 | 55 | 38 | Light| 23 | 56 |
+|Large | 19 | 68 | 66 | 60 | 43 | Light| 18 | 84 |
+|Huge | 19 | 73 | 71 | 65 | 48 | Light| 13 | 112 |
+|Gargantuan | 19 | 83 | 81 | 75 | 58 | Light| 3 | 168 |
+|Colossal | 19 | 103 | 101 | 95 | 78 | Light| -17 | 224 |
+|Titanic | 19 | 143 | 141 | 135 | 118 | Light| -57 | 336 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 55 | 45 | 40 | 30 | Medium| 40 | 17 |
+|Diminutive | 19 | 75 | 65 | 60 | 50 | Medium| 20 | 23 |
+|Tiny | 19 | 85 | 75 | 70 | 60 | Medium| 10 | 35 |
+|Small | 19 | 90 | 80 | 75 | 65 | Medium| 5 | 49 |
+|Medium | 19 | 95 | 85 | 80 | 70 | Medium| 0 | 70 |
+|Large | 19 | 100 | 90 | 85 | 75 | Medium| -5 | 105 |
+|Huge | 19 | 105 | 95 | 90 | 80 | Medium| -10 | 140 |
+|Gargantuan | 19 | 115 | 105 | 100 | 90 | Medium| -20 | 210 |
+|Colossal | 19 | 135 | 125 | 120 | 110 | Medium| -40 | 280 |
+|Titanic | 19 | 175 | 165 | 160 | 150 | Medium| -80 | 420 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 55 | 45 | 40 | 30 | Heavy| 63 | 40 |
+|Diminutive | 19 | 75 | 65 | 60 | 50 | Heavy| 43 | 52 |
+|Tiny | 19 | 85 | 75 | 70 | 60 | Heavy| 33 | 80 |
+|Small | 19 | 90 | 80 | 75 | 65 | Heavy| 28 | 112 |
+|Medium | 19 | 95 | 85 | 80 | 70 | Heavy| 23 | 160 |
+|Large | 19 | 100 | 90 | 85 | 75 | Heavy| 18 | 240 |
+|Huge | 19 | 105 | 95 | 90 | 80 | Heavy| 13 | 320 |
+|Gargantuan | 19 | 115 | 105 | 100 | 90 | Heavy| 3 | 480 |
+|Colossal | 19 | 135 | 125 | 120 | 110 | Heavy| -17 | 640 |
+|Titanic | 19 | 175 | 165 | 160 | 150 | Heavy| -57 | 960 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 0 | -1 | -11 | -25 | No Armor| 63 | 10 |
+|Diminutive | 19 | 20 | 18 | 8 | -5 | No Armor| 43 | 13 |
+|Tiny | 19 | 30 | 28 | 18 | 4 | No Armor| 33 | 21 |
+|Small | 19 | 35 | 33 | 23 | 9 | No Armor| 28 | 29 |
+|Medium | 19 | 40 | 38 | 28 | 14 | No Armor| 23 | 42 |
+|Large | 19 | 45 | 43 | 33 | 19 | No Armor| 18 | 63 |
+|Huge | 19 | 50 | 48 | 38 | 24 | No Armor| 13 | 84 |
+|Gargantuan | 19 | 60 | 58 | 48 | 34 | No Armor| 3 | 126 |
+|Colossal | 19 | 80 | 78 | 68 | 54 | No Armor| -17 | 168 |
+|Titanic | 19 | 120 | 118 | 108 | 94 | No Armor| -57 | 252 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 24 | 23 | 7 | No Armor| 51 | 14 |
+|Diminutive | 19 | 43 | 44 | 43 | 27 | No Armor| 31 | 18 |
+|Tiny | 19 | 53 | 54 | 53 | 37 | No Armor| 21 | 28 |
+|Small | 19 | 58 | 59 | 58 | 42 | No Armor| 16 | 39 |
+|Medium | 19 | 63 | 64 | 63 | 47 | No Armor| 11 | 56 |
+|Large | 19 | 68 | 69 | 68 | 52 | No Armor| 6 | 84 |
+|Huge | 19 | 73 | 74 | 73 | 57 | No Armor| 1 | 112 |
+|Gargantuan | 19 | 83 | 84 | 83 | 67 | No Armor| -9 | 168 |
+|Colossal | 19 | 103 | 104 | 103 | 87 | No Armor| -29 | 224 |
+|Titanic | 19 | 143 | 144 | 143 | 127 | No Armor| -69 | 336 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 55 | 45 | 40 | 30 | Medium| 63 | 17 |
+|Diminutive | 19 | 75 | 65 | 60 | 50 | Medium| 43 | 23 |
+|Tiny | 19 | 85 | 75 | 70 | 60 | Medium| 33 | 35 |
+|Small | 19 | 90 | 80 | 75 | 65 | Medium| 28 | 49 |
+|Medium | 19 | 95 | 85 | 80 | 70 | Medium| 23 | 70 |
+|Large | 19 | 100 | 90 | 85 | 75 | Medium| 18 | 105 |
+|Huge | 19 | 105 | 95 | 90 | 80 | Medium| 13 | 140 |
+|Gargantuan | 19 | 115 | 105 | 100 | 90 | Medium| 3 | 210 |
+|Colossal | 19 | 135 | 125 | 120 | 110 | Medium| -17 | 280 |
+|Titanic | 19 | 175 | 165 | 160 | 150 | Medium| -57 | 420 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 55 | 45 | 40 | 30 | No Armor| 63 | 17 |
+|Diminutive | 19 | 75 | 65 | 60 | 50 | No Armor| 43 | 23 |
+|Tiny | 19 | 85 | 75 | 70 | 60 | No Armor| 33 | 35 |
+|Small | 19 | 90 | 80 | 75 | 65 | No Armor| 28 | 49 |
+|Medium | 19 | 95 | 85 | 80 | 70 | No Armor| 23 | 70 |
+|Large | 19 | 100 | 90 | 85 | 75 | No Armor| 18 | 105 |
+|Huge | 19 | 105 | 95 | 90 | 80 | No Armor| 13 | 140 |
+|Gargantuan | 19 | 115 | 105 | 100 | 90 | No Armor| 3 | 210 |
+|Colossal | 19 | 135 | 125 | 120 | 110 | No Armor| -17 | 280 |
+|Titanic | 19 | 175 | 165 | 160 | 150 | No Armor| -57 | 420 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 24 | 23 | 7 | No Armor| 63 | 14 |
+|Diminutive | 19 | 43 | 44 | 43 | 27 | No Armor| 43 | 18 |
+|Tiny | 19 | 53 | 54 | 53 | 37 | No Armor| 33 | 28 |
+|Small | 19 | 58 | 59 | 58 | 42 | No Armor| 28 | 39 |
+|Medium | 19 | 63 | 64 | 63 | 47 | No Armor| 23 | 56 |
+|Large | 19 | 68 | 69 | 68 | 52 | No Armor| 18 | 84 |
+|Huge | 19 | 73 | 74 | 73 | 57 | No Armor| 13 | 112 |
+|Gargantuan | 19 | 83 | 84 | 83 | 67 | No Armor| 3 | 168 |
+|Colossal | 19 | 103 | 104 | 103 | 87 | No Armor| -17 | 224 |
+|Titanic | 19 | 143 | 144 | 143 | 127 | No Armor| -57 | 336 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 55 | 45 | 40 | 30 | No Armor| 63 | 17 |
+|Diminutive | 19 | 75 | 65 | 60 | 50 | No Armor| 43 | 23 |
+|Tiny | 19 | 85 | 75 | 70 | 60 | No Armor| 33 | 35 |
+|Small | 19 | 90 | 80 | 75 | 65 | No Armor| 28 | 49 |
+|Medium | 19 | 95 | 85 | 80 | 70 | No Armor| 23 | 70 |
+|Large | 19 | 100 | 90 | 85 | 75 | No Armor| 18 | 105 |
+|Huge | 19 | 105 | 95 | 90 | 80 | No Armor| 13 | 140 |
+|Gargantuan | 19 | 115 | 105 | 100 | 90 | No Armor| 3 | 210 |
+|Colossal | 19 | 135 | 125 | 120 | 110 | No Armor| -17 | 280 |
+|Titanic | 19 | 175 | 165 | 160 | 150 | No Armor| -57 | 420 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 24 | 23 | 7 | No Armor| 63 | 14 |
+|Diminutive | 19 | 43 | 44 | 43 | 27 | No Armor| 43 | 18 |
+|Tiny | 19 | 53 | 54 | 53 | 37 | No Armor| 33 | 28 |
+|Small | 19 | 58 | 59 | 58 | 42 | No Armor| 28 | 39 |
+|Medium | 19 | 63 | 64 | 63 | 47 | No Armor| 23 | 56 |
+|Large | 19 | 68 | 69 | 68 | 52 | No Armor| 18 | 84 |
+|Huge | 19 | 73 | 74 | 73 | 57 | No Armor| 13 | 112 |
+|Gargantuan | 19 | 83 | 84 | 83 | 67 | No Armor| 3 | 168 |
+|Colossal | 19 | 103 | 104 | 103 | 87 | No Armor| -17 | 224 |
+|Titanic | 19 | 143 | 144 | 143 | 127 | No Armor| -57 | 336 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 24 | 23 | 7 | No Armor| 63 | 14 |
+|Diminutive | 19 | 43 | 44 | 43 | 27 | No Armor| 43 | 18 |
+|Tiny | 19 | 53 | 54 | 53 | 37 | No Armor| 33 | 28 |
+|Small | 19 | 58 | 59 | 58 | 42 | No Armor| 28 | 39 |
+|Medium | 19 | 63 | 64 | 63 | 47 | No Armor| 23 | 56 |
+|Large | 19 | 68 | 69 | 68 | 52 | No Armor| 18 | 84 |
+|Huge | 19 | 73 | 74 | 73 | 57 | No Armor| 13 | 112 |
+|Gargantuan | 19 | 83 | 84 | 83 | 67 | No Armor| 3 | 168 |
+|Colossal | 19 | 103 | 104 | 103 | 87 | No Armor| -17 | 224 |
+|Titanic | 19 | 143 | 144 | 143 | 127 | No Armor| -57 | 336 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 19 | 23 | 24 | 23 | 7 | Light| 63 | 14 |
+|Diminutive | 19 | 43 | 44 | 43 | 27 | Light| 43 | 18 |
+|Tiny | 19 | 53 | 54 | 53 | 37 | Light| 33 | 28 |
+|Small | 19 | 58 | 59 | 58 | 42 | Light| 28 | 39 |
+|Medium | 19 | 63 | 64 | 63 | 47 | Light| 23 | 56 |
+|Large | 19 | 68 | 69 | 68 | 52 | Light| 18 | 84 |
+|Huge | 19 | 73 | 74 | 73 | 57 | Light| 13 | 112 |
+|Gargantuan | 19 | 83 | 84 | 83 | 67 | Light| 3 | 168 |
+|Colossal | 19 | 103 | 104 | 103 | 87 | Light| -17 | 224 |
+|Titanic | 19 | 143 | 144 | 143 | 127 | Light| -57 | 336 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 46 | 41 | 31 | 10 | Light| 65 | 14 |
+|Diminutive | 20 | 66 | 61 | 51 | 30 | Light| 45 | 18 |
+|Tiny | 20 | 76 | 71 | 61 | 40 | Light| 35 | 28 |
+|Small | 20 | 81 | 76 | 66 | 45 | Light| 30 | 39 |
+|Medium | 20 | 86 | 81 | 71 | 50 | Light| 25 | 56 |
+|Large | 20 | 91 | 86 | 76 | 55 | Light| 20 | 85 |
+|Huge | 20 | 96 | 91 | 81 | 60 | Light| 15 | 113 |
+|Gargantuan | 20 | 106 | 101 | 91 | 70 | Light| 5 | 170 |
+|Colossal | 20 | 126 | 121 | 111 | 90 | Light| -15 | 227 |
+|Titanic | 20 | 166 | 161 | 151 | 130 | Light| -55 | 340 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 22 | 16 | 0 | Light| 65 | 14 |
+|Diminutive | 20 | 44 | 42 | 36 | 20 | Light| 45 | 18 |
+|Tiny | 20 | 54 | 52 | 46 | 30 | Light| 35 | 28 |
+|Small | 20 | 59 | 57 | 51 | 35 | Light| 30 | 39 |
+|Medium | 20 | 64 | 62 | 56 | 40 | Light| 25 | 56 |
+|Large | 20 | 69 | 67 | 61 | 45 | Light| 20 | 85 |
+|Huge | 20 | 74 | 72 | 66 | 50 | Light| 15 | 113 |
+|Gargantuan | 20 | 84 | 82 | 76 | 60 | Light| 5 | 170 |
+|Colossal | 20 | 104 | 102 | 96 | 80 | Light| -15 | 227 |
+|Titanic | 20 | 144 | 142 | 136 | 120 | Light| -55 | 340 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 57 | 46 | 41 | 31 | Medium| 40 | 17 |
+|Diminutive | 20 | 77 | 66 | 61 | 51 | Medium| 20 | 23 |
+|Tiny | 20 | 87 | 76 | 71 | 61 | Medium| 10 | 35 |
+|Small | 20 | 92 | 81 | 76 | 66 | Medium| 5 | 49 |
+|Medium | 20 | 97 | 86 | 81 | 71 | Medium| 0 | 71 |
+|Large | 20 | 102 | 91 | 86 | 76 | Medium| -5 | 106 |
+|Huge | 20 | 107 | 96 | 91 | 81 | Medium| -10 | 142 |
+|Gargantuan | 20 | 117 | 106 | 101 | 91 | Medium| -20 | 213 |
+|Colossal | 20 | 137 | 126 | 121 | 111 | Medium| -40 | 284 |
+|Titanic | 20 | 177 | 166 | 161 | 151 | Medium| -80 | 426 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 57 | 46 | 41 | 31 | Heavy| 65 | 40 |
+|Diminutive | 20 | 77 | 66 | 61 | 51 | Heavy| 45 | 53 |
+|Tiny | 20 | 87 | 76 | 71 | 61 | Heavy| 35 | 81 |
+|Small | 20 | 92 | 81 | 76 | 66 | Heavy| 30 | 113 |
+|Medium | 20 | 97 | 86 | 81 | 71 | Heavy| 25 | 162 |
+|Large | 20 | 102 | 91 | 86 | 76 | Heavy| 20 | 243 |
+|Huge | 20 | 107 | 96 | 91 | 81 | Heavy| 15 | 324 |
+|Gargantuan | 20 | 117 | 106 | 101 | 91 | Heavy| 5 | 486 |
+|Colossal | 20 | 137 | 126 | 121 | 111 | Heavy| -15 | 648 |
+|Titanic | 20 | 177 | 166 | 161 | 151 | Heavy| -55 | 972 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 0 | 0 | -10 | -23 | No Armor| 65 | 10 |
+|Diminutive | 20 | 20 | 19 | 10 | -3 | No Armor| 45 | 14 |
+|Tiny | 20 | 30 | 29 | 20 | 6 | No Armor| 35 | 21 |
+|Small | 20 | 35 | 34 | 25 | 11 | No Armor| 30 | 29 |
+|Medium | 20 | 40 | 39 | 30 | 16 | No Armor| 25 | 42 |
+|Large | 20 | 45 | 44 | 35 | 21 | No Armor| 20 | 63 |
+|Huge | 20 | 50 | 49 | 40 | 26 | No Armor| 15 | 85 |
+|Gargantuan | 20 | 60 | 59 | 50 | 36 | No Armor| 5 | 127 |
+|Colossal | 20 | 80 | 79 | 70 | 56 | No Armor| -15 | 170 |
+|Titanic | 20 | 120 | 119 | 110 | 96 | No Armor| -55 | 255 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 24 | 23 | 10 | No Armor| 52 | 14 |
+|Diminutive | 20 | 44 | 44 | 43 | 30 | No Armor| 32 | 18 |
+|Tiny | 20 | 54 | 54 | 53 | 40 | No Armor| 22 | 28 |
+|Small | 20 | 59 | 59 | 58 | 45 | No Armor| 17 | 39 |
+|Medium | 20 | 64 | 64 | 63 | 50 | No Armor| 12 | 56 |
+|Large | 20 | 69 | 69 | 68 | 55 | No Armor| 7 | 85 |
+|Huge | 20 | 74 | 74 | 73 | 60 | No Armor| 2 | 113 |
+|Gargantuan | 20 | 84 | 84 | 83 | 70 | No Armor| -8 | 170 |
+|Colossal | 20 | 104 | 104 | 103 | 90 | No Armor| -28 | 227 |
+|Titanic | 20 | 144 | 144 | 143 | 130 | No Armor| -68 | 340 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 57 | 46 | 41 | 31 | Medium| 65 | 17 |
+|Diminutive | 20 | 77 | 66 | 61 | 51 | Medium| 45 | 23 |
+|Tiny | 20 | 87 | 76 | 71 | 61 | Medium| 35 | 35 |
+|Small | 20 | 92 | 81 | 76 | 66 | Medium| 30 | 49 |
+|Medium | 20 | 97 | 86 | 81 | 71 | Medium| 25 | 71 |
+|Large | 20 | 102 | 91 | 86 | 76 | Medium| 20 | 106 |
+|Huge | 20 | 107 | 96 | 91 | 81 | Medium| 15 | 142 |
+|Gargantuan | 20 | 117 | 106 | 101 | 91 | Medium| 5 | 213 |
+|Colossal | 20 | 137 | 126 | 121 | 111 | Medium| -15 | 284 |
+|Titanic | 20 | 177 | 166 | 161 | 151 | Medium| -55 | 426 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 57 | 46 | 41 | 31 | No Armor| 65 | 17 |
+|Diminutive | 20 | 77 | 66 | 61 | 51 | No Armor| 45 | 23 |
+|Tiny | 20 | 87 | 76 | 71 | 61 | No Armor| 35 | 35 |
+|Small | 20 | 92 | 81 | 76 | 66 | No Armor| 30 | 49 |
+|Medium | 20 | 97 | 86 | 81 | 71 | No Armor| 25 | 71 |
+|Large | 20 | 102 | 91 | 86 | 76 | No Armor| 20 | 106 |
+|Huge | 20 | 107 | 96 | 91 | 81 | No Armor| 15 | 142 |
+|Gargantuan | 20 | 117 | 106 | 101 | 91 | No Armor| 5 | 213 |
+|Colossal | 20 | 137 | 126 | 121 | 111 | No Armor| -15 | 284 |
+|Titanic | 20 | 177 | 166 | 161 | 151 | No Armor| -55 | 426 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 24 | 23 | 10 | No Armor| 65 | 14 |
+|Diminutive | 20 | 44 | 44 | 43 | 30 | No Armor| 45 | 18 |
+|Tiny | 20 | 54 | 54 | 53 | 40 | No Armor| 35 | 28 |
+|Small | 20 | 59 | 59 | 58 | 45 | No Armor| 30 | 39 |
+|Medium | 20 | 64 | 64 | 63 | 50 | No Armor| 25 | 56 |
+|Large | 20 | 69 | 69 | 68 | 55 | No Armor| 20 | 85 |
+|Huge | 20 | 74 | 74 | 73 | 60 | No Armor| 15 | 113 |
+|Gargantuan | 20 | 84 | 84 | 83 | 70 | No Armor| 5 | 170 |
+|Colossal | 20 | 104 | 104 | 103 | 90 | No Armor| -15 | 227 |
+|Titanic | 20 | 144 | 144 | 143 | 130 | No Armor| -55 | 340 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 57 | 46 | 41 | 31 | No Armor| 65 | 17 |
+|Diminutive | 20 | 77 | 66 | 61 | 51 | No Armor| 45 | 23 |
+|Tiny | 20 | 87 | 76 | 71 | 61 | No Armor| 35 | 35 |
+|Small | 20 | 92 | 81 | 76 | 66 | No Armor| 30 | 49 |
+|Medium | 20 | 97 | 86 | 81 | 71 | No Armor| 25 | 71 |
+|Large | 20 | 102 | 91 | 86 | 76 | No Armor| 20 | 106 |
+|Huge | 20 | 107 | 96 | 91 | 81 | No Armor| 15 | 142 |
+|Gargantuan | 20 | 117 | 106 | 101 | 91 | No Armor| 5 | 213 |
+|Colossal | 20 | 137 | 126 | 121 | 111 | No Armor| -15 | 284 |
+|Titanic | 20 | 177 | 166 | 161 | 151 | No Armor| -55 | 426 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 24 | 23 | 10 | No Armor| 65 | 14 |
+|Diminutive | 20 | 44 | 44 | 43 | 30 | No Armor| 45 | 18 |
+|Tiny | 20 | 54 | 54 | 53 | 40 | No Armor| 35 | 28 |
+|Small | 20 | 59 | 59 | 58 | 45 | No Armor| 30 | 39 |
+|Medium | 20 | 64 | 64 | 63 | 50 | No Armor| 25 | 56 |
+|Large | 20 | 69 | 69 | 68 | 55 | No Armor| 20 | 85 |
+|Huge | 20 | 74 | 74 | 73 | 60 | No Armor| 15 | 113 |
+|Gargantuan | 20 | 84 | 84 | 83 | 70 | No Armor| 5 | 170 |
+|Colossal | 20 | 104 | 104 | 103 | 90 | No Armor| -15 | 227 |
+|Titanic | 20 | 144 | 144 | 143 | 130 | No Armor| -55 | 340 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 24 | 23 | 10 | No Armor| 65 | 14 |
+|Diminutive | 20 | 44 | 44 | 43 | 30 | No Armor| 45 | 18 |
+|Tiny | 20 | 54 | 54 | 53 | 40 | No Armor| 35 | 28 |
+|Small | 20 | 59 | 59 | 58 | 45 | No Armor| 30 | 39 |
+|Medium | 20 | 64 | 64 | 63 | 50 | No Armor| 25 | 56 |
+|Large | 20 | 69 | 69 | 68 | 55 | No Armor| 20 | 85 |
+|Huge | 20 | 74 | 74 | 73 | 60 | No Armor| 15 | 113 |
+|Gargantuan | 20 | 84 | 84 | 83 | 70 | No Armor| 5 | 170 |
+|Colossal | 20 | 104 | 104 | 103 | 90 | No Armor| -15 | 227 |
+|Titanic | 20 | 144 | 144 | 143 | 130 | No Armor| -55 | 340 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 20 | 24 | 24 | 23 | 10 | Light| 65 | 14 |
+|Diminutive | 20 | 44 | 44 | 43 | 30 | Light| 45 | 18 |
+|Tiny | 20 | 54 | 54 | 53 | 40 | Light| 35 | 28 |
+|Small | 20 | 59 | 59 | 58 | 45 | Light| 30 | 39 |
+|Medium | 20 | 64 | 64 | 63 | 50 | Light| 25 | 56 |
+|Large | 20 | 69 | 69 | 68 | 55 | Light| 20 | 85 |
+|Huge | 20 | 74 | 74 | 73 | 60 | Light| 15 | 113 |
+|Gargantuan | 20 | 84 | 84 | 83 | 70 | Light| 5 | 170 |
+|Colossal | 20 | 104 | 104 | 103 | 90 | Light| -15 | 227 |
+|Titanic | 20 | 144 | 144 | 143 | 130 | Light| -55 | 340 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 47 | 41 | 32 | 11 | Light| 66 | 14 |
+|Diminutive | 21 | 67 | 61 | 52 | 31 | Light| 46 | 19 |
+|Tiny | 21 | 77 | 71 | 62 | 41 | Light| 36 | 28 |
+|Small | 21 | 82 | 76 | 67 | 46 | Light| 31 | 40 |
+|Medium | 21 | 87 | 81 | 72 | 51 | Light| 26 | 57 |
+|Large | 21 | 92 | 86 | 77 | 56 | Light| 21 | 86 |
+|Huge | 21 | 97 | 91 | 82 | 61 | Light| 16 | 115 |
+|Gargantuan | 21 | 107 | 101 | 92 | 71 | Light| 6 | 172 |
+|Colossal | 21 | 127 | 121 | 112 | 91 | Light| -14 | 230 |
+|Titanic | 21 | 167 | 161 | 152 | 131 | Light| -54 | 345 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 22 | 16 | 1 | Light| 66 | 14 |
+|Diminutive | 21 | 45 | 42 | 36 | 21 | Light| 46 | 19 |
+|Tiny | 21 | 55 | 52 | 46 | 31 | Light| 36 | 28 |
+|Small | 21 | 60 | 57 | 51 | 36 | Light| 31 | 40 |
+|Medium | 21 | 65 | 62 | 56 | 41 | Light| 26 | 57 |
+|Large | 21 | 70 | 67 | 61 | 46 | Light| 21 | 86 |
+|Huge | 21 | 75 | 72 | 66 | 51 | Light| 16 | 115 |
+|Gargantuan | 21 | 85 | 82 | 76 | 61 | Light| 6 | 172 |
+|Colossal | 21 | 105 | 102 | 96 | 81 | Light| -14 | 230 |
+|Titanic | 21 | 145 | 142 | 136 | 121 | Light| -54 | 345 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 58 | 47 | 41 | 32 | Medium| 40 | 18 |
+|Diminutive | 21 | 78 | 67 | 61 | 52 | Medium| 20 | 23 |
+|Tiny | 21 | 88 | 77 | 71 | 62 | Medium| 10 | 36 |
+|Small | 21 | 93 | 82 | 76 | 67 | Medium| 5 | 50 |
+|Medium | 21 | 98 | 87 | 81 | 72 | Medium| 0 | 72 |
+|Large | 21 | 103 | 92 | 86 | 77 | Medium| -5 | 108 |
+|Huge | 21 | 108 | 97 | 91 | 82 | Medium| -10 | 144 |
+|Gargantuan | 21 | 118 | 107 | 101 | 92 | Medium| -20 | 216 |
+|Colossal | 21 | 138 | 127 | 121 | 112 | Medium| -40 | 288 |
+|Titanic | 21 | 178 | 167 | 161 | 152 | Medium| -80 | 432 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 58 | 47 | 41 | 32 | Heavy| 66 | 40 |
+|Diminutive | 21 | 78 | 67 | 61 | 52 | Heavy| 46 | 53 |
+|Tiny | 21 | 88 | 77 | 71 | 62 | Heavy| 36 | 81 |
+|Small | 21 | 93 | 82 | 76 | 67 | Heavy| 31 | 113 |
+|Medium | 21 | 98 | 87 | 81 | 72 | Heavy| 26 | 162 |
+|Large | 21 | 103 | 92 | 86 | 77 | Heavy| 21 | 243 |
+|Huge | 21 | 108 | 97 | 91 | 82 | Heavy| 16 | 324 |
+|Gargantuan | 21 | 118 | 107 | 101 | 92 | Heavy| 6 | 486 |
+|Colossal | 21 | 138 | 127 | 121 | 112 | Heavy| -14 | 648 |
+|Titanic | 21 | 178 | 167 | 161 | 152 | Heavy| -54 | 972 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 0 | 0 | -9 | -23 | No Armor| 66 | 10 |
+|Diminutive | 21 | 20 | 19 | 10 | -3 | No Armor| 46 | 14 |
+|Tiny | 21 | 30 | 29 | 20 | 6 | No Armor| 36 | 21 |
+|Small | 21 | 35 | 34 | 25 | 11 | No Armor| 31 | 30 |
+|Medium | 21 | 40 | 39 | 30 | 16 | No Armor| 26 | 43 |
+|Large | 21 | 45 | 44 | 35 | 21 | No Armor| 21 | 64 |
+|Huge | 21 | 50 | 49 | 40 | 26 | No Armor| 16 | 86 |
+|Gargantuan | 21 | 60 | 59 | 50 | 36 | No Armor| 6 | 129 |
+|Colossal | 21 | 80 | 79 | 70 | 56 | No Armor| -14 | 172 |
+|Titanic | 21 | 120 | 119 | 110 | 96 | No Armor| -54 | 259 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 24 | 24 | 11 | No Armor| 53 | 14 |
+|Diminutive | 21 | 45 | 44 | 44 | 31 | No Armor| 33 | 19 |
+|Tiny | 21 | 55 | 54 | 54 | 41 | No Armor| 23 | 28 |
+|Small | 21 | 60 | 59 | 59 | 46 | No Armor| 18 | 40 |
+|Medium | 21 | 65 | 64 | 64 | 51 | No Armor| 13 | 57 |
+|Large | 21 | 70 | 69 | 69 | 56 | No Armor| 8 | 86 |
+|Huge | 21 | 75 | 74 | 74 | 61 | No Armor| 3 | 115 |
+|Gargantuan | 21 | 85 | 84 | 84 | 71 | No Armor| -7 | 172 |
+|Colossal | 21 | 105 | 104 | 104 | 91 | No Armor| -27 | 230 |
+|Titanic | 21 | 145 | 144 | 144 | 131 | No Armor| -67 | 345 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 58 | 47 | 41 | 32 | Medium| 66 | 18 |
+|Diminutive | 21 | 78 | 67 | 61 | 52 | Medium| 46 | 23 |
+|Tiny | 21 | 88 | 77 | 71 | 62 | Medium| 36 | 36 |
+|Small | 21 | 93 | 82 | 76 | 67 | Medium| 31 | 50 |
+|Medium | 21 | 98 | 87 | 81 | 72 | Medium| 26 | 72 |
+|Large | 21 | 103 | 92 | 86 | 77 | Medium| 21 | 108 |
+|Huge | 21 | 108 | 97 | 91 | 82 | Medium| 16 | 144 |
+|Gargantuan | 21 | 118 | 107 | 101 | 92 | Medium| 6 | 216 |
+|Colossal | 21 | 138 | 127 | 121 | 112 | Medium| -14 | 288 |
+|Titanic | 21 | 178 | 167 | 161 | 152 | Medium| -54 | 432 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 58 | 47 | 41 | 32 | No Armor| 66 | 18 |
+|Diminutive | 21 | 78 | 67 | 61 | 52 | No Armor| 46 | 23 |
+|Tiny | 21 | 88 | 77 | 71 | 62 | No Armor| 36 | 36 |
+|Small | 21 | 93 | 82 | 76 | 67 | No Armor| 31 | 50 |
+|Medium | 21 | 98 | 87 | 81 | 72 | No Armor| 26 | 72 |
+|Large | 21 | 103 | 92 | 86 | 77 | No Armor| 21 | 108 |
+|Huge | 21 | 108 | 97 | 91 | 82 | No Armor| 16 | 144 |
+|Gargantuan | 21 | 118 | 107 | 101 | 92 | No Armor| 6 | 216 |
+|Colossal | 21 | 138 | 127 | 121 | 112 | No Armor| -14 | 288 |
+|Titanic | 21 | 178 | 167 | 161 | 152 | No Armor| -54 | 432 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 24 | 24 | 11 | No Armor| 66 | 14 |
+|Diminutive | 21 | 45 | 44 | 44 | 31 | No Armor| 46 | 19 |
+|Tiny | 21 | 55 | 54 | 54 | 41 | No Armor| 36 | 28 |
+|Small | 21 | 60 | 59 | 59 | 46 | No Armor| 31 | 40 |
+|Medium | 21 | 65 | 64 | 64 | 51 | No Armor| 26 | 57 |
+|Large | 21 | 70 | 69 | 69 | 56 | No Armor| 21 | 86 |
+|Huge | 21 | 75 | 74 | 74 | 61 | No Armor| 16 | 115 |
+|Gargantuan | 21 | 85 | 84 | 84 | 71 | No Armor| 6 | 172 |
+|Colossal | 21 | 105 | 104 | 104 | 91 | No Armor| -14 | 230 |
+|Titanic | 21 | 145 | 144 | 144 | 131 | No Armor| -54 | 345 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 58 | 47 | 41 | 32 | No Armor| 66 | 18 |
+|Diminutive | 21 | 78 | 67 | 61 | 52 | No Armor| 46 | 23 |
+|Tiny | 21 | 88 | 77 | 71 | 62 | No Armor| 36 | 36 |
+|Small | 21 | 93 | 82 | 76 | 67 | No Armor| 31 | 50 |
+|Medium | 21 | 98 | 87 | 81 | 72 | No Armor| 26 | 72 |
+|Large | 21 | 103 | 92 | 86 | 77 | No Armor| 21 | 108 |
+|Huge | 21 | 108 | 97 | 91 | 82 | No Armor| 16 | 144 |
+|Gargantuan | 21 | 118 | 107 | 101 | 92 | No Armor| 6 | 216 |
+|Colossal | 21 | 138 | 127 | 121 | 112 | No Armor| -14 | 288 |
+|Titanic | 21 | 178 | 167 | 161 | 152 | No Armor| -54 | 432 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 24 | 24 | 11 | No Armor| 66 | 14 |
+|Diminutive | 21 | 45 | 44 | 44 | 31 | No Armor| 46 | 19 |
+|Tiny | 21 | 55 | 54 | 54 | 41 | No Armor| 36 | 28 |
+|Small | 21 | 60 | 59 | 59 | 46 | No Armor| 31 | 40 |
+|Medium | 21 | 65 | 64 | 64 | 51 | No Armor| 26 | 57 |
+|Large | 21 | 70 | 69 | 69 | 56 | No Armor| 21 | 86 |
+|Huge | 21 | 75 | 74 | 74 | 61 | No Armor| 16 | 115 |
+|Gargantuan | 21 | 85 | 84 | 84 | 71 | No Armor| 6 | 172 |
+|Colossal | 21 | 105 | 104 | 104 | 91 | No Armor| -14 | 230 |
+|Titanic | 21 | 145 | 144 | 144 | 131 | No Armor| -54 | 345 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 24 | 24 | 11 | No Armor| 66 | 14 |
+|Diminutive | 21 | 45 | 44 | 44 | 31 | No Armor| 46 | 19 |
+|Tiny | 21 | 55 | 54 | 54 | 41 | No Armor| 36 | 28 |
+|Small | 21 | 60 | 59 | 59 | 46 | No Armor| 31 | 40 |
+|Medium | 21 | 65 | 64 | 64 | 51 | No Armor| 26 | 57 |
+|Large | 21 | 70 | 69 | 69 | 56 | No Armor| 21 | 86 |
+|Huge | 21 | 75 | 74 | 74 | 61 | No Armor| 16 | 115 |
+|Gargantuan | 21 | 85 | 84 | 84 | 71 | No Armor| 6 | 172 |
+|Colossal | 21 | 105 | 104 | 104 | 91 | No Armor| -14 | 230 |
+|Titanic | 21 | 145 | 144 | 144 | 131 | No Armor| -54 | 345 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 21 | 25 | 24 | 24 | 11 | Light| 66 | 14 |
+|Diminutive | 21 | 45 | 44 | 44 | 31 | Light| 46 | 19 |
+|Tiny | 21 | 55 | 54 | 54 | 41 | Light| 36 | 28 |
+|Small | 21 | 60 | 59 | 59 | 46 | Light| 31 | 40 |
+|Medium | 21 | 65 | 64 | 64 | 51 | Light| 26 | 57 |
+|Large | 21 | 70 | 69 | 69 | 56 | Light| 21 | 86 |
+|Huge | 21 | 75 | 74 | 74 | 61 | Light| 16 | 115 |
+|Gargantuan | 21 | 85 | 84 | 84 | 71 | Light| 6 | 172 |
+|Colossal | 21 | 105 | 104 | 104 | 91 | Light| -14 | 230 |
+|Titanic | 21 | 145 | 144 | 144 | 131 | Light| -54 | 345 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 48 | 42 | 33 | 12 | Light| 67 | 14 |
+|Diminutive | 22 | 68 | 62 | 53 | 32 | Light| 47 | 19 |
+|Tiny | 22 | 78 | 72 | 63 | 42 | Light| 37 | 29 |
+|Small | 22 | 83 | 77 | 68 | 47 | Light| 32 | 40 |
+|Medium | 22 | 88 | 82 | 73 | 52 | Light| 27 | 58 |
+|Large | 22 | 93 | 87 | 78 | 57 | Light| 22 | 87 |
+|Huge | 22 | 98 | 92 | 83 | 62 | Light| 17 | 116 |
+|Gargantuan | 22 | 108 | 102 | 93 | 72 | Light| 7 | 175 |
+|Colossal | 22 | 128 | 122 | 113 | 92 | Light| -13 | 233 |
+|Titanic | 22 | 168 | 162 | 153 | 132 | Light| -53 | 350 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 23 | 17 | 2 | Light| 67 | 14 |
+|Diminutive | 22 | 46 | 43 | 37 | 22 | Light| 47 | 19 |
+|Tiny | 22 | 56 | 53 | 47 | 32 | Light| 37 | 29 |
+|Small | 22 | 61 | 58 | 52 | 37 | Light| 32 | 40 |
+|Medium | 22 | 66 | 63 | 57 | 42 | Light| 27 | 58 |
+|Large | 22 | 71 | 68 | 62 | 47 | Light| 22 | 87 |
+|Huge | 22 | 76 | 73 | 67 | 52 | Light| 17 | 116 |
+|Gargantuan | 22 | 86 | 83 | 77 | 62 | Light| 7 | 175 |
+|Colossal | 22 | 106 | 103 | 97 | 82 | Light| -13 | 233 |
+|Titanic | 22 | 146 | 143 | 137 | 122 | Light| -53 | 350 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 60 | 48 | 42 | 33 | Medium| 40 | 18 |
+|Diminutive | 22 | 80 | 68 | 62 | 53 | Medium| 20 | 24 |
+|Tiny | 22 | 90 | 78 | 72 | 63 | Medium| 10 | 36 |
+|Small | 22 | 95 | 83 | 77 | 68 | Medium| 5 | 51 |
+|Medium | 22 | 100 | 88 | 82 | 73 | Medium| 0 | 73 |
+|Large | 22 | 105 | 93 | 87 | 78 | Medium| -5 | 109 |
+|Huge | 22 | 110 | 98 | 92 | 83 | Medium| -10 | 146 |
+|Gargantuan | 22 | 120 | 108 | 102 | 93 | Medium| -20 | 219 |
+|Colossal | 22 | 140 | 128 | 122 | 113 | Medium| -40 | 292 |
+|Titanic | 22 | 180 | 168 | 162 | 153 | Medium| -80 | 438 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 60 | 48 | 42 | 33 | Heavy| 67 | 41 |
+|Diminutive | 22 | 80 | 68 | 62 | 53 | Heavy| 47 | 54 |
+|Tiny | 22 | 90 | 78 | 72 | 63 | Heavy| 37 | 82 |
+|Small | 22 | 95 | 83 | 77 | 68 | Heavy| 32 | 114 |
+|Medium | 22 | 100 | 88 | 82 | 73 | Heavy| 27 | 164 |
+|Large | 22 | 105 | 93 | 87 | 78 | Heavy| 22 | 246 |
+|Huge | 22 | 110 | 98 | 92 | 83 | Heavy| 17 | 328 |
+|Gargantuan | 22 | 120 | 108 | 102 | 93 | Heavy| 7 | 492 |
+|Colossal | 22 | 140 | 128 | 122 | 113 | Heavy| -13 | 656 |
+|Titanic | 22 | 180 | 168 | 162 | 153 | Heavy| -53 | 984 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 1 | 0 | -8 | -22 | No Armor| 67 | 10 |
+|Diminutive | 22 | 21 | 20 | 11 | -2 | No Armor| 47 | 14 |
+|Tiny | 22 | 31 | 30 | 21 | 7 | No Armor| 37 | 21 |
+|Small | 22 | 36 | 35 | 26 | 12 | No Armor| 32 | 30 |
+|Medium | 22 | 41 | 40 | 31 | 17 | No Armor| 27 | 43 |
+|Large | 22 | 46 | 45 | 36 | 22 | No Armor| 22 | 65 |
+|Huge | 22 | 51 | 50 | 41 | 27 | No Armor| 17 | 87 |
+|Gargantuan | 22 | 61 | 60 | 51 | 37 | No Armor| 7 | 131 |
+|Colossal | 22 | 81 | 80 | 71 | 57 | No Armor| -13 | 175 |
+|Titanic | 22 | 121 | 120 | 111 | 97 | No Armor| -53 | 262 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 25 | 25 | 12 | No Armor| 53 | 14 |
+|Diminutive | 22 | 46 | 45 | 45 | 32 | No Armor| 33 | 19 |
+|Tiny | 22 | 56 | 55 | 55 | 42 | No Armor| 23 | 29 |
+|Small | 22 | 61 | 60 | 60 | 47 | No Armor| 18 | 40 |
+|Medium | 22 | 66 | 65 | 65 | 52 | No Armor| 13 | 58 |
+|Large | 22 | 71 | 70 | 70 | 57 | No Armor| 8 | 87 |
+|Huge | 22 | 76 | 75 | 75 | 62 | No Armor| 3 | 116 |
+|Gargantuan | 22 | 86 | 85 | 85 | 72 | No Armor| -7 | 175 |
+|Colossal | 22 | 106 | 105 | 105 | 92 | No Armor| -27 | 233 |
+|Titanic | 22 | 146 | 145 | 145 | 132 | No Armor| -67 | 350 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 60 | 48 | 42 | 33 | Medium| 67 | 18 |
+|Diminutive | 22 | 80 | 68 | 62 | 53 | Medium| 47 | 24 |
+|Tiny | 22 | 90 | 78 | 72 | 63 | Medium| 37 | 36 |
+|Small | 22 | 95 | 83 | 77 | 68 | Medium| 32 | 51 |
+|Medium | 22 | 100 | 88 | 82 | 73 | Medium| 27 | 73 |
+|Large | 22 | 105 | 93 | 87 | 78 | Medium| 22 | 109 |
+|Huge | 22 | 110 | 98 | 92 | 83 | Medium| 17 | 146 |
+|Gargantuan | 22 | 120 | 108 | 102 | 93 | Medium| 7 | 219 |
+|Colossal | 22 | 140 | 128 | 122 | 113 | Medium| -13 | 292 |
+|Titanic | 22 | 180 | 168 | 162 | 153 | Medium| -53 | 438 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 60 | 48 | 42 | 33 | No Armor| 67 | 18 |
+|Diminutive | 22 | 80 | 68 | 62 | 53 | No Armor| 47 | 24 |
+|Tiny | 22 | 90 | 78 | 72 | 63 | No Armor| 37 | 36 |
+|Small | 22 | 95 | 83 | 77 | 68 | No Armor| 32 | 51 |
+|Medium | 22 | 100 | 88 | 82 | 73 | No Armor| 27 | 73 |
+|Large | 22 | 105 | 93 | 87 | 78 | No Armor| 22 | 109 |
+|Huge | 22 | 110 | 98 | 92 | 83 | No Armor| 17 | 146 |
+|Gargantuan | 22 | 120 | 108 | 102 | 93 | No Armor| 7 | 219 |
+|Colossal | 22 | 140 | 128 | 122 | 113 | No Armor| -13 | 292 |
+|Titanic | 22 | 180 | 168 | 162 | 153 | No Armor| -53 | 438 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 25 | 25 | 12 | No Armor| 67 | 14 |
+|Diminutive | 22 | 46 | 45 | 45 | 32 | No Armor| 47 | 19 |
+|Tiny | 22 | 56 | 55 | 55 | 42 | No Armor| 37 | 29 |
+|Small | 22 | 61 | 60 | 60 | 47 | No Armor| 32 | 40 |
+|Medium | 22 | 66 | 65 | 65 | 52 | No Armor| 27 | 58 |
+|Large | 22 | 71 | 70 | 70 | 57 | No Armor| 22 | 87 |
+|Huge | 22 | 76 | 75 | 75 | 62 | No Armor| 17 | 116 |
+|Gargantuan | 22 | 86 | 85 | 85 | 72 | No Armor| 7 | 175 |
+|Colossal | 22 | 106 | 105 | 105 | 92 | No Armor| -13 | 233 |
+|Titanic | 22 | 146 | 145 | 145 | 132 | No Armor| -53 | 350 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 60 | 48 | 42 | 33 | No Armor| 67 | 18 |
+|Diminutive | 22 | 80 | 68 | 62 | 53 | No Armor| 47 | 24 |
+|Tiny | 22 | 90 | 78 | 72 | 63 | No Armor| 37 | 36 |
+|Small | 22 | 95 | 83 | 77 | 68 | No Armor| 32 | 51 |
+|Medium | 22 | 100 | 88 | 82 | 73 | No Armor| 27 | 73 |
+|Large | 22 | 105 | 93 | 87 | 78 | No Armor| 22 | 109 |
+|Huge | 22 | 110 | 98 | 92 | 83 | No Armor| 17 | 146 |
+|Gargantuan | 22 | 120 | 108 | 102 | 93 | No Armor| 7 | 219 |
+|Colossal | 22 | 140 | 128 | 122 | 113 | No Armor| -13 | 292 |
+|Titanic | 22 | 180 | 168 | 162 | 153 | No Armor| -53 | 438 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 25 | 25 | 12 | No Armor| 67 | 14 |
+|Diminutive | 22 | 46 | 45 | 45 | 32 | No Armor| 47 | 19 |
+|Tiny | 22 | 56 | 55 | 55 | 42 | No Armor| 37 | 29 |
+|Small | 22 | 61 | 60 | 60 | 47 | No Armor| 32 | 40 |
+|Medium | 22 | 66 | 65 | 65 | 52 | No Armor| 27 | 58 |
+|Large | 22 | 71 | 70 | 70 | 57 | No Armor| 22 | 87 |
+|Huge | 22 | 76 | 75 | 75 | 62 | No Armor| 17 | 116 |
+|Gargantuan | 22 | 86 | 85 | 85 | 72 | No Armor| 7 | 175 |
+|Colossal | 22 | 106 | 105 | 105 | 92 | No Armor| -13 | 233 |
+|Titanic | 22 | 146 | 145 | 145 | 132 | No Armor| -53 | 350 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 25 | 25 | 12 | No Armor| 67 | 14 |
+|Diminutive | 22 | 46 | 45 | 45 | 32 | No Armor| 47 | 19 |
+|Tiny | 22 | 56 | 55 | 55 | 42 | No Armor| 37 | 29 |
+|Small | 22 | 61 | 60 | 60 | 47 | No Armor| 32 | 40 |
+|Medium | 22 | 66 | 65 | 65 | 52 | No Armor| 27 | 58 |
+|Large | 22 | 71 | 70 | 70 | 57 | No Armor| 22 | 87 |
+|Huge | 22 | 76 | 75 | 75 | 62 | No Armor| 17 | 116 |
+|Gargantuan | 22 | 86 | 85 | 85 | 72 | No Armor| 7 | 175 |
+|Colossal | 22 | 106 | 105 | 105 | 92 | No Armor| -13 | 233 |
+|Titanic | 22 | 146 | 145 | 145 | 132 | No Armor| -53 | 350 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 22 | 26 | 25 | 25 | 12 | Light| 67 | 14 |
+|Diminutive | 22 | 46 | 45 | 45 | 32 | Light| 47 | 19 |
+|Tiny | 22 | 56 | 55 | 55 | 42 | Light| 37 | 29 |
+|Small | 22 | 61 | 60 | 60 | 47 | Light| 32 | 40 |
+|Medium | 22 | 66 | 65 | 65 | 52 | Light| 27 | 58 |
+|Large | 22 | 71 | 70 | 70 | 57 | Light| 22 | 87 |
+|Huge | 22 | 76 | 75 | 75 | 62 | Light| 17 | 116 |
+|Gargantuan | 22 | 86 | 85 | 85 | 72 | Light| 7 | 175 |
+|Colossal | 22 | 106 | 105 | 105 | 92 | Light| -13 | 233 |
+|Titanic | 22 | 146 | 145 | 145 | 132 | Light| -53 | 350 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 49 | 43 | 34 | 13 | Light| 68 | 14 |
+|Diminutive | 23 | 69 | 63 | 54 | 33 | Light| 48 | 19 |
+|Tiny | 23 | 79 | 73 | 64 | 43 | Light| 38 | 29 |
+|Small | 23 | 84 | 78 | 69 | 48 | Light| 33 | 41 |
+|Medium | 23 | 89 | 83 | 74 | 53 | Light| 28 | 59 |
+|Large | 23 | 94 | 88 | 79 | 58 | Light| 23 | 88 |
+|Huge | 23 | 99 | 93 | 84 | 63 | Light| 18 | 118 |
+|Gargantuan | 23 | 109 | 103 | 94 | 73 | Light| 8 | 177 |
+|Colossal | 23 | 129 | 123 | 114 | 93 | Light| -12 | 236 |
+|Titanic | 23 | 169 | 163 | 154 | 133 | Light| -52 | 355 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 23 | 18 | 2 | Light| 68 | 14 |
+|Diminutive | 23 | 46 | 43 | 38 | 22 | Light| 48 | 19 |
+|Tiny | 23 | 56 | 53 | 48 | 32 | Light| 38 | 29 |
+|Small | 23 | 61 | 58 | 53 | 37 | Light| 33 | 41 |
+|Medium | 23 | 66 | 63 | 58 | 42 | Light| 28 | 59 |
+|Large | 23 | 71 | 68 | 63 | 47 | Light| 23 | 88 |
+|Huge | 23 | 76 | 73 | 68 | 52 | Light| 18 | 118 |
+|Gargantuan | 23 | 86 | 83 | 78 | 62 | Light| 8 | 177 |
+|Colossal | 23 | 106 | 103 | 98 | 82 | Light| -12 | 236 |
+|Titanic | 23 | 146 | 143 | 138 | 122 | Light| -52 | 355 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 61 | 49 | 43 | 34 | Medium| 40 | 18 |
+|Diminutive | 23 | 81 | 69 | 63 | 54 | Medium| 20 | 24 |
+|Tiny | 23 | 91 | 79 | 73 | 64 | Medium| 10 | 37 |
+|Small | 23 | 96 | 84 | 78 | 69 | Medium| 5 | 51 |
+|Medium | 23 | 101 | 89 | 83 | 74 | Medium| 0 | 74 |
+|Large | 23 | 106 | 94 | 88 | 79 | Medium| -5 | 111 |
+|Huge | 23 | 111 | 99 | 93 | 84 | Medium| -10 | 148 |
+|Gargantuan | 23 | 121 | 109 | 103 | 94 | Medium| -20 | 222 |
+|Colossal | 23 | 141 | 129 | 123 | 114 | Medium| -40 | 296 |
+|Titanic | 23 | 181 | 169 | 163 | 154 | Medium| -80 | 444 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 61 | 49 | 43 | 34 | Heavy| 68 | 41 |
+|Diminutive | 23 | 81 | 69 | 63 | 54 | Heavy| 48 | 54 |
+|Tiny | 23 | 91 | 79 | 73 | 64 | Heavy| 38 | 83 |
+|Small | 23 | 96 | 84 | 78 | 69 | Heavy| 33 | 116 |
+|Medium | 23 | 101 | 89 | 83 | 74 | Heavy| 28 | 166 |
+|Large | 23 | 106 | 94 | 88 | 79 | Heavy| 23 | 249 |
+|Huge | 23 | 111 | 99 | 93 | 84 | Heavy| 18 | 332 |
+|Gargantuan | 23 | 121 | 109 | 103 | 94 | Heavy| 8 | 498 |
+|Colossal | 23 | 141 | 129 | 123 | 114 | Heavy| -12 | 664 |
+|Titanic | 23 | 181 | 169 | 163 | 154 | Heavy| -52 | 996 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 1 | 0 | -8 | -21 | No Armor| 68 | 11 |
+|Diminutive | 23 | 21 | 20 | 11 | -1 | No Armor| 48 | 14 |
+|Tiny | 23 | 31 | 30 | 21 | 8 | No Armor| 38 | 22 |
+|Small | 23 | 36 | 35 | 26 | 13 | No Armor| 33 | 31 |
+|Medium | 23 | 41 | 40 | 31 | 18 | No Armor| 28 | 44 |
+|Large | 23 | 46 | 45 | 36 | 23 | No Armor| 23 | 66 |
+|Huge | 23 | 51 | 50 | 41 | 28 | No Armor| 18 | 88 |
+|Gargantuan | 23 | 61 | 60 | 51 | 38 | No Armor| 8 | 133 |
+|Colossal | 23 | 81 | 80 | 71 | 58 | No Armor| -12 | 177 |
+|Titanic | 23 | 121 | 120 | 111 | 98 | No Armor| -52 | 266 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 26 | 26 | 13 | No Armor| 54 | 14 |
+|Diminutive | 23 | 46 | 46 | 46 | 33 | No Armor| 34 | 19 |
+|Tiny | 23 | 56 | 56 | 56 | 43 | No Armor| 24 | 29 |
+|Small | 23 | 61 | 61 | 61 | 48 | No Armor| 19 | 41 |
+|Medium | 23 | 66 | 66 | 66 | 53 | No Armor| 14 | 59 |
+|Large | 23 | 71 | 71 | 71 | 58 | No Armor| 9 | 88 |
+|Huge | 23 | 76 | 76 | 76 | 63 | No Armor| 4 | 118 |
+|Gargantuan | 23 | 86 | 86 | 86 | 73 | No Armor| -6 | 177 |
+|Colossal | 23 | 106 | 106 | 106 | 93 | No Armor| -26 | 236 |
+|Titanic | 23 | 146 | 146 | 146 | 133 | No Armor| -66 | 355 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 61 | 49 | 43 | 34 | Medium| 68 | 18 |
+|Diminutive | 23 | 81 | 69 | 63 | 54 | Medium| 48 | 24 |
+|Tiny | 23 | 91 | 79 | 73 | 64 | Medium| 38 | 37 |
+|Small | 23 | 96 | 84 | 78 | 69 | Medium| 33 | 51 |
+|Medium | 23 | 101 | 89 | 83 | 74 | Medium| 28 | 74 |
+|Large | 23 | 106 | 94 | 88 | 79 | Medium| 23 | 111 |
+|Huge | 23 | 111 | 99 | 93 | 84 | Medium| 18 | 148 |
+|Gargantuan | 23 | 121 | 109 | 103 | 94 | Medium| 8 | 222 |
+|Colossal | 23 | 141 | 129 | 123 | 114 | Medium| -12 | 296 |
+|Titanic | 23 | 181 | 169 | 163 | 154 | Medium| -52 | 444 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 61 | 49 | 43 | 34 | No Armor| 68 | 18 |
+|Diminutive | 23 | 81 | 69 | 63 | 54 | No Armor| 48 | 24 |
+|Tiny | 23 | 91 | 79 | 73 | 64 | No Armor| 38 | 37 |
+|Small | 23 | 96 | 84 | 78 | 69 | No Armor| 33 | 51 |
+|Medium | 23 | 101 | 89 | 83 | 74 | No Armor| 28 | 74 |
+|Large | 23 | 106 | 94 | 88 | 79 | No Armor| 23 | 111 |
+|Huge | 23 | 111 | 99 | 93 | 84 | No Armor| 18 | 148 |
+|Gargantuan | 23 | 121 | 109 | 103 | 94 | No Armor| 8 | 222 |
+|Colossal | 23 | 141 | 129 | 123 | 114 | No Armor| -12 | 296 |
+|Titanic | 23 | 181 | 169 | 163 | 154 | No Armor| -52 | 444 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 26 | 26 | 13 | No Armor| 68 | 14 |
+|Diminutive | 23 | 46 | 46 | 46 | 33 | No Armor| 48 | 19 |
+|Tiny | 23 | 56 | 56 | 56 | 43 | No Armor| 38 | 29 |
+|Small | 23 | 61 | 61 | 61 | 48 | No Armor| 33 | 41 |
+|Medium | 23 | 66 | 66 | 66 | 53 | No Armor| 28 | 59 |
+|Large | 23 | 71 | 71 | 71 | 58 | No Armor| 23 | 88 |
+|Huge | 23 | 76 | 76 | 76 | 63 | No Armor| 18 | 118 |
+|Gargantuan | 23 | 86 | 86 | 86 | 73 | No Armor| 8 | 177 |
+|Colossal | 23 | 106 | 106 | 106 | 93 | No Armor| -12 | 236 |
+|Titanic | 23 | 146 | 146 | 146 | 133 | No Armor| -52 | 355 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 61 | 49 | 43 | 34 | No Armor| 68 | 18 |
+|Diminutive | 23 | 81 | 69 | 63 | 54 | No Armor| 48 | 24 |
+|Tiny | 23 | 91 | 79 | 73 | 64 | No Armor| 38 | 37 |
+|Small | 23 | 96 | 84 | 78 | 69 | No Armor| 33 | 51 |
+|Medium | 23 | 101 | 89 | 83 | 74 | No Armor| 28 | 74 |
+|Large | 23 | 106 | 94 | 88 | 79 | No Armor| 23 | 111 |
+|Huge | 23 | 111 | 99 | 93 | 84 | No Armor| 18 | 148 |
+|Gargantuan | 23 | 121 | 109 | 103 | 94 | No Armor| 8 | 222 |
+|Colossal | 23 | 141 | 129 | 123 | 114 | No Armor| -12 | 296 |
+|Titanic | 23 | 181 | 169 | 163 | 154 | No Armor| -52 | 444 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 26 | 26 | 13 | No Armor| 68 | 14 |
+|Diminutive | 23 | 46 | 46 | 46 | 33 | No Armor| 48 | 19 |
+|Tiny | 23 | 56 | 56 | 56 | 43 | No Armor| 38 | 29 |
+|Small | 23 | 61 | 61 | 61 | 48 | No Armor| 33 | 41 |
+|Medium | 23 | 66 | 66 | 66 | 53 | No Armor| 28 | 59 |
+|Large | 23 | 71 | 71 | 71 | 58 | No Armor| 23 | 88 |
+|Huge | 23 | 76 | 76 | 76 | 63 | No Armor| 18 | 118 |
+|Gargantuan | 23 | 86 | 86 | 86 | 73 | No Armor| 8 | 177 |
+|Colossal | 23 | 106 | 106 | 106 | 93 | No Armor| -12 | 236 |
+|Titanic | 23 | 146 | 146 | 146 | 133 | No Armor| -52 | 355 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 26 | 26 | 13 | No Armor| 68 | 14 |
+|Diminutive | 23 | 46 | 46 | 46 | 33 | No Armor| 48 | 19 |
+|Tiny | 23 | 56 | 56 | 56 | 43 | No Armor| 38 | 29 |
+|Small | 23 | 61 | 61 | 61 | 48 | No Armor| 33 | 41 |
+|Medium | 23 | 66 | 66 | 66 | 53 | No Armor| 28 | 59 |
+|Large | 23 | 71 | 71 | 71 | 58 | No Armor| 23 | 88 |
+|Huge | 23 | 76 | 76 | 76 | 63 | No Armor| 18 | 118 |
+|Gargantuan | 23 | 86 | 86 | 86 | 73 | No Armor| 8 | 177 |
+|Colossal | 23 | 106 | 106 | 106 | 93 | No Armor| -12 | 236 |
+|Titanic | 23 | 146 | 146 | 146 | 133 | No Armor| -52 | 355 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 23 | 26 | 26 | 26 | 13 | Light| 68 | 14 |
+|Diminutive | 23 | 46 | 46 | 46 | 33 | Light| 48 | 19 |
+|Tiny | 23 | 56 | 56 | 56 | 43 | Light| 38 | 29 |
+|Small | 23 | 61 | 61 | 61 | 48 | Light| 33 | 41 |
+|Medium | 23 | 66 | 66 | 66 | 53 | Light| 28 | 59 |
+|Large | 23 | 71 | 71 | 71 | 58 | Light| 23 | 88 |
+|Huge | 23 | 76 | 76 | 76 | 63 | Light| 18 | 118 |
+|Gargantuan | 23 | 86 | 86 | 86 | 73 | Light| 8 | 177 |
+|Colossal | 23 | 106 | 106 | 106 | 93 | Light| -12 | 236 |
+|Titanic | 23 | 146 | 146 | 146 | 133 | Light| -52 | 355 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 50 | 44 | 35 | 14 | Light| 70 | 15 |
+|Diminutive | 24 | 70 | 64 | 55 | 34 | Light| 50 | 19 |
+|Tiny | 24 | 80 | 74 | 65 | 44 | Light| 40 | 30 |
+|Small | 24 | 85 | 79 | 70 | 49 | Light| 35 | 42 |
+|Medium | 24 | 90 | 84 | 75 | 54 | Light| 30 | 60 |
+|Large | 24 | 95 | 89 | 80 | 59 | Light| 25 | 90 |
+|Huge | 24 | 100 | 94 | 85 | 64 | Light| 20 | 120 |
+|Gargantuan | 24 | 110 | 104 | 95 | 74 | Light| 10 | 180 |
+|Colossal | 24 | 130 | 124 | 115 | 94 | Light| -10 | 240 |
+|Titanic | 24 | 170 | 164 | 155 | 134 | Light| -50 | 360 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 24 | 19 | 3 | Light| 70 | 15 |
+|Diminutive | 24 | 47 | 44 | 39 | 23 | Light| 50 | 19 |
+|Tiny | 24 | 57 | 54 | 49 | 33 | Light| 40 | 30 |
+|Small | 24 | 62 | 59 | 54 | 38 | Light| 35 | 42 |
+|Medium | 24 | 67 | 64 | 59 | 43 | Light| 30 | 60 |
+|Large | 24 | 72 | 69 | 64 | 48 | Light| 25 | 90 |
+|Huge | 24 | 77 | 74 | 69 | 53 | Light| 20 | 120 |
+|Gargantuan | 24 | 87 | 84 | 79 | 63 | Light| 10 | 180 |
+|Colossal | 24 | 107 | 104 | 99 | 83 | Light| -10 | 240 |
+|Titanic | 24 | 147 | 144 | 139 | 123 | Light| -50 | 360 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 63 | 50 | 44 | 35 | Medium| 40 | 18 |
+|Diminutive | 24 | 83 | 70 | 64 | 55 | Medium| 20 | 24 |
+|Tiny | 24 | 93 | 80 | 74 | 65 | Medium| 10 | 37 |
+|Small | 24 | 98 | 85 | 79 | 70 | Medium| 5 | 52 |
+|Medium | 24 | 103 | 90 | 84 | 75 | Medium| 0 | 75 |
+|Large | 24 | 108 | 95 | 89 | 80 | Medium| -5 | 112 |
+|Huge | 24 | 113 | 100 | 94 | 85 | Medium| -10 | 150 |
+|Gargantuan | 24 | 123 | 110 | 104 | 95 | Medium| -20 | 225 |
+|Colossal | 24 | 143 | 130 | 124 | 115 | Medium| -40 | 300 |
+|Titanic | 24 | 183 | 170 | 164 | 155 | Medium| -80 | 450 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 63 | 50 | 44 | 35 | Heavy| 70 | 42 |
+|Diminutive | 24 | 83 | 70 | 64 | 55 | Heavy| 50 | 55 |
+|Tiny | 24 | 93 | 80 | 74 | 65 | Heavy| 40 | 84 |
+|Small | 24 | 98 | 85 | 79 | 70 | Heavy| 35 | 117 |
+|Medium | 24 | 103 | 90 | 84 | 75 | Heavy| 30 | 168 |
+|Large | 24 | 108 | 95 | 89 | 80 | Heavy| 25 | 252 |
+|Huge | 24 | 113 | 100 | 94 | 85 | Heavy| 20 | 336 |
+|Gargantuan | 24 | 123 | 110 | 104 | 95 | Heavy| 10 | 504 |
+|Colossal | 24 | 143 | 130 | 124 | 115 | Heavy| -10 | 672 |
+|Titanic | 24 | 183 | 170 | 164 | 155 | Heavy| -50 | 1008 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 2 | 1 | -7 | -20 | No Armor| 70 | 11 |
+|Diminutive | 24 | 22 | 21 | 12 | 0 | No Armor| 50 | 14 |
+|Tiny | 24 | 32 | 31 | 22 | 9 | No Armor| 40 | 22 |
+|Small | 24 | 37 | 36 | 27 | 14 | No Armor| 35 | 31 |
+|Medium | 24 | 42 | 41 | 32 | 19 | No Armor| 30 | 45 |
+|Large | 24 | 47 | 46 | 37 | 24 | No Armor| 25 | 67 |
+|Huge | 24 | 52 | 51 | 42 | 29 | No Armor| 20 | 90 |
+|Gargantuan | 24 | 62 | 61 | 52 | 39 | No Armor| 10 | 135 |
+|Colossal | 24 | 82 | 81 | 72 | 59 | No Armor| -10 | 180 |
+|Titanic | 24 | 122 | 121 | 112 | 99 | No Armor| -50 | 270 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 27 | 27 | 14 | No Armor| 55 | 15 |
+|Diminutive | 24 | 47 | 47 | 47 | 34 | No Armor| 35 | 19 |
+|Tiny | 24 | 57 | 57 | 57 | 44 | No Armor| 25 | 30 |
+|Small | 24 | 62 | 62 | 62 | 49 | No Armor| 20 | 42 |
+|Medium | 24 | 67 | 67 | 67 | 54 | No Armor| 15 | 60 |
+|Large | 24 | 72 | 72 | 72 | 59 | No Armor| 10 | 90 |
+|Huge | 24 | 77 | 77 | 77 | 64 | No Armor| 5 | 120 |
+|Gargantuan | 24 | 87 | 87 | 87 | 74 | No Armor| -5 | 180 |
+|Colossal | 24 | 107 | 107 | 107 | 94 | No Armor| -25 | 240 |
+|Titanic | 24 | 147 | 147 | 147 | 134 | No Armor| -65 | 360 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 63 | 50 | 44 | 35 | Medium| 70 | 18 |
+|Diminutive | 24 | 83 | 70 | 64 | 55 | Medium| 50 | 24 |
+|Tiny | 24 | 93 | 80 | 74 | 65 | Medium| 40 | 37 |
+|Small | 24 | 98 | 85 | 79 | 70 | Medium| 35 | 52 |
+|Medium | 24 | 103 | 90 | 84 | 75 | Medium| 30 | 75 |
+|Large | 24 | 108 | 95 | 89 | 80 | Medium| 25 | 112 |
+|Huge | 24 | 113 | 100 | 94 | 85 | Medium| 20 | 150 |
+|Gargantuan | 24 | 123 | 110 | 104 | 95 | Medium| 10 | 225 |
+|Colossal | 24 | 143 | 130 | 124 | 115 | Medium| -10 | 300 |
+|Titanic | 24 | 183 | 170 | 164 | 155 | Medium| -50 | 450 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 63 | 50 | 44 | 35 | No Armor| 70 | 18 |
+|Diminutive | 24 | 83 | 70 | 64 | 55 | No Armor| 50 | 24 |
+|Tiny | 24 | 93 | 80 | 74 | 65 | No Armor| 40 | 37 |
+|Small | 24 | 98 | 85 | 79 | 70 | No Armor| 35 | 52 |
+|Medium | 24 | 103 | 90 | 84 | 75 | No Armor| 30 | 75 |
+|Large | 24 | 108 | 95 | 89 | 80 | No Armor| 25 | 112 |
+|Huge | 24 | 113 | 100 | 94 | 85 | No Armor| 20 | 150 |
+|Gargantuan | 24 | 123 | 110 | 104 | 95 | No Armor| 10 | 225 |
+|Colossal | 24 | 143 | 130 | 124 | 115 | No Armor| -10 | 300 |
+|Titanic | 24 | 183 | 170 | 164 | 155 | No Armor| -50 | 450 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 27 | 27 | 14 | No Armor| 70 | 15 |
+|Diminutive | 24 | 47 | 47 | 47 | 34 | No Armor| 50 | 19 |
+|Tiny | 24 | 57 | 57 | 57 | 44 | No Armor| 40 | 30 |
+|Small | 24 | 62 | 62 | 62 | 49 | No Armor| 35 | 42 |
+|Medium | 24 | 67 | 67 | 67 | 54 | No Armor| 30 | 60 |
+|Large | 24 | 72 | 72 | 72 | 59 | No Armor| 25 | 90 |
+|Huge | 24 | 77 | 77 | 77 | 64 | No Armor| 20 | 120 |
+|Gargantuan | 24 | 87 | 87 | 87 | 74 | No Armor| 10 | 180 |
+|Colossal | 24 | 107 | 107 | 107 | 94 | No Armor| -10 | 240 |
+|Titanic | 24 | 147 | 147 | 147 | 134 | No Armor| -50 | 360 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 63 | 50 | 44 | 35 | No Armor| 70 | 18 |
+|Diminutive | 24 | 83 | 70 | 64 | 55 | No Armor| 50 | 24 |
+|Tiny | 24 | 93 | 80 | 74 | 65 | No Armor| 40 | 37 |
+|Small | 24 | 98 | 85 | 79 | 70 | No Armor| 35 | 52 |
+|Medium | 24 | 103 | 90 | 84 | 75 | No Armor| 30 | 75 |
+|Large | 24 | 108 | 95 | 89 | 80 | No Armor| 25 | 112 |
+|Huge | 24 | 113 | 100 | 94 | 85 | No Armor| 20 | 150 |
+|Gargantuan | 24 | 123 | 110 | 104 | 95 | No Armor| 10 | 225 |
+|Colossal | 24 | 143 | 130 | 124 | 115 | No Armor| -10 | 300 |
+|Titanic | 24 | 183 | 170 | 164 | 155 | No Armor| -50 | 450 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 27 | 27 | 14 | No Armor| 70 | 15 |
+|Diminutive | 24 | 47 | 47 | 47 | 34 | No Armor| 50 | 19 |
+|Tiny | 24 | 57 | 57 | 57 | 44 | No Armor| 40 | 30 |
+|Small | 24 | 62 | 62 | 62 | 49 | No Armor| 35 | 42 |
+|Medium | 24 | 67 | 67 | 67 | 54 | No Armor| 30 | 60 |
+|Large | 24 | 72 | 72 | 72 | 59 | No Armor| 25 | 90 |
+|Huge | 24 | 77 | 77 | 77 | 64 | No Armor| 20 | 120 |
+|Gargantuan | 24 | 87 | 87 | 87 | 74 | No Armor| 10 | 180 |
+|Colossal | 24 | 107 | 107 | 107 | 94 | No Armor| -10 | 240 |
+|Titanic | 24 | 147 | 147 | 147 | 134 | No Armor| -50 | 360 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 27 | 27 | 14 | No Armor| 70 | 15 |
+|Diminutive | 24 | 47 | 47 | 47 | 34 | No Armor| 50 | 19 |
+|Tiny | 24 | 57 | 57 | 57 | 44 | No Armor| 40 | 30 |
+|Small | 24 | 62 | 62 | 62 | 49 | No Armor| 35 | 42 |
+|Medium | 24 | 67 | 67 | 67 | 54 | No Armor| 30 | 60 |
+|Large | 24 | 72 | 72 | 72 | 59 | No Armor| 25 | 90 |
+|Huge | 24 | 77 | 77 | 77 | 64 | No Armor| 20 | 120 |
+|Gargantuan | 24 | 87 | 87 | 87 | 74 | No Armor| 10 | 180 |
+|Colossal | 24 | 107 | 107 | 107 | 94 | No Armor| -10 | 240 |
+|Titanic | 24 | 147 | 147 | 147 | 134 | No Armor| -50 | 360 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 24 | 27 | 27 | 27 | 14 | Light| 70 | 15 |
+|Diminutive | 24 | 47 | 47 | 47 | 34 | Light| 50 | 19 |
+|Tiny | 24 | 57 | 57 | 57 | 44 | Light| 40 | 30 |
+|Small | 24 | 62 | 62 | 62 | 49 | Light| 35 | 42 |
+|Medium | 24 | 67 | 67 | 67 | 54 | Light| 30 | 60 |
+|Large | 24 | 72 | 72 | 72 | 59 | Light| 25 | 90 |
+|Huge | 24 | 77 | 77 | 77 | 64 | Light| 20 | 120 |
+|Gargantuan | 24 | 87 | 87 | 87 | 74 | Light| 10 | 180 |
+|Colossal | 24 | 107 | 107 | 107 | 94 | Light| -10 | 240 |
+|Titanic | 24 | 147 | 147 | 147 | 134 | Light| -50 | 360 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 51 | 44 | 36 | 15 | Light| 71 | 15 |
+|Diminutive | 25 | 71 | 64 | 56 | 35 | Light| 51 | 20 |
+|Tiny | 25 | 81 | 74 | 66 | 45 | Light| 41 | 30 |
+|Small | 25 | 86 | 79 | 71 | 50 | Light| 36 | 42 |
+|Medium | 25 | 91 | 84 | 76 | 55 | Light| 31 | 60 |
+|Large | 25 | 96 | 89 | 81 | 60 | Light| 26 | 91 |
+|Huge | 25 | 101 | 94 | 86 | 65 | Light| 21 | 121 |
+|Gargantuan | 25 | 111 | 104 | 96 | 75 | Light| 11 | 182 |
+|Colossal | 25 | 131 | 124 | 116 | 95 | Light| -9 | 243 |
+|Titanic | 25 | 171 | 164 | 156 | 135 | Light| -49 | 364 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 24 | 20 | 4 | Light| 71 | 15 |
+|Diminutive | 25 | 48 | 44 | 40 | 24 | Light| 51 | 20 |
+|Tiny | 25 | 58 | 54 | 50 | 34 | Light| 41 | 30 |
+|Small | 25 | 63 | 59 | 55 | 39 | Light| 36 | 42 |
+|Medium | 25 | 68 | 64 | 60 | 44 | Light| 31 | 60 |
+|Large | 25 | 73 | 69 | 65 | 49 | Light| 26 | 91 |
+|Huge | 25 | 78 | 74 | 70 | 54 | Light| 21 | 121 |
+|Gargantuan | 25 | 88 | 84 | 80 | 64 | Light| 11 | 182 |
+|Colossal | 25 | 108 | 104 | 100 | 84 | Light| -9 | 243 |
+|Titanic | 25 | 148 | 144 | 140 | 124 | Light| -49 | 364 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 64 | 51 | 44 | 36 | Medium| 40 | 19 |
+|Diminutive | 25 | 84 | 71 | 64 | 56 | Medium| 20 | 25 |
+|Tiny | 25 | 94 | 81 | 74 | 66 | Medium| 10 | 38 |
+|Small | 25 | 99 | 86 | 79 | 71 | Medium| 5 | 53 |
+|Medium | 25 | 104 | 91 | 84 | 76 | Medium| 0 | 76 |
+|Large | 25 | 109 | 96 | 89 | 81 | Medium| -5 | 114 |
+|Huge | 25 | 114 | 101 | 94 | 86 | Medium| -10 | 152 |
+|Gargantuan | 25 | 124 | 111 | 104 | 96 | Medium| -20 | 228 |
+|Colossal | 25 | 144 | 131 | 124 | 116 | Medium| -40 | 304 |
+|Titanic | 25 | 184 | 171 | 164 | 156 | Medium| -80 | 456 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 64 | 51 | 44 | 36 | Heavy| 71 | 42 |
+|Diminutive | 25 | 84 | 71 | 64 | 56 | Heavy| 51 | 55 |
+|Tiny | 25 | 94 | 81 | 74 | 66 | Heavy| 41 | 84 |
+|Small | 25 | 99 | 86 | 79 | 71 | Heavy| 36 | 117 |
+|Medium | 25 | 104 | 91 | 84 | 76 | Heavy| 31 | 168 |
+|Large | 25 | 109 | 96 | 89 | 81 | Heavy| 26 | 252 |
+|Huge | 25 | 114 | 101 | 94 | 86 | Heavy| 21 | 336 |
+|Gargantuan | 25 | 124 | 111 | 104 | 96 | Heavy| 11 | 504 |
+|Colossal | 25 | 144 | 131 | 124 | 116 | Heavy| -9 | 672 |
+|Titanic | 25 | 184 | 171 | 164 | 156 | Heavy| -49 | 1008 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 2 | 1 | -7 | -19 | No Armor| 71 | 11 |
+|Diminutive | 25 | 22 | 21 | 13 | 0 | No Armor| 51 | 15 |
+|Tiny | 25 | 32 | 31 | 23 | 10 | No Armor| 41 | 22 |
+|Small | 25 | 37 | 36 | 28 | 15 | No Armor| 36 | 31 |
+|Medium | 25 | 42 | 41 | 33 | 20 | No Armor| 31 | 45 |
+|Large | 25 | 47 | 46 | 38 | 25 | No Armor| 26 | 68 |
+|Huge | 25 | 52 | 51 | 43 | 30 | No Armor| 21 | 91 |
+|Gargantuan | 25 | 62 | 61 | 53 | 40 | No Armor| 11 | 136 |
+|Colossal | 25 | 82 | 81 | 73 | 60 | No Armor| -9 | 182 |
+|Titanic | 25 | 122 | 121 | 113 | 100 | No Armor| -49 | 273 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 27 | 28 | 15 | No Armor| 55 | 15 |
+|Diminutive | 25 | 48 | 47 | 48 | 35 | No Armor| 35 | 20 |
+|Tiny | 25 | 58 | 57 | 58 | 45 | No Armor| 25 | 30 |
+|Small | 25 | 63 | 62 | 63 | 50 | No Armor| 20 | 42 |
+|Medium | 25 | 68 | 67 | 68 | 55 | No Armor| 15 | 60 |
+|Large | 25 | 73 | 72 | 73 | 60 | No Armor| 10 | 91 |
+|Huge | 25 | 78 | 77 | 78 | 65 | No Armor| 5 | 121 |
+|Gargantuan | 25 | 88 | 87 | 88 | 75 | No Armor| -5 | 182 |
+|Colossal | 25 | 108 | 107 | 108 | 95 | No Armor| -25 | 243 |
+|Titanic | 25 | 148 | 147 | 148 | 135 | No Armor| -65 | 364 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 64 | 51 | 44 | 36 | Medium| 71 | 19 |
+|Diminutive | 25 | 84 | 71 | 64 | 56 | Medium| 51 | 25 |
+|Tiny | 25 | 94 | 81 | 74 | 66 | Medium| 41 | 38 |
+|Small | 25 | 99 | 86 | 79 | 71 | Medium| 36 | 53 |
+|Medium | 25 | 104 | 91 | 84 | 76 | Medium| 31 | 76 |
+|Large | 25 | 109 | 96 | 89 | 81 | Medium| 26 | 114 |
+|Huge | 25 | 114 | 101 | 94 | 86 | Medium| 21 | 152 |
+|Gargantuan | 25 | 124 | 111 | 104 | 96 | Medium| 11 | 228 |
+|Colossal | 25 | 144 | 131 | 124 | 116 | Medium| -9 | 304 |
+|Titanic | 25 | 184 | 171 | 164 | 156 | Medium| -49 | 456 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 64 | 51 | 44 | 36 | No Armor| 71 | 19 |
+|Diminutive | 25 | 84 | 71 | 64 | 56 | No Armor| 51 | 25 |
+|Tiny | 25 | 94 | 81 | 74 | 66 | No Armor| 41 | 38 |
+|Small | 25 | 99 | 86 | 79 | 71 | No Armor| 36 | 53 |
+|Medium | 25 | 104 | 91 | 84 | 76 | No Armor| 31 | 76 |
+|Large | 25 | 109 | 96 | 89 | 81 | No Armor| 26 | 114 |
+|Huge | 25 | 114 | 101 | 94 | 86 | No Armor| 21 | 152 |
+|Gargantuan | 25 | 124 | 111 | 104 | 96 | No Armor| 11 | 228 |
+|Colossal | 25 | 144 | 131 | 124 | 116 | No Armor| -9 | 304 |
+|Titanic | 25 | 184 | 171 | 164 | 156 | No Armor| -49 | 456 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 27 | 28 | 15 | No Armor| 71 | 15 |
+|Diminutive | 25 | 48 | 47 | 48 | 35 | No Armor| 51 | 20 |
+|Tiny | 25 | 58 | 57 | 58 | 45 | No Armor| 41 | 30 |
+|Small | 25 | 63 | 62 | 63 | 50 | No Armor| 36 | 42 |
+|Medium | 25 | 68 | 67 | 68 | 55 | No Armor| 31 | 60 |
+|Large | 25 | 73 | 72 | 73 | 60 | No Armor| 26 | 91 |
+|Huge | 25 | 78 | 77 | 78 | 65 | No Armor| 21 | 121 |
+|Gargantuan | 25 | 88 | 87 | 88 | 75 | No Armor| 11 | 182 |
+|Colossal | 25 | 108 | 107 | 108 | 95 | No Armor| -9 | 243 |
+|Titanic | 25 | 148 | 147 | 148 | 135 | No Armor| -49 | 364 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 64 | 51 | 44 | 36 | No Armor| 71 | 19 |
+|Diminutive | 25 | 84 | 71 | 64 | 56 | No Armor| 51 | 25 |
+|Tiny | 25 | 94 | 81 | 74 | 66 | No Armor| 41 | 38 |
+|Small | 25 | 99 | 86 | 79 | 71 | No Armor| 36 | 53 |
+|Medium | 25 | 104 | 91 | 84 | 76 | No Armor| 31 | 76 |
+|Large | 25 | 109 | 96 | 89 | 81 | No Armor| 26 | 114 |
+|Huge | 25 | 114 | 101 | 94 | 86 | No Armor| 21 | 152 |
+|Gargantuan | 25 | 124 | 111 | 104 | 96 | No Armor| 11 | 228 |
+|Colossal | 25 | 144 | 131 | 124 | 116 | No Armor| -9 | 304 |
+|Titanic | 25 | 184 | 171 | 164 | 156 | No Armor| -49 | 456 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 27 | 28 | 15 | No Armor| 71 | 15 |
+|Diminutive | 25 | 48 | 47 | 48 | 35 | No Armor| 51 | 20 |
+|Tiny | 25 | 58 | 57 | 58 | 45 | No Armor| 41 | 30 |
+|Small | 25 | 63 | 62 | 63 | 50 | No Armor| 36 | 42 |
+|Medium | 25 | 68 | 67 | 68 | 55 | No Armor| 31 | 60 |
+|Large | 25 | 73 | 72 | 73 | 60 | No Armor| 26 | 91 |
+|Huge | 25 | 78 | 77 | 78 | 65 | No Armor| 21 | 121 |
+|Gargantuan | 25 | 88 | 87 | 88 | 75 | No Armor| 11 | 182 |
+|Colossal | 25 | 108 | 107 | 108 | 95 | No Armor| -9 | 243 |
+|Titanic | 25 | 148 | 147 | 148 | 135 | No Armor| -49 | 364 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 27 | 28 | 15 | No Armor| 71 | 15 |
+|Diminutive | 25 | 48 | 47 | 48 | 35 | No Armor| 51 | 20 |
+|Tiny | 25 | 58 | 57 | 58 | 45 | No Armor| 41 | 30 |
+|Small | 25 | 63 | 62 | 63 | 50 | No Armor| 36 | 42 |
+|Medium | 25 | 68 | 67 | 68 | 55 | No Armor| 31 | 60 |
+|Large | 25 | 73 | 72 | 73 | 60 | No Armor| 26 | 91 |
+|Huge | 25 | 78 | 77 | 78 | 65 | No Armor| 21 | 121 |
+|Gargantuan | 25 | 88 | 87 | 88 | 75 | No Armor| 11 | 182 |
+|Colossal | 25 | 108 | 107 | 108 | 95 | No Armor| -9 | 243 |
+|Titanic | 25 | 148 | 147 | 148 | 135 | No Armor| -49 | 364 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 25 | 28 | 27 | 28 | 15 | Light| 71 | 15 |
+|Diminutive | 25 | 48 | 47 | 48 | 35 | Light| 51 | 20 |
+|Tiny | 25 | 58 | 57 | 58 | 45 | Light| 41 | 30 |
+|Small | 25 | 63 | 62 | 63 | 50 | Light| 36 | 42 |
+|Medium | 25 | 68 | 67 | 68 | 55 | Light| 31 | 60 |
+|Large | 25 | 73 | 72 | 73 | 60 | Light| 26 | 91 |
+|Huge | 25 | 78 | 77 | 78 | 65 | Light| 21 | 121 |
+|Gargantuan | 25 | 88 | 87 | 88 | 75 | Light| 11 | 182 |
+|Colossal | 25 | 108 | 107 | 108 | 95 | Light| -9 | 243 |
+|Titanic | 25 | 148 | 147 | 148 | 135 | Light| -49 | 364 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 52 | 45 | 37 | 16 | Light| 72 | 15 |
+|Diminutive | 26 | 72 | 65 | 57 | 36 | Light| 52 | 20 |
+|Tiny | 26 | 82 | 75 | 67 | 46 | Light| 42 | 30 |
+|Small | 26 | 87 | 80 | 72 | 51 | Light| 37 | 43 |
+|Medium | 26 | 92 | 85 | 77 | 56 | Light| 32 | 61 |
+|Large | 26 | 97 | 90 | 82 | 61 | Light| 27 | 92 |
+|Huge | 26 | 102 | 95 | 87 | 66 | Light| 22 | 123 |
+|Gargantuan | 26 | 112 | 105 | 97 | 76 | Light| 12 | 184 |
+|Colossal | 26 | 132 | 125 | 117 | 96 | Light| -8 | 246 |
+|Titanic | 26 | 172 | 165 | 157 | 136 | Light| -48 | 369 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 25 | 20 | 5 | Light| 72 | 15 |
+|Diminutive | 26 | 49 | 45 | 40 | 25 | Light| 52 | 20 |
+|Tiny | 26 | 59 | 55 | 50 | 35 | Light| 42 | 30 |
+|Small | 26 | 64 | 60 | 55 | 40 | Light| 37 | 43 |
+|Medium | 26 | 69 | 65 | 60 | 45 | Light| 32 | 61 |
+|Large | 26 | 74 | 70 | 65 | 50 | Light| 27 | 92 |
+|Huge | 26 | 79 | 75 | 70 | 55 | Light| 22 | 123 |
+|Gargantuan | 26 | 89 | 85 | 80 | 65 | Light| 12 | 184 |
+|Colossal | 26 | 109 | 105 | 100 | 85 | Light| -8 | 246 |
+|Titanic | 26 | 149 | 145 | 140 | 125 | Light| -48 | 369 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 66 | 52 | 45 | 37 | Medium| 40 | 19 |
+|Diminutive | 26 | 86 | 72 | 65 | 57 | Medium| 20 | 25 |
+|Tiny | 26 | 96 | 82 | 75 | 67 | Medium| 10 | 38 |
+|Small | 26 | 101 | 87 | 80 | 72 | Medium| 5 | 53 |
+|Medium | 26 | 106 | 92 | 85 | 77 | Medium| 0 | 77 |
+|Large | 26 | 111 | 97 | 90 | 82 | Medium| -5 | 115 |
+|Huge | 26 | 116 | 102 | 95 | 87 | Medium| -10 | 154 |
+|Gargantuan | 26 | 126 | 112 | 105 | 97 | Medium| -20 | 231 |
+|Colossal | 26 | 146 | 132 | 125 | 117 | Medium| -40 | 308 |
+|Titanic | 26 | 186 | 172 | 165 | 157 | Medium| -80 | 462 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 66 | 52 | 45 | 37 | Heavy| 72 | 42 |
+|Diminutive | 26 | 86 | 72 | 65 | 57 | Heavy| 52 | 56 |
+|Tiny | 26 | 96 | 82 | 75 | 67 | Heavy| 42 | 85 |
+|Small | 26 | 101 | 87 | 80 | 72 | Heavy| 37 | 118 |
+|Medium | 26 | 106 | 92 | 85 | 77 | Heavy| 32 | 170 |
+|Large | 26 | 111 | 97 | 90 | 82 | Heavy| 27 | 255 |
+|Huge | 26 | 116 | 102 | 95 | 87 | Heavy| 22 | 340 |
+|Gargantuan | 26 | 126 | 112 | 105 | 97 | Heavy| 12 | 510 |
+|Colossal | 26 | 146 | 132 | 125 | 117 | Heavy| -8 | 680 |
+|Titanic | 26 | 186 | 172 | 165 | 157 | Heavy| -48 | 1020 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 2 | 2 | -6 | -19 | No Armor| 72 | 11 |
+|Diminutive | 26 | 22 | 22 | 13 | 0 | No Armor| 52 | 15 |
+|Tiny | 26 | 32 | 32 | 23 | 10 | No Armor| 42 | 23 |
+|Small | 26 | 37 | 37 | 28 | 15 | No Armor| 37 | 32 |
+|Medium | 26 | 42 | 42 | 33 | 20 | No Armor| 32 | 46 |
+|Large | 26 | 47 | 47 | 38 | 25 | No Armor| 27 | 69 |
+|Huge | 26 | 52 | 52 | 43 | 30 | No Armor| 22 | 92 |
+|Gargantuan | 26 | 62 | 62 | 53 | 40 | No Armor| 12 | 138 |
+|Colossal | 26 | 82 | 82 | 73 | 60 | No Armor| -8 | 184 |
+|Titanic | 26 | 122 | 122 | 113 | 100 | No Armor| -48 | 277 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 28 | 29 | 16 | No Armor| 56 | 15 |
+|Diminutive | 26 | 49 | 48 | 49 | 36 | No Armor| 36 | 20 |
+|Tiny | 26 | 59 | 58 | 59 | 46 | No Armor| 26 | 30 |
+|Small | 26 | 64 | 63 | 64 | 51 | No Armor| 21 | 43 |
+|Medium | 26 | 69 | 68 | 69 | 56 | No Armor| 16 | 61 |
+|Large | 26 | 74 | 73 | 74 | 61 | No Armor| 11 | 92 |
+|Huge | 26 | 79 | 78 | 79 | 66 | No Armor| 6 | 123 |
+|Gargantuan | 26 | 89 | 88 | 89 | 76 | No Armor| -4 | 184 |
+|Colossal | 26 | 109 | 108 | 109 | 96 | No Armor| -24 | 246 |
+|Titanic | 26 | 149 | 148 | 149 | 136 | No Armor| -64 | 369 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 66 | 52 | 45 | 37 | Medium| 72 | 19 |
+|Diminutive | 26 | 86 | 72 | 65 | 57 | Medium| 52 | 25 |
+|Tiny | 26 | 96 | 82 | 75 | 67 | Medium| 42 | 38 |
+|Small | 26 | 101 | 87 | 80 | 72 | Medium| 37 | 53 |
+|Medium | 26 | 106 | 92 | 85 | 77 | Medium| 32 | 77 |
+|Large | 26 | 111 | 97 | 90 | 82 | Medium| 27 | 115 |
+|Huge | 26 | 116 | 102 | 95 | 87 | Medium| 22 | 154 |
+|Gargantuan | 26 | 126 | 112 | 105 | 97 | Medium| 12 | 231 |
+|Colossal | 26 | 146 | 132 | 125 | 117 | Medium| -8 | 308 |
+|Titanic | 26 | 186 | 172 | 165 | 157 | Medium| -48 | 462 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 66 | 52 | 45 | 37 | No Armor| 72 | 19 |
+|Diminutive | 26 | 86 | 72 | 65 | 57 | No Armor| 52 | 25 |
+|Tiny | 26 | 96 | 82 | 75 | 67 | No Armor| 42 | 38 |
+|Small | 26 | 101 | 87 | 80 | 72 | No Armor| 37 | 53 |
+|Medium | 26 | 106 | 92 | 85 | 77 | No Armor| 32 | 77 |
+|Large | 26 | 111 | 97 | 90 | 82 | No Armor| 27 | 115 |
+|Huge | 26 | 116 | 102 | 95 | 87 | No Armor| 22 | 154 |
+|Gargantuan | 26 | 126 | 112 | 105 | 97 | No Armor| 12 | 231 |
+|Colossal | 26 | 146 | 132 | 125 | 117 | No Armor| -8 | 308 |
+|Titanic | 26 | 186 | 172 | 165 | 157 | No Armor| -48 | 462 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 28 | 29 | 16 | No Armor| 72 | 15 |
+|Diminutive | 26 | 49 | 48 | 49 | 36 | No Armor| 52 | 20 |
+|Tiny | 26 | 59 | 58 | 59 | 46 | No Armor| 42 | 30 |
+|Small | 26 | 64 | 63 | 64 | 51 | No Armor| 37 | 43 |
+|Medium | 26 | 69 | 68 | 69 | 56 | No Armor| 32 | 61 |
+|Large | 26 | 74 | 73 | 74 | 61 | No Armor| 27 | 92 |
+|Huge | 26 | 79 | 78 | 79 | 66 | No Armor| 22 | 123 |
+|Gargantuan | 26 | 89 | 88 | 89 | 76 | No Armor| 12 | 184 |
+|Colossal | 26 | 109 | 108 | 109 | 96 | No Armor| -8 | 246 |
+|Titanic | 26 | 149 | 148 | 149 | 136 | No Armor| -48 | 369 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 66 | 52 | 45 | 37 | No Armor| 72 | 19 |
+|Diminutive | 26 | 86 | 72 | 65 | 57 | No Armor| 52 | 25 |
+|Tiny | 26 | 96 | 82 | 75 | 67 | No Armor| 42 | 38 |
+|Small | 26 | 101 | 87 | 80 | 72 | No Armor| 37 | 53 |
+|Medium | 26 | 106 | 92 | 85 | 77 | No Armor| 32 | 77 |
+|Large | 26 | 111 | 97 | 90 | 82 | No Armor| 27 | 115 |
+|Huge | 26 | 116 | 102 | 95 | 87 | No Armor| 22 | 154 |
+|Gargantuan | 26 | 126 | 112 | 105 | 97 | No Armor| 12 | 231 |
+|Colossal | 26 | 146 | 132 | 125 | 117 | No Armor| -8 | 308 |
+|Titanic | 26 | 186 | 172 | 165 | 157 | No Armor| -48 | 462 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 28 | 29 | 16 | No Armor| 72 | 15 |
+|Diminutive | 26 | 49 | 48 | 49 | 36 | No Armor| 52 | 20 |
+|Tiny | 26 | 59 | 58 | 59 | 46 | No Armor| 42 | 30 |
+|Small | 26 | 64 | 63 | 64 | 51 | No Armor| 37 | 43 |
+|Medium | 26 | 69 | 68 | 69 | 56 | No Armor| 32 | 61 |
+|Large | 26 | 74 | 73 | 74 | 61 | No Armor| 27 | 92 |
+|Huge | 26 | 79 | 78 | 79 | 66 | No Armor| 22 | 123 |
+|Gargantuan | 26 | 89 | 88 | 89 | 76 | No Armor| 12 | 184 |
+|Colossal | 26 | 109 | 108 | 109 | 96 | No Armor| -8 | 246 |
+|Titanic | 26 | 149 | 148 | 149 | 136 | No Armor| -48 | 369 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 28 | 29 | 16 | No Armor| 72 | 15 |
+|Diminutive | 26 | 49 | 48 | 49 | 36 | No Armor| 52 | 20 |
+|Tiny | 26 | 59 | 58 | 59 | 46 | No Armor| 42 | 30 |
+|Small | 26 | 64 | 63 | 64 | 51 | No Armor| 37 | 43 |
+|Medium | 26 | 69 | 68 | 69 | 56 | No Armor| 32 | 61 |
+|Large | 26 | 74 | 73 | 74 | 61 | No Armor| 27 | 92 |
+|Huge | 26 | 79 | 78 | 79 | 66 | No Armor| 22 | 123 |
+|Gargantuan | 26 | 89 | 88 | 89 | 76 | No Armor| 12 | 184 |
+|Colossal | 26 | 109 | 108 | 109 | 96 | No Armor| -8 | 246 |
+|Titanic | 26 | 149 | 148 | 149 | 136 | No Armor| -48 | 369 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 26 | 29 | 28 | 29 | 16 | Light| 72 | 15 |
+|Diminutive | 26 | 49 | 48 | 49 | 36 | Light| 52 | 20 |
+|Tiny | 26 | 59 | 58 | 59 | 46 | Light| 42 | 30 |
+|Small | 26 | 64 | 63 | 64 | 51 | Light| 37 | 43 |
+|Medium | 26 | 69 | 68 | 69 | 56 | Light| 32 | 61 |
+|Large | 26 | 74 | 73 | 74 | 61 | Light| 27 | 92 |
+|Huge | 26 | 79 | 78 | 79 | 66 | Light| 22 | 123 |
+|Gargantuan | 26 | 89 | 88 | 89 | 76 | Light| 12 | 184 |
+|Colossal | 26 | 109 | 108 | 109 | 96 | Light| -8 | 246 |
+|Titanic | 26 | 149 | 148 | 149 | 136 | Light| -48 | 369 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 53 | 46 | 38 | 17 | Light| 73 | 15 |
+|Diminutive | 27 | 73 | 66 | 58 | 37 | Light| 53 | 20 |
+|Tiny | 27 | 83 | 76 | 68 | 47 | Light| 43 | 31 |
+|Small | 27 | 88 | 81 | 73 | 52 | Light| 38 | 43 |
+|Medium | 27 | 93 | 86 | 78 | 57 | Light| 33 | 62 |
+|Large | 27 | 98 | 91 | 83 | 62 | Light| 28 | 93 |
+|Huge | 27 | 103 | 96 | 88 | 67 | Light| 23 | 124 |
+|Gargantuan | 27 | 113 | 106 | 98 | 77 | Light| 13 | 187 |
+|Colossal | 27 | 133 | 126 | 118 | 97 | Light| -7 | 249 |
+|Titanic | 27 | 173 | 166 | 158 | 137 | Light| -47 | 374 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 26 | 21 | 6 | Light| 73 | 15 |
+|Diminutive | 27 | 49 | 46 | 41 | 26 | Light| 53 | 20 |
+|Tiny | 27 | 59 | 56 | 51 | 36 | Light| 43 | 31 |
+|Small | 27 | 64 | 61 | 56 | 41 | Light| 38 | 43 |
+|Medium | 27 | 69 | 66 | 61 | 46 | Light| 33 | 62 |
+|Large | 27 | 74 | 71 | 66 | 51 | Light| 28 | 93 |
+|Huge | 27 | 79 | 76 | 71 | 56 | Light| 23 | 124 |
+|Gargantuan | 27 | 89 | 86 | 81 | 66 | Light| 13 | 187 |
+|Colossal | 27 | 109 | 106 | 101 | 86 | Light| -7 | 249 |
+|Titanic | 27 | 149 | 146 | 141 | 126 | Light| -47 | 374 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 67 | 53 | 46 | 38 | Medium| 40 | 19 |
+|Diminutive | 27 | 87 | 73 | 66 | 58 | Medium| 20 | 25 |
+|Tiny | 27 | 97 | 83 | 76 | 68 | Medium| 10 | 39 |
+|Small | 27 | 102 | 88 | 81 | 73 | Medium| 5 | 54 |
+|Medium | 27 | 107 | 93 | 86 | 78 | Medium| 0 | 78 |
+|Large | 27 | 112 | 98 | 91 | 83 | Medium| -5 | 117 |
+|Huge | 27 | 117 | 103 | 96 | 88 | Medium| -10 | 156 |
+|Gargantuan | 27 | 127 | 113 | 106 | 98 | Medium| -20 | 234 |
+|Colossal | 27 | 147 | 133 | 126 | 118 | Medium| -40 | 312 |
+|Titanic | 27 | 187 | 173 | 166 | 158 | Medium| -80 | 468 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 67 | 53 | 46 | 38 | Heavy| 73 | 43 |
+|Diminutive | 27 | 87 | 73 | 66 | 58 | Heavy| 53 | 56 |
+|Tiny | 27 | 97 | 83 | 76 | 68 | Heavy| 43 | 86 |
+|Small | 27 | 102 | 88 | 81 | 73 | Heavy| 38 | 120 |
+|Medium | 27 | 107 | 93 | 86 | 78 | Heavy| 33 | 172 |
+|Large | 27 | 112 | 98 | 91 | 83 | Heavy| 28 | 258 |
+|Huge | 27 | 117 | 103 | 96 | 88 | Heavy| 23 | 344 |
+|Gargantuan | 27 | 127 | 113 | 106 | 98 | Heavy| 13 | 516 |
+|Colossal | 27 | 147 | 133 | 126 | 118 | Heavy| -7 | 688 |
+|Titanic | 27 | 187 | 173 | 166 | 158 | Heavy| -47 | 1032 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 3 | 2 | -5 | -18 | No Armor| 73 | 11 |
+|Diminutive | 27 | 23 | 22 | 14 | 1 | No Armor| 53 | 15 |
+|Tiny | 27 | 33 | 32 | 24 | 11 | No Armor| 43 | 23 |
+|Small | 27 | 38 | 37 | 29 | 16 | No Armor| 38 | 32 |
+|Medium | 27 | 43 | 42 | 34 | 21 | No Armor| 33 | 46 |
+|Large | 27 | 48 | 47 | 39 | 26 | No Armor| 28 | 70 |
+|Huge | 27 | 53 | 52 | 44 | 31 | No Armor| 23 | 93 |
+|Gargantuan | 27 | 63 | 62 | 54 | 41 | No Armor| 13 | 140 |
+|Colossal | 27 | 83 | 82 | 74 | 61 | No Armor| -7 | 187 |
+|Titanic | 27 | 123 | 122 | 114 | 101 | No Armor| -47 | 280 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 28 | 30 | 17 | No Armor| 56 | 15 |
+|Diminutive | 27 | 49 | 48 | 50 | 37 | No Armor| 36 | 20 |
+|Tiny | 27 | 59 | 58 | 60 | 47 | No Armor| 26 | 31 |
+|Small | 27 | 64 | 63 | 65 | 52 | No Armor| 21 | 43 |
+|Medium | 27 | 69 | 68 | 70 | 57 | No Armor| 16 | 62 |
+|Large | 27 | 74 | 73 | 75 | 62 | No Armor| 11 | 93 |
+|Huge | 27 | 79 | 78 | 80 | 67 | No Armor| 6 | 124 |
+|Gargantuan | 27 | 89 | 88 | 90 | 77 | No Armor| -4 | 187 |
+|Colossal | 27 | 109 | 108 | 110 | 97 | No Armor| -24 | 249 |
+|Titanic | 27 | 149 | 148 | 150 | 137 | No Armor| -64 | 374 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 67 | 53 | 46 | 38 | Medium| 73 | 19 |
+|Diminutive | 27 | 87 | 73 | 66 | 58 | Medium| 53 | 25 |
+|Tiny | 27 | 97 | 83 | 76 | 68 | Medium| 43 | 39 |
+|Small | 27 | 102 | 88 | 81 | 73 | Medium| 38 | 54 |
+|Medium | 27 | 107 | 93 | 86 | 78 | Medium| 33 | 78 |
+|Large | 27 | 112 | 98 | 91 | 83 | Medium| 28 | 117 |
+|Huge | 27 | 117 | 103 | 96 | 88 | Medium| 23 | 156 |
+|Gargantuan | 27 | 127 | 113 | 106 | 98 | Medium| 13 | 234 |
+|Colossal | 27 | 147 | 133 | 126 | 118 | Medium| -7 | 312 |
+|Titanic | 27 | 187 | 173 | 166 | 158 | Medium| -47 | 468 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 67 | 53 | 46 | 38 | No Armor| 73 | 19 |
+|Diminutive | 27 | 87 | 73 | 66 | 58 | No Armor| 53 | 25 |
+|Tiny | 27 | 97 | 83 | 76 | 68 | No Armor| 43 | 39 |
+|Small | 27 | 102 | 88 | 81 | 73 | No Armor| 38 | 54 |
+|Medium | 27 | 107 | 93 | 86 | 78 | No Armor| 33 | 78 |
+|Large | 27 | 112 | 98 | 91 | 83 | No Armor| 28 | 117 |
+|Huge | 27 | 117 | 103 | 96 | 88 | No Armor| 23 | 156 |
+|Gargantuan | 27 | 127 | 113 | 106 | 98 | No Armor| 13 | 234 |
+|Colossal | 27 | 147 | 133 | 126 | 118 | No Armor| -7 | 312 |
+|Titanic | 27 | 187 | 173 | 166 | 158 | No Armor| -47 | 468 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 28 | 30 | 17 | No Armor| 73 | 15 |
+|Diminutive | 27 | 49 | 48 | 50 | 37 | No Armor| 53 | 20 |
+|Tiny | 27 | 59 | 58 | 60 | 47 | No Armor| 43 | 31 |
+|Small | 27 | 64 | 63 | 65 | 52 | No Armor| 38 | 43 |
+|Medium | 27 | 69 | 68 | 70 | 57 | No Armor| 33 | 62 |
+|Large | 27 | 74 | 73 | 75 | 62 | No Armor| 28 | 93 |
+|Huge | 27 | 79 | 78 | 80 | 67 | No Armor| 23 | 124 |
+|Gargantuan | 27 | 89 | 88 | 90 | 77 | No Armor| 13 | 187 |
+|Colossal | 27 | 109 | 108 | 110 | 97 | No Armor| -7 | 249 |
+|Titanic | 27 | 149 | 148 | 150 | 137 | No Armor| -47 | 374 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 67 | 53 | 46 | 38 | No Armor| 73 | 19 |
+|Diminutive | 27 | 87 | 73 | 66 | 58 | No Armor| 53 | 25 |
+|Tiny | 27 | 97 | 83 | 76 | 68 | No Armor| 43 | 39 |
+|Small | 27 | 102 | 88 | 81 | 73 | No Armor| 38 | 54 |
+|Medium | 27 | 107 | 93 | 86 | 78 | No Armor| 33 | 78 |
+|Large | 27 | 112 | 98 | 91 | 83 | No Armor| 28 | 117 |
+|Huge | 27 | 117 | 103 | 96 | 88 | No Armor| 23 | 156 |
+|Gargantuan | 27 | 127 | 113 | 106 | 98 | No Armor| 13 | 234 |
+|Colossal | 27 | 147 | 133 | 126 | 118 | No Armor| -7 | 312 |
+|Titanic | 27 | 187 | 173 | 166 | 158 | No Armor| -47 | 468 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 28 | 30 | 17 | No Armor| 73 | 15 |
+|Diminutive | 27 | 49 | 48 | 50 | 37 | No Armor| 53 | 20 |
+|Tiny | 27 | 59 | 58 | 60 | 47 | No Armor| 43 | 31 |
+|Small | 27 | 64 | 63 | 65 | 52 | No Armor| 38 | 43 |
+|Medium | 27 | 69 | 68 | 70 | 57 | No Armor| 33 | 62 |
+|Large | 27 | 74 | 73 | 75 | 62 | No Armor| 28 | 93 |
+|Huge | 27 | 79 | 78 | 80 | 67 | No Armor| 23 | 124 |
+|Gargantuan | 27 | 89 | 88 | 90 | 77 | No Armor| 13 | 187 |
+|Colossal | 27 | 109 | 108 | 110 | 97 | No Armor| -7 | 249 |
+|Titanic | 27 | 149 | 148 | 150 | 137 | No Armor| -47 | 374 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 28 | 30 | 17 | No Armor| 73 | 15 |
+|Diminutive | 27 | 49 | 48 | 50 | 37 | No Armor| 53 | 20 |
+|Tiny | 27 | 59 | 58 | 60 | 47 | No Armor| 43 | 31 |
+|Small | 27 | 64 | 63 | 65 | 52 | No Armor| 38 | 43 |
+|Medium | 27 | 69 | 68 | 70 | 57 | No Armor| 33 | 62 |
+|Large | 27 | 74 | 73 | 75 | 62 | No Armor| 28 | 93 |
+|Huge | 27 | 79 | 78 | 80 | 67 | No Armor| 23 | 124 |
+|Gargantuan | 27 | 89 | 88 | 90 | 77 | No Armor| 13 | 187 |
+|Colossal | 27 | 109 | 108 | 110 | 97 | No Armor| -7 | 249 |
+|Titanic | 27 | 149 | 148 | 150 | 137 | No Armor| -47 | 374 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 27 | 29 | 28 | 30 | 17 | Light| 73 | 15 |
+|Diminutive | 27 | 49 | 48 | 50 | 37 | Light| 53 | 20 |
+|Tiny | 27 | 59 | 58 | 60 | 47 | Light| 43 | 31 |
+|Small | 27 | 64 | 63 | 65 | 52 | Light| 38 | 43 |
+|Medium | 27 | 69 | 68 | 70 | 57 | Light| 33 | 62 |
+|Large | 27 | 74 | 73 | 75 | 62 | Light| 28 | 93 |
+|Huge | 27 | 79 | 78 | 80 | 67 | Light| 23 | 124 |
+|Gargantuan | 27 | 89 | 88 | 90 | 77 | Light| 13 | 187 |
+|Colossal | 27 | 109 | 108 | 110 | 97 | Light| -7 | 249 |
+|Titanic | 27 | 149 | 148 | 150 | 137 | Light| -47 | 374 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 54 | 47 | 39 | 18 | Light| 75 | 15 |
+|Diminutive | 28 | 74 | 67 | 59 | 38 | Light| 55 | 20 |
+|Tiny | 28 | 84 | 77 | 69 | 48 | Light| 45 | 31 |
+|Small | 28 | 89 | 82 | 74 | 53 | Light| 40 | 44 |
+|Medium | 28 | 94 | 87 | 79 | 58 | Light| 35 | 63 |
+|Large | 28 | 99 | 92 | 84 | 63 | Light| 30 | 94 |
+|Huge | 28 | 104 | 97 | 89 | 68 | Light| 25 | 126 |
+|Gargantuan | 28 | 114 | 107 | 99 | 78 | Light| 15 | 189 |
+|Colossal | 28 | 134 | 127 | 119 | 98 | Light| -5 | 252 |
+|Titanic | 28 | 174 | 167 | 159 | 138 | Light| -45 | 379 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 26 | 22 | 6 | Light| 75 | 15 |
+|Diminutive | 28 | 50 | 46 | 42 | 26 | Light| 55 | 20 |
+|Tiny | 28 | 60 | 56 | 52 | 36 | Light| 45 | 31 |
+|Small | 28 | 65 | 61 | 57 | 41 | Light| 40 | 44 |
+|Medium | 28 | 70 | 66 | 62 | 46 | Light| 35 | 63 |
+|Large | 28 | 75 | 71 | 67 | 51 | Light| 30 | 94 |
+|Huge | 28 | 80 | 76 | 72 | 56 | Light| 25 | 126 |
+|Gargantuan | 28 | 90 | 86 | 82 | 66 | Light| 15 | 189 |
+|Colossal | 28 | 110 | 106 | 102 | 86 | Light| -5 | 252 |
+|Titanic | 28 | 150 | 146 | 142 | 126 | Light| -45 | 379 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 69 | 54 | 47 | 39 | Medium| 40 | 19 |
+|Diminutive | 28 | 89 | 74 | 67 | 59 | Medium| 20 | 26 |
+|Tiny | 28 | 99 | 84 | 77 | 69 | Medium| 10 | 39 |
+|Small | 28 | 104 | 89 | 82 | 74 | Medium| 5 | 55 |
+|Medium | 28 | 109 | 94 | 87 | 79 | Medium| 0 | 79 |
+|Large | 28 | 114 | 99 | 92 | 84 | Medium| -5 | 118 |
+|Huge | 28 | 119 | 104 | 97 | 89 | Medium| -10 | 158 |
+|Gargantuan | 28 | 129 | 114 | 107 | 99 | Medium| -20 | 237 |
+|Colossal | 28 | 149 | 134 | 127 | 119 | Medium| -40 | 316 |
+|Titanic | 28 | 189 | 174 | 167 | 159 | Medium| -80 | 474 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 69 | 54 | 47 | 39 | Heavy| 75 | 43 |
+|Diminutive | 28 | 89 | 74 | 67 | 59 | Heavy| 55 | 57 |
+|Tiny | 28 | 99 | 84 | 77 | 69 | Heavy| 45 | 87 |
+|Small | 28 | 104 | 89 | 82 | 74 | Heavy| 40 | 121 |
+|Medium | 28 | 109 | 94 | 87 | 79 | Heavy| 35 | 174 |
+|Large | 28 | 114 | 99 | 92 | 84 | Heavy| 30 | 261 |
+|Huge | 28 | 119 | 104 | 97 | 89 | Heavy| 25 | 348 |
+|Gargantuan | 28 | 129 | 114 | 107 | 99 | Heavy| 15 | 522 |
+|Colossal | 28 | 149 | 134 | 127 | 119 | Heavy| -5 | 696 |
+|Titanic | 28 | 189 | 174 | 167 | 159 | Heavy| -45 | 1044 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 3 | 3 | -5 | -17 | No Armor| 75 | 11 |
+|Diminutive | 28 | 23 | 23 | 14 | 2 | No Armor| 55 | 15 |
+|Tiny | 28 | 33 | 33 | 24 | 12 | No Armor| 45 | 23 |
+|Small | 28 | 38 | 38 | 29 | 17 | No Armor| 40 | 33 |
+|Medium | 28 | 43 | 43 | 34 | 22 | No Armor| 35 | 47 |
+|Large | 28 | 48 | 48 | 39 | 27 | No Armor| 30 | 71 |
+|Huge | 28 | 53 | 53 | 44 | 32 | No Armor| 25 | 94 |
+|Gargantuan | 28 | 63 | 63 | 54 | 42 | No Armor| 15 | 142 |
+|Colossal | 28 | 83 | 83 | 74 | 62 | No Armor| -5 | 189 |
+|Titanic | 28 | 123 | 123 | 114 | 102 | No Armor| -45 | 284 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 29 | 31 | 18 | No Armor| 57 | 15 |
+|Diminutive | 28 | 50 | 49 | 51 | 38 | No Armor| 37 | 20 |
+|Tiny | 28 | 60 | 59 | 61 | 48 | No Armor| 27 | 31 |
+|Small | 28 | 65 | 64 | 66 | 53 | No Armor| 22 | 44 |
+|Medium | 28 | 70 | 69 | 71 | 58 | No Armor| 17 | 63 |
+|Large | 28 | 75 | 74 | 76 | 63 | No Armor| 12 | 94 |
+|Huge | 28 | 80 | 79 | 81 | 68 | No Armor| 7 | 126 |
+|Gargantuan | 28 | 90 | 89 | 91 | 78 | No Armor| -3 | 189 |
+|Colossal | 28 | 110 | 109 | 111 | 98 | No Armor| -23 | 252 |
+|Titanic | 28 | 150 | 149 | 151 | 138 | No Armor| -63 | 379 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 69 | 54 | 47 | 39 | Medium| 75 | 19 |
+|Diminutive | 28 | 89 | 74 | 67 | 59 | Medium| 55 | 26 |
+|Tiny | 28 | 99 | 84 | 77 | 69 | Medium| 45 | 39 |
+|Small | 28 | 104 | 89 | 82 | 74 | Medium| 40 | 55 |
+|Medium | 28 | 109 | 94 | 87 | 79 | Medium| 35 | 79 |
+|Large | 28 | 114 | 99 | 92 | 84 | Medium| 30 | 118 |
+|Huge | 28 | 119 | 104 | 97 | 89 | Medium| 25 | 158 |
+|Gargantuan | 28 | 129 | 114 | 107 | 99 | Medium| 15 | 237 |
+|Colossal | 28 | 149 | 134 | 127 | 119 | Medium| -5 | 316 |
+|Titanic | 28 | 189 | 174 | 167 | 159 | Medium| -45 | 474 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 69 | 54 | 47 | 39 | No Armor| 75 | 19 |
+|Diminutive | 28 | 89 | 74 | 67 | 59 | No Armor| 55 | 26 |
+|Tiny | 28 | 99 | 84 | 77 | 69 | No Armor| 45 | 39 |
+|Small | 28 | 104 | 89 | 82 | 74 | No Armor| 40 | 55 |
+|Medium | 28 | 109 | 94 | 87 | 79 | No Armor| 35 | 79 |
+|Large | 28 | 114 | 99 | 92 | 84 | No Armor| 30 | 118 |
+|Huge | 28 | 119 | 104 | 97 | 89 | No Armor| 25 | 158 |
+|Gargantuan | 28 | 129 | 114 | 107 | 99 | No Armor| 15 | 237 |
+|Colossal | 28 | 149 | 134 | 127 | 119 | No Armor| -5 | 316 |
+|Titanic | 28 | 189 | 174 | 167 | 159 | No Armor| -45 | 474 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 29 | 31 | 18 | No Armor| 75 | 15 |
+|Diminutive | 28 | 50 | 49 | 51 | 38 | No Armor| 55 | 20 |
+|Tiny | 28 | 60 | 59 | 61 | 48 | No Armor| 45 | 31 |
+|Small | 28 | 65 | 64 | 66 | 53 | No Armor| 40 | 44 |
+|Medium | 28 | 70 | 69 | 71 | 58 | No Armor| 35 | 63 |
+|Large | 28 | 75 | 74 | 76 | 63 | No Armor| 30 | 94 |
+|Huge | 28 | 80 | 79 | 81 | 68 | No Armor| 25 | 126 |
+|Gargantuan | 28 | 90 | 89 | 91 | 78 | No Armor| 15 | 189 |
+|Colossal | 28 | 110 | 109 | 111 | 98 | No Armor| -5 | 252 |
+|Titanic | 28 | 150 | 149 | 151 | 138 | No Armor| -45 | 379 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 69 | 54 | 47 | 39 | No Armor| 75 | 19 |
+|Diminutive | 28 | 89 | 74 | 67 | 59 | No Armor| 55 | 26 |
+|Tiny | 28 | 99 | 84 | 77 | 69 | No Armor| 45 | 39 |
+|Small | 28 | 104 | 89 | 82 | 74 | No Armor| 40 | 55 |
+|Medium | 28 | 109 | 94 | 87 | 79 | No Armor| 35 | 79 |
+|Large | 28 | 114 | 99 | 92 | 84 | No Armor| 30 | 118 |
+|Huge | 28 | 119 | 104 | 97 | 89 | No Armor| 25 | 158 |
+|Gargantuan | 28 | 129 | 114 | 107 | 99 | No Armor| 15 | 237 |
+|Colossal | 28 | 149 | 134 | 127 | 119 | No Armor| -5 | 316 |
+|Titanic | 28 | 189 | 174 | 167 | 159 | No Armor| -45 | 474 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 29 | 31 | 18 | No Armor| 75 | 15 |
+|Diminutive | 28 | 50 | 49 | 51 | 38 | No Armor| 55 | 20 |
+|Tiny | 28 | 60 | 59 | 61 | 48 | No Armor| 45 | 31 |
+|Small | 28 | 65 | 64 | 66 | 53 | No Armor| 40 | 44 |
+|Medium | 28 | 70 | 69 | 71 | 58 | No Armor| 35 | 63 |
+|Large | 28 | 75 | 74 | 76 | 63 | No Armor| 30 | 94 |
+|Huge | 28 | 80 | 79 | 81 | 68 | No Armor| 25 | 126 |
+|Gargantuan | 28 | 90 | 89 | 91 | 78 | No Armor| 15 | 189 |
+|Colossal | 28 | 110 | 109 | 111 | 98 | No Armor| -5 | 252 |
+|Titanic | 28 | 150 | 149 | 151 | 138 | No Armor| -45 | 379 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 29 | 31 | 18 | No Armor| 75 | 15 |
+|Diminutive | 28 | 50 | 49 | 51 | 38 | No Armor| 55 | 20 |
+|Tiny | 28 | 60 | 59 | 61 | 48 | No Armor| 45 | 31 |
+|Small | 28 | 65 | 64 | 66 | 53 | No Armor| 40 | 44 |
+|Medium | 28 | 70 | 69 | 71 | 58 | No Armor| 35 | 63 |
+|Large | 28 | 75 | 74 | 76 | 63 | No Armor| 30 | 94 |
+|Huge | 28 | 80 | 79 | 81 | 68 | No Armor| 25 | 126 |
+|Gargantuan | 28 | 90 | 89 | 91 | 78 | No Armor| 15 | 189 |
+|Colossal | 28 | 110 | 109 | 111 | 98 | No Armor| -5 | 252 |
+|Titanic | 28 | 150 | 149 | 151 | 138 | No Armor| -45 | 379 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 28 | 30 | 29 | 31 | 18 | Light| 75 | 15 |
+|Diminutive | 28 | 50 | 49 | 51 | 38 | Light| 55 | 20 |
+|Tiny | 28 | 60 | 59 | 61 | 48 | Light| 45 | 31 |
+|Small | 28 | 65 | 64 | 66 | 53 | Light| 40 | 44 |
+|Medium | 28 | 70 | 69 | 71 | 58 | Light| 35 | 63 |
+|Large | 28 | 75 | 74 | 76 | 63 | Light| 30 | 94 |
+|Huge | 28 | 80 | 79 | 81 | 68 | Light| 25 | 126 |
+|Gargantuan | 28 | 90 | 89 | 91 | 78 | Light| 15 | 189 |
+|Colossal | 28 | 110 | 109 | 111 | 98 | Light| -5 | 252 |
+|Titanic | 28 | 150 | 149 | 151 | 138 | Light| -45 | 379 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 55 | 47 | 40 | 19 | Light| 76 | 16 |
+|Diminutive | 29 | 75 | 67 | 60 | 39 | Light| 56 | 21 |
+|Tiny | 29 | 85 | 77 | 70 | 49 | Light| 46 | 32 |
+|Small | 29 | 90 | 82 | 75 | 54 | Light| 41 | 44 |
+|Medium | 29 | 95 | 87 | 80 | 59 | Light| 36 | 64 |
+|Large | 29 | 100 | 92 | 85 | 64 | Light| 31 | 96 |
+|Huge | 29 | 105 | 97 | 90 | 69 | Light| 26 | 128 |
+|Gargantuan | 29 | 115 | 107 | 100 | 79 | Light| 16 | 192 |
+|Colossal | 29 | 135 | 127 | 120 | 99 | Light| -4 | 256 |
+|Titanic | 29 | 175 | 167 | 160 | 139 | Light| -44 | 384 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 26 | 23 | 7 | Light| 76 | 16 |
+|Diminutive | 29 | 51 | 46 | 43 | 27 | Light| 56 | 21 |
+|Tiny | 29 | 61 | 56 | 53 | 37 | Light| 46 | 32 |
+|Small | 29 | 66 | 61 | 58 | 42 | Light| 41 | 44 |
+|Medium | 29 | 71 | 66 | 63 | 47 | Light| 36 | 64 |
+|Large | 29 | 76 | 71 | 68 | 52 | Light| 31 | 96 |
+|Huge | 29 | 81 | 76 | 73 | 57 | Light| 26 | 128 |
+|Gargantuan | 29 | 91 | 86 | 83 | 67 | Light| 16 | 192 |
+|Colossal | 29 | 111 | 106 | 103 | 87 | Light| -4 | 256 |
+|Titanic | 29 | 151 | 146 | 143 | 127 | Light| -44 | 384 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 70 | 55 | 47 | 40 | Medium| 40 | 20 |
+|Diminutive | 29 | 90 | 75 | 67 | 60 | Medium| 20 | 26 |
+|Tiny | 29 | 100 | 85 | 77 | 70 | Medium| 10 | 40 |
+|Small | 29 | 105 | 90 | 82 | 75 | Medium| 5 | 56 |
+|Medium | 29 | 110 | 95 | 87 | 80 | Medium| 0 | 80 |
+|Large | 29 | 115 | 100 | 92 | 85 | Medium| -5 | 120 |
+|Huge | 29 | 120 | 105 | 97 | 90 | Medium| -10 | 160 |
+|Gargantuan | 29 | 130 | 115 | 107 | 100 | Medium| -20 | 240 |
+|Colossal | 29 | 150 | 135 | 127 | 120 | Medium| -40 | 320 |
+|Titanic | 29 | 190 | 175 | 167 | 160 | Medium| -80 | 480 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 70 | 55 | 47 | 40 | Heavy| 76 | 43 |
+|Diminutive | 29 | 90 | 75 | 67 | 60 | Heavy| 56 | 57 |
+|Tiny | 29 | 100 | 85 | 77 | 70 | Heavy| 46 | 87 |
+|Small | 29 | 105 | 90 | 82 | 75 | Heavy| 41 | 121 |
+|Medium | 29 | 110 | 95 | 87 | 80 | Heavy| 36 | 174 |
+|Large | 29 | 115 | 100 | 92 | 85 | Heavy| 31 | 261 |
+|Huge | 29 | 120 | 105 | 97 | 90 | Heavy| 26 | 348 |
+|Gargantuan | 29 | 130 | 115 | 107 | 100 | Heavy| 16 | 522 |
+|Colossal | 29 | 150 | 135 | 127 | 120 | Heavy| -4 | 696 |
+|Titanic | 29 | 190 | 175 | 167 | 160 | Heavy| -44 | 1044 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 3 | 4 | -4 | -16 | No Armor| 76 | 12 |
+|Diminutive | 29 | 23 | 24 | 15 | 3 | No Armor| 56 | 15 |
+|Tiny | 29 | 33 | 34 | 25 | 13 | No Armor| 46 | 24 |
+|Small | 29 | 38 | 39 | 30 | 18 | No Armor| 41 | 33 |
+|Medium | 29 | 43 | 44 | 35 | 23 | No Armor| 36 | 48 |
+|Large | 29 | 48 | 49 | 40 | 28 | No Armor| 31 | 72 |
+|Huge | 29 | 53 | 54 | 45 | 33 | No Armor| 26 | 96 |
+|Gargantuan | 29 | 63 | 64 | 55 | 43 | No Armor| 16 | 144 |
+|Colossal | 29 | 83 | 84 | 75 | 63 | No Armor| -4 | 192 |
+|Titanic | 29 | 123 | 124 | 115 | 103 | No Armor| -44 | 288 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 29 | 32 | 19 | No Armor| 58 | 16 |
+|Diminutive | 29 | 51 | 49 | 52 | 39 | No Armor| 38 | 21 |
+|Tiny | 29 | 61 | 59 | 62 | 49 | No Armor| 28 | 32 |
+|Small | 29 | 66 | 64 | 67 | 54 | No Armor| 23 | 44 |
+|Medium | 29 | 71 | 69 | 72 | 59 | No Armor| 18 | 64 |
+|Large | 29 | 76 | 74 | 77 | 64 | No Armor| 13 | 96 |
+|Huge | 29 | 81 | 79 | 82 | 69 | No Armor| 8 | 128 |
+|Gargantuan | 29 | 91 | 89 | 92 | 79 | No Armor| -2 | 192 |
+|Colossal | 29 | 111 | 109 | 112 | 99 | No Armor| -22 | 256 |
+|Titanic | 29 | 151 | 149 | 152 | 139 | No Armor| -62 | 384 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 70 | 55 | 47 | 40 | Medium| 76 | 20 |
+|Diminutive | 29 | 90 | 75 | 67 | 60 | Medium| 56 | 26 |
+|Tiny | 29 | 100 | 85 | 77 | 70 | Medium| 46 | 40 |
+|Small | 29 | 105 | 90 | 82 | 75 | Medium| 41 | 56 |
+|Medium | 29 | 110 | 95 | 87 | 80 | Medium| 36 | 80 |
+|Large | 29 | 115 | 100 | 92 | 85 | Medium| 31 | 120 |
+|Huge | 29 | 120 | 105 | 97 | 90 | Medium| 26 | 160 |
+|Gargantuan | 29 | 130 | 115 | 107 | 100 | Medium| 16 | 240 |
+|Colossal | 29 | 150 | 135 | 127 | 120 | Medium| -4 | 320 |
+|Titanic | 29 | 190 | 175 | 167 | 160 | Medium| -44 | 480 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 70 | 55 | 47 | 40 | No Armor| 76 | 20 |
+|Diminutive | 29 | 90 | 75 | 67 | 60 | No Armor| 56 | 26 |
+|Tiny | 29 | 100 | 85 | 77 | 70 | No Armor| 46 | 40 |
+|Small | 29 | 105 | 90 | 82 | 75 | No Armor| 41 | 56 |
+|Medium | 29 | 110 | 95 | 87 | 80 | No Armor| 36 | 80 |
+|Large | 29 | 115 | 100 | 92 | 85 | No Armor| 31 | 120 |
+|Huge | 29 | 120 | 105 | 97 | 90 | No Armor| 26 | 160 |
+|Gargantuan | 29 | 130 | 115 | 107 | 100 | No Armor| 16 | 240 |
+|Colossal | 29 | 150 | 135 | 127 | 120 | No Armor| -4 | 320 |
+|Titanic | 29 | 190 | 175 | 167 | 160 | No Armor| -44 | 480 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 29 | 32 | 19 | No Armor| 76 | 16 |
+|Diminutive | 29 | 51 | 49 | 52 | 39 | No Armor| 56 | 21 |
+|Tiny | 29 | 61 | 59 | 62 | 49 | No Armor| 46 | 32 |
+|Small | 29 | 66 | 64 | 67 | 54 | No Armor| 41 | 44 |
+|Medium | 29 | 71 | 69 | 72 | 59 | No Armor| 36 | 64 |
+|Large | 29 | 76 | 74 | 77 | 64 | No Armor| 31 | 96 |
+|Huge | 29 | 81 | 79 | 82 | 69 | No Armor| 26 | 128 |
+|Gargantuan | 29 | 91 | 89 | 92 | 79 | No Armor| 16 | 192 |
+|Colossal | 29 | 111 | 109 | 112 | 99 | No Armor| -4 | 256 |
+|Titanic | 29 | 151 | 149 | 152 | 139 | No Armor| -44 | 384 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 70 | 55 | 47 | 40 | No Armor| 76 | 20 |
+|Diminutive | 29 | 90 | 75 | 67 | 60 | No Armor| 56 | 26 |
+|Tiny | 29 | 100 | 85 | 77 | 70 | No Armor| 46 | 40 |
+|Small | 29 | 105 | 90 | 82 | 75 | No Armor| 41 | 56 |
+|Medium | 29 | 110 | 95 | 87 | 80 | No Armor| 36 | 80 |
+|Large | 29 | 115 | 100 | 92 | 85 | No Armor| 31 | 120 |
+|Huge | 29 | 120 | 105 | 97 | 90 | No Armor| 26 | 160 |
+|Gargantuan | 29 | 130 | 115 | 107 | 100 | No Armor| 16 | 240 |
+|Colossal | 29 | 150 | 135 | 127 | 120 | No Armor| -4 | 320 |
+|Titanic | 29 | 190 | 175 | 167 | 160 | No Armor| -44 | 480 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 29 | 32 | 19 | No Armor| 76 | 16 |
+|Diminutive | 29 | 51 | 49 | 52 | 39 | No Armor| 56 | 21 |
+|Tiny | 29 | 61 | 59 | 62 | 49 | No Armor| 46 | 32 |
+|Small | 29 | 66 | 64 | 67 | 54 | No Armor| 41 | 44 |
+|Medium | 29 | 71 | 69 | 72 | 59 | No Armor| 36 | 64 |
+|Large | 29 | 76 | 74 | 77 | 64 | No Armor| 31 | 96 |
+|Huge | 29 | 81 | 79 | 82 | 69 | No Armor| 26 | 128 |
+|Gargantuan | 29 | 91 | 89 | 92 | 79 | No Armor| 16 | 192 |
+|Colossal | 29 | 111 | 109 | 112 | 99 | No Armor| -4 | 256 |
+|Titanic | 29 | 151 | 149 | 152 | 139 | No Armor| -44 | 384 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 29 | 32 | 19 | No Armor| 76 | 16 |
+|Diminutive | 29 | 51 | 49 | 52 | 39 | No Armor| 56 | 21 |
+|Tiny | 29 | 61 | 59 | 62 | 49 | No Armor| 46 | 32 |
+|Small | 29 | 66 | 64 | 67 | 54 | No Armor| 41 | 44 |
+|Medium | 29 | 71 | 69 | 72 | 59 | No Armor| 36 | 64 |
+|Large | 29 | 76 | 74 | 77 | 64 | No Armor| 31 | 96 |
+|Huge | 29 | 81 | 79 | 82 | 69 | No Armor| 26 | 128 |
+|Gargantuan | 29 | 91 | 89 | 92 | 79 | No Armor| 16 | 192 |
+|Colossal | 29 | 111 | 109 | 112 | 99 | No Armor| -4 | 256 |
+|Titanic | 29 | 151 | 149 | 152 | 139 | No Armor| -44 | 384 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 29 | 31 | 29 | 32 | 19 | Light| 76 | 16 |
+|Diminutive | 29 | 51 | 49 | 52 | 39 | Light| 56 | 21 |
+|Tiny | 29 | 61 | 59 | 62 | 49 | Light| 46 | 32 |
+|Small | 29 | 66 | 64 | 67 | 54 | Light| 41 | 44 |
+|Medium | 29 | 71 | 69 | 72 | 59 | Light| 36 | 64 |
+|Large | 29 | 76 | 74 | 77 | 64 | Light| 31 | 96 |
+|Huge | 29 | 81 | 79 | 82 | 69 | Light| 26 | 128 |
+|Gargantuan | 29 | 91 | 89 | 92 | 79 | Light| 16 | 192 |
+|Colossal | 29 | 111 | 109 | 112 | 99 | Light| -4 | 256 |
+|Titanic | 29 | 151 | 149 | 152 | 139 | Light| -44 | 384 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 56 | 48 | 40 | 20 | Light| 77 | 16 |
+|Diminutive | 30 | 76 | 68 | 60 | 40 | Light| 57 | 21 |
+|Tiny | 30 | 86 | 78 | 70 | 50 | Light| 47 | 32 |
+|Small | 30 | 91 | 83 | 75 | 55 | Light| 42 | 44 |
+|Medium | 30 | 96 | 88 | 80 | 60 | Light| 37 | 64 |
+|Large | 30 | 101 | 93 | 85 | 65 | Light| 32 | 96 |
+|Huge | 30 | 106 | 98 | 90 | 70 | Light| 27 | 128 |
+|Gargantuan | 30 | 116 | 108 | 100 | 80 | Light| 17 | 192 |
+|Colossal | 30 | 136 | 128 | 120 | 100 | Light| -3 | 256 |
+|Titanic | 30 | 176 | 168 | 160 | 140 | Light| -43 | 384 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 27 | 23 | 8 | Light| 77 | 16 |
+|Diminutive | 30 | 52 | 47 | 43 | 28 | Light| 57 | 21 |
+|Tiny | 30 | 62 | 57 | 53 | 38 | Light| 47 | 32 |
+|Small | 30 | 67 | 62 | 58 | 43 | Light| 42 | 44 |
+|Medium | 30 | 72 | 67 | 63 | 48 | Light| 37 | 64 |
+|Large | 30 | 77 | 72 | 68 | 53 | Light| 32 | 96 |
+|Huge | 30 | 82 | 77 | 73 | 58 | Light| 27 | 128 |
+|Gargantuan | 30 | 92 | 87 | 83 | 68 | Light| 17 | 192 |
+|Colossal | 30 | 112 | 107 | 103 | 88 | Light| -3 | 256 |
+|Titanic | 30 | 152 | 147 | 143 | 128 | Light| -43 | 384 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 72 | 56 | 48 | 40 | Medium| 40 | 20 |
+|Diminutive | 30 | 92 | 76 | 68 | 60 | Medium| 20 | 26 |
+|Tiny | 30 | 102 | 86 | 78 | 70 | Medium| 10 | 40 |
+|Small | 30 | 107 | 91 | 83 | 75 | Medium| 5 | 56 |
+|Medium | 30 | 112 | 96 | 88 | 80 | Medium| 0 | 80 |
+|Large | 30 | 117 | 101 | 93 | 85 | Medium| -5 | 120 |
+|Huge | 30 | 122 | 106 | 98 | 90 | Medium| -10 | 160 |
+|Gargantuan | 30 | 132 | 116 | 108 | 100 | Medium| -20 | 240 |
+|Colossal | 30 | 152 | 136 | 128 | 120 | Medium| -40 | 320 |
+|Titanic | 30 | 192 | 176 | 168 | 160 | Medium| -80 | 480 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 72 | 56 | 48 | 40 | Heavy| 77 | 44 |
+|Diminutive | 30 | 92 | 76 | 68 | 60 | Heavy| 57 | 58 |
+|Tiny | 30 | 102 | 86 | 78 | 70 | Heavy| 47 | 88 |
+|Small | 30 | 107 | 91 | 83 | 75 | Heavy| 42 | 123 |
+|Medium | 30 | 112 | 96 | 88 | 80 | Heavy| 37 | 176 |
+|Large | 30 | 117 | 101 | 93 | 85 | Heavy| 32 | 264 |
+|Huge | 30 | 122 | 106 | 98 | 90 | Heavy| 27 | 352 |
+|Gargantuan | 30 | 132 | 116 | 108 | 100 | Heavy| 17 | 528 |
+|Colossal | 30 | 152 | 136 | 128 | 120 | Heavy| -3 | 704 |
+|Titanic | 30 | 192 | 176 | 168 | 160 | Heavy| -43 | 1056 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 4 | 4 | -4 | -15 | No Armor| 77 | 12 |
+|Diminutive | 30 | 24 | 24 | 16 | 4 | No Armor| 57 | 15 |
+|Tiny | 30 | 34 | 34 | 26 | 14 | No Armor| 47 | 24 |
+|Small | 30 | 39 | 39 | 31 | 19 | No Armor| 42 | 33 |
+|Medium | 30 | 44 | 44 | 36 | 24 | No Armor| 37 | 48 |
+|Large | 30 | 49 | 49 | 41 | 29 | No Armor| 32 | 72 |
+|Huge | 30 | 54 | 54 | 46 | 34 | No Armor| 27 | 96 |
+|Gargantuan | 30 | 64 | 64 | 56 | 44 | No Armor| 17 | 144 |
+|Colossal | 30 | 84 | 84 | 76 | 64 | No Armor| -3 | 192 |
+|Titanic | 30 | 124 | 124 | 116 | 104 | No Armor| -43 | 288 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 30 | 32 | 20 | No Armor| 58 | 16 |
+|Diminutive | 30 | 52 | 50 | 52 | 40 | No Armor| 38 | 21 |
+|Tiny | 30 | 62 | 60 | 62 | 50 | No Armor| 28 | 32 |
+|Small | 30 | 67 | 65 | 67 | 55 | No Armor| 23 | 44 |
+|Medium | 30 | 72 | 70 | 72 | 60 | No Armor| 18 | 64 |
+|Large | 30 | 77 | 75 | 77 | 65 | No Armor| 13 | 96 |
+|Huge | 30 | 82 | 80 | 82 | 70 | No Armor| 8 | 128 |
+|Gargantuan | 30 | 92 | 90 | 92 | 80 | No Armor| -2 | 192 |
+|Colossal | 30 | 112 | 110 | 112 | 100 | No Armor| -22 | 256 |
+|Titanic | 30 | 152 | 150 | 152 | 140 | No Armor| -62 | 384 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 72 | 56 | 48 | 40 | Medium| 77 | 20 |
+|Diminutive | 30 | 92 | 76 | 68 | 60 | Medium| 57 | 26 |
+|Tiny | 30 | 102 | 86 | 78 | 70 | Medium| 47 | 40 |
+|Small | 30 | 107 | 91 | 83 | 75 | Medium| 42 | 56 |
+|Medium | 30 | 112 | 96 | 88 | 80 | Medium| 37 | 80 |
+|Large | 30 | 117 | 101 | 93 | 85 | Medium| 32 | 120 |
+|Huge | 30 | 122 | 106 | 98 | 90 | Medium| 27 | 160 |
+|Gargantuan | 30 | 132 | 116 | 108 | 100 | Medium| 17 | 240 |
+|Colossal | 30 | 152 | 136 | 128 | 120 | Medium| -3 | 320 |
+|Titanic | 30 | 192 | 176 | 168 | 160 | Medium| -43 | 480 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 72 | 56 | 48 | 40 | No Armor| 77 | 20 |
+|Diminutive | 30 | 92 | 76 | 68 | 60 | No Armor| 57 | 26 |
+|Tiny | 30 | 102 | 86 | 78 | 70 | No Armor| 47 | 40 |
+|Small | 30 | 107 | 91 | 83 | 75 | No Armor| 42 | 56 |
+|Medium | 30 | 112 | 96 | 88 | 80 | No Armor| 37 | 80 |
+|Large | 30 | 117 | 101 | 93 | 85 | No Armor| 32 | 120 |
+|Huge | 30 | 122 | 106 | 98 | 90 | No Armor| 27 | 160 |
+|Gargantuan | 30 | 132 | 116 | 108 | 100 | No Armor| 17 | 240 |
+|Colossal | 30 | 152 | 136 | 128 | 120 | No Armor| -3 | 320 |
+|Titanic | 30 | 192 | 176 | 168 | 160 | No Armor| -43 | 480 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 30 | 32 | 20 | No Armor| 77 | 16 |
+|Diminutive | 30 | 52 | 50 | 52 | 40 | No Armor| 57 | 21 |
+|Tiny | 30 | 62 | 60 | 62 | 50 | No Armor| 47 | 32 |
+|Small | 30 | 67 | 65 | 67 | 55 | No Armor| 42 | 44 |
+|Medium | 30 | 72 | 70 | 72 | 60 | No Armor| 37 | 64 |
+|Large | 30 | 77 | 75 | 77 | 65 | No Armor| 32 | 96 |
+|Huge | 30 | 82 | 80 | 82 | 70 | No Armor| 27 | 128 |
+|Gargantuan | 30 | 92 | 90 | 92 | 80 | No Armor| 17 | 192 |
+|Colossal | 30 | 112 | 110 | 112 | 100 | No Armor| -3 | 256 |
+|Titanic | 30 | 152 | 150 | 152 | 140 | No Armor| -43 | 384 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 72 | 56 | 48 | 40 | No Armor| 77 | 20 |
+|Diminutive | 30 | 92 | 76 | 68 | 60 | No Armor| 57 | 26 |
+|Tiny | 30 | 102 | 86 | 78 | 70 | No Armor| 47 | 40 |
+|Small | 30 | 107 | 91 | 83 | 75 | No Armor| 42 | 56 |
+|Medium | 30 | 112 | 96 | 88 | 80 | No Armor| 37 | 80 |
+|Large | 30 | 117 | 101 | 93 | 85 | No Armor| 32 | 120 |
+|Huge | 30 | 122 | 106 | 98 | 90 | No Armor| 27 | 160 |
+|Gargantuan | 30 | 132 | 116 | 108 | 100 | No Armor| 17 | 240 |
+|Colossal | 30 | 152 | 136 | 128 | 120 | No Armor| -3 | 320 |
+|Titanic | 30 | 192 | 176 | 168 | 160 | No Armor| -43 | 480 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 30 | 32 | 20 | No Armor| 77 | 16 |
+|Diminutive | 30 | 52 | 50 | 52 | 40 | No Armor| 57 | 21 |
+|Tiny | 30 | 62 | 60 | 62 | 50 | No Armor| 47 | 32 |
+|Small | 30 | 67 | 65 | 67 | 55 | No Armor| 42 | 44 |
+|Medium | 30 | 72 | 70 | 72 | 60 | No Armor| 37 | 64 |
+|Large | 30 | 77 | 75 | 77 | 65 | No Armor| 32 | 96 |
+|Huge | 30 | 82 | 80 | 82 | 70 | No Armor| 27 | 128 |
+|Gargantuan | 30 | 92 | 90 | 92 | 80 | No Armor| 17 | 192 |
+|Colossal | 30 | 112 | 110 | 112 | 100 | No Armor| -3 | 256 |
+|Titanic | 30 | 152 | 150 | 152 | 140 | No Armor| -43 | 384 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 30 | 32 | 20 | No Armor| 77 | 16 |
+|Diminutive | 30 | 52 | 50 | 52 | 40 | No Armor| 57 | 21 |
+|Tiny | 30 | 62 | 60 | 62 | 50 | No Armor| 47 | 32 |
+|Small | 30 | 67 | 65 | 67 | 55 | No Armor| 42 | 44 |
+|Medium | 30 | 72 | 70 | 72 | 60 | No Armor| 37 | 64 |
+|Large | 30 | 77 | 75 | 77 | 65 | No Armor| 32 | 96 |
+|Huge | 30 | 82 | 80 | 82 | 70 | No Armor| 27 | 128 |
+|Gargantuan | 30 | 92 | 90 | 92 | 80 | No Armor| 17 | 192 |
+|Colossal | 30 | 112 | 110 | 112 | 100 | No Armor| -3 | 256 |
+|Titanic | 30 | 152 | 150 | 152 | 140 | No Armor| -43 | 384 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 30 | 32 | 30 | 32 | 20 | Light| 77 | 16 |
+|Diminutive | 30 | 52 | 50 | 52 | 40 | Light| 57 | 21 |
+|Tiny | 30 | 62 | 60 | 62 | 50 | Light| 47 | 32 |
+|Small | 30 | 67 | 65 | 67 | 55 | Light| 42 | 44 |
+|Medium | 30 | 72 | 70 | 72 | 60 | Light| 37 | 64 |
+|Large | 30 | 77 | 75 | 77 | 65 | Light| 32 | 96 |
+|Huge | 30 | 82 | 80 | 82 | 70 | Light| 27 | 128 |
+|Gargantuan | 30 | 92 | 90 | 92 | 80 | Light| 17 | 192 |
+|Colossal | 30 | 112 | 110 | 112 | 100 | Light| -3 | 256 |
+|Titanic | 30 | 152 | 150 | 152 | 140 | Light| -43 | 384 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 57 | 49 | 41 | 21 | Light| 78 | 16 |
+|Diminutive | 31 | 77 | 69 | 61 | 41 | Light| 58 | 21 |
+|Tiny | 31 | 87 | 79 | 71 | 51 | Light| 48 | 32 |
+|Small | 31 | 92 | 84 | 76 | 56 | Light| 43 | 45 |
+|Medium | 31 | 97 | 89 | 81 | 61 | Light| 38 | 64 |
+|Large | 31 | 102 | 94 | 86 | 66 | Light| 33 | 97 |
+|Huge | 31 | 107 | 99 | 91 | 71 | Light| 28 | 129 |
+|Gargantuan | 31 | 117 | 109 | 101 | 81 | Light| 18 | 194 |
+|Colossal | 31 | 137 | 129 | 121 | 101 | Light| -2 | 259 |
+|Titanic | 31 | 177 | 169 | 161 | 141 | Light| -42 | 388 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 28 | 23 | 9 | Light| 78 | 16 |
+|Diminutive | 31 | 52 | 48 | 43 | 29 | Light| 58 | 21 |
+|Tiny | 31 | 62 | 58 | 53 | 39 | Light| 48 | 32 |
+|Small | 31 | 67 | 63 | 58 | 44 | Light| 43 | 45 |
+|Medium | 31 | 72 | 68 | 63 | 49 | Light| 38 | 64 |
+|Large | 31 | 77 | 73 | 68 | 54 | Light| 33 | 97 |
+|Huge | 31 | 82 | 78 | 73 | 59 | Light| 28 | 129 |
+|Gargantuan | 31 | 92 | 88 | 83 | 69 | Light| 18 | 194 |
+|Colossal | 31 | 112 | 108 | 103 | 89 | Light| -2 | 259 |
+|Titanic | 31 | 152 | 148 | 143 | 129 | Light| -42 | 388 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 73 | 57 | 49 | 41 | Medium| 40 | 20 |
+|Diminutive | 31 | 93 | 77 | 69 | 61 | Medium| 20 | 26 |
+|Tiny | 31 | 103 | 87 | 79 | 71 | Medium| 10 | 40 |
+|Small | 31 | 108 | 92 | 84 | 76 | Medium| 5 | 56 |
+|Medium | 31 | 113 | 97 | 89 | 81 | Medium| 0 | 81 |
+|Large | 31 | 118 | 102 | 94 | 86 | Medium| -5 | 121 |
+|Huge | 31 | 123 | 107 | 99 | 91 | Medium| -10 | 162 |
+|Gargantuan | 31 | 133 | 117 | 109 | 101 | Medium| -20 | 243 |
+|Colossal | 31 | 153 | 137 | 129 | 121 | Medium| -40 | 324 |
+|Titanic | 31 | 193 | 177 | 169 | 161 | Medium| -80 | 486 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 73 | 57 | 49 | 41 | Heavy| 78 | 44 |
+|Diminutive | 31 | 93 | 77 | 69 | 61 | Heavy| 58 | 58 |
+|Tiny | 31 | 103 | 87 | 79 | 71 | Heavy| 48 | 89 |
+|Small | 31 | 108 | 92 | 84 | 76 | Heavy| 43 | 124 |
+|Medium | 31 | 113 | 97 | 89 | 81 | Heavy| 38 | 178 |
+|Large | 31 | 118 | 102 | 94 | 86 | Heavy| 33 | 267 |
+|Huge | 31 | 123 | 107 | 99 | 91 | Heavy| 28 | 356 |
+|Gargantuan | 31 | 133 | 117 | 109 | 101 | Heavy| 18 | 534 |
+|Colossal | 31 | 153 | 137 | 129 | 121 | Heavy| -2 | 712 |
+|Titanic | 31 | 193 | 177 | 169 | 161 | Heavy| -42 | 1068 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 4 | 4 | -3 | -15 | No Armor| 78 | 12 |
+|Diminutive | 31 | 24 | 24 | 16 | 4 | No Armor| 58 | 16 |
+|Tiny | 31 | 34 | 34 | 26 | 14 | No Armor| 48 | 24 |
+|Small | 31 | 39 | 39 | 31 | 19 | No Armor| 43 | 34 |
+|Medium | 31 | 44 | 44 | 36 | 24 | No Armor| 38 | 48 |
+|Large | 31 | 49 | 49 | 41 | 29 | No Armor| 33 | 72 |
+|Huge | 31 | 54 | 54 | 46 | 34 | No Armor| 28 | 97 |
+|Gargantuan | 31 | 64 | 64 | 56 | 44 | No Armor| 18 | 145 |
+|Colossal | 31 | 84 | 84 | 76 | 64 | No Armor| -2 | 194 |
+|Titanic | 31 | 124 | 124 | 116 | 104 | No Armor| -42 | 291 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 31 | 32 | 21 | No Armor| 59 | 16 |
+|Diminutive | 31 | 52 | 51 | 52 | 41 | No Armor| 39 | 21 |
+|Tiny | 31 | 62 | 61 | 62 | 51 | No Armor| 29 | 32 |
+|Small | 31 | 67 | 66 | 67 | 56 | No Armor| 24 | 45 |
+|Medium | 31 | 72 | 71 | 72 | 61 | No Armor| 19 | 64 |
+|Large | 31 | 77 | 76 | 77 | 66 | No Armor| 14 | 97 |
+|Huge | 31 | 82 | 81 | 82 | 71 | No Armor| 9 | 129 |
+|Gargantuan | 31 | 92 | 91 | 92 | 81 | No Armor| -1 | 194 |
+|Colossal | 31 | 112 | 111 | 112 | 101 | No Armor| -21 | 259 |
+|Titanic | 31 | 152 | 151 | 152 | 141 | No Armor| -61 | 388 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 73 | 57 | 49 | 41 | Medium| 78 | 20 |
+|Diminutive | 31 | 93 | 77 | 69 | 61 | Medium| 58 | 26 |
+|Tiny | 31 | 103 | 87 | 79 | 71 | Medium| 48 | 40 |
+|Small | 31 | 108 | 92 | 84 | 76 | Medium| 43 | 56 |
+|Medium | 31 | 113 | 97 | 89 | 81 | Medium| 38 | 81 |
+|Large | 31 | 118 | 102 | 94 | 86 | Medium| 33 | 121 |
+|Huge | 31 | 123 | 107 | 99 | 91 | Medium| 28 | 162 |
+|Gargantuan | 31 | 133 | 117 | 109 | 101 | Medium| 18 | 243 |
+|Colossal | 31 | 153 | 137 | 129 | 121 | Medium| -2 | 324 |
+|Titanic | 31 | 193 | 177 | 169 | 161 | Medium| -42 | 486 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 73 | 57 | 49 | 41 | No Armor| 78 | 20 |
+|Diminutive | 31 | 93 | 77 | 69 | 61 | No Armor| 58 | 26 |
+|Tiny | 31 | 103 | 87 | 79 | 71 | No Armor| 48 | 40 |
+|Small | 31 | 108 | 92 | 84 | 76 | No Armor| 43 | 56 |
+|Medium | 31 | 113 | 97 | 89 | 81 | No Armor| 38 | 81 |
+|Large | 31 | 118 | 102 | 94 | 86 | No Armor| 33 | 121 |
+|Huge | 31 | 123 | 107 | 99 | 91 | No Armor| 28 | 162 |
+|Gargantuan | 31 | 133 | 117 | 109 | 101 | No Armor| 18 | 243 |
+|Colossal | 31 | 153 | 137 | 129 | 121 | No Armor| -2 | 324 |
+|Titanic | 31 | 193 | 177 | 169 | 161 | No Armor| -42 | 486 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 31 | 32 | 21 | No Armor| 78 | 16 |
+|Diminutive | 31 | 52 | 51 | 52 | 41 | No Armor| 58 | 21 |
+|Tiny | 31 | 62 | 61 | 62 | 51 | No Armor| 48 | 32 |
+|Small | 31 | 67 | 66 | 67 | 56 | No Armor| 43 | 45 |
+|Medium | 31 | 72 | 71 | 72 | 61 | No Armor| 38 | 64 |
+|Large | 31 | 77 | 76 | 77 | 66 | No Armor| 33 | 97 |
+|Huge | 31 | 82 | 81 | 82 | 71 | No Armor| 28 | 129 |
+|Gargantuan | 31 | 92 | 91 | 92 | 81 | No Armor| 18 | 194 |
+|Colossal | 31 | 112 | 111 | 112 | 101 | No Armor| -2 | 259 |
+|Titanic | 31 | 152 | 151 | 152 | 141 | No Armor| -42 | 388 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 73 | 57 | 49 | 41 | No Armor| 78 | 20 |
+|Diminutive | 31 | 93 | 77 | 69 | 61 | No Armor| 58 | 26 |
+|Tiny | 31 | 103 | 87 | 79 | 71 | No Armor| 48 | 40 |
+|Small | 31 | 108 | 92 | 84 | 76 | No Armor| 43 | 56 |
+|Medium | 31 | 113 | 97 | 89 | 81 | No Armor| 38 | 81 |
+|Large | 31 | 118 | 102 | 94 | 86 | No Armor| 33 | 121 |
+|Huge | 31 | 123 | 107 | 99 | 91 | No Armor| 28 | 162 |
+|Gargantuan | 31 | 133 | 117 | 109 | 101 | No Armor| 18 | 243 |
+|Colossal | 31 | 153 | 137 | 129 | 121 | No Armor| -2 | 324 |
+|Titanic | 31 | 193 | 177 | 169 | 161 | No Armor| -42 | 486 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 31 | 32 | 21 | No Armor| 78 | 16 |
+|Diminutive | 31 | 52 | 51 | 52 | 41 | No Armor| 58 | 21 |
+|Tiny | 31 | 62 | 61 | 62 | 51 | No Armor| 48 | 32 |
+|Small | 31 | 67 | 66 | 67 | 56 | No Armor| 43 | 45 |
+|Medium | 31 | 72 | 71 | 72 | 61 | No Armor| 38 | 64 |
+|Large | 31 | 77 | 76 | 77 | 66 | No Armor| 33 | 97 |
+|Huge | 31 | 82 | 81 | 82 | 71 | No Armor| 28 | 129 |
+|Gargantuan | 31 | 92 | 91 | 92 | 81 | No Armor| 18 | 194 |
+|Colossal | 31 | 112 | 111 | 112 | 101 | No Armor| -2 | 259 |
+|Titanic | 31 | 152 | 151 | 152 | 141 | No Armor| -42 | 388 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 31 | 32 | 21 | No Armor| 78 | 16 |
+|Diminutive | 31 | 52 | 51 | 52 | 41 | No Armor| 58 | 21 |
+|Tiny | 31 | 62 | 61 | 62 | 51 | No Armor| 48 | 32 |
+|Small | 31 | 67 | 66 | 67 | 56 | No Armor| 43 | 45 |
+|Medium | 31 | 72 | 71 | 72 | 61 | No Armor| 38 | 64 |
+|Large | 31 | 77 | 76 | 77 | 66 | No Armor| 33 | 97 |
+|Huge | 31 | 82 | 81 | 82 | 71 | No Armor| 28 | 129 |
+|Gargantuan | 31 | 92 | 91 | 92 | 81 | No Armor| 18 | 194 |
+|Colossal | 31 | 112 | 111 | 112 | 101 | No Armor| -2 | 259 |
+|Titanic | 31 | 152 | 151 | 152 | 141 | No Armor| -42 | 388 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 31 | 32 | 31 | 32 | 21 | Light| 78 | 16 |
+|Diminutive | 31 | 52 | 51 | 52 | 41 | Light| 58 | 21 |
+|Tiny | 31 | 62 | 61 | 62 | 51 | Light| 48 | 32 |
+|Small | 31 | 67 | 66 | 67 | 56 | Light| 43 | 45 |
+|Medium | 31 | 72 | 71 | 72 | 61 | Light| 38 | 64 |
+|Large | 31 | 77 | 76 | 77 | 66 | Light| 33 | 97 |
+|Huge | 31 | 82 | 81 | 82 | 71 | Light| 28 | 129 |
+|Gargantuan | 31 | 92 | 91 | 92 | 81 | Light| 18 | 194 |
+|Colossal | 31 | 112 | 111 | 112 | 101 | Light| -2 | 259 |
+|Titanic | 31 | 152 | 151 | 152 | 141 | Light| -42 | 388 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 58 | 50 | 41 | 22 | Light| 80 | 16 |
+|Diminutive | 32 | 78 | 70 | 61 | 42 | Light| 60 | 21 |
+|Tiny | 32 | 88 | 80 | 71 | 52 | Light| 50 | 32 |
+|Small | 32 | 93 | 85 | 76 | 57 | Light| 45 | 45 |
+|Medium | 32 | 98 | 90 | 81 | 62 | Light| 40 | 64 |
+|Large | 32 | 103 | 95 | 86 | 67 | Light| 35 | 97 |
+|Huge | 32 | 108 | 100 | 91 | 72 | Light| 30 | 129 |
+|Gargantuan | 32 | 118 | 110 | 101 | 82 | Light| 20 | 194 |
+|Colossal | 32 | 138 | 130 | 121 | 102 | Light| 0 | 259 |
+|Titanic | 32 | 178 | 170 | 161 | 142 | Light| -40 | 388 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 29 | 23 | 10 | Light| 80 | 16 |
+|Diminutive | 32 | 53 | 49 | 43 | 30 | Light| 60 | 21 |
+|Tiny | 32 | 63 | 59 | 53 | 40 | Light| 50 | 32 |
+|Small | 32 | 68 | 64 | 58 | 45 | Light| 45 | 45 |
+|Medium | 32 | 73 | 69 | 63 | 50 | Light| 40 | 64 |
+|Large | 32 | 78 | 74 | 68 | 55 | Light| 35 | 97 |
+|Huge | 32 | 83 | 79 | 73 | 60 | Light| 30 | 129 |
+|Gargantuan | 32 | 93 | 89 | 83 | 70 | Light| 20 | 194 |
+|Colossal | 32 | 113 | 109 | 103 | 90 | Light| 0 | 259 |
+|Titanic | 32 | 153 | 149 | 143 | 130 | Light| -40 | 388 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 75 | 58 | 50 | 41 | Medium| 40 | 20 |
+|Diminutive | 32 | 95 | 78 | 70 | 61 | Medium| 20 | 26 |
+|Tiny | 32 | 105 | 88 | 80 | 71 | Medium| 10 | 40 |
+|Small | 32 | 110 | 93 | 85 | 76 | Medium| 5 | 56 |
+|Medium | 32 | 115 | 98 | 90 | 81 | Medium| 0 | 81 |
+|Large | 32 | 120 | 103 | 95 | 86 | Medium| -5 | 121 |
+|Huge | 32 | 125 | 108 | 100 | 91 | Medium| -10 | 162 |
+|Gargantuan | 32 | 135 | 118 | 110 | 101 | Medium| -20 | 243 |
+|Colossal | 32 | 155 | 138 | 130 | 121 | Medium| -40 | 324 |
+|Titanic | 32 | 195 | 178 | 170 | 161 | Medium| -80 | 486 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 75 | 58 | 50 | 41 | Heavy| 80 | 45 |
+|Diminutive | 32 | 95 | 78 | 70 | 61 | Heavy| 60 | 59 |
+|Tiny | 32 | 105 | 88 | 80 | 71 | Heavy| 50 | 90 |
+|Small | 32 | 110 | 93 | 85 | 76 | Heavy| 45 | 125 |
+|Medium | 32 | 115 | 98 | 90 | 81 | Heavy| 40 | 180 |
+|Large | 32 | 120 | 103 | 95 | 86 | Heavy| 35 | 270 |
+|Huge | 32 | 125 | 108 | 100 | 91 | Heavy| 30 | 360 |
+|Gargantuan | 32 | 135 | 118 | 110 | 101 | Heavy| 20 | 540 |
+|Colossal | 32 | 155 | 138 | 130 | 121 | Heavy| 0 | 720 |
+|Titanic | 32 | 195 | 178 | 170 | 161 | Heavy| -40 | 1080 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 5 | 4 | -2 | -14 | No Armor| 80 | 12 |
+|Diminutive | 32 | 25 | 24 | 17 | 6 | No Armor| 60 | 16 |
+|Tiny | 32 | 35 | 34 | 27 | 16 | No Armor| 50 | 24 |
+|Small | 32 | 40 | 39 | 32 | 21 | No Armor| 45 | 34 |
+|Medium | 32 | 45 | 44 | 37 | 26 | No Armor| 40 | 48 |
+|Large | 32 | 50 | 49 | 42 | 31 | No Armor| 35 | 72 |
+|Huge | 32 | 55 | 54 | 47 | 36 | No Armor| 30 | 97 |
+|Gargantuan | 32 | 65 | 64 | 57 | 46 | No Armor| 20 | 145 |
+|Colossal | 32 | 85 | 84 | 77 | 66 | No Armor| 0 | 194 |
+|Titanic | 32 | 125 | 124 | 117 | 106 | No Armor| -40 | 291 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 32 | 32 | 22 | No Armor| 60 | 16 |
+|Diminutive | 32 | 53 | 52 | 52 | 42 | No Armor| 40 | 21 |
+|Tiny | 32 | 63 | 62 | 62 | 52 | No Armor| 30 | 32 |
+|Small | 32 | 68 | 67 | 67 | 57 | No Armor| 25 | 45 |
+|Medium | 32 | 73 | 72 | 72 | 62 | No Armor| 20 | 64 |
+|Large | 32 | 78 | 77 | 77 | 67 | No Armor| 15 | 97 |
+|Huge | 32 | 83 | 82 | 82 | 72 | No Armor| 10 | 129 |
+|Gargantuan | 32 | 93 | 92 | 92 | 82 | No Armor| 0 | 194 |
+|Colossal | 32 | 113 | 112 | 112 | 102 | No Armor| -20 | 259 |
+|Titanic | 32 | 153 | 152 | 152 | 142 | No Armor| -60 | 388 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 75 | 58 | 50 | 41 | Medium| 80 | 20 |
+|Diminutive | 32 | 95 | 78 | 70 | 61 | Medium| 60 | 26 |
+|Tiny | 32 | 105 | 88 | 80 | 71 | Medium| 50 | 40 |
+|Small | 32 | 110 | 93 | 85 | 76 | Medium| 45 | 56 |
+|Medium | 32 | 115 | 98 | 90 | 81 | Medium| 40 | 81 |
+|Large | 32 | 120 | 103 | 95 | 86 | Medium| 35 | 121 |
+|Huge | 32 | 125 | 108 | 100 | 91 | Medium| 30 | 162 |
+|Gargantuan | 32 | 135 | 118 | 110 | 101 | Medium| 20 | 243 |
+|Colossal | 32 | 155 | 138 | 130 | 121 | Medium| 0 | 324 |
+|Titanic | 32 | 195 | 178 | 170 | 161 | Medium| -40 | 486 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 75 | 58 | 50 | 41 | No Armor| 80 | 20 |
+|Diminutive | 32 | 95 | 78 | 70 | 61 | No Armor| 60 | 26 |
+|Tiny | 32 | 105 | 88 | 80 | 71 | No Armor| 50 | 40 |
+|Small | 32 | 110 | 93 | 85 | 76 | No Armor| 45 | 56 |
+|Medium | 32 | 115 | 98 | 90 | 81 | No Armor| 40 | 81 |
+|Large | 32 | 120 | 103 | 95 | 86 | No Armor| 35 | 121 |
+|Huge | 32 | 125 | 108 | 100 | 91 | No Armor| 30 | 162 |
+|Gargantuan | 32 | 135 | 118 | 110 | 101 | No Armor| 20 | 243 |
+|Colossal | 32 | 155 | 138 | 130 | 121 | No Armor| 0 | 324 |
+|Titanic | 32 | 195 | 178 | 170 | 161 | No Armor| -40 | 486 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 32 | 32 | 22 | No Armor| 80 | 16 |
+|Diminutive | 32 | 53 | 52 | 52 | 42 | No Armor| 60 | 21 |
+|Tiny | 32 | 63 | 62 | 62 | 52 | No Armor| 50 | 32 |
+|Small | 32 | 68 | 67 | 67 | 57 | No Armor| 45 | 45 |
+|Medium | 32 | 73 | 72 | 72 | 62 | No Armor| 40 | 64 |
+|Large | 32 | 78 | 77 | 77 | 67 | No Armor| 35 | 97 |
+|Huge | 32 | 83 | 82 | 82 | 72 | No Armor| 30 | 129 |
+|Gargantuan | 32 | 93 | 92 | 92 | 82 | No Armor| 20 | 194 |
+|Colossal | 32 | 113 | 112 | 112 | 102 | No Armor| 0 | 259 |
+|Titanic | 32 | 153 | 152 | 152 | 142 | No Armor| -40 | 388 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 75 | 58 | 50 | 41 | No Armor| 80 | 20 |
+|Diminutive | 32 | 95 | 78 | 70 | 61 | No Armor| 60 | 26 |
+|Tiny | 32 | 105 | 88 | 80 | 71 | No Armor| 50 | 40 |
+|Small | 32 | 110 | 93 | 85 | 76 | No Armor| 45 | 56 |
+|Medium | 32 | 115 | 98 | 90 | 81 | No Armor| 40 | 81 |
+|Large | 32 | 120 | 103 | 95 | 86 | No Armor| 35 | 121 |
+|Huge | 32 | 125 | 108 | 100 | 91 | No Armor| 30 | 162 |
+|Gargantuan | 32 | 135 | 118 | 110 | 101 | No Armor| 20 | 243 |
+|Colossal | 32 | 155 | 138 | 130 | 121 | No Armor| 0 | 324 |
+|Titanic | 32 | 195 | 178 | 170 | 161 | No Armor| -40 | 486 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 32 | 32 | 22 | No Armor| 80 | 16 |
+|Diminutive | 32 | 53 | 52 | 52 | 42 | No Armor| 60 | 21 |
+|Tiny | 32 | 63 | 62 | 62 | 52 | No Armor| 50 | 32 |
+|Small | 32 | 68 | 67 | 67 | 57 | No Armor| 45 | 45 |
+|Medium | 32 | 73 | 72 | 72 | 62 | No Armor| 40 | 64 |
+|Large | 32 | 78 | 77 | 77 | 67 | No Armor| 35 | 97 |
+|Huge | 32 | 83 | 82 | 82 | 72 | No Armor| 30 | 129 |
+|Gargantuan | 32 | 93 | 92 | 92 | 82 | No Armor| 20 | 194 |
+|Colossal | 32 | 113 | 112 | 112 | 102 | No Armor| 0 | 259 |
+|Titanic | 32 | 153 | 152 | 152 | 142 | No Armor| -40 | 388 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 32 | 32 | 22 | No Armor| 80 | 16 |
+|Diminutive | 32 | 53 | 52 | 52 | 42 | No Armor| 60 | 21 |
+|Tiny | 32 | 63 | 62 | 62 | 52 | No Armor| 50 | 32 |
+|Small | 32 | 68 | 67 | 67 | 57 | No Armor| 45 | 45 |
+|Medium | 32 | 73 | 72 | 72 | 62 | No Armor| 40 | 64 |
+|Large | 32 | 78 | 77 | 77 | 67 | No Armor| 35 | 97 |
+|Huge | 32 | 83 | 82 | 82 | 72 | No Armor| 30 | 129 |
+|Gargantuan | 32 | 93 | 92 | 92 | 82 | No Armor| 20 | 194 |
+|Colossal | 32 | 113 | 112 | 112 | 102 | No Armor| 0 | 259 |
+|Titanic | 32 | 153 | 152 | 152 | 142 | No Armor| -40 | 388 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 32 | 33 | 32 | 32 | 22 | Light| 80 | 16 |
+|Diminutive | 32 | 53 | 52 | 52 | 42 | Light| 60 | 21 |
+|Tiny | 32 | 63 | 62 | 62 | 52 | Light| 50 | 32 |
+|Small | 32 | 68 | 67 | 67 | 57 | Light| 45 | 45 |
+|Medium | 32 | 73 | 72 | 72 | 62 | Light| 40 | 64 |
+|Large | 32 | 78 | 77 | 77 | 67 | Light| 35 | 97 |
+|Huge | 32 | 83 | 82 | 82 | 72 | Light| 30 | 129 |
+|Gargantuan | 32 | 93 | 92 | 92 | 82 | Light| 20 | 194 |
+|Colossal | 32 | 113 | 112 | 112 | 102 | Light| 0 | 259 |
+|Titanic | 32 | 153 | 152 | 152 | 142 | Light| -40 | 388 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 59 | 50 | 42 | 23 | Light| 81 | 16 |
+|Diminutive | 33 | 79 | 70 | 62 | 43 | Light| 61 | 21 |
+|Tiny | 33 | 89 | 80 | 72 | 53 | Light| 51 | 32 |
+|Small | 33 | 94 | 85 | 77 | 58 | Light| 46 | 45 |
+|Medium | 33 | 99 | 90 | 82 | 63 | Light| 41 | 65 |
+|Large | 33 | 104 | 95 | 87 | 68 | Light| 36 | 98 |
+|Huge | 33 | 109 | 100 | 92 | 73 | Light| 31 | 131 |
+|Gargantuan | 33 | 119 | 110 | 102 | 83 | Light| 21 | 196 |
+|Colossal | 33 | 139 | 130 | 122 | 103 | Light| 1 | 262 |
+|Titanic | 33 | 179 | 170 | 162 | 143 | Light| -39 | 393 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 29 | 24 | 11 | Light| 81 | 16 |
+|Diminutive | 33 | 54 | 49 | 44 | 31 | Light| 61 | 21 |
+|Tiny | 33 | 64 | 59 | 54 | 41 | Light| 51 | 32 |
+|Small | 33 | 69 | 64 | 59 | 46 | Light| 46 | 45 |
+|Medium | 33 | 74 | 69 | 64 | 51 | Light| 41 | 65 |
+|Large | 33 | 79 | 74 | 69 | 56 | Light| 36 | 98 |
+|Huge | 33 | 84 | 79 | 74 | 61 | Light| 31 | 131 |
+|Gargantuan | 33 | 94 | 89 | 84 | 71 | Light| 21 | 196 |
+|Colossal | 33 | 114 | 109 | 104 | 91 | Light| 1 | 262 |
+|Titanic | 33 | 154 | 149 | 144 | 131 | Light| -39 | 393 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 76 | 59 | 50 | 42 | Medium| 40 | 20 |
+|Diminutive | 33 | 96 | 79 | 70 | 62 | Medium| 20 | 27 |
+|Tiny | 33 | 106 | 89 | 80 | 72 | Medium| 10 | 41 |
+|Small | 33 | 111 | 94 | 85 | 77 | Medium| 5 | 57 |
+|Medium | 33 | 116 | 99 | 90 | 82 | Medium| 0 | 82 |
+|Large | 33 | 121 | 104 | 95 | 87 | Medium| -5 | 123 |
+|Huge | 33 | 126 | 109 | 100 | 92 | Medium| -10 | 164 |
+|Gargantuan | 33 | 136 | 119 | 110 | 102 | Medium| -20 | 246 |
+|Colossal | 33 | 156 | 139 | 130 | 122 | Medium| -40 | 328 |
+|Titanic | 33 | 196 | 179 | 170 | 162 | Medium| -80 | 492 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 76 | 59 | 50 | 42 | Heavy| 81 | 45 |
+|Diminutive | 33 | 96 | 79 | 70 | 62 | Heavy| 61 | 59 |
+|Tiny | 33 | 106 | 89 | 80 | 72 | Heavy| 51 | 90 |
+|Small | 33 | 111 | 94 | 85 | 77 | Heavy| 46 | 125 |
+|Medium | 33 | 116 | 99 | 90 | 82 | Heavy| 41 | 180 |
+|Large | 33 | 121 | 104 | 95 | 87 | Heavy| 36 | 270 |
+|Huge | 33 | 126 | 109 | 100 | 92 | Heavy| 31 | 360 |
+|Gargantuan | 33 | 136 | 119 | 110 | 102 | Heavy| 21 | 540 |
+|Colossal | 33 | 156 | 139 | 130 | 122 | Heavy| 1 | 720 |
+|Titanic | 33 | 196 | 179 | 170 | 162 | Heavy| -39 | 1080 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 5 | 5 | -2 | -13 | No Armor| 81 | 12 |
+|Diminutive | 33 | 25 | 25 | 17 | 6 | No Armor| 61 | 16 |
+|Tiny | 33 | 35 | 35 | 27 | 16 | No Armor| 51 | 24 |
+|Small | 33 | 40 | 40 | 32 | 21 | No Armor| 46 | 34 |
+|Medium | 33 | 45 | 45 | 37 | 26 | No Armor| 41 | 49 |
+|Large | 33 | 50 | 50 | 42 | 31 | No Armor| 36 | 73 |
+|Huge | 33 | 55 | 55 | 47 | 36 | No Armor| 31 | 98 |
+|Gargantuan | 33 | 65 | 65 | 57 | 46 | No Armor| 21 | 147 |
+|Colossal | 33 | 85 | 85 | 77 | 66 | No Armor| 1 | 196 |
+|Titanic | 33 | 125 | 125 | 117 | 106 | No Armor| -39 | 295 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 32 | 33 | 23 | No Armor| 60 | 16 |
+|Diminutive | 33 | 54 | 52 | 53 | 43 | No Armor| 40 | 21 |
+|Tiny | 33 | 64 | 62 | 63 | 53 | No Armor| 30 | 32 |
+|Small | 33 | 69 | 67 | 68 | 58 | No Armor| 25 | 45 |
+|Medium | 33 | 74 | 72 | 73 | 63 | No Armor| 20 | 65 |
+|Large | 33 | 79 | 77 | 78 | 68 | No Armor| 15 | 98 |
+|Huge | 33 | 84 | 82 | 83 | 73 | No Armor| 10 | 131 |
+|Gargantuan | 33 | 94 | 92 | 93 | 83 | No Armor| 0 | 196 |
+|Colossal | 33 | 114 | 112 | 113 | 103 | No Armor| -20 | 262 |
+|Titanic | 33 | 154 | 152 | 153 | 143 | No Armor| -60 | 393 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 76 | 59 | 50 | 42 | Medium| 81 | 20 |
+|Diminutive | 33 | 96 | 79 | 70 | 62 | Medium| 61 | 27 |
+|Tiny | 33 | 106 | 89 | 80 | 72 | Medium| 51 | 41 |
+|Small | 33 | 111 | 94 | 85 | 77 | Medium| 46 | 57 |
+|Medium | 33 | 116 | 99 | 90 | 82 | Medium| 41 | 82 |
+|Large | 33 | 121 | 104 | 95 | 87 | Medium| 36 | 123 |
+|Huge | 33 | 126 | 109 | 100 | 92 | Medium| 31 | 164 |
+|Gargantuan | 33 | 136 | 119 | 110 | 102 | Medium| 21 | 246 |
+|Colossal | 33 | 156 | 139 | 130 | 122 | Medium| 1 | 328 |
+|Titanic | 33 | 196 | 179 | 170 | 162 | Medium| -39 | 492 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 76 | 59 | 50 | 42 | No Armor| 81 | 20 |
+|Diminutive | 33 | 96 | 79 | 70 | 62 | No Armor| 61 | 27 |
+|Tiny | 33 | 106 | 89 | 80 | 72 | No Armor| 51 | 41 |
+|Small | 33 | 111 | 94 | 85 | 77 | No Armor| 46 | 57 |
+|Medium | 33 | 116 | 99 | 90 | 82 | No Armor| 41 | 82 |
+|Large | 33 | 121 | 104 | 95 | 87 | No Armor| 36 | 123 |
+|Huge | 33 | 126 | 109 | 100 | 92 | No Armor| 31 | 164 |
+|Gargantuan | 33 | 136 | 119 | 110 | 102 | No Armor| 21 | 246 |
+|Colossal | 33 | 156 | 139 | 130 | 122 | No Armor| 1 | 328 |
+|Titanic | 33 | 196 | 179 | 170 | 162 | No Armor| -39 | 492 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 32 | 33 | 23 | No Armor| 81 | 16 |
+|Diminutive | 33 | 54 | 52 | 53 | 43 | No Armor| 61 | 21 |
+|Tiny | 33 | 64 | 62 | 63 | 53 | No Armor| 51 | 32 |
+|Small | 33 | 69 | 67 | 68 | 58 | No Armor| 46 | 45 |
+|Medium | 33 | 74 | 72 | 73 | 63 | No Armor| 41 | 65 |
+|Large | 33 | 79 | 77 | 78 | 68 | No Armor| 36 | 98 |
+|Huge | 33 | 84 | 82 | 83 | 73 | No Armor| 31 | 131 |
+|Gargantuan | 33 | 94 | 92 | 93 | 83 | No Armor| 21 | 196 |
+|Colossal | 33 | 114 | 112 | 113 | 103 | No Armor| 1 | 262 |
+|Titanic | 33 | 154 | 152 | 153 | 143 | No Armor| -39 | 393 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 76 | 59 | 50 | 42 | No Armor| 81 | 20 |
+|Diminutive | 33 | 96 | 79 | 70 | 62 | No Armor| 61 | 27 |
+|Tiny | 33 | 106 | 89 | 80 | 72 | No Armor| 51 | 41 |
+|Small | 33 | 111 | 94 | 85 | 77 | No Armor| 46 | 57 |
+|Medium | 33 | 116 | 99 | 90 | 82 | No Armor| 41 | 82 |
+|Large | 33 | 121 | 104 | 95 | 87 | No Armor| 36 | 123 |
+|Huge | 33 | 126 | 109 | 100 | 92 | No Armor| 31 | 164 |
+|Gargantuan | 33 | 136 | 119 | 110 | 102 | No Armor| 21 | 246 |
+|Colossal | 33 | 156 | 139 | 130 | 122 | No Armor| 1 | 328 |
+|Titanic | 33 | 196 | 179 | 170 | 162 | No Armor| -39 | 492 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 32 | 33 | 23 | No Armor| 81 | 16 |
+|Diminutive | 33 | 54 | 52 | 53 | 43 | No Armor| 61 | 21 |
+|Tiny | 33 | 64 | 62 | 63 | 53 | No Armor| 51 | 32 |
+|Small | 33 | 69 | 67 | 68 | 58 | No Armor| 46 | 45 |
+|Medium | 33 | 74 | 72 | 73 | 63 | No Armor| 41 | 65 |
+|Large | 33 | 79 | 77 | 78 | 68 | No Armor| 36 | 98 |
+|Huge | 33 | 84 | 82 | 83 | 73 | No Armor| 31 | 131 |
+|Gargantuan | 33 | 94 | 92 | 93 | 83 | No Armor| 21 | 196 |
+|Colossal | 33 | 114 | 112 | 113 | 103 | No Armor| 1 | 262 |
+|Titanic | 33 | 154 | 152 | 153 | 143 | No Armor| -39 | 393 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 32 | 33 | 23 | No Armor| 81 | 16 |
+|Diminutive | 33 | 54 | 52 | 53 | 43 | No Armor| 61 | 21 |
+|Tiny | 33 | 64 | 62 | 63 | 53 | No Armor| 51 | 32 |
+|Small | 33 | 69 | 67 | 68 | 58 | No Armor| 46 | 45 |
+|Medium | 33 | 74 | 72 | 73 | 63 | No Armor| 41 | 65 |
+|Large | 33 | 79 | 77 | 78 | 68 | No Armor| 36 | 98 |
+|Huge | 33 | 84 | 82 | 83 | 73 | No Armor| 31 | 131 |
+|Gargantuan | 33 | 94 | 92 | 93 | 83 | No Armor| 21 | 196 |
+|Colossal | 33 | 114 | 112 | 113 | 103 | No Armor| 1 | 262 |
+|Titanic | 33 | 154 | 152 | 153 | 143 | No Armor| -39 | 393 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 33 | 34 | 32 | 33 | 23 | Light| 81 | 16 |
+|Diminutive | 33 | 54 | 52 | 53 | 43 | Light| 61 | 21 |
+|Tiny | 33 | 64 | 62 | 63 | 53 | Light| 51 | 32 |
+|Small | 33 | 69 | 67 | 68 | 58 | Light| 46 | 45 |
+|Medium | 33 | 74 | 72 | 73 | 63 | Light| 41 | 65 |
+|Large | 33 | 79 | 77 | 78 | 68 | Light| 36 | 98 |
+|Huge | 33 | 84 | 82 | 83 | 73 | Light| 31 | 131 |
+|Gargantuan | 33 | 94 | 92 | 93 | 83 | Light| 21 | 196 |
+|Colossal | 33 | 114 | 112 | 113 | 103 | Light| 1 | 262 |
+|Titanic | 33 | 154 | 152 | 153 | 143 | Light| -39 | 393 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 60 | 51 | 42 | 24 | Light| 82 | 16 |
+|Diminutive | 34 | 80 | 71 | 62 | 44 | Light| 62 | 21 |
+|Tiny | 34 | 90 | 81 | 72 | 54 | Light| 52 | 32 |
+|Small | 34 | 95 | 86 | 77 | 59 | Light| 47 | 45 |
+|Medium | 34 | 100 | 91 | 82 | 64 | Light| 42 | 65 |
+|Large | 34 | 105 | 96 | 87 | 69 | Light| 37 | 98 |
+|Huge | 34 | 110 | 101 | 92 | 74 | Light| 32 | 131 |
+|Gargantuan | 34 | 120 | 111 | 102 | 84 | Light| 22 | 196 |
+|Colossal | 34 | 140 | 131 | 122 | 104 | Light| 2 | 262 |
+|Titanic | 34 | 180 | 171 | 162 | 144 | Light| -38 | 393 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 30 | 24 | 11 | Light| 82 | 16 |
+|Diminutive | 34 | 55 | 50 | 44 | 31 | Light| 62 | 21 |
+|Tiny | 34 | 65 | 60 | 54 | 41 | Light| 52 | 32 |
+|Small | 34 | 70 | 65 | 59 | 46 | Light| 47 | 45 |
+|Medium | 34 | 75 | 70 | 64 | 51 | Light| 42 | 65 |
+|Large | 34 | 80 | 75 | 69 | 56 | Light| 37 | 98 |
+|Huge | 34 | 85 | 80 | 74 | 61 | Light| 32 | 131 |
+|Gargantuan | 34 | 95 | 90 | 84 | 71 | Light| 22 | 196 |
+|Colossal | 34 | 115 | 110 | 104 | 91 | Light| 2 | 262 |
+|Titanic | 34 | 155 | 150 | 144 | 131 | Light| -38 | 393 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 78 | 60 | 51 | 42 | Medium| 40 | 20 |
+|Diminutive | 34 | 98 | 80 | 71 | 62 | Medium| 20 | 27 |
+|Tiny | 34 | 108 | 90 | 81 | 72 | Medium| 10 | 41 |
+|Small | 34 | 113 | 95 | 86 | 77 | Medium| 5 | 57 |
+|Medium | 34 | 118 | 100 | 91 | 82 | Medium| 0 | 82 |
+|Large | 34 | 123 | 105 | 96 | 87 | Medium| -5 | 123 |
+|Huge | 34 | 128 | 110 | 101 | 92 | Medium| -10 | 164 |
+|Gargantuan | 34 | 138 | 120 | 111 | 102 | Medium| -20 | 246 |
+|Colossal | 34 | 158 | 140 | 131 | 122 | Medium| -40 | 328 |
+|Titanic | 34 | 198 | 180 | 171 | 162 | Medium| -80 | 492 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 78 | 60 | 51 | 42 | Heavy| 82 | 45 |
+|Diminutive | 34 | 98 | 80 | 71 | 62 | Heavy| 62 | 60 |
+|Tiny | 34 | 108 | 90 | 81 | 72 | Heavy| 52 | 91 |
+|Small | 34 | 113 | 95 | 86 | 77 | Heavy| 47 | 127 |
+|Medium | 34 | 118 | 100 | 91 | 82 | Heavy| 42 | 182 |
+|Large | 34 | 123 | 105 | 96 | 87 | Heavy| 37 | 273 |
+|Huge | 34 | 128 | 110 | 101 | 92 | Heavy| 32 | 364 |
+|Gargantuan | 34 | 138 | 120 | 111 | 102 | Heavy| 22 | 546 |
+|Colossal | 34 | 158 | 140 | 131 | 122 | Heavy| 2 | 728 |
+|Titanic | 34 | 198 | 180 | 171 | 162 | Heavy| -38 | 1092 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 5 | 5 | -1 | -12 | No Armor| 82 | 12 |
+|Diminutive | 34 | 25 | 25 | 18 | 7 | No Armor| 62 | 16 |
+|Tiny | 34 | 35 | 35 | 28 | 17 | No Armor| 52 | 24 |
+|Small | 34 | 40 | 40 | 33 | 22 | No Armor| 47 | 34 |
+|Medium | 34 | 45 | 45 | 38 | 27 | No Armor| 42 | 49 |
+|Large | 34 | 50 | 50 | 43 | 32 | No Armor| 37 | 73 |
+|Huge | 34 | 55 | 55 | 48 | 37 | No Armor| 32 | 98 |
+|Gargantuan | 34 | 65 | 65 | 58 | 47 | No Armor| 22 | 147 |
+|Colossal | 34 | 85 | 85 | 78 | 67 | No Armor| 2 | 196 |
+|Titanic | 34 | 125 | 125 | 118 | 107 | No Armor| -38 | 295 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 32 | 33 | 24 | No Armor| 61 | 16 |
+|Diminutive | 34 | 55 | 52 | 53 | 44 | No Armor| 41 | 21 |
+|Tiny | 34 | 65 | 62 | 63 | 54 | No Armor| 31 | 32 |
+|Small | 34 | 70 | 67 | 68 | 59 | No Armor| 26 | 45 |
+|Medium | 34 | 75 | 72 | 73 | 64 | No Armor| 21 | 65 |
+|Large | 34 | 80 | 77 | 78 | 69 | No Armor| 16 | 98 |
+|Huge | 34 | 85 | 82 | 83 | 74 | No Armor| 11 | 131 |
+|Gargantuan | 34 | 95 | 92 | 93 | 84 | No Armor| 1 | 196 |
+|Colossal | 34 | 115 | 112 | 113 | 104 | No Armor| -19 | 262 |
+|Titanic | 34 | 155 | 152 | 153 | 144 | No Armor| -59 | 393 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 78 | 60 | 51 | 42 | Medium| 82 | 20 |
+|Diminutive | 34 | 98 | 80 | 71 | 62 | Medium| 62 | 27 |
+|Tiny | 34 | 108 | 90 | 81 | 72 | Medium| 52 | 41 |
+|Small | 34 | 113 | 95 | 86 | 77 | Medium| 47 | 57 |
+|Medium | 34 | 118 | 100 | 91 | 82 | Medium| 42 | 82 |
+|Large | 34 | 123 | 105 | 96 | 87 | Medium| 37 | 123 |
+|Huge | 34 | 128 | 110 | 101 | 92 | Medium| 32 | 164 |
+|Gargantuan | 34 | 138 | 120 | 111 | 102 | Medium| 22 | 246 |
+|Colossal | 34 | 158 | 140 | 131 | 122 | Medium| 2 | 328 |
+|Titanic | 34 | 198 | 180 | 171 | 162 | Medium| -38 | 492 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 78 | 60 | 51 | 42 | No Armor| 82 | 20 |
+|Diminutive | 34 | 98 | 80 | 71 | 62 | No Armor| 62 | 27 |
+|Tiny | 34 | 108 | 90 | 81 | 72 | No Armor| 52 | 41 |
+|Small | 34 | 113 | 95 | 86 | 77 | No Armor| 47 | 57 |
+|Medium | 34 | 118 | 100 | 91 | 82 | No Armor| 42 | 82 |
+|Large | 34 | 123 | 105 | 96 | 87 | No Armor| 37 | 123 |
+|Huge | 34 | 128 | 110 | 101 | 92 | No Armor| 32 | 164 |
+|Gargantuan | 34 | 138 | 120 | 111 | 102 | No Armor| 22 | 246 |
+|Colossal | 34 | 158 | 140 | 131 | 122 | No Armor| 2 | 328 |
+|Titanic | 34 | 198 | 180 | 171 | 162 | No Armor| -38 | 492 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 32 | 33 | 24 | No Armor| 82 | 16 |
+|Diminutive | 34 | 55 | 52 | 53 | 44 | No Armor| 62 | 21 |
+|Tiny | 34 | 65 | 62 | 63 | 54 | No Armor| 52 | 32 |
+|Small | 34 | 70 | 67 | 68 | 59 | No Armor| 47 | 45 |
+|Medium | 34 | 75 | 72 | 73 | 64 | No Armor| 42 | 65 |
+|Large | 34 | 80 | 77 | 78 | 69 | No Armor| 37 | 98 |
+|Huge | 34 | 85 | 82 | 83 | 74 | No Armor| 32 | 131 |
+|Gargantuan | 34 | 95 | 92 | 93 | 84 | No Armor| 22 | 196 |
+|Colossal | 34 | 115 | 112 | 113 | 104 | No Armor| 2 | 262 |
+|Titanic | 34 | 155 | 152 | 153 | 144 | No Armor| -38 | 393 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 78 | 60 | 51 | 42 | No Armor| 82 | 20 |
+|Diminutive | 34 | 98 | 80 | 71 | 62 | No Armor| 62 | 27 |
+|Tiny | 34 | 108 | 90 | 81 | 72 | No Armor| 52 | 41 |
+|Small | 34 | 113 | 95 | 86 | 77 | No Armor| 47 | 57 |
+|Medium | 34 | 118 | 100 | 91 | 82 | No Armor| 42 | 82 |
+|Large | 34 | 123 | 105 | 96 | 87 | No Armor| 37 | 123 |
+|Huge | 34 | 128 | 110 | 101 | 92 | No Armor| 32 | 164 |
+|Gargantuan | 34 | 138 | 120 | 111 | 102 | No Armor| 22 | 246 |
+|Colossal | 34 | 158 | 140 | 131 | 122 | No Armor| 2 | 328 |
+|Titanic | 34 | 198 | 180 | 171 | 162 | No Armor| -38 | 492 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 32 | 33 | 24 | No Armor| 82 | 16 |
+|Diminutive | 34 | 55 | 52 | 53 | 44 | No Armor| 62 | 21 |
+|Tiny | 34 | 65 | 62 | 63 | 54 | No Armor| 52 | 32 |
+|Small | 34 | 70 | 67 | 68 | 59 | No Armor| 47 | 45 |
+|Medium | 34 | 75 | 72 | 73 | 64 | No Armor| 42 | 65 |
+|Large | 34 | 80 | 77 | 78 | 69 | No Armor| 37 | 98 |
+|Huge | 34 | 85 | 82 | 83 | 74 | No Armor| 32 | 131 |
+|Gargantuan | 34 | 95 | 92 | 93 | 84 | No Armor| 22 | 196 |
+|Colossal | 34 | 115 | 112 | 113 | 104 | No Armor| 2 | 262 |
+|Titanic | 34 | 155 | 152 | 153 | 144 | No Armor| -38 | 393 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 32 | 33 | 24 | No Armor| 82 | 16 |
+|Diminutive | 34 | 55 | 52 | 53 | 44 | No Armor| 62 | 21 |
+|Tiny | 34 | 65 | 62 | 63 | 54 | No Armor| 52 | 32 |
+|Small | 34 | 70 | 67 | 68 | 59 | No Armor| 47 | 45 |
+|Medium | 34 | 75 | 72 | 73 | 64 | No Armor| 42 | 65 |
+|Large | 34 | 80 | 77 | 78 | 69 | No Armor| 37 | 98 |
+|Huge | 34 | 85 | 82 | 83 | 74 | No Armor| 32 | 131 |
+|Gargantuan | 34 | 95 | 92 | 93 | 84 | No Armor| 22 | 196 |
+|Colossal | 34 | 115 | 112 | 113 | 104 | No Armor| 2 | 262 |
+|Titanic | 34 | 155 | 152 | 153 | 144 | No Armor| -38 | 393 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 34 | 35 | 32 | 33 | 24 | Light| 82 | 16 |
+|Diminutive | 34 | 55 | 52 | 53 | 44 | Light| 62 | 21 |
+|Tiny | 34 | 65 | 62 | 63 | 54 | Light| 52 | 32 |
+|Small | 34 | 70 | 67 | 68 | 59 | Light| 47 | 45 |
+|Medium | 34 | 75 | 72 | 73 | 64 | Light| 42 | 65 |
+|Large | 34 | 80 | 77 | 78 | 69 | Light| 37 | 98 |
+|Huge | 34 | 85 | 82 | 83 | 74 | Light| 32 | 131 |
+|Gargantuan | 34 | 95 | 92 | 93 | 84 | Light| 22 | 196 |
+|Colossal | 34 | 115 | 112 | 113 | 104 | Light| 2 | 262 |
+|Titanic | 34 | 155 | 152 | 153 | 144 | Light| -38 | 393 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 61 | 52 | 43 | 25 | Light| 83 | 16 |
+|Diminutive | 35 | 81 | 72 | 63 | 45 | Light| 63 | 21 |
+|Tiny | 35 | 91 | 82 | 73 | 55 | Light| 53 | 33 |
+|Small | 35 | 96 | 87 | 78 | 60 | Light| 48 | 46 |
+|Medium | 35 | 101 | 92 | 83 | 65 | Light| 43 | 66 |
+|Large | 35 | 106 | 97 | 88 | 70 | Light| 38 | 99 |
+|Huge | 35 | 111 | 102 | 93 | 75 | Light| 33 | 132 |
+|Gargantuan | 35 | 121 | 112 | 103 | 85 | Light| 23 | 199 |
+|Colossal | 35 | 141 | 132 | 123 | 105 | Light| 3 | 265 |
+|Titanic | 35 | 181 | 172 | 163 | 145 | Light| -37 | 398 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 30 | 25 | 12 | Light| 83 | 16 |
+|Diminutive | 35 | 55 | 50 | 45 | 32 | Light| 63 | 21 |
+|Tiny | 35 | 65 | 60 | 55 | 42 | Light| 53 | 33 |
+|Small | 35 | 70 | 65 | 60 | 47 | Light| 48 | 46 |
+|Medium | 35 | 75 | 70 | 65 | 52 | Light| 43 | 66 |
+|Large | 35 | 80 | 75 | 70 | 57 | Light| 38 | 99 |
+|Huge | 35 | 85 | 80 | 75 | 62 | Light| 33 | 132 |
+|Gargantuan | 35 | 95 | 90 | 85 | 72 | Light| 23 | 199 |
+|Colossal | 35 | 115 | 110 | 105 | 92 | Light| 3 | 265 |
+|Titanic | 35 | 155 | 150 | 145 | 132 | Light| -37 | 398 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 79 | 61 | 52 | 43 | Medium| 40 | 20 |
+|Diminutive | 35 | 99 | 81 | 72 | 63 | Medium| 20 | 27 |
+|Tiny | 35 | 109 | 91 | 82 | 73 | Medium| 10 | 41 |
+|Small | 35 | 114 | 96 | 87 | 78 | Medium| 5 | 58 |
+|Medium | 35 | 119 | 101 | 92 | 83 | Medium| 0 | 83 |
+|Large | 35 | 124 | 106 | 97 | 88 | Medium| -5 | 124 |
+|Huge | 35 | 129 | 111 | 102 | 93 | Medium| -10 | 166 |
+|Gargantuan | 35 | 139 | 121 | 112 | 103 | Medium| -20 | 249 |
+|Colossal | 35 | 159 | 141 | 132 | 123 | Medium| -40 | 332 |
+|Titanic | 35 | 199 | 181 | 172 | 163 | Medium| -80 | 498 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 79 | 61 | 52 | 43 | Heavy| 83 | 46 |
+|Diminutive | 35 | 99 | 81 | 72 | 63 | Heavy| 63 | 60 |
+|Tiny | 35 | 109 | 91 | 82 | 73 | Heavy| 53 | 92 |
+|Small | 35 | 114 | 96 | 87 | 78 | Heavy| 48 | 128 |
+|Medium | 35 | 119 | 101 | 92 | 83 | Heavy| 43 | 184 |
+|Large | 35 | 124 | 106 | 97 | 88 | Heavy| 38 | 276 |
+|Huge | 35 | 129 | 111 | 102 | 93 | Heavy| 33 | 368 |
+|Gargantuan | 35 | 139 | 121 | 112 | 103 | Heavy| 23 | 552 |
+|Colossal | 35 | 159 | 141 | 132 | 123 | Heavy| 3 | 736 |
+|Titanic | 35 | 199 | 181 | 172 | 163 | Heavy| -37 | 1104 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 6 | 5 | -1 | -12 | No Armor| 83 | 12 |
+|Diminutive | 35 | 26 | 25 | 19 | 7 | No Armor| 63 | 16 |
+|Tiny | 35 | 36 | 35 | 29 | 17 | No Armor| 53 | 24 |
+|Small | 35 | 41 | 40 | 34 | 22 | No Armor| 48 | 34 |
+|Medium | 35 | 46 | 45 | 39 | 27 | No Armor| 43 | 49 |
+|Large | 35 | 51 | 50 | 44 | 32 | No Armor| 38 | 74 |
+|Huge | 35 | 56 | 55 | 49 | 37 | No Armor| 33 | 99 |
+|Gargantuan | 35 | 66 | 65 | 59 | 47 | No Armor| 23 | 149 |
+|Colossal | 35 | 86 | 85 | 79 | 67 | No Armor| 3 | 199 |
+|Titanic | 35 | 126 | 125 | 119 | 107 | No Armor| -37 | 298 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 33 | 34 | 25 | No Armor| 61 | 16 |
+|Diminutive | 35 | 55 | 53 | 54 | 45 | No Armor| 41 | 21 |
+|Tiny | 35 | 65 | 63 | 64 | 55 | No Armor| 31 | 33 |
+|Small | 35 | 70 | 68 | 69 | 60 | No Armor| 26 | 46 |
+|Medium | 35 | 75 | 73 | 74 | 65 | No Armor| 21 | 66 |
+|Large | 35 | 80 | 78 | 79 | 70 | No Armor| 16 | 99 |
+|Huge | 35 | 85 | 83 | 84 | 75 | No Armor| 11 | 132 |
+|Gargantuan | 35 | 95 | 93 | 94 | 85 | No Armor| 1 | 199 |
+|Colossal | 35 | 115 | 113 | 114 | 105 | No Armor| -19 | 265 |
+|Titanic | 35 | 155 | 153 | 154 | 145 | No Armor| -59 | 398 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 79 | 61 | 52 | 43 | Medium| 83 | 20 |
+|Diminutive | 35 | 99 | 81 | 72 | 63 | Medium| 63 | 27 |
+|Tiny | 35 | 109 | 91 | 82 | 73 | Medium| 53 | 41 |
+|Small | 35 | 114 | 96 | 87 | 78 | Medium| 48 | 58 |
+|Medium | 35 | 119 | 101 | 92 | 83 | Medium| 43 | 83 |
+|Large | 35 | 124 | 106 | 97 | 88 | Medium| 38 | 124 |
+|Huge | 35 | 129 | 111 | 102 | 93 | Medium| 33 | 166 |
+|Gargantuan | 35 | 139 | 121 | 112 | 103 | Medium| 23 | 249 |
+|Colossal | 35 | 159 | 141 | 132 | 123 | Medium| 3 | 332 |
+|Titanic | 35 | 199 | 181 | 172 | 163 | Medium| -37 | 498 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 79 | 61 | 52 | 43 | No Armor| 83 | 20 |
+|Diminutive | 35 | 99 | 81 | 72 | 63 | No Armor| 63 | 27 |
+|Tiny | 35 | 109 | 91 | 82 | 73 | No Armor| 53 | 41 |
+|Small | 35 | 114 | 96 | 87 | 78 | No Armor| 48 | 58 |
+|Medium | 35 | 119 | 101 | 92 | 83 | No Armor| 43 | 83 |
+|Large | 35 | 124 | 106 | 97 | 88 | No Armor| 38 | 124 |
+|Huge | 35 | 129 | 111 | 102 | 93 | No Armor| 33 | 166 |
+|Gargantuan | 35 | 139 | 121 | 112 | 103 | No Armor| 23 | 249 |
+|Colossal | 35 | 159 | 141 | 132 | 123 | No Armor| 3 | 332 |
+|Titanic | 35 | 199 | 181 | 172 | 163 | No Armor| -37 | 498 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 33 | 34 | 25 | No Armor| 83 | 16 |
+|Diminutive | 35 | 55 | 53 | 54 | 45 | No Armor| 63 | 21 |
+|Tiny | 35 | 65 | 63 | 64 | 55 | No Armor| 53 | 33 |
+|Small | 35 | 70 | 68 | 69 | 60 | No Armor| 48 | 46 |
+|Medium | 35 | 75 | 73 | 74 | 65 | No Armor| 43 | 66 |
+|Large | 35 | 80 | 78 | 79 | 70 | No Armor| 38 | 99 |
+|Huge | 35 | 85 | 83 | 84 | 75 | No Armor| 33 | 132 |
+|Gargantuan | 35 | 95 | 93 | 94 | 85 | No Armor| 23 | 199 |
+|Colossal | 35 | 115 | 113 | 114 | 105 | No Armor| 3 | 265 |
+|Titanic | 35 | 155 | 153 | 154 | 145 | No Armor| -37 | 398 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 79 | 61 | 52 | 43 | No Armor| 83 | 20 |
+|Diminutive | 35 | 99 | 81 | 72 | 63 | No Armor| 63 | 27 |
+|Tiny | 35 | 109 | 91 | 82 | 73 | No Armor| 53 | 41 |
+|Small | 35 | 114 | 96 | 87 | 78 | No Armor| 48 | 58 |
+|Medium | 35 | 119 | 101 | 92 | 83 | No Armor| 43 | 83 |
+|Large | 35 | 124 | 106 | 97 | 88 | No Armor| 38 | 124 |
+|Huge | 35 | 129 | 111 | 102 | 93 | No Armor| 33 | 166 |
+|Gargantuan | 35 | 139 | 121 | 112 | 103 | No Armor| 23 | 249 |
+|Colossal | 35 | 159 | 141 | 132 | 123 | No Armor| 3 | 332 |
+|Titanic | 35 | 199 | 181 | 172 | 163 | No Armor| -37 | 498 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 33 | 34 | 25 | No Armor| 83 | 16 |
+|Diminutive | 35 | 55 | 53 | 54 | 45 | No Armor| 63 | 21 |
+|Tiny | 35 | 65 | 63 | 64 | 55 | No Armor| 53 | 33 |
+|Small | 35 | 70 | 68 | 69 | 60 | No Armor| 48 | 46 |
+|Medium | 35 | 75 | 73 | 74 | 65 | No Armor| 43 | 66 |
+|Large | 35 | 80 | 78 | 79 | 70 | No Armor| 38 | 99 |
+|Huge | 35 | 85 | 83 | 84 | 75 | No Armor| 33 | 132 |
+|Gargantuan | 35 | 95 | 93 | 94 | 85 | No Armor| 23 | 199 |
+|Colossal | 35 | 115 | 113 | 114 | 105 | No Armor| 3 | 265 |
+|Titanic | 35 | 155 | 153 | 154 | 145 | No Armor| -37 | 398 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 33 | 34 | 25 | No Armor| 83 | 16 |
+|Diminutive | 35 | 55 | 53 | 54 | 45 | No Armor| 63 | 21 |
+|Tiny | 35 | 65 | 63 | 64 | 55 | No Armor| 53 | 33 |
+|Small | 35 | 70 | 68 | 69 | 60 | No Armor| 48 | 46 |
+|Medium | 35 | 75 | 73 | 74 | 65 | No Armor| 43 | 66 |
+|Large | 35 | 80 | 78 | 79 | 70 | No Armor| 38 | 99 |
+|Huge | 35 | 85 | 83 | 84 | 75 | No Armor| 33 | 132 |
+|Gargantuan | 35 | 95 | 93 | 94 | 85 | No Armor| 23 | 199 |
+|Colossal | 35 | 115 | 113 | 114 | 105 | No Armor| 3 | 265 |
+|Titanic | 35 | 155 | 153 | 154 | 145 | No Armor| -37 | 398 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 35 | 35 | 33 | 34 | 25 | Light| 83 | 16 |
+|Diminutive | 35 | 55 | 53 | 54 | 45 | Light| 63 | 21 |
+|Tiny | 35 | 65 | 63 | 64 | 55 | Light| 53 | 33 |
+|Small | 35 | 70 | 68 | 69 | 60 | Light| 48 | 46 |
+|Medium | 35 | 75 | 73 | 74 | 65 | Light| 43 | 66 |
+|Large | 35 | 80 | 78 | 79 | 70 | Light| 38 | 99 |
+|Huge | 35 | 85 | 83 | 84 | 75 | Light| 33 | 132 |
+|Gargantuan | 35 | 95 | 93 | 94 | 85 | Light| 23 | 199 |
+|Colossal | 35 | 115 | 113 | 114 | 105 | Light| 3 | 265 |
+|Titanic | 35 | 155 | 153 | 154 | 145 | Light| -37 | 398 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 62 | 53 | 43 | 26 | Light| 85 | 16 |
+|Diminutive | 36 | 82 | 73 | 63 | 46 | Light| 65 | 21 |
+|Tiny | 36 | 92 | 83 | 73 | 56 | Light| 55 | 33 |
+|Small | 36 | 97 | 88 | 78 | 61 | Light| 50 | 46 |
+|Medium | 36 | 102 | 93 | 83 | 66 | Light| 45 | 66 |
+|Large | 36 | 107 | 98 | 88 | 71 | Light| 40 | 99 |
+|Huge | 36 | 112 | 103 | 93 | 76 | Light| 35 | 132 |
+|Gargantuan | 36 | 122 | 113 | 103 | 86 | Light| 25 | 199 |
+|Colossal | 36 | 142 | 133 | 123 | 106 | Light| 5 | 265 |
+|Titanic | 36 | 182 | 173 | 163 | 146 | Light| -35 | 398 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 31 | 25 | 13 | Light| 85 | 16 |
+|Diminutive | 36 | 56 | 51 | 45 | 33 | Light| 65 | 21 |
+|Tiny | 36 | 66 | 61 | 55 | 43 | Light| 55 | 33 |
+|Small | 36 | 71 | 66 | 60 | 48 | Light| 50 | 46 |
+|Medium | 36 | 76 | 71 | 65 | 53 | Light| 45 | 66 |
+|Large | 36 | 81 | 76 | 70 | 58 | Light| 40 | 99 |
+|Huge | 36 | 86 | 81 | 75 | 63 | Light| 35 | 132 |
+|Gargantuan | 36 | 96 | 91 | 85 | 73 | Light| 25 | 199 |
+|Colossal | 36 | 116 | 111 | 105 | 93 | Light| 5 | 265 |
+|Titanic | 36 | 156 | 151 | 145 | 133 | Light| -35 | 398 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 81 | 62 | 53 | 43 | Medium| 40 | 20 |
+|Diminutive | 36 | 101 | 82 | 73 | 63 | Medium| 20 | 27 |
+|Tiny | 36 | 111 | 92 | 83 | 73 | Medium| 10 | 41 |
+|Small | 36 | 116 | 97 | 88 | 78 | Medium| 5 | 58 |
+|Medium | 36 | 121 | 102 | 93 | 83 | Medium| 0 | 83 |
+|Large | 36 | 126 | 107 | 98 | 88 | Medium| -5 | 124 |
+|Huge | 36 | 131 | 112 | 103 | 93 | Medium| -10 | 166 |
+|Gargantuan | 36 | 141 | 122 | 113 | 103 | Medium| -20 | 249 |
+|Colossal | 36 | 161 | 142 | 133 | 123 | Medium| -40 | 332 |
+|Titanic | 36 | 201 | 182 | 173 | 163 | Medium| -80 | 498 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 81 | 62 | 53 | 43 | Heavy| 85 | 46 |
+|Diminutive | 36 | 101 | 82 | 73 | 63 | Heavy| 65 | 61 |
+|Tiny | 36 | 111 | 92 | 83 | 73 | Heavy| 55 | 93 |
+|Small | 36 | 116 | 97 | 88 | 78 | Heavy| 50 | 130 |
+|Medium | 36 | 121 | 102 | 93 | 83 | Heavy| 45 | 186 |
+|Large | 36 | 126 | 107 | 98 | 88 | Heavy| 40 | 279 |
+|Huge | 36 | 131 | 112 | 103 | 93 | Heavy| 35 | 372 |
+|Gargantuan | 36 | 141 | 122 | 113 | 103 | Heavy| 25 | 558 |
+|Colossal | 36 | 161 | 142 | 133 | 123 | Heavy| 5 | 744 |
+|Titanic | 36 | 201 | 182 | 173 | 163 | Heavy| -35 | 1116 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 6 | 5 | 0 | -10 | No Armor| 85 | 12 |
+|Diminutive | 36 | 26 | 25 | 19 | 9 | No Armor| 65 | 16 |
+|Tiny | 36 | 36 | 35 | 29 | 19 | No Armor| 55 | 24 |
+|Small | 36 | 41 | 40 | 34 | 24 | No Armor| 50 | 34 |
+|Medium | 36 | 46 | 45 | 39 | 29 | No Armor| 45 | 49 |
+|Large | 36 | 51 | 50 | 44 | 34 | No Armor| 40 | 74 |
+|Huge | 36 | 56 | 55 | 49 | 39 | No Armor| 35 | 99 |
+|Gargantuan | 36 | 66 | 65 | 59 | 49 | No Armor| 25 | 149 |
+|Colossal | 36 | 86 | 85 | 79 | 69 | No Armor| 5 | 199 |
+|Titanic | 36 | 126 | 125 | 119 | 109 | No Armor| -35 | 298 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 34 | 34 | 26 | No Armor| 62 | 16 |
+|Diminutive | 36 | 56 | 54 | 54 | 46 | No Armor| 42 | 21 |
+|Tiny | 36 | 66 | 64 | 64 | 56 | No Armor| 32 | 33 |
+|Small | 36 | 71 | 69 | 69 | 61 | No Armor| 27 | 46 |
+|Medium | 36 | 76 | 74 | 74 | 66 | No Armor| 22 | 66 |
+|Large | 36 | 81 | 79 | 79 | 71 | No Armor| 17 | 99 |
+|Huge | 36 | 86 | 84 | 84 | 76 | No Armor| 12 | 132 |
+|Gargantuan | 36 | 96 | 94 | 94 | 86 | No Armor| 2 | 199 |
+|Colossal | 36 | 116 | 114 | 114 | 106 | No Armor| -18 | 265 |
+|Titanic | 36 | 156 | 154 | 154 | 146 | No Armor| -58 | 398 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 81 | 62 | 53 | 43 | Medium| 85 | 20 |
+|Diminutive | 36 | 101 | 82 | 73 | 63 | Medium| 65 | 27 |
+|Tiny | 36 | 111 | 92 | 83 | 73 | Medium| 55 | 41 |
+|Small | 36 | 116 | 97 | 88 | 78 | Medium| 50 | 58 |
+|Medium | 36 | 121 | 102 | 93 | 83 | Medium| 45 | 83 |
+|Large | 36 | 126 | 107 | 98 | 88 | Medium| 40 | 124 |
+|Huge | 36 | 131 | 112 | 103 | 93 | Medium| 35 | 166 |
+|Gargantuan | 36 | 141 | 122 | 113 | 103 | Medium| 25 | 249 |
+|Colossal | 36 | 161 | 142 | 133 | 123 | Medium| 5 | 332 |
+|Titanic | 36 | 201 | 182 | 173 | 163 | Medium| -35 | 498 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 81 | 62 | 53 | 43 | No Armor| 85 | 20 |
+|Diminutive | 36 | 101 | 82 | 73 | 63 | No Armor| 65 | 27 |
+|Tiny | 36 | 111 | 92 | 83 | 73 | No Armor| 55 | 41 |
+|Small | 36 | 116 | 97 | 88 | 78 | No Armor| 50 | 58 |
+|Medium | 36 | 121 | 102 | 93 | 83 | No Armor| 45 | 83 |
+|Large | 36 | 126 | 107 | 98 | 88 | No Armor| 40 | 124 |
+|Huge | 36 | 131 | 112 | 103 | 93 | No Armor| 35 | 166 |
+|Gargantuan | 36 | 141 | 122 | 113 | 103 | No Armor| 25 | 249 |
+|Colossal | 36 | 161 | 142 | 133 | 123 | No Armor| 5 | 332 |
+|Titanic | 36 | 201 | 182 | 173 | 163 | No Armor| -35 | 498 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 34 | 34 | 26 | No Armor| 85 | 16 |
+|Diminutive | 36 | 56 | 54 | 54 | 46 | No Armor| 65 | 21 |
+|Tiny | 36 | 66 | 64 | 64 | 56 | No Armor| 55 | 33 |
+|Small | 36 | 71 | 69 | 69 | 61 | No Armor| 50 | 46 |
+|Medium | 36 | 76 | 74 | 74 | 66 | No Armor| 45 | 66 |
+|Large | 36 | 81 | 79 | 79 | 71 | No Armor| 40 | 99 |
+|Huge | 36 | 86 | 84 | 84 | 76 | No Armor| 35 | 132 |
+|Gargantuan | 36 | 96 | 94 | 94 | 86 | No Armor| 25 | 199 |
+|Colossal | 36 | 116 | 114 | 114 | 106 | No Armor| 5 | 265 |
+|Titanic | 36 | 156 | 154 | 154 | 146 | No Armor| -35 | 398 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 81 | 62 | 53 | 43 | No Armor| 85 | 20 |
+|Diminutive | 36 | 101 | 82 | 73 | 63 | No Armor| 65 | 27 |
+|Tiny | 36 | 111 | 92 | 83 | 73 | No Armor| 55 | 41 |
+|Small | 36 | 116 | 97 | 88 | 78 | No Armor| 50 | 58 |
+|Medium | 36 | 121 | 102 | 93 | 83 | No Armor| 45 | 83 |
+|Large | 36 | 126 | 107 | 98 | 88 | No Armor| 40 | 124 |
+|Huge | 36 | 131 | 112 | 103 | 93 | No Armor| 35 | 166 |
+|Gargantuan | 36 | 141 | 122 | 113 | 103 | No Armor| 25 | 249 |
+|Colossal | 36 | 161 | 142 | 133 | 123 | No Armor| 5 | 332 |
+|Titanic | 36 | 201 | 182 | 173 | 163 | No Armor| -35 | 498 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 34 | 34 | 26 | No Armor| 85 | 16 |
+|Diminutive | 36 | 56 | 54 | 54 | 46 | No Armor| 65 | 21 |
+|Tiny | 36 | 66 | 64 | 64 | 56 | No Armor| 55 | 33 |
+|Small | 36 | 71 | 69 | 69 | 61 | No Armor| 50 | 46 |
+|Medium | 36 | 76 | 74 | 74 | 66 | No Armor| 45 | 66 |
+|Large | 36 | 81 | 79 | 79 | 71 | No Armor| 40 | 99 |
+|Huge | 36 | 86 | 84 | 84 | 76 | No Armor| 35 | 132 |
+|Gargantuan | 36 | 96 | 94 | 94 | 86 | No Armor| 25 | 199 |
+|Colossal | 36 | 116 | 114 | 114 | 106 | No Armor| 5 | 265 |
+|Titanic | 36 | 156 | 154 | 154 | 146 | No Armor| -35 | 398 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 34 | 34 | 26 | No Armor| 85 | 16 |
+|Diminutive | 36 | 56 | 54 | 54 | 46 | No Armor| 65 | 21 |
+|Tiny | 36 | 66 | 64 | 64 | 56 | No Armor| 55 | 33 |
+|Small | 36 | 71 | 69 | 69 | 61 | No Armor| 50 | 46 |
+|Medium | 36 | 76 | 74 | 74 | 66 | No Armor| 45 | 66 |
+|Large | 36 | 81 | 79 | 79 | 71 | No Armor| 40 | 99 |
+|Huge | 36 | 86 | 84 | 84 | 76 | No Armor| 35 | 132 |
+|Gargantuan | 36 | 96 | 94 | 94 | 86 | No Armor| 25 | 199 |
+|Colossal | 36 | 116 | 114 | 114 | 106 | No Armor| 5 | 265 |
+|Titanic | 36 | 156 | 154 | 154 | 146 | No Armor| -35 | 398 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 36 | 36 | 34 | 34 | 26 | Light| 85 | 16 |
+|Diminutive | 36 | 56 | 54 | 54 | 46 | Light| 65 | 21 |
+|Tiny | 36 | 66 | 64 | 64 | 56 | Light| 55 | 33 |
+|Small | 36 | 71 | 69 | 69 | 61 | Light| 50 | 46 |
+|Medium | 36 | 76 | 74 | 74 | 66 | Light| 45 | 66 |
+|Large | 36 | 81 | 79 | 79 | 71 | Light| 40 | 99 |
+|Huge | 36 | 86 | 84 | 84 | 76 | Light| 35 | 132 |
+|Gargantuan | 36 | 96 | 94 | 94 | 86 | Light| 25 | 199 |
+|Colossal | 36 | 116 | 114 | 114 | 106 | Light| 5 | 265 |
+|Titanic | 36 | 156 | 154 | 154 | 146 | Light| -35 | 398 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 63 | 53 | 44 | 27 | Light| 86 | 16 |
+|Diminutive | 37 | 83 | 73 | 64 | 47 | Light| 66 | 22 |
+|Tiny | 37 | 93 | 83 | 74 | 57 | Light| 56 | 33 |
+|Small | 37 | 98 | 88 | 79 | 62 | Light| 51 | 47 |
+|Medium | 37 | 103 | 93 | 84 | 67 | Light| 46 | 67 |
+|Large | 37 | 108 | 98 | 89 | 72 | Light| 41 | 100 |
+|Huge | 37 | 113 | 103 | 94 | 77 | Light| 36 | 134 |
+|Gargantuan | 37 | 123 | 113 | 104 | 87 | Light| 26 | 201 |
+|Colossal | 37 | 143 | 133 | 124 | 107 | Light| 6 | 268 |
+|Titanic | 37 | 183 | 173 | 164 | 147 | Light| -34 | 403 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 31 | 26 | 14 | Light| 86 | 16 |
+|Diminutive | 37 | 57 | 51 | 46 | 34 | Light| 66 | 22 |
+|Tiny | 37 | 67 | 61 | 56 | 44 | Light| 56 | 33 |
+|Small | 37 | 72 | 66 | 61 | 49 | Light| 51 | 47 |
+|Medium | 37 | 77 | 71 | 66 | 54 | Light| 46 | 67 |
+|Large | 37 | 82 | 76 | 71 | 59 | Light| 41 | 100 |
+|Huge | 37 | 87 | 81 | 76 | 64 | Light| 36 | 134 |
+|Gargantuan | 37 | 97 | 91 | 86 | 74 | Light| 26 | 201 |
+|Colossal | 37 | 117 | 111 | 106 | 94 | Light| 6 | 268 |
+|Titanic | 37 | 157 | 151 | 146 | 134 | Light| -34 | 403 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 82 | 63 | 53 | 44 | Medium| 40 | 21 |
+|Diminutive | 37 | 102 | 83 | 73 | 64 | Medium| 20 | 27 |
+|Tiny | 37 | 112 | 93 | 83 | 74 | Medium| 10 | 42 |
+|Small | 37 | 117 | 98 | 88 | 79 | Medium| 5 | 58 |
+|Medium | 37 | 122 | 103 | 93 | 84 | Medium| 0 | 84 |
+|Large | 37 | 127 | 108 | 98 | 89 | Medium| -5 | 126 |
+|Huge | 37 | 132 | 113 | 103 | 94 | Medium| -10 | 168 |
+|Gargantuan | 37 | 142 | 123 | 113 | 104 | Medium| -20 | 252 |
+|Colossal | 37 | 162 | 143 | 133 | 124 | Medium| -40 | 336 |
+|Titanic | 37 | 202 | 183 | 173 | 164 | Medium| -80 | 504 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 82 | 63 | 53 | 44 | Heavy| 86 | 46 |
+|Diminutive | 37 | 102 | 83 | 73 | 64 | Heavy| 66 | 61 |
+|Tiny | 37 | 112 | 93 | 83 | 74 | Heavy| 56 | 93 |
+|Small | 37 | 117 | 98 | 88 | 79 | Heavy| 51 | 130 |
+|Medium | 37 | 122 | 103 | 93 | 84 | Heavy| 46 | 186 |
+|Large | 37 | 127 | 108 | 98 | 89 | Heavy| 41 | 279 |
+|Huge | 37 | 132 | 113 | 103 | 94 | Heavy| 36 | 372 |
+|Gargantuan | 37 | 142 | 123 | 113 | 104 | Heavy| 26 | 558 |
+|Colossal | 37 | 162 | 143 | 133 | 124 | Heavy| 6 | 744 |
+|Titanic | 37 | 202 | 183 | 173 | 164 | Heavy| -34 | 1116 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 6 | 6 | 0 | -10 | No Armor| 86 | 12 |
+|Diminutive | 37 | 26 | 26 | 20 | 9 | No Armor| 66 | 16 |
+|Tiny | 37 | 36 | 36 | 30 | 19 | No Armor| 56 | 25 |
+|Small | 37 | 41 | 41 | 35 | 24 | No Armor| 51 | 35 |
+|Medium | 37 | 46 | 46 | 40 | 29 | No Armor| 46 | 50 |
+|Large | 37 | 51 | 51 | 45 | 34 | No Armor| 41 | 75 |
+|Huge | 37 | 56 | 56 | 50 | 39 | No Armor| 36 | 100 |
+|Gargantuan | 37 | 66 | 66 | 60 | 49 | No Armor| 26 | 151 |
+|Colossal | 37 | 86 | 86 | 80 | 69 | No Armor| 6 | 201 |
+|Titanic | 37 | 126 | 126 | 120 | 109 | No Armor| -34 | 302 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 34 | 35 | 27 | No Armor| 63 | 16 |
+|Diminutive | 37 | 57 | 54 | 55 | 47 | No Armor| 43 | 22 |
+|Tiny | 37 | 67 | 64 | 65 | 57 | No Armor| 33 | 33 |
+|Small | 37 | 72 | 69 | 70 | 62 | No Armor| 28 | 47 |
+|Medium | 37 | 77 | 74 | 75 | 67 | No Armor| 23 | 67 |
+|Large | 37 | 82 | 79 | 80 | 72 | No Armor| 18 | 100 |
+|Huge | 37 | 87 | 84 | 85 | 77 | No Armor| 13 | 134 |
+|Gargantuan | 37 | 97 | 94 | 95 | 87 | No Armor| 3 | 201 |
+|Colossal | 37 | 117 | 114 | 115 | 107 | No Armor| -17 | 268 |
+|Titanic | 37 | 157 | 154 | 155 | 147 | No Armor| -57 | 403 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 82 | 63 | 53 | 44 | Medium| 86 | 21 |
+|Diminutive | 37 | 102 | 83 | 73 | 64 | Medium| 66 | 27 |
+|Tiny | 37 | 112 | 93 | 83 | 74 | Medium| 56 | 42 |
+|Small | 37 | 117 | 98 | 88 | 79 | Medium| 51 | 58 |
+|Medium | 37 | 122 | 103 | 93 | 84 | Medium| 46 | 84 |
+|Large | 37 | 127 | 108 | 98 | 89 | Medium| 41 | 126 |
+|Huge | 37 | 132 | 113 | 103 | 94 | Medium| 36 | 168 |
+|Gargantuan | 37 | 142 | 123 | 113 | 104 | Medium| 26 | 252 |
+|Colossal | 37 | 162 | 143 | 133 | 124 | Medium| 6 | 336 |
+|Titanic | 37 | 202 | 183 | 173 | 164 | Medium| -34 | 504 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 82 | 63 | 53 | 44 | No Armor| 86 | 21 |
+|Diminutive | 37 | 102 | 83 | 73 | 64 | No Armor| 66 | 27 |
+|Tiny | 37 | 112 | 93 | 83 | 74 | No Armor| 56 | 42 |
+|Small | 37 | 117 | 98 | 88 | 79 | No Armor| 51 | 58 |
+|Medium | 37 | 122 | 103 | 93 | 84 | No Armor| 46 | 84 |
+|Large | 37 | 127 | 108 | 98 | 89 | No Armor| 41 | 126 |
+|Huge | 37 | 132 | 113 | 103 | 94 | No Armor| 36 | 168 |
+|Gargantuan | 37 | 142 | 123 | 113 | 104 | No Armor| 26 | 252 |
+|Colossal | 37 | 162 | 143 | 133 | 124 | No Armor| 6 | 336 |
+|Titanic | 37 | 202 | 183 | 173 | 164 | No Armor| -34 | 504 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 34 | 35 | 27 | No Armor| 86 | 16 |
+|Diminutive | 37 | 57 | 54 | 55 | 47 | No Armor| 66 | 22 |
+|Tiny | 37 | 67 | 64 | 65 | 57 | No Armor| 56 | 33 |
+|Small | 37 | 72 | 69 | 70 | 62 | No Armor| 51 | 47 |
+|Medium | 37 | 77 | 74 | 75 | 67 | No Armor| 46 | 67 |
+|Large | 37 | 82 | 79 | 80 | 72 | No Armor| 41 | 100 |
+|Huge | 37 | 87 | 84 | 85 | 77 | No Armor| 36 | 134 |
+|Gargantuan | 37 | 97 | 94 | 95 | 87 | No Armor| 26 | 201 |
+|Colossal | 37 | 117 | 114 | 115 | 107 | No Armor| 6 | 268 |
+|Titanic | 37 | 157 | 154 | 155 | 147 | No Armor| -34 | 403 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 82 | 63 | 53 | 44 | No Armor| 86 | 21 |
+|Diminutive | 37 | 102 | 83 | 73 | 64 | No Armor| 66 | 27 |
+|Tiny | 37 | 112 | 93 | 83 | 74 | No Armor| 56 | 42 |
+|Small | 37 | 117 | 98 | 88 | 79 | No Armor| 51 | 58 |
+|Medium | 37 | 122 | 103 | 93 | 84 | No Armor| 46 | 84 |
+|Large | 37 | 127 | 108 | 98 | 89 | No Armor| 41 | 126 |
+|Huge | 37 | 132 | 113 | 103 | 94 | No Armor| 36 | 168 |
+|Gargantuan | 37 | 142 | 123 | 113 | 104 | No Armor| 26 | 252 |
+|Colossal | 37 | 162 | 143 | 133 | 124 | No Armor| 6 | 336 |
+|Titanic | 37 | 202 | 183 | 173 | 164 | No Armor| -34 | 504 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 34 | 35 | 27 | No Armor| 86 | 16 |
+|Diminutive | 37 | 57 | 54 | 55 | 47 | No Armor| 66 | 22 |
+|Tiny | 37 | 67 | 64 | 65 | 57 | No Armor| 56 | 33 |
+|Small | 37 | 72 | 69 | 70 | 62 | No Armor| 51 | 47 |
+|Medium | 37 | 77 | 74 | 75 | 67 | No Armor| 46 | 67 |
+|Large | 37 | 82 | 79 | 80 | 72 | No Armor| 41 | 100 |
+|Huge | 37 | 87 | 84 | 85 | 77 | No Armor| 36 | 134 |
+|Gargantuan | 37 | 97 | 94 | 95 | 87 | No Armor| 26 | 201 |
+|Colossal | 37 | 117 | 114 | 115 | 107 | No Armor| 6 | 268 |
+|Titanic | 37 | 157 | 154 | 155 | 147 | No Armor| -34 | 403 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 34 | 35 | 27 | No Armor| 86 | 16 |
+|Diminutive | 37 | 57 | 54 | 55 | 47 | No Armor| 66 | 22 |
+|Tiny | 37 | 67 | 64 | 65 | 57 | No Armor| 56 | 33 |
+|Small | 37 | 72 | 69 | 70 | 62 | No Armor| 51 | 47 |
+|Medium | 37 | 77 | 74 | 75 | 67 | No Armor| 46 | 67 |
+|Large | 37 | 82 | 79 | 80 | 72 | No Armor| 41 | 100 |
+|Huge | 37 | 87 | 84 | 85 | 77 | No Armor| 36 | 134 |
+|Gargantuan | 37 | 97 | 94 | 95 | 87 | No Armor| 26 | 201 |
+|Colossal | 37 | 117 | 114 | 115 | 107 | No Armor| 6 | 268 |
+|Titanic | 37 | 157 | 154 | 155 | 147 | No Armor| -34 | 403 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 37 | 37 | 34 | 35 | 27 | Light| 86 | 16 |
+|Diminutive | 37 | 57 | 54 | 55 | 47 | Light| 66 | 22 |
+|Tiny | 37 | 67 | 64 | 65 | 57 | Light| 56 | 33 |
+|Small | 37 | 72 | 69 | 70 | 62 | Light| 51 | 47 |
+|Medium | 37 | 77 | 74 | 75 | 67 | Light| 46 | 67 |
+|Large | 37 | 82 | 79 | 80 | 72 | Light| 41 | 100 |
+|Huge | 37 | 87 | 84 | 85 | 77 | Light| 36 | 134 |
+|Gargantuan | 37 | 97 | 94 | 95 | 87 | Light| 26 | 201 |
+|Colossal | 37 | 117 | 114 | 115 | 107 | Light| 6 | 268 |
+|Titanic | 37 | 157 | 154 | 155 | 147 | Light| -34 | 403 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 64 | 54 | 44 | 28 | Light| 87 | 16 |
+|Diminutive | 38 | 84 | 74 | 64 | 48 | Light| 67 | 22 |
+|Tiny | 38 | 94 | 84 | 74 | 58 | Light| 57 | 33 |
+|Small | 38 | 99 | 89 | 79 | 63 | Light| 52 | 47 |
+|Medium | 38 | 104 | 94 | 84 | 68 | Light| 47 | 67 |
+|Large | 38 | 109 | 99 | 89 | 73 | Light| 42 | 100 |
+|Huge | 38 | 114 | 104 | 94 | 78 | Light| 37 | 134 |
+|Gargantuan | 38 | 124 | 114 | 104 | 88 | Light| 27 | 201 |
+|Colossal | 38 | 144 | 134 | 124 | 108 | Light| 7 | 268 |
+|Titanic | 38 | 184 | 174 | 164 | 148 | Light| -33 | 403 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 32 | 26 | 15 | Light| 87 | 16 |
+|Diminutive | 38 | 58 | 52 | 46 | 35 | Light| 67 | 22 |
+|Tiny | 38 | 68 | 62 | 56 | 45 | Light| 57 | 33 |
+|Small | 38 | 73 | 67 | 61 | 50 | Light| 52 | 47 |
+|Medium | 38 | 78 | 72 | 66 | 55 | Light| 47 | 67 |
+|Large | 38 | 83 | 77 | 71 | 60 | Light| 42 | 100 |
+|Huge | 38 | 88 | 82 | 76 | 65 | Light| 37 | 134 |
+|Gargantuan | 38 | 98 | 92 | 86 | 75 | Light| 27 | 201 |
+|Colossal | 38 | 118 | 112 | 106 | 95 | Light| 7 | 268 |
+|Titanic | 38 | 158 | 152 | 146 | 135 | Light| -33 | 403 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 84 | 64 | 54 | 44 | Medium| 40 | 21 |
+|Diminutive | 38 | 104 | 84 | 74 | 64 | Medium| 20 | 27 |
+|Tiny | 38 | 114 | 94 | 84 | 74 | Medium| 10 | 42 |
+|Small | 38 | 119 | 99 | 89 | 79 | Medium| 5 | 58 |
+|Medium | 38 | 124 | 104 | 94 | 84 | Medium| 0 | 84 |
+|Large | 38 | 129 | 109 | 99 | 89 | Medium| -5 | 126 |
+|Huge | 38 | 134 | 114 | 104 | 94 | Medium| -10 | 168 |
+|Gargantuan | 38 | 144 | 124 | 114 | 104 | Medium| -20 | 252 |
+|Colossal | 38 | 164 | 144 | 134 | 124 | Medium| -40 | 336 |
+|Titanic | 38 | 204 | 184 | 174 | 164 | Medium| -80 | 504 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 84 | 64 | 54 | 44 | Heavy| 87 | 47 |
+|Diminutive | 38 | 104 | 84 | 74 | 64 | Heavy| 67 | 62 |
+|Tiny | 38 | 114 | 94 | 84 | 74 | Heavy| 57 | 94 |
+|Small | 38 | 119 | 99 | 89 | 79 | Heavy| 52 | 131 |
+|Medium | 38 | 124 | 104 | 94 | 84 | Heavy| 47 | 188 |
+|Large | 38 | 129 | 109 | 99 | 89 | Heavy| 42 | 282 |
+|Huge | 38 | 134 | 114 | 104 | 94 | Heavy| 37 | 376 |
+|Gargantuan | 38 | 144 | 124 | 114 | 104 | Heavy| 27 | 564 |
+|Colossal | 38 | 164 | 144 | 134 | 124 | Heavy| 7 | 752 |
+|Titanic | 38 | 204 | 184 | 174 | 164 | Heavy| -33 | 1128 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 7 | 6 | 0 | -9 | No Armor| 87 | 12 |
+|Diminutive | 38 | 27 | 26 | 20 | 10 | No Armor| 67 | 16 |
+|Tiny | 38 | 37 | 36 | 30 | 20 | No Armor| 57 | 25 |
+|Small | 38 | 42 | 41 | 35 | 25 | No Armor| 52 | 35 |
+|Medium | 38 | 47 | 46 | 40 | 30 | No Armor| 47 | 50 |
+|Large | 38 | 52 | 51 | 45 | 35 | No Armor| 42 | 75 |
+|Huge | 38 | 57 | 56 | 50 | 40 | No Armor| 37 | 100 |
+|Gargantuan | 38 | 67 | 66 | 60 | 50 | No Armor| 27 | 151 |
+|Colossal | 38 | 87 | 86 | 80 | 70 | No Armor| 7 | 201 |
+|Titanic | 38 | 127 | 126 | 120 | 110 | No Armor| -33 | 302 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 35 | 35 | 28 | No Armor| 63 | 16 |
+|Diminutive | 38 | 58 | 55 | 55 | 48 | No Armor| 43 | 22 |
+|Tiny | 38 | 68 | 65 | 65 | 58 | No Armor| 33 | 33 |
+|Small | 38 | 73 | 70 | 70 | 63 | No Armor| 28 | 47 |
+|Medium | 38 | 78 | 75 | 75 | 68 | No Armor| 23 | 67 |
+|Large | 38 | 83 | 80 | 80 | 73 | No Armor| 18 | 100 |
+|Huge | 38 | 88 | 85 | 85 | 78 | No Armor| 13 | 134 |
+|Gargantuan | 38 | 98 | 95 | 95 | 88 | No Armor| 3 | 201 |
+|Colossal | 38 | 118 | 115 | 115 | 108 | No Armor| -17 | 268 |
+|Titanic | 38 | 158 | 155 | 155 | 148 | No Armor| -57 | 403 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 84 | 64 | 54 | 44 | Medium| 87 | 21 |
+|Diminutive | 38 | 104 | 84 | 74 | 64 | Medium| 67 | 27 |
+|Tiny | 38 | 114 | 94 | 84 | 74 | Medium| 57 | 42 |
+|Small | 38 | 119 | 99 | 89 | 79 | Medium| 52 | 58 |
+|Medium | 38 | 124 | 104 | 94 | 84 | Medium| 47 | 84 |
+|Large | 38 | 129 | 109 | 99 | 89 | Medium| 42 | 126 |
+|Huge | 38 | 134 | 114 | 104 | 94 | Medium| 37 | 168 |
+|Gargantuan | 38 | 144 | 124 | 114 | 104 | Medium| 27 | 252 |
+|Colossal | 38 | 164 | 144 | 134 | 124 | Medium| 7 | 336 |
+|Titanic | 38 | 204 | 184 | 174 | 164 | Medium| -33 | 504 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 84 | 64 | 54 | 44 | No Armor| 87 | 21 |
+|Diminutive | 38 | 104 | 84 | 74 | 64 | No Armor| 67 | 27 |
+|Tiny | 38 | 114 | 94 | 84 | 74 | No Armor| 57 | 42 |
+|Small | 38 | 119 | 99 | 89 | 79 | No Armor| 52 | 58 |
+|Medium | 38 | 124 | 104 | 94 | 84 | No Armor| 47 | 84 |
+|Large | 38 | 129 | 109 | 99 | 89 | No Armor| 42 | 126 |
+|Huge | 38 | 134 | 114 | 104 | 94 | No Armor| 37 | 168 |
+|Gargantuan | 38 | 144 | 124 | 114 | 104 | No Armor| 27 | 252 |
+|Colossal | 38 | 164 | 144 | 134 | 124 | No Armor| 7 | 336 |
+|Titanic | 38 | 204 | 184 | 174 | 164 | No Armor| -33 | 504 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 35 | 35 | 28 | No Armor| 87 | 16 |
+|Diminutive | 38 | 58 | 55 | 55 | 48 | No Armor| 67 | 22 |
+|Tiny | 38 | 68 | 65 | 65 | 58 | No Armor| 57 | 33 |
+|Small | 38 | 73 | 70 | 70 | 63 | No Armor| 52 | 47 |
+|Medium | 38 | 78 | 75 | 75 | 68 | No Armor| 47 | 67 |
+|Large | 38 | 83 | 80 | 80 | 73 | No Armor| 42 | 100 |
+|Huge | 38 | 88 | 85 | 85 | 78 | No Armor| 37 | 134 |
+|Gargantuan | 38 | 98 | 95 | 95 | 88 | No Armor| 27 | 201 |
+|Colossal | 38 | 118 | 115 | 115 | 108 | No Armor| 7 | 268 |
+|Titanic | 38 | 158 | 155 | 155 | 148 | No Armor| -33 | 403 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 84 | 64 | 54 | 44 | No Armor| 87 | 21 |
+|Diminutive | 38 | 104 | 84 | 74 | 64 | No Armor| 67 | 27 |
+|Tiny | 38 | 114 | 94 | 84 | 74 | No Armor| 57 | 42 |
+|Small | 38 | 119 | 99 | 89 | 79 | No Armor| 52 | 58 |
+|Medium | 38 | 124 | 104 | 94 | 84 | No Armor| 47 | 84 |
+|Large | 38 | 129 | 109 | 99 | 89 | No Armor| 42 | 126 |
+|Huge | 38 | 134 | 114 | 104 | 94 | No Armor| 37 | 168 |
+|Gargantuan | 38 | 144 | 124 | 114 | 104 | No Armor| 27 | 252 |
+|Colossal | 38 | 164 | 144 | 134 | 124 | No Armor| 7 | 336 |
+|Titanic | 38 | 204 | 184 | 174 | 164 | No Armor| -33 | 504 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 35 | 35 | 28 | No Armor| 87 | 16 |
+|Diminutive | 38 | 58 | 55 | 55 | 48 | No Armor| 67 | 22 |
+|Tiny | 38 | 68 | 65 | 65 | 58 | No Armor| 57 | 33 |
+|Small | 38 | 73 | 70 | 70 | 63 | No Armor| 52 | 47 |
+|Medium | 38 | 78 | 75 | 75 | 68 | No Armor| 47 | 67 |
+|Large | 38 | 83 | 80 | 80 | 73 | No Armor| 42 | 100 |
+|Huge | 38 | 88 | 85 | 85 | 78 | No Armor| 37 | 134 |
+|Gargantuan | 38 | 98 | 95 | 95 | 88 | No Armor| 27 | 201 |
+|Colossal | 38 | 118 | 115 | 115 | 108 | No Armor| 7 | 268 |
+|Titanic | 38 | 158 | 155 | 155 | 148 | No Armor| -33 | 403 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 35 | 35 | 28 | No Armor| 87 | 16 |
+|Diminutive | 38 | 58 | 55 | 55 | 48 | No Armor| 67 | 22 |
+|Tiny | 38 | 68 | 65 | 65 | 58 | No Armor| 57 | 33 |
+|Small | 38 | 73 | 70 | 70 | 63 | No Armor| 52 | 47 |
+|Medium | 38 | 78 | 75 | 75 | 68 | No Armor| 47 | 67 |
+|Large | 38 | 83 | 80 | 80 | 73 | No Armor| 42 | 100 |
+|Huge | 38 | 88 | 85 | 85 | 78 | No Armor| 37 | 134 |
+|Gargantuan | 38 | 98 | 95 | 95 | 88 | No Armor| 27 | 201 |
+|Colossal | 38 | 118 | 115 | 115 | 108 | No Armor| 7 | 268 |
+|Titanic | 38 | 158 | 155 | 155 | 148 | No Armor| -33 | 403 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 38 | 38 | 35 | 35 | 28 | Light| 87 | 16 |
+|Diminutive | 38 | 58 | 55 | 55 | 48 | Light| 67 | 22 |
+|Tiny | 38 | 68 | 65 | 65 | 58 | Light| 57 | 33 |
+|Small | 38 | 73 | 70 | 70 | 63 | Light| 52 | 47 |
+|Medium | 38 | 78 | 75 | 75 | 68 | Light| 47 | 67 |
+|Large | 38 | 83 | 80 | 80 | 73 | Light| 42 | 100 |
+|Huge | 38 | 88 | 85 | 85 | 78 | Light| 37 | 134 |
+|Gargantuan | 38 | 98 | 95 | 95 | 88 | Light| 27 | 201 |
+|Colossal | 38 | 118 | 115 | 115 | 108 | Light| 7 | 268 |
+|Titanic | 38 | 158 | 155 | 155 | 148 | Light| -33 | 403 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 65 | 55 | 45 | 29 | Light| 88 | 17 |
+|Diminutive | 39 | 85 | 75 | 65 | 49 | Light| 68 | 22 |
+|Tiny | 39 | 95 | 85 | 75 | 59 | Light| 58 | 34 |
+|Small | 39 | 100 | 90 | 80 | 64 | Light| 53 | 47 |
+|Medium | 39 | 105 | 95 | 85 | 69 | Light| 48 | 68 |
+|Large | 39 | 110 | 100 | 90 | 74 | Light| 43 | 102 |
+|Huge | 39 | 115 | 105 | 95 | 79 | Light| 38 | 136 |
+|Gargantuan | 39 | 125 | 115 | 105 | 89 | Light| 28 | 204 |
+|Colossal | 39 | 145 | 135 | 125 | 109 | Light| 8 | 272 |
+|Titanic | 39 | 185 | 175 | 165 | 149 | Light| -32 | 408 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 33 | 27 | 15 | Light| 88 | 17 |
+|Diminutive | 39 | 58 | 53 | 47 | 35 | Light| 68 | 22 |
+|Tiny | 39 | 68 | 63 | 57 | 45 | Light| 58 | 34 |
+|Small | 39 | 73 | 68 | 62 | 50 | Light| 53 | 47 |
+|Medium | 39 | 78 | 73 | 67 | 55 | Light| 48 | 68 |
+|Large | 39 | 83 | 78 | 72 | 60 | Light| 43 | 102 |
+|Huge | 39 | 88 | 83 | 77 | 65 | Light| 38 | 136 |
+|Gargantuan | 39 | 98 | 93 | 87 | 75 | Light| 28 | 204 |
+|Colossal | 39 | 118 | 113 | 107 | 95 | Light| 8 | 272 |
+|Titanic | 39 | 158 | 153 | 147 | 135 | Light| -32 | 408 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 85 | 65 | 55 | 45 | Medium| 40 | 21 |
+|Diminutive | 39 | 105 | 85 | 75 | 65 | Medium| 20 | 28 |
+|Tiny | 39 | 115 | 95 | 85 | 75 | Medium| 10 | 42 |
+|Small | 39 | 120 | 100 | 90 | 80 | Medium| 5 | 59 |
+|Medium | 39 | 125 | 105 | 95 | 85 | Medium| 0 | 85 |
+|Large | 39 | 130 | 110 | 100 | 90 | Medium| -5 | 127 |
+|Huge | 39 | 135 | 115 | 105 | 95 | Medium| -10 | 170 |
+|Gargantuan | 39 | 145 | 125 | 115 | 105 | Medium| -20 | 255 |
+|Colossal | 39 | 165 | 145 | 135 | 125 | Medium| -40 | 340 |
+|Titanic | 39 | 205 | 185 | 175 | 165 | Medium| -80 | 510 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 85 | 65 | 55 | 45 | Heavy| 88 | 47 |
+|Diminutive | 39 | 105 | 85 | 75 | 65 | Heavy| 68 | 62 |
+|Tiny | 39 | 115 | 95 | 85 | 75 | Heavy| 58 | 95 |
+|Small | 39 | 120 | 100 | 90 | 80 | Heavy| 53 | 133 |
+|Medium | 39 | 125 | 105 | 95 | 85 | Heavy| 48 | 190 |
+|Large | 39 | 130 | 110 | 100 | 90 | Heavy| 43 | 285 |
+|Huge | 39 | 135 | 115 | 105 | 95 | Heavy| 38 | 380 |
+|Gargantuan | 39 | 145 | 125 | 115 | 105 | Heavy| 28 | 570 |
+|Colossal | 39 | 165 | 145 | 135 | 125 | Heavy| 8 | 760 |
+|Titanic | 39 | 205 | 185 | 175 | 165 | Heavy| -32 | 1140 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 7 | 6 | 1 | -8 | No Armor| 88 | 12 |
+|Diminutive | 39 | 27 | 26 | 21 | 11 | No Armor| 68 | 16 |
+|Tiny | 39 | 37 | 36 | 31 | 21 | No Armor| 58 | 25 |
+|Small | 39 | 42 | 41 | 36 | 26 | No Armor| 53 | 35 |
+|Medium | 39 | 47 | 46 | 41 | 31 | No Armor| 48 | 51 |
+|Large | 39 | 52 | 51 | 46 | 36 | No Armor| 43 | 76 |
+|Huge | 39 | 57 | 56 | 51 | 41 | No Armor| 38 | 102 |
+|Gargantuan | 39 | 67 | 66 | 61 | 51 | No Armor| 28 | 153 |
+|Colossal | 39 | 87 | 86 | 81 | 71 | No Armor| 8 | 204 |
+|Titanic | 39 | 127 | 126 | 121 | 111 | No Armor| -32 | 306 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 36 | 36 | 29 | No Armor| 64 | 17 |
+|Diminutive | 39 | 58 | 56 | 56 | 49 | No Armor| 44 | 22 |
+|Tiny | 39 | 68 | 66 | 66 | 59 | No Armor| 34 | 34 |
+|Small | 39 | 73 | 71 | 71 | 64 | No Armor| 29 | 47 |
+|Medium | 39 | 78 | 76 | 76 | 69 | No Armor| 24 | 68 |
+|Large | 39 | 83 | 81 | 81 | 74 | No Armor| 19 | 102 |
+|Huge | 39 | 88 | 86 | 86 | 79 | No Armor| 14 | 136 |
+|Gargantuan | 39 | 98 | 96 | 96 | 89 | No Armor| 4 | 204 |
+|Colossal | 39 | 118 | 116 | 116 | 109 | No Armor| -16 | 272 |
+|Titanic | 39 | 158 | 156 | 156 | 149 | No Armor| -56 | 408 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 85 | 65 | 55 | 45 | Medium| 88 | 21 |
+|Diminutive | 39 | 105 | 85 | 75 | 65 | Medium| 68 | 28 |
+|Tiny | 39 | 115 | 95 | 85 | 75 | Medium| 58 | 42 |
+|Small | 39 | 120 | 100 | 90 | 80 | Medium| 53 | 59 |
+|Medium | 39 | 125 | 105 | 95 | 85 | Medium| 48 | 85 |
+|Large | 39 | 130 | 110 | 100 | 90 | Medium| 43 | 127 |
+|Huge | 39 | 135 | 115 | 105 | 95 | Medium| 38 | 170 |
+|Gargantuan | 39 | 145 | 125 | 115 | 105 | Medium| 28 | 255 |
+|Colossal | 39 | 165 | 145 | 135 | 125 | Medium| 8 | 340 |
+|Titanic | 39 | 205 | 185 | 175 | 165 | Medium| -32 | 510 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 85 | 65 | 55 | 45 | No Armor| 88 | 21 |
+|Diminutive | 39 | 105 | 85 | 75 | 65 | No Armor| 68 | 28 |
+|Tiny | 39 | 115 | 95 | 85 | 75 | No Armor| 58 | 42 |
+|Small | 39 | 120 | 100 | 90 | 80 | No Armor| 53 | 59 |
+|Medium | 39 | 125 | 105 | 95 | 85 | No Armor| 48 | 85 |
+|Large | 39 | 130 | 110 | 100 | 90 | No Armor| 43 | 127 |
+|Huge | 39 | 135 | 115 | 105 | 95 | No Armor| 38 | 170 |
+|Gargantuan | 39 | 145 | 125 | 115 | 105 | No Armor| 28 | 255 |
+|Colossal | 39 | 165 | 145 | 135 | 125 | No Armor| 8 | 340 |
+|Titanic | 39 | 205 | 185 | 175 | 165 | No Armor| -32 | 510 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 36 | 36 | 29 | No Armor| 88 | 17 |
+|Diminutive | 39 | 58 | 56 | 56 | 49 | No Armor| 68 | 22 |
+|Tiny | 39 | 68 | 66 | 66 | 59 | No Armor| 58 | 34 |
+|Small | 39 | 73 | 71 | 71 | 64 | No Armor| 53 | 47 |
+|Medium | 39 | 78 | 76 | 76 | 69 | No Armor| 48 | 68 |
+|Large | 39 | 83 | 81 | 81 | 74 | No Armor| 43 | 102 |
+|Huge | 39 | 88 | 86 | 86 | 79 | No Armor| 38 | 136 |
+|Gargantuan | 39 | 98 | 96 | 96 | 89 | No Armor| 28 | 204 |
+|Colossal | 39 | 118 | 116 | 116 | 109 | No Armor| 8 | 272 |
+|Titanic | 39 | 158 | 156 | 156 | 149 | No Armor| -32 | 408 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 85 | 65 | 55 | 45 | No Armor| 88 | 21 |
+|Diminutive | 39 | 105 | 85 | 75 | 65 | No Armor| 68 | 28 |
+|Tiny | 39 | 115 | 95 | 85 | 75 | No Armor| 58 | 42 |
+|Small | 39 | 120 | 100 | 90 | 80 | No Armor| 53 | 59 |
+|Medium | 39 | 125 | 105 | 95 | 85 | No Armor| 48 | 85 |
+|Large | 39 | 130 | 110 | 100 | 90 | No Armor| 43 | 127 |
+|Huge | 39 | 135 | 115 | 105 | 95 | No Armor| 38 | 170 |
+|Gargantuan | 39 | 145 | 125 | 115 | 105 | No Armor| 28 | 255 |
+|Colossal | 39 | 165 | 145 | 135 | 125 | No Armor| 8 | 340 |
+|Titanic | 39 | 205 | 185 | 175 | 165 | No Armor| -32 | 510 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 36 | 36 | 29 | No Armor| 88 | 17 |
+|Diminutive | 39 | 58 | 56 | 56 | 49 | No Armor| 68 | 22 |
+|Tiny | 39 | 68 | 66 | 66 | 59 | No Armor| 58 | 34 |
+|Small | 39 | 73 | 71 | 71 | 64 | No Armor| 53 | 47 |
+|Medium | 39 | 78 | 76 | 76 | 69 | No Armor| 48 | 68 |
+|Large | 39 | 83 | 81 | 81 | 74 | No Armor| 43 | 102 |
+|Huge | 39 | 88 | 86 | 86 | 79 | No Armor| 38 | 136 |
+|Gargantuan | 39 | 98 | 96 | 96 | 89 | No Armor| 28 | 204 |
+|Colossal | 39 | 118 | 116 | 116 | 109 | No Armor| 8 | 272 |
+|Titanic | 39 | 158 | 156 | 156 | 149 | No Armor| -32 | 408 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 36 | 36 | 29 | No Armor| 88 | 17 |
+|Diminutive | 39 | 58 | 56 | 56 | 49 | No Armor| 68 | 22 |
+|Tiny | 39 | 68 | 66 | 66 | 59 | No Armor| 58 | 34 |
+|Small | 39 | 73 | 71 | 71 | 64 | No Armor| 53 | 47 |
+|Medium | 39 | 78 | 76 | 76 | 69 | No Armor| 48 | 68 |
+|Large | 39 | 83 | 81 | 81 | 74 | No Armor| 43 | 102 |
+|Huge | 39 | 88 | 86 | 86 | 79 | No Armor| 38 | 136 |
+|Gargantuan | 39 | 98 | 96 | 96 | 89 | No Armor| 28 | 204 |
+|Colossal | 39 | 118 | 116 | 116 | 109 | No Armor| 8 | 272 |
+|Titanic | 39 | 158 | 156 | 156 | 149 | No Armor| -32 | 408 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 39 | 38 | 36 | 36 | 29 | Light| 88 | 17 |
+|Diminutive | 39 | 58 | 56 | 56 | 49 | Light| 68 | 22 |
+|Tiny | 39 | 68 | 66 | 66 | 59 | Light| 58 | 34 |
+|Small | 39 | 73 | 71 | 71 | 64 | Light| 53 | 47 |
+|Medium | 39 | 78 | 76 | 76 | 69 | Light| 48 | 68 |
+|Large | 39 | 83 | 81 | 81 | 74 | Light| 43 | 102 |
+|Huge | 39 | 88 | 86 | 86 | 79 | Light| 38 | 136 |
+|Gargantuan | 39 | 98 | 96 | 96 | 89 | Light| 28 | 204 |
+|Colossal | 39 | 118 | 116 | 116 | 109 | Light| 8 | 272 |
+|Titanic | 39 | 158 | 156 | 156 | 149 | Light| -32 | 408 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 66 | 56 | 45 | 30 | Light| 90 | 17 |
+|Diminutive | 40 | 86 | 76 | 65 | 50 | Light| 70 | 22 |
+|Tiny | 40 | 96 | 86 | 75 | 60 | Light| 60 | 34 |
+|Small | 40 | 101 | 91 | 80 | 65 | Light| 55 | 47 |
+|Medium | 40 | 106 | 96 | 85 | 70 | Light| 50 | 68 |
+|Large | 40 | 111 | 101 | 90 | 75 | Light| 45 | 102 |
+|Huge | 40 | 116 | 106 | 95 | 80 | Light| 40 | 136 |
+|Gargantuan | 40 | 126 | 116 | 105 | 90 | Light| 30 | 204 |
+|Colossal | 40 | 146 | 136 | 125 | 110 | Light| 10 | 272 |
+|Titanic | 40 | 186 | 176 | 165 | 150 | Light| -30 | 408 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 33 | 27 | 16 | Light| 90 | 17 |
+|Diminutive | 40 | 59 | 53 | 47 | 36 | Light| 70 | 22 |
+|Tiny | 40 | 69 | 63 | 57 | 46 | Light| 60 | 34 |
+|Small | 40 | 74 | 68 | 62 | 51 | Light| 55 | 47 |
+|Medium | 40 | 79 | 73 | 67 | 56 | Light| 50 | 68 |
+|Large | 40 | 84 | 78 | 72 | 61 | Light| 45 | 102 |
+|Huge | 40 | 89 | 83 | 77 | 66 | Light| 40 | 136 |
+|Gargantuan | 40 | 99 | 93 | 87 | 76 | Light| 30 | 204 |
+|Colossal | 40 | 119 | 113 | 107 | 96 | Light| 10 | 272 |
+|Titanic | 40 | 159 | 153 | 147 | 136 | Light| -30 | 408 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 87 | 66 | 56 | 45 | Medium| 40 | 21 |
+|Diminutive | 40 | 107 | 86 | 76 | 65 | Medium| 20 | 28 |
+|Tiny | 40 | 117 | 96 | 86 | 75 | Medium| 10 | 42 |
+|Small | 40 | 122 | 101 | 91 | 80 | Medium| 5 | 59 |
+|Medium | 40 | 127 | 106 | 96 | 85 | Medium| 0 | 85 |
+|Large | 40 | 132 | 111 | 101 | 90 | Medium| -5 | 127 |
+|Huge | 40 | 137 | 116 | 106 | 95 | Medium| -10 | 170 |
+|Gargantuan | 40 | 147 | 126 | 116 | 105 | Medium| -20 | 255 |
+|Colossal | 40 | 167 | 146 | 136 | 125 | Medium| -40 | 340 |
+|Titanic | 40 | 207 | 186 | 176 | 165 | Medium| -80 | 510 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 87 | 66 | 56 | 45 | Heavy| 90 | 48 |
+|Diminutive | 40 | 107 | 86 | 76 | 65 | Heavy| 70 | 63 |
+|Tiny | 40 | 117 | 96 | 86 | 75 | Heavy| 60 | 96 |
+|Small | 40 | 122 | 101 | 91 | 80 | Heavy| 55 | 134 |
+|Medium | 40 | 127 | 106 | 96 | 85 | Heavy| 50 | 192 |
+|Large | 40 | 132 | 111 | 101 | 90 | Heavy| 45 | 288 |
+|Huge | 40 | 137 | 116 | 106 | 95 | Heavy| 40 | 384 |
+|Gargantuan | 40 | 147 | 126 | 116 | 105 | Heavy| 30 | 576 |
+|Colossal | 40 | 167 | 146 | 136 | 125 | Heavy| 10 | 768 |
+|Titanic | 40 | 207 | 186 | 176 | 165 | Heavy| -30 | 1152 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 8 | 6 | 2 | -7 | No Armor| 90 | 12 |
+|Diminutive | 40 | 28 | 26 | 22 | 12 | No Armor| 70 | 16 |
+|Tiny | 40 | 38 | 36 | 32 | 22 | No Armor| 60 | 25 |
+|Small | 40 | 43 | 41 | 37 | 27 | No Armor| 55 | 35 |
+|Medium | 40 | 48 | 46 | 42 | 32 | No Armor| 50 | 51 |
+|Large | 40 | 53 | 51 | 47 | 37 | No Armor| 45 | 76 |
+|Huge | 40 | 58 | 56 | 52 | 42 | No Armor| 40 | 102 |
+|Gargantuan | 40 | 68 | 66 | 62 | 52 | No Armor| 30 | 153 |
+|Colossal | 40 | 88 | 86 | 82 | 72 | No Armor| 10 | 204 |
+|Titanic | 40 | 128 | 126 | 122 | 112 | No Armor| -30 | 306 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 36 | 36 | 30 | No Armor| 65 | 17 |
+|Diminutive | 40 | 59 | 56 | 56 | 50 | No Armor| 45 | 22 |
+|Tiny | 40 | 69 | 66 | 66 | 60 | No Armor| 35 | 34 |
+|Small | 40 | 74 | 71 | 71 | 65 | No Armor| 30 | 47 |
+|Medium | 40 | 79 | 76 | 76 | 70 | No Armor| 25 | 68 |
+|Large | 40 | 84 | 81 | 81 | 75 | No Armor| 20 | 102 |
+|Huge | 40 | 89 | 86 | 86 | 80 | No Armor| 15 | 136 |
+|Gargantuan | 40 | 99 | 96 | 96 | 90 | No Armor| 5 | 204 |
+|Colossal | 40 | 119 | 116 | 116 | 110 | No Armor| -15 | 272 |
+|Titanic | 40 | 159 | 156 | 156 | 150 | No Armor| -55 | 408 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 87 | 66 | 56 | 45 | Medium| 90 | 21 |
+|Diminutive | 40 | 107 | 86 | 76 | 65 | Medium| 70 | 28 |
+|Tiny | 40 | 117 | 96 | 86 | 75 | Medium| 60 | 42 |
+|Small | 40 | 122 | 101 | 91 | 80 | Medium| 55 | 59 |
+|Medium | 40 | 127 | 106 | 96 | 85 | Medium| 50 | 85 |
+|Large | 40 | 132 | 111 | 101 | 90 | Medium| 45 | 127 |
+|Huge | 40 | 137 | 116 | 106 | 95 | Medium| 40 | 170 |
+|Gargantuan | 40 | 147 | 126 | 116 | 105 | Medium| 30 | 255 |
+|Colossal | 40 | 167 | 146 | 136 | 125 | Medium| 10 | 340 |
+|Titanic | 40 | 207 | 186 | 176 | 165 | Medium| -30 | 510 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 87 | 66 | 56 | 45 | No Armor| 90 | 21 |
+|Diminutive | 40 | 107 | 86 | 76 | 65 | No Armor| 70 | 28 |
+|Tiny | 40 | 117 | 96 | 86 | 75 | No Armor| 60 | 42 |
+|Small | 40 | 122 | 101 | 91 | 80 | No Armor| 55 | 59 |
+|Medium | 40 | 127 | 106 | 96 | 85 | No Armor| 50 | 85 |
+|Large | 40 | 132 | 111 | 101 | 90 | No Armor| 45 | 127 |
+|Huge | 40 | 137 | 116 | 106 | 95 | No Armor| 40 | 170 |
+|Gargantuan | 40 | 147 | 126 | 116 | 105 | No Armor| 30 | 255 |
+|Colossal | 40 | 167 | 146 | 136 | 125 | No Armor| 10 | 340 |
+|Titanic | 40 | 207 | 186 | 176 | 165 | No Armor| -30 | 510 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 36 | 36 | 30 | No Armor| 90 | 17 |
+|Diminutive | 40 | 59 | 56 | 56 | 50 | No Armor| 70 | 22 |
+|Tiny | 40 | 69 | 66 | 66 | 60 | No Armor| 60 | 34 |
+|Small | 40 | 74 | 71 | 71 | 65 | No Armor| 55 | 47 |
+|Medium | 40 | 79 | 76 | 76 | 70 | No Armor| 50 | 68 |
+|Large | 40 | 84 | 81 | 81 | 75 | No Armor| 45 | 102 |
+|Huge | 40 | 89 | 86 | 86 | 80 | No Armor| 40 | 136 |
+|Gargantuan | 40 | 99 | 96 | 96 | 90 | No Armor| 30 | 204 |
+|Colossal | 40 | 119 | 116 | 116 | 110 | No Armor| 10 | 272 |
+|Titanic | 40 | 159 | 156 | 156 | 150 | No Armor| -30 | 408 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 87 | 66 | 56 | 45 | No Armor| 90 | 21 |
+|Diminutive | 40 | 107 | 86 | 76 | 65 | No Armor| 70 | 28 |
+|Tiny | 40 | 117 | 96 | 86 | 75 | No Armor| 60 | 42 |
+|Small | 40 | 122 | 101 | 91 | 80 | No Armor| 55 | 59 |
+|Medium | 40 | 127 | 106 | 96 | 85 | No Armor| 50 | 85 |
+|Large | 40 | 132 | 111 | 101 | 90 | No Armor| 45 | 127 |
+|Huge | 40 | 137 | 116 | 106 | 95 | No Armor| 40 | 170 |
+|Gargantuan | 40 | 147 | 126 | 116 | 105 | No Armor| 30 | 255 |
+|Colossal | 40 | 167 | 146 | 136 | 125 | No Armor| 10 | 340 |
+|Titanic | 40 | 207 | 186 | 176 | 165 | No Armor| -30 | 510 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 36 | 36 | 30 | No Armor| 90 | 17 |
+|Diminutive | 40 | 59 | 56 | 56 | 50 | No Armor| 70 | 22 |
+|Tiny | 40 | 69 | 66 | 66 | 60 | No Armor| 60 | 34 |
+|Small | 40 | 74 | 71 | 71 | 65 | No Armor| 55 | 47 |
+|Medium | 40 | 79 | 76 | 76 | 70 | No Armor| 50 | 68 |
+|Large | 40 | 84 | 81 | 81 | 75 | No Armor| 45 | 102 |
+|Huge | 40 | 89 | 86 | 86 | 80 | No Armor| 40 | 136 |
+|Gargantuan | 40 | 99 | 96 | 96 | 90 | No Armor| 30 | 204 |
+|Colossal | 40 | 119 | 116 | 116 | 110 | No Armor| 10 | 272 |
+|Titanic | 40 | 159 | 156 | 156 | 150 | No Armor| -30 | 408 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 36 | 36 | 30 | No Armor| 90 | 17 |
+|Diminutive | 40 | 59 | 56 | 56 | 50 | No Armor| 70 | 22 |
+|Tiny | 40 | 69 | 66 | 66 | 60 | No Armor| 60 | 34 |
+|Small | 40 | 74 | 71 | 71 | 65 | No Armor| 55 | 47 |
+|Medium | 40 | 79 | 76 | 76 | 70 | No Armor| 50 | 68 |
+|Large | 40 | 84 | 81 | 81 | 75 | No Armor| 45 | 102 |
+|Huge | 40 | 89 | 86 | 86 | 80 | No Armor| 40 | 136 |
+|Gargantuan | 40 | 99 | 96 | 96 | 90 | No Armor| 30 | 204 |
+|Colossal | 40 | 119 | 116 | 116 | 110 | No Armor| 10 | 272 |
+|Titanic | 40 | 159 | 156 | 156 | 150 | No Armor| -30 | 408 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 40 | 39 | 36 | 36 | 30 | Light| 90 | 17 |
+|Diminutive | 40 | 59 | 56 | 56 | 50 | Light| 70 | 22 |
+|Tiny | 40 | 69 | 66 | 66 | 60 | Light| 60 | 34 |
+|Small | 40 | 74 | 71 | 71 | 65 | Light| 55 | 47 |
+|Medium | 40 | 79 | 76 | 76 | 70 | Light| 50 | 68 |
+|Large | 40 | 84 | 81 | 81 | 75 | Light| 45 | 102 |
+|Huge | 40 | 89 | 86 | 86 | 80 | Light| 40 | 136 |
+|Gargantuan | 40 | 99 | 96 | 96 | 90 | Light| 30 | 204 |
+|Colossal | 40 | 119 | 116 | 116 | 110 | Light| 10 | 272 |
+|Titanic | 40 | 159 | 156 | 156 | 150 | Light| -30 | 408 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 67 | 56 | 46 | 30 | Light| 90 | 17 |
+|Diminutive | 41 | 87 | 76 | 66 | 50 | Light| 70 | 22 |
+|Tiny | 41 | 97 | 86 | 76 | 60 | Light| 60 | 34 |
+|Small | 41 | 102 | 91 | 81 | 65 | Light| 55 | 48 |
+|Medium | 41 | 107 | 96 | 86 | 70 | Light| 50 | 68 |
+|Large | 41 | 112 | 101 | 91 | 75 | Light| 45 | 103 |
+|Huge | 41 | 117 | 106 | 96 | 80 | Light| 40 | 137 |
+|Gargantuan | 41 | 127 | 116 | 106 | 90 | Light| 30 | 206 |
+|Colossal | 41 | 147 | 136 | 126 | 110 | Light| 10 | 275 |
+|Titanic | 41 | 187 | 176 | 166 | 150 | Light| -30 | 412 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 33 | 27 | 16 | Light| 90 | 17 |
+|Diminutive | 41 | 60 | 53 | 47 | 36 | Light| 70 | 22 |
+|Tiny | 41 | 70 | 63 | 57 | 46 | Light| 60 | 34 |
+|Small | 41 | 75 | 68 | 62 | 51 | Light| 55 | 48 |
+|Medium | 41 | 80 | 73 | 67 | 56 | Light| 50 | 68 |
+|Large | 41 | 85 | 78 | 72 | 61 | Light| 45 | 103 |
+|Huge | 41 | 90 | 83 | 77 | 66 | Light| 40 | 137 |
+|Gargantuan | 41 | 100 | 93 | 87 | 76 | Light| 30 | 206 |
+|Colossal | 41 | 120 | 113 | 107 | 96 | Light| 10 | 275 |
+|Titanic | 41 | 160 | 153 | 147 | 136 | Light| -30 | 412 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 88 | 67 | 56 | 46 | Medium| 40 | 21 |
+|Diminutive | 41 | 108 | 87 | 76 | 66 | Medium| 20 | 28 |
+|Tiny | 41 | 118 | 97 | 86 | 76 | Medium| 10 | 43 |
+|Small | 41 | 123 | 102 | 91 | 81 | Medium| 5 | 60 |
+|Medium | 41 | 128 | 107 | 96 | 86 | Medium| 0 | 86 |
+|Large | 41 | 133 | 112 | 101 | 91 | Medium| -5 | 129 |
+|Huge | 41 | 138 | 117 | 106 | 96 | Medium| -10 | 172 |
+|Gargantuan | 41 | 148 | 127 | 116 | 106 | Medium| -20 | 258 |
+|Colossal | 41 | 168 | 147 | 136 | 126 | Medium| -40 | 344 |
+|Titanic | 41 | 208 | 187 | 176 | 166 | Medium| -80 | 516 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 88 | 67 | 56 | 46 | Heavy| 90 | 48 |
+|Diminutive | 41 | 108 | 87 | 76 | 66 | Heavy| 70 | 63 |
+|Tiny | 41 | 118 | 97 | 86 | 76 | Heavy| 60 | 96 |
+|Small | 41 | 123 | 102 | 91 | 81 | Heavy| 55 | 134 |
+|Medium | 41 | 128 | 107 | 96 | 86 | Heavy| 50 | 192 |
+|Large | 41 | 133 | 112 | 101 | 91 | Heavy| 45 | 288 |
+|Huge | 41 | 138 | 117 | 106 | 96 | Heavy| 40 | 384 |
+|Gargantuan | 41 | 148 | 127 | 116 | 106 | Heavy| 30 | 576 |
+|Colossal | 41 | 168 | 147 | 136 | 126 | Heavy| 10 | 768 |
+|Titanic | 41 | 208 | 187 | 176 | 166 | Heavy| -30 | 1152 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 8 | 7 | 2 | -7 | No Armor| 90 | 12 |
+|Diminutive | 41 | 28 | 27 | 22 | 12 | No Armor| 70 | 17 |
+|Tiny | 41 | 38 | 37 | 32 | 22 | No Armor| 60 | 25 |
+|Small | 41 | 43 | 42 | 37 | 27 | No Armor| 55 | 36 |
+|Medium | 41 | 48 | 47 | 42 | 32 | No Armor| 50 | 51 |
+|Large | 41 | 53 | 52 | 47 | 37 | No Armor| 45 | 77 |
+|Huge | 41 | 58 | 57 | 52 | 42 | No Armor| 40 | 103 |
+|Gargantuan | 41 | 68 | 67 | 62 | 52 | No Armor| 30 | 154 |
+|Colossal | 41 | 88 | 87 | 82 | 72 | No Armor| 10 | 206 |
+|Titanic | 41 | 128 | 127 | 122 | 112 | No Armor| -30 | 309 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 36 | 37 | 30 | No Armor| 65 | 17 |
+|Diminutive | 41 | 60 | 56 | 57 | 50 | No Armor| 45 | 22 |
+|Tiny | 41 | 70 | 66 | 67 | 60 | No Armor| 35 | 34 |
+|Small | 41 | 75 | 71 | 72 | 65 | No Armor| 30 | 48 |
+|Medium | 41 | 80 | 76 | 77 | 70 | No Armor| 25 | 68 |
+|Large | 41 | 85 | 81 | 82 | 75 | No Armor| 20 | 103 |
+|Huge | 41 | 90 | 86 | 87 | 80 | No Armor| 15 | 137 |
+|Gargantuan | 41 | 100 | 96 | 97 | 90 | No Armor| 5 | 206 |
+|Colossal | 41 | 120 | 116 | 117 | 110 | No Armor| -15 | 275 |
+|Titanic | 41 | 160 | 156 | 157 | 150 | No Armor| -55 | 412 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 88 | 67 | 56 | 46 | Medium| 90 | 21 |
+|Diminutive | 41 | 108 | 87 | 76 | 66 | Medium| 70 | 28 |
+|Tiny | 41 | 118 | 97 | 86 | 76 | Medium| 60 | 43 |
+|Small | 41 | 123 | 102 | 91 | 81 | Medium| 55 | 60 |
+|Medium | 41 | 128 | 107 | 96 | 86 | Medium| 50 | 86 |
+|Large | 41 | 133 | 112 | 101 | 91 | Medium| 45 | 129 |
+|Huge | 41 | 138 | 117 | 106 | 96 | Medium| 40 | 172 |
+|Gargantuan | 41 | 148 | 127 | 116 | 106 | Medium| 30 | 258 |
+|Colossal | 41 | 168 | 147 | 136 | 126 | Medium| 10 | 344 |
+|Titanic | 41 | 208 | 187 | 176 | 166 | Medium| -30 | 516 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 88 | 67 | 56 | 46 | No Armor| 90 | 21 |
+|Diminutive | 41 | 108 | 87 | 76 | 66 | No Armor| 70 | 28 |
+|Tiny | 41 | 118 | 97 | 86 | 76 | No Armor| 60 | 43 |
+|Small | 41 | 123 | 102 | 91 | 81 | No Armor| 55 | 60 |
+|Medium | 41 | 128 | 107 | 96 | 86 | No Armor| 50 | 86 |
+|Large | 41 | 133 | 112 | 101 | 91 | No Armor| 45 | 129 |
+|Huge | 41 | 138 | 117 | 106 | 96 | No Armor| 40 | 172 |
+|Gargantuan | 41 | 148 | 127 | 116 | 106 | No Armor| 30 | 258 |
+|Colossal | 41 | 168 | 147 | 136 | 126 | No Armor| 10 | 344 |
+|Titanic | 41 | 208 | 187 | 176 | 166 | No Armor| -30 | 516 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 36 | 37 | 30 | No Armor| 90 | 17 |
+|Diminutive | 41 | 60 | 56 | 57 | 50 | No Armor| 70 | 22 |
+|Tiny | 41 | 70 | 66 | 67 | 60 | No Armor| 60 | 34 |
+|Small | 41 | 75 | 71 | 72 | 65 | No Armor| 55 | 48 |
+|Medium | 41 | 80 | 76 | 77 | 70 | No Armor| 50 | 68 |
+|Large | 41 | 85 | 81 | 82 | 75 | No Armor| 45 | 103 |
+|Huge | 41 | 90 | 86 | 87 | 80 | No Armor| 40 | 137 |
+|Gargantuan | 41 | 100 | 96 | 97 | 90 | No Armor| 30 | 206 |
+|Colossal | 41 | 120 | 116 | 117 | 110 | No Armor| 10 | 275 |
+|Titanic | 41 | 160 | 156 | 157 | 150 | No Armor| -30 | 412 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 88 | 67 | 56 | 46 | No Armor| 90 | 21 |
+|Diminutive | 41 | 108 | 87 | 76 | 66 | No Armor| 70 | 28 |
+|Tiny | 41 | 118 | 97 | 86 | 76 | No Armor| 60 | 43 |
+|Small | 41 | 123 | 102 | 91 | 81 | No Armor| 55 | 60 |
+|Medium | 41 | 128 | 107 | 96 | 86 | No Armor| 50 | 86 |
+|Large | 41 | 133 | 112 | 101 | 91 | No Armor| 45 | 129 |
+|Huge | 41 | 138 | 117 | 106 | 96 | No Armor| 40 | 172 |
+|Gargantuan | 41 | 148 | 127 | 116 | 106 | No Armor| 30 | 258 |
+|Colossal | 41 | 168 | 147 | 136 | 126 | No Armor| 10 | 344 |
+|Titanic | 41 | 208 | 187 | 176 | 166 | No Armor| -30 | 516 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 36 | 37 | 30 | No Armor| 90 | 17 |
+|Diminutive | 41 | 60 | 56 | 57 | 50 | No Armor| 70 | 22 |
+|Tiny | 41 | 70 | 66 | 67 | 60 | No Armor| 60 | 34 |
+|Small | 41 | 75 | 71 | 72 | 65 | No Armor| 55 | 48 |
+|Medium | 41 | 80 | 76 | 77 | 70 | No Armor| 50 | 68 |
+|Large | 41 | 85 | 81 | 82 | 75 | No Armor| 45 | 103 |
+|Huge | 41 | 90 | 86 | 87 | 80 | No Armor| 40 | 137 |
+|Gargantuan | 41 | 100 | 96 | 97 | 90 | No Armor| 30 | 206 |
+|Colossal | 41 | 120 | 116 | 117 | 110 | No Armor| 10 | 275 |
+|Titanic | 41 | 160 | 156 | 157 | 150 | No Armor| -30 | 412 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 36 | 37 | 30 | No Armor| 90 | 17 |
+|Diminutive | 41 | 60 | 56 | 57 | 50 | No Armor| 70 | 22 |
+|Tiny | 41 | 70 | 66 | 67 | 60 | No Armor| 60 | 34 |
+|Small | 41 | 75 | 71 | 72 | 65 | No Armor| 55 | 48 |
+|Medium | 41 | 80 | 76 | 77 | 70 | No Armor| 50 | 68 |
+|Large | 41 | 85 | 81 | 82 | 75 | No Armor| 45 | 103 |
+|Huge | 41 | 90 | 86 | 87 | 80 | No Armor| 40 | 137 |
+|Gargantuan | 41 | 100 | 96 | 97 | 90 | No Armor| 30 | 206 |
+|Colossal | 41 | 120 | 116 | 117 | 110 | No Armor| 10 | 275 |
+|Titanic | 41 | 160 | 156 | 157 | 150 | No Armor| -30 | 412 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 41 | 40 | 36 | 37 | 30 | Light| 90 | 17 |
+|Diminutive | 41 | 60 | 56 | 57 | 50 | Light| 70 | 22 |
+|Tiny | 41 | 70 | 66 | 67 | 60 | Light| 60 | 34 |
+|Small | 41 | 75 | 71 | 72 | 65 | Light| 55 | 48 |
+|Medium | 41 | 80 | 76 | 77 | 70 | Light| 50 | 68 |
+|Large | 41 | 85 | 81 | 82 | 75 | Light| 45 | 103 |
+|Huge | 41 | 90 | 86 | 87 | 80 | Light| 40 | 137 |
+|Gargantuan | 41 | 100 | 96 | 97 | 90 | Light| 30 | 206 |
+|Colossal | 41 | 120 | 116 | 117 | 110 | Light| 10 | 275 |
+|Titanic | 41 | 160 | 156 | 157 | 150 | Light| -30 | 412 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 68 | 57 | 46 | 31 | Light| 91 | 17 |
+|Diminutive | 42 | 88 | 77 | 66 | 51 | Light| 71 | 22 |
+|Tiny | 42 | 98 | 87 | 76 | 61 | Light| 61 | 34 |
+|Small | 42 | 103 | 92 | 81 | 66 | Light| 56 | 48 |
+|Medium | 42 | 108 | 97 | 86 | 71 | Light| 51 | 68 |
+|Large | 42 | 113 | 102 | 91 | 76 | Light| 46 | 103 |
+|Huge | 42 | 118 | 107 | 96 | 81 | Light| 41 | 137 |
+|Gargantuan | 42 | 128 | 117 | 106 | 91 | Light| 31 | 206 |
+|Colossal | 42 | 148 | 137 | 126 | 111 | Light| 11 | 275 |
+|Titanic | 42 | 188 | 177 | 166 | 151 | Light| -29 | 412 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 34 | 27 | 17 | Light| 91 | 17 |
+|Diminutive | 42 | 61 | 54 | 47 | 37 | Light| 71 | 22 |
+|Tiny | 42 | 71 | 64 | 57 | 47 | Light| 61 | 34 |
+|Small | 42 | 76 | 69 | 62 | 52 | Light| 56 | 48 |
+|Medium | 42 | 81 | 74 | 67 | 57 | Light| 51 | 68 |
+|Large | 42 | 86 | 79 | 72 | 62 | Light| 46 | 103 |
+|Huge | 42 | 91 | 84 | 77 | 67 | Light| 41 | 137 |
+|Gargantuan | 42 | 101 | 94 | 87 | 77 | Light| 31 | 206 |
+|Colossal | 42 | 121 | 114 | 107 | 97 | Light| 11 | 275 |
+|Titanic | 42 | 161 | 154 | 147 | 137 | Light| -29 | 412 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 90 | 68 | 57 | 46 | Medium| 40 | 21 |
+|Diminutive | 42 | 110 | 88 | 77 | 66 | Medium| 20 | 28 |
+|Tiny | 42 | 120 | 98 | 87 | 76 | Medium| 10 | 43 |
+|Small | 42 | 125 | 103 | 92 | 81 | Medium| 5 | 60 |
+|Medium | 42 | 130 | 108 | 97 | 86 | Medium| 0 | 86 |
+|Large | 42 | 135 | 113 | 102 | 91 | Medium| -5 | 129 |
+|Huge | 42 | 140 | 118 | 107 | 96 | Medium| -10 | 172 |
+|Gargantuan | 42 | 150 | 128 | 117 | 106 | Medium| -20 | 258 |
+|Colossal | 42 | 170 | 148 | 137 | 126 | Medium| -40 | 344 |
+|Titanic | 42 | 210 | 188 | 177 | 166 | Medium| -80 | 516 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 90 | 68 | 57 | 46 | Heavy| 91 | 48 |
+|Diminutive | 42 | 110 | 88 | 77 | 66 | Heavy| 71 | 64 |
+|Tiny | 42 | 120 | 98 | 87 | 76 | Heavy| 61 | 97 |
+|Small | 42 | 125 | 103 | 92 | 81 | Heavy| 56 | 135 |
+|Medium | 42 | 130 | 108 | 97 | 86 | Heavy| 51 | 194 |
+|Large | 42 | 135 | 113 | 102 | 91 | Heavy| 46 | 291 |
+|Huge | 42 | 140 | 118 | 107 | 96 | Heavy| 41 | 388 |
+|Gargantuan | 42 | 150 | 128 | 117 | 106 | Heavy| 31 | 582 |
+|Colossal | 42 | 170 | 148 | 137 | 126 | Heavy| 11 | 776 |
+|Titanic | 42 | 210 | 188 | 177 | 166 | Heavy| -29 | 1164 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 8 | 7 | 2 | -6 | No Armor| 91 | 12 |
+|Diminutive | 42 | 28 | 27 | 22 | 13 | No Armor| 71 | 17 |
+|Tiny | 42 | 38 | 37 | 32 | 23 | No Armor| 61 | 25 |
+|Small | 42 | 43 | 42 | 37 | 28 | No Armor| 56 | 36 |
+|Medium | 42 | 48 | 47 | 42 | 33 | No Armor| 51 | 51 |
+|Large | 42 | 53 | 52 | 47 | 38 | No Armor| 46 | 77 |
+|Huge | 42 | 58 | 57 | 52 | 43 | No Armor| 41 | 103 |
+|Gargantuan | 42 | 68 | 67 | 62 | 53 | No Armor| 31 | 154 |
+|Colossal | 42 | 88 | 87 | 82 | 73 | No Armor| 11 | 206 |
+|Titanic | 42 | 128 | 127 | 122 | 113 | No Armor| -29 | 309 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 37 | 37 | 31 | No Armor| 66 | 17 |
+|Diminutive | 42 | 61 | 57 | 57 | 51 | No Armor| 46 | 22 |
+|Tiny | 42 | 71 | 67 | 67 | 61 | No Armor| 36 | 34 |
+|Small | 42 | 76 | 72 | 72 | 66 | No Armor| 31 | 48 |
+|Medium | 42 | 81 | 77 | 77 | 71 | No Armor| 26 | 68 |
+|Large | 42 | 86 | 82 | 82 | 76 | No Armor| 21 | 103 |
+|Huge | 42 | 91 | 87 | 87 | 81 | No Armor| 16 | 137 |
+|Gargantuan | 42 | 101 | 97 | 97 | 91 | No Armor| 6 | 206 |
+|Colossal | 42 | 121 | 117 | 117 | 111 | No Armor| -14 | 275 |
+|Titanic | 42 | 161 | 157 | 157 | 151 | No Armor| -54 | 412 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 90 | 68 | 57 | 46 | Medium| 91 | 21 |
+|Diminutive | 42 | 110 | 88 | 77 | 66 | Medium| 71 | 28 |
+|Tiny | 42 | 120 | 98 | 87 | 76 | Medium| 61 | 43 |
+|Small | 42 | 125 | 103 | 92 | 81 | Medium| 56 | 60 |
+|Medium | 42 | 130 | 108 | 97 | 86 | Medium| 51 | 86 |
+|Large | 42 | 135 | 113 | 102 | 91 | Medium| 46 | 129 |
+|Huge | 42 | 140 | 118 | 107 | 96 | Medium| 41 | 172 |
+|Gargantuan | 42 | 150 | 128 | 117 | 106 | Medium| 31 | 258 |
+|Colossal | 42 | 170 | 148 | 137 | 126 | Medium| 11 | 344 |
+|Titanic | 42 | 210 | 188 | 177 | 166 | Medium| -29 | 516 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 90 | 68 | 57 | 46 | No Armor| 91 | 21 |
+|Diminutive | 42 | 110 | 88 | 77 | 66 | No Armor| 71 | 28 |
+|Tiny | 42 | 120 | 98 | 87 | 76 | No Armor| 61 | 43 |
+|Small | 42 | 125 | 103 | 92 | 81 | No Armor| 56 | 60 |
+|Medium | 42 | 130 | 108 | 97 | 86 | No Armor| 51 | 86 |
+|Large | 42 | 135 | 113 | 102 | 91 | No Armor| 46 | 129 |
+|Huge | 42 | 140 | 118 | 107 | 96 | No Armor| 41 | 172 |
+|Gargantuan | 42 | 150 | 128 | 117 | 106 | No Armor| 31 | 258 |
+|Colossal | 42 | 170 | 148 | 137 | 126 | No Armor| 11 | 344 |
+|Titanic | 42 | 210 | 188 | 177 | 166 | No Armor| -29 | 516 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 37 | 37 | 31 | No Armor| 91 | 17 |
+|Diminutive | 42 | 61 | 57 | 57 | 51 | No Armor| 71 | 22 |
+|Tiny | 42 | 71 | 67 | 67 | 61 | No Armor| 61 | 34 |
+|Small | 42 | 76 | 72 | 72 | 66 | No Armor| 56 | 48 |
+|Medium | 42 | 81 | 77 | 77 | 71 | No Armor| 51 | 68 |
+|Large | 42 | 86 | 82 | 82 | 76 | No Armor| 46 | 103 |
+|Huge | 42 | 91 | 87 | 87 | 81 | No Armor| 41 | 137 |
+|Gargantuan | 42 | 101 | 97 | 97 | 91 | No Armor| 31 | 206 |
+|Colossal | 42 | 121 | 117 | 117 | 111 | No Armor| 11 | 275 |
+|Titanic | 42 | 161 | 157 | 157 | 151 | No Armor| -29 | 412 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 90 | 68 | 57 | 46 | No Armor| 91 | 21 |
+|Diminutive | 42 | 110 | 88 | 77 | 66 | No Armor| 71 | 28 |
+|Tiny | 42 | 120 | 98 | 87 | 76 | No Armor| 61 | 43 |
+|Small | 42 | 125 | 103 | 92 | 81 | No Armor| 56 | 60 |
+|Medium | 42 | 130 | 108 | 97 | 86 | No Armor| 51 | 86 |
+|Large | 42 | 135 | 113 | 102 | 91 | No Armor| 46 | 129 |
+|Huge | 42 | 140 | 118 | 107 | 96 | No Armor| 41 | 172 |
+|Gargantuan | 42 | 150 | 128 | 117 | 106 | No Armor| 31 | 258 |
+|Colossal | 42 | 170 | 148 | 137 | 126 | No Armor| 11 | 344 |
+|Titanic | 42 | 210 | 188 | 177 | 166 | No Armor| -29 | 516 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 37 | 37 | 31 | No Armor| 91 | 17 |
+|Diminutive | 42 | 61 | 57 | 57 | 51 | No Armor| 71 | 22 |
+|Tiny | 42 | 71 | 67 | 67 | 61 | No Armor| 61 | 34 |
+|Small | 42 | 76 | 72 | 72 | 66 | No Armor| 56 | 48 |
+|Medium | 42 | 81 | 77 | 77 | 71 | No Armor| 51 | 68 |
+|Large | 42 | 86 | 82 | 82 | 76 | No Armor| 46 | 103 |
+|Huge | 42 | 91 | 87 | 87 | 81 | No Armor| 41 | 137 |
+|Gargantuan | 42 | 101 | 97 | 97 | 91 | No Armor| 31 | 206 |
+|Colossal | 42 | 121 | 117 | 117 | 111 | No Armor| 11 | 275 |
+|Titanic | 42 | 161 | 157 | 157 | 151 | No Armor| -29 | 412 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 37 | 37 | 31 | No Armor| 91 | 17 |
+|Diminutive | 42 | 61 | 57 | 57 | 51 | No Armor| 71 | 22 |
+|Tiny | 42 | 71 | 67 | 67 | 61 | No Armor| 61 | 34 |
+|Small | 42 | 76 | 72 | 72 | 66 | No Armor| 56 | 48 |
+|Medium | 42 | 81 | 77 | 77 | 71 | No Armor| 51 | 68 |
+|Large | 42 | 86 | 82 | 82 | 76 | No Armor| 46 | 103 |
+|Huge | 42 | 91 | 87 | 87 | 81 | No Armor| 41 | 137 |
+|Gargantuan | 42 | 101 | 97 | 97 | 91 | No Armor| 31 | 206 |
+|Colossal | 42 | 121 | 117 | 117 | 111 | No Armor| 11 | 275 |
+|Titanic | 42 | 161 | 157 | 157 | 151 | No Armor| -29 | 412 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 42 | 41 | 37 | 37 | 31 | Light| 91 | 17 |
+|Diminutive | 42 | 61 | 57 | 57 | 51 | Light| 71 | 22 |
+|Tiny | 42 | 71 | 67 | 67 | 61 | Light| 61 | 34 |
+|Small | 42 | 76 | 72 | 72 | 66 | Light| 56 | 48 |
+|Medium | 42 | 81 | 77 | 77 | 71 | Light| 51 | 68 |
+|Large | 42 | 86 | 82 | 82 | 76 | Light| 46 | 103 |
+|Huge | 42 | 91 | 87 | 87 | 81 | Light| 41 | 137 |
+|Gargantuan | 42 | 101 | 97 | 97 | 91 | Light| 31 | 206 |
+|Colossal | 42 | 121 | 117 | 117 | 111 | Light| 11 | 275 |
+|Titanic | 42 | 161 | 157 | 157 | 151 | Light| -29 | 412 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 69 | 58 | 47 | 31 | Light| 91 | 17 |
+|Diminutive | 43 | 89 | 78 | 67 | 51 | Light| 71 | 22 |
+|Tiny | 43 | 99 | 88 | 77 | 61 | Light| 61 | 34 |
+|Small | 43 | 104 | 93 | 82 | 66 | Light| 56 | 48 |
+|Medium | 43 | 109 | 98 | 87 | 71 | Light| 51 | 69 |
+|Large | 43 | 114 | 103 | 92 | 76 | Light| 46 | 104 |
+|Huge | 43 | 119 | 108 | 97 | 81 | Light| 41 | 139 |
+|Gargantuan | 43 | 129 | 118 | 107 | 91 | Light| 31 | 208 |
+|Colossal | 43 | 149 | 138 | 127 | 111 | Light| 11 | 278 |
+|Titanic | 43 | 189 | 178 | 167 | 151 | Light| -29 | 417 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 35 | 28 | 17 | Light| 91 | 17 |
+|Diminutive | 43 | 61 | 55 | 48 | 37 | Light| 71 | 22 |
+|Tiny | 43 | 71 | 65 | 58 | 47 | Light| 61 | 34 |
+|Small | 43 | 76 | 70 | 63 | 52 | Light| 56 | 48 |
+|Medium | 43 | 81 | 75 | 68 | 57 | Light| 51 | 69 |
+|Large | 43 | 86 | 80 | 73 | 62 | Light| 46 | 104 |
+|Huge | 43 | 91 | 85 | 78 | 67 | Light| 41 | 139 |
+|Gargantuan | 43 | 101 | 95 | 88 | 77 | Light| 31 | 208 |
+|Colossal | 43 | 121 | 115 | 108 | 97 | Light| 11 | 278 |
+|Titanic | 43 | 161 | 155 | 148 | 137 | Light| -29 | 417 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 91 | 69 | 58 | 47 | Medium| 40 | 21 |
+|Diminutive | 43 | 111 | 89 | 78 | 67 | Medium| 20 | 28 |
+|Tiny | 43 | 121 | 99 | 88 | 77 | Medium| 10 | 43 |
+|Small | 43 | 126 | 104 | 93 | 82 | Medium| 5 | 60 |
+|Medium | 43 | 131 | 109 | 98 | 87 | Medium| 0 | 87 |
+|Large | 43 | 136 | 114 | 103 | 92 | Medium| -5 | 130 |
+|Huge | 43 | 141 | 119 | 108 | 97 | Medium| -10 | 174 |
+|Gargantuan | 43 | 151 | 129 | 118 | 107 | Medium| -20 | 261 |
+|Colossal | 43 | 171 | 149 | 138 | 127 | Medium| -40 | 348 |
+|Titanic | 43 | 211 | 189 | 178 | 167 | Medium| -80 | 522 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 91 | 69 | 58 | 47 | Heavy| 91 | 49 |
+|Diminutive | 43 | 111 | 89 | 78 | 67 | Heavy| 71 | 64 |
+|Tiny | 43 | 121 | 99 | 88 | 77 | Heavy| 61 | 98 |
+|Small | 43 | 126 | 104 | 93 | 82 | Heavy| 56 | 137 |
+|Medium | 43 | 131 | 109 | 98 | 87 | Heavy| 51 | 196 |
+|Large | 43 | 136 | 114 | 103 | 92 | Heavy| 46 | 294 |
+|Huge | 43 | 141 | 119 | 108 | 97 | Heavy| 41 | 392 |
+|Gargantuan | 43 | 151 | 129 | 118 | 107 | Heavy| 31 | 588 |
+|Colossal | 43 | 171 | 149 | 138 | 127 | Heavy| 11 | 784 |
+|Titanic | 43 | 211 | 189 | 178 | 167 | Heavy| -29 | 1176 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 9 | 7 | 2 | -6 | No Armor| 91 | 13 |
+|Diminutive | 43 | 29 | 27 | 22 | 13 | No Armor| 71 | 17 |
+|Tiny | 43 | 39 | 37 | 32 | 23 | No Armor| 61 | 26 |
+|Small | 43 | 44 | 42 | 37 | 28 | No Armor| 56 | 36 |
+|Medium | 43 | 49 | 47 | 42 | 33 | No Armor| 51 | 52 |
+|Large | 43 | 54 | 52 | 47 | 38 | No Armor| 46 | 78 |
+|Huge | 43 | 59 | 57 | 52 | 43 | No Armor| 41 | 104 |
+|Gargantuan | 43 | 69 | 67 | 62 | 53 | No Armor| 31 | 156 |
+|Colossal | 43 | 89 | 87 | 82 | 73 | No Armor| 11 | 208 |
+|Titanic | 43 | 129 | 127 | 122 | 113 | No Armor| -29 | 313 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 38 | 38 | 31 | No Armor| 66 | 17 |
+|Diminutive | 43 | 61 | 58 | 58 | 51 | No Armor| 46 | 22 |
+|Tiny | 43 | 71 | 68 | 68 | 61 | No Armor| 36 | 34 |
+|Small | 43 | 76 | 73 | 73 | 66 | No Armor| 31 | 48 |
+|Medium | 43 | 81 | 78 | 78 | 71 | No Armor| 26 | 69 |
+|Large | 43 | 86 | 83 | 83 | 76 | No Armor| 21 | 104 |
+|Huge | 43 | 91 | 88 | 88 | 81 | No Armor| 16 | 139 |
+|Gargantuan | 43 | 101 | 98 | 98 | 91 | No Armor| 6 | 208 |
+|Colossal | 43 | 121 | 118 | 118 | 111 | No Armor| -14 | 278 |
+|Titanic | 43 | 161 | 158 | 158 | 151 | No Armor| -54 | 417 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 91 | 69 | 58 | 47 | Medium| 91 | 21 |
+|Diminutive | 43 | 111 | 89 | 78 | 67 | Medium| 71 | 28 |
+|Tiny | 43 | 121 | 99 | 88 | 77 | Medium| 61 | 43 |
+|Small | 43 | 126 | 104 | 93 | 82 | Medium| 56 | 60 |
+|Medium | 43 | 131 | 109 | 98 | 87 | Medium| 51 | 87 |
+|Large | 43 | 136 | 114 | 103 | 92 | Medium| 46 | 130 |
+|Huge | 43 | 141 | 119 | 108 | 97 | Medium| 41 | 174 |
+|Gargantuan | 43 | 151 | 129 | 118 | 107 | Medium| 31 | 261 |
+|Colossal | 43 | 171 | 149 | 138 | 127 | Medium| 11 | 348 |
+|Titanic | 43 | 211 | 189 | 178 | 167 | Medium| -29 | 522 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 91 | 69 | 58 | 47 | No Armor| 91 | 21 |
+|Diminutive | 43 | 111 | 89 | 78 | 67 | No Armor| 71 | 28 |
+|Tiny | 43 | 121 | 99 | 88 | 77 | No Armor| 61 | 43 |
+|Small | 43 | 126 | 104 | 93 | 82 | No Armor| 56 | 60 |
+|Medium | 43 | 131 | 109 | 98 | 87 | No Armor| 51 | 87 |
+|Large | 43 | 136 | 114 | 103 | 92 | No Armor| 46 | 130 |
+|Huge | 43 | 141 | 119 | 108 | 97 | No Armor| 41 | 174 |
+|Gargantuan | 43 | 151 | 129 | 118 | 107 | No Armor| 31 | 261 |
+|Colossal | 43 | 171 | 149 | 138 | 127 | No Armor| 11 | 348 |
+|Titanic | 43 | 211 | 189 | 178 | 167 | No Armor| -29 | 522 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 38 | 38 | 31 | No Armor| 91 | 17 |
+|Diminutive | 43 | 61 | 58 | 58 | 51 | No Armor| 71 | 22 |
+|Tiny | 43 | 71 | 68 | 68 | 61 | No Armor| 61 | 34 |
+|Small | 43 | 76 | 73 | 73 | 66 | No Armor| 56 | 48 |
+|Medium | 43 | 81 | 78 | 78 | 71 | No Armor| 51 | 69 |
+|Large | 43 | 86 | 83 | 83 | 76 | No Armor| 46 | 104 |
+|Huge | 43 | 91 | 88 | 88 | 81 | No Armor| 41 | 139 |
+|Gargantuan | 43 | 101 | 98 | 98 | 91 | No Armor| 31 | 208 |
+|Colossal | 43 | 121 | 118 | 118 | 111 | No Armor| 11 | 278 |
+|Titanic | 43 | 161 | 158 | 158 | 151 | No Armor| -29 | 417 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 91 | 69 | 58 | 47 | No Armor| 91 | 21 |
+|Diminutive | 43 | 111 | 89 | 78 | 67 | No Armor| 71 | 28 |
+|Tiny | 43 | 121 | 99 | 88 | 77 | No Armor| 61 | 43 |
+|Small | 43 | 126 | 104 | 93 | 82 | No Armor| 56 | 60 |
+|Medium | 43 | 131 | 109 | 98 | 87 | No Armor| 51 | 87 |
+|Large | 43 | 136 | 114 | 103 | 92 | No Armor| 46 | 130 |
+|Huge | 43 | 141 | 119 | 108 | 97 | No Armor| 41 | 174 |
+|Gargantuan | 43 | 151 | 129 | 118 | 107 | No Armor| 31 | 261 |
+|Colossal | 43 | 171 | 149 | 138 | 127 | No Armor| 11 | 348 |
+|Titanic | 43 | 211 | 189 | 178 | 167 | No Armor| -29 | 522 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 38 | 38 | 31 | No Armor| 91 | 17 |
+|Diminutive | 43 | 61 | 58 | 58 | 51 | No Armor| 71 | 22 |
+|Tiny | 43 | 71 | 68 | 68 | 61 | No Armor| 61 | 34 |
+|Small | 43 | 76 | 73 | 73 | 66 | No Armor| 56 | 48 |
+|Medium | 43 | 81 | 78 | 78 | 71 | No Armor| 51 | 69 |
+|Large | 43 | 86 | 83 | 83 | 76 | No Armor| 46 | 104 |
+|Huge | 43 | 91 | 88 | 88 | 81 | No Armor| 41 | 139 |
+|Gargantuan | 43 | 101 | 98 | 98 | 91 | No Armor| 31 | 208 |
+|Colossal | 43 | 121 | 118 | 118 | 111 | No Armor| 11 | 278 |
+|Titanic | 43 | 161 | 158 | 158 | 151 | No Armor| -29 | 417 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 38 | 38 | 31 | No Armor| 91 | 17 |
+|Diminutive | 43 | 61 | 58 | 58 | 51 | No Armor| 71 | 22 |
+|Tiny | 43 | 71 | 68 | 68 | 61 | No Armor| 61 | 34 |
+|Small | 43 | 76 | 73 | 73 | 66 | No Armor| 56 | 48 |
+|Medium | 43 | 81 | 78 | 78 | 71 | No Armor| 51 | 69 |
+|Large | 43 | 86 | 83 | 83 | 76 | No Armor| 46 | 104 |
+|Huge | 43 | 91 | 88 | 88 | 81 | No Armor| 41 | 139 |
+|Gargantuan | 43 | 101 | 98 | 98 | 91 | No Armor| 31 | 208 |
+|Colossal | 43 | 121 | 118 | 118 | 111 | No Armor| 11 | 278 |
+|Titanic | 43 | 161 | 158 | 158 | 151 | No Armor| -29 | 417 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 43 | 41 | 38 | 38 | 31 | Light| 91 | 17 |
+|Diminutive | 43 | 61 | 58 | 58 | 51 | Light| 71 | 22 |
+|Tiny | 43 | 71 | 68 | 68 | 61 | Light| 61 | 34 |
+|Small | 43 | 76 | 73 | 73 | 66 | Light| 56 | 48 |
+|Medium | 43 | 81 | 78 | 78 | 71 | Light| 51 | 69 |
+|Large | 43 | 86 | 83 | 83 | 76 | Light| 46 | 104 |
+|Huge | 43 | 91 | 88 | 88 | 81 | Light| 41 | 139 |
+|Gargantuan | 43 | 101 | 98 | 98 | 91 | Light| 31 | 208 |
+|Colossal | 43 | 121 | 118 | 118 | 111 | Light| 11 | 278 |
+|Titanic | 43 | 161 | 158 | 158 | 151 | Light| -29 | 417 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 70 | 59 | 47 | 32 | Light| 92 | 17 |
+|Diminutive | 44 | 90 | 79 | 67 | 52 | Light| 72 | 22 |
+|Tiny | 44 | 100 | 89 | 77 | 62 | Light| 62 | 34 |
+|Small | 44 | 105 | 94 | 82 | 67 | Light| 57 | 48 |
+|Medium | 44 | 110 | 99 | 87 | 72 | Light| 52 | 69 |
+|Large | 44 | 115 | 104 | 92 | 77 | Light| 47 | 104 |
+|Huge | 44 | 120 | 109 | 97 | 82 | Light| 42 | 139 |
+|Gargantuan | 44 | 130 | 119 | 107 | 92 | Light| 32 | 208 |
+|Colossal | 44 | 150 | 139 | 127 | 112 | Light| 12 | 278 |
+|Titanic | 44 | 190 | 179 | 167 | 152 | Light| -28 | 417 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 36 | 28 | 18 | Light| 92 | 17 |
+|Diminutive | 44 | 62 | 56 | 48 | 38 | Light| 72 | 22 |
+|Tiny | 44 | 72 | 66 | 58 | 48 | Light| 62 | 34 |
+|Small | 44 | 77 | 71 | 63 | 53 | Light| 57 | 48 |
+|Medium | 44 | 82 | 76 | 68 | 58 | Light| 52 | 69 |
+|Large | 44 | 87 | 81 | 73 | 63 | Light| 47 | 104 |
+|Huge | 44 | 92 | 86 | 78 | 68 | Light| 42 | 139 |
+|Gargantuan | 44 | 102 | 96 | 88 | 78 | Light| 32 | 208 |
+|Colossal | 44 | 122 | 116 | 108 | 98 | Light| 12 | 278 |
+|Titanic | 44 | 162 | 156 | 148 | 138 | Light| -28 | 417 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 93 | 70 | 59 | 47 | Medium| 40 | 21 |
+|Diminutive | 44 | 113 | 90 | 79 | 67 | Medium| 20 | 28 |
+|Tiny | 44 | 123 | 100 | 89 | 77 | Medium| 10 | 43 |
+|Small | 44 | 128 | 105 | 94 | 82 | Medium| 5 | 60 |
+|Medium | 44 | 133 | 110 | 99 | 87 | Medium| 0 | 87 |
+|Large | 44 | 138 | 115 | 104 | 92 | Medium| -5 | 130 |
+|Huge | 44 | 143 | 120 | 109 | 97 | Medium| -10 | 174 |
+|Gargantuan | 44 | 153 | 130 | 119 | 107 | Medium| -20 | 261 |
+|Colossal | 44 | 173 | 150 | 139 | 127 | Medium| -40 | 348 |
+|Titanic | 44 | 213 | 190 | 179 | 167 | Medium| -80 | 522 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 93 | 70 | 59 | 47 | Heavy| 92 | 49 |
+|Diminutive | 44 | 113 | 90 | 79 | 67 | Heavy| 72 | 65 |
+|Tiny | 44 | 123 | 100 | 89 | 77 | Heavy| 62 | 99 |
+|Small | 44 | 128 | 105 | 94 | 82 | Heavy| 57 | 138 |
+|Medium | 44 | 133 | 110 | 99 | 87 | Heavy| 52 | 198 |
+|Large | 44 | 138 | 115 | 104 | 92 | Heavy| 47 | 297 |
+|Huge | 44 | 143 | 120 | 109 | 97 | Heavy| 42 | 396 |
+|Gargantuan | 44 | 153 | 130 | 119 | 107 | Heavy| 32 | 594 |
+|Colossal | 44 | 173 | 150 | 139 | 127 | Heavy| 12 | 792 |
+|Titanic | 44 | 213 | 190 | 179 | 167 | Heavy| -28 | 1188 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 9 | 7 | 3 | -6 | No Armor| 92 | 13 |
+|Diminutive | 44 | 29 | 27 | 23 | 13 | No Armor| 72 | 17 |
+|Tiny | 44 | 39 | 37 | 33 | 23 | No Armor| 62 | 26 |
+|Small | 44 | 44 | 42 | 38 | 28 | No Armor| 57 | 36 |
+|Medium | 44 | 49 | 47 | 43 | 33 | No Armor| 52 | 52 |
+|Large | 44 | 54 | 52 | 48 | 38 | No Armor| 47 | 78 |
+|Huge | 44 | 59 | 57 | 53 | 43 | No Armor| 42 | 104 |
+|Gargantuan | 44 | 69 | 67 | 63 | 53 | No Armor| 32 | 156 |
+|Colossal | 44 | 89 | 87 | 83 | 73 | No Armor| 12 | 208 |
+|Titanic | 44 | 129 | 127 | 123 | 113 | No Armor| -28 | 313 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 39 | 38 | 32 | No Armor| 67 | 17 |
+|Diminutive | 44 | 62 | 59 | 58 | 52 | No Armor| 47 | 22 |
+|Tiny | 44 | 72 | 69 | 68 | 62 | No Armor| 37 | 34 |
+|Small | 44 | 77 | 74 | 73 | 67 | No Armor| 32 | 48 |
+|Medium | 44 | 82 | 79 | 78 | 72 | No Armor| 27 | 69 |
+|Large | 44 | 87 | 84 | 83 | 77 | No Armor| 22 | 104 |
+|Huge | 44 | 92 | 89 | 88 | 82 | No Armor| 17 | 139 |
+|Gargantuan | 44 | 102 | 99 | 98 | 92 | No Armor| 7 | 208 |
+|Colossal | 44 | 122 | 119 | 118 | 112 | No Armor| -13 | 278 |
+|Titanic | 44 | 162 | 159 | 158 | 152 | No Armor| -53 | 417 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 93 | 70 | 59 | 47 | Medium| 92 | 21 |
+|Diminutive | 44 | 113 | 90 | 79 | 67 | Medium| 72 | 28 |
+|Tiny | 44 | 123 | 100 | 89 | 77 | Medium| 62 | 43 |
+|Small | 44 | 128 | 105 | 94 | 82 | Medium| 57 | 60 |
+|Medium | 44 | 133 | 110 | 99 | 87 | Medium| 52 | 87 |
+|Large | 44 | 138 | 115 | 104 | 92 | Medium| 47 | 130 |
+|Huge | 44 | 143 | 120 | 109 | 97 | Medium| 42 | 174 |
+|Gargantuan | 44 | 153 | 130 | 119 | 107 | Medium| 32 | 261 |
+|Colossal | 44 | 173 | 150 | 139 | 127 | Medium| 12 | 348 |
+|Titanic | 44 | 213 | 190 | 179 | 167 | Medium| -28 | 522 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 93 | 70 | 59 | 47 | No Armor| 92 | 21 |
+|Diminutive | 44 | 113 | 90 | 79 | 67 | No Armor| 72 | 28 |
+|Tiny | 44 | 123 | 100 | 89 | 77 | No Armor| 62 | 43 |
+|Small | 44 | 128 | 105 | 94 | 82 | No Armor| 57 | 60 |
+|Medium | 44 | 133 | 110 | 99 | 87 | No Armor| 52 | 87 |
+|Large | 44 | 138 | 115 | 104 | 92 | No Armor| 47 | 130 |
+|Huge | 44 | 143 | 120 | 109 | 97 | No Armor| 42 | 174 |
+|Gargantuan | 44 | 153 | 130 | 119 | 107 | No Armor| 32 | 261 |
+|Colossal | 44 | 173 | 150 | 139 | 127 | No Armor| 12 | 348 |
+|Titanic | 44 | 213 | 190 | 179 | 167 | No Armor| -28 | 522 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 39 | 38 | 32 | No Armor| 92 | 17 |
+|Diminutive | 44 | 62 | 59 | 58 | 52 | No Armor| 72 | 22 |
+|Tiny | 44 | 72 | 69 | 68 | 62 | No Armor| 62 | 34 |
+|Small | 44 | 77 | 74 | 73 | 67 | No Armor| 57 | 48 |
+|Medium | 44 | 82 | 79 | 78 | 72 | No Armor| 52 | 69 |
+|Large | 44 | 87 | 84 | 83 | 77 | No Armor| 47 | 104 |
+|Huge | 44 | 92 | 89 | 88 | 82 | No Armor| 42 | 139 |
+|Gargantuan | 44 | 102 | 99 | 98 | 92 | No Armor| 32 | 208 |
+|Colossal | 44 | 122 | 119 | 118 | 112 | No Armor| 12 | 278 |
+|Titanic | 44 | 162 | 159 | 158 | 152 | No Armor| -28 | 417 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 93 | 70 | 59 | 47 | No Armor| 92 | 21 |
+|Diminutive | 44 | 113 | 90 | 79 | 67 | No Armor| 72 | 28 |
+|Tiny | 44 | 123 | 100 | 89 | 77 | No Armor| 62 | 43 |
+|Small | 44 | 128 | 105 | 94 | 82 | No Armor| 57 | 60 |
+|Medium | 44 | 133 | 110 | 99 | 87 | No Armor| 52 | 87 |
+|Large | 44 | 138 | 115 | 104 | 92 | No Armor| 47 | 130 |
+|Huge | 44 | 143 | 120 | 109 | 97 | No Armor| 42 | 174 |
+|Gargantuan | 44 | 153 | 130 | 119 | 107 | No Armor| 32 | 261 |
+|Colossal | 44 | 173 | 150 | 139 | 127 | No Armor| 12 | 348 |
+|Titanic | 44 | 213 | 190 | 179 | 167 | No Armor| -28 | 522 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 39 | 38 | 32 | No Armor| 92 | 17 |
+|Diminutive | 44 | 62 | 59 | 58 | 52 | No Armor| 72 | 22 |
+|Tiny | 44 | 72 | 69 | 68 | 62 | No Armor| 62 | 34 |
+|Small | 44 | 77 | 74 | 73 | 67 | No Armor| 57 | 48 |
+|Medium | 44 | 82 | 79 | 78 | 72 | No Armor| 52 | 69 |
+|Large | 44 | 87 | 84 | 83 | 77 | No Armor| 47 | 104 |
+|Huge | 44 | 92 | 89 | 88 | 82 | No Armor| 42 | 139 |
+|Gargantuan | 44 | 102 | 99 | 98 | 92 | No Armor| 32 | 208 |
+|Colossal | 44 | 122 | 119 | 118 | 112 | No Armor| 12 | 278 |
+|Titanic | 44 | 162 | 159 | 158 | 152 | No Armor| -28 | 417 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 39 | 38 | 32 | No Armor| 92 | 17 |
+|Diminutive | 44 | 62 | 59 | 58 | 52 | No Armor| 72 | 22 |
+|Tiny | 44 | 72 | 69 | 68 | 62 | No Armor| 62 | 34 |
+|Small | 44 | 77 | 74 | 73 | 67 | No Armor| 57 | 48 |
+|Medium | 44 | 82 | 79 | 78 | 72 | No Armor| 52 | 69 |
+|Large | 44 | 87 | 84 | 83 | 77 | No Armor| 47 | 104 |
+|Huge | 44 | 92 | 89 | 88 | 82 | No Armor| 42 | 139 |
+|Gargantuan | 44 | 102 | 99 | 98 | 92 | No Armor| 32 | 208 |
+|Colossal | 44 | 122 | 119 | 118 | 112 | No Armor| 12 | 278 |
+|Titanic | 44 | 162 | 159 | 158 | 152 | No Armor| -28 | 417 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 44 | 42 | 39 | 38 | 32 | Light| 92 | 17 |
+|Diminutive | 44 | 62 | 59 | 58 | 52 | Light| 72 | 22 |
+|Tiny | 44 | 72 | 69 | 68 | 62 | Light| 62 | 34 |
+|Small | 44 | 77 | 74 | 73 | 67 | Light| 57 | 48 |
+|Medium | 44 | 82 | 79 | 78 | 72 | Light| 52 | 69 |
+|Large | 44 | 87 | 84 | 83 | 77 | Light| 47 | 104 |
+|Huge | 44 | 92 | 89 | 88 | 82 | Light| 42 | 139 |
+|Gargantuan | 44 | 102 | 99 | 98 | 92 | Light| 32 | 208 |
+|Colossal | 44 | 122 | 119 | 118 | 112 | Light| 12 | 278 |
+|Titanic | 44 | 162 | 159 | 158 | 152 | Light| -28 | 417 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 71 | 59 | 48 | 32 | Light| 92 | 17 |
+|Diminutive | 45 | 91 | 79 | 68 | 52 | Light| 72 | 23 |
+|Tiny | 45 | 101 | 89 | 78 | 62 | Light| 62 | 35 |
+|Small | 45 | 106 | 94 | 83 | 67 | Light| 57 | 49 |
+|Medium | 45 | 111 | 99 | 88 | 72 | Light| 52 | 70 |
+|Large | 45 | 116 | 104 | 93 | 77 | Light| 47 | 105 |
+|Huge | 45 | 121 | 109 | 98 | 82 | Light| 42 | 140 |
+|Gargantuan | 45 | 131 | 119 | 108 | 92 | Light| 32 | 211 |
+|Colossal | 45 | 151 | 139 | 128 | 112 | Light| 12 | 281 |
+|Titanic | 45 | 191 | 179 | 168 | 152 | Light| -28 | 422 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 36 | 29 | 18 | Light| 92 | 17 |
+|Diminutive | 45 | 63 | 56 | 49 | 38 | Light| 72 | 23 |
+|Tiny | 45 | 73 | 66 | 59 | 48 | Light| 62 | 35 |
+|Small | 45 | 78 | 71 | 64 | 53 | Light| 57 | 49 |
+|Medium | 45 | 83 | 76 | 69 | 58 | Light| 52 | 70 |
+|Large | 45 | 88 | 81 | 74 | 63 | Light| 47 | 105 |
+|Huge | 45 | 93 | 86 | 79 | 68 | Light| 42 | 140 |
+|Gargantuan | 45 | 103 | 96 | 89 | 78 | Light| 32 | 211 |
+|Colossal | 45 | 123 | 116 | 109 | 98 | Light| 12 | 281 |
+|Titanic | 45 | 163 | 156 | 149 | 138 | Light| -28 | 422 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 94 | 71 | 59 | 48 | Medium| 40 | 22 |
+|Diminutive | 45 | 114 | 91 | 79 | 68 | Medium| 20 | 29 |
+|Tiny | 45 | 124 | 101 | 89 | 78 | Medium| 10 | 44 |
+|Small | 45 | 129 | 106 | 94 | 83 | Medium| 5 | 61 |
+|Medium | 45 | 134 | 111 | 99 | 88 | Medium| 0 | 88 |
+|Large | 45 | 139 | 116 | 104 | 93 | Medium| -5 | 132 |
+|Huge | 45 | 144 | 121 | 109 | 98 | Medium| -10 | 176 |
+|Gargantuan | 45 | 154 | 131 | 119 | 108 | Medium| -20 | 264 |
+|Colossal | 45 | 174 | 151 | 139 | 128 | Medium| -40 | 352 |
+|Titanic | 45 | 214 | 191 | 179 | 168 | Medium| -80 | 528 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 94 | 71 | 59 | 48 | Heavy| 92 | 49 |
+|Diminutive | 45 | 114 | 91 | 79 | 68 | Heavy| 72 | 65 |
+|Tiny | 45 | 124 | 101 | 89 | 78 | Heavy| 62 | 99 |
+|Small | 45 | 129 | 106 | 94 | 83 | Heavy| 57 | 138 |
+|Medium | 45 | 134 | 111 | 99 | 88 | Heavy| 52 | 198 |
+|Large | 45 | 139 | 116 | 104 | 93 | Heavy| 47 | 297 |
+|Huge | 45 | 144 | 121 | 109 | 98 | Heavy| 42 | 396 |
+|Gargantuan | 45 | 154 | 131 | 119 | 108 | Heavy| 32 | 594 |
+|Colossal | 45 | 174 | 151 | 139 | 128 | Heavy| 12 | 792 |
+|Titanic | 45 | 214 | 191 | 179 | 168 | Heavy| -28 | 1188 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 9 | 8 | 3 | -6 | No Armor| 92 | 13 |
+|Diminutive | 45 | 29 | 28 | 23 | 13 | No Armor| 72 | 17 |
+|Tiny | 45 | 39 | 38 | 33 | 23 | No Armor| 62 | 26 |
+|Small | 45 | 44 | 43 | 38 | 28 | No Armor| 57 | 36 |
+|Medium | 45 | 49 | 48 | 43 | 33 | No Armor| 52 | 52 |
+|Large | 45 | 54 | 53 | 48 | 38 | No Armor| 47 | 79 |
+|Huge | 45 | 59 | 58 | 53 | 43 | No Armor| 42 | 105 |
+|Gargantuan | 45 | 69 | 68 | 63 | 53 | No Armor| 32 | 158 |
+|Colossal | 45 | 89 | 88 | 83 | 73 | No Armor| 12 | 211 |
+|Titanic | 45 | 129 | 128 | 123 | 113 | No Armor| -28 | 316 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 39 | 39 | 32 | No Armor| 68 | 17 |
+|Diminutive | 45 | 63 | 59 | 59 | 52 | No Armor| 48 | 23 |
+|Tiny | 45 | 73 | 69 | 69 | 62 | No Armor| 38 | 35 |
+|Small | 45 | 78 | 74 | 74 | 67 | No Armor| 33 | 49 |
+|Medium | 45 | 83 | 79 | 79 | 72 | No Armor| 28 | 70 |
+|Large | 45 | 88 | 84 | 84 | 77 | No Armor| 23 | 105 |
+|Huge | 45 | 93 | 89 | 89 | 82 | No Armor| 18 | 140 |
+|Gargantuan | 45 | 103 | 99 | 99 | 92 | No Armor| 8 | 211 |
+|Colossal | 45 | 123 | 119 | 119 | 112 | No Armor| -12 | 281 |
+|Titanic | 45 | 163 | 159 | 159 | 152 | No Armor| -52 | 422 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 94 | 71 | 59 | 48 | Medium| 92 | 22 |
+|Diminutive | 45 | 114 | 91 | 79 | 68 | Medium| 72 | 29 |
+|Tiny | 45 | 124 | 101 | 89 | 78 | Medium| 62 | 44 |
+|Small | 45 | 129 | 106 | 94 | 83 | Medium| 57 | 61 |
+|Medium | 45 | 134 | 111 | 99 | 88 | Medium| 52 | 88 |
+|Large | 45 | 139 | 116 | 104 | 93 | Medium| 47 | 132 |
+|Huge | 45 | 144 | 121 | 109 | 98 | Medium| 42 | 176 |
+|Gargantuan | 45 | 154 | 131 | 119 | 108 | Medium| 32 | 264 |
+|Colossal | 45 | 174 | 151 | 139 | 128 | Medium| 12 | 352 |
+|Titanic | 45 | 214 | 191 | 179 | 168 | Medium| -28 | 528 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 94 | 71 | 59 | 48 | No Armor| 92 | 22 |
+|Diminutive | 45 | 114 | 91 | 79 | 68 | No Armor| 72 | 29 |
+|Tiny | 45 | 124 | 101 | 89 | 78 | No Armor| 62 | 44 |
+|Small | 45 | 129 | 106 | 94 | 83 | No Armor| 57 | 61 |
+|Medium | 45 | 134 | 111 | 99 | 88 | No Armor| 52 | 88 |
+|Large | 45 | 139 | 116 | 104 | 93 | No Armor| 47 | 132 |
+|Huge | 45 | 144 | 121 | 109 | 98 | No Armor| 42 | 176 |
+|Gargantuan | 45 | 154 | 131 | 119 | 108 | No Armor| 32 | 264 |
+|Colossal | 45 | 174 | 151 | 139 | 128 | No Armor| 12 | 352 |
+|Titanic | 45 | 214 | 191 | 179 | 168 | No Armor| -28 | 528 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 39 | 39 | 32 | No Armor| 92 | 17 |
+|Diminutive | 45 | 63 | 59 | 59 | 52 | No Armor| 72 | 23 |
+|Tiny | 45 | 73 | 69 | 69 | 62 | No Armor| 62 | 35 |
+|Small | 45 | 78 | 74 | 74 | 67 | No Armor| 57 | 49 |
+|Medium | 45 | 83 | 79 | 79 | 72 | No Armor| 52 | 70 |
+|Large | 45 | 88 | 84 | 84 | 77 | No Armor| 47 | 105 |
+|Huge | 45 | 93 | 89 | 89 | 82 | No Armor| 42 | 140 |
+|Gargantuan | 45 | 103 | 99 | 99 | 92 | No Armor| 32 | 211 |
+|Colossal | 45 | 123 | 119 | 119 | 112 | No Armor| 12 | 281 |
+|Titanic | 45 | 163 | 159 | 159 | 152 | No Armor| -28 | 422 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 94 | 71 | 59 | 48 | No Armor| 92 | 22 |
+|Diminutive | 45 | 114 | 91 | 79 | 68 | No Armor| 72 | 29 |
+|Tiny | 45 | 124 | 101 | 89 | 78 | No Armor| 62 | 44 |
+|Small | 45 | 129 | 106 | 94 | 83 | No Armor| 57 | 61 |
+|Medium | 45 | 134 | 111 | 99 | 88 | No Armor| 52 | 88 |
+|Large | 45 | 139 | 116 | 104 | 93 | No Armor| 47 | 132 |
+|Huge | 45 | 144 | 121 | 109 | 98 | No Armor| 42 | 176 |
+|Gargantuan | 45 | 154 | 131 | 119 | 108 | No Armor| 32 | 264 |
+|Colossal | 45 | 174 | 151 | 139 | 128 | No Armor| 12 | 352 |
+|Titanic | 45 | 214 | 191 | 179 | 168 | No Armor| -28 | 528 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 39 | 39 | 32 | No Armor| 92 | 17 |
+|Diminutive | 45 | 63 | 59 | 59 | 52 | No Armor| 72 | 23 |
+|Tiny | 45 | 73 | 69 | 69 | 62 | No Armor| 62 | 35 |
+|Small | 45 | 78 | 74 | 74 | 67 | No Armor| 57 | 49 |
+|Medium | 45 | 83 | 79 | 79 | 72 | No Armor| 52 | 70 |
+|Large | 45 | 88 | 84 | 84 | 77 | No Armor| 47 | 105 |
+|Huge | 45 | 93 | 89 | 89 | 82 | No Armor| 42 | 140 |
+|Gargantuan | 45 | 103 | 99 | 99 | 92 | No Armor| 32 | 211 |
+|Colossal | 45 | 123 | 119 | 119 | 112 | No Armor| 12 | 281 |
+|Titanic | 45 | 163 | 159 | 159 | 152 | No Armor| -28 | 422 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 39 | 39 | 32 | No Armor| 92 | 17 |
+|Diminutive | 45 | 63 | 59 | 59 | 52 | No Armor| 72 | 23 |
+|Tiny | 45 | 73 | 69 | 69 | 62 | No Armor| 62 | 35 |
+|Small | 45 | 78 | 74 | 74 | 67 | No Armor| 57 | 49 |
+|Medium | 45 | 83 | 79 | 79 | 72 | No Armor| 52 | 70 |
+|Large | 45 | 88 | 84 | 84 | 77 | No Armor| 47 | 105 |
+|Huge | 45 | 93 | 89 | 89 | 82 | No Armor| 42 | 140 |
+|Gargantuan | 45 | 103 | 99 | 99 | 92 | No Armor| 32 | 211 |
+|Colossal | 45 | 123 | 119 | 119 | 112 | No Armor| 12 | 281 |
+|Titanic | 45 | 163 | 159 | 159 | 152 | No Armor| -28 | 422 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 45 | 43 | 39 | 39 | 32 | Light| 92 | 17 |
+|Diminutive | 45 | 63 | 59 | 59 | 52 | Light| 72 | 23 |
+|Tiny | 45 | 73 | 69 | 69 | 62 | Light| 62 | 35 |
+|Small | 45 | 78 | 74 | 74 | 67 | Light| 57 | 49 |
+|Medium | 45 | 83 | 79 | 79 | 72 | Light| 52 | 70 |
+|Large | 45 | 88 | 84 | 84 | 77 | Light| 47 | 105 |
+|Huge | 45 | 93 | 89 | 89 | 82 | Light| 42 | 140 |
+|Gargantuan | 45 | 103 | 99 | 99 | 92 | Light| 32 | 211 |
+|Colossal | 45 | 123 | 119 | 119 | 112 | Light| 12 | 281 |
+|Titanic | 45 | 163 | 159 | 159 | 152 | Light| -28 | 422 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 72 | 60 | 48 | 33 | Light| 93 | 17 |
+|Diminutive | 46 | 92 | 80 | 68 | 53 | Light| 73 | 23 |
+|Tiny | 46 | 102 | 90 | 78 | 63 | Light| 63 | 35 |
+|Small | 46 | 107 | 95 | 83 | 68 | Light| 58 | 49 |
+|Medium | 46 | 112 | 100 | 88 | 73 | Light| 53 | 70 |
+|Large | 46 | 117 | 105 | 93 | 78 | Light| 48 | 105 |
+|Huge | 46 | 122 | 110 | 98 | 83 | Light| 43 | 140 |
+|Gargantuan | 46 | 132 | 120 | 108 | 93 | Light| 33 | 211 |
+|Colossal | 46 | 152 | 140 | 128 | 113 | Light| 13 | 281 |
+|Titanic | 46 | 192 | 180 | 168 | 153 | Light| -27 | 422 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 37 | 29 | 19 | Light| 93 | 17 |
+|Diminutive | 46 | 64 | 57 | 49 | 39 | Light| 73 | 23 |
+|Tiny | 46 | 74 | 67 | 59 | 49 | Light| 63 | 35 |
+|Small | 46 | 79 | 72 | 64 | 54 | Light| 58 | 49 |
+|Medium | 46 | 84 | 77 | 69 | 59 | Light| 53 | 70 |
+|Large | 46 | 89 | 82 | 74 | 64 | Light| 48 | 105 |
+|Huge | 46 | 94 | 87 | 79 | 69 | Light| 43 | 140 |
+|Gargantuan | 46 | 104 | 97 | 89 | 79 | Light| 33 | 211 |
+|Colossal | 46 | 124 | 117 | 109 | 99 | Light| 13 | 281 |
+|Titanic | 46 | 164 | 157 | 149 | 139 | Light| -27 | 422 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 96 | 72 | 60 | 48 | Medium| 40 | 22 |
+|Diminutive | 46 | 116 | 92 | 80 | 68 | Medium| 20 | 29 |
+|Tiny | 46 | 126 | 102 | 90 | 78 | Medium| 10 | 44 |
+|Small | 46 | 131 | 107 | 95 | 83 | Medium| 5 | 61 |
+|Medium | 46 | 136 | 112 | 100 | 88 | Medium| 0 | 88 |
+|Large | 46 | 141 | 117 | 105 | 93 | Medium| -5 | 132 |
+|Huge | 46 | 146 | 122 | 110 | 98 | Medium| -10 | 176 |
+|Gargantuan | 46 | 156 | 132 | 120 | 108 | Medium| -20 | 264 |
+|Colossal | 46 | 176 | 152 | 140 | 128 | Medium| -40 | 352 |
+|Titanic | 46 | 216 | 192 | 180 | 168 | Medium| -80 | 528 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 96 | 72 | 60 | 48 | Heavy| 93 | 50 |
+|Diminutive | 46 | 116 | 92 | 80 | 68 | Heavy| 73 | 66 |
+|Tiny | 46 | 126 | 102 | 90 | 78 | Heavy| 63 | 100 |
+|Small | 46 | 131 | 107 | 95 | 83 | Heavy| 58 | 140 |
+|Medium | 46 | 136 | 112 | 100 | 88 | Heavy| 53 | 200 |
+|Large | 46 | 141 | 117 | 105 | 93 | Heavy| 48 | 300 |
+|Huge | 46 | 146 | 122 | 110 | 98 | Heavy| 43 | 400 |
+|Gargantuan | 46 | 156 | 132 | 120 | 108 | Heavy| 33 | 600 |
+|Colossal | 46 | 176 | 152 | 140 | 128 | Heavy| 13 | 800 |
+|Titanic | 46 | 216 | 192 | 180 | 168 | Heavy| -27 | 1200 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 10 | 8 | 3 | -5 | No Armor| 93 | 13 |
+|Diminutive | 46 | 30 | 28 | 23 | 14 | No Armor| 73 | 17 |
+|Tiny | 46 | 40 | 38 | 33 | 24 | No Armor| 63 | 26 |
+|Small | 46 | 45 | 43 | 38 | 29 | No Armor| 58 | 36 |
+|Medium | 46 | 50 | 48 | 43 | 34 | No Armor| 53 | 52 |
+|Large | 46 | 55 | 53 | 48 | 39 | No Armor| 48 | 79 |
+|Huge | 46 | 60 | 58 | 53 | 44 | No Armor| 43 | 105 |
+|Gargantuan | 46 | 70 | 68 | 63 | 54 | No Armor| 33 | 158 |
+|Colossal | 46 | 90 | 88 | 83 | 74 | No Armor| 13 | 211 |
+|Titanic | 46 | 130 | 128 | 123 | 114 | No Armor| -27 | 316 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 40 | 39 | 33 | No Armor| 68 | 17 |
+|Diminutive | 46 | 64 | 60 | 59 | 53 | No Armor| 48 | 23 |
+|Tiny | 46 | 74 | 70 | 69 | 63 | No Armor| 38 | 35 |
+|Small | 46 | 79 | 75 | 74 | 68 | No Armor| 33 | 49 |
+|Medium | 46 | 84 | 80 | 79 | 73 | No Armor| 28 | 70 |
+|Large | 46 | 89 | 85 | 84 | 78 | No Armor| 23 | 105 |
+|Huge | 46 | 94 | 90 | 89 | 83 | No Armor| 18 | 140 |
+|Gargantuan | 46 | 104 | 100 | 99 | 93 | No Armor| 8 | 211 |
+|Colossal | 46 | 124 | 120 | 119 | 113 | No Armor| -12 | 281 |
+|Titanic | 46 | 164 | 160 | 159 | 153 | No Armor| -52 | 422 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 96 | 72 | 60 | 48 | Medium| 93 | 22 |
+|Diminutive | 46 | 116 | 92 | 80 | 68 | Medium| 73 | 29 |
+|Tiny | 46 | 126 | 102 | 90 | 78 | Medium| 63 | 44 |
+|Small | 46 | 131 | 107 | 95 | 83 | Medium| 58 | 61 |
+|Medium | 46 | 136 | 112 | 100 | 88 | Medium| 53 | 88 |
+|Large | 46 | 141 | 117 | 105 | 93 | Medium| 48 | 132 |
+|Huge | 46 | 146 | 122 | 110 | 98 | Medium| 43 | 176 |
+|Gargantuan | 46 | 156 | 132 | 120 | 108 | Medium| 33 | 264 |
+|Colossal | 46 | 176 | 152 | 140 | 128 | Medium| 13 | 352 |
+|Titanic | 46 | 216 | 192 | 180 | 168 | Medium| -27 | 528 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 96 | 72 | 60 | 48 | No Armor| 93 | 22 |
+|Diminutive | 46 | 116 | 92 | 80 | 68 | No Armor| 73 | 29 |
+|Tiny | 46 | 126 | 102 | 90 | 78 | No Armor| 63 | 44 |
+|Small | 46 | 131 | 107 | 95 | 83 | No Armor| 58 | 61 |
+|Medium | 46 | 136 | 112 | 100 | 88 | No Armor| 53 | 88 |
+|Large | 46 | 141 | 117 | 105 | 93 | No Armor| 48 | 132 |
+|Huge | 46 | 146 | 122 | 110 | 98 | No Armor| 43 | 176 |
+|Gargantuan | 46 | 156 | 132 | 120 | 108 | No Armor| 33 | 264 |
+|Colossal | 46 | 176 | 152 | 140 | 128 | No Armor| 13 | 352 |
+|Titanic | 46 | 216 | 192 | 180 | 168 | No Armor| -27 | 528 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 40 | 39 | 33 | No Armor| 93 | 17 |
+|Diminutive | 46 | 64 | 60 | 59 | 53 | No Armor| 73 | 23 |
+|Tiny | 46 | 74 | 70 | 69 | 63 | No Armor| 63 | 35 |
+|Small | 46 | 79 | 75 | 74 | 68 | No Armor| 58 | 49 |
+|Medium | 46 | 84 | 80 | 79 | 73 | No Armor| 53 | 70 |
+|Large | 46 | 89 | 85 | 84 | 78 | No Armor| 48 | 105 |
+|Huge | 46 | 94 | 90 | 89 | 83 | No Armor| 43 | 140 |
+|Gargantuan | 46 | 104 | 100 | 99 | 93 | No Armor| 33 | 211 |
+|Colossal | 46 | 124 | 120 | 119 | 113 | No Armor| 13 | 281 |
+|Titanic | 46 | 164 | 160 | 159 | 153 | No Armor| -27 | 422 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 96 | 72 | 60 | 48 | No Armor| 93 | 22 |
+|Diminutive | 46 | 116 | 92 | 80 | 68 | No Armor| 73 | 29 |
+|Tiny | 46 | 126 | 102 | 90 | 78 | No Armor| 63 | 44 |
+|Small | 46 | 131 | 107 | 95 | 83 | No Armor| 58 | 61 |
+|Medium | 46 | 136 | 112 | 100 | 88 | No Armor| 53 | 88 |
+|Large | 46 | 141 | 117 | 105 | 93 | No Armor| 48 | 132 |
+|Huge | 46 | 146 | 122 | 110 | 98 | No Armor| 43 | 176 |
+|Gargantuan | 46 | 156 | 132 | 120 | 108 | No Armor| 33 | 264 |
+|Colossal | 46 | 176 | 152 | 140 | 128 | No Armor| 13 | 352 |
+|Titanic | 46 | 216 | 192 | 180 | 168 | No Armor| -27 | 528 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 40 | 39 | 33 | No Armor| 93 | 17 |
+|Diminutive | 46 | 64 | 60 | 59 | 53 | No Armor| 73 | 23 |
+|Tiny | 46 | 74 | 70 | 69 | 63 | No Armor| 63 | 35 |
+|Small | 46 | 79 | 75 | 74 | 68 | No Armor| 58 | 49 |
+|Medium | 46 | 84 | 80 | 79 | 73 | No Armor| 53 | 70 |
+|Large | 46 | 89 | 85 | 84 | 78 | No Armor| 48 | 105 |
+|Huge | 46 | 94 | 90 | 89 | 83 | No Armor| 43 | 140 |
+|Gargantuan | 46 | 104 | 100 | 99 | 93 | No Armor| 33 | 211 |
+|Colossal | 46 | 124 | 120 | 119 | 113 | No Armor| 13 | 281 |
+|Titanic | 46 | 164 | 160 | 159 | 153 | No Armor| -27 | 422 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 40 | 39 | 33 | No Armor| 93 | 17 |
+|Diminutive | 46 | 64 | 60 | 59 | 53 | No Armor| 73 | 23 |
+|Tiny | 46 | 74 | 70 | 69 | 63 | No Armor| 63 | 35 |
+|Small | 46 | 79 | 75 | 74 | 68 | No Armor| 58 | 49 |
+|Medium | 46 | 84 | 80 | 79 | 73 | No Armor| 53 | 70 |
+|Large | 46 | 89 | 85 | 84 | 78 | No Armor| 48 | 105 |
+|Huge | 46 | 94 | 90 | 89 | 83 | No Armor| 43 | 140 |
+|Gargantuan | 46 | 104 | 100 | 99 | 93 | No Armor| 33 | 211 |
+|Colossal | 46 | 124 | 120 | 119 | 113 | No Armor| 13 | 281 |
+|Titanic | 46 | 164 | 160 | 159 | 153 | No Armor| -27 | 422 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 46 | 44 | 40 | 39 | 33 | Light| 93 | 17 |
+|Diminutive | 46 | 64 | 60 | 59 | 53 | Light| 73 | 23 |
+|Tiny | 46 | 74 | 70 | 69 | 63 | Light| 63 | 35 |
+|Small | 46 | 79 | 75 | 74 | 68 | Light| 58 | 49 |
+|Medium | 46 | 84 | 80 | 79 | 73 | Light| 53 | 70 |
+|Large | 46 | 89 | 85 | 84 | 78 | Light| 48 | 105 |
+|Huge | 46 | 94 | 90 | 89 | 83 | Light| 43 | 140 |
+|Gargantuan | 46 | 104 | 100 | 99 | 93 | Light| 33 | 211 |
+|Colossal | 46 | 124 | 120 | 119 | 113 | Light| 13 | 281 |
+|Titanic | 46 | 164 | 160 | 159 | 153 | Light| -27 | 422 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 73 | 61 | 49 | 33 | Light| 93 | 17 |
+|Diminutive | 47 | 93 | 81 | 69 | 53 | Light| 73 | 23 |
+|Tiny | 47 | 103 | 91 | 79 | 63 | Light| 63 | 35 |
+|Small | 47 | 108 | 96 | 84 | 68 | Light| 58 | 49 |
+|Medium | 47 | 113 | 101 | 89 | 73 | Light| 53 | 71 |
+|Large | 47 | 118 | 106 | 94 | 78 | Light| 48 | 106 |
+|Huge | 47 | 123 | 111 | 99 | 83 | Light| 43 | 142 |
+|Gargantuan | 47 | 133 | 121 | 109 | 93 | Light| 33 | 213 |
+|Colossal | 47 | 153 | 141 | 129 | 113 | Light| 13 | 284 |
+|Titanic | 47 | 193 | 181 | 169 | 153 | Light| -27 | 427 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 37 | 30 | 19 | Light| 93 | 17 |
+|Diminutive | 47 | 64 | 57 | 50 | 39 | Light| 73 | 23 |
+|Tiny | 47 | 74 | 67 | 60 | 49 | Light| 63 | 35 |
+|Small | 47 | 79 | 72 | 65 | 54 | Light| 58 | 49 |
+|Medium | 47 | 84 | 77 | 70 | 59 | Light| 53 | 71 |
+|Large | 47 | 89 | 82 | 75 | 64 | Light| 48 | 106 |
+|Huge | 47 | 94 | 87 | 80 | 69 | Light| 43 | 142 |
+|Gargantuan | 47 | 104 | 97 | 90 | 79 | Light| 33 | 213 |
+|Colossal | 47 | 124 | 117 | 110 | 99 | Light| 13 | 284 |
+|Titanic | 47 | 164 | 157 | 150 | 139 | Light| -27 | 427 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 97 | 73 | 61 | 49 | Medium| 40 | 22 |
+|Diminutive | 47 | 117 | 93 | 81 | 69 | Medium| 20 | 29 |
+|Tiny | 47 | 127 | 103 | 91 | 79 | Medium| 10 | 44 |
+|Small | 47 | 132 | 108 | 96 | 84 | Medium| 5 | 62 |
+|Medium | 47 | 137 | 113 | 101 | 89 | Medium| 0 | 89 |
+|Large | 47 | 142 | 118 | 106 | 94 | Medium| -5 | 133 |
+|Huge | 47 | 147 | 123 | 111 | 99 | Medium| -10 | 178 |
+|Gargantuan | 47 | 157 | 133 | 121 | 109 | Medium| -20 | 267 |
+|Colossal | 47 | 177 | 153 | 141 | 129 | Medium| -40 | 356 |
+|Titanic | 47 | 217 | 193 | 181 | 169 | Medium| -80 | 534 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 97 | 73 | 61 | 49 | Heavy| 93 | 50 |
+|Diminutive | 47 | 117 | 93 | 81 | 69 | Heavy| 73 | 66 |
+|Tiny | 47 | 127 | 103 | 91 | 79 | Heavy| 63 | 101 |
+|Small | 47 | 132 | 108 | 96 | 84 | Heavy| 58 | 141 |
+|Medium | 47 | 137 | 113 | 101 | 89 | Heavy| 53 | 202 |
+|Large | 47 | 142 | 118 | 106 | 94 | Heavy| 48 | 303 |
+|Huge | 47 | 147 | 123 | 111 | 99 | Heavy| 43 | 404 |
+|Gargantuan | 47 | 157 | 133 | 121 | 109 | Heavy| 33 | 606 |
+|Colossal | 47 | 177 | 153 | 141 | 129 | Heavy| 13 | 808 |
+|Titanic | 47 | 217 | 193 | 181 | 169 | Heavy| -27 | 1212 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 10 | 8 | 3 | -5 | No Armor| 93 | 13 |
+|Diminutive | 47 | 30 | 28 | 23 | 14 | No Armor| 73 | 17 |
+|Tiny | 47 | 40 | 38 | 33 | 24 | No Armor| 63 | 26 |
+|Small | 47 | 45 | 43 | 38 | 29 | No Armor| 58 | 37 |
+|Medium | 47 | 50 | 48 | 43 | 34 | No Armor| 53 | 53 |
+|Large | 47 | 55 | 53 | 48 | 39 | No Armor| 48 | 80 |
+|Huge | 47 | 60 | 58 | 53 | 44 | No Armor| 43 | 106 |
+|Gargantuan | 47 | 70 | 68 | 63 | 54 | No Armor| 33 | 160 |
+|Colossal | 47 | 90 | 88 | 83 | 74 | No Armor| 13 | 213 |
+|Titanic | 47 | 130 | 128 | 123 | 114 | No Armor| -27 | 320 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 40 | 40 | 33 | No Armor| 69 | 17 |
+|Diminutive | 47 | 64 | 60 | 60 | 53 | No Armor| 49 | 23 |
+|Tiny | 47 | 74 | 70 | 70 | 63 | No Armor| 39 | 35 |
+|Small | 47 | 79 | 75 | 75 | 68 | No Armor| 34 | 49 |
+|Medium | 47 | 84 | 80 | 80 | 73 | No Armor| 29 | 71 |
+|Large | 47 | 89 | 85 | 85 | 78 | No Armor| 24 | 106 |
+|Huge | 47 | 94 | 90 | 90 | 83 | No Armor| 19 | 142 |
+|Gargantuan | 47 | 104 | 100 | 100 | 93 | No Armor| 9 | 213 |
+|Colossal | 47 | 124 | 120 | 120 | 113 | No Armor| -11 | 284 |
+|Titanic | 47 | 164 | 160 | 160 | 153 | No Armor| -51 | 427 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 97 | 73 | 61 | 49 | Medium| 93 | 22 |
+|Diminutive | 47 | 117 | 93 | 81 | 69 | Medium| 73 | 29 |
+|Tiny | 47 | 127 | 103 | 91 | 79 | Medium| 63 | 44 |
+|Small | 47 | 132 | 108 | 96 | 84 | Medium| 58 | 62 |
+|Medium | 47 | 137 | 113 | 101 | 89 | Medium| 53 | 89 |
+|Large | 47 | 142 | 118 | 106 | 94 | Medium| 48 | 133 |
+|Huge | 47 | 147 | 123 | 111 | 99 | Medium| 43 | 178 |
+|Gargantuan | 47 | 157 | 133 | 121 | 109 | Medium| 33 | 267 |
+|Colossal | 47 | 177 | 153 | 141 | 129 | Medium| 13 | 356 |
+|Titanic | 47 | 217 | 193 | 181 | 169 | Medium| -27 | 534 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 97 | 73 | 61 | 49 | No Armor| 93 | 22 |
+|Diminutive | 47 | 117 | 93 | 81 | 69 | No Armor| 73 | 29 |
+|Tiny | 47 | 127 | 103 | 91 | 79 | No Armor| 63 | 44 |
+|Small | 47 | 132 | 108 | 96 | 84 | No Armor| 58 | 62 |
+|Medium | 47 | 137 | 113 | 101 | 89 | No Armor| 53 | 89 |
+|Large | 47 | 142 | 118 | 106 | 94 | No Armor| 48 | 133 |
+|Huge | 47 | 147 | 123 | 111 | 99 | No Armor| 43 | 178 |
+|Gargantuan | 47 | 157 | 133 | 121 | 109 | No Armor| 33 | 267 |
+|Colossal | 47 | 177 | 153 | 141 | 129 | No Armor| 13 | 356 |
+|Titanic | 47 | 217 | 193 | 181 | 169 | No Armor| -27 | 534 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 40 | 40 | 33 | No Armor| 93 | 17 |
+|Diminutive | 47 | 64 | 60 | 60 | 53 | No Armor| 73 | 23 |
+|Tiny | 47 | 74 | 70 | 70 | 63 | No Armor| 63 | 35 |
+|Small | 47 | 79 | 75 | 75 | 68 | No Armor| 58 | 49 |
+|Medium | 47 | 84 | 80 | 80 | 73 | No Armor| 53 | 71 |
+|Large | 47 | 89 | 85 | 85 | 78 | No Armor| 48 | 106 |
+|Huge | 47 | 94 | 90 | 90 | 83 | No Armor| 43 | 142 |
+|Gargantuan | 47 | 104 | 100 | 100 | 93 | No Armor| 33 | 213 |
+|Colossal | 47 | 124 | 120 | 120 | 113 | No Armor| 13 | 284 |
+|Titanic | 47 | 164 | 160 | 160 | 153 | No Armor| -27 | 427 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 97 | 73 | 61 | 49 | No Armor| 93 | 22 |
+|Diminutive | 47 | 117 | 93 | 81 | 69 | No Armor| 73 | 29 |
+|Tiny | 47 | 127 | 103 | 91 | 79 | No Armor| 63 | 44 |
+|Small | 47 | 132 | 108 | 96 | 84 | No Armor| 58 | 62 |
+|Medium | 47 | 137 | 113 | 101 | 89 | No Armor| 53 | 89 |
+|Large | 47 | 142 | 118 | 106 | 94 | No Armor| 48 | 133 |
+|Huge | 47 | 147 | 123 | 111 | 99 | No Armor| 43 | 178 |
+|Gargantuan | 47 | 157 | 133 | 121 | 109 | No Armor| 33 | 267 |
+|Colossal | 47 | 177 | 153 | 141 | 129 | No Armor| 13 | 356 |
+|Titanic | 47 | 217 | 193 | 181 | 169 | No Armor| -27 | 534 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 40 | 40 | 33 | No Armor| 93 | 17 |
+|Diminutive | 47 | 64 | 60 | 60 | 53 | No Armor| 73 | 23 |
+|Tiny | 47 | 74 | 70 | 70 | 63 | No Armor| 63 | 35 |
+|Small | 47 | 79 | 75 | 75 | 68 | No Armor| 58 | 49 |
+|Medium | 47 | 84 | 80 | 80 | 73 | No Armor| 53 | 71 |
+|Large | 47 | 89 | 85 | 85 | 78 | No Armor| 48 | 106 |
+|Huge | 47 | 94 | 90 | 90 | 83 | No Armor| 43 | 142 |
+|Gargantuan | 47 | 104 | 100 | 100 | 93 | No Armor| 33 | 213 |
+|Colossal | 47 | 124 | 120 | 120 | 113 | No Armor| 13 | 284 |
+|Titanic | 47 | 164 | 160 | 160 | 153 | No Armor| -27 | 427 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 40 | 40 | 33 | No Armor| 93 | 17 |
+|Diminutive | 47 | 64 | 60 | 60 | 53 | No Armor| 73 | 23 |
+|Tiny | 47 | 74 | 70 | 70 | 63 | No Armor| 63 | 35 |
+|Small | 47 | 79 | 75 | 75 | 68 | No Armor| 58 | 49 |
+|Medium | 47 | 84 | 80 | 80 | 73 | No Armor| 53 | 71 |
+|Large | 47 | 89 | 85 | 85 | 78 | No Armor| 48 | 106 |
+|Huge | 47 | 94 | 90 | 90 | 83 | No Armor| 43 | 142 |
+|Gargantuan | 47 | 104 | 100 | 100 | 93 | No Armor| 33 | 213 |
+|Colossal | 47 | 124 | 120 | 120 | 113 | No Armor| 13 | 284 |
+|Titanic | 47 | 164 | 160 | 160 | 153 | No Armor| -27 | 427 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 47 | 44 | 40 | 40 | 33 | Light| 93 | 17 |
+|Diminutive | 47 | 64 | 60 | 60 | 53 | Light| 73 | 23 |
+|Tiny | 47 | 74 | 70 | 70 | 63 | Light| 63 | 35 |
+|Small | 47 | 79 | 75 | 75 | 68 | Light| 58 | 49 |
+|Medium | 47 | 84 | 80 | 80 | 73 | Light| 53 | 71 |
+|Large | 47 | 89 | 85 | 85 | 78 | Light| 48 | 106 |
+|Huge | 47 | 94 | 90 | 90 | 83 | Light| 43 | 142 |
+|Gargantuan | 47 | 104 | 100 | 100 | 93 | Light| 33 | 213 |
+|Colossal | 47 | 124 | 120 | 120 | 113 | Light| 13 | 284 |
+|Titanic | 47 | 164 | 160 | 160 | 153 | Light| -27 | 427 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 74 | 62 | 49 | 34 | Light| 94 | 17 |
+|Diminutive | 48 | 94 | 82 | 69 | 54 | Light| 74 | 23 |
+|Tiny | 48 | 104 | 92 | 79 | 64 | Light| 64 | 35 |
+|Small | 48 | 109 | 97 | 84 | 69 | Light| 59 | 49 |
+|Medium | 48 | 114 | 102 | 89 | 74 | Light| 54 | 71 |
+|Large | 48 | 119 | 107 | 94 | 79 | Light| 49 | 106 |
+|Huge | 48 | 124 | 112 | 99 | 84 | Light| 44 | 142 |
+|Gargantuan | 48 | 134 | 122 | 109 | 94 | Light| 34 | 213 |
+|Colossal | 48 | 154 | 142 | 129 | 114 | Light| 14 | 284 |
+|Titanic | 48 | 194 | 182 | 169 | 154 | Light| -26 | 427 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 38 | 30 | 19 | Light| 94 | 17 |
+|Diminutive | 48 | 65 | 58 | 50 | 39 | Light| 74 | 23 |
+|Tiny | 48 | 75 | 68 | 60 | 49 | Light| 64 | 35 |
+|Small | 48 | 80 | 73 | 65 | 54 | Light| 59 | 49 |
+|Medium | 48 | 85 | 78 | 70 | 59 | Light| 54 | 71 |
+|Large | 48 | 90 | 83 | 75 | 64 | Light| 49 | 106 |
+|Huge | 48 | 95 | 88 | 80 | 69 | Light| 44 | 142 |
+|Gargantuan | 48 | 105 | 98 | 90 | 79 | Light| 34 | 213 |
+|Colossal | 48 | 125 | 118 | 110 | 99 | Light| 14 | 284 |
+|Titanic | 48 | 165 | 158 | 150 | 139 | Light| -26 | 427 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 99 | 74 | 62 | 49 | Medium| 40 | 22 |
+|Diminutive | 48 | 119 | 94 | 82 | 69 | Medium| 20 | 29 |
+|Tiny | 48 | 129 | 104 | 92 | 79 | Medium| 10 | 44 |
+|Small | 48 | 134 | 109 | 97 | 84 | Medium| 5 | 62 |
+|Medium | 48 | 139 | 114 | 102 | 89 | Medium| 0 | 89 |
+|Large | 48 | 144 | 119 | 107 | 94 | Medium| -5 | 133 |
+|Huge | 48 | 149 | 124 | 112 | 99 | Medium| -10 | 178 |
+|Gargantuan | 48 | 159 | 134 | 122 | 109 | Medium| -20 | 267 |
+|Colossal | 48 | 179 | 154 | 142 | 129 | Medium| -40 | 356 |
+|Titanic | 48 | 219 | 194 | 182 | 169 | Medium| -80 | 534 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 99 | 74 | 62 | 49 | Heavy| 94 | 51 |
+|Diminutive | 48 | 119 | 94 | 82 | 69 | Heavy| 74 | 67 |
+|Tiny | 48 | 129 | 104 | 92 | 79 | Heavy| 64 | 102 |
+|Small | 48 | 134 | 109 | 97 | 84 | Heavy| 59 | 142 |
+|Medium | 48 | 139 | 114 | 102 | 89 | Heavy| 54 | 204 |
+|Large | 48 | 144 | 119 | 107 | 94 | Heavy| 49 | 306 |
+|Huge | 48 | 149 | 124 | 112 | 99 | Heavy| 44 | 408 |
+|Gargantuan | 48 | 159 | 134 | 122 | 109 | Heavy| 34 | 612 |
+|Colossal | 48 | 179 | 154 | 142 | 129 | Heavy| 14 | 816 |
+|Titanic | 48 | 219 | 194 | 182 | 169 | Heavy| -26 | 1224 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 11 | 8 | 4 | -4 | No Armor| 94 | 13 |
+|Diminutive | 48 | 31 | 28 | 24 | 15 | No Armor| 74 | 17 |
+|Tiny | 48 | 41 | 38 | 34 | 25 | No Armor| 64 | 26 |
+|Small | 48 | 46 | 43 | 39 | 30 | No Armor| 59 | 37 |
+|Medium | 48 | 51 | 48 | 44 | 35 | No Armor| 54 | 53 |
+|Large | 48 | 56 | 53 | 49 | 40 | No Armor| 49 | 80 |
+|Huge | 48 | 61 | 58 | 54 | 45 | No Armor| 44 | 106 |
+|Gargantuan | 48 | 71 | 68 | 64 | 55 | No Armor| 34 | 160 |
+|Colossal | 48 | 91 | 88 | 84 | 75 | No Armor| 14 | 213 |
+|Titanic | 48 | 131 | 128 | 124 | 115 | No Armor| -26 | 320 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 41 | 40 | 34 | No Armor| 70 | 17 |
+|Diminutive | 48 | 65 | 61 | 60 | 54 | No Armor| 50 | 23 |
+|Tiny | 48 | 75 | 71 | 70 | 64 | No Armor| 40 | 35 |
+|Small | 48 | 80 | 76 | 75 | 69 | No Armor| 35 | 49 |
+|Medium | 48 | 85 | 81 | 80 | 74 | No Armor| 30 | 71 |
+|Large | 48 | 90 | 86 | 85 | 79 | No Armor| 25 | 106 |
+|Huge | 48 | 95 | 91 | 90 | 84 | No Armor| 20 | 142 |
+|Gargantuan | 48 | 105 | 101 | 100 | 94 | No Armor| 10 | 213 |
+|Colossal | 48 | 125 | 121 | 120 | 114 | No Armor| -10 | 284 |
+|Titanic | 48 | 165 | 161 | 160 | 154 | No Armor| -50 | 427 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 99 | 74 | 62 | 49 | Medium| 94 | 22 |
+|Diminutive | 48 | 119 | 94 | 82 | 69 | Medium| 74 | 29 |
+|Tiny | 48 | 129 | 104 | 92 | 79 | Medium| 64 | 44 |
+|Small | 48 | 134 | 109 | 97 | 84 | Medium| 59 | 62 |
+|Medium | 48 | 139 | 114 | 102 | 89 | Medium| 54 | 89 |
+|Large | 48 | 144 | 119 | 107 | 94 | Medium| 49 | 133 |
+|Huge | 48 | 149 | 124 | 112 | 99 | Medium| 44 | 178 |
+|Gargantuan | 48 | 159 | 134 | 122 | 109 | Medium| 34 | 267 |
+|Colossal | 48 | 179 | 154 | 142 | 129 | Medium| 14 | 356 |
+|Titanic | 48 | 219 | 194 | 182 | 169 | Medium| -26 | 534 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 99 | 74 | 62 | 49 | No Armor| 94 | 22 |
+|Diminutive | 48 | 119 | 94 | 82 | 69 | No Armor| 74 | 29 |
+|Tiny | 48 | 129 | 104 | 92 | 79 | No Armor| 64 | 44 |
+|Small | 48 | 134 | 109 | 97 | 84 | No Armor| 59 | 62 |
+|Medium | 48 | 139 | 114 | 102 | 89 | No Armor| 54 | 89 |
+|Large | 48 | 144 | 119 | 107 | 94 | No Armor| 49 | 133 |
+|Huge | 48 | 149 | 124 | 112 | 99 | No Armor| 44 | 178 |
+|Gargantuan | 48 | 159 | 134 | 122 | 109 | No Armor| 34 | 267 |
+|Colossal | 48 | 179 | 154 | 142 | 129 | No Armor| 14 | 356 |
+|Titanic | 48 | 219 | 194 | 182 | 169 | No Armor| -26 | 534 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 41 | 40 | 34 | No Armor| 94 | 17 |
+|Diminutive | 48 | 65 | 61 | 60 | 54 | No Armor| 74 | 23 |
+|Tiny | 48 | 75 | 71 | 70 | 64 | No Armor| 64 | 35 |
+|Small | 48 | 80 | 76 | 75 | 69 | No Armor| 59 | 49 |
+|Medium | 48 | 85 | 81 | 80 | 74 | No Armor| 54 | 71 |
+|Large | 48 | 90 | 86 | 85 | 79 | No Armor| 49 | 106 |
+|Huge | 48 | 95 | 91 | 90 | 84 | No Armor| 44 | 142 |
+|Gargantuan | 48 | 105 | 101 | 100 | 94 | No Armor| 34 | 213 |
+|Colossal | 48 | 125 | 121 | 120 | 114 | No Armor| 14 | 284 |
+|Titanic | 48 | 165 | 161 | 160 | 154 | No Armor| -26 | 427 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 99 | 74 | 62 | 49 | No Armor| 94 | 22 |
+|Diminutive | 48 | 119 | 94 | 82 | 69 | No Armor| 74 | 29 |
+|Tiny | 48 | 129 | 104 | 92 | 79 | No Armor| 64 | 44 |
+|Small | 48 | 134 | 109 | 97 | 84 | No Armor| 59 | 62 |
+|Medium | 48 | 139 | 114 | 102 | 89 | No Armor| 54 | 89 |
+|Large | 48 | 144 | 119 | 107 | 94 | No Armor| 49 | 133 |
+|Huge | 48 | 149 | 124 | 112 | 99 | No Armor| 44 | 178 |
+|Gargantuan | 48 | 159 | 134 | 122 | 109 | No Armor| 34 | 267 |
+|Colossal | 48 | 179 | 154 | 142 | 129 | No Armor| 14 | 356 |
+|Titanic | 48 | 219 | 194 | 182 | 169 | No Armor| -26 | 534 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 41 | 40 | 34 | No Armor| 94 | 17 |
+|Diminutive | 48 | 65 | 61 | 60 | 54 | No Armor| 74 | 23 |
+|Tiny | 48 | 75 | 71 | 70 | 64 | No Armor| 64 | 35 |
+|Small | 48 | 80 | 76 | 75 | 69 | No Armor| 59 | 49 |
+|Medium | 48 | 85 | 81 | 80 | 74 | No Armor| 54 | 71 |
+|Large | 48 | 90 | 86 | 85 | 79 | No Armor| 49 | 106 |
+|Huge | 48 | 95 | 91 | 90 | 84 | No Armor| 44 | 142 |
+|Gargantuan | 48 | 105 | 101 | 100 | 94 | No Armor| 34 | 213 |
+|Colossal | 48 | 125 | 121 | 120 | 114 | No Armor| 14 | 284 |
+|Titanic | 48 | 165 | 161 | 160 | 154 | No Armor| -26 | 427 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 41 | 40 | 34 | No Armor| 94 | 17 |
+|Diminutive | 48 | 65 | 61 | 60 | 54 | No Armor| 74 | 23 |
+|Tiny | 48 | 75 | 71 | 70 | 64 | No Armor| 64 | 35 |
+|Small | 48 | 80 | 76 | 75 | 69 | No Armor| 59 | 49 |
+|Medium | 48 | 85 | 81 | 80 | 74 | No Armor| 54 | 71 |
+|Large | 48 | 90 | 86 | 85 | 79 | No Armor| 49 | 106 |
+|Huge | 48 | 95 | 91 | 90 | 84 | No Armor| 44 | 142 |
+|Gargantuan | 48 | 105 | 101 | 100 | 94 | No Armor| 34 | 213 |
+|Colossal | 48 | 125 | 121 | 120 | 114 | No Armor| 14 | 284 |
+|Titanic | 48 | 165 | 161 | 160 | 154 | No Armor| -26 | 427 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 48 | 45 | 41 | 40 | 34 | Light| 94 | 17 |
+|Diminutive | 48 | 65 | 61 | 60 | 54 | Light| 74 | 23 |
+|Tiny | 48 | 75 | 71 | 70 | 64 | Light| 64 | 35 |
+|Small | 48 | 80 | 76 | 75 | 69 | Light| 59 | 49 |
+|Medium | 48 | 85 | 81 | 80 | 74 | Light| 54 | 71 |
+|Large | 48 | 90 | 86 | 85 | 79 | Light| 49 | 106 |
+|Huge | 48 | 95 | 91 | 90 | 84 | Light| 44 | 142 |
+|Gargantuan | 48 | 105 | 101 | 100 | 94 | Light| 34 | 213 |
+|Colossal | 48 | 125 | 121 | 120 | 114 | Light| 14 | 284 |
+|Titanic | 48 | 165 | 161 | 160 | 154 | Light| -26 | 427 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 75 | 62 | 50 | 34 | Light| 94 | 18 |
+|Diminutive | 49 | 95 | 82 | 70 | 54 | Light| 74 | 23 |
+|Tiny | 49 | 105 | 92 | 80 | 64 | Light| 64 | 36 |
+|Small | 49 | 110 | 97 | 85 | 69 | Light| 59 | 50 |
+|Medium | 49 | 115 | 102 | 90 | 74 | Light| 54 | 72 |
+|Large | 49 | 120 | 107 | 95 | 79 | Light| 49 | 108 |
+|Huge | 49 | 125 | 112 | 100 | 84 | Light| 44 | 144 |
+|Gargantuan | 49 | 135 | 122 | 110 | 94 | Light| 34 | 216 |
+|Colossal | 49 | 155 | 142 | 130 | 114 | Light| 14 | 288 |
+|Titanic | 49 | 195 | 182 | 170 | 154 | Light| -26 | 432 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 38 | 31 | 19 | Light| 94 | 18 |
+|Diminutive | 49 | 66 | 58 | 51 | 39 | Light| 74 | 23 |
+|Tiny | 49 | 76 | 68 | 61 | 49 | Light| 64 | 36 |
+|Small | 49 | 81 | 73 | 66 | 54 | Light| 59 | 50 |
+|Medium | 49 | 86 | 78 | 71 | 59 | Light| 54 | 72 |
+|Large | 49 | 91 | 83 | 76 | 64 | Light| 49 | 108 |
+|Huge | 49 | 96 | 88 | 81 | 69 | Light| 44 | 144 |
+|Gargantuan | 49 | 106 | 98 | 91 | 79 | Light| 34 | 216 |
+|Colossal | 49 | 126 | 118 | 111 | 99 | Light| 14 | 288 |
+|Titanic | 49 | 166 | 158 | 151 | 139 | Light| -26 | 432 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 100 | 75 | 62 | 50 | Medium| 40 | 22 |
+|Diminutive | 49 | 120 | 95 | 82 | 70 | Medium| 20 | 29 |
+|Tiny | 49 | 130 | 105 | 92 | 80 | Medium| 10 | 45 |
+|Small | 49 | 135 | 110 | 97 | 85 | Medium| 5 | 62 |
+|Medium | 49 | 140 | 115 | 102 | 90 | Medium| 0 | 90 |
+|Large | 49 | 145 | 120 | 107 | 95 | Medium| -5 | 135 |
+|Huge | 49 | 150 | 125 | 112 | 100 | Medium| -10 | 180 |
+|Gargantuan | 49 | 160 | 135 | 122 | 110 | Medium| -20 | 270 |
+|Colossal | 49 | 180 | 155 | 142 | 130 | Medium| -40 | 360 |
+|Titanic | 49 | 220 | 195 | 182 | 170 | Medium| -80 | 540 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 100 | 75 | 62 | 50 | Heavy| 94 | 51 |
+|Diminutive | 49 | 120 | 95 | 82 | 70 | Heavy| 74 | 67 |
+|Tiny | 49 | 130 | 105 | 92 | 80 | Heavy| 64 | 102 |
+|Small | 49 | 135 | 110 | 97 | 85 | Heavy| 59 | 142 |
+|Medium | 49 | 140 | 115 | 102 | 90 | Heavy| 54 | 204 |
+|Large | 49 | 145 | 120 | 107 | 95 | Heavy| 49 | 306 |
+|Huge | 49 | 150 | 125 | 112 | 100 | Heavy| 44 | 408 |
+|Gargantuan | 49 | 160 | 135 | 122 | 110 | Heavy| 34 | 612 |
+|Colossal | 49 | 180 | 155 | 142 | 130 | Heavy| 14 | 816 |
+|Titanic | 49 | 220 | 195 | 182 | 170 | Heavy| -26 | 1224 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 11 | 9 | 4 | -4 | No Armor| 94 | 13 |
+|Diminutive | 49 | 31 | 29 | 24 | 15 | No Armor| 74 | 17 |
+|Tiny | 49 | 41 | 39 | 34 | 25 | No Armor| 64 | 27 |
+|Small | 49 | 46 | 44 | 39 | 30 | No Armor| 59 | 37 |
+|Medium | 49 | 51 | 49 | 44 | 35 | No Armor| 54 | 54 |
+|Large | 49 | 56 | 54 | 49 | 40 | No Armor| 49 | 81 |
+|Huge | 49 | 61 | 59 | 54 | 45 | No Armor| 44 | 108 |
+|Gargantuan | 49 | 71 | 69 | 64 | 55 | No Armor| 34 | 162 |
+|Colossal | 49 | 91 | 89 | 84 | 75 | No Armor| 14 | 216 |
+|Titanic | 49 | 131 | 129 | 124 | 115 | No Armor| -26 | 324 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 41 | 41 | 34 | No Armor| 70 | 18 |
+|Diminutive | 49 | 66 | 61 | 61 | 54 | No Armor| 50 | 23 |
+|Tiny | 49 | 76 | 71 | 71 | 64 | No Armor| 40 | 36 |
+|Small | 49 | 81 | 76 | 76 | 69 | No Armor| 35 | 50 |
+|Medium | 49 | 86 | 81 | 81 | 74 | No Armor| 30 | 72 |
+|Large | 49 | 91 | 86 | 86 | 79 | No Armor| 25 | 108 |
+|Huge | 49 | 96 | 91 | 91 | 84 | No Armor| 20 | 144 |
+|Gargantuan | 49 | 106 | 101 | 101 | 94 | No Armor| 10 | 216 |
+|Colossal | 49 | 126 | 121 | 121 | 114 | No Armor| -10 | 288 |
+|Titanic | 49 | 166 | 161 | 161 | 154 | No Armor| -50 | 432 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 100 | 75 | 62 | 50 | Medium| 94 | 22 |
+|Diminutive | 49 | 120 | 95 | 82 | 70 | Medium| 74 | 29 |
+|Tiny | 49 | 130 | 105 | 92 | 80 | Medium| 64 | 45 |
+|Small | 49 | 135 | 110 | 97 | 85 | Medium| 59 | 62 |
+|Medium | 49 | 140 | 115 | 102 | 90 | Medium| 54 | 90 |
+|Large | 49 | 145 | 120 | 107 | 95 | Medium| 49 | 135 |
+|Huge | 49 | 150 | 125 | 112 | 100 | Medium| 44 | 180 |
+|Gargantuan | 49 | 160 | 135 | 122 | 110 | Medium| 34 | 270 |
+|Colossal | 49 | 180 | 155 | 142 | 130 | Medium| 14 | 360 |
+|Titanic | 49 | 220 | 195 | 182 | 170 | Medium| -26 | 540 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 100 | 75 | 62 | 50 | No Armor| 94 | 22 |
+|Diminutive | 49 | 120 | 95 | 82 | 70 | No Armor| 74 | 29 |
+|Tiny | 49 | 130 | 105 | 92 | 80 | No Armor| 64 | 45 |
+|Small | 49 | 135 | 110 | 97 | 85 | No Armor| 59 | 62 |
+|Medium | 49 | 140 | 115 | 102 | 90 | No Armor| 54 | 90 |
+|Large | 49 | 145 | 120 | 107 | 95 | No Armor| 49 | 135 |
+|Huge | 49 | 150 | 125 | 112 | 100 | No Armor| 44 | 180 |
+|Gargantuan | 49 | 160 | 135 | 122 | 110 | No Armor| 34 | 270 |
+|Colossal | 49 | 180 | 155 | 142 | 130 | No Armor| 14 | 360 |
+|Titanic | 49 | 220 | 195 | 182 | 170 | No Armor| -26 | 540 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 41 | 41 | 34 | No Armor| 94 | 18 |
+|Diminutive | 49 | 66 | 61 | 61 | 54 | No Armor| 74 | 23 |
+|Tiny | 49 | 76 | 71 | 71 | 64 | No Armor| 64 | 36 |
+|Small | 49 | 81 | 76 | 76 | 69 | No Armor| 59 | 50 |
+|Medium | 49 | 86 | 81 | 81 | 74 | No Armor| 54 | 72 |
+|Large | 49 | 91 | 86 | 86 | 79 | No Armor| 49 | 108 |
+|Huge | 49 | 96 | 91 | 91 | 84 | No Armor| 44 | 144 |
+|Gargantuan | 49 | 106 | 101 | 101 | 94 | No Armor| 34 | 216 |
+|Colossal | 49 | 126 | 121 | 121 | 114 | No Armor| 14 | 288 |
+|Titanic | 49 | 166 | 161 | 161 | 154 | No Armor| -26 | 432 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 100 | 75 | 62 | 50 | No Armor| 94 | 22 |
+|Diminutive | 49 | 120 | 95 | 82 | 70 | No Armor| 74 | 29 |
+|Tiny | 49 | 130 | 105 | 92 | 80 | No Armor| 64 | 45 |
+|Small | 49 | 135 | 110 | 97 | 85 | No Armor| 59 | 62 |
+|Medium | 49 | 140 | 115 | 102 | 90 | No Armor| 54 | 90 |
+|Large | 49 | 145 | 120 | 107 | 95 | No Armor| 49 | 135 |
+|Huge | 49 | 150 | 125 | 112 | 100 | No Armor| 44 | 180 |
+|Gargantuan | 49 | 160 | 135 | 122 | 110 | No Armor| 34 | 270 |
+|Colossal | 49 | 180 | 155 | 142 | 130 | No Armor| 14 | 360 |
+|Titanic | 49 | 220 | 195 | 182 | 170 | No Armor| -26 | 540 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 41 | 41 | 34 | No Armor| 94 | 18 |
+|Diminutive | 49 | 66 | 61 | 61 | 54 | No Armor| 74 | 23 |
+|Tiny | 49 | 76 | 71 | 71 | 64 | No Armor| 64 | 36 |
+|Small | 49 | 81 | 76 | 76 | 69 | No Armor| 59 | 50 |
+|Medium | 49 | 86 | 81 | 81 | 74 | No Armor| 54 | 72 |
+|Large | 49 | 91 | 86 | 86 | 79 | No Armor| 49 | 108 |
+|Huge | 49 | 96 | 91 | 91 | 84 | No Armor| 44 | 144 |
+|Gargantuan | 49 | 106 | 101 | 101 | 94 | No Armor| 34 | 216 |
+|Colossal | 49 | 126 | 121 | 121 | 114 | No Armor| 14 | 288 |
+|Titanic | 49 | 166 | 161 | 161 | 154 | No Armor| -26 | 432 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 41 | 41 | 34 | No Armor| 94 | 18 |
+|Diminutive | 49 | 66 | 61 | 61 | 54 | No Armor| 74 | 23 |
+|Tiny | 49 | 76 | 71 | 71 | 64 | No Armor| 64 | 36 |
+|Small | 49 | 81 | 76 | 76 | 69 | No Armor| 59 | 50 |
+|Medium | 49 | 86 | 81 | 81 | 74 | No Armor| 54 | 72 |
+|Large | 49 | 91 | 86 | 86 | 79 | No Armor| 49 | 108 |
+|Huge | 49 | 96 | 91 | 91 | 84 | No Armor| 44 | 144 |
+|Gargantuan | 49 | 106 | 101 | 101 | 94 | No Armor| 34 | 216 |
+|Colossal | 49 | 126 | 121 | 121 | 114 | No Armor| 14 | 288 |
+|Titanic | 49 | 166 | 161 | 161 | 154 | No Armor| -26 | 432 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 49 | 46 | 41 | 41 | 34 | Light| 94 | 18 |
+|Diminutive | 49 | 66 | 61 | 61 | 54 | Light| 74 | 23 |
+|Tiny | 49 | 76 | 71 | 71 | 64 | Light| 64 | 36 |
+|Small | 49 | 81 | 76 | 76 | 69 | Light| 59 | 50 |
+|Medium | 49 | 86 | 81 | 81 | 74 | Light| 54 | 72 |
+|Large | 49 | 91 | 86 | 86 | 79 | Light| 49 | 108 |
+|Huge | 49 | 96 | 91 | 91 | 84 | Light| 44 | 144 |
+|Gargantuan | 49 | 106 | 101 | 101 | 94 | Light| 34 | 216 |
+|Colossal | 49 | 126 | 121 | 121 | 114 | Light| 14 | 288 |
+|Titanic | 49 | 166 | 161 | 161 | 154 | Light| -26 | 432 |
+
+| Aberration Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 76 | 63 | 50 | 35 | Light| 95 | 18 |
+|Diminutive | 50 | 96 | 83 | 70 | 55 | Light| 75 | 23 |
+|Tiny | 50 | 106 | 93 | 80 | 65 | Light| 65 | 36 |
+|Small | 50 | 111 | 98 | 85 | 70 | Light| 60 | 50 |
+|Medium | 50 | 116 | 103 | 90 | 75 | Light| 55 | 72 |
+|Large | 50 | 121 | 108 | 95 | 80 | Light| 50 | 108 |
+|Huge | 50 | 126 | 113 | 100 | 85 | Light| 45 | 144 |
+|Gargantuan | 50 | 136 | 123 | 110 | 95 | Light| 35 | 216 |
+|Colossal | 50 | 156 | 143 | 130 | 115 | Light| 15 | 288 |
+|Titanic | 50 | 196 | 183 | 170 | 155 | Light| -25 | 432 |
+
+| Animal Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 39 | 31 | 20 | Light| 95 | 18 |
+|Diminutive | 50 | 67 | 59 | 51 | 40 | Light| 75 | 23 |
+|Tiny | 50 | 77 | 69 | 61 | 50 | Light| 65 | 36 |
+|Small | 50 | 82 | 74 | 66 | 55 | Light| 60 | 50 |
+|Medium | 50 | 87 | 79 | 71 | 60 | Light| 55 | 72 |
+|Large | 50 | 92 | 84 | 76 | 65 | Light| 50 | 108 |
+|Huge | 50 | 97 | 89 | 81 | 70 | Light| 45 | 144 |
+|Gargantuan | 50 | 107 | 99 | 91 | 80 | Light| 35 | 216 |
+|Colossal | 50 | 127 | 119 | 111 | 100 | Light| 15 | 288 |
+|Titanic | 50 | 167 | 159 | 151 | 140 | Light| -25 | 432 |
+
+| Construct Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 102 | 76 | 63 | 50 | Medium| 40 | 22 |
+|Diminutive | 50 | 122 | 96 | 83 | 70 | Medium| 20 | 29 |
+|Tiny | 50 | 132 | 106 | 93 | 80 | Medium| 10 | 45 |
+|Small | 50 | 137 | 111 | 98 | 85 | Medium| 5 | 62 |
+|Medium | 50 | 142 | 116 | 103 | 90 | Medium| 0 | 90 |
+|Large | 50 | 147 | 121 | 108 | 95 | Medium| -5 | 135 |
+|Huge | 50 | 152 | 126 | 113 | 100 | Medium| -10 | 180 |
+|Gargantuan | 50 | 162 | 136 | 123 | 110 | Medium| -20 | 270 |
+|Colossal | 50 | 182 | 156 | 143 | 130 | Medium| -40 | 360 |
+|Titanic | 50 | 222 | 196 | 183 | 170 | Medium| -80 | 540 |
+
+| Dragon Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 102 | 76 | 63 | 50 | Heavy| 95 | 51 |
+|Diminutive | 50 | 122 | 96 | 83 | 70 | Heavy| 75 | 67 |
+|Tiny | 50 | 132 | 106 | 93 | 80 | Heavy| 65 | 103 |
+|Small | 50 | 137 | 111 | 98 | 85 | Heavy| 60 | 144 |
+|Medium | 50 | 142 | 116 | 103 | 90 | Heavy| 55 | 206 |
+|Large | 50 | 147 | 121 | 108 | 95 | Heavy| 50 | 309 |
+|Huge | 50 | 152 | 126 | 113 | 100 | Heavy| 45 | 412 |
+|Gargantuan | 50 | 162 | 136 | 123 | 110 | Heavy| 35 | 618 |
+|Colossal | 50 | 182 | 156 | 143 | 130 | Heavy| 15 | 824 |
+|Titanic | 50 | 222 | 196 | 183 | 170 | Heavy| -25 | 1236 |
+
+| Fey Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 11 | 9 | 5 | -4 | No Armor| 95 | 13 |
+|Diminutive | 50 | 31 | 29 | 25 | 15 | No Armor| 75 | 17 |
+|Tiny | 50 | 41 | 39 | 35 | 25 | No Armor| 65 | 27 |
+|Small | 50 | 46 | 44 | 40 | 30 | No Armor| 60 | 37 |
+|Medium | 50 | 51 | 49 | 45 | 35 | No Armor| 55 | 54 |
+|Large | 50 | 56 | 54 | 50 | 40 | No Armor| 50 | 81 |
+|Huge | 50 | 61 | 59 | 55 | 45 | No Armor| 45 | 108 |
+|Gargantuan | 50 | 71 | 69 | 65 | 55 | No Armor| 35 | 162 |
+|Colossal | 50 | 91 | 89 | 85 | 75 | No Armor| 15 | 216 |
+|Titanic | 50 | 131 | 129 | 125 | 115 | No Armor| -25 | 324 |
+
+| Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 42 | 41 | 35 | No Armor| 71 | 18 |
+|Diminutive | 50 | 67 | 62 | 61 | 55 | No Armor| 51 | 23 |
+|Tiny | 50 | 77 | 72 | 71 | 65 | No Armor| 41 | 36 |
+|Small | 50 | 82 | 77 | 76 | 70 | No Armor| 36 | 50 |
+|Medium | 50 | 87 | 82 | 81 | 75 | No Armor| 31 | 72 |
+|Large | 50 | 92 | 87 | 86 | 80 | No Armor| 26 | 108 |
+|Huge | 50 | 97 | 92 | 91 | 85 | No Armor| 21 | 144 |
+|Gargantuan | 50 | 107 | 102 | 101 | 95 | No Armor| 11 | 216 |
+|Colossal | 50 | 127 | 122 | 121 | 115 | No Armor| -9 | 288 |
+|Titanic | 50 | 167 | 162 | 161 | 155 | No Armor| -49 | 432 |
+
+| Magical-Beast Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 102 | 76 | 63 | 50 | Medium| 95 | 22 |
+|Diminutive | 50 | 122 | 96 | 83 | 70 | Medium| 75 | 29 |
+|Tiny | 50 | 132 | 106 | 93 | 80 | Medium| 65 | 45 |
+|Small | 50 | 137 | 111 | 98 | 85 | Medium| 60 | 62 |
+|Medium | 50 | 142 | 116 | 103 | 90 | Medium| 55 | 90 |
+|Large | 50 | 147 | 121 | 108 | 95 | Medium| 50 | 135 |
+|Huge | 50 | 152 | 126 | 113 | 100 | Medium| 45 | 180 |
+|Gargantuan | 50 | 162 | 136 | 123 | 110 | Medium| 35 | 270 |
+|Colossal | 50 | 182 | 156 | 143 | 130 | Medium| 15 | 360 |
+|Titanic | 50 | 222 | 196 | 183 | 170 | Medium| -25 | 540 |
+
+| Monstrous-Humanoid Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 102 | 76 | 63 | 50 | No Armor| 95 | 22 |
+|Diminutive | 50 | 122 | 96 | 83 | 70 | No Armor| 75 | 29 |
+|Tiny | 50 | 132 | 106 | 93 | 80 | No Armor| 65 | 45 |
+|Small | 50 | 137 | 111 | 98 | 85 | No Armor| 60 | 62 |
+|Medium | 50 | 142 | 116 | 103 | 90 | No Armor| 55 | 90 |
+|Large | 50 | 147 | 121 | 108 | 95 | No Armor| 50 | 135 |
+|Huge | 50 | 152 | 126 | 113 | 100 | No Armor| 45 | 180 |
+|Gargantuan | 50 | 162 | 136 | 123 | 110 | No Armor| 35 | 270 |
+|Colossal | 50 | 182 | 156 | 143 | 130 | No Armor| 15 | 360 |
+|Titanic | 50 | 222 | 196 | 183 | 170 | No Armor| -25 | 540 |
+
+| Ooze Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 42 | 41 | 35 | No Armor| 95 | 18 |
+|Diminutive | 50 | 67 | 62 | 61 | 55 | No Armor| 75 | 23 |
+|Tiny | 50 | 77 | 72 | 71 | 65 | No Armor| 65 | 36 |
+|Small | 50 | 82 | 77 | 76 | 70 | No Armor| 60 | 50 |
+|Medium | 50 | 87 | 82 | 81 | 75 | No Armor| 55 | 72 |
+|Large | 50 | 92 | 87 | 86 | 80 | No Armor| 50 | 108 |
+|Huge | 50 | 97 | 92 | 91 | 85 | No Armor| 45 | 144 |
+|Gargantuan | 50 | 107 | 102 | 101 | 95 | No Armor| 35 | 216 |
+|Colossal | 50 | 127 | 122 | 121 | 115 | No Armor| 15 | 288 |
+|Titanic | 50 | 167 | 162 | 161 | 155 | No Armor| -25 | 432 |
+
+| Outsider Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 102 | 76 | 63 | 50 | No Armor| 95 | 22 |
+|Diminutive | 50 | 122 | 96 | 83 | 70 | No Armor| 75 | 29 |
+|Tiny | 50 | 132 | 106 | 93 | 80 | No Armor| 65 | 45 |
+|Small | 50 | 137 | 111 | 98 | 85 | No Armor| 60 | 62 |
+|Medium | 50 | 142 | 116 | 103 | 90 | No Armor| 55 | 90 |
+|Large | 50 | 147 | 121 | 108 | 95 | No Armor| 50 | 135 |
+|Huge | 50 | 152 | 126 | 113 | 100 | No Armor| 45 | 180 |
+|Gargantuan | 50 | 162 | 136 | 123 | 110 | No Armor| 35 | 270 |
+|Colossal | 50 | 182 | 156 | 143 | 130 | No Armor| 15 | 360 |
+|Titanic | 50 | 222 | 196 | 183 | 170 | No Armor| -25 | 540 |
+
+| Plant Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 42 | 41 | 35 | No Armor| 95 | 18 |
+|Diminutive | 50 | 67 | 62 | 61 | 55 | No Armor| 75 | 23 |
+|Tiny | 50 | 77 | 72 | 71 | 65 | No Armor| 65 | 36 |
+|Small | 50 | 82 | 77 | 76 | 70 | No Armor| 60 | 50 |
+|Medium | 50 | 87 | 82 | 81 | 75 | No Armor| 55 | 72 |
+|Large | 50 | 92 | 87 | 86 | 80 | No Armor| 50 | 108 |
+|Huge | 50 | 97 | 92 | 91 | 85 | No Armor| 45 | 144 |
+|Gargantuan | 50 | 107 | 102 | 101 | 95 | No Armor| 35 | 216 |
+|Colossal | 50 | 127 | 122 | 121 | 115 | No Armor| 15 | 288 |
+|Titanic | 50 | 167 | 162 | 161 | 155 | No Armor| -25 | 432 |
+
+| Undead Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 42 | 41 | 35 | No Armor| 95 | 18 |
+|Diminutive | 50 | 67 | 62 | 61 | 55 | No Armor| 75 | 23 |
+|Tiny | 50 | 77 | 72 | 71 | 65 | No Armor| 65 | 36 |
+|Small | 50 | 82 | 77 | 76 | 70 | No Armor| 60 | 50 |
+|Medium | 50 | 87 | 82 | 81 | 75 | No Armor| 55 | 72 |
+|Large | 50 | 92 | 87 | 86 | 80 | No Armor| 50 | 108 |
+|Huge | 50 | 97 | 92 | 91 | 85 | No Armor| 45 | 144 |
+|Gargantuan | 50 | 107 | 102 | 101 | 95 | No Armor| 35 | 216 |
+|Colossal | 50 | 127 | 122 | 121 | 115 | No Armor| 15 | 288 |
+|Titanic | 50 | 167 | 162 | 161 | 155 | No Armor| -25 | 432 |
+
+| Vermin Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
+|:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Fine | 50 | 47 | 42 | 41 | 35 | Light| 95 | 18 |
+|Diminutive | 50 | 67 | 62 | 61 | 55 | Light| 75 | 23 |
+|Tiny | 50 | 77 | 72 | 71 | 65 | Light| 65 | 36 |
+|Small | 50 | 82 | 77 | 76 | 70 | Light| 60 | 50 |
+|Medium | 50 | 87 | 82 | 81 | 75 | Light| 55 | 72 |
+|Large | 50 | 92 | 87 | 86 | 80 | Light| 50 | 108 |
+|Huge | 50 | 97 | 92 | 91 | 85 | Light| 45 | 144 |
+|Gargantuan | 50 | 107 | 102 | 101 | 95 | Light| 35 | 216 |
+|Colossal | 50 | 127 | 122 | 121 | 115 | Light| 15 | 288 |
+|Titanic | 50 | 167 | 162 | 161 | 155 | Light| -25 | 432 |
 
