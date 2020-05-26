@@ -34,8 +34,7 @@ def render_row(n)
 %>{
     lequ: [
 <%
-def range = 0 .. 500;
-range.each{ n ->
+for(n in 0 .. 500){
     render_row(n);
     print '\n';
 }
