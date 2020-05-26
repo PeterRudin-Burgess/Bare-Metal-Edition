@@ -56,8 +56,8 @@
             markdown-blockquote-paragraph-hyphenate="off"
             ?>
     <?include src="./front-page.pml" ?>
-    <!--
     <?include src="./attack-tables.pml" ?>
+    <!--
     <?include src="./critical-tables.pml" ?>
     -->
     <?include src="./license-part.pml" ?>

@@ -49,7 +49,7 @@
                   block-padding="1"
                   src="../markdown/attack-tables/laser-blaster.md" />
 
-        <markdown pos="220,400" width="155"
+        <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"

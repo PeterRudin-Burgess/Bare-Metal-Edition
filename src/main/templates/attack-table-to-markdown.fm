@@ -1,0 +1,21 @@
+##### ${title}
+
+|      | Armor ||||
+| d100 | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+<#assign dlen=(attack.diceroll?size)  index=0 >
+<#list attack.diceroll as row >
+| ${row[0]} - ${row[1]} |<#list [0,1,2,3] as AT ><#if
+    (row[1] >= data[AT].start)> ${data[AT].min + ((row[1] - data[AT].start)/((data[AT].end-data[AT].start)/(data[AT].max - data[AT].min)))?ceiling}<#if
+        (row[1] >= data[AT].E) >E<#elseif
+        (row[1] >= data[AT].D) >D<#elseif
+        (row[1] >= data[AT].C) >C<#elseif
+        (row[1] >= data[AT].B) >B<#elseif
+        (row[1] >= data[AT].A) >A</#if><#if
+            (row[1] >= data[AT].A)><#assign
+                clen=(attack.criticals[data[AT].type]?length)
+                cval=(row[1] + AT + attack.permutation[index % 256])
+                index=(index+1)
+                ct=(attack.criticals[data[AT].type][cval % clen]) >${ct}</#if><#else> &endash; </#if> |</#list>
+</#list>
+

@@ -18,36 +18,50 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>jinjava-maven-plugin</artifactId>
+                <artifactId>template-maven-plugin</artifactId>
                 <groupId>com.github.terefang</groupId>
-                <version>2020.5.4</version>
+                <version>2020.5.12</version>
                 <executions>
+                    <execution>
+                        <id>resources-gsimple-templation</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>gsimple-standard</goal>
+                        </goals>
+                        <configuration>
+                            <resourcesDirectory>${project.basedir}/src/main</resourcesDirectory>
+                            <includes>**/*.hson.gst</includes>
+                            <resourcesOutput>${project.basedir}/src/main</resourcesOutput>
+                        </configuration>
+                    </execution>
                     <execution>
                         <id>markdown-auto-templation</id>
                         <phase>generate-resources</phase>
                         <goals>
-                            <goal>jinjava</goal>
+                            <goal>jinjava-standard</goal>
                         </goals>
                         <configuration>
                             <resourcesDirectory>${project.basedir}/src/main/markdown</resourcesDirectory>
                             <includes>**/*.md.j2</includes>
                             <resourcesOutput>${project.basedir}/src/main/markdown</resourcesOutput>
+                            <processLocalContext>true</processLocalContext>
                         </configuration>
                     </execution>
                     <execution>
                         <id>attack-tables</id>
                         <phase>generate-resources</phase>
                         <goals>
-                            <goal>template</goal>
+                            <goal>freemarker-template</goal>
                         </goals>
                         <configuration>
-                            <jinjaTemplate>${project.basedir}/src/main/templates/attack-table-to-markdown.j2</jinjaTemplate>
+                            <templateFile>${project.basedir}/src/main/templates/attack-table-to-markdown.fm</templateFile>
                             <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
                             <additionalContextRoot>attack</additionalContextRoot>
                             <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
                             <includes>**/*.hson</includes>
                             <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables</resourcesOutput>
                             <destinationExtension>.md</destinationExtension>
+                            <outputType>TEXT</outputType>
                         </configuration>
                     </execution>
                 </executions>

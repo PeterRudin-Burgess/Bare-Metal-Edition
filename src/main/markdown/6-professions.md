@@ -78,14 +78,6 @@ Each profession also has a unique set of skill costs.
 Although this skill has a cost, it cannot be bought without the GM’s 
 express permission.
 
-> *TODO*
->
-> Languages 1/1, 2/2, 3/3
->
-> Others 3/5
->
-> Steps: 1/1, 1/3, 2/4, 3/5, 5/7, 7/10, 12/15, 20/25
-
 ### 6.3 Example Professions 
 
 #### Aristocrat
@@ -250,78 +242,66 @@ Vocation: Mystic 	2*
 
 Latent Psionic 	1/Tier
 
-Skill Cost Table
-Combat
-Weapon 1	2/4	
-Move in Armor CE	5/7
-Weapon 2	3/5	
-Combat Expertise	5/7
-Weapon 3	7/10		
-General
-Acrobatics/Tumbling	5/7	
-Climbing	5/7
-Swimming	5/7	
-Riding	5/7
-Pick Locks	7/10	
-Stalk/Hide	5/7
-Perception	2/4	
-Driving	3/5
-Ambush/Sniper	7/10	
-Languages	2/2
-Physique	3/5	
-Music	2/4
-Trickery	5/7		
-Mental			
-Mental Focus	2/4	
-Mental Focus Defense	12/15
-Forgery	5/7	
-Survival	7/10
-First Aid	3/5	
-Scanners	3/5
-Pilot			
-Combat Pilot	7/10	
-Space Pilot	7/10
-Hyperspace Pilot	7/10	
-Space Navigation	7/10
-Ship Sensors	7/10		
-Technical			
-Tech: Mechanical	5/7	
-Tech: Arms	5/7
-Tech: Computer	7/10	
-Tech: CSI	3/5
-Tech: Medical	3/5		
-Science			
-Sci: General	3/5	
-Sci: Xeno	3/5
-Engineering			
-Engineer: Mech	5/7	
-Engineer: Weapon	7/10
-Engineer: Software	7/10	
-Engineer: Hardware	5/7
-Psionics			
-Psionic Power	1/3	
-Meditation/Gifts	1/3
+|Skill Cost Table |||||
+|:----------------------|---:|:---:|:----------------------|---:|
+| *Combat* |||||
+| Weapon 1 | 2/4 | | Move in Armor CE | 5/7|
+| Weapon 2 | 3/5 | | Combat Expertise | 5/7|
+| Weapon 3 | 7/10 | |||
+|*General* |||||
+| Acrobatics/Tumbling | 5/7 | | Climbing | 5/7|
+| Swimming | 5/7 | | Riding | 5/7|
+| Pick Locks | 7/10 | | Stalk/Hide | 5/7|
+| Perception | 2/4 | | Driving | 3/5|
+| Ambush/Sniper | 7/10 | | Languages | 2/2|
+| Physique | 3/5 | | Music | 2/4|
+| Trickery | 5/7 | |||
+|*Mental* ||||| | 
+| Mental Focus | 2/4 | | Mental Focus Defense | 12/15|
+| Forgery | 5/7 | | Survival | 7/10|
+| First Aid | 3/5 | | Scanners | 3/5|
+|*Pilot* |||||
+| Combat Pilot | 7/10 | | Space Pilot | 7/10 |
+| Hyperspace Pilot | 7/10 | | Space Navigation | 7/10|
+| Ship Sensors | 7/10 | |||
+|*Technical* |||||
+| Tech: Mechanical | 5/7 | | Tech: Arms | 5/7|
+| Tech: Computer | 7/10 | | Tech: CSI | 3/5|
+| Tech: Medical | 3/5 | |||
+|*Science* |||||
+| Sci: General | 3/5 | | Sci: Xeno | 3/5|
+|*Engineering* |||||
+| Engineer: Mech | 5/7 | | Engineer: Weapon | 7/10|
+| Engineer: Software | 7/10 | | Engineer: Hardware | 5/7|
+|*Psionics* |||||
+| Psionic Power | 1/3 | | Meditation/Gifts | 1/3|
 
-Character Creation Example
-Stephen chooses to make his character an Aristocrat. He sees his character as a low ranking diplomat or envoy.
-He adds these skills to his character sheet. His skills now look like this.
-Weapon 1 	2 ranks 
-Swimming 	1 rank 
-Riding 	1 rank 
-Perception 	1 rank 
-Driving 	2 ranks 
-Scanners	3 rank 
-Space Pilot 	4 ranks 
-Physique 	3 Ranks 
-Vocation:  Diplomat 	2 ranks 
-First Aid 	3 Ranks
-Languages 	5 ranks
-Music: Instrument 	1 rank	
-Science: General 	2 ranks	
-Space Navigation 	1 rank	
-Trickery 	1 rank	
+> **Character Creation Example**
+>
+> Stephen chooses to make his character an Aristocrat. He sees his character 
+> as a low ranking diplomat or envoy.
+>
+> He adds these skills to his character sheet. His skills now look like this.
+>
+> *Weapon#1 	2; 
+Swimming 	1; 
+Riding 	1;
+Perception 	1; 
+Driving 	2; 
+Scanners	3;
+Space Pilot 	4; 
+Physique 	3;
+Vocation:  Diplomat 	2; 
+First Aid 	3;
+Languages 	5;
+Music: Instrument 	1;	
+Science: General 	2;	
+Space Navigation 	1;	
+Trickery 	1*
+>
+> Adding these to the character sheet Stephen can then add in the stat bonuses and
+> special bonuses (in this case from his acute hearing talent.)
 
-Adding these to the character sheet Stephen can then add in the stat bonuses and special bonuses (in this case from his acute hearing talent.)
 Skill	Rank	Bonus	Stat	Special	Total
 Driving	2	10	+19		
 First Aid	3	15	+27		

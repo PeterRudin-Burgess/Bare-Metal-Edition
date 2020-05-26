@@ -1,0 +1,51 @@
+{
+    title: Magical Ball
+    data: [
+        {   type: none
+            start: 59
+            end: 150
+            min: 1
+            max: 34
+            A:	75
+            B:	95
+            C:	115
+            D:	147
+            E:	150
+        }
+        {   type: none
+            start: 75
+            end: 150
+            min: 1
+            max: 20
+            A:	95
+            B:	118
+            C:	135
+            D:	147
+            E:	150
+        }
+        {   type: none
+            start: 70
+            end: 150
+            min: 1
+            max: 23
+            A:	87
+            B:	107
+            C:	127
+            D:	147
+            E:	150
+        }
+        {   type: none
+            start: 67
+            end: 150
+            min: 1
+            max: 25
+            A:	83
+            B:	103
+            C:	123
+            D:	143
+            E:	150
+        }
+    ]
+}
+
+
