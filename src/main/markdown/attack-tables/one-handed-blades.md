@@ -1,30 +1,29 @@
 ##### One Handed Blades
 
 |      | Armor ||||
-| d100 | No | Lt | Md | Hvy |
+| Result | No | Lt | Md | Hvy |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
-| 146 - 150 | 30ES | 25ES | 20ES | 13ES |
-| 142 - 145 | 29ES | 24ES | 20ES | 13ES |
-| 138 - 141 | 27ES | 23ES | 19DS | 12DS |
-| 135 - 137 | 25ES | 22ES | 18DS | 12CS |
-| 131 - 134 | 24ES | 21DS | 17CS | 12BS |
-| 127 - 130 | 23ES | 20DS | 17CS | 11BS |
-| 123 - 126 | 21ES | 19DS | 16CS | 11BS |
-| 119 - 122 | 20ES | 18DS | 15CS | 10AS |
-| 116 - 118 | 18DS | 16DS | 14BS | 10AS |
-| 112 - 115 | 17DS | 16DS | 14BS | 9AS |
-| 108 - 111 | 15DS | 14CS | 13BS | 9AS |
-| 104 - 107 | 14DS | 13CS | 12AS | 9 |
-| 100 - 103 | 12CS | 12CS | 12AS | 8 |
-| 97 - 99 | 11CS | 11BS | 11 | 8 |
-| 93 - 96 | 10CS | 10BS | 10 | 7 |
-| 89 - 92 | 8BS | 9BS | 9 | 7 |
-| 85 - 88 | 7AS | 8BS | 9 | 6 |
-| 81 - 84 | 5AS | 7AS | 8 | 6 |
-| 78 - 80 | 3AS | 6AS | 7 | 5 |
-| 74 - 77 | 2 | 5AS | 7 | 5 |
-| 66 - 73 | &endash;  | 4 | 6 | 5 |
-| 50 - 65 | &endash;  | 1 | 4 | 4 |
-| 40 - 49 | &endash;  | &endash;  | &endash;  | 2 |
-| 1 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
-
+| 149 - 150 | 30ES | 25ES | 20ES | 13ES |
+| 147 - 148 | 30ES | 25ES | 20ES | 13ES |
+| 145 - 146 | 29ES | 24ES | 20ES | 13ES |
+| 143 - 144 | 28ES | 24ES | 19DS | 13DS |
+| 140 - 142 | 27ES | 23ES | 19DS | 13DS |
+| 137 - 139 | 26ES | 22ES | 18DS | 12CS |
+| 133 - 136 | 25ES | 22ES | 18DS | 12CS |
+| 129 - 132 | 24ES | 20DS | 17CS | 11BS |
+| 124 - 128 | 22ES | 19DS | 16CS | 11BS |
+| 119 - 123 | 20ES | 18DS | 15CS | 10AS |
+| 114 - 118 | 18DS | 16DS | 14BS | 10AS |
+| 108 - 113 | 16DS | 15CS | 13BS | 9AS |
+| 101 - 107 | 14DS | 13CS | 12AS | 9 |
+| 95 - 100 | 11CS | 11CS | 11AS | 8 |
+| 87 - 94 | 9BS | 10BS | 10 | 7 |
+| 80 - 86 | 6AS | 7BS | 8 | 6 |
+| 71 - 79 | 3 | 5AS | 7 | 5 |
+| 63 - 70 | &endash;  | 3 | 5 | 4 |
+| 54 - 62 | &endash;  | &endash;  | 4 | 3 |
+| 44 - 53 | &endash;  | &endash;  | 2 | 2 |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

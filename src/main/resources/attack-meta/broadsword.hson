@@ -1,0 +1,12 @@
+{
+    data: {
+        title: Broadsword
+        W: 2.8
+        L: 100
+        K: balanced
+        DV: 50
+        VHC: cut
+        start: 75
+        end: 150
+    }
+}

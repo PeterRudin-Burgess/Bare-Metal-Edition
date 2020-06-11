@@ -1,0 +1,52 @@
+{
+    title: "Hoof/Tentacle/Wing"
+    roll: dr2
+    data: [
+        {   type: blunt
+            start: 75
+            end: 150
+            min: 1
+            max: 20
+            A:	89
+            B:	97
+            C:	108
+            D:	116
+            E:	123
+        }
+        {   type: blunt
+            start: 70
+            end: 150
+            min: 1
+            max: 15
+            A:	97
+            B:	108
+            C:	116
+            D:	127
+            E:	135
+        }
+        {   type: blunt
+            start: 65
+            end: 150
+            min: 1
+            max: 10
+            A:	100
+            B:	112
+            C:	123
+            D:	135
+            E:	146
+        }
+        {   type: blunt
+            start: 60
+            end: 150
+            min: 1
+            max: 5
+            A:	104
+            B:	119
+            C:	123
+            D:	131
+            E:	146
+        }
+    ]
+}
+
+

@@ -1,0 +1,9 @@
+{
+    data: {
+        title: Elemental Major
+        DV: 50
+        VHC: elemental
+        start: 75
+        end: 140
+    }
+}

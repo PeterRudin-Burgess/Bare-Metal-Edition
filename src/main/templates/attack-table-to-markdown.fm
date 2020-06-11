@@ -1,10 +1,14 @@
 ##### ${title}
 
 |      | Armor ||||
-| d100 | No | Lt | Md | Hvy |
+| Result | No | Lt | Md | Hvy |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
-<#assign dlen=(attack.diceroll?size)  index=0 >
-<#list attack.diceroll as row >
+<#if (roll??) >
+<#assign dlen=(attack[roll]?size) droll=attack[roll] index=0 >
+<#else>
+<#assign dlen=(attack.diceroll?size) droll=attack.diceroll index=0 >
+</#if>
+<#list droll as row >
 | ${row[0]} - ${row[1]} |<#list [0,1,2,3] as AT ><#if
     (row[1] >= data[AT].start)> ${data[AT].min + ((row[1] - data[AT].start)/((data[AT].end-data[AT].start)/(data[AT].max - data[AT].min)))?ceiling}<#if
         (row[1] >= data[AT].E) >E<#elseif
@@ -18,4 +22,4 @@
                 index=(index+1)
                 ct=(attack.criticals[data[AT].type][cval % clen]) >${ct}</#if><#else> &endash; </#if> |</#list>
 </#list>
-
+| 1 - F | F | F | F | F |

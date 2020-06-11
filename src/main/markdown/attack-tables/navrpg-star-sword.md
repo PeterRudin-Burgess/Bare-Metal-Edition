@@ -1,0 +1,29 @@
+##### Star Sword
+
+|      | Armor ||||
+| Result | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+| 149 - 150 | 55ES | 56EK | 56EK | 50EK |
+| 147 - 148 | 54ES | 54ES | 54EK | 49EK |
+| 145 - 146 | 53ES | 53ES | 53ES | 48EK |
+| 143 - 144 | 51ES | 51ES | 52DK | 47DS |
+| 140 - 142 | 50ES | 50EK | 50DK | 46DK |
+| 137 - 139 | 48ES | 48ES | 49DK | 45DK |
+| 133 - 136 | 45ES | 46ES | 47DK | 43DK |
+| 129 - 132 | 43ES | 43DK | 44CS | 41DK |
+| 124 - 128 | 40ES | 41DS | 42CS | 39CK |
+| 119 - 123 | 36ES | 37CS | 38CS | 36CK |
+| 114 - 118 | 32DS | 34CK | 35BK | 33AS |
+| 108 - 113 | 29CS | 31BS | 32BS | 30AK |
+| 101 - 107 | 25BS | 26AS | 28AS | 27AS |
+| 95 - 100 | 19BS | 22AS | 24AS | 23 |
+| 87 - 94 | 15AS | 18 | 20 | 20 |
+| 80 - 86 | 9 | 12 | 15 | 16 |
+| 71 - 79 | 4 | 8 | 10 | 12 |
+| 63 - 70 | &endash;  | 1 | 5 | 7 |
+| 54 - 62 | &endash;  | &endash;  | &endash;  | 3 |
+| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

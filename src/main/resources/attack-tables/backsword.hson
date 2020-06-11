@@ -1,0 +1,66 @@
+{
+	title: Backsword
+	data: [
+	// NA
+	{   type: chop_NA
+	start: 75
+	end: 150
+	min: 1
+	max: 36
+	A: 85
+	B: 101
+	C: 114
+	D: 127
+	E: 140
+
+	pow0: 1.000000
+	pow1: 1.000000
+}
+	// LT
+	{   type: chop_LT
+	start: 76
+	end: 150
+	min: 1
+	max: 32
+	A: 96
+	B: 111
+	C: 123
+	D: 136
+	E: 148
+
+	pow0: 1.025000
+	pow1: 1.050000
+}
+	// MD
+	{   type: chop_MD
+	start: 78
+	end: 150
+	min: 1
+	max: 27
+	A: 111
+	B: 125
+	C: 135
+	D: 146
+	E: 157
+
+	pow0: 1.050625
+	pow1: 1.102500
+}
+	// HY
+	{   type: chop_HY
+	start: 80
+	end: 150
+	min: 1
+	max: 21
+	A: 130
+	B: 141
+	C: 149
+	D: 158
+	E: 167
+
+	pow0: 1.076891
+	pow1: 1.157625
+}
+
+    ]
+}

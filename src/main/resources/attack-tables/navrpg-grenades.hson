@@ -1,0 +1,51 @@
+{
+    title: "Grenades"
+    data: [
+        {   type: impact
+            start: 75
+            end: 150
+            min: 1
+            max: 60
+            A:	89
+            B:	97
+            C:	108
+            D:	116
+            E:	123
+        }
+        {   type: impact
+            start: 70
+            end: 150
+            min: 1
+            max: 50
+            A:	97
+            B:	108
+            C:	116
+            D:	127
+            E:	135
+        }
+        {   type: impact
+            start: 65
+            end: 150
+            min: 1
+            max: 25
+            A:	100
+            B:	112
+            C:	123
+            D:	135
+            E:	146
+        }
+        {   type: impact
+            start: 60
+            end: 150
+            min: 1
+            max: 15
+            A:	104
+            B:	119
+            C:	123
+            D:	131
+            E:	146
+        }
+    ]
+}
+
+

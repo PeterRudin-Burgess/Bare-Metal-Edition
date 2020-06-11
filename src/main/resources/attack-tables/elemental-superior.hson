@@ -1,0 +1,66 @@
+{
+	title: Elemental Superior
+	data: [
+	// NA
+	{   type: elemental
+	start: 75
+	end: 130
+	min: 1
+	max: 50
+	A: 85
+	B: 96
+	C: 105
+	D: 114
+	E: 123
+
+	pow0: 1.000000
+	pow1: 1.000000
+}
+	// LT
+	{   type: elemental
+	start: 67
+	end: 130
+	min: 1
+	max: 45
+	A: 96
+	B: 106
+	C: 114
+	D: 122
+	E: 130
+
+	pow0: 0.900000
+	pow1: 1.050000
+}
+	// MD
+	{   type: elemental
+	start: 60
+	end: 130
+	min: 1
+	max: 40
+	A: 111
+	B: 119
+	C: 125
+	D: 132
+	E: 138
+
+	pow0: 0.810000
+	pow1: 1.102500
+}
+	// HY
+	{   type: elemental
+	start: 54
+	end: 130
+	min: 1
+	max: 35
+	A: 130
+	B: 135
+	C: 139
+	D: 143
+	E: 147
+
+	pow0: 0.729000
+	pow1: 1.157625
+}
+
+    ]
+}

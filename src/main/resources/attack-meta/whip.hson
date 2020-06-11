@@ -1,0 +1,11 @@
+{
+    data: {
+        title: Whip
+        W: 0.5
+        L: 80
+        K: lash
+        VHC: whip
+        start: 75
+        end: 150
+    }
+}

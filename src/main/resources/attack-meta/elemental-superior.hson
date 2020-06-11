@@ -1,0 +1,9 @@
+{
+    data: {
+        title: Elemental Superior
+        DV: 50
+        VHC: elemental
+        start: 75
+        end: 130
+    }
+}

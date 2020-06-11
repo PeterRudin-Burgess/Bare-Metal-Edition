@@ -61,4 +61,5 @@
     <?include src="./critical-tables.pml" ?>
     -->
     <?include src="./license-part.pml" ?>
+    <?include src="./gm-screens.pml" ?>
 </document>

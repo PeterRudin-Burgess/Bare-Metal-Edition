@@ -1,0 +1,29 @@
+##### Mono Dagger
+
+|      | Armor ||||
+| Result | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+| 149 - 150 | 46EP | 31ES | 21EP | 16EP |
+| 147 - 148 | 44ES | 30ES | 20EP | 15EP |
+| 145 - 146 | 43EP | 29ES | 20EP | 15EP |
+| 143 - 144 | 42ES | 28EP | 19DP | 15DP |
+| 140 - 142 | 41ES | 28ES | 19DS | 14DP |
+| 137 - 139 | 39ES | 27EP | 18DP | 14DP |
+| 133 - 136 | 37EP | 25ES | 17DS | 13DP |
+| 129 - 132 | 35EP | 24DS | 16CP | 13DP |
+| 124 - 128 | 33EP | 23DP | 16CP | 12CP |
+| 119 - 123 | 30EP | 21CP | 14CP | 11CP |
+| 114 - 118 | 27DS | 19CS | 13BS | 11AP |
+| 108 - 113 | 24CS | 17BS | 12BP | 10AP |
+| 101 - 107 | 20BS | 15AP | 11AP | 9AP |
+| 95 - 100 | 16BP | 12AP | 9AP | 8 |
+| 87 - 94 | 13AP | 10 | 8 | 7 |
+| 80 - 86 | 8 | 7 | 6 | 6 |
+| 71 - 79 | 4 | 5 | 5 | 4 |
+| 63 - 70 | &endash;  | 1 | 3 | 3 |
+| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
+| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

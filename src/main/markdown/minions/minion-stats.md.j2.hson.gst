@@ -4,8 +4,9 @@ def rank_bonus(r)
 {
     if(r <= 10) return (r * 5);
     if(r <= 20) return (50 + ((r - 10) * 2));
-    if(r <= 30) return (70 + (r - 20));
-    return (80 + ((r - 30) / 2));
+    return (50 + r);
+//    if(r <= 30) return (50 + r);
+//    return (80 + ((r - 30) / 2));
 }
 
 def render_row(n)

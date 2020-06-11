@@ -1,30 +1,29 @@
 ##### Two Handed
 
 |      | Armor ||||
-| d100 | No | Lt | Md | Hvy |
+| Result | No | Lt | Md | Hvy |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
-| 146 - 150 | 51EK | 45EK | 35ES | 25ES |
-| 142 - 145 | 47ES | 43ES | 33EK | 24ES |
-| 138 - 141 | 44EK | 41EK | 32EK | 23EK |
-| 135 - 137 | 41ES | 38ES | 30ES | 22DK |
-| 131 - 134 | 39ES | 37ES | 29DK | 22DK |
-| 127 - 130 | 37EK | 34ES | 27DS | 21DS |
-| 123 - 126 | 34ES | 32EK | 26DK | 20CS |
-| 119 - 122 | 31ES | 30DS | 24CS | 19CS |
-| 116 - 118 | 28EK | 28DK | 23CS | 18BS |
-| 112 - 115 | 26ES | 26DK | 21CS | 17BS |
-| 108 - 111 | 23EK | 24DS | 20CS | 16BK |
-| 104 - 107 | 20DS | 22CK | 18BS | 15AK |
-| 100 - 103 | 18DS | 20CS | 17BS | 14AS |
-| 97 - 99 | 15DS | 17CS | 15AK | 13 |
-| 93 - 96 | 13DK | 16BK | 14AK | 13 |
-| 89 - 92 | 10CS | 14BK | 12AS | 12 |
-| 85 - 88 | 7BS | 11BK | 11 | 11 |
-| 81 - 84 | 4AS | 9AK | 9 | 10 |
-| 78 - 80 | 1AK | 7AS | 7 | 9 |
-| 74 - 77 | &endash;  | 5AS | 6 | 8 |
-| 66 - 73 | &endash;  | 3 | 5 | 7 |
-| 50 - 65 | &endash;  | &endash;  | 1 | 5 |
-| 40 - 49 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 1 - 39 | &endash;  | &endash;  | &endash;  | &endash;  |
-
+| 149 - 150 | 51EK | 45EK | 35ES | 25ES |
+| 147 - 148 | 49EK | 44ES | 35ES | 25ES |
+| 145 - 146 | 48ES | 43ES | 34ES | 25ES |
+| 143 - 144 | 46ES | 42ES | 33ES | 24ES |
+| 140 - 142 | 45ES | 41ES | 32EK | 24EK |
+| 137 - 139 | 43ES | 39ES | 31EK | 23DS |
+| 133 - 136 | 41EK | 38ES | 30EK | 22DK |
+| 129 - 132 | 38ES | 36ES | 28DS | 21DS |
+| 124 - 128 | 35EK | 33ES | 27DS | 20CK |
+| 119 - 123 | 32ES | 31DK | 25CS | 19CS |
+| 114 - 118 | 28ES | 28DS | 23CS | 18BS |
+| 108 - 113 | 25EK | 25DK | 21CK | 17BS |
+| 101 - 107 | 20DS | 22CK | 18BK | 15AK |
+| 95 - 100 | 16DS | 18CS | 15BK | 13AK |
+| 87 - 94 | 11CS | 15BS | 13AK | 12 |
+| 80 - 86 | 6BK | 10BS | 10 | 10 |
+| 71 - 79 | &endash;  | 6AS | 7 | 8 |
+| 63 - 70 | &endash;  | 1 | 3 | 6 |
+| 54 - 62 | &endash;  | &endash;  | &endash;  | 4 |
+| 44 - 53 | &endash;  | &endash;  | &endash;  | 2 |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

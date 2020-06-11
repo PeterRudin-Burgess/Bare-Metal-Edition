@@ -1,0 +1,66 @@
+{
+	title: Elemental Lesser
+	data: [
+	// NA
+	{   type: elemental
+	start: 75
+	end: 180
+	min: 1
+	max: 50
+	A: 85
+	B: 108
+	C: 127
+	D: 146
+	E: 165
+
+	pow0: 1.000000
+	pow1: 1.000000
+}
+	// LT
+	{   type: elemental
+	start: 67
+	end: 180
+	min: 1
+	max: 45
+	A: 96
+	B: 119
+	C: 137
+	D: 156
+	E: 175
+
+	pow0: 0.900000
+	pow1: 1.050000
+}
+	// MD
+	{   type: elemental
+	start: 60
+	end: 180
+	min: 1
+	max: 40
+	A: 111
+	B: 133
+	C: 150
+	D: 168
+	E: 185
+
+	pow0: 0.810000
+	pow1: 1.102500
+}
+	// HY
+	{   type: elemental
+	start: 54
+	end: 180
+	min: 1
+	max: 35
+	A: 130
+	B: 149
+	C: 165
+	D: 181
+	E: 196
+
+	pow0: 0.729000
+	pow1: 1.157625
+}
+
+    ]
+}

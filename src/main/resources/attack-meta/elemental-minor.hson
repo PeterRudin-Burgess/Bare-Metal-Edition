@@ -1,0 +1,9 @@
+{
+    data: {
+        title: Elemental Minor
+        DV: 50
+        VHC: elemental
+        start: 75
+        end: 150
+    }
+}

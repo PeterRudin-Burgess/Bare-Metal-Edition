@@ -61,5 +61,49 @@
                   block-padding="1"
                   src="../markdown/attack-tables/bullets-projectiles.md" />
 
+        <markdown pos="390,400" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/broadsword.md" />
+
+    </page>
+    <page>
+        <markdown pos="50,800" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-lesser.md" />
+
+        <markdown pos="220,800" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-normal.md" />
+
+        <markdown pos="390,800" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-greater.md" />
+
+        <markdown pos="50,400" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-minor.md" />
+
+        <markdown pos="220,400" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-major.md" />
+
+        <markdown pos="390,400" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/elemental-superior.md" />
+
     </page>
 </document>

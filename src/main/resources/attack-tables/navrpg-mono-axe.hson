@@ -1,0 +1,51 @@
+{
+    title: Mono Axe
+    data: [
+        {   type: slash
+            start: 75
+            end: 150
+            min: 1
+            max: 50
+            A:	89
+            B:	97
+            C:	108
+            D:	116
+            E:	123
+        }
+        {   type: slash
+            start: 70
+            end: 150
+            min: 1
+            max: 40
+            A:	97
+            B:	108
+            C:	116
+            D:	127
+            E:	135
+        }
+        {   type: slash_MD
+            start: 65
+            end: 150
+            min: 1
+            max: 35
+            A:	100
+            B:	112
+            C:	123
+            D:	135
+            E:	146
+        }
+        {   type: slash_HY
+            start: 60
+            end: 150
+            min: 1
+            max: 30
+            A:	104
+            B:	119
+            C:	123
+            D:	131
+            E:	146
+        }
+    ]
+}
+
+

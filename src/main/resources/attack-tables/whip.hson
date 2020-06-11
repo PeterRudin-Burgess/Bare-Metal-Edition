@@ -1,0 +1,66 @@
+{
+	title: Whip
+	data: [
+	// NA
+	{   type: slash_NA
+	start: 75
+	end: 150
+	min: 1
+	max: 11
+	A: 85
+	B: 101
+	C: 114
+	D: 127
+	E: 140
+
+	pow0: 1.000000
+	pow1: 1.000000
+}
+	// LT
+	{   type: slash_LT
+	start: 71
+	end: 150
+	min: 1
+	max: 8
+	A: 107
+	B: 124
+	C: 138
+	D: 152
+	E: 166
+
+	pow0: 0.950000
+	pow1: 1.180000
+}
+	// MD
+	{   type: slash_HY
+	start: 67
+	end: 150
+	min: 1
+	max: 5
+	A: 136
+	B: 154
+	C: 168
+	D: 183
+	E: 197
+
+	pow0: 0.902500
+	pow1: 1.392400
+}
+	// HY
+	{   type: blunt
+	start: 64
+	end: 150
+	min: 1
+	max: 3
+	A: 171
+	B: 190
+	C: 205
+	D: 220
+	E: 235
+
+	pow0: 0.857375
+	pow1: 1.643032
+}
+
+    ]
+}

@@ -48,6 +48,37 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>markdown-auto-templation-gsimple</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>gsimple-standard</goal>
+                        </goals>
+                        <configuration>
+                            <resourcesDirectory>${project.basedir}/src/main/markdown</resourcesDirectory>
+                            <includes>**/*.md.gst</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown</resourcesOutput>
+                            <processLocalContext>true</processLocalContext>
+                            <additionalContext>${project.basedir}/src/main/resources/global.hson</additionalContext>
+                            <additionalContextRoot>global</additionalContextRoot>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attacks-gsimple-templation</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>gsimple-template</goal>
+                        </goals>
+                        <configuration>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-meta</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/resources/attack-tables</resourcesOutput>
+                            <templateFile>${project.basedir}/src/main/templates/attack-table-to-hson.gst</templateFile>
+                            <destinationExtension>.hson</destinationExtension>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>attack-tables</id>
                         <phase>generate-resources</phase>
                         <goals>

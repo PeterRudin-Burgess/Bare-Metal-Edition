@@ -1,0 +1,66 @@
+{
+	title: Elemental Major
+	data: [
+	// NA
+	{   type: elemental
+	start: 75
+	end: 140
+	min: 1
+	max: 50
+	A: 85
+	B: 98
+	C: 109
+	D: 120
+	E: 131
+
+	pow0: 1.000000
+	pow1: 1.000000
+}
+	// LT
+	{   type: elemental
+	start: 67
+	end: 140
+	min: 1
+	max: 45
+	A: 96
+	B: 108
+	C: 119
+	D: 129
+	E: 139
+
+	pow0: 0.900000
+	pow1: 1.050000
+}
+	// MD
+	{   type: elemental
+	start: 60
+	end: 140
+	min: 1
+	max: 40
+	A: 111
+	B: 122
+	C: 130
+	D: 139
+	E: 147
+
+	pow0: 0.810000
+	pow1: 1.102500
+}
+	// HY
+	{   type: elemental
+	start: 54
+	end: 140
+	min: 1
+	max: 35
+	A: 130
+	B: 138
+	C: 144
+	D: 150
+	E: 157
+
+	pow0: 0.729000
+	pow1: 1.157625
+}
+
+    ]
+}
