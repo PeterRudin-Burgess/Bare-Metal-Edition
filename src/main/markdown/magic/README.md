@@ -21,19 +21,20 @@ Please note some Ancestries, Cultures and/or Archetypes may provide bonus tiers 
 | Tier #5 - Savant      |  2/2  | 1/3   |
 | Tier #6 - Adept*      |  1/1  | 1/1   |
 
-### Magical Aspects
+### Aspects
 
 There are two aspects to magic. The first is mana points. 
 These are bought as a skill. A character with 5 ranks in Magic Power and 
 a +10 stat bonus would have a total of 35 Mana Points [MP]. 
-You may not develop the Magic Power skill unless you have at least one tier in the Magic Gift talent.
+You may not develop the Magic Power skill unless you have at least one tier 
+in the Magic Gift talent.
 
 The second element is the actual spells and rituals known and have a base cost in MP and 
 additional options that can scale the effects in different ways. 
 You may not use a spell until you have sufficient ranks in that spell to meet the base 
 cost and you may not put more MP into a spell than you have ranks in that spell.
 
-Every spell and ritual is developed individually.
+*Every spell and ritual is developed individually!*
 
 Many effects are dependent on the number of ranks known in the spell or ritual.
 
