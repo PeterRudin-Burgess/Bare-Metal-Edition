@@ -1,6 +1,6 @@
 {
     title: "Natural, Talon"
-    roll: dr2
+
     data: [
         {   type: slash
             start: 75

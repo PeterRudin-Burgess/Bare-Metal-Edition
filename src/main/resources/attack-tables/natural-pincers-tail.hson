@@ -1,6 +1,5 @@
 {
     title: "Pincers/Tail Slap"
-    roll: dr2
     data: [
         {   type: blunt
             start: 75

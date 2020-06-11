@@ -1,6 +1,5 @@
 {
     title: "Natural, Other"
-    roll: dr2
     data: [
         {   type: other
             start: 75

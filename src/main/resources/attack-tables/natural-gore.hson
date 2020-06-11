@@ -1,6 +1,5 @@
 {
     title: "Natural, Gore"
-    roll: dr2
     data: [
         {   type: puncture
             start: 75

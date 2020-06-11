@@ -20,7 +20,7 @@
             <plugin>
                 <artifactId>template-maven-plugin</artifactId>
                 <groupId>com.github.terefang</groupId>
-                <version>2020.5.12</version>
+                <version>2020.5.14</version>
                 <executions>
                     <execution>
                         <id>resources-gsimple-templation</id>
@@ -90,9 +90,46 @@
                             <additionalContextRoot>attack</additionalContextRoot>
                             <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
                             <includes>**/*.hson</includes>
-                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables</resourcesOutput>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables/half</resourcesOutput>
                             <destinationExtension>.md</destinationExtension>
                             <outputType>TEXT</outputType>
+                            <!--additionalVariables>roll=dr-short</additionalVariables-->
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attack-tables-full</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>freemarker-template</goal>
+                        </goals>
+                        <configuration>
+                            <templateFile>${project.basedir}/src/main/templates/attack-table-to-markdown.fm</templateFile>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables/full</resourcesOutput>
+                            <destinationExtension>.md</destinationExtension>
+                            <outputType>TEXT</outputType>
+                            <additionalVariables>roll=dr-full</additionalVariables>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attack-tables-short</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>freemarker-template</goal>
+                        </goals>
+                        <configuration>
+                            <templateFile>${project.basedir}/src/main/templates/attack-table-to-markdown.fm</templateFile>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables/short</resourcesOutput>
+                            <destinationExtension>.md</destinationExtension>
+                            <outputType>TEXT</outputType>
+                            <additionalVariables>roll=dr-short</additionalVariables>
                         </configuration>
                     </execution>
                 </executions>

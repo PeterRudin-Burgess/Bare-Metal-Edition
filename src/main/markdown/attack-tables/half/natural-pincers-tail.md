@@ -1,0 +1,29 @@
+##### Pincers/Tail Slap
+
+|      | Armor ||||
+| Result | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+| 149 - 150 | 30EK | 21EK | 15EK | 10EK |
+| 147 - 148 | 30EK | 20EK | 15EK | 10EK |
+| 145 - 146 | 29EK | 20EK | 15EK | 10EK |
+| 143 - 144 | 28EK | 19EK | 15DK | 10DK |
+| 140 - 142 | 27EK | 19EK | 14DK | 10DK |
+| 137 - 139 | 26EK | 18EK | 14DK | 9DK |
+| 133 - 136 | 25EK | 17EK | 13DK | 9DK |
+| 129 - 132 | 24EK | 16DK | 13CK | 9DK |
+| 124 - 128 | 22EK | 15DK | 12CK | 8CK |
+| 119 - 123 | 20EK | 14CK | 11CK | 8CK |
+| 114 - 118 | 18DK | 13CK | 10BK | 7AK |
+| 108 - 113 | 16CK | 12BK | 9BK | 7AK |
+| 101 - 107 | 14BK | 10AK | 8AK | 6AK |
+| 95 - 100 | 11BK | 9AK | 7AK | 5 |
+| 87 - 94 | 9AK | 7 | 6 | 5 |
+| 80 - 86 | 6 | 5 | 5 | 4 |
+| 71 - 79 | 3 | 4 | 4 | 3 |
+| 63 - 70 | &endash;  | 1 | 2 | 2 |
+| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
+| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

@@ -1,6 +1,5 @@
 {
     title: "Sting/Horns/Tusks/Spikes"
-    roll: dr2
     data: [
         {   type: trust_NA
             start: 75

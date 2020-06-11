@@ -1,6 +1,5 @@
 {
     title: "Natural, Slam/Bash/Ram"
-    roll: dr2
     data: [
         {   type: impact
             start: 75

@@ -15,31 +15,31 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/one-handed-blades.md" />
+                  src="../markdown/attack-tables/half/one-handed-blades.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/one-handed-blunt.md" />
+                  src="../markdown/attack-tables/half/one-handed-blunt.md" />
 
         <markdown pos="50,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/arrow-bolt-missile.md" />
+                  src="../markdown/attack-tables/half/arrow-bolt-missile.md" />
 
         <markdown pos="220,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/thrown.md" />
+                  src="../markdown/attack-tables/half/thrown.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/two-handed.md" />
+                  src="../markdown/attack-tables/half/two-handed.md" />
 
     </page>
     <page>
@@ -47,25 +47,25 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/laser-blaster.md" />
+                  src="../markdown/attack-tables/half/laser-blaster.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/ball-explosion.md" />
+                  src="../markdown/attack-tables/half/ball-explosion.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/bullets-projectiles.md" />
+                  src="../markdown/attack-tables/half/bullets-projectiles.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/broadsword.md" />
+                  src="../markdown/attack-tables/half/broadsword.md" />
 
     </page>
     <page>
@@ -73,37 +73,37 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-lesser.md" />
+                  src="../markdown/attack-tables/half/elemental-lesser.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-normal.md" />
+                  src="../markdown/attack-tables/half/elemental-normal.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-greater.md" />
+                  src="../markdown/attack-tables/half/elemental-greater.md" />
 
         <markdown pos="50,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-minor.md" />
+                  src="../markdown/attack-tables/half/elemental-minor.md" />
 
         <markdown pos="220,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-major.md" />
+                  src="../markdown/attack-tables/half/elemental-major.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/elemental-superior.md" />
+                  src="../markdown/attack-tables/half/elemental-superior.md" />
 
     </page>
 </document>

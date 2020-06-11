@@ -1,0 +1,29 @@
+##### Sting/Horns/Tusks/Spikes
+
+|      | Armor ||||
+| Result | No | Lt | Md | Hvy |
+|:--------:|:-----:|:-----:|:-----:|:-----:|
+| 149 - 150 | 30EP | 21ES | 15EP | 10EP |
+| 147 - 148 | 30ES | 20ES | 15EP | 10EP |
+| 145 - 146 | 29EP | 20ES | 15EP | 10EP |
+| 143 - 144 | 28ES | 19EP | 15DP | 10DP |
+| 140 - 142 | 27ES | 19ES | 14DS | 10DP |
+| 137 - 139 | 26ES | 18EP | 14DP | 9DP |
+| 133 - 136 | 25EP | 17ES | 13DS | 9DP |
+| 129 - 132 | 24EP | 16DS | 13CP | 9DP |
+| 124 - 128 | 22EP | 15DP | 12CP | 8CP |
+| 119 - 123 | 20EP | 14CP | 11CP | 8CP |
+| 114 - 118 | 18DS | 13CS | 10BS | 7AP |
+| 108 - 113 | 16CS | 12BS | 9BP | 7AP |
+| 101 - 107 | 14BS | 10AP | 8AP | 6AP |
+| 95 - 100 | 11BP | 9AP | 7AP | 5 |
+| 87 - 94 | 9AP | 7 | 6 | 5 |
+| 80 - 86 | 6 | 5 | 5 | 4 |
+| 71 - 79 | 3 | 4 | 4 | 3 |
+| 63 - 70 | &endash;  | 1 | 2 | 2 |
+| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
+| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 1 - F | F | F | F | F |

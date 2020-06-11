@@ -42,37 +42,37 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-battle-axe.md" />
+                  src="../markdown/attack-tables/half/navrpg-battle-axe.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-club.md" />
+                  src="../markdown/attack-tables/half/navrpg-club.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-dagger.md" />
+                  src="../markdown/attack-tables/half/navrpg-dagger.md" />
 
         <markdown pos="50,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-spear.md" />
+                  src="../markdown/attack-tables/half/navrpg-spear.md" />
 
         <markdown pos="220,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-staff.md" />
+                  src="../markdown/attack-tables/half/navrpg-staff.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-sword.md" />
+                  src="../markdown/attack-tables/half/navrpg-sword.md" />
 
     </page>
     <page>
@@ -80,37 +80,37 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-mono-dagger.md" />
+                  src="../markdown/attack-tables/half/navrpg-mono-dagger.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-mono-sword.md" />
+                  src="../markdown/attack-tables/half/navrpg-mono-sword.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-mono-axe.md" />
+                  src="../markdown/attack-tables/half/navrpg-mono-axe.md" />
 
         <markdown pos="50,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-star-sword.md" />
+                  src="../markdown/attack-tables/half/navrpg-star-sword.md" />
 
         <markdown pos="220,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-long-bow.md" />
+                  src="../markdown/attack-tables/half/navrpg-long-bow.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-short-bow.md" />
+                  src="../markdown/attack-tables/half/navrpg-short-bow.md" />
 
     </page>
     <page>
@@ -118,37 +118,37 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-heavy-xbow.md" />
+                  src="../markdown/attack-tables/half/navrpg-heavy-xbow.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-firearm-pistol.md" />
+                  src="../markdown/attack-tables/half/navrpg-firearm-pistol.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-firearm-rifle.md" />
+                  src="../markdown/attack-tables/half/navrpg-firearm-rifle.md" />
 
         <markdown pos="50,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-light-xbow.md" />
+                  src="../markdown/attack-tables/half/navrpg-light-xbow.md" />
 
         <markdown pos="220,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-laser-pistol.md" />
+                  src="../markdown/attack-tables/half/navrpg-laser-pistol.md" />
 
         <markdown pos="390,400" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/navrpg-laser-rifle.md" />
+                  src="../markdown/attack-tables/half/navrpg-laser-rifle.md" />
 
     </page>
     <page>
@@ -156,55 +156,63 @@
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-bite.md" />
+                  src="../markdown/attack-tables/short/natural-bite.md" />
 
         <markdown pos="50,550" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-claw.md" />
+                  src="../markdown/attack-tables/short/natural-claw.md" />
 
         <markdown pos="50,300" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-gore.md" />
+                  src="../markdown/attack-tables/short/natural-gore.md" />
 
         <markdown pos="220,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-slam-bash-ram.md" />
+                  src="../markdown/attack-tables/short/natural-slam-bash-ram.md" />
 
         <markdown pos="220,550" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-hoof-tentacle-wing.md" />
+                  src="../markdown/attack-tables/short/natural-hoof-tentacle-wing.md" />
 
         <markdown pos="220,300" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-pincers-tail.md" />
+                  src="../markdown/attack-tables/short/natural-pincers-tail.md" />
 
         <markdown pos="390,800" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-stinger.md" />
+                  src="../markdown/attack-tables/short/natural-stinger.md" />
 
         <markdown pos="390,550" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-talon.md" />
+                  src="../markdown/attack-tables/short/natural-talon.md" />
 
         <markdown pos="390,300" width="155"
                   table-background="#eee,#fff"
                   table-border="1"
                   block-padding="1"
-                  src="../markdown/attack-tables/natural-other.md" />
+                  src="../markdown/attack-tables/short/natural-other.md" />
+
+    </page>
+    <page>
+        <markdown pos="50,800" width="155"
+                  table-background="#eee,#fff"
+                  table-border="1"
+                  block-padding="1"
+                  src="../markdown/attack-tables/full/backsword.md" />
 
     </page>
 </document>

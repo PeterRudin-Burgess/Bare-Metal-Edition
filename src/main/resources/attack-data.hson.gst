@@ -101,7 +101,7 @@ for(float i=(l-x); i>12f; i-=x)
 }
 %>
     ]
-    dr2: [
+    dr-short: [
 <%
 l = 150f;
 x = 1f;
@@ -112,6 +112,20 @@ for(float i=(l-x); i>40f; i-=x)
     print String.format('\t\t[ %d, %d ]\n', n2, n);
     l = n2-1;
     x+=1.15;
+}
+%>
+    ]
+    dr-full: [
+<%
+l = 150f;
+x = 1f;
+for(float i=(l-x); i>49f; i-=x)
+{
+    int n = (float)l;
+    int n2 = (float)i;
+    print String.format('\t\t[ %d, %d ]\n', n2, n);
+    l = n2-1;
+    x+=0.035;
 }
 %>
     ]

@@ -1,6 +1,5 @@
 {
     title: "Natural, Claw"
-    roll: dr2
     data: [
         {   type: slash_NA
             start: 75

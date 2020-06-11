@@ -1,6 +1,5 @@
 {
     title: "Hoof/Tentacle/Wing"
-    roll: dr2
     data: [
         {   type: blunt
             start: 75
