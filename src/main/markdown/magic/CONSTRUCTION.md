@@ -13,8 +13,8 @@
 | Enhance       | 1 |
 | Heal           | 1 |
 | Manipulate      | 2 |
-| Protect        | 1 |
-| Summon         | 1 |
+| Protect        | 2 |
+| Summon         | N |
 | Teleport     | 2 |
 | Transport    | 1 |
 | Weaken         | 2 |
@@ -97,6 +97,8 @@
 
 **Elemental Fire Strike**
 
+> Elemental Bolt, Lesser, Fire
+
 Damage(1), Fire(2) = 3 * Lesser Elemental(3) = 9
 Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
 = 17 / 5 = 3.4 = 4 MP
@@ -109,7 +111,7 @@ Heal(1), Body(3) = 4 * 20 = 80
 Self(1), Self(0), Instant(1) = 2
 = 82 / 5 =  16.4 = 17 MP
 
-**Minor Heal**
+**Cure Light Wounds**
 
 > Heal 10% Hits or +2/r Bleed
 
@@ -121,9 +123,9 @@ Touch(2), 1 Target(1), Instant(1) = 4
 
 > Protection +25DB
 
-Protect(1), Physical(2) = 3 * 5 = 15
+Protect(2), Physical(2) = 4 * 5 = 20
 Self(1), Self(0), 5 rounds(3) = 4
-= 19 / 5 = 3.8 = 4MP
+= 24 / 5 = 4.8 = 5MP
 
 
 ##### Mechanics
