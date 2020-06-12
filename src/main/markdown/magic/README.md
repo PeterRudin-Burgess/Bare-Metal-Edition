@@ -19,7 +19,7 @@ Please note some Ancestries, Cultures and/or Archetypes may provide bonus tiers 
 | Tier #3 - Scholar     |  4/4  | 3/5   |
 | Tier #4 - Master      |  3/3  | 2/4   |
 | Tier #5 - Savant      |  2/2  | 1/3   |
-| Tier #6 - Adept*      |  1/1  | 1/1   |
+| Tier #6 - Oracle*     |  1/1  | 1/1   |
 
 ### Aspects
 
