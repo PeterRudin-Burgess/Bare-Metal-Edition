@@ -3,7 +3,7 @@
 |Action  | Base |
 |:-------------------|:-----:|
 | Banish         | 2 |
-| Conjure         | 1 |
+| Conjure         | 2 |
 | Control/Dominate | 2 |
 | Create          | 4 |
 | Damage            | 1 |
@@ -14,7 +14,7 @@
 | Heal           | 1 |
 | Manipulate      | 2 |
 | Protect        | 2 |
-| Summon         | N |
+| Summon         | 5 |
 | Teleport     | 2 |
 | Transport    | 1 |
 | Weaken         | 2 |
@@ -82,32 +82,43 @@
 | w/Concentration | x 1/2 |
 | Attack | x 2 |
 
-| Attack Table Used | Multiplier |
+| Attack Table Used | Cost |
 |:-------------------|:-----:|
-| Bolt/Projectile  | 1 |
-| Ball/Explosion  | 2 |
-| Lesser Elemental | 3 |
-| Normal Elemental | 5 |
-| Greater Elemental | 7 |
-| Minor Elemental | 9 |
-| Major Elemental | 12 |
-| Superior Elemental | 15 |
+| Bolt/Projectile  | 0 |
+| Ball/Explosion  | 1 |
+| Elemental | 2 |
 
 ##### Sample Spells
 
+**Magic Missile**
+
+> Bolt, Arrow (+25OB)
+
+Damage(1), Physical(2) = 3 * (25/5) = 15
+Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
+= 23 / 5 = 4.6 = 5 MP
+
+*Scaling Options:*
+
+* +1MP per +5OB
+ 
 **Elemental Fire Strike**
 
-> Elemental Bolt, Lesser, Fire
+> Elemental Bolt, Fire (+25OB)
 
-Damage(1), Fire(2) = 3 * Lesser Elemental(3) = 9
+Damage(1), Fire(2), Elemental(2) = 5 * (25/5) = 25
 Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
-= 17 / 5 = 3.4 = 4 MP
+= 33 / 5 = 6.6 = 7 MP
 
+*Scaling Options:*
+
+* +1MP per +5OB
+ 
 **Heal Self**
 
 > Heal 100% Hits or +20/r Bleed or E Crit 
 
-Heal(1), Body(3) = 4 * 20 = 80
+Heal(1), Body(3) = 4 * (100/5) = 80
 Self(1), Self(0), Instant(1) = 2
 = 82 / 5 =  16.4 = 17 MP
 
@@ -115,7 +126,7 @@ Self(1), Self(0), Instant(1) = 2
 
 > Heal 10% Hits or +2/r Bleed
 
-Heal(1), Body(3) = 4 * 2 = 8
+Heal(1), Body(3) = 4 * (10/5) = 8
 Touch(2), 1 Target(1), Instant(1) = 4
 = 12 / 5 =  2.4 = 3 MP
 

@@ -75,7 +75,7 @@ when in reality it is an attempt to control or harm.
 
 ### Resolving Magic Effects
 
-Attacks are resolved by summing: the result of the casting roll, the spells rank bonus,
+Attacks are resolved by summing: the result of the casting roll, the spells bonus,
 minus the defensive bonus of the target and determining the result on the appropriate 
 attack table.
 
