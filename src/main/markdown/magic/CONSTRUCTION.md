@@ -80,7 +80,7 @@
 | +5 rounds/Rank | +2 |
 | 1 minute/Rank | 10 |
 | w/Concentration | x 1/2 |
-| Attack | x 2 |
+| Attack(non-instant) | x 2 |
 
 | Attack Table Used | Cost |
 |:-------------------|:-----:|
@@ -106,9 +106,9 @@ if a spell falls within the above constraints, the build cost is adjusted by -10
 > Bolt, Arrow (+20OB)
 
 Damage(1), Physical(2) = 3 * (20/5) = 12
-Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
+Line of Sight(5), 1 target(1), Instant(1) = 7
 Cantrip(-10)
-= 10 / 5 = 2 MP
+= 9 / 5 = 1.8 = 2 MP
 
 *Scaling Options:*
 
