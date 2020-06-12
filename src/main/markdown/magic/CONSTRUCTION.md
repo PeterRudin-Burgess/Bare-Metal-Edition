@@ -88,15 +88,27 @@
 | Ball/Explosion  | 1 |
 | Elemental | 2 |
 
+###### Cantrips
+
+Cantrips are limited by the following guidelines:
+
+* Range -- not more than 10ft or Line-of-Sight
+* Area of Effect -- not more than 5ft radius
+* Duration -- not more than 2 rounds
+* build cost not more than 20
+
+if a spell falls within the above constraints, the build cost is adjusted by -10. 
+
 ##### Sample Spells
 
-**Magic Missile**
+**Magic Missile (Cantrip)**
 
-> Bolt, Arrow (+25OB)
+> Bolt, Arrow (+20OB)
 
-Damage(1), Physical(2) = 3 * (25/5) = 15
+Damage(1), Physical(2) = 3 * (20/5) = 12
 Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
-= 23 / 5 = 4.6 = 5 MP
+Cantrip(-10)
+= 10 / 5 = 2 MP
 
 *Scaling Options:*
 
