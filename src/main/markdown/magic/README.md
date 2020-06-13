@@ -47,17 +47,6 @@ Some spells and rituals can be reversed to produce an opposite effect. If this i
 it is listed in the description. The reversed version must be learned independently of the 
 original. You cannot just decide in the moment which version you want.
 
-#### Rituals vs Spells
-
-Rituals differ from Spells in a few points.
-
-* have a fixed MP cost
-* have a casting time of two minutes per MP expended
-* the minimal number of ranks needed to cast a ritual is half the MP cost (rounded up).
-
-> A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
-> and would require 34 minutes to cast.
-
 ### Using Spells and Rituals
 
 Using magic is called Casting. To cast a spell or a ritual the caster makes 
@@ -65,7 +54,7 @@ a d100 roll adding their Stat Bonus to the Casting Roll (CR).
 In the case of spells this is the sum of Em+In+Pr stat bonuses. 
 For rituals this is Pr+Re+Sd bonuses.
 
-A caster declares the spell or ritual to be cast and the action takes 
+A caster declares the spell to be cast and the action takes 
 up to 3AP. At the end of the action the CR is made. 
 
 > Note: The roll is open ended both up and down.
@@ -83,6 +72,18 @@ If you withdraw consent at any time before the magic is complete a resistance te
 
 This rule exists explicitly to prevent someone being told that the magic is healing 
 when in reality it is an attempt to control or harm. 
+
+### Rituals vs Spells
+
+Rituals differ from Spells in a few points.
+
+* have a fixed MP cost
+* have a casting time of two minutes per MP expended
+* the minimal number of ranks needed to cast a ritual is half the MP cost (rounded up).
+
+> A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
+> and would require 34 minutes to cast.
+
 
 ### Resolving Magic Effects
 
