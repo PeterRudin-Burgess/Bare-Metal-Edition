@@ -34,7 +34,9 @@ additional options that can scale the effects in different ways.
 You may not use a spell until you have sufficient ranks in that spell to meet the base 
 cost and you may not put more MP into a spell than you have ranks in that spell.
 
-*Every spell and ritual is developed individually!*
+*Every spell and ritual is usually developed individually!*
+
+> NOTE: A GM may allow multiple spells to be developed at the same time.
 
 Many effects are dependent on the number of ranks known in the spell or ritual.
 
