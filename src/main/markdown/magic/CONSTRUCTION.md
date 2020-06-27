@@ -148,7 +148,29 @@ Cantrip(-10)
 *Scaling Options:*
 
 * +1MP per +5OB
- 
+
+**Magic Missile**
+
+> Bolt, Arrow (+50OB)
+
+Damage(1), Physical(2) = 3 * (50/5) = 30
+Line of Sight(5), 1 target(1), Instant(1) = 7
+= 37 / 5 = 7.4 = 8 MP
+
+> the missile cantrap scaled to +50 costs 2+6 = 8MP (the same) 
+
+**Greater Magic Missile**
+
+> Bolt, Arrow (+75OB)
+
+Damage(1), Physical(2) = 3 * (75/5) = 45
+Line of Sight(5), 1 target(1), Instant(1) = 7
+= 52 / 5 = 10.4 = 11 MP
+
+> the missile cantrap scaled to +75 costs 2+11 = 13MP (more) 
+
+> the missile spell scaled to +75 costs 8+5 = 13MP (more) 
+
 **Elemental Fire Strike**
 
 > Elemental Bolt, Fire (+25OB)

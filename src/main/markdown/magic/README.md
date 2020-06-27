@@ -98,3 +98,9 @@ The failure level is either used as a modifier for rolls
 or to establish the magnitude of the effect.
 
 Spells that emulate the usage of skills are resolved exactly in the same way.
+
+### Mana Point Recovery
+
+A full complement of Mana Points [MP] is recovered after a period of rest (as determined by the GM).
+
+The GM may rule on recovery for short periods of rest to recover about one MP per hour per Rank in the Magical Power Skill. 
