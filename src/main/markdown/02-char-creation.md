@@ -1,6 +1,4 @@
-# 2.0 Creating a Character
-
-## Overview
+# Creating a Character
 
 The first step in playing Bare Metal is to create a character. 
 If you are going to be the GM, then you need to be au fait with 
@@ -17,7 +15,7 @@ skills. The final stage is to add a description and background to your
 character; after that, you are ready to play. It typically takes 20 minutes 
 to create a character from scratch.
 
-## 2.1 Attributes/Stats
+## Attributes/Stats
 
 Each character has ten attributes that describe their physical and mental 
 strengths and weaknesses. High attributes give a bonus to actions, and low 
@@ -69,14 +67,6 @@ Self Discipline [Sd], Reasoning [Re], Memory[Me], Presence [Pr], Intuition [In],
 The convention on abbreviating the Stat names is to capitalize the first letter 
 and lowercase second letter, so they become Co, Ag, St, Qu, Sd, Re, Me, Pr, In and Em.
 
-### Unskilled Rolls
-
-Sometimes there will be no relevant skill to cover what a character wants to achieve. 
-In these situations, a normal skill roll is made, but the entire Stat is used as if 
-it was a skill bonus. An example may be using Memory [Me] to try and remember some 
-fact from the character’s background or using Self Discipline [Sd] to keep hold of 
-a red hot poker in a rite of passage ceremony.
-
 You can now roll your characters stats and assign them in the order that best helps 
 model the character you would like.
 
@@ -103,12 +93,13 @@ model the character you would like.
 | Intuition         | 82   | +10  |      |      |
 | Empathy           | 84   | +11  |      |      |
 
-## 2.2 Appearance
+## Appearance
 
 How a character looks has no impact on game mechanics. 
 You may make a character any size, shape, gender or of 
 any appearance as you see fit.
 
-## 2.3 Defensive Bonus
+## Defensive Bonus
 
 A character’s Defensive Bonus [DB] is their Quickness bonus times three.
+

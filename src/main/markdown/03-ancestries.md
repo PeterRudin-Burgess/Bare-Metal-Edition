@@ -1,4 +1,4 @@
-## 3.0 Ancestry/Species
+# Ancestry/Species
 
 An ancestry (or species) is defined using Talents and Flaws. 
 Each ancestry receives a net 15 points to spend on Talents; 
@@ -7,7 +7,7 @@ Talents have a point cost, and Flaws have a negative point costs,
 they give you points back that you can spend on more talents. 
 See chapter 4.0 for a list of Talents and Flaws.
 
-### Mixed Ancestry/Species
+## Mixed Ancestry/Species
 
 Most species have a dominant Talent where they have two tiers 
 and a regressive Talent where they have a single tier. Some species 

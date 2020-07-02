@@ -21,6 +21,13 @@
                 <artifactId>template-maven-plugin</artifactId>
                 <groupId>com.github.terefang</groupId>
                 <version>2020.5.14</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.commons</groupId>
+                        <artifactId>commons-math3</artifactId>
+                        <version>3.6.1</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>resources-gsimple-templation</id>
@@ -32,6 +39,8 @@
                             <resourcesDirectory>${project.basedir}/src/main</resourcesDirectory>
                             <includes>**/*.hson.gst</includes>
                             <resourcesOutput>${project.basedir}/src/main</resourcesOutput>
+                            <additionalContext>${project.basedir}/src/main/resources/global.hson</additionalContext>
+                            <additionalContextRoot>global</additionalContextRoot>
                         </configuration>
                     </execution>
                     <execution>

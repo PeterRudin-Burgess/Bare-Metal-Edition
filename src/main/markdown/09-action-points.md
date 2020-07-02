@@ -1,4 +1,4 @@
-### 9.0 Action Points
+# Action Points
 
 Each round *(5 seconds)* a character receives 4 action points *(AP)*. 
 Every action a character performs has a cost in action points. 
@@ -11,7 +11,7 @@ the order in which they wish them to play out.
 > that they want to use 1AP to move into the open doorway, 2AP to shoot into 
 > the room and 1 AP to move to the other side of the doorway back behind cover.
 
-### AP Costs Table
+## AP Costs Table
 
 |Action |AP| |Action |AP|
 |:---------------|:------:|----|:---------------|:------:|
@@ -30,7 +30,7 @@ Where a range is specified the lower figure is the absolute minimum number
 of AP that may be used. 
 Where a single figure is stated these are fixed costs and cannot be avoided.
 
-#### Fast Actions
+## Fast Actions
 
 You may use less than the required number of AP for skill tests. 
 For each AP not spent completing the task a -25 penalty is applied to the skill test.
@@ -44,14 +44,14 @@ A character could fire twice using two 2AP attacks and both would be at -50.
 > **Note:** As GM you may allow a Multiple Attack CE skill to reduce the 
 > penalty for attacking twice in the same round.
 
-#### Wrap Around Actions
+## Wrap Around Actions
 
 A character may start an action in one combat round and complete it in another. 
 For example they could spend 1AP moving into range and then declare a 4AP attack. 
 As that requires 5AP the movement would take place at the start of the first 
 combat round and the attack would not be resolved until the 1st AP of next round.
 
-#### Unused AP
+## Unused AP
 
 Any unused AP left at the end of a combat round and not applied to a wrap 
 around action are lost.

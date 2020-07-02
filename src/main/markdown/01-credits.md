@@ -1,4 +1,4 @@
-**Credits**
+# Credits
 
 **Design & Development:** Peter Rudin-Burgess, Alfred Reibenschuh
 

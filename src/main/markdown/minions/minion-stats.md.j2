@@ -7,6 +7,15 @@
 {%- endfor -%}|
 {% endfor %}
 
+{% for z in range(0,4) -%}
+| LE | A#1 | A#2 | A#3 | A#4 | A#5 | A#6 | A#7 | A#8 | A#9 | A#10 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+{% for n in range(51) -%}
+| {{ local.stats[n][0]|int() }}
+{%- for x in range(0,10) -%}{%- set y1 = (1+(x*2)) -%}{%- set y2 = (2+(x*2)) -%}| {{ local.stats[n][y1]|int() }} (+{{ local.stats[n][y2][z]|int() }}){%- endfor -%}|
+{% endfor %}
+{% endfor %}
+
 | Size | OB | DB | Hits | Crit |
 |:------------------|:------:|:------:|:------:|:------:|
 {% for n in local.sizes -%}
