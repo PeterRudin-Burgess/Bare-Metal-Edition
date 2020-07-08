@@ -1,4 +1,4 @@
-## 6.0 Professions
+# Professions
 
 Professions are represent using two features. The first is a unique set of 
 Professional skills
@@ -20,7 +20,7 @@ on both sides of the oblique e.g. 3/3 means that every rank will cost 3 DP.
 > **Example:** If Riding: Horse cost 2/4, buying one rank would cost 2 DP.
 > Buying two ranks would cost 6DP (2+4), buying three ranks would cost 10DP (2+4+4).
 
-### 6.1 Secondary Skills
+## Secondary Skills
 
 Secondary skills are potentially infinite and very much dependent on setting 
 and character background. They can be as varied as Anthropology to Weaving.
@@ -59,7 +59,7 @@ Skills. The cost will be 2/4 and the three stat bonuses will be the same as
 the closest core skill unless you decide that others will be more suitable. 
 The skill will always have three stat bonuses.
 
-### 6.2 Creating Your Own Professions
+## Creating Your Own Professions
 
 It is expected that you will create your own professions. All professions 
 receive 50 development points of skill ranks or talents as basic training. 
@@ -78,9 +78,9 @@ Each profession also has a unique set of skill costs.
 Although this skill has a cost, it cannot be bought without the GM’s 
 express permission.
 
-### 6.3 Example Professions 
+## Example Professions 
 
-#### Aristocrat
+### Aristocrat
 
 Aristocrats are the galactic senators, planetary nobles, military officers, 
 and any other of thousands of beings that make their way in the galaxy 
@@ -147,7 +147,7 @@ as Vocation:  Politician or Vocation:  Academic.*
 | *Psionics* |||||
 | Psionic Power | 12/15 | | Meditation/Gifts | 12/15  |
 
-#### Armsman
+### Armsman
 
 Call them bounty hunters, bodyguards, or soldiers of fortune — they all fall 
 into the Armsman category. These are the men and women specializing in all 
@@ -215,7 +215,7 @@ should fit with their character background.
 | *Psionics* ||||| 
 | Psionic Power | 12/15 | | Meditation/Gifts | 12/15 |
 
-#### Mystic
+### Mystic
 
 The Mystic is an exotic being who has tapped into mysterious power 
 unfathomable by most others. Whether they’re little green gnomes with 
@@ -284,38 +284,39 @@ Latent Psionic 	1/Tier
 > He adds these skills to his character sheet. His skills now look like this.
 >
 > *Weapon#1 	2; 
-Swimming 	1; 
-Riding 	1;
-Perception 	1; 
-Driving 	2; 
-Scanners	3;
-Space Pilot 	4; 
-Physique 	3;
-Vocation:  Diplomat 	2; 
-First Aid 	3;
-Languages 	5;
-Music: Instrument 	1;	
-Science: General 	2;	
-Space Navigation 	1;	
-Trickery 	1*
+> Swimming 	1; 
+> Riding 	1;
+> Perception 	1; 
+> Driving 	2; 
+> Scanners	3;
+> Space Pilot 	4; 
+> Physique 	3;
+> Vocation:  Diplomat 	2; 
+> First Aid 	3;
+> Languages 	5;
+> Music: Instrument 	1;	
+> Science: General 	2;	
+> Space Navigation 	1;	
+> Trickery 	1*
 >
 > Adding these to the character sheet Stephen can then add in the stat bonuses and
 > special bonuses (in this case from his acute hearing talent.)
 
-Skill	Rank	Bonus	Stat	Special	Total
-Driving	2	10	+19		
-First Aid	3	15	+27		
-Languages	5	25	+32		
-Music: Singing	1	5	+24		
-Perception	1	5	+27	+5	
-Physique	3	15	+22		
-Riding	1	5	+3		
-Scanners	3	15	+31		
-Sci: General	2	10	+31		
-Space Nav	1	5	+32		
-Space Pilot	4	20	+14		
-Swimming	1	5	+26		
-Trickery	1	5	+14		
-Vocation: Diplomat	2	10			
-Pistol	2	10	+8		
+|Skill	                                   |Rank	|Bonus	|Stat	|Special	|Total|
+|:-----------------------------------------|-----:|-----:|-----:|-----:|-----:|
+| Driving               |   2   |   10  |   +19 |       |       |
+| First Aid             |   3   |   15  |   +27 |       |       |
+| Languages             |   5   |   25  |   +32 |       |       |
+| Music: Singing        |   1   |   5   |   +24 |       |       |
+| Perception            |   1   |   5   |   +27 |   +5  |       |
+| Physique              |   3   |   15  |   +22 |       |       |
+| Riding                |   1   |   5   |   +3  |       |       |
+| Scanners              |   3   |   15  |   +31 |       |       |
+| Sci: General          |   2   |   10  |   +31 |       |       |
+| Space Nav             |   1   |   5   |   +32 |       |       |
+| Space Pilot           |   4   |   20  |   +14 |       |       |
+| Swimming              |   1   |   5   |   +26 |       |       |
+| Trickery              |   1   |   5   |   +14 |       |       |
+| Vocation: Diplomat    |   2   |   10  |       |       |       |
+| Pistol                |   2   |   10  |   +8	|       |       |
 

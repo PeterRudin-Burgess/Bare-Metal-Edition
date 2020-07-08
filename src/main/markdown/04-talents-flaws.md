@@ -1,4 +1,4 @@
-## 4.0 Talents and Flaws
+# Talents and Flaws
 
 Talents are split into two types. Blood Talents are used for creating 
 species and Personal Talents are special abilities that the character 
@@ -26,7 +26,7 @@ spent twice.
 
 Flaws are genetic weaknesses. These cost negative points.
 
-### 4.1 Blood Talents
+## Blood Talents
 
 **Enhanced Hearing** -- 5DP/Tier +5/Tier to Perception skill test that 
 are dependent on the sense of hearing or where acute hearing is an advantage.
@@ -55,7 +55,7 @@ talent once.
 * Celerity -- +5Qu Bonus/Tier
 * Suppleness -- +5Ag Bonus/Tier
 
-### 4.2 Blood Flaws
+## Blood Flaws
 
 **Weak Constitution** -- -5DP/Tier -5Co/Tier This species is relatively weak 
 compared to the norm. Possibly due to coming from a low gravity world where 

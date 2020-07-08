@@ -1,4 +1,4 @@
-#8.0 Resolving Skills
+# Resolving Skills
 
 Most skills require a final result of 101+. The player may add their skill bonus total and any situational modifiers 
 such as superior equipment or additional time to complete the task. The GM then subtracts any difficulty factors to 
@@ -34,12 +34,20 @@ mean that the character has a chance of completing the climb in less than three 
 The player may also choose to use the excess to complete another task. For each 30% over the required 100% the 
 character may use 1 action point for another task such as making a perception skill test.
 
-##8.1 Combat Expertise Skills
+## Unskilled Rolls
+
+Sometimes there will be no relevant skill to cover what a character wants to achieve. 
+In these situations, a normal skill roll is made, but the entire Stat is used as if 
+it was a skill bonus. An example may be using Memory [Me] to try and remember some 
+fact from the character’s background or using Self Discipline [Sd] to keep hold of 
+a red hot poker in a rite of passage ceremony.
+
+## Combat Expertise Skills
 
 These skills are never rolled. They are used to reduce penalties and regardless of the skill bonus total they can never 
 give a positive bonus to a skill roll.
 
-##8.2 Negative Results
+## Negative Results
 
 A result of -20 or lower will deliver an A critical to the character in the most appropriate way possible. If the 
 character was climbing then a fall or at least a slide down the slope may be the cause. If the character was 
@@ -54,7 +62,7 @@ Results of -40 or lower will deliver a ‘B’ critical,
 -80 or lower gives a ‘D’ critical 
 and all results at or below -100 give an ‘E’ critical.
 
-##8.3 Maneuver Results Table
+## Maneuver Results Table
 
 |Roll|	Result|
 |:--------------:|:--------------:|
@@ -78,12 +86,13 @@ and all results at or below -100 give an ‘E’ critical.
 |140-159|	120%|
 |160-179|	130%|
 
-## 8.4 Hazards
+## Hazards
 
-### 8.5 Falling Damage
+### Falling Damage
 
-The further a character falls the more harm they will typically suffer. Damage is in the form of criticals rolled 
-directly on the appropriate table. There is no falling attack table.
+The further a character falls the more harm they will typically suffer. 
+Damage is in the form of criticals rolled directly on the appropriate table. 
+There is no falling attack table.
 
 | Distance | Critical Type |
 |:--------------:|:--------------:|
@@ -94,13 +103,16 @@ directly on the appropriate table. There is no falling attack table.
 |21-25 m| 	D Impact|
 |26 m+| 	E Impact|
 
-The actual number of meters fallen is added to the critical rolls. All results over 100 are treated as 100. 
+The actual number of meters fallen is added to the critical rolls. 
+All results over 100 are treated as 100. 
 
-Example: Jesse falls 10 m on to a hard surface.  The fall results in an A Impact with +10 on the critical roll. The GM 
-rolls 44 +10 for the falling distance. The result is 54 “Weak blow to victim’s head +10 hits, stunned for 1 rnd” Jesse 
-takes a blow to the head and is stunned and hurt.
+> Example: Jesse falls 10 m on to a hard surface. 
+> The fall results in an A Impact with +10 on the critical roll.
+> The GM rolls 44 +10 for the falling distance.
+> The result is 54 “Weak blow to victim’s head +10 hits, stunned for 1 rnd”
+> Jesse takes a blow to the head and is stunned and hurt.
 
-##8.6 What Skill When?
+## What Skill When?
 
 The lines between each skill can be blurred, This is intentional. You should use how your characters are trying to 
 solve a problem to decide which skill applies. If there is an explicit skill, that takes precedence over Vocation. 

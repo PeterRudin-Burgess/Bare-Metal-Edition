@@ -1,4 +1,4 @@
-## 5.0 Culture
+# Culture
 
 Each character has a culture that reflects the society where they spent 
 their early life and formative years. This culture bestows 17 skill ranks 
@@ -13,7 +13,7 @@ of Singing, Dance and Playing the Guitar.
 
 The example cultures are:
 
-### 5.1 Cosmopolitan
+## Cosmopolitan
  
 Cosmopolitan: Characters from this culture come from worlds and cities 
 that see all types of life and influence.
@@ -28,7 +28,7 @@ Science: General 	2 ranks
 Swimming 	1 rank
 Physique 	1 rank
 
-### 5.2 Harsh
+## Harsh
  
 Harsh: Harsh worlds breed tough inhabitants. These are either worlds
 with hostile environments or fringe worlds where modern technology is 
@@ -44,7 +44,7 @@ Science: General 	1 rank
 Swimming 	1 ranks	
 Physique 	2 ranks
 
-### 5.3 Marine 
+## Marine 
 
 Marine: The marine culture is one where the inhabitants live mostly on 
 water or under the oceans.
@@ -59,7 +59,7 @@ Science: General 	1 rank
 Swimming 	3 ranks	
 Physique 	2 ranks
 
-### 5.4 Star faring
+## Star faring
 
 Star faring: Star farers have no homeworld, they are born and bred on board ships or space stations, and for them, shipboard life is the norm.
 
@@ -75,7 +75,7 @@ Physique 	1 rank
 Note, changing Space Pilot, Space Navigation and Scanners for their naval 
 equivalent would create a seafaring culture, such as pirates.
 
-### 5.5 Reaver
+## Reaver
 
 Reaver: Reaver culture is based on raiding and piracy. 
 This is the most violent of cultures.
@@ -91,7 +91,7 @@ Science: General 1;
 Swimming 2;
 Physique 2*
 
-### 5.6 Subterranean
+## Subterranean
 
 Subterranean: Often, the conditions on the surface of a world are too 
 hostile to support life, but below the surface, thriving cities spread 
@@ -107,7 +107,7 @@ Space Navigation 	1 rank
 Trickery 	1 rank
 Physique 	1 rank
 
-### 5.7 Provincial
+## Provincial
 
 Provincial: Provincial worlds and rural culture is often a simple life. 
 The worlds are often young but not as hostile to life as they could be. 
@@ -127,7 +127,7 @@ Science: General 	1 rank
 Swimming 	2 ranks	
 Physique 	2 ranks
 
-### 5.8 Creating Your Own Cultures
+## Creating Your Own Cultures
 
 Each culture contains 17 ranks of skills from across all the categories. 
 Building your own cultures will add a level of detail to your game universe. 
@@ -139,13 +139,13 @@ sciences and the arts.
 > 
 > Stephen chooses the Star faring culture for his character and adds the
 > following skills to his character sheet
-
-Space Pilot 	2 ranks	
-Languages 	5 ranks
-Music: Instrument 	1 rank	
-First Aid 	2 ranks	
-Scanners 	2 ranks	
-Science: General 	2 ranks	
-Space Navigation 	1 rank	
-Trickery 	1 rank
-Physique 	1 rank
+> 
+> Space Pilot 	2 ranks	
+> Languages 	5 ranks
+> Music: Instrument 	1 rank	
+> First Aid 	2 ranks	
+> Scanners 	2 ranks	
+> Science: General 	2 ranks	
+> Space Navigation 	1 rank	
+> Trickery 	1 rank
+> Physique 	1 rank
