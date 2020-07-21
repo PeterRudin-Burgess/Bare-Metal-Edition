@@ -1,7 +1,7 @@
 ##### Arrow/Bolt/Missile
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 29EP | 25EP | 25EP | 15EP |
 | 147 - 148 | 28EP | 25EP | 25EP | 15EP |
@@ -40,19 +40,21 @@
 | 94 - 95 | 4BP | 8AP | 8AP | 6 |
 | 91 - 93 | 3AP | 7AP | 7 | 6 |
 | 89 - 90 | 1 | 6AP | 6 | 5 |
-| 87 - 88 | &endash;  | 6AP | 6 | 5 |
-| 85 - 86 | &endash;  | 5AP | 5 | 4 |
-| 82 - 84 | &endash;  | 4 | 4 | 4 |
-| 80 - 81 | &endash;  | 3 | 3 | 3 |
-| 77 - 79 | &endash;  | 3 | 3 | 3 |
-| 75 - 76 | &endash;  | 2 | 2 | 3 |
-| 72 - 74 | &endash;  | &endash;  | &endash;  | 2 |
-| 70 - 71 | &endash;  | &endash;  | &endash;  | 2 |
-| 67 - 69 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 65 - 66 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 62 - 64 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 59 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 57 - 58 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 54 - 56 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 51 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 87 - 88 | --  | 6AP | 6 | 5 |
+| 85 - 86 | --  | 5AP | 5 | 4 |
+| 82 - 84 | --  | 4 | 4 | 4 |
+| 80 - 81 | --  | 3 | 3 | 3 |
+| 77 - 79 | --  | 3 | 3 | 3 |
+| 75 - 76 | --  | 2 | 2 | 3 |
+| 72 - 74 | --  | --  | --  | 2 |
+| 70 - 71 | --  | --  | --  | 2 |
+| 67 - 69 | --  | --  | --  | --  |
+| 65 - 66 | --  | --  | --  | --  |
+| 62 - 64 | --  | --  | --  | --  |
+| 59 - 61 | --  | --  | --  | --  |
+| 57 - 58 | --  | --  | --  | --  |
+| 54 - 56 | --  | --  | --  | --  |
+| 51 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -1,7 +1,7 @@
 ##### Elemental Normal
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 40D? | 37D? | 33C? | 30B? |
 | 147 - 148 | 39D? | 36C? | 33C? | 29B? |
@@ -20,10 +20,9 @@
 | 87 - 94 | 11A? | 13 | 14 | 13 |
 | 80 - 86 | 7A? | 10 | 11 | 11 |
 | 71 - 79 | 4 | 7 | 8 | 9 |
-| 63 - 70 | &endash;  | 3 | 5 | 6 |
-| 54 - 62 | &endash;  | &endash;  | 2 | 4 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 3 | 5 | 6 |
+| 54 - 62 | --  | --  | 2 | 4 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

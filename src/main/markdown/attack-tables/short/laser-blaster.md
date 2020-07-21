@@ -1,7 +1,7 @@
 ##### Laser/Blaster
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 46EP | 33EP | 33EP | 11EP |
 | 146 - 148 | 44EP | 33EP | 33EP | 11EP |
@@ -14,6 +14,8 @@
 | 99 - 108 | 18BP | 19CP | 19CP | 7BP |
 | 88 - 98 | 11AP | 15BP | 15BP | 6AP |
 | 75 - 87 | 4 | 11BP | 11BP | 5AP |
-| 62 - 74 | &endash;  | 6AP | 6 | 4 |
-| 47 - 61 | &endash;  | 2 | 2 | 3 |
+| 62 - 74 | --  | 6AP | 6 | 4 |
+| 47 - 61 | --  | 2 | 2 | 3 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

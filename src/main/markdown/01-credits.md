@@ -1,3 +1,5 @@
+%!class single-column
+
 # Credits
 
 **Design & Development:** Peter Rudin-Burgess, Alfred Reibenschuh

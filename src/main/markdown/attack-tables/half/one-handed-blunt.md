@@ -1,7 +1,7 @@
 ##### One Handed Blunt
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 25EK | 21EK | 23EK | 17EK |
 | 147 - 148 | 25EK | 20EK | 22EK | 17EK |
@@ -19,11 +19,10 @@
 | 95 - 100 | 8CK | 9BK | 11BK | 10 |
 | 87 - 94 | 6AK | 8AK | 9AK | 9 |
 | 80 - 86 | 4 | 6AK | 8 | 8 |
-| 71 - 79 | &endash;  | 5 | 6 | 7 |
-| 63 - 70 | &endash;  | 3 | 4 | 5 |
-| 54 - 62 | &endash;  | &endash;  | 2 | 4 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | 3 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 71 - 79 | --  | 5 | 6 | 7 |
+| 63 - 70 | --  | 3 | 4 | 5 |
+| 54 - 62 | --  | --  | 2 | 4 |
+| 44 - 53 | --  | --  | --  | 3 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

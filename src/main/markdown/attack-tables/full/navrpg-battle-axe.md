@@ -1,7 +1,7 @@
 ##### Battle Axe
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 46EK | 36EK | 30ES | 25ES |
 | 147 - 148 | 44EK | 35ES | 30ES | 25ES |
@@ -46,13 +46,15 @@
 | 80 - 81 | 5 | 4 | 4 | 4 |
 | 77 - 79 | 4 | 3 | 3 | 3 |
 | 75 - 76 | 2 | 2 | 2 | 2 |
-| 72 - 74 | &endash;  | &endash;  | &endash;  | 1 |
-| 70 - 71 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 67 - 69 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 65 - 66 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 62 - 64 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 59 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 57 - 58 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 54 - 56 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 51 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 72 - 74 | --  | --  | --  | 1 |
+| 70 - 71 | --  | --  | --  | --  |
+| 67 - 69 | --  | --  | --  | --  |
+| 65 - 66 | --  | --  | --  | --  |
+| 62 - 64 | --  | --  | --  | --  |
+| 59 - 61 | --  | --  | --  | --  |
+| 57 - 58 | --  | --  | --  | --  |
+| 54 - 56 | --  | --  | --  | --  |
+| 51 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

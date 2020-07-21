@@ -1,7 +1,7 @@
 ##### Whip
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 11ES | 8CK | 5AK | 3 |
 | 147 - 148 | 11ES | 8CK | 5AS | 3 |
@@ -20,10 +20,9 @@
 | 87 - 94 | 4AS | 4 | 3 | 2 |
 | 80 - 86 | 3AS | 3 | 2 | 2 |
 | 71 - 79 | 2 | 2 | 2 | 2 |
-| 63 - 70 | &endash;  | &endash;  | 2 | 2 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | --  | 2 | 2 |
+| 54 - 62 | --  | --  | --  | --  |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

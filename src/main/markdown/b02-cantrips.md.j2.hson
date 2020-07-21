@@ -1,0 +1,74 @@
+{
+
+data: [
+
+    {   name: "Acid Splash"
+        type: "Cantrip"
+        realm: "Conjuration"
+        action: "Damage"
+        object: "Elements, Other"
+        power:  20
+        range: "50ft"
+        area:   "1 target"
+        duration:   "Instant/No Duration"
+        cost:   2
+        desciption: '''
+        You hurl a bubble of acid.
+        Choose one creature within range for the target of attack.
+        The attack is resolved with +20 OB to the spell-casting roll on the Elemental Attack Table using Acid Criticals.
+        '''
+    }
+
+/*
+Blade Ward	Abjuration	[BME] Protect	[BME] Living, Body	20	[BME] Personal/Self	[BME] Individual/Self	[BME] Concentration Only	-12	8	12	1	0	1	10	2
+Chill Touch	Necromancy	[BME] Damage	[BME] Elements, Other	20	[BME] Touch	[BME] 1 target	[BME] Instant/No Duration	-10	4	12	2	1	1	10	2
+Dancing Lights	Evocation	[BME] Create	[BME] Energy, Light	5	[BME] 50ft	[BME] 5ft radius	[BME] 1 minute	-10	4	2	6	3	5	10	2
+Druidcraft	Transmutation	[BME] Manipulate	[BME] Inanimate, Physical	20	[BME] Personal/Self	[BME] 30ft radius	[BME] Instant/No Duration	-12	8	8	1	9	1	15	3
+Eldritch Blast	Evocation	[BME] Damage	[BME] Energy, Magic	15	[BME] 50ft	[BME] 1 target	[BME] Instant/No Duration	-10	3	9	6	1	1	10	2
+Fire Bolt	Evocation	[BME] Damage	[BME] Elements, Fire	20	[BME] 50ft	[BME] 1 target	[BME] Instant/No Duration	-10	4	8	6	1	1	10	2
+Friends	Enchantment	[BME] Control/Dominate	[BME] Living, Mind	10	[BME] Line of Sight	[BME] 1 target	[BME] 1 minute	-13	4	8	5	1	5	10	2
+Guidance	Divination	[BME] Detect	[BME] Inanimate, Physical	20	[BME] Touch	[BME] 1 target	[BME] 1 minute	-10	4	8	2	1	5	10	2
+Light	Evocation	[BME] Deceive	[BME] Energy, Light	5	[BME] Touch	[BME] 10ft radius	[BME] 1 minute/Rank	-11	1	2	2	6	10	10	2
+Mage Hand	Conjuration	[BME] Manipulate	[BME] Inanimate, Physical	20	[BME] 30ft	[BME] 1 target	[BME] 1 minute	-10	8	8	5	1	5	17	4
+Mending	Transmutation	[BME] Heal	[BME] Inanimate, Physical	25	[BME] Touch	[BME] 1 target	[BME] Instant/No Duration	-10	5	10	2	1	1	9	2
+Message	Transmutation	[BME] Enhance	[BME] Living, Mind	20	[BME] Line of Sight	[BME] 1 target	[BME] Instant/No Duration	-12	4	16	5	1	1	15	3
+Minor Illusion	Illusion	[BME] Deceive	[BME] Living, Mind	20	[BME] 30ft	[BME] 5ft radius	[BME] 1 minute	-15	4	16	5	3	5	18	4
+Poison Spray	Conjuration	[BME] Damage	[BME] Elements, Other	20	[BME] 30ft	[BME] 1 target	[BME] Instant/No Duration	-13	4	12	5	1	1	10	2
+Prestidigitation	Transmutation	[BME] Evoke	[BME] Energy, Light	20	[BME] 10ft	[BME] 10ft radius	[BME] 2 rounds	-13	8	8	4	6	2	15	3
+Produce Flame	Conjuration	[BME] Evoke	[BME] Elements, Fire	5	[BME] Touch	[BME] 1 target	[BME] 10 minutes	-12	2	2	2	1	15	10	2
+Ray of Frost	Evocation	[BME] Damage	[BME] Elements, Other	20	[BME] 50ft	[BME] 1 target	[BME] Instant/No Duration	-14	4	12	6	1	1	10	2
+Resistance	Abjuration	[BME] Enhance	[BME] Living, Body	20	[BME] Touch	[BME] 1 target	[BME] 1 minute	-14	4	12	2	1	5	10	2
+Sacred Flame	Evocation	[BME] Damage	[BME] Elements, Other	20	[BME] 50ft	[BME] 1 target	[BME] Instant/No Duration	-14	4	12	6	1	1	10	2
+*/
+
+    {   name: "Shillelagh"
+        type: "Cantrip"
+        realm: "Transmutation"
+        action: "Manipulate"
+        object: "Inanimate, Physical"
+        power:  20
+        range: "Touch"
+        area:   "1 target (weapon)"
+        duration:   "1 minute"
+        cost:   2
+        desciption: '''
+        The wood of a club or quarterstaff you are holding is imbued with nature’s power.
+        For the duration, you can use at +20 OB for melee attacks using that weapon,
+        and the weapon’s damage is determined as it where a Broadsword.
+        The weapon also becomes magical, if it isn’t already.
+        The spell ends if you cast it again.
+        '''
+    }
+
+/*
+Shocking Grasp	Evocation	[BME] Damage	[BME] Living, Body	20	[BME] Touch	[BME] 1 target	[BME] Instant/No Duration	-10	4	12	2	1	1	10	2
+Spare the Dying	Necromancy	[BME] Heal	[BME] Living, Body	20	[BME] Touch	[BME] 1 target	[BME] Instant/No Duration	-10	4	12	2	1	1	10	2
+Thaumaturgy	Transmutation	[BME] Evoke	[BME] Energy, Light	5	[BME] 30ft	[BME] 30ft radius	[BME] 1 minute	-13	2	2	5	9	5	10	2
+Thorn Whip	Transmutation	[BME] Damage	[BME] Living, Body	20	[BME] 30ft	[BME] 1 target	[BME] Instant/No Duration	-13	4	12	5	1	1	10	2
+True Strike	Divination	[BME] Enhance	[BME] Living, Body	20	[BME] Personal/Self	[BME] Individual/Self	[BME] 2 rounds	-10	4	12	1	0	2	9	2
+Vicious Mockery	Enchantment	[BME] Weaken	[BME] Living, Mind	10	[BME] 50ft	[BME] 1 target	[BME] Instant/No Duration	-10	4	8	6	1	1	10	2
+*/
+
+]
+
+}

@@ -1,7 +1,7 @@
 ##### Sting/Horns/Tusks/Spikes
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30EP | 21ES | 15EP | 10EP |
 | 146 - 148 | 30ES | 20ES | 15EP | 10EP |
@@ -14,6 +14,8 @@
 | 99 - 108 | 14CP | 11BP | 9AP | 6AP |
 | 88 - 98 | 10BS | 8AS | 7 | 5 |
 | 75 - 87 | 6 | 6 | 5 | 4 |
-| 62 - 74 | &endash;  | 2 | 3 | 3 |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | 2 |
+| 62 - 74 | --  | 2 | 3 | 3 |
+| 47 - 61 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

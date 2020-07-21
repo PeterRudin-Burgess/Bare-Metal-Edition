@@ -1,7 +1,7 @@
 ##### Two Handed
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 51EK | 45EK | 35ES | 25ES |
 | 147 - 148 | 49EK | 44ES | 35ES | 25ES |
@@ -19,11 +19,10 @@
 | 95 - 100 | 16DS | 18CS | 15BK | 13AK |
 | 87 - 94 | 11CS | 15BS | 13AK | 12 |
 | 80 - 86 | 6BK | 10BS | 10 | 10 |
-| 71 - 79 | &endash;  | 6AS | 7 | 8 |
-| 63 - 70 | &endash;  | 1 | 3 | 6 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 4 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | 2 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 71 - 79 | --  | 6AS | 7 | 8 |
+| 63 - 70 | --  | 1 | 3 | 6 |
+| 54 - 62 | --  | --  | --  | 4 |
+| 44 - 53 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

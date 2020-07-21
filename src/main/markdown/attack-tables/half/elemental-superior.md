@@ -1,7 +1,7 @@
 ##### Elemental Superior
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 68E? | 59E? | 52E? | 44E? |
 | 147 - 148 | 67E? | 58E? | 51E? | 44E? |
@@ -20,10 +20,9 @@
 | 87 - 94 | 18A? | 20 | 20 | 19 |
 | 80 - 86 | 11A? | 15 | 16 | 16 |
 | 71 - 79 | 5 | 10 | 12 | 13 |
-| 63 - 70 | &endash;  | 4 | 7 | 9 |
-| 54 - 62 | &endash;  | &endash;  | 3 | 5 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 4 | 7 | 9 |
+| 54 - 62 | --  | --  | 3 | 5 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

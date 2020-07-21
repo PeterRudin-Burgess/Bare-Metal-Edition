@@ -1,7 +1,7 @@
 ##### Firearm, Pistol
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 25EP | 26EP | 15EP | 16EP |
 | 147 - 148 | 25EP | 25EP | 15EP | 15EP |
@@ -20,10 +20,9 @@
 | 87 - 94 | 8AP | 9 | 6 | 7 |
 | 80 - 86 | 5 | 6 | 5 | 6 |
 | 71 - 79 | 3 | 4 | 4 | 4 |
-| 63 - 70 | &endash;  | 1 | 2 | 3 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 2 | 3 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

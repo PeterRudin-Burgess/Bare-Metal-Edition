@@ -1,7 +1,7 @@
 ##### One Handed Blades
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30ES | 25ES | 20ES | 13ES |
 | 147 - 148 | 30ES | 25ES | 20ES | 13ES |
@@ -20,10 +20,9 @@
 | 87 - 94 | 9BS | 10BS | 10 | 7 |
 | 80 - 86 | 6AS | 7BS | 8 | 6 |
 | 71 - 79 | 3 | 5AS | 7 | 5 |
-| 63 - 70 | &endash;  | 3 | 5 | 4 |
-| 54 - 62 | &endash;  | &endash;  | 4 | 3 |
-| 44 - 53 | &endash;  | &endash;  | 2 | 2 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 3 | 5 | 4 |
+| 54 - 62 | --  | --  | 4 | 3 |
+| 44 - 53 | --  | --  | 2 | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -1,7 +1,7 @@
 ##### Mono Axe
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 50ES | 41ES | 35EK | 31EK |
 | 147 - 148 | 49ES | 40ES | 35EK | 30EK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 14AS | 13 | 13 | 12 |
 | 80 - 86 | 9 | 9 | 10 | 10 |
 | 71 - 79 | 4 | 6 | 7 | 8 |
-| 63 - 70 | &endash;  | 1 | 3 | 5 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 5 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

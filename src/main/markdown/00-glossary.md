@@ -1,4 +1,4 @@
-## Glossary
+## Glossary {.pagebreak}
 
 **Action Point (AP):** An action point represents about 25% of all the activity a character can perform in a combat round.
 

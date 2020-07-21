@@ -1,7 +1,7 @@
 ##### Natural, Gore
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30EP | 21EP | 15EP | 10EP |
 | 147 - 148 | 30EP | 20EP | 15EP | 10EP |
@@ -20,10 +20,9 @@
 | 87 - 94 | 9AP | 7 | 6 | 5 |
 | 80 - 86 | 6 | 5 | 5 | 4 |
 | 71 - 79 | 3 | 4 | 4 | 3 |
-| 63 - 70 | &endash;  | 1 | 2 | 2 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 2 | 2 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

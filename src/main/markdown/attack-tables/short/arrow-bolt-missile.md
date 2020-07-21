@@ -1,7 +1,7 @@
 ##### Arrow/Bolt/Missile
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 29EP | 25EP | 25EP | 15EP |
 | 146 - 148 | 28EP | 25EP | 25EP | 15EP |
@@ -13,7 +13,9 @@
 | 109 - 117 | 14DP | 15CP | 15BP | 10AP |
 | 99 - 108 | 10CP | 12BP | 12BP | 8AP |
 | 88 - 98 | 5BP | 9BP | 9AP | 6 |
-| 75 - 87 | &endash;  | 5AP | 5 | 4 |
-| 62 - 74 | &endash;  | &endash;  | &endash;  | 2 |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 75 - 87 | --  | 5AP | 5 | 4 |
+| 62 - 74 | --  | --  | --  | 2 |
+| 47 - 61 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -1,7 +1,7 @@
 ##### Broadsword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 50ES | 45EK | 41DK | 36CK |
 | 147 - 148 | 49ES | 44ES | 40DK | 35BK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 14AS | 16 | 17 | 16 |
 | 80 - 86 | 9AS | 12 | 13 | 13 |
 | 71 - 79 | 4 | 8 | 10 | 11 |
-| 63 - 70 | &endash;  | 4 | 6 | 8 |
-| 54 - 62 | &endash;  | &endash;  | 3 | 5 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | 2 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 4 | 6 | 8 |
+| 54 - 62 | --  | --  | 3 | 5 |
+| 44 - 53 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

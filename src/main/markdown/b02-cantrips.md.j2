@@ -1,0 +1,18 @@
+# Cantrips
+
+{% for n in local.data %}
+## {{ n.name }}
+
+* *Type:* {{ n.type }}
+* *Realm:* {{ n.realm }}
+* *Action:* {{ n.action }}
+* *Object:* {{ n.object }}
+* *Power:* {{ n.power|int() }}
+* *Range:* {{ n.range }}
+* *Target/Area:* {{ n.area }}
+* *Duration:* {{ n.duration }}
+* *MP Cost:* {{ n.cost|int() }}
+
+{{ n.desciption }}
+
+{% endfor %}

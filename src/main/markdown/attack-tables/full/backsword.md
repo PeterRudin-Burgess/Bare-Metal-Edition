@@ -1,7 +1,7 @@
 ##### Backsword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 37EC | 32EC | 27DC | 21CK |
 | 147 - 148 | 36EC | 32EC | 27DC | 21BK |
@@ -44,15 +44,17 @@
 | 85 - 86 | 7AK | 6 | 4 | 3 |
 | 82 - 84 | 6 | 5 | 4 | 3 |
 | 80 - 81 | 4 | 4 | 3 | 2 |
-| 77 - 79 | 3 | 3 | 2 | &endash;  |
-| 75 - 76 | 2 | 1 | &endash;  | &endash;  |
-| 72 - 74 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 70 - 71 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 67 - 69 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 65 - 66 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 62 - 64 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 59 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 57 - 58 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 54 - 56 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 51 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 77 - 79 | 3 | 3 | 2 | --  |
+| 75 - 76 | 2 | 1 | --  | --  |
+| 72 - 74 | --  | --  | --  | --  |
+| 70 - 71 | --  | --  | --  | --  |
+| 67 - 69 | --  | --  | --  | --  |
+| 65 - 66 | --  | --  | --  | --  |
+| 62 - 64 | --  | --  | --  | --  |
+| 59 - 61 | --  | --  | --  | --  |
+| 57 - 58 | --  | --  | --  | --  |
+| 54 - 56 | --  | --  | --  | --  |
+| 51 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

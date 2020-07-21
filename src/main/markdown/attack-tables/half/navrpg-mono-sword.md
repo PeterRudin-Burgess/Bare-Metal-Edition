@@ -1,7 +1,7 @@
 ##### Mono Sword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 46EP | 41ES | 35EP | 25EK |
 | 147 - 148 | 44ES | 40ES | 35EP | 25EK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 13AP | 13 | 13 | 11 |
 | 80 - 86 | 8 | 9 | 10 | 8 |
 | 71 - 79 | 4 | 6 | 7 | 7 |
-| 63 - 70 | &endash;  | 1 | 3 | 4 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 4 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

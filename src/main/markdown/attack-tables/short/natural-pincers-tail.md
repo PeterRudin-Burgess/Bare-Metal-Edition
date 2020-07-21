@@ -1,7 +1,7 @@
 ##### Pincers/Tail Slap
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30EK | 21EK | 15EK | 10EK |
 | 146 - 148 | 30EK | 20EK | 15EK | 10EK |
@@ -14,6 +14,8 @@
 | 99 - 108 | 14CK | 11BK | 9AK | 6AK |
 | 88 - 98 | 10BK | 8AK | 7 | 5 |
 | 75 - 87 | 6 | 6 | 5 | 4 |
-| 62 - 74 | &endash;  | 2 | 3 | 3 |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | 2 |
+| 62 - 74 | --  | 2 | 3 | 3 |
+| 47 - 61 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

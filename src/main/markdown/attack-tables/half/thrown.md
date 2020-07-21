@@ -1,7 +1,7 @@
 ##### Thrown
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 20EK | 16EK | 16EK | 10DK |
 | 147 - 148 | 20EK | 15EK | 15EK | 10CK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 6AK | 7AK | 7 | 5 |
 | 80 - 86 | 4AK | 6AK | 6 | 5 |
 | 71 - 79 | 3 | 4 | 5 | 4 |
-| 63 - 70 | &endash;  | 3 | 4 | 3 |
-| 54 - 62 | &endash;  | 2 | 3 | 3 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | 2 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 3 | 4 | 3 |
+| 54 - 62 | --  | 2 | 3 | 3 |
+| 44 - 53 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -1,7 +1,7 @@
 ##### Bullets/Projectiles
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 24EP | 17EP | 12EP | 7EP |
 | 147 - 148 | 24EP | 17EP | 12EP | 7EP |
@@ -19,11 +19,10 @@
 | 95 - 100 | 8BP | 8CP | 7BP | 5AP |
 | 87 - 94 | 6AP | 7BP | 6AP | 4 |
 | 80 - 86 | 3 | 5BP | 5AP | 4 |
-| 71 - 79 | &endash;  | 4AP | 4 | 3 |
-| 63 - 70 | &endash;  | 2 | 3 | 3 |
-| 54 - 62 | &endash;  | &endash;  | 2 | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | 2 |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 71 - 79 | --  | 4AP | 4 | 3 |
+| 63 - 70 | --  | 2 | 3 | 3 |
+| 54 - 62 | --  | --  | 2 | 2 |
+| 44 - 53 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -135,7 +135,7 @@ You could have multiple cultures within a single nation where people are
 repressed and have less access to education but the ruling classes value 
 sciences and the arts.
 
-> **Character Creation Example**
+> **&zmdi-key; Character Creation Example**
 > 
 > Stephen chooses the Star faring culture for his character and adds the
 > following skills to his character sheet

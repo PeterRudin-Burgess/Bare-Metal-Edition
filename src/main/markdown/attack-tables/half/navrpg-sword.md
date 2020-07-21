@@ -1,7 +1,7 @@
 ##### Sword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30ES | 26EK | 15EK | 10EK |
 | 147 - 148 | 30ES | 25ES | 15EK | 10EK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 9AS | 9 | 6 | 5 |
 | 80 - 86 | 6 | 6 | 5 | 4 |
 | 71 - 79 | 3 | 4 | 4 | 3 |
-| 63 - 70 | &endash;  | 1 | 2 | 2 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 2 | 2 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

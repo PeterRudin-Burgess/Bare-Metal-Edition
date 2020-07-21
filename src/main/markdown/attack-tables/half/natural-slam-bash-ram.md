@@ -1,7 +1,7 @@
 ##### Natural, Slam/Bash/Ram
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 20EI | 15EI | 10EI | 5EI |
 | 147 - 148 | 20EI | 15EI | 10EI | 5EI |
@@ -20,10 +20,9 @@
 | 87 - 94 | 6AI | 6 | 5 | 3 |
 | 80 - 86 | 4 | 4 | 4 | 3 |
 | 71 - 79 | 3 | 3 | 3 | 2 |
-| 63 - 70 | &endash;  | 1 | 2 | 2 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 2 | 2 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

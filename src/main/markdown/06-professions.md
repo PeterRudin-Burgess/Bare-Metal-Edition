@@ -67,14 +67,11 @@ receive 50 development points of skill ranks or talents as basic training.
 Each profession also has a unique set of skill costs.
 
 * All skills that are absolutely core to the profession are costed at 1/3.
-
 * Skills that are important to the profession are costed at 2/4.
-
 * Skills that are outside the professions realm are costed at 5/7.
-
 * Skills that are alien to the profession are costed at 7/10.
+* Skills that are restricted to specific professions are costed at 12/15.
 
-* Skills that are restricted to specific professions are costed at 12/15. 
 Although this skill has a cost, it cannot be bought without the GM’s 
 express permission.
 
@@ -107,13 +104,13 @@ Driving 	2,
 Scanners	1, 
 Space Pilot 	2, 
 Physique 	2, 
-Vocation(*) 	2, 
+Vocation(&asterisk;) 	2, 
 First Aid 	1*
 
-*(&asterisk;) You should choose a vocation specialism to fit your character concept such
+(&asterisk;) You should choose a vocation specialism to fit your character concept such
 as Vocation:  Politician or Vocation:  Academic.*
 
-|Skill Cost Table |||||
+|Skill Cost Table, Aristocrat |||||
 |:----------------------|---:|:---:|:----------------------|---:|
 | *Combat* |||||
 | Weapon 1 | 2/4 | | Move in Armor CE | 5/7 |
@@ -181,7 +178,7 @@ Vocation: Armsman 	2*
 An Armsman will need to choose a Combat Expertise specialization which 
 should fit with their character background.
 
-|Skill Cost Table |||||
+|Skill Cost Table, Armsman |||||
 |:----------------------|---:|:---:|:----------------------|---:|
 | *Combat* |||||
 |Weapon 1 | 1/3 | | Move in Armor CE | 1/3 |
@@ -242,7 +239,7 @@ Vocation: Mystic 	2*
 
 Latent Psionic 	1/Tier
 
-|Skill Cost Table |||||
+|Skill Cost Table, Mystic |||||
 |:----------------------|---:|:---:|:----------------------|---:|
 | *Combat* |||||
 | Weapon 1 | 2/4 | | Move in Armor CE | 5/7|
@@ -256,7 +253,7 @@ Latent Psionic 	1/Tier
 | Ambush/Sniper | 7/10 | | Languages | 2/2|
 | Physique | 3/5 | | Music | 2/4|
 | Trickery | 5/7 | |||
-|*Mental* ||||| | 
+|*Mental* ||||| 
 | Mental Focus | 2/4 | | Mental Focus Defense | 12/15|
 | Forgery | 5/7 | | Survival | 7/10|
 | First Aid | 3/5 | | Scanners | 3/5|

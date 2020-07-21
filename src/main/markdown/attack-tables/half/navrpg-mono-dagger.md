@@ -1,7 +1,7 @@
 ##### Mono Dagger
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 46EP | 31ES | 21EP | 16EP |
 | 147 - 148 | 44ES | 30ES | 20EP | 15EP |
@@ -20,10 +20,9 @@
 | 87 - 94 | 13AP | 10 | 8 | 7 |
 | 80 - 86 | 8 | 7 | 6 | 6 |
 | 71 - 79 | 4 | 5 | 5 | 4 |
-| 63 - 70 | &endash;  | 1 | 3 | 3 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 3 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

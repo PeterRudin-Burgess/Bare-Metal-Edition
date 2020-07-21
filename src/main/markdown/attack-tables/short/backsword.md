@@ -1,7 +1,7 @@
 ##### Backsword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 37EC | 32EC | 27DC | 21CK |
 | 146 - 148 | 36EC | 32EC | 27DC | 21BK |
@@ -14,6 +14,8 @@
 | 99 - 108 | 17BC | 15AC | 12 | 9 |
 | 88 - 98 | 12AC | 11AC | 9 | 7 |
 | 75 - 87 | 7AK | 6 | 5 | 3 |
-| 62 - 74 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 62 - 74 | --  | --  | --  | --  |
+| 47 - 61 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

@@ -1,7 +1,7 @@
 ##### Elemental Major
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 58E? | 52E? | 45E? | 39D? |
 | 147 - 148 | 57E? | 50E? | 44E? | 39C? |
@@ -20,10 +20,9 @@
 | 87 - 94 | 16A? | 18 | 18 | 17 |
 | 80 - 86 | 10A? | 13 | 14 | 14 |
 | 71 - 79 | 5 | 9 | 11 | 11 |
-| 63 - 70 | &endash;  | 3 | 6 | 8 |
-| 54 - 62 | &endash;  | &endash;  | 2 | 5 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 3 | 6 | 8 |
+| 54 - 62 | --  | --  | 2 | 5 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

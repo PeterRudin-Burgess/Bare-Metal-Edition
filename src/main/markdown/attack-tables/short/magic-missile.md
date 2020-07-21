@@ -1,7 +1,7 @@
 ##### Magical Missile
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 38E  | 25E  | 23E  | 18E  |
 | 146 - 148 | 37E  | 25E  | 22E  | 18E  |
@@ -17,3 +17,5 @@
 | 62 - 74 | 13B  | 8A  | 8A  | 7A  |
 | 47 - 61 | 9A  | 5 | 5 | 5 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

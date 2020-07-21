@@ -1,7 +1,7 @@
 ##### Hoof/Tentacle/Wing
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 20EK | 15EK | 10EK | 5EK |
 | 146 - 148 | 20EK | 15EK | 10EK | 5EK |
@@ -14,6 +14,8 @@
 | 99 - 108 | 10CK | 8BK | 6AK | 4AK |
 | 88 - 98 | 7BK | 6AK | 5 | 3 |
 | 75 - 87 | 5 | 4 | 4 | 3 |
-| 62 - 74 | &endash;  | 2 | 2 | 2 |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | 2 |
+| 62 - 74 | --  | 2 | 2 | 2 |
+| 47 - 61 | --  | --  | --  | 2 |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

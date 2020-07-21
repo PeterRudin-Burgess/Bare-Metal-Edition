@@ -1,7 +1,7 @@
 ##### Battle Axe
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 46EK | 36EK | 30ES | 25ES |
 | 146 - 148 | 44EK | 35ES | 30ES | 25ES |
@@ -14,6 +14,8 @@
 | 99 - 108 | 21CS | 16BK | 14AS | 12AS |
 | 88 - 98 | 15BS | 12AK | 10 | 9 |
 | 75 - 87 | 9 | 7 | 6 | 6 |
-| 62 - 74 | &endash;  | &endash;  | &endash;  | 1 |
-| 47 - 61 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 62 - 74 | --  | --  | --  | 1 |
+| 47 - 61 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

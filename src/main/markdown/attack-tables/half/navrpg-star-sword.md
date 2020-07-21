@@ -1,7 +1,7 @@
 ##### Star Sword
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 55ES | 56EK | 56EK | 50EK |
 | 147 - 148 | 54ES | 54ES | 54EK | 49EK |
@@ -20,10 +20,9 @@
 | 87 - 94 | 15AS | 18 | 20 | 20 |
 | 80 - 86 | 9 | 12 | 15 | 16 |
 | 71 - 79 | 4 | 8 | 10 | 12 |
-| 63 - 70 | &endash;  | 1 | 5 | 7 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 3 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 5 | 7 |
+| 54 - 62 | --  | --  | --  | 3 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

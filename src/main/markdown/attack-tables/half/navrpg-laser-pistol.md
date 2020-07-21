@@ -1,7 +1,7 @@
 ##### Laser, Pistol
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 25EF | 21EF | 21EF | 16EF |
 | 147 - 148 | 25EP | 20EF | 20EF | 15EF |
@@ -20,10 +20,9 @@
 | 87 - 94 | 8AF | 7 | 8 | 7 |
 | 80 - 86 | 5 | 5 | 6 | 6 |
 | 71 - 79 | 3 | 4 | 5 | 4 |
-| 63 - 70 | &endash;  | 1 | 3 | 3 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 3 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

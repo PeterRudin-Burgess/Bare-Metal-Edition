@@ -1,7 +1,7 @@
 ##### Ball/Explosion
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 34E  | 21E  | 22D  | 24D  |
 | 147 - 148 | 34D  | 21E  | 22D  | 23D  |
@@ -20,10 +20,9 @@
 | 87 - 94 | 16A  | 7 | 8A  | 9A  |
 | 80 - 86 | 13A  | 4 | 6A  | 7A  |
 | 71 - 79 | 11A  | 3 | 4 | 5 |
-| 63 - 70 | 8 | &endash;  | 1 | 3 |
-| 54 - 62 | 5 | &endash;  | &endash;  | &endash;  |
-| 44 - 53 | 2 | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | 8 | --  | 1 | 3 |
+| 54 - 62 | 5 | --  | --  | --  |
+| 44 - 53 | 2 | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

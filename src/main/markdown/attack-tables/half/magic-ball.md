@@ -1,7 +1,7 @@
 ##### Magical Ball
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 34E  | 20E  | 23E  | 26E  |
 | 147 - 148 | 34D  | 20D  | 23D  | 25D  |
@@ -20,10 +20,9 @@
 | 87 - 94 | 14A  | 6 | 8A  | 9A  |
 | 80 - 86 | 11A  | 4 | 6 | 7A  |
 | 71 - 79 | 9A  | 3 | 4 | 5 |
-| 63 - 70 | 5 | &endash;  | 1 | 2 |
-| 54 - 62 | 3 | &endash;  | &endash;  | &endash;  |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | 5 | --  | 1 | 2 |
+| 54 - 62 | 3 | --  | --  | --  |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

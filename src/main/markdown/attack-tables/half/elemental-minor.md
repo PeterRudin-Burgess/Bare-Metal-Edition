@@ -1,7 +1,7 @@
 ##### Elemental Minor
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 50E? | 45E? | 41D? | 35C? |
 | 147 - 148 | 49E? | 44E? | 40D? | 35B? |
@@ -20,10 +20,9 @@
 | 87 - 94 | 14A? | 16 | 16 | 16 |
 | 80 - 86 | 9A? | 12 | 13 | 13 |
 | 71 - 79 | 4 | 8 | 10 | 10 |
-| 63 - 70 | &endash;  | 3 | 6 | 7 |
-| 54 - 62 | &endash;  | &endash;  | 2 | 4 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 3 | 6 | 7 |
+| 54 - 62 | --  | --  | 2 | 4 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

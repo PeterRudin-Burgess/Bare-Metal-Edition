@@ -1,7 +1,7 @@
 ##### Grenades
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 60EI | 51EI | 25EI | 16EI |
 | 147 - 148 | 59EI | 49EI | 25EI | 15EI |
@@ -20,10 +20,9 @@
 | 87 - 94 | 16AI | 16 | 10 | 7 |
 | 80 - 86 | 10 | 11 | 7 | 6 |
 | 71 - 79 | 5 | 7 | 5 | 4 |
-| 63 - 70 | &endash;  | 1 | 3 | 3 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 3 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}

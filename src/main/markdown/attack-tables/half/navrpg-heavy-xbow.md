@@ -1,7 +1,7 @@
 ##### Heavy Crossbow
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 | 149 - 150 | 30EP | 31EP | 25EP | 21EP |
 | 147 - 148 | 30EP | 30EP | 25EP | 20EP |
@@ -20,10 +20,9 @@
 | 87 - 94 | 9AP | 10 | 10 | 9 |
 | 80 - 86 | 6 | 7 | 7 | 7 |
 | 71 - 79 | 3 | 5 | 5 | 6 |
-| 63 - 70 | &endash;  | 1 | 3 | 4 |
-| 54 - 62 | &endash;  | &endash;  | &endash;  | 2 |
-| 44 - 53 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 34 - 43 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 24 - 33 | &endash;  | &endash;  | &endash;  | &endash;  |
-| 13 - 23 | &endash;  | &endash;  | &endash;  | &endash;  |
+| 63 - 70 | --  | 1 | 3 | 4 |
+| 54 - 62 | --  | --  | --  | 2 |
+| 44 - 53 | --  | --  | --  | --  |
 | 1 - F | F | F | F | F |
+
+{.attack-table}
