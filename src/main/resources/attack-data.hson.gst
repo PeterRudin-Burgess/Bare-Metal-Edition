@@ -91,7 +91,7 @@
 <%
 float l = 150f;
 float x = 1f;
-for(float i=(l-x); i>12f; i-=x)
+for(float i=(l-x); i>40f; i-=x)
 {
     int n = (float)l;
     int n2 = (float)i;
