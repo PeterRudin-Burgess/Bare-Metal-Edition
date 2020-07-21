@@ -1,7 +1,7 @@
 ##### ${title}
 
-|      | Armor ||||
-| Result | No | Lt | Md | Hvy |
+|      |   Armor   ||||
+|   Result   |   No   |   Lt   |   Md   |   Hvy   |
 |:--------:|:-----:|:-----:|:-----:|:-----:|
 <#if (roll??) >
 <#assign dlen=(attack[roll]?size) droll=attack[roll] index=0 >
@@ -20,6 +20,8 @@
                 clen=(attack.criticals[data[AT].type]?length)
                 cval=(row[1] + AT + attack.permutation[index % 256])
                 index=(index+1)
-                ct=(attack.criticals[data[AT].type][cval % clen]) >${ct}</#if><#else> &endash; </#if> |</#list>
+                ct=(attack.criticals[data[AT].type][cval % clen]) >${ct}</#if><#else> -- </#if> |</#list>
 </#list>
 | 1 - F | F | F | F | F |
+
+{.attack-table}
