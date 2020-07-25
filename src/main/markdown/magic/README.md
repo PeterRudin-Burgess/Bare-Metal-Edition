@@ -52,9 +52,10 @@ original. You cannot just decide in the moment which version you want.
 ### Using Spells and Rituals
 
 Using magic is called Casting. To cast a spell or a ritual the caster makes 
-a d100 roll adding their Stat Bonus to the Casting Roll (CR). 
-In the case of spells this is the sum of Em+In+Pr stat bonuses. 
-For rituals this is Pr+Re+Sd bonuses.
+a d100 roll adding their Skill Bonus to the Casting Roll (CR). 
+For each MP spent in the casting the CR is modified by -5.
+
+> A spell requiring 7 MP to cast has a CR modifier of -35.
 
 A caster declares the spell to be cast and the action takes 
 up to 3AP. At the end of the action the CR is made. 
@@ -85,7 +86,6 @@ Rituals differ from Spells in a few points.
 
 > A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
 > and would require 34 minutes to cast.
-
 
 ### Resolving Magic Effects
 
