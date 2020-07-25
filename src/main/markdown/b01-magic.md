@@ -23,11 +23,13 @@ Please note some Ancestries, Cultures and/or Archetypes may provide bonus tiers 
 
 ### Aspects
 
-There are two aspects to magic. The first is mana points. 
-These are bought as a skill. A character with 5 ranks in Magic Power and 
-a +10 stat bonus would have a total of 35 Mana Points [MP]. 
-You may not develop the Magic Power skill unless you have at least one tier 
-in the Magic Gift talent.
+There are two aspects to magic. 
+The first is mana points. 
+These are bought as a skill. 
+
+> A character with 5 ranks in Magic Power and a +10 stat bonus would have a total of 35 Mana Points [MP].
+
+You may not develop the Magic Power skill unless you have at least one tier in the Magic Gift talent.
 
 The second element is the actual spells and rituals known and have a base cost in MP and 
 additional options that can scale the effects in different ways. 
@@ -66,6 +68,7 @@ To resist they make a Resistance Test rolled d100 and adding the sum of
 two of their stats based on the nature of the Resistance.
 If their Resistance Test result if greater than the casting roll then they 
 have resisted the effect. 
+
 If a magic has been resisted it has no effect. Resistance Tests are not compulsory. 
 You do not need to resist a magic that you consent to. 
 If you withdraw consent at any time before the magic is complete a resistance test is allowed.
@@ -100,4 +103,5 @@ Spells that emulate the usage of skills are resolved exactly in the same way.
 
 A full complement of Mana Points [MP] is recovered after a period of rest (as determined by the GM).
 
-The GM may rule on recovery for short periods of rest to recover about one MP per hour per Rank in the Magical Power Skill. 
+The GM may rule on recovery for short periods of rest to recover about one MP per hour per Rank 
+in the Magical Power Skill. 
