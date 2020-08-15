@@ -19,8 +19,22 @@ data: [
         '''
     }
 
+    {   name: "Blade Ward"
+        type: "Cantrip"
+        realm: "Abjuration"
+        action: "Protect"
+        object: "Living, Body"
+        power:  20
+        range: "Personal/Self"
+        area:   "Individual/Self"
+        duration: "Concentration Only"
+        cost: 2
+        desciption: '''
+        +20 DB against melee attacks until concentration is broken
+        '''
+    }
+
 /*
-Blade Ward	Abjuration	[BME] Protect	[BME] Living, Body	20	[BME] Personal/Self	[BME] Individual/Self	[BME] Concentration Only	-12	8	12	1	0	1	10	2
 Chill Touch	Necromancy	[BME] Damage	[BME] Elements, Other	20	[BME] Touch	[BME] 1 target	[BME] Instant/No Duration	-10	4	12	2	1	1	10	2
 Dancing Lights	Evocation	[BME] Create	[BME] Energy, Light	5	[BME] 50ft	[BME] 5ft radius	[BME] 1 minute	-10	4	2	6	3	5	10	2
 Druidcraft	Transmutation	[BME] Manipulate	[BME] Inanimate, Physical	20	[BME] Personal/Self	[BME] 30ft radius	[BME] Instant/No Duration	-12	8	8	1	9	1	15	3
