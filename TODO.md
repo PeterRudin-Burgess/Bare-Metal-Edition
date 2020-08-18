@@ -49,7 +49,7 @@
     - [ ] e01-fantasy-equipment
 
 - [ ] appendix-f (foes, ..., adversaries, creatures & monsters)
-    - [ ] e01-quick-npcs (based on the standard or combined archetype professions)
-    - [ ] e02-mobs-minions (massive reduced details)
-    - [ ] e03-dangerous-animals (both normal and aberrant)
-    - [ ] e04-construction
+    - [ ] f01-quick-npcs (based on the standard or combined archetype professions)
+    - [ ] f02-mobs-minions (massive reduced details)
+    - [ ] f03-dangerous-animals (both normal and aberrant)
+    - [ ] f04-construction
