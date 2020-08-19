@@ -116,40 +116,6 @@ Physique is to be considered one of the essential skills. Physique is literally 
 the skill confers additional hit points, to the character. Hit points are referred to a #Hits as a standard 
 abbreviation in the combat tables, meaning number of hit points of damage the character has taken.
 
-### Mental
-
-###### Mental Focus [Sd, Pr,Em]
-
-There are several Mental Focus skills and they all need developing separately. Mental Focus skills require a combat 
-round, or 5 seconds to prepare before they are used. In some cases to a combat round is required to recover from 
-using a mental focus skill. During the preparation or recover round the character takes a -20 penalty to all actions. 
-Before initiative is rolled in the following round the character rolls their Mental Focus skill to see if they 
-succeeded. Once a Mental Focus state has been achieved it may be maintained for additional rounds but the skill 
-must be retested each subsequent round at a cumulative -10 per round.
-
-**Mental Focus: Speed** gives the character an additional 4 Action Points per round and in addition the number of 
-ranks in Mental Focus: Speed may be added to their initiative roll.
-
-**Mental Focus: Strength** gives the character an additional +15 strength bonus, which would be added to any skill 
-tests using strength for the duration. Skills that have strength listed more than once as a stat bonus will benefit 
-from multiple +15 bonuses. 
-
-> Example: Melee attacks use St+St+Ag as their stat bonus. In this case the bonus from Mental Focus: Strength would be +30.
-
-**Mental Focus: Calm** gives a character a +15 bonus that may be applied once per round to either Agility bonus or 
-Self Discipline bonus, but not both in the same round. Where the bonus is to be applied is declared before the roll 
-is made but can be moved with every successful skill test.
-
-###### Mental Focus: Defense [Sd, Pr,Qu]
-
-**Mental Focus: Defense** allows a character to focus their mind on sensing and avoiding attacks. The character cannot 
-be encumbered, they must not have any net maneuver penalty from either armor, excessive equipment or injury. 
-A successful Mental Focus: Defense skill test is made before initiative is rolled and on success the number of ranks 
-in Mental Focus: Defense is added to the characters Defensive Bonus for the entire round. As with all Mental Focus 
-skills one combat round is required to prepare and during that round the character has -20 on all actions. 
-Mental Focus: Defense can be maintained for multiple rounds but each subsequent round incurs a cumulative -10 penalty 
-to the skill roll.
-
 ###### Forgery [Ag, Re, In]
 
 This skill is used for creating forgeries of objects or documents. It is assumed that the correct tools are available 
