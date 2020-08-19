@@ -63,6 +63,13 @@ up to 3AP. At the end of the action the CR is made.
 
 If the final result is greater than zero the effect is successfully cast and takes effect.
 
+A caster declares the spell to be cast and the action takes 
+up to 3AP. At the end of the action the CR is made. 
+
+> Note: The roll is open ended both up and down.
+
+If the final result is greater than zero the effect is successfully cast and takes effect.
+
 If the spell can be resisted and the target is unwilling they may resist. 
 To resist they make a Resistance Test rolled d100 and adding the sum of 
 two of their stats based on the nature of the Resistance.

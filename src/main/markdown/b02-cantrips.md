@@ -18,6 +18,21 @@ Choose one creature within range for the target of attack.
 The attack is resolved with +20 OB to the spell-casting roll on the Elemental Attack Table using Acid Criticals.
 
 
+## Blade Ward
+
+* *Type:* Cantrip
+* *Realm:* Abjuration
+* *Action:* Protect
+* *Object:* Living, Body
+* *Power:* 20
+* *Range:* Personal/Self
+* *Target/Area:* Individual/Self
+* *Duration:* Concentration Only
+* *MP Cost:* 2
+
++20 DB against melee attacks until concentration is broken
+
+
 ## Shillelagh
 
 * *Type:* Cantrip
