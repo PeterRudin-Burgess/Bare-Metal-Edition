@@ -1,0 +1,39 @@
+
+section {
+    page-break-after: always;
+    column-gap:1cm;
+}
+
+section.phb {
+    column-count:2;
+}
+
+section.single-column {
+    column-count:1;
+}
+
+section.attack-tables{
+    column-count:3;
+}
+
+section.crit-tables{
+    column-count:1;
+}
+
+section.attack-tables table.attack-table {
+    page-break-after: always;
+}
+
+section.attack-tables table.attack-table {
+    font-size:9pt;
+    line-height:10pt;
+}
+
+section.attack-tables h1,
+section.attack-tables h2,
+section.attack-tables h3,
+section.attack-tables h4,
+section.attack-tables h5,
+section.attack-tables h6 {
+    margin-bottom:0;
+}

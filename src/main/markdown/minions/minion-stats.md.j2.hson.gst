@@ -81,7 +81,23 @@ def _integral_phi(_x)
     return 0.5 * Erf.erfc(-_x * 0.7071067811865475); // * 1/sqrt(2)
 }
 
-def rank_bonus(r)
+def rank_bonus_rmss(r)
+{
+    if(r <= 10) return (r * 5);
+    if(r <= 20) return (50 + ((r - 10) * 3));
+    if(r <= 30) return (80 + ((r - 20) * 1.5));
+    return (95 + ((r - 30) / 2));
+}
+
+def rank_bonus_rmc(r)
+{
+    if(r <= 10) return (r * 5);
+    if(r <= 20) return (50 + ((r - 10) * 2));
+    if(r <= 30) return (70 + (r - 20));
+    return (80 + ((r - 30) / 2));
+}
+
+def rank_bonus_bme(r)
 {
     if(r <= 10) return (r * 5);
     if(r <= 20) return (50 + ((r - 10) * 2));
@@ -93,24 +109,70 @@ def rank_bonus(r)
 def render_row(n)
 {
     print "[ ${n}, ";
-    print rank_bonus(4 + (n * 3));
+    print '{ \n';
+
+    print "bme: [ ";
+    print rank_bonus_bme(4 + (n * 3));
     print ', ';
-    print rank_bonus(3 + (n * 2));
+    print rank_bonus_bme(3 + (n * 2));
     print ', ';
-    print rank_bonus(2 + (n * 1.5));
+    print rank_bonus_bme(2 + (n * 1.5));
     print ', ';
-    print rank_bonus(1 + n);
+    print rank_bonus_bme(1 + n);
     print ', ';
-    print rank_bonus(n * 0.5);
+    print rank_bonus_bme(n * 0.5);
     print ', ';
-    print rank_bonus(n * 0.25);
+    print rank_bonus_bme(n * 0.25);
     print ', ';
-    print rank_bonus(n * 0.125);
+    print rank_bonus_bme(n * 0.125);
     print ', ';
-    print rank_bonus(n * 0.0625);
+    print rank_bonus_bme(n * 0.0625);
     print ', ';
-    print rank_bonus(n * 0.03125);
-    print ']';
+    print rank_bonus_bme(n * 0.03125);
+    print ']\n';
+
+    print "rmc: [ ";
+    print rank_bonus_rmc(4 + (n * 3));
+    print ', ';
+    print rank_bonus_rmc(3 + (n * 2));
+    print ', ';
+    print rank_bonus_rmc(2 + (n * 1.5));
+    print ', ';
+    print rank_bonus_rmc(1 + n);
+    print ', ';
+    print rank_bonus_rmc(n * 0.5);
+    print ', ';
+    print rank_bonus_rmc(n * 0.25);
+    print ', ';
+    print rank_bonus_rmc(n * 0.125);
+    print ', ';
+    print rank_bonus_rmc(n * 0.0625);
+    print ', ';
+    print rank_bonus_rmc(n * 0.03125);
+    print ']\n';
+
+    print "rmss: [ ";
+    print rank_bonus_rmss(4 + (n * 3));
+    print ', ';
+    print rank_bonus_rmss(3 + (n * 2));
+    print ', ';
+    print rank_bonus_rmss(2 + (n * 1.5));
+    print ', ';
+    print rank_bonus_rmss(1 + n);
+    print ', ';
+    print rank_bonus_rmss(n * 0.5);
+    print ', ';
+    print rank_bonus_rmss(n * 0.25);
+    print ', ';
+    print rank_bonus_rmss(n * 0.125);
+    print ', ';
+    print rank_bonus_rmss(n * 0.0625);
+    print ', ';
+    print rank_bonus_rmss(n * 0.03125);
+    print ']\n';
+
+    print ' } \n';
+    print ' ] ';
 }
 
 %>{
@@ -122,7 +184,7 @@ for(n in 0 .. 500){
 }
 %>
     ]
-
+    statname: [ "RMC", "RMSS", "RMU", "BME" ]
     statmod: [
 <%
 for(_stat in 0 .. 200){

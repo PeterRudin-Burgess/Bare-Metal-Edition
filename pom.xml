@@ -141,6 +141,75 @@
                             <additionalVariables>roll=dr-short</additionalVariables>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>attack-tables-medium</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>freemarker-template</goal>
+                        </goals>
+                        <configuration>
+                            <templateFile>${project.basedir}/src/main/templates/attack-table-to-markdown.fm</templateFile>
+                            <additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot>
+                            <resourcesDirectory>${project.basedir}/src/main/resources/attack-tables</resourcesDirectory>
+                            <includes>**/*.hson</includes>
+                            <resourcesOutput>${project.basedir}/src/main/markdown/attack-tables/medium</resourcesOutput>
+                            <destinationExtension>.md</destinationExtension>
+                            <outputType>TEXT</outputType>
+                            <additionalVariables>roll=dr-medium</additionalVariables>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.github.terefang.starmark</groupId>
+                <artifactId>starmark-maven-plugin</artifactId>
+                <version>2020.8.19.3</version>
+                <executions>
+                    <execution>
+                        <id>make-html</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>starmark-to-html</goal>
+                        </goals>
+                        <configuration>
+                            <documentClass>phb</documentClass>
+                            <resourceDirectories>
+                                <directory>src/main/style</directory>
+                            </resourceDirectories>
+                            <styles>
+                                <!--style>css/reset.css</style-->
+                                <style>css/bme-base.scss</style>
+                            </styles>
+                            <documentDirectory>src/main/markdown</documentDirectory>
+                            <documentIncludes>*.md</documentIncludes>
+                            <documentExcludes></documentExcludes>
+                            <outputDocument>${project.basedir}/out/bme-%04d-%s.html</outputDocument>
+                            <coverFile>work/bme-cover.png</coverFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${project.basedir}/xbin/mkpdf.sh</executable>
+                            <workingDirectory>${project.basedir}</workingDirectory>
+                            <arguments>
+                                <argument>${project.basedir}/out</argument>
+                                <argument>*.html</argument>
+                                <argument>${project.basedir}/out/bme-main.pdf</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>

@@ -1,13 +1,39 @@
+### Skill Bonus Spread BME Variant
+
 | LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 | S#9 |
 |:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n in range(51) -%}
 | {{ local.lequ[n][0]|int() }}
-{%- for x in range(1,10) -%}
-| +{{ local.lequ[n][x]|int() }}
+{%- for x in range(0,9) -%}
+| +{{ local.lequ[n][1].bme[x]|int() }}
+{%- endfor -%}|
+{% endfor %}
+
+### Skill Bonus Spread RMC Variant
+
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 | S#9 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+{% for n in range(51) -%}
+| {{ local.lequ[n][0]|int() }}
+{%- for x in range(0,9) -%}
+| +{{ local.lequ[n][1].rmc[x]|int() }}
+{%- endfor -%}|
+{% endfor %}
+
+### Skill Bonus Spread RMSS Variant
+
+| LE | S#1 | S#2 | S#3 | S#4 | S#5 | S#6 | S#7 | S#8 | S#9 |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+{% for n in range(51) -%}
+| {{ local.lequ[n][0]|int() }}
+{%- for x in range(0,9) -%}
+| +{{ local.lequ[n][1].rmss[x]|int() }}
 {%- endfor -%}|
 {% endfor %}
 
 {% for z in range(0,4) -%}
+### Attribute Spread {{ local.statname[z] }} Variant
+
 | LE | A#1 | A#2 | A#3 | A#4 | A#5 | A#6 | A#7 | A#8 | A#9 | A#10 |
 |:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n in range(51) -%}
@@ -29,11 +55,11 @@
 {%- endfor %}
 
 {% for LE in range(51) -%}
-{%- for n in local.types -%}{%- set obi = local.type[n].OBI|int() -%}{%- set ob2i = local.type[n].OB2I|int() -%}{%- set ob3i = local.type[n].OB3I|int() -%}{%- set ob4i = local.type[n].OB4I|int() -%}{%- set hti = local.type[n].HTI|int() -%}{%- set ati = local.type[n].ATI|int() -%}{%- set dbi = local.type[n].DBI|int() -%}
+{%- for n in local.types -%}{%- set obi = local.type[n].OBI-1|int() -%}{%- set ob2i = local.type[n].OB2I-1|int() -%}{%- set ob3i = local.type[n].OB3I-1|int() -%}{%- set ob4i = local.type[n].OB4I-1|int() -%}{%- set hti = local.type[n].HTI-1|int() -%}{%- set ati = local.type[n].ATI|int() -%}{%- set dbi = local.type[n].DBI-1|int() -%}
 | {{ n }} Size | LE | OB | OB2 | OB3 | OB4 | AT | DB | Hits |
 |:------------------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 {% for n2 in local.sizes -%}
-|{{ n2 }} | {{ LE }} | {{ ((local.lequ[LE][obi]*local.type[n].OBM) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob2i]*local.type[n].OB2M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob3i]*local.type[n].OB3M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE][ob4i]*local.type[n].OB4M) + local.size[n2].OB)|int() }} | {{ local.armors[ati] }}| {{ ((local.lequ[LE][dbi]*local.type[n].DBM)+local.size[n2].DB)|int() }} | {{ (local.lequ[LE][hti]*local.type[n].HTM*local.size[n2].HT)|int() }} |
+|{{ n2 }} | {{ LE }} | {{ ((local.lequ[LE].bme[obi]*local.type[n].OBM) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE].bme[ob2i]*local.type[n].OB2M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE].bme[ob3i]*local.type[n].OB3M) + local.size[n2].OB)|int() }} | {{ ((local.lequ[LE].bme[ob4i]*local.type[n].OB4M) + local.size[n2].OB)|int() }} | {{ local.armors[ati] }}| {{ ((local.lequ[LE].bme[dbi]*local.type[n].DBM)+local.size[n2].DB)|int() }} | {{ (local.lequ[LE].bme[hti]*local.type[n].HTM*local.size[n2].HT)|int() }} |
 {% endfor -%}
 {%- endfor %}
 {%- endfor %}

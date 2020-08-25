@@ -1,214 +1,223 @@
-##### Spell Builder
+### Spell Builder
 
-|Action  | Base |
-|:-------------------|:-----:|
-| Banish         | 2 |
-| Conjure         | 2 |
-| Control/Dominate | 2 |
-| Create          | 4 |
-| Damage            | 1 |
-| Deceive         | 1 |
-| Detect         | 1 |
-| Dispell        | 2 |
-| Enhance       | 1 |
-| Heal           | 1 |
-| Manipulate      | 2 |
-| Protect        | 2 |
-| Summon         | 5 |
-| Teleport     | 2 |
-| Transport    | 1 |
-| Weaken         | 2 |
+for cost tables see the adjunct tables.
 
-|Object  | Base |
-|:-------------------|:-----:|
-| *Living* ||
-| Body              | 3 |
-| Form              | 4 |
-| Mind              | 4 |
-| *Inanimate* ||
-| Physical         | 2 |
-| Spiritual         | 3 |
-| *Energy* ||
-| Magic | 3 |
-| Light | 2 |
-| Darkness | 2 |
-| *Elements* ||
-| (true) | +1 |
-| Air  | 2 |
-| Earth  | 2 |
-| Fire  | 2 |
-| Metal | 3 |
-| Plant | 3 |
-| Water | 2 |
-| Wood | 3 |
+#### Magic Magnitude
 
-| Range | Cost |
-|:-------------------|:-----:|
-| Personal/Self | 1 |
-| Touch | 2 |
-| Line of Sight | 5 |
-| 10ft | 4 |
-| 30ft | 5 |
-| 50ft | 6 |
-| 100ft | 10 |
-| 250ft | 15 |
-| 500ft | 20 |
-| 1000ft | 30 |
-| 2500ft | 40 |
-| 5000ft | 50 |
+For each spell a magnitude (power level) must be established.
+This will than be used to calculate or approximate the mechanical effect.
 
-| Area of Effect | Cost |
-|:-------------------|:-----:|
-| Individual/Self | 0 |
-| 1 target | 1 |
-| +1 target | +3 |
-| 5ft radius | 3 |
-| 10ft radius | 6 |
-| 30ft radius | 9 |
-| 50ft radius | 12 |
-| 100ft radius | 15 |
-| 250ft radius | 30 |
-| 500ft radius | 45 |
-| 1000ft radius | 60 |
-| 2500ft radius | 80 |
-| 5000ft radius | 100 |
-| 1 target/Rank | 6 |
-| +1 targets/Rank | +5 |
-| Exclude Self | +5 |
-| Exclude +1 target | +2 |
+The following basic rules apply:
 
+* for attack spells, the magnitude is usually equal to the OB.
+* for defensive combat spells, the magnitude is usually equal to the DB.
+* for protective spells, the magnitude is usually equal to the RR bonus.
+* for spells which can be resisted, the magnitude is usually equal to the RR penalty.
+* for spells which can be resisted, the RRs failure level is usually used for the magnitude of the effect.
 
-| Duration | Cost |
-|:-------------------|:-----:|
-| Instant/No Duration | 1 |
-| Concentration Only | 1 |
-| 2 rounds | 2 |
-| +1 round | +1 |
-| 1 minute | 5 |
-| +1 minute | +5 |
-| 10 minutes | 20 |
-| 1 hour | 30 |
-| 1 day | 40 |
-| 1 week | 50 |
-| 1 month | 60 |
-| 1 season | 70 |
-| 1 year | 80 |
-| Permanent | 100 |
-| 2 rounds/Rank | 4 |
-| +1 rounds/Rank | +2 |
-| 1 minute/Rank | 10 |
-| +1 minute/Rank | +10 |
-| 10 minutes/Rank | 40 |
-| 1 hour/Rank | 60 |
-| 1 day/Rank | 80 |
-| 1 week/Rank | 100 |
-| 1 month/Rank | 120 |
-| 1 season/Rank | 140 |
-| 1 year/Rank | 160 |
-| w/Concentration | x 1/2 |
-| Attack(non-instant) | x 2 |
+For actual building costs the magnitude is multiplied by the sum of actions and objectives
+and divided by 5 and rounded up.
 
-| Mass | Cost |
-|:-------------------|:-----:|
-| 1 lb              |   0   |
-| 10 lbs            |   2   |
-| 25 lbs            |   4   |
-| 50 lbs            |   7   |
-| 100 lbs           |  10   |
-| 1 lb/rank         |   4   |
-| 10 lbs/rank       |   6   |
-| 25 lbs/rank       |   8   |
-| 50 lbs/rank       |  15   |
-| 100 lbs/rank      |  20   |
+#### Cantrips
 
+Cantrips have the following limitations:
 
+* the final cost before adjustment for cantrip bonus cannot be more than 100.
+* duration cannot be more than 1 minute or 1 round/Rank.
+* range cannot be mor than 50ft.
+* area/targets cannot be more than 1 target or a 30ft Radius.
+* the magic has no scaling options
 
-| Attack Table Used | Cost |
-|:-------------------|:-----:|
-| Bolt/Projectile  | 0 |
-| Ball/Explosion  | 1 |
-| Elemental | 2 |
+if a spell falls within this constraints, it is considered a cantrip and
+the spell build cost is adjusted by -45. 
 
-###### Cantrips
+#### Sample Spells
 
-Cantrips are limited by the build cost of not more than 20.
-if a spell falls within this constraint, the build cost is adjusted by -10. 
-
-##### Sample Spells
+##### Basic Attack Spells
 
 **Magic Missile (Cantrip)**
 
 > Bolt, Arrow (+20OB)
 
-Damage(1), Physical(2) = 3 * (20/5) = 12
-Line of Sight(5), 1 target(1), Instant(1) = 7
-Cantrip(-10)
-= 9 / 5 = 1.8 = 2 MP
+```
+Damage(M x 3), Physical(M x 8) = (3+8) * (20/5) = 44
+Line of Sight(25), 1 target(5), Instant(3) = 33
+Cantrip(-45)
+= (77 - 45) / 25 = 32 / 25 = 1.28 = 2 MP
+```
+
+If the spell-casting roll is a success, 
+the roll plus the +20OB is used with 
+the Arrow/Bolt/Missle Attack Table.
+
+**Magic Missile (Spell)**
+
+> Bolt, Arrow (+50OB)
+
+```
+Damage(M x 3), Physical(M x 8) = (3+8) * (50/5) = 110
+Line of Sight(25), 1 target(5), Instant(3) = 33
+= 143 / 25 = 5.72 = 6 MP
+```
+
+If the spell-casting roll is a success, 
+the roll plus the +50OB is used with 
+the Arrow/Bolt/Missle Attack Table.
+
+> Alternative Attack Table Magic Missile with Puncture Criticals.
 
 *Scaling Options:*
 
 * +1MP per +5OB
 
-**Magic Missile**
+##### Alternative Attack Spells
 
-> Bolt, Arrow (+50OB)
+**Elemental Earth Strike**
 
-Damage(1), Physical(2) = 3 * (50/5) = 30
-Line of Sight(5), 1 target(1), Instant(1) = 7
-= 37 / 5 = 7.4 = 8 MP
+> Elemental Bolt, Earth (+25OB)
 
-> the missile cantrap scaled to +50 costs 2+6 = 8MP (the same) 
+```
+Damage(M x 3), Elemental Earth(M x 8) = (3+8) * (25/5) = 55
+Line of Sight(25), 1 target(5), Instant(3) = 33
+= 88 / 25 = 3.52 = 4 MP
+```
 
-**Greater Magic Missile**
-
-> Bolt, Arrow (+75OB)
-
-Damage(1), Physical(2) = 3 * (75/5) = 45
-Line of Sight(5), 1 target(1), Instant(1) = 7
-= 52 / 5 = 10.4 = 11 MP
-
-> the missile cantrap scaled to +75 costs 2+11 = 13MP (more) 
-
-> the missile spell scaled to +75 costs 8+5 = 13MP (more) 
-
-**Elemental Fire Strike**
-
-> Elemental Bolt, Fire (+25OB)
-
-Damage(1), Fire(2), Elemental(2) = 5 * (25/5) = 25
-Line of Sight(5), 1 target(1), Instant(1 Attack x 2) = 8
-= 33 / 5 = 6.6 = 7 MP
+If the spell-casting roll is a success, 
+the roll plus the +25OB is used with 
+the Magic Missile Attack Table 
+and Krush Criticals.
 
 *Scaling Options:*
 
 * +1MP per +5OB
  
-**Heal Self**
+**Elemental Fire Ball**
 
-> Heal 100% Hits or +20/r Bleed or E Crit 
+> Elemental Ball, Fire (+25OB)
 
-Heal(1), Body(3) = 4 * (100/5) = 80
-Self(1), Self(0), Instant(1) = 2
-= 82 / 5 =  16.4 = 17 MP
+```
+Damage(M x 3), Elemental Fire(M x 8) = (3+8) * (25/5) = 55
+Line of Sight(25), 10ft Radius(30), Instant(3) = 58
+= 113 / 25 = 4.xy = 5 MP
+```
 
-**Cure Light Wounds**
+If the spell-casting roll is a success, 
+the roll plus the +25OB is used with 
+the Magic Ball Attack Table 
+and Fire Criticals.
 
-> Heal 10% Hits or +2/r Bleed
+*Scaling Options:*
 
-Heal(1), Body(3) = 4 * (10/5) = 8
-Touch(2), 1 Target(1), Instant(1) = 4
-= 12 / 5 =  2.4 = 3 MP
+* +1MP per +5OB
 
-**Shield of Shadow**
+##### Basic Augment Spells
+
+##### Alternative Augment Spells
+
+##### Basic Barrier/Protection Spells
+
+**Shield of Protection**
 
 > Protection +25DB
 
-Protect(2), Physical(2) = 4 * 5 = 20
-Self(1), Self(0), 2 rounds/Rank (4) = 5
-= 25 / 5 = 5MP
+```
+Protect(6), Physical(8) = (6+8) * (25/5) = 70
+Self(5), Self(0), 1 rounds/Rank (20) = 25
+= 99 / 25 = 3.xy = 4MP
+```
+
+*Scaling Options:*
+
+* +1MP per +5DB
+
+##### Alternative Barrier/Protection Spells
+
+##### Basic Y Spells
+##### Alternative Y Spells
+Beguilement (eg. Enchantment)
+##### Basic Y Spells
+##### Alternative Y Spells
+Conjure
+##### Basic Y Spells
+##### Alternative Y Spells
+Curse / DeBuff
+##### Basic Y Spells
+##### Alternative Y Spells
+Dispel
+##### Basic Y Spells
+##### Alternative Y Spells
+Divination
+- Clairvoyance
+- Predict
+
+##### Basic Heal Spells
+
+**Cure Light Wounds**
+
+> Heal 10 Hits or 2/round Bleed or 1 round of stun
+
+```
+Heal(M x 3), Body(M x 12) = (3+12) * (10/5) = 30
+Touch(10), 1 Target(5), Instant(3) = 18
+= 48 / 25 =  1.xy = 2 MP
+```
+
+**Heal Self**
+
+> Heal 100 Hits or 20/round Bleed or 10 rounds of stun or stops auxilary critcal damage table results up to 100,
+> but does attach but not regrow severed limbs. Cannot heal a pile of dust. 
+
+```
+Heal(M x 3), Body(M x 12) = (3+12) * (100/5) = 300
+Self(5), Self(0), Instant(3) = 8
+= 308 / 25 =  12.xy = 13 MP
+```
+
+##### Alternative Heal Spells
+
+**Regenerate Body**
+
+> Regenerate a body if at least 50% is still available living or dead or severed.
+> Does not heal hits or stun nor prevent death or give life to a dead body.
+
+```
+Create(M x 12), Body(M x 12) = (12+12) * (100/5) = 480
+Touch(10), 1 Target(5), Instant(3) = 18
+= 498 / 25 = 19.xy = 20 MP
+```
+
+##### Basic Y Spells
+##### Alternative Y Spells
+Illusion / Mask / Shroud / Deception (ie. Obfuscation)
+##### Basic Y Spells
+##### Alternative Y Spells
+Move / Manipulation / Telekinesis
+##### Basic Y Spells
+##### Alternative Y Spells
+Necromancy
+##### Basic Y Spells
+##### Alternative Y Spells
+Telepathy / Mind
+- Mind Reader
+- Mind Shaper
+- Mind Breaker
+- Implant Thoughts
+##### Basic Y Spells
+##### Alternative Y Spells
+Transform / Transformation / Shapeshift (eg. Wildshape, into naturally occuring Animals)
+##### Basic Y Spells
+##### Alternative Y Spells
+Teleportation
+- Phasing
 
 
-##### Mechanics
+
+ 
+
+
+
+
+#### Mechanics
 
 * simple : standard open-ended roll with either skill or stat-only bonus ... 100+ means success
 * contest : standard open-ended roll with either skill or stat-only bonus ... contestant needs to roll against this ... also used in RR

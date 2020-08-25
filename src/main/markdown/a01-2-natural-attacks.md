@@ -2,20 +2,20 @@
 
 # Natural Attacks {.pagebreak}
 
-%!include attack-tables/short/natural-bite.md
+%!include attack-tables/medium/natural-bite.md
 
-%!include attack-tables/short/natural-claw.md
+%!include attack-tables/medium/natural-claw.md
 
-%!include attack-tables/short/natural-gore.md
+%!include attack-tables/medium/natural-gore.md
 
-%!include attack-tables/short/natural-slam-bash-ram.md
+%!include attack-tables/medium/natural-slam-bash-ram.md
 
-%!include attack-tables/short/natural-hoof-tentacle-wing.md
+%!include attack-tables/medium/natural-hoof-tentacle-wing.md
 
-%!include attack-tables/short/natural-pincers-tail.md
+%!include attack-tables/medium/natural-pincers-tail.md
 
-%!include attack-tables/short/natural-other.md
+%!include attack-tables/medium/natural-other.md
 
-%!include attack-tables/short/natural-stinger.md
+%!include attack-tables/medium/natural-stinger.md
 
-%!include attack-tables/short/natural-talon.md
+%!include attack-tables/medium/natural-talon.md

@@ -4,12 +4,37 @@
 
 %!include attack-tables/full/broadsword.md
 
-%!include attack-tables/full/backsword.md
+%!include attack-tables/medium/broadsword.md
 
-%!include attack-tables/half/broadsword.md
+%!include attack-tables/medium/backsword.md
 
-%!include attack-tables/half/backsword.md
+btw ... what is on my todo list is finish to include all weapon attack tables ... for the time being i think it makes sense only to do the "most wanted" list:
 
-%!include attack-tables/short/broadsword.md
+```
+Dagger
+Flail
+Gauntlet
+Great Weapon (2h Swords/Hafted/Blunts)
+Halberd
+Hand Weapon (1h Swords/Hafted/Blunts)
+Lance
+Main Gauche
+Morning Star
+Quarter Staff
+Rapier
+Spear
+Sabre
 
-%!include attack-tables/short/backsword.md
+Crossbow
+Javelin
+Lasso
+Longbow
+Net
+Shortbow
+Sling
+Spear
+Staff Sling
+Throwing Axe/Hammer
+Throwing Dagger/Star
+Whip
+```

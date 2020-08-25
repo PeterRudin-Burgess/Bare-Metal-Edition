@@ -115,6 +115,20 @@ for(float i=(l-x); i>40f; i-=x)
 }
 %>
     ]
+    dr-medium: [
+<%
+l = 150f;
+x = 1f;
+for(float i=(l-x); i>40f; i-=x)
+{
+    int n = (float)l;
+    int n2 = (float)i;
+    print String.format('\t\t[ %d, %d ]\n', n2, n);
+    l = n2-1;
+    x+=0.08;
+}
+%>
+    ]
     dr-full: [
 <%
 l = 150f;

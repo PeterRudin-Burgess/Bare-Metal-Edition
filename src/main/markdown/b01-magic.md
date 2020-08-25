@@ -40,7 +40,9 @@ cost and you may not put more MP into a spell than you have ranks in that spell.
 
 > NOTE: A GM may allow multiple spells to be developed at the same time.
 
-Many effects are dependent on the number of ranks known in the spell or ritual.
+> NOTE2: For certain settings th GM may allow certain realms, groups, domains, categories or schools to be developed instead of singular spells.
+
+Some effects are dependent or limited based on the number of ranks developed in the spell or ritual.
 
 Durations listed as rounds/rank will last for that many rounds for a single expenditure of MP.
 
@@ -93,6 +95,8 @@ Rituals differ from Spells in a few points.
 
 > A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
 > and would require 34 minutes to cast.
+
+> NOTE: some magics can be cast as either a spell or a ritual for established changes in magnitude,
 
 ### Resolving Magic Effects
 
