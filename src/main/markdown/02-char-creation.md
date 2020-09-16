@@ -99,7 +99,28 @@ How a character looks has no impact on game mechanics.
 You may make a character any size, shape, gender or of 
 any appearance as you see fit.
 
-## Defensive Bonus
+## Derived Stats
+
+### Defensive Bonus
 
 A character’s Defensive Bonus [DB] is their Quickness bonus times three.
 
+### Resistance Modifiers
+
+* Coordination/Reaction (Ag/Qu)
+* Willpower/Determination (Sd/Re)
+* Resilience/Toughness (St/Co)
+* Resolve/Tranquility (Pr/Em)
+* Wits/Knowledge (Me/In)
+
+> **Character Creation Example**
+>
+> TBD.
+
+| Resistances              | Bonus |
+|:-------------------------|:-----:|
+| Coordination/Reaction    | -3   |
+| Resilience/Toughness     |  +6  |
+| Willpower/Determination  | +12  |
+| Wits/Knowledge           | +25  |
+| Resolve/Tranquility      | +3   |
