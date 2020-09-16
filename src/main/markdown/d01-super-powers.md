@@ -1,6 +1,6 @@
 #Super Powers
 
-Super powers are bought using a bought of 15 development points. These can only be bought at character creation. 
+Super powers are bought using a pool of 15 development points. These can only be bought at character creation. 
 See below for developing and improving super powers.
 
 ##Physical Powers
