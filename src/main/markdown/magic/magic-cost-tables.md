@@ -112,3 +112,26 @@
 | 1 year/Rank | +450 | +36 MP |
 | Concentration required | x 1/2 ||
 | Attack(non-instant) | x 2 ||
+
+### Magic Time Offset Cost Table
+
+| Magic Time Offset | Cost | Scale |
+|:---------------|:--------:|:--------:|
+| None | +0 | +0 MP |
+| 1 minute | +25 | +2 MP |
+| 10 minutes | +50 | +4 MP |
+| 1 hour | +75 | +6 MP |
+| 1 day | +100 | +8 MP |
+| 1 week | +125 | +10 MP |
+| 1 month | +150 | +12 MP |
+| 1 season | +175 | +14 MP |
+| 1 year | +200 | +16 MP |
+| 1 minute/Rank | +50 | +4 MP |
+| 10 minutes/Rank | +100 | +8 MP |
+| 1 hour/Rank | +150 | +12 MP |
+| 1 day/Rank | +200 | +16 MP |
+| 1 week/Rank | +250 | +20 MP |
+| 1 month/Rank | +300 | +24 MP |
+| 1 season/Rank | +350 | +28 MP |
+| 1 year/Rank | +400 | +32 MP |
+

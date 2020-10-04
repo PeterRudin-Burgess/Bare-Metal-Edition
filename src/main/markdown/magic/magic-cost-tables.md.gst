@@ -50,3 +50,13 @@ local.aspects.durations.each { _row ->
 };
 %>| Concentration required | x 1/2 ||
 | Attack(non-instant) | x 2 ||
+
+### Magic Time Offset Cost Table
+
+| Magic Time Offset | Cost | Scale |
+|:---------------|:--------:|:--------:|
+<%
+local.aspects.time_offsets.each { _row ->
+    print String.format('| %s | +%d | +%d MP |\n', _row[0], (int)_row[1], (int)Math.ceil(_row[1]/12.5));
+};
+%>

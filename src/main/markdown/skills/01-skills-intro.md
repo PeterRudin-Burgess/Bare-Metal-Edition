@@ -32,8 +32,7 @@ tailing off of benefits.
 
 * The first 10 ranks in a skill give a +5 skill bonus per rank.
 * The second 10 ranks in the skill gives +2 bonus per rank.
-* The third 10 ranks in the skill gives +1 bonus per rank.
-* All ranks beyond the 30th rank give a +0.5 bonus per rank (rounded down).
+* All ranks beyond the 20th rank give a +1 bonus per rank.
 
 If you have no ranks in a skill you may still attempt it at your GM’s discretion. Some things are simply not possible 
 without some training. For example, without some basic knowledge developing a vaccine for an alien disease is simply 
@@ -71,21 +70,21 @@ introduced to reflect special training.
 
 There is a ladder of skill costs. You decide the relationship between the skill and the profession.
 
-|||
-|:---:|:-------------------------------|
-| 1/2| |
-| 1/3|  A core skill|
-| 2/2| |
-| 2/3| |
-| 2/4|   A related skill|
-| 3/4| |
-| 3/5|   The basic cost for all skills|
-| 4/6| |
-| 5/7|   A skill that is unusual for the profession|
-| 6/8| |
-| 7/10|  The skill is totally alien to the profession|
-| 9/12| |
-| 12/15| Restricted|
+| Std. | Alt. | Cost Level |
+|:----:|:----:|:-------------------------------|
+| 1/2  |  1   |                                |
+| 1/3  |  1   |  A core skill                  |
+| 2/2  |  2   |                                |
+| 2/3  |  2   |                                |
+| 2/4  |  3   | A related skill                |
+| 3/4  |  3   |                                |
+| 3/5  |  4   | The basic cost for all skills  |
+| 4/6  |  5   |                                |
+| 5/7  |  6   | A skill that is unusual for the profession|
+| 6/8  |  7   |                                |
+| 7/10 |  8   | The skill is totally alien to the profession|
+| 9/12 |  9   |                                |
+|12/15 |  10  | Restricted                     |
 
 Between each base cost (1/3, 2/4, 3/5 etc.) are unused costs. These are used for further differentiation. For example, 
 if you created a Special Forces profession and wanted to differentiate it from the regular Armsman you could cost 

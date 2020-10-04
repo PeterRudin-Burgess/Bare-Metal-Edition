@@ -95,6 +95,26 @@
             [ "1 year/Rank",            450   ]
             // "[BME] Attack(non-instant) x 2"
         ]
+        "time_offsets": [
+            [ "None",           0   ],
+            [ "1 minute",       25   ],
+            [ "10 minutes",     50   ],
+            [ "1 hour",         75   ],
+            [ "1 day",          100   ],
+            [ "1 week",         125   ],
+            [ "1 month",        150   ],
+            [ "1 season",       175   ],
+            [ "1 year",         200   ],
+
+            [ "1 minute/Rank",   50   ],
+            [ "10 minutes/Rank", 100   ],
+            [ "1 hour/Rank",     150   ],
+            [ "1 day/Rank",      200   ],
+            [ "1 week/Rank",     250   ],
+            [ "1 month/Rank",    300   ],
+            [ "1 season/Rank",   350   ],
+            [ "1 year/Rank",     400   ],
+        ]
     }
 
 }

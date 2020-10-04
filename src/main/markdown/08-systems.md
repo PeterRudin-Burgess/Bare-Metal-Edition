@@ -86,6 +86,15 @@ and all results at or below -100 give an ‘E’ critical.
 |140-159|	120%|
 |160-179|	130%|
 
+## Resistance Tests
+
+To make a Resistance Test the subject rolls d100 and adds the Resistance Modifier
+based on the nature of the Resistance. 
+If their Resistance Test result is greater 
+than the threshold then they have resisted the effect.
+If their Resistance Test result is lower 
+then the difference in tens is taken as the Effect Level. 
+
 ## Hazards
 
 ### Falling Damage
@@ -111,6 +120,37 @@ All results over 100 are treated as 100.
 > The GM rolls 44 +10 for the falling distance.
 > The result is 54 “Weak blow to victim’s head +10 hits, stunned for 1 rnd”
 > Jesse takes a blow to the head and is stunned and hurt.
+
+### Poisons and Diseases
+
+| RR Effect Level | Severity |
+|:-----:|:----------------|
+| 1-4   | Mild |
+| 5-7   | Moderate |
+| 8-9   | Serious |
+| 10+   | Extreme |
+
+#### Types of Toxins
+
+* Circulatory -- feet, legs, hands, arms, abdomen, chest, neck, head. 
+* Conversion -- kidneys, bowels, intestines, stomach, liver, lungs, heart, throat, brain, legs, arms. 
+* Muscle -- hands, arms, shoulders, feet, legs, hips, jaw, nose, ears, eyes, bowels, heart. 
+* Nerve -- extremities, eyes, mouth, brain. 
+* Reduction -- kidneys, bowels, intestines, stomach, liver, lungs, heart, throat, brain, legs, arms. 
+* Respiratory -- lungs, throat, brain. 
+
+### Types of Diseases
+
+* Bronchitis
+* Bacterial Cholera
+* Bacterial Infection
+* Bacterial Pneumonia
+* Bubonic Plague
+* Influenza
+* Mononucleosis
+* Viral Pneumonia
+ 
+*TODO*
 
 ## What Skill When?
 

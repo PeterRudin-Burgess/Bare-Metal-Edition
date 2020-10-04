@@ -178,8 +178,8 @@ Touch(10), 1 Target(5), Instant(3) = 18
 
 **Heal Self**
 
-> Heal 100 Hits or 20/round Bleed or 10 rounds of stun or stops auxilary critcal damage table results up to 100,
-> but does attach but not regrow severed limbs. Cannot heal a pile of dust. 
+> Heal 100 Hits or 20/round Bleed or 10 rounds of stun or stops auxiliary critical damage table (death) results up to 100,
+> but does attach nor regrow severed limbs. Cannot heal a pile of dust. 
 
 ```
 Heal(M x 3), Body(M x 12) = (3+12) * (100/5) = 300
@@ -191,7 +191,7 @@ Self(5), Self(0), Instant(3) = 8
 
 **Regenerate Body**
 
-> Regenerate a body if at least 50% is still available living or dead or severed.
+> Regenerate a body if at least 50% is still available either living or dead or severed.
 > Does not heal hits or stun nor prevent death or give life to a dead body.
 
 ```
@@ -244,6 +244,7 @@ Teleportation
 
 ## TODO
 
+```
 [2:23 PM] Terefang: hmm ....
 [2:25 PM] Terefang: i am a little divided between a fear mechanic and something else ... because the reasoning falls apart for mindless undead
 [2:29 PM] Terefang: maybe i should recount of what i have come up so far ...
@@ -280,3 +281,4 @@ Teleportation
 [3:25 PM] Terefang: this could be visualized by seeing the undead be torn apart by several fires (critcals) over a number of rounds :wink:
 [3:27 PM] Terefang: and it is unlikely that you dont kill with 10 critical rolls ... which would make it equivalent to the destruct on 100+ RR failed.
 [3:27 PM] Terefang: @Peter R what do you think ?
+```
