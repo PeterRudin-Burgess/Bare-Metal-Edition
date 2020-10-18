@@ -49,7 +49,7 @@
 * Ambush
 * Athletics
 * Etiquette
-* First Aid
+* Healing
 * Larceny
 * Nature
 * Perception
