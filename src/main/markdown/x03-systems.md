@@ -25,6 +25,8 @@ and may try again after some time of reorientation.
 
 | Type           | Modifier | Threshold | Partial Success |
 |:---------------|:--------:|:---------:|:---------:|
+| Casual         |    +70   |     30+   |     25+   |
+| Simple         |    +50   |     50+   |     40+   |
 | Routine        |    +30   |     70+   |     50+   |
 | Easy           |    +20   |     80+   |     60+   |
 | Light          |    +10   |     90+   |     65+   |
@@ -35,15 +37,21 @@ and may try again after some time of reorientation.
 | Sheer Folly    |    -50   |    150+   |    115+   |
 | Absurd         |    -70   |    170+   |    130+   |
 | Legendary      |   -100   |    200+   |    150+   |
-| Mythic         |   -125   |    225+   |    170+   |
+| Mythic         |   -150   |    250+   |    190+   |
 
 ## Take 50
 
-If the PCs are not in a hurry -- instead of rolling the dice -- they can take 50
-and add all the usualy modifiers for a final result.
+When the PCs are not in immediate danger or distracted -- instead of rolling the dice -- they can take 50
+and add all the usual modifiers for a final result.
 
 ### Passive Checks (Option)
 
 Whenever the PCs are not actively using a skill, 
 they are assumed to "Take 50"
 and the GM can quickly rule on a result.
+
+## Take 100
+
+When the PCs have plenty of time, and qualify for a "Take 50", they can take 100.
+That means they are trying until they get it right, and it takes around 10 times 
+the usual time to succeed.

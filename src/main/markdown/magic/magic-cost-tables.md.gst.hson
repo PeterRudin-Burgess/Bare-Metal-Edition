@@ -38,7 +38,9 @@
             [ "Elements, Metal",        12   ],
             [ "Elements, Plant",        12   ],
             [ "Elements, Wood",         12   ],
-            [ "Elements, Other",        16   ]
+            [ "Elements, Other",        16   ],
+
+            [ "Demonic, Entity",        20   ]
         ]
         ranges: [
             [ "Personal/Self",  5   ],

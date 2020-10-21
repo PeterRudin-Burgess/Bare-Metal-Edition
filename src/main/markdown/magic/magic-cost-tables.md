@@ -44,6 +44,7 @@
 | Elements, Plant | M x 12 |
 | Elements, Wood | M x 12 |
 | Elements, Other | M x 16 |
+| Demonic, Entity | M x 20 |
 
 
 ### Magic Ranges Cost Table
