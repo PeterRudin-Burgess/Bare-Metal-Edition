@@ -52,6 +52,6 @@ and the GM can quickly rule on a result.
 
 ## Take 100
 
-When the PCs have plenty of time, and qualify for a "Take 50", they can take 100.
+When the PCs have plenty of time, and qualify for a "Take 50", they can opt to take 100.
 That means they are trying until they get it right, and it takes around 10 times 
 the usual time to succeed.
