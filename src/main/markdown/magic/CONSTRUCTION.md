@@ -18,8 +18,8 @@ The following basic rules apply:
 For actual building costs the magnitude is multiplied by the sum of actions and objectives
 and divided by 5 and rounded up.
 
-* 1 LE is a Magnitude of 5.
-* 1 pound is a Magnitude of 1. 
+* 1 LE is a Magnitude of 5 (1). TODO 1+(LE x2)
+* 1 pound is a Magnitude of 1 (0.2). 
 
 #### Cantrips
 
@@ -33,7 +33,7 @@ Cantrips have the following limitations:
 * the magic has no scaling options
 
 if a spell falls within this constraints, it is considered a cantrip and
-the spell build cost is adjusted by -45. 
+the spell build cost is adjusted by up to -45 for a minimum of 1MP. 
 
 #### Sample Spells
 
