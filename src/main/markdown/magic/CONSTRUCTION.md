@@ -26,6 +26,7 @@ and divided by 5 and rounded up.
 Cantrips have the following limitations:
 
 * the final cost before adjustment for cantrip bonus cannot be more than 100.
+* the magnitude cannot be greater than 25 (5).
 * duration cannot be more than 1 minute or 1 round/Rank.
 * range cannot be mor than 50ft.
 * area/targets cannot be more than 1 target or a 30ft Radius.

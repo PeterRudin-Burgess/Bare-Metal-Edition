@@ -63,5 +63,5 @@ they do not need to build up as much muscle mass.
 
 **Sluggishness** -- -5DP/Tier; -5Qu Bonus/Tier
 
-**Slow Healing/Recovery** -- -1DP/Tier: add +5% to healing and Recovery times per Tier.
+**Slow Healing/Recovery** -- -1DP/Tier: add +5% to Healing and Recovery times per Tier.
 
