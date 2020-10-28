@@ -82,11 +82,11 @@ when in reality it is an attempt to control or harm.
 Rituals differ from Spells in a few points.
 
 * have a fixed MP cost with no scaling modifiers.
-* have a casting time of 5 minutes per MP expended
+* have a casting time of 5 minutes per MP expended, plus 1 hour per full 10MP expended
 * the minimal number of ranks needed to cast a ritual is half the MP cost (rounded up).
 
 > A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
-> and would require 85 minutes to cast.
+> and would require 145 minutes to cast.
 
 > NOTE: some magics can be cast as either a spell or a ritual for established changes in magnitude,
 
