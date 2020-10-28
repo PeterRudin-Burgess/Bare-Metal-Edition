@@ -289,6 +289,20 @@ Teleportation
 
 ## TODO SPELLS
 
+### NECROMANCY
+
+**Animate Dead Body (Cantrip)**
+
+> This cantrip animates a dead body under the casters control as long as she concentrates.
+> The animated will follow simple orders and act as a minion with LE1
+
+```
+Control/Dominate (M x6); Living, Form (M x16) = (6 +16) x 3
+Touch (+10); 1 Target (+5); Concentration Only (+5) 
+Cantrip (-45)
+63 +10 +5 +5 -45 = 83 -45 = 38 /25 = 2MP
+```
+
 ### SUMMONING
 
 **Summon Tasked Animal**

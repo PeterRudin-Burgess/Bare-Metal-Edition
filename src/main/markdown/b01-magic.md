@@ -65,16 +65,8 @@ up to 3AP. At the end of the action the CR is made.
 
 If the final result is greater than zero the effect is successfully cast and takes effect.
 
-A caster declares the spell to be cast and the action takes 
-up to 3AP. At the end of the action the CR is made. 
-
-> Note: The roll is open ended both up and down.
-
-If the final result is greater than zero the effect is successfully cast and takes effect.
-
 If the spell can be resisted and the target is unwilling they may resist. 
-To resist they make a Resistance Test rolled d100 and adding the sum of 
-two of their stats based on the nature of the Resistance.
+To resist they make a Resistance Test rolled d100 and adding their Resistance.
 If their Resistance Test result if greater than the casting roll then they 
 have resisted the effect. 
 
@@ -89,12 +81,12 @@ when in reality it is an attempt to control or harm.
 
 Rituals differ from Spells in a few points.
 
-* have a fixed MP cost
-* have a casting time of two minutes per MP expended
+* have a fixed MP cost with no scaling modifiers.
+* have a casting time of 5 minutes per MP expended
 * the minimal number of ranks needed to cast a ritual is half the MP cost (rounded up).
 
 > A ritual with a cost of 17MP can be cast by having 9 ranks in the skill 
-> and would require 34 minutes to cast.
+> and would require 85 minutes to cast.
 
 > NOTE: some magics can be cast as either a spell or a ritual for established changes in magnitude,
 
