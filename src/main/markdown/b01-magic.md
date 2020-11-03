@@ -6,6 +6,30 @@ The basic magic system of BME is based on the following principles:
 * has developed (or defaults) the Mana Point Development Skill.
 * has developed at least the minimum skill-ranks in the spell intended to cast.
 
+### Areas of Effect
+
+#### Arcane
+
+* Abjuration
+* Beguilemant
+* Conjuration
+* Divination
+* Evocation
+* Illusion
+* Necromancy
+* Transmutation
+
+#### Divine
+
+* Beneficium (Blessings)
+* Maleficium (Curses)
+* Officium (Rites)
+* Communium (Asking)
+* Supplicium (Manifest)
+* Exorcism (Banishing)
+* Convocarium (Calling)
+* Vigilium (Warding)
+
 ### The Magic Gift Talent
 
 The magic gift talent costs 5DP per tier and can only be bought at character creation.

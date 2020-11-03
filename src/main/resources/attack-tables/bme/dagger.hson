@@ -1,0 +1,54 @@
+{
+	title: Dagger
+	data: [
+	// NA
+	{   type: trust_NA
+	start: 87
+	end: 150
+	min: 1
+	max: 22
+	A: 79
+	B: 111
+	C: 123
+	D: 135
+	E: 147
+}
+	// LT
+	{   type: trust_LT
+	start: 75
+	end: 150
+	min: 1
+	max: 17
+	A: 111
+	B: 129
+	C: 139
+	D: 153
+	E: 163
+}
+	// MD
+	{   type: trust_MD
+	start: 70
+	end: 150
+	min: 1
+	max: 8
+	A: 131
+	B: 143
+	C: 155
+	D: 164
+	E: 173
+}
+	// HY
+	{   type: trust_HY
+	start: 47
+	end: 150
+	min: 1
+	max: 5
+	A: 139
+	B: 151
+	C: 163
+	D: 174
+	E: 185
+}
+
+    ]
+}

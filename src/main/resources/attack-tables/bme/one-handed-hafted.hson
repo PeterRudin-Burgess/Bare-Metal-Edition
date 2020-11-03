@@ -1,0 +1,49 @@
+{
+    title: One Handed Hafted
+    data: [
+        {   type: hafted
+            start: 77
+            end: 150
+            min: 1
+            max: 27
+            A:	77
+            B:	92
+            C:	97
+            D:	110
+            E:	127
+        }
+        {   type: hafted
+            start: 65
+            end: 150
+            min: 1
+            max: 23
+            A:	77
+            B:	90
+            C:	110
+            D:	125
+            E:	140
+        }
+        {   type: hafted
+            start: 55
+            end: 150
+            min: 1
+            max: 21
+            A:	105
+            B:	117
+            C:	127
+            D:	137
+            E:	145
+        }
+        {   type: hafted
+            start: 45
+            end: 150
+            min: 1
+            max: 15
+            A:	107
+            B:	117
+            C:	130
+            D:	137
+            E:	145
+        }
+    ]
+}

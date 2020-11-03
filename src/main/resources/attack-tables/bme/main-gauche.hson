@@ -1,0 +1,54 @@
+{
+	title: Main Gauche
+	data: [
+	// NA
+	{   type: slash_NA
+	start: 77
+	end: 150
+	min: 1
+	max: 25
+	A: 69
+	B: 101
+	C: 113
+	D: 125
+	E: 137
+}
+	// LT
+	{   type: slash_LT
+	start: 65
+	end: 150
+	min: 1
+	max: 19
+	A: 101
+	B: 119
+	C: 129
+	D: 143
+	E: 153
+}
+	// MD
+	{   type: trust_MD
+	start: 60
+	end: 150
+	min: 1
+	max: 11
+	A: 121
+	B: 133
+	C: 145
+	D: 154
+	E: 163
+}
+	// HY
+	{   type: trust_HY
+	start: 37
+	end: 150
+	min: 1
+	max: 7
+	A: 129
+	B: 141
+	C: 153
+	D: 164
+	E: 175
+}
+
+    ]
+}

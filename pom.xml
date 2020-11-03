@@ -162,6 +162,23 @@
                 </executions>
             </plugin>
             <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <mkdir dir="${project.build.directory}/out"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>com.github.terefang.starmark</groupId>
                 <artifactId>starmark-maven-plugin</artifactId>
                 <version>2020.8.19.3</version>
@@ -184,7 +201,7 @@
                             <documentDirectory>src/main/markdown</documentDirectory>
                             <documentIncludes>*.md</documentIncludes>
                             <documentExcludes></documentExcludes>
-                            <outputDocument>${project.basedir}/out/bme-%04d-%s.html</outputDocument>
+                            <outputDocument>${project.build.directory}/out/bme-%04d-%s.html</outputDocument>
                             <coverFile>work/bme-cover.png</coverFile>
                         </configuration>
                     </execution>
@@ -202,11 +219,11 @@
                         </goals>
                         <configuration>
                             <executable>${project.basedir}/xbin/mkpdf.sh</executable>
-                            <workingDirectory>${project.basedir}</workingDirectory>
+                            <workingDirectory>${project.build.directory}</workingDirectory>
                             <arguments>
-                                <argument>${project.basedir}/out</argument>
+                                <argument>${project.build.directory}/out</argument>
                                 <argument>*.html</argument>
-                                <argument>${project.basedir}/out/bme-main.pdf</argument>
+                                <argument>${project.build.directory}/out/bme-main.pdf</argument>
                             </arguments>
                         </configuration>
                     </execution>
