@@ -1,0 +1,54 @@
+{
+	title: Whip
+	data: [
+	// NA
+	{   type: trust_NA
+	start: 75
+	end: 150
+	min: 3
+	max: 21
+	A: 83
+	B: 99
+	C: 111
+	D: 123
+	E: 135
+}
+	// LT
+	{   type: trust_LT
+	start: 65
+	end: 150
+	min: 1
+	max: 17
+	A: 91
+	B: 107
+	C: 119
+	D: 131
+	E: 143
+}
+	// MD
+	{   type: trust_MD
+	start: 51
+	end: 150
+	min: 1
+	max: 7
+	A: 119
+	B: 131
+	C: 143
+	D: 155
+	E: 167
+}
+	// HY
+	{   type: trust_HY
+	start: 45
+	end: 150
+	min: 1
+	max: 4
+	A: 127
+	B: 139
+	C: 151
+	D: 163
+	E: 175
+}
+
+    ]
+}

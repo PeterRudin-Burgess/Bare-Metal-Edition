@@ -12,6 +12,14 @@
 
 %!include attack-tables/medium/bme/main-gauche.md
 
+%!include attack-tables/medium/bme/javelin.md
+
+%!include attack-tables/medium/bme/spear.md
+
+%!include attack-tables/medium/bme/lance-mounted.md
+
+%!include attack-tables/medium/bme/whip.md
+
 btw ... what is on my todo list is finish to include all weapon attack tables ... for the time being i think it makes sense only to do the "most wanted" list:
 
 ```
@@ -21,24 +29,23 @@ btw ... what is on my todo list is finish to include all weapon attack tables ..
 [_] Great Weapon (2h Swords/Hafted/Blunts)
 [_] Halberd
 [X] Hand Weapon (1h Swords/Hafted/Blunts)
-[_] Lance
+[X] Lance (mounted)
 [X] Main Gauche
 [_] Morning Star
 [_] Quarter Staff
 [_] Rapier
-[_] Spear
+[X] Spear
 [_] Sabre
 
 [_] Crossbow
-[_] Javelin
+[X] Javelin
 [_] Lasso
 [_] Longbow
 [_] Net
 [_] Shortbow
 [_] Sling
-[_] Spear
 [_] Staff Sling
 [_] Throwing Axe/Hammer
 [_] Throwing Dagger/Star
-[_] Whip
+[X] Whip
 ```

@@ -1,0 +1,54 @@
+{
+	title: Spear
+	data: [
+	// NA
+	{   type: trust_NA
+	start: 99
+	end: 150
+	min: 3
+	max: 29
+	A: 111
+	B: 127
+	C: 139
+	D: 151
+	E: 163
+}
+	// LT
+	{   type: trust_LT
+	start: 95
+	end: 150
+	min: 1
+	max: 22
+	A: 123
+	B: 135
+	C: 147
+	D: 159
+	E: 171
+}
+	// MD
+	{   type: trust_MD
+	start: 77
+	end: 150
+	min: 1
+	max: 3
+	A: 135
+	B: 147
+	C: 159
+	D: 171
+	E: 183
+}
+	// HY
+	{   type: trust_HY
+	start: 67
+	end: 150
+	min: 1
+	max: 9
+	A: 143
+	B: 155
+	C: 157
+	D: 179
+	E: 191
+}
+
+    ]
+}

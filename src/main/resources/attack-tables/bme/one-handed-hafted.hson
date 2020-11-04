@@ -5,7 +5,7 @@
             start: 77
             end: 150
             min: 1
-            max: 27
+            max: 49
             A:	77
             B:	92
             C:	97
@@ -16,7 +16,7 @@
             start: 65
             end: 150
             min: 1
-            max: 23
+            max: 35
             A:	77
             B:	90
             C:	110
@@ -27,7 +27,7 @@
             start: 55
             end: 150
             min: 1
-            max: 21
+            max: 27
             A:	105
             B:	117
             C:	127

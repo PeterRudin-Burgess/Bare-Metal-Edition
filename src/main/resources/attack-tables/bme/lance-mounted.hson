@@ -1,0 +1,54 @@
+{
+	title: "Lance, Mounted"
+	data: [
+	// NA
+	{   type: trust_NA
+	start: 59
+	end: 150
+	min: 3
+	max: 50
+	A: 71
+	B: 87
+	C: 99
+	D: 111
+	E: 123
+}
+	// LT
+	{   type: trust_LT
+	start: 59
+	end: 150
+	min: 1
+	max: 44
+	A: 79
+	B: 91
+	C: 103
+	D: 115
+	E: 127
+}
+	// MD
+	{   type: trust_MD
+	start: 27
+	end: 150
+	min: 1
+	max: 32
+	A: 95
+	B: 107
+	C: 119
+	D: 131
+	E: 143
+}
+	// HY
+	{   type: trust_HY
+	start: 27
+	end: 150
+	min: 1
+	max: 27
+	A: 103
+	B: 115
+	C: 127
+	D: 139
+	E: 151
+}
+
+    ]
+}

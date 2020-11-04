@@ -1,0 +1,54 @@
+{
+	title: Javelin
+	data: [
+	// NA
+	{   type: puncture
+	start: 109
+	end: 150
+	min: 3
+	max: 29
+	A: 121
+	B: 137
+	C: 149
+	D: 161
+	E: 173
+}
+	// LT
+	{   type: puncture
+	start: 105
+	end: 150
+	min: 1
+	max: 22
+	A: 133
+	B: 145
+	C: 157
+	D: 169
+	E: 181
+}
+	// MD
+	{   type: puncture
+	start: 87
+	end: 150
+	min: 1
+	max: 3
+	A: 145
+	B: 157
+	C: 169
+	D: 181
+	E: 193
+}
+	// HY
+	{   type: puncture
+	start: 77
+	end: 150
+	min: 1
+	max: 9
+	A: 153
+	B: 165
+	C: 177
+	D: 189
+	E: 201
+}
+
+    ]
+}
