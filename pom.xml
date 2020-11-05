@@ -223,7 +223,7 @@
                             <arguments>
                                 <argument>${project.build.directory}/out</argument>
                                 <argument>*.html</argument>
-                                <argument>${project.build.directory}/out/bme-main.pdf</argument>
+                                <argument>${project.basedir}/dist/bme-main.pdf</argument>
                             </arguments>
                         </configuration>
                     </execution>

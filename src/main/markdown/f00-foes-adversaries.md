@@ -1,3 +1,24 @@
+## Categories
+
+* Aberration
+* Animal
+* Beast
+* Celestial
+* Construct
+* Dragon
+* Elemental
+* Fey
+* Fiend
+* Giant
+* Humanoid
+* Magical Beast
+* Monstrosity
+* Ooze
+* Outsider
+* Plant
+* Shapechanger
+* Undead
+
 TODO --- right categories !!!
 
 ## Elementals/Outsiders
