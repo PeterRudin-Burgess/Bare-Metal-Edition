@@ -1,3 +1,5 @@
+TODO --- right categories !!!
+
 ## Elementals/Outsiders
 
 Angel 
@@ -37,7 +39,6 @@ Dragon
 Drake 
 Lizardfolk
 Hydra
-Troglodyte
 
 ## Giants
 
@@ -45,7 +46,7 @@ Ettin
 Giant
 Ogre 
 
-## Species
+## Species/Humanoids
 
 Cyclops 
 Doppelganger 
@@ -61,6 +62,7 @@ Kobold
 Minotaur 
 Orc 
 Rakshasa 
+Troglodyte
 Troll 
 
 ## Undead
