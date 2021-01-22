@@ -316,4 +316,3 @@ Latent Psionic 	1/Tier
 | Trickery              |   1   |   5   |   +14 |       |       |
 | Vocation: Diplomat    |   2   |   10  |       |       |       |
 | Pistol                |   2   |   10  |   +8	|       |       |
-

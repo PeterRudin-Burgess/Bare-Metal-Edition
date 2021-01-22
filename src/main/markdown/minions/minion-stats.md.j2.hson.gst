@@ -131,45 +131,45 @@ def render_row(n)
     print rank_bonus_bme(n * 0.03125);
     print ']\n';
 
-    print "rmc: [ ";
-    print rank_bonus_rmc(4 + (n * 3));
-    print ', ';
-    print rank_bonus_rmc(3 + (n * 2));
-    print ', ';
-    print rank_bonus_rmc(2 + (n * 1.5));
-    print ', ';
-    print rank_bonus_rmc(1 + n);
-    print ', ';
-    print rank_bonus_rmc(n * 0.5);
-    print ', ';
-    print rank_bonus_rmc(n * 0.25);
-    print ', ';
-    print rank_bonus_rmc(n * 0.125);
-    print ', ';
-    print rank_bonus_rmc(n * 0.0625);
-    print ', ';
-    print rank_bonus_rmc(n * 0.03125);
-    print ']\n';
-
-    print "rmss: [ ";
-    print rank_bonus_rmss(4 + (n * 3));
-    print ', ';
-    print rank_bonus_rmss(3 + (n * 2));
-    print ', ';
-    print rank_bonus_rmss(2 + (n * 1.5));
-    print ', ';
-    print rank_bonus_rmss(1 + n);
-    print ', ';
-    print rank_bonus_rmss(n * 0.5);
-    print ', ';
-    print rank_bonus_rmss(n * 0.25);
-    print ', ';
-    print rank_bonus_rmss(n * 0.125);
-    print ', ';
-    print rank_bonus_rmss(n * 0.0625);
-    print ', ';
-    print rank_bonus_rmss(n * 0.03125);
-    print ']\n';
+  //  print "rmc: [ ";
+  //  print rank_bonus_rmc(4 + (n * 3));
+  //  print ', ';
+  //  print rank_bonus_rmc(3 + (n * 2));
+  //  print ', ';
+  //  print rank_bonus_rmc(2 + (n * 1.5));
+  //  print ', ';
+  //  print rank_bonus_rmc(1 + n);
+  //  print ', ';
+  //  print rank_bonus_rmc(n * 0.5);
+  //  print ', ';
+  //  print rank_bonus_rmc(n * 0.25);
+  //  print ', ';
+  //  print rank_bonus_rmc(n * 0.125);
+  //  print ', ';
+  //  print rank_bonus_rmc(n * 0.0625);
+  //  print ', ';
+  //  print rank_bonus_rmc(n * 0.03125);
+  //  print ']\n';
+  //
+  //  print "rmss: [ ";
+  //  print rank_bonus_rmss(4 + (n * 3));
+  //  print ', ';
+  //  print rank_bonus_rmss(3 + (n * 2));
+  //  print ', ';
+  //  print rank_bonus_rmss(2 + (n * 1.5));
+  //  print ', ';
+  //  print rank_bonus_rmss(1 + n);
+  //  print ', ';
+  //  print rank_bonus_rmss(n * 0.5);
+  //  print ', ';
+  //  print rank_bonus_rmss(n * 0.25);
+  //  print ', ';
+  //  print rank_bonus_rmss(n * 0.125);
+  //  print ', ';
+  //  print rank_bonus_rmss(n * 0.0625);
+  //  print ', ';
+  //  print rank_bonus_rmss(n * 0.03125);
+  //  print ']\n';
 
     print ' } \n';
     print ' ] ';
@@ -182,17 +182,19 @@ for(n in 0 .. 500){
     render_row(n);
     print '\n';
 }
+
+// statname: [ "BME", "RMC", "RMSS", "RMU" ]
 %>
     ]
-    statname: [ "RMC", "RMSS", "RMU", "BME" ]
+    statname: [ "BME" ]
     statmod: [
 <%
 for(_stat in 0 .. 200){
     print String.format('[ %d', _stat);
-        print String.format(', %d', _rmc_stat_mod((int)_stat));
-        print String.format(', %d', _rmss_stat_mod((int)_stat));
-        print String.format(', %d', _rmu_stat_mod((int)_stat));
         print String.format(', %d', _bme_stat_mod((int)_stat));
+    //    print String.format(', %d', _rmc_stat_mod((int)_stat));
+    //    print String.format(', %d', _rmss_stat_mod((int)_stat));
+    //    print String.format(', %d', _rmu_stat_mod((int)_stat));
     print ' ]\n';
 }
 %>
@@ -207,10 +209,10 @@ for(n in 0 .. 500){
         def _stat = calc_base_stat(_s, n)+_m;
         print String.format(', %d', (int)_stat);
         print ', [ ';
-        print String.format(' %d', _rmc_stat_mod((int)_stat));
-        print String.format(', %d', _rmss_stat_mod((int)_stat));
-        print String.format(', %d', _rmu_stat_mod((int)_stat));
-        print String.format(', %d', _bme_stat_mod((int)_stat));
+        print String.format(' %d', _bme_stat_mod((int)_stat));
+        // print String.format(', %d', _rmc_stat_mod((int)_stat));
+        // print String.format(', %d', _rmss_stat_mod((int)_stat));
+        // print String.format(', %d', _rmu_stat_mod((int)_stat));
         print ' ]';
     }
 

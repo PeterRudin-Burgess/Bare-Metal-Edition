@@ -18,9 +18,9 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.github.terefang.template</groupId>
                 <artifactId>template-maven-plugin</artifactId>
-                <groupId>com.github.terefang</groupId>
-                <version>2020.5.14</version>
+                <version>2020.12.6</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.commons</groupId>
@@ -159,6 +159,22 @@
                             <additionalVariables>roll=dr-medium</additionalVariables>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>stellar-gsimple-templation</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>gsimple-template</goal>
+                        </goals>
+                        <configuration>
+                            <!--additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
+                            <additionalContextRoot>attack</additionalContextRoot-->
+                            <resourcesDirectory>${project.basedir}/src/main/stellar</resourcesDirectory>
+                            <includes>**/*.json</includes>
+                            <resourcesOutput>${project.basedir}/src/main/stellar</resourcesOutput>
+                            <templateFile>${project.basedir}/src/main/templates/stellar.gst</templateFile>
+                            <destinationExtension>.txt</destinationExtension>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -181,7 +197,7 @@
             <plugin>
                 <groupId>com.github.terefang.starmark</groupId>
                 <artifactId>starmark-maven-plugin</artifactId>
-                <version>2020.8.19.3</version>
+                <version>2020.12.3</version>
                 <executions>
                     <execution>
                         <id>make-html</id>
@@ -198,10 +214,11 @@
                                 <!--style>css/reset.css</style-->
                                 <style>css/bme-base.scss</style>
                             </styles>
+                            <markupType>flexmark</markupType>
                             <documentDirectory>src/main/markdown</documentDirectory>
                             <documentIncludes>*.md</documentIncludes>
                             <documentExcludes></documentExcludes>
-                            <outputDocument>${project.build.directory}/out/bme-%04d-%s.html</outputDocument>
+                            <outputDocument>${project.build.directory}/out/{2}/bme-{0,number,00000}-{3}.html</outputDocument>
                             <coverFile>work/bme-cover.png</coverFile>
                         </configuration>
                     </execution>
