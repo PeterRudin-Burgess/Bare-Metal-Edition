@@ -503,9 +503,9 @@ for(n in 0 .. 100){
             HTM: 0.8
             HTI: 4
             OBI: 2
-            OBM: 0.75
+            OBM: 0.9
             OB2I: 3
-            OB2M: 0.8
+            OB2M: 0.9
             OB3I: 4
             OB3M: 0.9
             OB4I: 5

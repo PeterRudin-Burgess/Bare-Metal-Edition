@@ -1,0 +1,54 @@
+{
+	title: Poison
+	data: [
+	// NA
+	{   type: poison
+	start: 50
+	end: 150
+	min: 1
+	max: 55
+	A: 70
+	B: 90
+	C: 100
+	D: 120
+	E: 135
+}
+	// LT
+	{   type: poison
+	start: 77
+	end: 150
+	min: 1
+	max: 45
+	A: 90
+	B: 100
+	C: 120
+	D: 135
+	E: 140
+}
+	// MD
+	{   type: poison
+	start: 95
+	end: 150
+	min: 1
+	max: 35
+	A: 100
+	B: 120
+	C: 135
+	D: 140
+	E: 149
+}
+	// HY
+	{   type: poison
+	start: 100
+	end: 150
+	min: 1
+	max: 25
+	A: 120
+	B: 135
+	C: 149
+	D: 152
+	E: 155
+}
+
+    ]
+}

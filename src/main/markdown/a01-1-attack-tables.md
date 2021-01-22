@@ -20,6 +20,8 @@
 
 %!include attack-tables/medium/bme/whip.md
 
+%!include attack-tables/medium/bme/poison.md
+
 btw ... what is on my todo list is finish to include all weapon attack tables ... for the time being i think it makes sense only to do the "most wanted" list:
 
 ```
