@@ -1,0 +1,54 @@
+{ // AT1-10: 1,4,7,10
+	title: Gauntlet
+	data: [
+	// NA
+	{   type: blunt
+	start: 59
+	end: 150
+	min: 1
+	max: 17
+	A: 106
+	B: 149
+	C: 182
+	D: 214
+	E: 247
+}
+	// LT
+	{   type: blunt
+	start: 59
+	end: 150
+	min: 1
+	max: 11
+	A: 139
+	B: 171
+	C: 203
+	D: 236
+	E: 268
+}
+	// MD
+	{   type: blunt
+	start: 50
+	end: 150
+	min: 1
+	max: 7
+	A: 171
+	B: 203
+	C: 236
+	D: 268
+	E: 301
+}
+	// HY
+	{   type: blunt
+	start: 45
+	end: 150
+	min: 1
+	max: 5
+	A: 214
+	B: 247
+	C: 280
+	D: 313
+	E: 346
+}
+
+    ]
+}

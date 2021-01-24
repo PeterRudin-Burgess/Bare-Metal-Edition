@@ -3,7 +3,7 @@
 
     <artifactId>Bare-Metal-Edition</artifactId>
     <groupId>com.github.PeterRudin-Burgess</groupId>
-    <version>2020.5.0-SNAPSHOT</version>
+    <version>2021.1.0-SNAPSHOT</version>
     <name>Bare Metal Edition RPG</name>
 
     <packaging>pom</packaging>
@@ -20,7 +20,7 @@
             <plugin>
                 <groupId>com.github.terefang.template</groupId>
                 <artifactId>template-maven-plugin</artifactId>
-                <version>2020.12.6</version>
+                <version>2021.1.2</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.commons</groupId>

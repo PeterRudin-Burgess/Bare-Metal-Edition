@@ -1,53 +1,53 @@
-{
+{ // AT1-10: 1,4,7,10
 	title: Whip
 	data: [
 	// NA
-	{   type: trust_NA
+	{   type: blunt
 	start: 75
 	end: 150
-	min: 3
+	min: 1
 	max: 21
-	A: 83
-	B: 99
-	C: 111
-	D: 123
-	E: 135
+	A: 81
+	B: 111
+	C: 126
+	D: 141
+	E: 156
 }
 	// LT
-	{   type: trust_LT
-	start: 65
+	{   type: blunt
+	start: 63
 	end: 150
 	min: 1
-	max: 17
-	A: 91
-	B: 107
-	C: 119
-	D: 131
-	E: 143
+	max: 15
+	A: 111
+	B: 126
+	C: 141
+	D: 156
+	E: 171
 }
 	// MD
-	{   type: trust_MD
-	start: 51
+	{   type: blunt
+	start: 55
 	end: 150
 	min: 1
-	max: 7
-	A: 119
-	B: 131
-	C: 143
-	D: 155
-	E: 167
+	max: 9
+	A: 131
+	B: 146
+	C: 161
+	D: 176
+	E: 191
 }
 	// HY
-	{   type: trust_HY
-	start: 45
+	{   type: blunt
+	start: 40
 	end: 150
 	min: 1
 	max: 4
-	A: 127
-	B: 139
-	C: 151
-	D: 163
-	E: 175
+	A: 141
+	B: 156
+	C: 171
+	D: 186
+	E: 201
 }
 
     ]

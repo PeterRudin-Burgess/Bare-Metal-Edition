@@ -1,11 +1,11 @@
 {
-    title: One Handed Hafted
+    title: Two Handed Hafted
     data: [
         {   type: hafted
             start: 77
             end: 150
             min: 1
-            max: 41
+            max: 49
             A:	77
             B:	92
             C:	97
@@ -16,7 +16,7 @@
             start: 65
             end: 150
             min: 1
-            max: 35
+            max: 39
             A:	77
             B:	90
             C:	110
@@ -27,7 +27,7 @@
             start: 55
             end: 150
             min: 1
-            max: 27
+            max: 31
             A:	105
             B:	117
             C:	127
@@ -38,7 +38,7 @@
             start: 45
             end: 150
             min: 1
-            max: 15
+            max: 22
             A:	107
             B:	117
             C:	130

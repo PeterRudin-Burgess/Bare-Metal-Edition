@@ -1,0 +1,54 @@
+{ // AT1-10: 1,4,7,10
+	title: "Morning Star"
+	data: [
+	// NA
+	{   type: spiked_blunt
+	start: 61
+	end: 150
+	min: 1
+	max: 35
+	A: 76
+	B: 96
+	C: 111
+	D: 126
+	E: 141
+}
+	// LT
+	{   type: spiked_blunt
+	start: 75
+	end: 150
+	min: 1
+	max: 29
+	A: 91
+	B: 106
+	C: 121
+	D: 136
+	E: 151
+}
+	// MD
+	{   type: spiked_blunt
+	start: 55
+	end: 150
+	min: 1
+	max: 23
+	A: 106
+	B: 121
+	C: 136
+	D: 151
+	E: 166
+}
+	// HY
+	{   type: blunt
+	start: 40
+	end: 150
+	min: 1
+	max: 17
+	A: 126
+	B: 141
+	C: 156
+	D: 171
+	E: 186
+}
+
+    ]
+}

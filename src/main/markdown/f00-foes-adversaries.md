@@ -13,15 +13,31 @@
 * Undead -- Undead are once-living creatures animated by spiritual or supernatural forces.
 * Vermin -- This type includes insects, arachnids, other arthropods, worms, and similar invertebrates.
 
-## Creature Roles
+## Combat Classes
 
-* Artillery -- A creature which does area damage from a distance, such as a grenadier or a ranged heavy robot.
-* Brute -- A creature focuses on raw melee power, smashing its foes to the ground, such as a great ferocious beast or a mighty robot.
-* Expert -- A creature whose focus is not combat, such as a medic, engineer, or pilot.
-* Ninja -- A fast, mobile melee creature, able to attack quickly and accurately and dance around its opponents.
-* Skirmisher -- A fast, mobile, ranged creature, weak in melee, but able to keep its distance and pick off its targets from afar. Many gun-toting bandits are skirmishers.
-* Support -- A creature which heals or buffs other creatures, or alters the battlefield; this could be a specialist support robot, or an adept commander.
-* Trickster -- A frustrating opponent such as a teleporter, or psychic foe, able to inflict a range of conditions.
+| Combat Class | Melee OB | Ranged OB | Magic OB | Hit Adj. |
+|:-------------|:--------:|:--------:|:--------:|:--------:|
+| Artillery    | OB3      | OB1      | OB2      | OB4      |
+| Brute        | OB1      | OB3      | OB3      | OB2      |  
+| Expert       | OB3      | OB2      | OB1      | OB4      |
+| Ninja        | OB1      | OB2      | OB3      | OB3      |
+| Skirmisher   | OB3      | OB1      | OB2      | OB3      |
+| Support      | OB2      | OB2      | OB1      | OB3      |
+| Trickster    | OB3      | OB2      | OB1      | OB4      |
+
+**TODO: needs rewording !!!**
+
+* Artillery. A creature which does area damage from a distance, such as a grenadier.
+* Brute. A creature focuses on raw melee power, smashing its foes to the ground, such as a great ferocious beast.
+* Expert. A creature whose focus is not combat, such as a medic, engineer, or pilot.
+* Ninja. A fast, mobile melee creature, able to attack quickly and accurately and dance around its opponents.
+* Skirmisher. A fast, mobile, ranged creature, weak in melee, but able to keep its distance and pick off its targets from afar.
+* Support. A creature which heals or buffs other creatures, or alters the battlefield; a specialist support, or an adept commander.
+* Trickster. A frustrating opponent such as a teleporter, or psychic foe, able to inflict a range of conditions.
+
+## Type Templates
+
+
 
 ## Creatures
 

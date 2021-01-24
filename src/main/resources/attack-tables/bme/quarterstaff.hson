@@ -1,0 +1,54 @@
+{ // AT1-10: 1,4,7,10
+	title: Quarterstaff
+	data: [
+	// NA
+	{   type: blunt
+	start: 61
+	end: 150
+	min: 1
+	max: 35
+	A: 76
+	B: 96
+	C: 111
+	D: 126
+	E: 141
+}
+	// LT
+	{   type: blunt
+	start: 73
+	end: 150
+	min: 1
+	max: 29
+	A: 89
+	B: 104
+	C: 119
+	D: 134
+	E: 149
+}
+	// MD
+	{   type: blunt
+	start: 52
+	end: 150
+	min: 1
+	max: 23
+	A: 103
+	B: 118
+	C: 133
+	D: 148
+	E: 163
+}
+	// HY
+	{   type: blunt
+	start: 35
+	end: 150
+	min: 1
+	max: 17
+	A: 121
+	B: 136
+	C: 151
+	D: 166
+	E: 181
+}
+
+    ]
+}

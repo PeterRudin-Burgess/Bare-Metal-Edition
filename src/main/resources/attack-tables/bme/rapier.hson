@@ -1,0 +1,51 @@
+{
+    title: Rapier
+    data: [
+        {   type: trust_NA
+            start: 75
+            end: 150
+            min: 1
+            max: 37
+            A:	80
+            B:	90
+            C:	95
+            D:	105
+            E:	120
+        }
+        {   type: trust_LT
+            start: 65
+            end: 150
+            min: 1
+            max: 33
+            A:	75
+            B:	85
+            C:	100
+            D:	115
+            E:	135
+        }
+        {   type: trust_MD
+            start: 50
+            end: 150
+            min: 1
+            max: 30
+            A:	100
+            B:	110
+            C:	120
+            D:	135
+            E:	145
+        }
+        {   type: trust_HY
+            start: 45
+            end: 150
+            min: 1
+            max: 22
+            A:	110
+            B:	125
+            C:	135
+            D:	140
+            E:	145
+        }
+    ]
+}
+
+

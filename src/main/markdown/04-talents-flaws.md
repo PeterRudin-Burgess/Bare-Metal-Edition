@@ -65,3 +65,12 @@ they do not need to build up as much muscle mass.
 
 **Slow Healing/Recovery** -- -1DP/Tier: add +5% to Healing and Recovery times per Tier.
 
+# TODO
+
+* Resistance: The target takes half damage and critical severity is -1.
+
+* Vulnerability: The target takes double damage and critical severity is +1.
+
+* Immunity: The target takes zero damage.
+
+* Tolerance: The target uses the Light/Medium/Heavy Column instead.

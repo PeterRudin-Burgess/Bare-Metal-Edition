@@ -1,0 +1,54 @@
+{ // AT1-10: 1,4,7,10
+	title: Flail
+	data: [
+	// NA
+	{   type: blunt
+	start: 69
+	end: 150
+	min: 1
+	max: 40
+	A: 80
+	B: 98
+	C: 108
+	D: 122
+	E: 132
+}
+	// LT
+	{   type: blunt
+	start: 70
+	end: 150
+	min: 1
+	max: 34
+	A: 95
+	B: 107
+	C: 119
+	D: 131
+	E: 143
+}
+	// MD
+	{   type: blunt
+	start: 61
+	end: 150
+	min: 1
+	max: 28
+	A: 108
+	B: 120
+	C: 132
+	D: 144
+	E: 156
+}
+	// HY
+	{   type: blunt
+	start: 40
+	end: 150
+	min: 1
+	max: 23
+	A: 126
+	B: 138
+	C: 150
+	D: 162
+	E: 174
+}
+
+    ]
+}

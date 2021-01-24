@@ -79,6 +79,7 @@
         bite_MD: "SSKKKKP"
         bite_HY: "SKKKKKP"
         blunt: 'K'
+        spiked_blunt: 'KKKKP'
         impact: 'I'
         puncture: 'P'
         hafted: 'SSSSSKKK'

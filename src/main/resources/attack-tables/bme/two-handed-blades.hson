@@ -1,0 +1,51 @@
+{
+    title: Two Handed Blades
+    data: [
+        {   type: slash
+            start: 69
+            end: 150
+            min: 1
+            max: 46
+            A:	72
+            B:	88
+            C:	100
+            D:	112
+            E:	124
+        }
+        {   type: slash
+            start: 65
+            end: 150
+            min: 1
+            max: 37
+            A:	85
+            B:	97
+            C:	109
+            D:	121
+            E:	133
+        }
+        {   type: slash
+            start: 50
+            end: 150
+            min: 1
+            max: 28
+            A:	97
+            B:	107
+            C:	118
+            D:	130
+            E:	142
+        }
+        {   type: slash
+            start: 45
+            end: 150
+            min: 1
+            max: 19
+            A:	110
+            B:	121
+            C:	138
+            D:	145
+            E:	157
+        }
+    ]
+}
+
+

@@ -8,11 +8,19 @@
 
 %!include attack-tables/medium/bme/one-handed-hafted.md
 
+%!include attack-tables/medium/bme/two-handed-blades.md
+
+%!include attack-tables/medium/bme/two-handed-blunt.md
+
+%!include attack-tables/medium/bme/two-handed-hafted.md
+
 %!include attack-tables/medium/bme/dagger.md
 
 %!include attack-tables/medium/bme/main-gauche.md
 
 %!include attack-tables/medium/bme/javelin.md
+
+%!include attack-tables/medium/bme/halbard.md
 
 %!include attack-tables/medium/bme/spear.md
 
@@ -20,24 +28,34 @@
 
 %!include attack-tables/medium/bme/whip.md
 
+%!include attack-tables/medium/bme/flail.md
+
+%!include attack-tables/medium/bme/morningstar.md
+
+%!include attack-tables/medium/bme/quarterstaff.md
+
+%!include attack-tables/medium/bme/whip.md
+
+%!include attack-tables/medium/bme/gauntlet.md
+
 %!include attack-tables/medium/bme/poison.md
 
 btw ... what is on my todo list is finish to include all weapon attack tables ... for the time being i think it makes sense only to do the "most wanted" list:
 
 ```
 [X] Dagger
-[_] Flail
-[_] Gauntlet
-[_] Great Weapon (2h Swords/Hafted/Blunts)
-[_] Halberd
+[X] Flail
+[X] Gauntlet
+[X] Great Weapon (2h Swords/Hafted/Blunts)
+[X] Halbard
 [X] Hand Weapon (1h Swords/Hafted/Blunts)
 [X] Lance (mounted)
 [X] Main Gauche
-[_] Morning Star
-[_] Quarter Staff
-[_] Rapier
+[X] Morning Star
+[X] Quarter Staff
+[X] Rapier
 [X] Spear
-[_] Sabre
+[X] Sabre (use 1h Swords at -5)
 
 [_] Crossbow
 [X] Javelin
