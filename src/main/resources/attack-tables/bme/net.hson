@@ -1,0 +1,54 @@
+{
+	title: Net
+	data: [
+	// NA
+	{   type: other
+	start: 86
+	end: 150
+	min: 1
+	max: 11
+	A: 116
+	B: 128
+	C: 140
+	D: 162
+	E: 164
+}
+	// LT
+	{   type: other
+	start: 78
+	end: 150
+	min: 1
+	max: 9
+	A: 122
+	B: 134
+	C: 146
+	D: 158
+	E: 170
+}
+	// MD
+	{   type: other
+	start: 71
+	end: 150
+	min: 1
+	max: 6
+	A: 133
+	B: 145
+	C: 157
+	D: 169
+	E: 181
+}
+	// HY
+	{   type: other
+	start: 65
+	end: 150
+	min: 1
+	max: 5
+	A: 143
+	B: 155
+	C: 167
+	D: 179
+	E: 191
+}
+
+    ]
+}

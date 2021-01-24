@@ -1,0 +1,54 @@
+{
+	title: Staff Sling
+	data: [
+	// NA
+	{   type: blunt
+	start: 55
+	end: 150
+	min: 1
+	max: 35
+	A: 66
+	B: 87
+	C: 99
+	D: 111
+	E: 123
+}
+	// LT
+	{   type: blunt
+	start: 55
+	end: 150
+	min: 1
+	max: 30
+	A: 83
+	B: 95
+	C: 107
+	D: 119
+	E: 131
+}
+	// MD
+	{   type: blunt
+	start: 50
+	end: 150
+	min: 1
+	max: 25
+	A: 95
+	B: 107
+	C: 119
+	D: 135
+	E: 147
+}
+	// HY
+	{   type: blunt
+	start: 45
+	end: 150
+	min: 1
+	max: 19
+	A: 107
+	B: 119
+	C: 131
+	D: 143
+	E: 155
+}
+
+    ]
+}

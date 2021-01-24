@@ -38,6 +38,18 @@
 
 %!include attack-tables/medium/bme/gauntlet.md
 
+%!include attack-tables/medium/bme/crossbow.md
+
+%!include attack-tables/medium/bme/bow.md
+
+%!include attack-tables/medium/bme/lasso.md
+
+%!include attack-tables/medium/bme/net.md
+
+%!include attack-tables/medium/bme/sling.md
+
+%!include attack-tables/medium/bme/sling-staff.md
+
 %!include attack-tables/medium/bme/poison.md
 
 btw ... what is on my todo list is finish to include all weapon attack tables ... for the time being i think it makes sense only to do the "most wanted" list:
@@ -57,15 +69,16 @@ btw ... what is on my todo list is finish to include all weapon attack tables ..
 [X] Spear
 [X] Sabre (use 1h Swords at -5)
 
-[_] Crossbow
+[X] Crossbow
 [X] Javelin
-[_] Lasso
-[_] Longbow
-[_] Net
-[_] Shortbow
-[_] Sling
-[_] Staff Sling
-[_] Throwing Axe/Hammer
-[_] Throwing Dagger/Star
+[X] Lasso
+[X] Composite Bow  (use Bow Table at +0)
+[X] Longbow (use Bow Table at -10)
+[X] Shortbow  (use Bow Table at -25)
+[X] Net
+[X] Sling
+[X] Staff Sling
+[X] Throwing Axe/Hammer (use 1h hafted/blunts with range mod and -15)
+[X] Throwing Dagger/Star/Dart (use Rapier with range mod and -10/-25/-40)
 [X] Whip
 ```

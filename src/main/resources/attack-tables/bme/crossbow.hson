@@ -1,0 +1,54 @@
+{
+	title: Crossbow
+	data: [
+	// NA
+	{   type: puncture
+	start: 66
+	end: 150
+	min: 1
+	max: 33
+	A: 70
+	B: 88
+	C: 99
+	D: 111
+	E: 122
+}
+	// LT
+	{   type: puncture
+	start: 63
+	end: 150
+	min: 1
+	max: 28
+	A: 81
+	B: 93
+	C: 105
+	D: 117
+	E: 128
+}
+	// MD
+	{   type: puncture
+	start: 55
+	end: 150
+	min: 1
+	max: 23
+	A: 96
+	B: 108
+	C: 120
+	D: 132
+	E: 140
+}
+	// HY
+	{   type: puncture
+	start: 51
+	end: 150
+	min: 1
+	max: 18
+	A: 110
+	B: 122
+	C: 137
+	D: 155
+	E: 176
+}
+
+    ]
+}

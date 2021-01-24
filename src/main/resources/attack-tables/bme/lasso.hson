@@ -1,0 +1,54 @@
+{
+	title: Lasso
+	data: [
+	// NA
+	{   type: other
+	start: 86
+	end: 150
+	min: 1
+	max: 14
+	A: 106
+	B: 118
+	C: 130
+	D: 142
+	E: 154
+}
+	// LT
+	{   type: other
+	start: 78
+	end: 150
+	min: 1
+	max: 12
+	A: 112
+	B: 124
+	C: 136
+	D: 148
+	E: 160
+}
+	// MD
+	{   type: other
+	start: 71
+	end: 150
+	min: 1
+	max: 9
+	A: 123
+	B: 135
+	C: 147
+	D: 159
+	E: 171
+}
+	// HY
+	{   type: other
+	start: 65
+	end: 150
+	min: 1
+	max: 7
+	A: 133
+	B: 145
+	C: 157
+	D: 169
+	E: 181
+}
+
+    ]
+}

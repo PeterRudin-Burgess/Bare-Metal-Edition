@@ -60,9 +60,20 @@ Stat increases are covered later under 16.2 on page 80.
 ### Character Stats
 
 There are ten Stats. There are four physical; 
-Constitution [Co], Agility [Ag], Strength [St], Quickness [Qu]; 
+
+* Constitution [Co]
+* Agility [Ag]
+* Strength [St]
+* Quickness [Qu] 
+
 and six mental; 
-Self Discipline [Sd], Reasoning [Re], Memory[Me], Presence [Pr], Intuition [In], and Empathy [Em].
+
+* Self Discipline [Sd]
+* Reasoning [Re]
+* Memory[Me]
+* Presence [Pr]
+* Intuition [In]
+* Empathy [Em]
 
 The convention on abbreviating the Stat names is to capitalize the first letter 
 and lowercase second letter, so they become Co, Ag, St, Qu, Sd, Re, Me, Pr, In and Em.

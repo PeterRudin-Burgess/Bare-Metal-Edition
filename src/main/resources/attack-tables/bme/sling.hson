@@ -1,0 +1,54 @@
+{
+	title: Sling
+	data: [
+	// NA
+	{   type: blunt
+	start: 55
+	end: 150
+	min: 1
+	max: 30
+	A: 73
+	B: 94
+	C: 106
+	D: 118
+	E: 130
+}
+	// LT
+	{   type: blunt
+	start: 55
+	end: 150
+	min: 1
+	max: 25
+	A: 90
+	B: 102
+	C: 114
+	D: 126
+	E: 138
+}
+	// MD
+	{   type: blunt
+	start: 50
+	end: 150
+	min: 1
+	max: 19
+	A: 102
+	B: 114
+	C: 126
+	D: 142
+	E: 154
+}
+	// HY
+	{   type: blunt
+	start: 45
+	end: 150
+	min: 1
+	max: 14
+	A: 114
+	B: 126
+	C: 138
+	D: 150
+	E: 162
+}
+
+    ]
+}
