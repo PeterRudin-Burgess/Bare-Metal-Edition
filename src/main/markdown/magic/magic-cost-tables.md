@@ -111,6 +111,15 @@
 | 1 month/Rank | +350 | +28 MP |
 | 1 season/Rank | +400 | +32 MP |
 | 1 year/Rank | +450 | +36 MP |
+| 1 round/EL | +10 | +1 MP |
+| 1 minute/EL | +25 | +2 MP |
+| 10 minutes/EL | +75 | +6 MP |
+| 1 hour/EL | +100 | +8 MP |
+| 1 day/EL | +125 | +10 MP |
+| 1 week/EL | +150 | +12 MP |
+| 1 month/EL | +175 | +14 MP |
+| 1 season/EL | +200 | +16 MP |
+| 1 year/EL | +225 | +18 MP |
 | Concentration required | x 1/2 ||
 | Attack(non-instant) | x 2 ||
 

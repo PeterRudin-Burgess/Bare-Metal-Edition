@@ -94,7 +94,16 @@
             [ "1 week/Rank",            300   ],
             [ "1 month/Rank",           350   ],
             [ "1 season/Rank",          400   ],
-            [ "1 year/Rank",            450   ]
+            [ "1 year/Rank",            450   ],
+            [ "1 round/EL",             10   ],
+            [ "1 minute/EL",            25   ],
+            [ "10 minutes/EL",          75   ],
+            [ "1 hour/EL",              100   ],
+            [ "1 day/EL",               125   ],
+            [ "1 week/EL",              150   ],
+            [ "1 month/EL",             175   ],
+            [ "1 season/EL",            200   ],
+            [ "1 year/EL",              225   ]
             // "[BME] Attack(non-instant) x 2"
         ]
         "time_offsets": [

@@ -241,7 +241,7 @@ Teleportation
 * contest : standard open-ended roll with either skill or stat-only bonus ... contestant needs to roll against this ... also used in RR
 * attack :  standard open-ended roll with either skill or stat-only bonus minus DB ... result is looked up in attack table with applicable armor
 * movement :  standard open-ended roll with either skill or stat-only bonus minus MM penalties ...  result is looked up in maneuver table
-* resistance roll : as in contest above ... a failed RR establishes a level of failure = (the difference divided by 10 rounded down)
+* resistance roll : as in contest above ... a failed RR establishes a level of failure/effect = (the difference divided by 10 rounded down)
 * critical : if any of the above methods establish a critical result (A..E) d100 is rolled with possible modifiers and looked up on the appropriate table
 * effect roll : a special case of the RR, where the contestant does not choose to resist .. the effect level becomes the "tens" of the result
 
