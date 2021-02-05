@@ -28,6 +28,26 @@ Flaws are genetic weaknesses. These cost negative points.
 
 ## Blood Talents
 
+**Darkvision** -- (5DP, prerequisite low-light vision) It is the ability to see with no light source at all.
+
+* Darkvision is black-and-white only (colors cannot be discerned).
+* You can not read ink/paint (only etchings).
+* The presence of light does not spoil darkvision.
+
+**Low-Light Vision** (5DP) -- eyes are so sensitive to light that you hava no penalties even in dim light.
+
+* Low-light vision is color vision.
+* You can read ordinary ink/paint.
+* You can see outdoors on a moonlit night as if it where day-light.
+
+> Note:
+> * "ultravision" that translates to low-light vision
+> * "infravision" translate to "darkvision"
+> * only undead or special monsters have heat-based genuine infravision (if at all)
+> * maybe for monsters there may be additional sights like:
+> * life-force (for undead)
+> * green-sight (for wood creatures)
+
 **Enhanced Hearing** -- 5DP/Tier +5/Tier to Perception skill test that 
 are dependent on the sense of hearing or where acute hearing is an advantage.
 
