@@ -36,7 +36,7 @@ def _rmu_stat_mod(_s)
 
 def _rmc_stat_mod(_s)
 {
-    if(_s>=102) return 35;
+    if(_s>=102) return 35+((_s-102)*5);
     if(_s>=101) return 30;
     if(_s>=100) return 25;
     if(_s>=98) return 20;
@@ -97,6 +97,14 @@ def rank_bonus_rmc(r)
     return (80 + ((r - 30) / 2));
 }
 
+def rank_bonus_rmu(r)                                                        
+{                                                                            
+    if(r <= 10) return (r * 5);                                              
+    if(r <= 20) return (50 + ((r - 10) * 3));                                
+    if(r <= 30) return (80 + ((r - 20) * 2));                                      
+    return (100 + (r - 30));                                            
+}  
+
 def rank_bonus_bme(r)
 {
     if(r <= 10) return (r * 5);
@@ -106,70 +114,40 @@ def rank_bonus_bme(r)
 //    return (80 + ((r - 30) / 2));
 }
 
-def render_row(n)
+
+def render_row(int n)
 {
+def _PRIO = [ 2, 1.75, 1.5, 1.25, 1, 0.75, 0.66, 0.5, 0.33, 0.25, 0.125 ];
     print "[ ${n}, ";
     print '{ \n';
 
     print "bme: [ ";
-    print rank_bonus_bme(4 + (n * 3));
-    print ', ';
-    print rank_bonus_bme(3 + (n * 2));
-    print ', ';
-    print rank_bonus_bme(2 + (n * 1.5));
-    print ', ';
-    print rank_bonus_bme(1 + n);
-    print ', ';
-    print rank_bonus_bme(n * 0.5);
-    print ', ';
-    print rank_bonus_bme(n * 0.25);
-    print ', ';
-    print rank_bonus_bme(n * 0.125);
-    print ', ';
-    print rank_bonus_bme(n * 0.0625);
-    print ', ';
-    print rank_bonus_bme(n * 0.03125);
+	_PRIO.each(){ _p ->
+	    print rank_bonus_bme(n * _p);
+	    print ', ';
+	}
     print ']\n';
 
-  //  print "rmc: [ ";
-  //  print rank_bonus_rmc(4 + (n * 3));
-  //  print ', ';
-  //  print rank_bonus_rmc(3 + (n * 2));
-  //  print ', ';
-  //  print rank_bonus_rmc(2 + (n * 1.5));
-  //  print ', ';
-  //  print rank_bonus_rmc(1 + n);
-  //  print ', ';
-  //  print rank_bonus_rmc(n * 0.5);
-  //  print ', ';
-  //  print rank_bonus_rmc(n * 0.25);
-  //  print ', ';
-  //  print rank_bonus_rmc(n * 0.125);
-  //  print ', ';
-  //  print rank_bonus_rmc(n * 0.0625);
-  //  print ', ';
-  //  print rank_bonus_rmc(n * 0.03125);
-  //  print ']\n';
-  //
-  //  print "rmss: [ ";
-  //  print rank_bonus_rmss(4 + (n * 3));
-  //  print ', ';
-  //  print rank_bonus_rmss(3 + (n * 2));
-  //  print ', ';
-  //  print rank_bonus_rmss(2 + (n * 1.5));
-  //  print ', ';
-  //  print rank_bonus_rmss(1 + n);
-  //  print ', ';
-  //  print rank_bonus_rmss(n * 0.5);
-  //  print ', ';
-  //  print rank_bonus_rmss(n * 0.25);
-  //  print ', ';
-  //  print rank_bonus_rmss(n * 0.125);
-  //  print ', ';
-  //  print rank_bonus_rmss(n * 0.0625);
-  //  print ', ';
-  //  print rank_bonus_rmss(n * 0.03125);
-  //  print ']\n';
+    print "rmc: [ ";
+	_PRIO.each(){ _p ->                                                  
+            print rank_bonus_rmc(n * _p);                                    
+            print ', ';                                                      
+        } 
+    print ']\n';
+  
+    print "rmss: [ ";
+	_PRIO.each(){ _p ->                                                  
+            print rank_bonus_rmss(n * _p);                                    
+            print ', ';                                                      
+        } 
+    print ']\n';
+
+    print "rmu: [ ";                                                        
+	_PRIO.each(){ _p ->                                                  
+            print rank_bonus_rmu(n * _p);                                    
+            print ', ';                                                      
+        } 
+    print ']\n';
 
     print ' } \n';
     print ' ] ';
@@ -186,15 +164,15 @@ for(n in 0 .. 500){
 // statname: [ "BME", "RMC", "RMSS", "RMU" ]
 %>
     ]
-    statname: [ "BME" ]
+    statname: [ "BME", "RMC", "RMSS", "RMU" ]
     statmod: [
 <%
 for(_stat in 0 .. 200){
     print String.format('[ %d', _stat);
         print String.format(', %d', _bme_stat_mod((int)_stat));
-    //    print String.format(', %d', _rmc_stat_mod((int)_stat));
-    //    print String.format(', %d', _rmss_stat_mod((int)_stat));
-    //    print String.format(', %d', _rmu_stat_mod((int)_stat));
+        print String.format(', %d', _rmc_stat_mod((int)_stat));
+        print String.format(', %d', _rmss_stat_mod((int)_stat));
+        print String.format(', %d', _rmu_stat_mod((int)_stat));
     print ' ]\n';
 }
 %>

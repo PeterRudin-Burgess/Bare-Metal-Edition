@@ -20,12 +20,18 @@
             <plugin>
                 <groupId>com.github.terefang.template</groupId>
                 <artifactId>template-maven-plugin</artifactId>
-                <version>2021.1.2</version>
+                <version>2021.4.3</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.commons</groupId>
                         <artifactId>commons-math3</artifactId>
                         <version>3.6.1</version>
+                    </dependency>
+                    <!-- https://mvnrepository.com/artifact/net.sf.meka.thirdparty/mst -->
+                    <dependency>
+                        <groupId>net.sf.meka.thirdparty</groupId>
+                        <artifactId>mst</artifactId>
+                        <version>4.0</version>
                     </dependency>
                 </dependencies>
                 <executions>
@@ -157,22 +163,6 @@
                             <destinationExtension>.md</destinationExtension>
                             <outputType>TEXT</outputType>
                             <additionalVariables>roll=dr-medium</additionalVariables>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>stellar-gsimple-templation</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>gsimple-template</goal>
-                        </goals>
-                        <configuration>
-                            <!--additionalContext>${project.basedir}/src/main/resources/attack-data.hson</additionalContext>
-                            <additionalContextRoot>attack</additionalContextRoot-->
-                            <resourcesDirectory>${project.basedir}/src/main/stellar</resourcesDirectory>
-                            <includes>**/*.json</includes>
-                            <resourcesOutput>${project.basedir}/src/main/stellar</resourcesOutput>
-                            <templateFile>${project.basedir}/src/main/templates/stellar.gst</templateFile>
-                            <destinationExtension>.txt</destinationExtension>
                         </configuration>
                     </execution>
                 </executions>
